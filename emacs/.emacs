@@ -16,7 +16,7 @@
             '(
               (tool-bar-lines . 0)
               (width . 120) ; chars
-              (height . 50) ; lines
+              (height . 45) ; lines
 	      (background-color . "white smoke")
               ))
 
@@ -24,10 +24,16 @@
             '(
               (tool-bar-lines . 0)
               (width . 120)
-              (height . 50)
+              (height . 45)
      	      (background-color . "white smoke")
               ;;
               )))
   )
+
+;; Set cursor type
+(modify-all-frames-parameters (list (cons 'cursor-type 'bar)))
+
+;; turn on highlighting current line
+(global-hl-line-mode 1)
 
 ;;
