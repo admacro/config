@@ -1,11 +1,12 @@
-(defalias 'perl-mode 'cperl-mode)
+;; UTF-8 as default encoding
+(set-language-environment "UTF-8")
 
 ;; Setup font
-(cond ((string-equal system-type "windows-nt") ; Windows
+(cond ((string-equal system-type "windows-nt") ;; Windows
        (set-default-font "Consolas-11"))
-      ((string-equal system-type "darwin") ; Mac
+      ((string-equal system-type "darwin") ;; Mac
        (set-default-font "Inconsolata-16"))
-;;      ((string-equal system-type "gnu/linux") ; Linux
+;;      ((string-equal system-type "gnu/linux") ;; Linux
 ;;     (set-default-font "Inconsolata-16"))
       )
 
@@ -15,8 +16,8 @@
       (setq initial-frame-alist
             '(
               (tool-bar-lines . 0)
-              (width . 120) ; chars
-              (height . 45) ; lines
+              (width . 120) ;; chars
+              (height . 45) ;; lines
 	      (background-color . "white smoke")
               ))
 
@@ -26,7 +27,6 @@
               (width . 120)
               (height . 45)
      	      (background-color . "white smoke")
-              ;;
               )))
   )
 
@@ -37,3 +37,6 @@
 (global-hl-line-mode 1)
 
 ;;
+
+;; Optional 
+;; (defalias 'perl-mode 'cperl-mode)
