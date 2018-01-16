@@ -1,3 +1,6 @@
+;; no backup files
+(setq make-backup-files nil)
+
 ;; UTF-8 as default encoding
 (set-language-environment "UTF-8")
 
