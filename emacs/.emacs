@@ -1,3 +1,6 @@
+;; UTF-8 as default encoding
+(set-language-environment "UTF-8")
+
 ;; MELPA Stable
 (require 'package)
 (add-to-list 'package-archives
@@ -12,14 +15,25 @@
 ;; Web Mode
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode)) ; eRuby
-;; no backup files
-(setq make-backup-files nil)
+
+;; YAML
+(require 'yaml-mode)
+(add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+;; binding the ENTER key to `newline-and-indent`
+(add-hook 'yaml-mode-hook
+	  '(lambda ()
+	     (define-key yaml-mode-map "\C-m" 'newline-and-indent)))
+
+;; Global config
+(setq make-backup-files nil) ;no backup files
+(setq column-number-mode t) ; display column number in the mode line
+(global-auto-revert-mode t) ; auto refresh files
 
 ;; Setup font
 (cond ((string-equal system-type "windows-nt") ; Windows
        (set-default-font "Consolas-11"))
       ((string-equal system-type "darwin") ; Mac
-       (set-default-font "Inconsolata-18"))
+       (set-default-font "Inconsolata-20"))
       ;;      ((String-equal system-type "gnu/linux") ; Linux
       ;;     (set-default-font "Inconsolata-16"))
       )
@@ -57,7 +71,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (web-mode markdown-mode))))
+ '(package-selected-packages (quote (yaml-mode web-mode markdown-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
