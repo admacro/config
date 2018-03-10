@@ -12,6 +12,9 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
+;; enhanced Ruby mode
+(add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
+
 ;; Web Mode
 (require 'web-mode)
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode)) ; eRuby
@@ -46,7 +49,7 @@
               (tool-bar-lines . 0)
               (width . 90) ; chars
               (height . 30) ; lines
-	      (background-color . "white smoke")
+;;	      (background-color . "white smoke")
               ))
 
       (setq default-frame-alist
@@ -54,7 +57,7 @@
               (tool-bar-lines . 0)
               (width . 90)
               (height . 30)
-     	      (background-color . "white smoke")
+;;   	      (background-color . "white smoke")
               ;;
               )))
   )
@@ -71,7 +74,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (yaml-mode web-mode markdown-mode))))
+ '(package-selected-packages (quote (enh-ruby-mode yaml-mode web-mode markdown-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -79,3 +82,21 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; Check if time is between 6 PM and 6 AM, aka night time
+(defun nightp ()
+  (set 'hour-str 
+	(car (split-string
+	      (nth 3
+		   (split-string (current-time-string) " "))
+	      ":")))
+  (set 'hour (string-to-number hour-str))
+  (or (> hour 18) (< hour 6)))
+
+;; use dark theme for night and light theme for day
+(if (nightp)
+    (progn
+      (message "It's night. Loading dark theme")  
+      (load-theme 'misterioso))
+  (progn
+    (message "It's day. Loading light theme")  
+    (load-theme 'leuven)))
