@@ -6,6 +6,7 @@
 
 ;; Author: film42
 ;; Version: 1.3.2
+;; Package-Version: 20170412.845
 ;; Package-Requires: ((emacs "24"))
 ;; URL: https://github.com/dracula/emacs
 
@@ -32,8 +33,8 @@
       (builtin "#ffb86c")
       (keyword "#ff79c6")
       (const   "#8be9fd")
-;;      (comment "#6272a4")
-      (comment "#ffaeb9")
+      ;;      (comment "#6272a4")
+      (comment "#9999bb")
       (func    "#50fa7b")
       (str     "#f1fa8c")
       (type    "#bd93f9")
