@@ -36,7 +36,7 @@
 (cond ((string-equal system-type "windows-nt") ; Windows
        (set-default-font "Consolas-11"))
       ((string-equal system-type "darwin") ; Mac
-       (set-default-font "Inconsolata-20"))
+       (set-default-font "Inconsolata-18"))
       ;;      ((String-equal system-type "gnu/linux") ; Linux
       ;;     (set-default-font "Inconsolata-16"))
       )
@@ -95,7 +95,7 @@
 		   (split-string (current-time-string) " "))
 	      ":")))
   (set 'hour (string-to-number hour-str))
-  (or (> hour 18) (< hour 6)))
+  (or (> hour 17) (< hour 6)))
 
 ;; use dark theme for night and light theme for day
 (if (nightp)
@@ -105,3 +105,4 @@
   (progn
     (message "It's day. Loading light theme")  
     (load-theme 'leuven)))
+(put 'downcase-region 'disabled nil)
