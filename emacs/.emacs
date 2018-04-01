@@ -87,14 +87,16 @@
  ;; If there is more than one, they won't work right.
  )
 
+
 ;; Check if time is between 6 PM and 6 AM, aka night time
 (defun nightp ()
   (set 'hour-str 
 	(car (split-string
 	      (nth 3
-		   (split-string (current-time-string) " "))
+		   (split-string (current-time-string)))
 	      ":")))
   (set 'hour (string-to-number hour-str))
+  (message hour-str)
   (or (> hour 17) (< hour 6)))
 
 ;; use dark theme for night and light theme for day
