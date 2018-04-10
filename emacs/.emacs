@@ -12,8 +12,8 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-;; enhanced Ruby mode
-(add-to-list 'auto-mode-alist '("\\.rb$" . enh-ruby-mode))
+;; Ruby mode
+(add-to-list 'auto-mode-alist '("\\.rb$" . ruby-mode))
 
 ;; Web Mode
 (require 'web-mode)
@@ -36,7 +36,7 @@
 (cond ((string-equal system-type "windows-nt") ; Windows
        (set-default-font "Consolas-11"))
       ((string-equal system-type "darwin") ; Mac
-       (set-default-font "Inconsolata-18"))
+       (set-default-font "Inconsolata-20"))
       ;;      ((String-equal system-type "gnu/linux") ; Linux
       ;;     (set-default-font "Inconsolata-16"))
       )
@@ -79,7 +79,7 @@
     ("1473f4ea26c61b23bc0931088503ba339d4ae0d9ba126cd9001df208f1dfa85e" "f0c817a3706ac81717ac86feb8c17c649fae70a6d49cb639aebfb28409772eb3" "1e918d6e3fb6ecf1f5860a84f30028a5352700e640ea40553c8f32d0d4b7a91f" "94a84f52916d89bcfc8df7900a2fbb9ea6f555ced94edfc6af3f43adfbd830e3" "ff7625ad8aa2615eae96d6b4469fcc7d3d20b2e1ebc63b761a349bebbb9d23cb" default)))
  '(package-selected-packages
    (quote
-    (dracula-theme enh-ruby-mode yaml-mode web-mode markdown-mode))))
+    (magit dracula-theme yaml-mode web-mode markdown-mode))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
