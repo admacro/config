@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)http://ergoemacs.org/misc/xah-fly-keys_tutorial.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="./Emacs_ Xah Fly Keys Tutorial_files/xahemacs.css">
+
+<title>Emacs: Xah Fly Keys Tutorial</title>
+<script src="./Emacs_ Xah Fly Keys Tutorial_files/f.txt"></script><script src="./Emacs_ Xah Fly Keys Tutorial_files/ca-pub-5125343095650532.js"></script><script async="" src="./Emacs_ Xah Fly Keys Tutorial_files/analytics.js"></script><script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+ga('create', 'UA-10884311-3', 'auto');
+ga('send', 'pageview');
+</script>
+<svg id="dark-reader-svg" style="height: 0px; width: 0px;"><filter id="dark-reader-filter" x="0" y="0" width="99999" height="99999" style="color-interpolation-filters: sRGB;"><fecolormatrix type="matrix" values="-0.073 -0.261 -0.519 0.000 1.017 -0.436 0.119 -0.500 0.000 0.976 -0.412 -0.255 -0.089 0.000 0.903 0.000 0.000 0.000 1.000 0.000"></fecolormatrix></filter><filter id="dark-reader-reverse-filter" x="0" y="0" width="99999" height="99999" style="color-interpolation-filters: sRGB;"><fecolormatrix type="matrix" values="0.333 -0.667 -0.667 0.000 1.000 -0.667 0.333 -0.667 0.000 1.000 -0.667 -0.667 0.333 0.000 1.000 0.000 0.000 0.000 1.000 0.000"></fecolormatrix></filter></svg><style id="dark-reader-style" type="text/css">@media screen {
+
+/* Leading rule */
+html {
+  -webkit-filter: url(#dark-reader-filter) !important;
+  filter: url(#dark-reader-filter) !important;
+}
+
+/* Reverse rule */
+img,
+video,
+:not(object):not(body)>embed,
+object,
+svg image,
+[style*="background:url"],
+[style*="background-image:url"],
+[style*="background: url"],
+[style*="background-image: url"],
+[background],
+twitterwidget {
+  -webkit-filter: url(#dark-reader-reverse-filter) !important;
+  filter: url(#dark-reader-reverse-filter) !important;
+}
+[style*="background:url"] *,
+[style*="background-image:url"] *,
+[style*="background: url"] *,
+[style*="background-image: url"] *,
+input,
+[background] * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+.compatibility-with-darkreader-below-4-3-3 {
+  background: white !important;
+}
+
+/* Font */
+* {
+  -webkit-text-stroke: 0.1px !important;
+  text-stroke: 0.1px !important;
+}
+
+/* Text contrast */
+html {
+  text-shadow: 0 0 0 !important;
+}
+
+/* Full screen */
+:-webkit-full-screen, :-webkit-full-screen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+:-moz-full-screen, :-moz-full-screen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+:fullscreen, :fullscreen * {
+  -webkit-filter: none !important;
+  filter: none !important;
+}
+
+/* Page background */
+html {
+  background: rgb(42,40,37) !important;
+}
+
+/* Custom rules */
+.compatibility-with-darkreader-below-4-3-3 {
+    background: white !important;
+}
+
+}</style><script src="./Emacs_ Xah Fly Keys Tutorial_files/embed.js" data-timestamp="1526481787715"></script><link rel="preload" href="./Emacs_ Xah Fly Keys Tutorial_files/f(1).txt" as="script"><script type="text/javascript" src="./Emacs_ Xah Fly Keys Tutorial_files/f(1).txt"></script><link rel="preload" as="style" href="https://c.disquscdn.com/next/embed/styles/lounge.188f59a1df04c219bf32da7f76545092.css"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/common.bundle.037f55c32651d22255e90738c195e946.js"><link rel="preload" as="script" href="https://c.disquscdn.com/next/embed/lounge.bundle.2fd6d206c06cd51584499fe8219aa635.js"><link rel="preload" as="script" href="https://disqus.com/next/config.js"></head>
+<body><div id="tooltip75523" style="visibility: hidden; position: fixed; top: 365.625px; left: 708.516px; padding: 0.5ex; text-align: left; border: thin solid red; border-radius: 1ex; background-color: rgb(253, 245, 230); box-shadow: black 3px 3px 8px; z-index: 341;"></div>
+
+<div class="main_38046">
+
+<h1>Emacs: Xah Fly Keys Tutorial</h1>
+
+<div class="byline">By Xah Lee. Date: <time>2018-03-30</time>. Last updated: <time>2018-04-03</time>.</div>
+
+<p>Here's a xah-fly-keys tutorial for beginners.</p>
+
+<p>Master each step by pressing the keys.</p>
+
+<p>Follow the sections here in order.</p>
+
+<p>I assume you have made no customization.</p>
+
+<p>On this page, DVORAK key notation is used.</p>
+
+<p>First, here's layout for reference.</p>
+
+<figure>
+<img src="./Emacs_ Xah Fly Keys Tutorial_files/xah_fly_keys_layout_dvorak.svg" alt="xah fly keys layout dvorak.svg" width="901" height="338">
+<figcaption>xah-fly-keys command mode layout.</figcaption>
+</figure>
+
+<h2>Master Command/Insert Mode Switch</h2>
+
+<p>【<kbd>Alt</kbd>+<kbd>Space</kbd>】 <code class="elisp_f_3d841">xah-fly-command-mode-activate-no-hook</code> to switch to command mode.</p>
+
+<p>【<kbd>g</kbd>】 <code class="elisp_f_3d841">xah-fly-insert-mode-activate</code> to switch to insert mode.</p>
+
+<p>or 【<kbd>Space</kbd> <kbd>Space</kbd>】 <code class="elisp_f_3d841">xah-fly-insert-mode-activate</code> to switch to insert mode.</p>
+
+<p>Repeat these until you mastered them.</p>
+
+<h2>Cursor Movement</h2>
+
+<p>Switch to command mode. Then,</p>
+
+<p><kbd>c</kbd> <kbd>h</kbd> <kbd>f</kbd> <kbd>b</kbd> keys are arrows.</p>
+
+<p><kbd>g</kbd> <kbd>p</kbd> are moving by word.</p>
+
+<p>Repeat these until you mastered them.</p>
+
+<p><kbd>d</kbd> <kbd>;</kbd> move to beginning/end of line/indent/paragraph. (try holding it down)</p>
+
+<p>【<kbd>Space</kbd> <kbd>d</kbd>】 <code class="elisp_f_3d841">beginning-of-buffer</code></p>
+
+<p>【<kbd>Space</kbd> <kbd>b</kbd>】 <code class="elisp_f_3d841">end-of-buffer</code></p>
+
+<p><kbd>Page&nbsp;Up</kbd> or 【<kbd>Ctrl</kbd>+<kbd>9</kbd>】 page up. (<code class="elisp_f_3d841">scroll-down-command</code>)</p>
+
+<p><kbd>Page&nbsp;Down</kbd> or 【<kbd>Ctrl</kbd>+<kbd>0</kbd>】 page down. (<code class="elisp_f_3d841">scroll-up-command</code>)</p>
+
+<h2>Text Editing</h2>
+
+<p><kbd>.</kbd> <kbd>p</kbd> to delete word left/right.
+(<code class="elisp_f_3d841">xah-backward-kill-word</code>)
+(<code class="elisp_f_3d841">xah-kill-word</code>)
+</p>
+
+<p><kbd>.</kbd> to delete 1 char to the left.
+(<code class="elisp_f_3d841">xah-delete-backward-char-or-bracket-text</code>)</p>
+
+<p>If the character is a bracket character (any of ()[]{}), the whole bracketed text will be deleted, including the bracket. To delete just the brackets,
+press <kbd>Ctrl</kbd>+<kbd>g</kbd> first. To delete single bracket without pair, move cursor to the left of it, then press <kbd>5</kbd>.
+</p>
+
+<p><kbd>c</kbd> to delete the current text block. (text block is separated by empty lines.)
+(<code class="elisp_f_3d841">xah-delete-current-text-block</code>)
+</p>
+
+<p><kbd>5</kbd> (<code class="elisp_f_3d841">delete-char</code>). Delete 1 character to the right.</p>
+
+<p>Note: there's no key for deleting from cursor position to end of line.</p>
+
+<p><kbd>,</kbd> (<code class="elisp_f_3d841">xah-shrink-whitespaces</code>) for deleting blank lines or white spaces. Try holding it down.</p>
+
+<p><kbd>'</kbd> (<code class="elisp_f_3d841">xah-reformat-lines</code>) Toggle reformat current text block into 1 long line or multiple short lines.</p>
+
+<h2>undo</h2>
+
+<p><kbd>f</kbd> to undo.</p>
+
+<p><kbd>Ctrl</kbd>+<kbd>c</kbd> <kbd>f</kbd> to redo. To redo again, just press <kbd>f</kbd> 1 or more times. To reverse direction, press <kbd>Ctrl</kbd>+<kbd>c</kbd> again.</p>
+
+<p>I recommend not to use any undo/redo package. If you have them installed (e.g. undo tree), uninstall it.</p>
+
+<h2>Cut Copy Paste</h2>
+
+<p><kbd>q</kbd> (<code class="elisp_f_3d841">xah-cut-line-or-region</code>) to cut. It'll cut current line. Try holding the key.</p>
+
+<p><kbd>h</kbd> (<code class="elisp_f_3d841">xah-copy-line-or-region</code>) Try holding the key.</p>
+
+<p><kbd>k</kbd> (<code class="elisp_f_3d841">xah-paste-or-paste-previous</code>) When pressed twice, it'll paste previous <var class="elisp">kill-ring</var> text.</p>
+
+<p>To paste something 5 times, <kbd>Ctrl</kbd>+<kbd>g</kbd> <kbd>5</kbd> <kbd>k</kbd>.
+Or <kbd>k</kbd>,
+ then do something (e.g. press <kbd>Return</kbd>, or
+<kbd>Ctrl</kbd>+<kbd>c</kbd>)
+then <kbd>k</kbd> again.</p>
+
+<p>Here's more useful commands:</p>
+
+<p>【<kbd>Space</kbd> <kbd>h</kbd>】 (<code class="elisp_f_3d841">xah-copy-all-or-region</code>)</p>
+
+<p>【<kbd>Space</kbd> <kbd>q</kbd>】 (<code class="elisp_f_3d841">xah-cut-all-or-region</code>)</p>
+
+<p>【<kbd>Space</kbd> <kbd>f</kbd>】 (<code class="elisp_f_3d841">xah-show-kill-ring</code>) Useful when you wanted text that you copied long ago. It'll show a new buffer with all past copied text. You can just move cursor there and copy the part you want.</p>
+
+<p>Sometimes you want a temp storage for some text, use:</p>
+
+<ul>
+<li>【<kbd>Space</kbd> <kbd>f</kbd> <kbd>3</kbd>】 (<code class="elisp_f_3d841">xah-copy-to-register-1</code>)</li>
+<li>【<kbd>Space</kbd> <kbd>f</kbd> <kbd>4</kbd>】 (<code class="elisp_f_3d841">xah-paste-from-register-1</code>)</li>
+</ul>
+
+<h2>Text Selection</h2>
+
+<p>These are quick selections. 90% of the time, they are all you need.</p>
+
+<p><kbd>6</kbd> selects text block. Try holding the key down. (<code class="elisp_f_3d841">xah-select-block</code>)</p>
+
+<p><kbd>7</bkd> selects line. Try holding the key down. (<code class="elisp_f_3d841">xah-select-line</code>)</p>
+
+<p><kbd>8</kbd> select current word. If cursor is before a bracket, select the bracket and inner text.
+The command name is <code class="elisp_f_3d841">xah-extend-selection</code>, but currently best used for just selecting word or bracket text.
+</p>
+
+<p><kbd>9</kbd> selects inner text between brackets or quotes, "for example, string here". (<code class="elisp_f_3d841">xah-select-text-in-quote</code>)</p>
+
+<p>【<kbd>Space</kbd> <kbd>a</kbd>】 <code class="elisp_f_3d841">mark-whole-buffer</code></p>
+
+<p>To cancel selection, press <kbd>Ctrl</kbd>+<kbd>c</kbd></p>
+
+<h2>Mark</h2>
+
+<p>For more complex selection, use mark.</p>
+
+<p><kbd>f</kbd> (<code class="elisp_f_3d841">set-mark-command</code>) to mark. Then, move cursor will create selection. Press again to unmark.</p>
+
+<p>【<kbd>Space</kbd> <kbd>o</kbd>】 (<code class="elisp_f_3d841">exchange-point-and-mark</code>) This is sometimes useful. It puts cursor to the other side of selection.</p>
+
+<p><kbd>2</kbd> move cursor to previous marked position in current buffer. (<code class="elisp_f_3d841">xah-pop-local-mark-ring</code>) Try pressing it a few times.</p>
+
+<p><kbd>1</kbd> move cursor to previous marked position, of all buffers. (<code class="elisp_f_3d841">pop-global-mark</code>)</p>
+
+<h2>M-x</h2>
+
+<p><kbd>a</kbd> to call a command by name.</p>
+
+<p>or
+【<kbd>Space</kbd> <kbd>Enter</kbd>】 (<code class="elisp_f_3d841">execute-extended-command</code>)</p>
+
+<h2>Search</h2>
+
+<p>【<kbd>b</kbd>】 <code class="elisp_f_3d841">isearch-forward</code>. Use this to move cursor too.
+(You don't need other packages to jump to locations.)
+[see <a href="http://ergoemacs.org/misc/ace_jump_avy_vs_isearch.html">Emacs: avy ace-jump vs isearch</a>]
+</p>
+
+<p>【<kbd>Space</kbd> <kbd>g</kbd>】 <code class="elisp_f_3d841">xah-search-current-word</code> or selection.</p>
+
+<p>When in isearch:</p>
+
+<ul>
+<li>left/right arrow keys <kbd>←</kbd> <kbd>→</kbd> do search backward/forward.</li>
+<li>up/down arrow keys <kbd>↑</kbd> <kbd>↓</kbd> do previous/next search item.</li>
+</ul>
+
+<ul>
+<li><kbd>Return</kbd> exits isearch and leave cursor at the current location.</li>
+<li><kbd>Ctrl</kbd>+<kbd>c</kbd> exits isearch and leave cursor at original location.</li>
+</ul>
+
+<p>There's no key to begin backward search. Just do isearch then press left arrow key.</p>
+
+<h2>Find Replace</h2>
+
+<p>【<kbd>Space</kbd> <kbd>p</kbd>】 <code class="elisp_f_3d841">query-replace</code></p>
+
+<p>【<kbd>Space</kbd> <kbd>t</kbd> <kbd>p</kbd>】 <code class="elisp_f_3d841">query-replace-regexp</code></p>
+
+<p>I recommend
+<a href="http://ergoemacs.org/emacs/elisp-xah-find-text.html">Emacs: xah-find.el, Find Replace in Pure Elisp</a>
+for find replace in a directory.
+</p>
+
+<h2>Open Close Save</h2>
+
+<p>You can use the following standard keys for now.</p>
+
+<ul>
+<li>【<kbd>Ctrl</kbd>+<kbd>n</kbd>】 new</li>
+<li>【<kbd>Ctrl</kbd>+<kbd>o</kbd>】 open</li>
+<li>【<kbd>Ctrl</kbd>+<kbd>w</kbd>】 close</li>
+<li>【<kbd>Ctrl</kbd>+<kbd>s</kbd>】 save</li>
+<li>【<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>s</kbd>】 save as</li>
+<li>【<kbd>Ctrl</kbd>+<kbd>Shift</kbd>+<kbd>t</kbd>】 open last closed</li>
+</ul>
+
+<p>When you are comfortable with xah-fly-keys, and feel like you want to reduce using <kbd>Ctrl</kbd>, then learn the following.</p>
+
+<ul>
+<li>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>b</kbd>】 new</li>
+<li>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>.</kbd>】 open</li>
+<li>【<kbd>Space</kbd> <kbd>t</kbd> <kbd>h</kbd>】 close</li>
+<li>【<kbd>Space</kbd> <kbd>s</kbd>】 save</li>
+<li>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>,</kbd>】 save as</li>
+<li>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>p</kbd>】 open last closed</li>
+</ul>
+
+<h2>Open Files</h2>
+
+<p>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>g</kbd>】 (<code class="elisp_f_3d841">xah-open-file-at-cursor</code>)</p>
+
+<p>【<kbd>Space</kbd> <kbd>c</kbd>】 (<code class="elisp_f_3d841">xah-copy-file-path</code>)</p>
+
+<p>【<kbd>Space</kbd> <kbd>m</kbd>】 go to dired and place cursor on file name. (<code class="elisp_f_3d841">dired-jump</code>)</p>
+
+<p>Open in external apps (for image, pdf, music files, etc.):</p>
+
+<ul>
+<li>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>,</kbd>】 (<code class="elisp_f_3d841">xah-open-in-external-app</code>)</li>
+<li>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>o</kbd>】 (<code class="elisp_f_3d841">xah-show-in-desktop</code>)</li>
+</ul>
+
+<p>Bookmark related for fast open files:</p>
+
+<ul>
+<li>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>l</kbd>】 (<code class="elisp_f_3d841">bookmark-set</code>)</li>
+<li>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>c</kbd>】 (<code class="elisp_f_3d841">bookmark-bmenu-list</code>) list bookmarks</li>
+<li>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>p</kbd>】 (<code class="elisp_f_3d841">xah-open-file-fast</code>)</li>
+</ul>
+
+<p>Open recently opened/closed files:</p>
+
+<ul>
+<li>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>h</kbd>】 (<code class="elisp_f_3d841">recentf-open-files</code>)</li>
+<li>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>p</kbd>】 (<code class="elisp_f_3d841">xah-open-last-closed</code>)</li>
+<li>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>f</kbd>】 (<code class="elisp_f_3d841">xah-open-recently-closed</code>)</li>
+</ul>
+
+<p>Press <kbd>Space</kbd> <kbd>c</kbd> <kbd>Ctrl</kbd>+<kbd>d</kbd> to see a full list.</p>
+
+<p>You don't need any extra packages to efficiently open files.</p>
+
+<p>You should never need to type file path to open file, unless it's a new file you rarely work with.</p>
+
+<p>All files or directories you work daily, should be bookmarked, or with open recent.</p>
+
+<h2>Split Buffer</h2>
+
+<p><kbd>3</kbd> unsplit all. (<code class="elisp_f_3d841">delete-other-windows</code>) </p>
+
+<p><kbd>4</kbd> split top/bottom (<code class="elisp_f_3d841">split-window-below</code>)</p>
+
+<p><kbd>,</kbd> Switch cursor to next pane, and if no split pane, switch to next window if any. (<code class="elisp_f_3d841">xah-next-window-or-frame</code>)</p>
+
+<p>【<kbd>Space</kbd> <kbd>3</kbd>】 remove current pane. (<code class="elisp_f_3d841">delete-window</code>)</p>
+
+<p>【<kbd>Space</kbd> <kbd>4</kbd>】 split left/right. <code class="elisp_f_3d841">split-window-right</code></p>
+
+<p>Use a workflow of 2 windows (emacs frame) side by side. Don't use workflow that have 1 fullscreen and rely on fixed split panes.</p>
+
+<p>[see <a href="http://ergoemacs.org/misc/programer_workflow_efficiency.html">Programer Workflow Efficiency</a>]</p>
+
+<p>[see <a href="http://ergoemacs.org/emacs/emacs_effective_windows_management.html">Emacs: Effective Windows Management</a>]</p>
+
+<h2>switch buffer</h2>
+
+<p>【<kbd>Space</kbd> <kbd>g</kbd>】 <code class="elisp_f_3d841">switch-to-buffer</code></p>
+
+<p>【<kbd>Space</kbd> <kbd>c</kbd> <kbd>.</kbd>】 (<code class="elisp_f_3d841">ibuffer</code>) list buffers.</p>
+
+<ul>
+<li>【<kbd>Ctrl</kbd>+<kbd>8</kbd>】 <code class="elisp_f_3d841">xah-next-user-buffer</code></li>
+<li>【<kbd>Ctrl</kbd>+<kbd>7</kbd>】 <code class="elisp_f_3d841">xah-previous-user-buffer</code></li>
+<li>【<kbd>Ctrl</kbd>+<kbd>6</kbd>】 <code class="elisp_f_3d841">xah-next-emacs-buffer</code></li>
+<li>【<kbd>Ctrl</kbd>+<kbd>5</kbd>】 <code class="elisp_f_3d841">xah-previous-emacs-buffer</code></li></ul>
+
+<!-- SPC '           xah-fill-or-unfill -->
+<!-- SPC -           xah-display-form-feed-as-line -->
+
+<!-- SPC l           recenter-top-bottom -->
+
+<section>
+
+<h2>Working with Quote and Brackets</h2>
+
+<p>xah-fly-keys has a system to work with brackets. Brackets includes ()[]{}“” and all Unicode brackets.</p>
+
+<!-- <p>You can easily</p> -->
+
+<!-- <ul> -->
+<!-- <li>insert any bracket by pair</li> -->
+<!-- <li>move to any bracket</li> -->
+<!-- <li>delete bracket pairs and inner text</li> -->
+<!-- <li>delete bracket pairs</li> -->
+<!-- <li>change one type of bracket to another</li> -->
+<!-- </ul> -->
+
+<p>These allows you to work efficiently in any programing language with lots brackets, such as C, JavaScript, especially lisp.</p>
+
+<p>You don't need other packages for working brackets.
+If you code elisp, i also recommend
+<a href="http://ergoemacs.org/emacs/xah-elisp-mode.html">Emacs: Xah Emacs Lisp Mode</a></p>
+
+<h3>Move to Brackets</h3>
+
+<p><kbd>m</kbd> <kbd>.</kbd> move to left/right bracket.
+(<code class="elisp_f_3d841">xah-backward-left-bracket</code>)
+(<code class="elisp_f_3d841">xah-forward-right-bracket</code>)
+</p>
+
+<p><kbd>/</kbd> (<code class="elisp_f_3d841">xah-goto-matching-bracket</code>). When cursor is on a bracket, jump to the matching one. If cursor is not on a bracket, move it to parent left bracket.</p>
+
+<h3>Select Brackets</h3>
+
+<p>when cursor is on a bracket,
+<kbd>8</kbd> select the whole.
+(<code class="elisp_f_3d841">xah-extend-selection</code>)
+</p>
+
+<h3>Delete Brackets</h3>
+
+<p><kbd>.</kbd> to delete 1 char to the left.
+(<code class="elisp_f_3d841">xah-delete-backward-char-or-bracket-text</code>)
+ If the character is a bracket character (any of ()[]{}), the whole bracketed text will be deleted, including the bracket. To delete just the brackets,
+press <kbd>Ctrl</kbd>+<kbd>g</kbd> first. To delete single bracket without pair, move cursor to the left of it, then press <kbd>5</kbd>.
+</p>
+
+<h3>Change Brackets</h3>
+
+<p><kbd>Alt</kbd>+<kbd>q</kbd> <code class="elisp_f_3d841">xah-change-bracket-pairs</code></p>
+
+<h3>Insert Brackets</h3>
+
+<p>Always insert left/right brackets together.</p>
+
+<p>Turn on <code class="elisp_f_3d841">electric-pair-mode</code> on</p>
+
+<pre class="emacs-lisp">(electric-pair-mode 1)</pre>
+
+<p>Alternatively,</p>
+
+<p>【<kbd>Space</kbd> <kbd>.</kbd> <kbd>f</kbd>】 insert parenthesis pair. (<code class="elisp_f_3d841">xah-insert-paren</code>)</p>
+
+<p>【<kbd>Space</kbd> <kbd>.</kbd> <kbd>b</kbd>】 (<code class="elisp_f_3d841">xah-insert-square-bracket</code>)</p>
+
+<p>【<kbd>Space</kbd> <kbd>.</kbd> <kbd>h</kbd>】 (<code class="elisp_f_3d841">xah-insert-brace</code>)</p>
+
+<p>【<kbd>Space</kbd> <kbd>.</kbd> <kbd>g</kbd>】 (<code class="elisp_f_3d841">xah-insert-ascii-double-quote</code>)</p>
+
+<p>【<kbd>Space</kbd> <kbd>.</kbd> <kbd>c</kbd>】 (<code class="elisp_f_3d841">xah-insert-ascii-single-quote</code>)</p>
+
+<p>Now, type 【<kbd>Space</kbd> <kbd>.</kbd> <kbd>Ctrl</kbd>+<kbd>d</kbd>】
+to see all other brackets and quotes you can insert.</p>
+
+</section>
+
+<h2>Font Size</h2>
+
+<ul>
+<li>【<kbd>Ctrl</kbd>+<kbd>+</kbd>】 <code class="elisp_f_3d841">text-scale-increase</code></li>
+<li>【<kbd>Ctrl</kbd>+<kbd>-</kbd>】 <code class="elisp_f_3d841">text-scale-decrease</code></li>
+</ul>
+
+<ul>
+<li>【<kbd>Space</kbd> <kbd>b</kbd> <kbd>a</kbd>】 <code class="elisp_f_3d841">text-scale-increase</code></li>
+<li>【<kbd>Space</kbd> <kbd>b</kbd> <kbd>a</kbd> <kbd>-</kbd>】 <code class="elisp_f_3d841">text-scale-decrease</code></li>
+</ul>
+
+<hr>
+
+<h2>More Advanced</h2>
+
+<p>ok, the above are the basics.</p>
+
+<p>Now, there are about 200 commands with leader keys. These basically replace what emacs C-x does.</p>
+
+<p>You might want to learn them as you go.</p>
+
+<p>Remember to use
+<kbd>Alt</kbd>+<kbd>q</kbd> <code class="elisp_f_3d841">describe-function</code> and
+<kbd>Alt</kbd>+<kbd>q</kbd> <code class="elisp_f_3d841">describe-key</code> to find what's the key or command name.</p>
+
+<!-- <h2>Running Program</h2> -->
+
+<!-- DEL w j         xah-run-current-file -->
+<!-- DEL w .         eval-buffer -->
+<!-- DEL w e         eval-defun -->
+<!-- DEL w m         eval-last-sexp -->
+<!-- DEL w p         eval-expression -->
+
+<!-- DEL w q         save-buffers-kill-terminal -->
+
+<!-- DEL w u         eval-region -->
+
+<!-- DEL w w         delete-frame -->
+
+<!-- DEL w DEL       xah-delete-current-file -->
+
+<p>back to
+<a href="http://ergoemacs.org/misc/ergoemacs_vi_mode.html">Emacs: Xah Fly Keys</a></p>
+
+<div class="ask_68256"><p>If you have a question, put $5 at <a class="sorc" href="https://www.patreon.com/xahlee" data-accessed="2017-08-01">patreon</a> and message me.</p></div>
+
+</div> <!-- end main -->
+
+<footer><span class="xsignet">∑</span><span class="xsignetxah">XAH</span> <div class="cpr">© 2006, …, 2018 Xah Lee.</div></footer>
+
+<script defer="" src="./Emacs_ Xah Fly Keys Tutorial_files/emacs_tooltip.js"></script>
+
+</body></html>
