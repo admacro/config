@@ -1,11 +1,11 @@
-;;_UTF-8_as_default_encoding
-(set-language-environment "UTF-8")
-
 ;; MELPA Stable
 (require 'package)
 (add-to-list 'package-archives
 	     '("melpa" . "http://melpa.milkbox.net/packages/"))
 (package-initialize)
+
+;;_UTF-8_as_default_encoding
+(set-language-environment "UTF-8")
 
 ;; xah fly keys (default layout is dvorak)
 (require 'xah-fly-keys)
@@ -181,36 +181,3 @@
 
 ;; big minibuffer height, for ido to show choices vertically
 (setq max-mini-window-height 0.5)
-
-(defun xah-html-decode-percent-encoded-url ()
-  "Decode percent encoded URI of URI under cursor or selection.
-
-Example:
-    http://en.wikipedia.org/wiki/Saint_Jerome_in_His_Study_%28D%C3%BCrer%29
-becomes
-    http://en.wikipedia.org/wiki/Saint_Jerome_in_His_Study_(Dürer)
-    
-Example:
-    http://zh.wikipedia.org/wiki/%E6%96%87%E6%9C%AC%E7%BC%96%E8%BE%91%E5%99%A8
-becomes
-    http://zh.wikipedia.org/wiki/文本编辑器
-    
-For string version, see `xah-html-url-percent-decode-string'.
-To encode, see `xah-html-encode-percent-encoded-url'.
-URL `http://ergoemacs.org/emacs/elisp_decode_uri_percent_encoding.html'
-Version 2015-09-14."
-  (interactive)
-  (let ($boundaries $p1 $p2 $input-str)
-    (if (use-region-p)
-        (progn
-          (setq $p1 (region-beginning))
-          (setq $p2 (region-end)))
-      (progn
-        (setq $boundaries (bounds-of-thing-at-point 'url))
-        (setq $p1 (car $boundaries))
-        (setq $p2 (cdr $boundaries))))
-    (setq $input-str (buffer-substring-no-properties $p1 $p2))
-    (require 'url-util)
-    (delete-region $p1 $p2)
-    (insert (decode-coding-string (url-unhex-string $input-str) 'utf-8))))
-(put 'upcase-region 'disabled nil)
