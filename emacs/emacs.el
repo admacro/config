@@ -1,7 +1,25 @@
-(load "pkg.el")
-
 ;;_UTF-8_as_default_encoding
 (set-language-environment "UTF-8")
+
+
+;; Set cursor type
+(modify-all-frames-parameters (list (cons 'cursor-type 'bar)))
+
+(global-hl-line-mode 1) ; highlight current line
+(electric-pair-mode 1) ; auto insert matching paren
+(global-display-line-numbers-mode 1) ; display line numbers
+(global-auto-revert-mode t) ; auto refresh files
+(setq make-backup-files nil) ; stop creating backup~ files
+(setq auto-save-default nil) ; stop creating #autosave# files
+(setq column-number-mode t) ; display column number in the mode line
+
+;; show matching paren
+(setq show-paren-delay 0)
+(show-paren-mode 1)
+
+;; enable downcase command
+(put 'downcase-region 'disabled nil)
+
 
 ;; Emacs GC config for flx-ido 
 ;; https://github.com/lewang/flx
@@ -16,11 +34,6 @@
 ;; load custom themes
 (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
-;; Global config
-(setq make-backup-files nil) ; stop creating backup~ files
-(setq auto-save-default nil) ; stop creating #autosave# files
-(setq column-number-mode t) ; display column number in the mode line
-(global-auto-revert-mode t) ; auto refresh files
 
 ;; Setup font
 (cond ((string-equal system-type "windows-nt") ; Windows
@@ -51,20 +64,7 @@
               )))
   )
 
-;; Set cursor type
-(modify-all-frames-parameters (list (cons 'cursor-type 'bar)))
 
-;; highlight current line, auto insert matching paren, and display line numbers 
-(global-hl-line-mode 1)
-(electric-pair-mode 1)
-(global-display-line-numbers-mode 1)
-
-;; show matching paren
-(setq show-paren-delay 0)
-(show-paren-mode 1)
-
-;; enable downcase command
-(put 'downcase-region 'disabled nil)
 
 
 (custom-set-variables
