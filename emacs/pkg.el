@@ -11,6 +11,8 @@
 ;; find file in repository
 (global-set-key (kbd "<f7>") 'find-file-in-repository)
 
+;; (define-key xah-fly-key-map (kbd "x") 'robe-jump)
+
 ;; Programming Config
 ;; rbenv env setup
 (setq rbenv-home (concat (getenv "HOME") "/.rbenv"))
@@ -29,9 +31,13 @@
 (add-to-list 'auto-mode-alist '("\\.jbuilder\\'" . enh-ruby-mode))
 (setq enh-ruby-program (concat rbenv-home "/shims/ruby"))
 
+;; rinari
+(require 'rinari)
+
 ;; integrate robe
-(require 'robe)
-(add-hook 'enh-ruby-mode-hook 'robe-mode)
+;; (require 'robe)
+;; (add-hook 'enh-ruby-mode-hook 'robe-mode)
+
 ;; stop enh-ruby from adding utf-8 encoding
 (setq enh-ruby-add-encoding-comment-on-save nil)
 
