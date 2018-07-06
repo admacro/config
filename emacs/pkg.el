@@ -28,19 +28,18 @@
 
 ;; integrate robe
 (require 'robe)
-;; (add-hook 'enh-ruby-mode-hook 'robe-mode)
 (add-hook 'ruby-mode-hook 'robe-mode)
+(setq inf-ruby-console-environment "development")
+(add-hook 'ruby-mode-hook 'inf-ruby-console-auto)
 
-;; Enhanced Ruby mode
-;; (setq enh-ruby-program (concat rbenv-home "/shims/ruby")) ; use ruby from rbenv
-;; (setq enh-ruby-add-encoding-comment-on-save nil) ; stop enh-ruby from adding utf-8 encoding
-;; (add-to-list 'auto-mode-alist '("\\.rb\\'" . enh-ruby-mode))
-;; (add-to-list 'auto-mode-alist '("Gemfile" . enh-ruby-mode))
-;; (add-to-list 'auto-mode-alist '("Rakefile" . enh-ruby-mode))
-;; (add-to-list 'auto-mode-alist '("\\.rake\\'" . enh-ruby-mode))
-;; (add-to-list 'auto-mode-alist '("\\.rb\\'" . enh-ruby-mode))
-;; (add-to-list 'auto-mode-alist '("\\.ru\\'" . enh-ruby-mode))
-;; (add-to-list 'auto-mode-alist '("\\.jbuilder\\'" . enh-ruby-mode))
+;; support common ruby script file formats
+;; (add-to-list 'auto-mode-alist '("\\.rb\\'" . ruby-mode))
+;; (add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
+;; (add-to-list 'auto-mode-alist '("Rakefile" . ruby-mode))
+;; (add-to-list 'auto-mode-alist '("\\.rake\\'" . ruby-mode))
+;; (add-to-list 'auto-mode-alist '("\\.rb\\'" . ruby-mode))
+;; (add-to-list 'auto-mode-alist '("\\.ru\\'" . ruby-mode))
+;; (add-to-list 'auto-mode-alist '("\\.jbuilder\\'" . ruby-mode))
 
 
 ;; start an irb process
