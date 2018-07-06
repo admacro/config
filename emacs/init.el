@@ -36,7 +36,7 @@
 ;; show matching paren immediately
 (setq show-paren-delay 0)
 (show-paren-mode 1)
-(set-default-font "Inconsolata-16")
+(set-default-font "Inconsolata-17")
 
 ;; start emacs with window maximized
 (add-to-list 'default-frame-alist '(fullscreen . maximized))

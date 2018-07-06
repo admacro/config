@@ -26,26 +26,28 @@
       (add-to-list 'exec-path (concat rbenv-home "/shims"))))
 
 
+;; integrate robe
+(require 'robe)
+;; (add-hook 'enh-ruby-mode-hook 'robe-mode)
+(add-hook 'ruby-mode-hook 'robe-mode)
+
 ;; Enhanced Ruby mode
-(setq enh-ruby-program (concat rbenv-home "/shims/ruby")) ; use ruby from rbenv
-(setq enh-ruby-add-encoding-comment-on-save nil) ; stop enh-ruby from adding utf-8 encoding
-(add-to-list 'auto-mode-alist '("\\.rb\\'" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Gemfile" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("Rakefile" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.rake\\'" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.rb\\'" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.ru\\'" . enh-ruby-mode))
-(add-to-list 'auto-mode-alist '("\\.jbuilder\\'" . enh-ruby-mode))
+;; (setq enh-ruby-program (concat rbenv-home "/shims/ruby")) ; use ruby from rbenv
+;; (setq enh-ruby-add-encoding-comment-on-save nil) ; stop enh-ruby from adding utf-8 encoding
+;; (add-to-list 'auto-mode-alist '("\\.rb\\'" . enh-ruby-mode))
+;; (add-to-list 'auto-mode-alist '("Gemfile" . enh-ruby-mode))
+;; (add-to-list 'auto-mode-alist '("Rakefile" . enh-ruby-mode))
+;; (add-to-list 'auto-mode-alist '("\\.rake\\'" . enh-ruby-mode))
+;; (add-to-list 'auto-mode-alist '("\\.rb\\'" . enh-ruby-mode))
+;; (add-to-list 'auto-mode-alist '("\\.ru\\'" . enh-ruby-mode))
+;; (add-to-list 'auto-mode-alist '("\\.jbuilder\\'" . enh-ruby-mode))
 
 
 ;; start an irb process
-(global-set-key (kbd "s-r r b") 'inf-ruby)
-(global-set-key (kbd "s-r r c") 'inf-ruby-console-auto)
-
-;; integrate robe
-(require 'robe)
-(add-hook 'enh-ruby-mode-hook 'robe-mode)
-
+(global-set-key (kbd "s-r r") 'inf-ruby)
+(global-set-key (kbd "s-r c") 'inf-ruby-console-auto)
+(global-set-key (kbd "<f6>") 'robe-jump)
+(global-set-key (kbd "<f5>") 'pop-tag-mark)
 
 ;; Web Mode
 (require 'web-mode)
