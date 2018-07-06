@@ -38,6 +38,10 @@
 (add-to-list 'auto-mode-alist '("\\.jbuilder\\'" . enh-ruby-mode))
 
 
+;; start an irb process
+(global-set-key (kbd "s-r r b") 'inf-ruby)
+(global-set-key (kbd "s-r r c") 'inf-ruby-console-auto)
+
 ;; integrate robe
 (require 'robe)
 (add-hook 'enh-ruby-mode-hook 'robe-mode)

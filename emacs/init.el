@@ -57,7 +57,7 @@
 (if (nightp)
     (progn
       (message "It's night. Loading dark theme")  
-      (load-theme 'misterioso))
+      (load-theme 'deeper-blue))
   (progn
     (message "It's day. Loading light theme")  
     (load-theme 'leuven)))
