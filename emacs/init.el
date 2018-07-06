@@ -41,26 +41,14 @@
 ;; start emacs with window maximized
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-;; Set default window size
-;; (if (display-graphic-p)
-;;     (progn
-;;       (setq initial-frame-alist
-;;             '((width . 155) ; chars
-;;               (height . 45) ; lines
-;;               ))
-;;       (setq default-frame-alist
-;;             '((width . 150)
-;;               (height . 40)
-;; 	      ))))
-
 
 ;; Check if time is between 6 PM and 6 AM, aka night time
 (defun nightp ()
   (set 'hour-str 
        (car (split-string
-	     (nth 3
-		  (split-string (current-time-string)))
-	     ":")))
+	           (nth 3
+		              (split-string (current-time-string)))
+	           ":")))
   (set 'hour (string-to-number hour-str))
   (message hour-str)
   (or (> hour 16) (< hour 6)))
@@ -98,7 +86,7 @@
   (setq ido-default-buffer-method 'selected-window)
   ;; stop ido from suggesting when naming new file
   (define-key (cdr ido-minor-mode-map-entry) [remap write-file] nil)
-)
+  )
 
 ;; big minibuffer height, for ido to show choices vertically
 (setq max-mini-window-height 0.5)
