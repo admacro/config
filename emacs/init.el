@@ -21,50 +21,35 @@
 (setq auto-save-default nil) ; stop creating #autosave# files
 (setq column-number-mode t) ; display column number in the mode line
 (global-auto-revert-mode t) ; auto refresh files
+(setq-default tab-width 2)  ; default tab width is 2 spaces
+(setq-default indent-tabs-mode nil)	; indent by space
+(setq inhibit-startup-message t)	; no startup message
+(fset 'yes-or-no-p 'y-or-n-p)		; y or n is enough
+(delete-selection-mode t)		; text selection can be deleted or replaced by typing
+(scroll-bar-mode -1)			; no scrool bar
+(tool-bar-mode -1)			; no tool bar
+(modify-all-frames-parameters (list (cons 'cursor-type 'bar))) ; display cursor as a vertical bar
+(global-hl-line-mode 1)		     ; highlight current line where cursor is
+(electric-pair-mode 1)			; auto insert matching paren
+(global-display-line-numbers-mode 1)	; dispaly line numbers everywhere
 
-;; Setup font
-(cond ((string-equal system-type "windows-nt") ; Windows
-       (set-default-font "Consolas-11"))
-      ((string-equal system-type "darwin") ; Mac
-       (set-default-font "Inconsolata-16"))
-      ;;      ((String-equal system-type "gnu/linux") ; Linux
-      ;;     (set-default-font "Inconsolata-16"))
-      )
+;; show matching paren immediately
+(setq show-paren-delay 0)
+(show-paren-mode 1)
+(set-default-font "Inconsolata-16")
 
 ;; Set default window size
 (if (display-graphic-p)
     (progn
       (setq initial-frame-alist
-            '(
-              (tool-bar-lines . 0)
-              (width . 155) ; chars
+            '((width . 155) ; chars
               (height . 45) ; lines
-	      ;; (background-color . "WhiteSmoke")
               ))
-
       (setq default-frame-alist
-            '(
-              (tool-bar-lines . 0)
-              (width . 150)
+            '((width . 150)
               (height . 40)
-	      ;; (background-color . "WhiteSmoke")
-              )))
-  )
+	      ))))
 
-;; Set cursor type
-(modify-all-frames-parameters (list (cons 'cursor-type 'bar)))
-
-;; highlight current line, auto insert matching paren, and display line numbers 
-(global-hl-line-mode 1)
-(electric-pair-mode 1)
-(global-display-line-numbers-mode 1)
-
-;; show matching paren
-(setq show-paren-delay 0)
-(show-paren-mode 1)
-
-;; enable downcase command
-(put 'downcase-region 'disabled nil)
 
 ;; Check if time is between 6 PM and 6 AM, aka night time
 (defun nightp ()
@@ -81,7 +66,7 @@
 (if (nightp)
     (progn
       (message "It's night. Loading dark theme")  
-      (load-theme 'faff))
+      (load-theme 'misterioso))
   (progn
     (message "It's day. Loading light theme")  
     (load-theme 'leuven)))
@@ -114,3 +99,6 @@
 
 ;; big minibuffer height, for ido to show choices vertically
 (setq max-mini-window-height 0.5)
+
+;; enable downcase command
+(put 'downcase-region 'disabled nil)

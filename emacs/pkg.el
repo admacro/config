@@ -32,11 +32,11 @@
 (setq enh-ruby-program (concat rbenv-home "/shims/ruby"))
 
 ;; rinari
-(require 'rinari)
+;; (require 'rinari)
 
 ;; integrate robe
-;; (require 'robe)
-;; (add-hook 'enh-ruby-mode-hook 'robe-mode)
+(require 'robe)
+(add-hook 'enh-ruby-mode-hook 'robe-mode)
 
 ;; stop enh-ruby from adding utf-8 encoding
 (setq enh-ruby-add-encoding-comment-on-save nil)
