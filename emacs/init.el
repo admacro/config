@@ -38,17 +38,20 @@
 (show-paren-mode 1)
 (set-default-font "Inconsolata-16")
 
+;; start emacs with window maximized
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 ;; Set default window size
-(if (display-graphic-p)
-    (progn
-      (setq initial-frame-alist
-            '((width . 155) ; chars
-              (height . 45) ; lines
-              ))
-      (setq default-frame-alist
-            '((width . 150)
-              (height . 40)
-	      ))))
+;; (if (display-graphic-p)
+;;     (progn
+;;       (setq initial-frame-alist
+;;             '((width . 155) ; chars
+;;               (height . 45) ; lines
+;;               ))
+;;       (setq default-frame-alist
+;;             '((width . 150)
+;;               (height . 40)
+;; 	      ))))
 
 
 ;; Check if time is between 6 PM and 6 AM, aka night time
@@ -102,3 +105,5 @@
 
 ;; enable downcase command
 (put 'downcase-region 'disabled nil)
+
+(dired "~/prog/bobcat")
