@@ -15,6 +15,9 @@
 
 
 ;; Programming Config
+;; no magit coding comment
+(setq ruby-insert-encoding-magic-comment nil)
+
 ;; rbenv env setup
 (setq rbenv-home (concat (getenv "HOME") "/.rbenv"))
 (if (file-directory-p rbenv-home)
@@ -30,16 +33,7 @@
 (require 'robe)
 (add-hook 'ruby-mode-hook 'robe-mode)
 (setq inf-ruby-console-environment "development")
-(add-hook 'ruby-mode-hook 'inf-ruby-console-auto)
-
-;; support common ruby script file formats
-;; (add-to-list 'auto-mode-alist '("\\.rb\\'" . ruby-mode))
-;; (add-to-list 'auto-mode-alist '("Gemfile" . ruby-mode))
-;; (add-to-list 'auto-mode-alist '("Rakefile" . ruby-mode))
-;; (add-to-list 'auto-mode-alist '("\\.rake\\'" . ruby-mode))
-;; (add-to-list 'auto-mode-alist '("\\.rb\\'" . ruby-mode))
-;; (add-to-list 'auto-mode-alist '("\\.ru\\'" . ruby-mode))
-;; (add-to-list 'auto-mode-alist '("\\.jbuilder\\'" . ruby-mode))
+(add-hook 'ruby-mode-hook 'robe-start)
 
 
 ;; start an irb process
