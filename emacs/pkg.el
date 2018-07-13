@@ -1,9 +1,21 @@
-;; MELPA Stable
+;; MELPA
 (require 'package)
 (add-to-list 'package-archives
 	           '("melpa" . "http://melpa.milkbox.net/packages/"))
 (package-initialize)
 
+
+;; packages to install
+;;
+;; xah-fly-keys
+;; magit
+;; org
+;; find-file-in-repository
+;; smex
+;; robe
+;; web-mode
+;; yaml-mode
+;; restclient
 
 ;; xah fly keys (default layout is dvorak)
 (require 'xah-fly-keys)
@@ -36,7 +48,7 @@
 (add-hook 'ruby-mode-hook 'robe-start)
 
 
-;; start an irb process
+;; ruby code navigation
 (global-set-key (kbd "s-r r") 'inf-ruby)
 (global-set-key (kbd "s-r c") 'inf-ruby-console-auto)
 (global-set-key (kbd "<f6>") 'robe-jump)
