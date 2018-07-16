@@ -14,25 +14,25 @@
 (add-hook 'minibuffer-exit-hook #'my-minibuffer-exit-hook)
 
 ;; load custom themes
-(add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
+;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
 
 ;; Global config
-(setq make-backup-files nil) ; stop creating backup~ files
+(delete-selection-mode t)		; text selection can be deleted or replaced by typing
+(electric-pair-mode 1)			; auto insert matching paren
+(fset 'yes-or-no-p 'y-or-n-p)		; y or n is enough
+(global-auto-revert-mode t) ; auto refresh files
+(global-display-line-numbers-mode 1)	; dispaly line numbers everywhere
+(global-hl-line-mode 1)		     ; highlight current line where cursor is
+(global-visual-line-mode 1) ; 1 for on, 0 for off
+(modify-all-frames-parameters (list (cons 'cursor-type 'bar))) ; display cursor as a vertical bar
+(scroll-bar-mode -1)			; no scrool bar
 (setq auto-save-default nil) ; stop creating #autosave# files
 (setq column-number-mode t) ; display column number in the mode line
-(global-auto-revert-mode t) ; auto refresh files
-(setq-default tab-width 2)  ; default tab width is 2 spaces
-(setq-default indent-tabs-mode nil)	; indent by space
 (setq inhibit-startup-message t)	; no startup message
-(fset 'yes-or-no-p 'y-or-n-p)		; y or n is enough
-(delete-selection-mode t)		; text selection can be deleted or replaced by typing
-(scroll-bar-mode -1)			; no scrool bar
+(setq make-backup-files nil) ; stop creating backup~ files
+(setq-default indent-tabs-mode nil)	; indent by space
+(setq-default tab-width 2)  ; default tab width is 2 spaces
 (tool-bar-mode -1)			; no tool bar
-(modify-all-frames-parameters (list (cons 'cursor-type 'bar))) ; display cursor as a vertical bar
-(global-hl-line-mode 1)		     ; highlight current line where cursor is
-(electric-pair-mode 1)			; auto insert matching paren
-(global-display-line-numbers-mode 1)	; dispaly line numbers everywhere
-(global-visual-line-mode 1) ; 1 for on, 0 for off
 
 ;; show matching paren immediately
 (setq show-paren-delay 0)
@@ -96,4 +96,9 @@
 ;; enable downcase command
 (put 'downcase-region 'disabled nil)
 
-(dired "~/prog/bobcat")
+(setq user-home (getenv "HOME"))
+(setq start-dir (concat user-home "/prog"))
+(setq project-home (concat user-home "/prog/bobcat"))
+(if (file-directory-p project-home)
+    (progn (setq start-dir project-home)))
+(dired start-dir)
