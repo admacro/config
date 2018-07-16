@@ -32,6 +32,7 @@
 (global-hl-line-mode 1)		     ; highlight current line where cursor is
 (electric-pair-mode 1)			; auto insert matching paren
 (global-display-line-numbers-mode 1)	; dispaly line numbers everywhere
+(global-visual-line-mode 1) ; 1 for on, 0 for off
 
 ;; show matching paren immediately
 (setq show-paren-delay 0)
