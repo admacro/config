@@ -16,6 +16,7 @@
 ;; web-mode
 ;; yaml-mode
 ;; restclient
+;; Apib-mode (major mode for editing API blueprint file)
 
 ;; xah fly keys (default layout is dvorak)
 (require 'xah-fly-keys)
@@ -54,18 +55,25 @@
 (global-set-key (kbd "<f6>") 'robe-jump)
 (global-set-key (kbd "<f5>") 'pop-tag-mark)
 
+
 ;; Web Mode
-(require 'web-mode)
+(autoload 'web-mode "web-mode")
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode)) ; eRuby
 
 
 ;; YAML
-(require 'yaml-mode)
+(autoload 'yaml-mode "yaml-mode")
 (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))
 
 
 ;; Rest client
-(require 'restclient)
+(autoload 'restclient "restclient")
 (add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
 (add-to-list 'auto-mode-alist '("\\.rest\\'" . restclient-mode))
+
+
+;; Apib-mode (major mode for editing API blueprint file)
+(autoload 'apib-mode "apib-mode")
+(add-to-list 'auto-mode-alist '("\\.apib\\'" . apib-mode))
+(add-to-list 'auto-mode-alist '("\\.blueprint\\'" . apib-mode))
