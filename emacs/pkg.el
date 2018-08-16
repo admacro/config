@@ -15,8 +15,12 @@
 ;; robe
 ;; web-mode
 ;; yaml-mode
+;; json-mode
 ;; restclient
 ;; Apib-mode (major mode for editing API blueprint file)
+;; markdown-mode
+;; graphql-mode
+
 
 ;; xah fly keys (default layout is dvorak)
 (require 'xah-fly-keys)
@@ -30,6 +34,7 @@
 ;; Programming Config
 ;; no magit coding comment
 (setq ruby-insert-encoding-magic-comment nil)
+
 
 ;; rbenv env setup
 (setq rbenv-home (concat (getenv "HOME") "/.rbenv"))
@@ -75,5 +80,6 @@
 
 ;; Apib-mode (major mode for editing API blueprint file)
 (autoload 'apib-mode "apib-mode")
+(add-to-list 'auto-mode-alist '("\\.api\\'" . apib-mode))
 (add-to-list 'auto-mode-alist '("\\.apib\\'" . apib-mode))
 (add-to-list 'auto-mode-alist '("\\.blueprint\\'" . apib-mode))
