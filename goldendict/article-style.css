@@ -8,6 +8,15 @@ body {
     font-size: 18px;
 }
 
+.gddictname {
+    font-size: 16px;
+}
+
 .gdactivearticle .gddictname {
     font-size: 16px;
+    background-color: #fefdeb;
+    color: #36b;
+}
+.gddicticon {
+    display: none;
 }
