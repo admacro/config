@@ -38,7 +38,7 @@
 (setq show-paren-delay 0)
 (show-paren-mode 1)
 ;; (set-default-font "Inconsolata-17")
-(set-default-font "M+ 1M-16")
+(set-default-font "M+ 1M-18")
 
 ;; start emacs with window maximized
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -95,6 +95,23 @@
 
 ;; enable downcase command
 (put 'downcase-region 'disabled nil)
+
+;; Use variable width font faces in current buffer
+(defun writing-mode ()
+  "Set font to a variable width (proportional) fonts in current buffer"
+  (interactive)
+  (setq buffer-face-mode-face '(:family "Gabriele Light Ribbon FG" :height 188 :width regular))
+  (buffer-face-mode)
+  (global-display-line-numbers-mode 0)	; disable line numbers everywhere
+  (turn-on-auto-fill)
+  (load-theme 'leuven)
+  )
+
+;; auto wrap line in text mode (default maximum line width is 70)
+(add-hook 'text-mode-hook 'turn-on-auto-fill)
+
+;; set a key to toggle
+(global-set-key (kbd "<s-f7>") 'writing-mode)
 
 (setq user-home (getenv "HOME"))
 (setq start-dir (concat user-home "/prog"))

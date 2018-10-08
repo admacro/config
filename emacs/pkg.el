@@ -53,7 +53,6 @@
 (setq inf-ruby-console-environment "development")
 (add-hook 'ruby-mode-hook 'robe-start)
 
-
 ;; ruby code navigation
 (global-set-key (kbd "s-r r") 'inf-ruby)
 (global-set-key (kbd "s-r c") 'inf-ruby-console-auto)
