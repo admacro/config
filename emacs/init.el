@@ -1,4 +1,5 @@
 (load "~/prog/config/emacs/pkg.el")
+(load "~/prog/config/emacs/fun.el")
 
 ;;_UTF-8_as_default_encoding
 (set-language-environment "UTF-8")
@@ -38,32 +39,13 @@
 (setq show-paren-delay 0)
 (show-paren-mode 1)
 ;; (set-default-font "Inconsolata-17")
-(set-default-font "Input Mono Condensed-18")
+(set-default-font "Input Mono Condensed-16")
 
 ;; start emacs with window maximized
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-
-;; Check if time is between 6 PM and 6 AM, aka night time
-(defun nightp ()
-  (set 'hour-str 
-       (car (split-string
-	           (nth 3
-		              (split-string (current-time-string)))
-	           ":")))
-  (set 'hour (string-to-number hour-str))
-  (message hour-str)
-  (or (> hour 16) (< hour 6)))
-
-;; use dark theme for night and light theme for day
-(if (nightp)
-    (progn
-      (message "It's night. Loading dark theme")  
-      (load-theme 'deeper-blue))
-  (progn
-    (message "It's day. Loading light theme")  
-    (load-theme 'leuven)))
-
+;; How to make macOS titlebar same color as Emacs background
+(add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
 
 (progn
   ;; make buffer switch command do suggestions, also for find-file command
@@ -96,22 +78,8 @@
 ;; enable downcase command
 (put 'downcase-region 'disabled nil)
 
-;; Use variable width font faces in current buffer
-(defun writing-mode ()
-  "Set font to a variable width (proportional) fonts in current buffer"
-  (interactive)
-  (setq buffer-face-mode-face '(:family "Gabriele Light Ribbon FG" :height 188 :width regular))
-  (buffer-face-mode)
-  (global-display-line-numbers-mode 0)	; disable line numbers everywhere
-  (turn-on-auto-fill)
-  (load-theme 'leuven)
-  )
-
 ;; auto wrap line in text mode (default maximum line width is 70)
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
-
-;; set a key to toggle
-(global-set-key (kbd "<s-f7>") 'writing-mode)
 
 (setq user-home (getenv "HOME"))
 (setq start-dir (concat user-home "/prog"))
