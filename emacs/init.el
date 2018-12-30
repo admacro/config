@@ -38,8 +38,7 @@
 ;; show matching paren immediately
 (setq show-paren-delay 0)
 (show-paren-mode 1)
-;; (set-default-font "Inconsolata-17")
-(set-default-font "Input-16")
+(set-default-font "SF Mono-16")
 
 ;; start emacs with window maximized
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
