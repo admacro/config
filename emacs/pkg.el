@@ -82,3 +82,13 @@
 (add-to-list 'auto-mode-alist '("\\.api\\'" . apib-mode))
 (add-to-list 'auto-mode-alist '("\\.apib\\'" . apib-mode))
 (add-to-list 'auto-mode-alist '("\\.blueprint\\'" . apib-mode))
+
+
+;; Sh Mode
+(add-to-list 'auto-mode-alist '("\\Procfile.*\\'" . sh-mode)) ; forego/foreman procfile
+
+;; json mode
+(add-hook 'json-mode-hook
+          (lambda ()
+            (make-local-variable 'js-indent-level)
+            (setq js-indent-level 2)))
