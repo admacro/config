@@ -1,0 +1,19 @@
+:host-context(.platform-mac) .monospace,
+:host-context(.platform-mac) .source-code,
+.platform-mac .monospace,
+.platform-mac .source-code {
+	  font-size: 11px !important;
+	  font-family: SFMono-Regular, monospace !important;
+}
+
+.monospace,
+.source-code {
+	  font-size: 11px !important;
+	  font-family: SFMono-Regular, monospace !important;
+}
+
+::shadow .monospace,
+::shadow .source-code {
+	  font-size: 11px !important;
+    font-family: SFMono-Regular, monospace !important;
+}
