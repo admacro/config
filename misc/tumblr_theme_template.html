@@ -1,0 +1,2099 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+
+<html xmlns="http://www.w3.org/1999/xhtml" id="{block:indexpage}ind{/block:indexpage}{block:permalinkpage}per{/block:permalinkpage}" class="not-mobile {block:ifnotusecaption} hide-post-nav hide-caption {/block:ifnotusecaption} {select:Change Layout} {block:ifhidelinkborder}hide-link-border{/block:ifhidelinkborder} {block:SearchPage}this-is-tag{block:SearchPage} {block:NoSearchResults}no-results{/block:NoSearchResults} {block:ifhidecaptiononly}hide-caption{/block:ifhidecaptiononly} {select:Loading type} not-high-res {block:ifHideTopHeaderBackground}no-top-bg{/block:ifHideTopHeaderBackground} {block:ifautoscrolltolayoutonpermalink}auto-scroll{/block:ifautoscrolltolayoutonpermalink} {block:NoSearchResults}no-search-available{/block:NoSearchResults} no-tags {block:ifnotheader1image}header1-enabled{/block:ifnotheader1image} {block:ifheader1image}header1-enabled{/block:ifheader1image} {block:ifheader2image}header2-enabled{/block:ifheader2image} Normal {block:ifusehdimageonmobile}hd-image{/block:ifusehdimageonmobile} {block:iflandingpagemode}landing-page{/block:iflandingpagemode} {block:ifenablesocialiconsonmobile}social-mobile{/block:ifenablesocialiconsonmobile} persona {block:ifdisableimagelightbox}disable-lightbox{/block:ifdisableimagelightbox}  {block:ifmobileheaderimage}mobile-header{/block:ifmobileheaderimage} responsive-footer {block:ifusecubiceffect}post-cubig-effect{/block:ifusecubiceffect}" data-layout="{select:Change Layout}" data-post-padding="{select:Post Padding}" background-color="{color:body background color}" mobilewidth="390">
+
+  <head> 
+    <!--   
+           ==========================================================
+           
+           
+           Name : PERSONA (FREE)
+           AUTHOR : YONGJU / YONGJU.CO.KR 
+           PUBLISHER : THEMECLOSET
+           ALL RIGHTS RESERVED BY AUTHOR AND PUBLISHER
+           CURRENT VERSION : 1.3.0
+           COPYRIGHTED OPEN SOURCES ARE DECLARED BY STATEMENT
+           
+           
+           ==========================================================
+           
+           DO NOT ALTER STRUCTURE.CSS
+           
+           ==========================================================
+           
+           @2013-2014 THEMECLOSET / ALL RIGHTS RESERVED
+           CHECK README FILE TO LEARN MORE
+           FEEDBACK IS WELCOME / @ DYDWN600@NAVER.COMl
+           
+           jQuery Colorbox v1.4.14 - 2013-04-16
+           (c) 2013 Jack Moore - jacklmoore.com/colorbox
+           license: http://www.opensource.org/licenses/mit-license.php
+           
+           Infinite Scroll
+           + https://github.com/paulirish/infinite-scroll
+           + version 2.0b2.120519
+           + Copyright 2011/12 Paul Irish & Luke Shumard
+           + Licensed under the MIT license
+           + Documentation: http://infinite-scroll.com/
+           
+           jQuery Masonry v2.0.110825 & Imagesloaded.js
+           * A dynamic layout plugin for jQuery
+           * The flip-side of CSS Floats
+           * http://masonry.desandro.com
+           * Licensed under the MIT license.
+           * Copyright 2011 David DeSandro
+           
+           Font Credit : http://fontastic.me / Google fonts
+           * Font Awesome / MIT License
+           + Entypo / Creative License 3.0
+           + Steadsets / Free for personal and commercial projects
+           + Linetons / Free
+           * 80shades / Free
+           * Justverctor Free Icons / Free
+           + Open sans & Lato by goolge fonts / Free license
+           
+           Browser Selectr.js
+           * License :http://creativecommons.org/licenses/by/2.5/
+           * Original Author: Rafael Lima: http://rafael.adm.br
+           * Based on idea by 37signals
+           * http://37signals.com/svn/archives2/browser_selectors_in_css.php
+           
+           Html shiv.js
+           * Dual licensed under the MIT or GPL Version 2 licenses
+           * https://code.google.com/p/html5shiv/
+
+           jQuery Unveil
+           + A very lightweight jQuery plugin to lazy load images
+           + http://luis-almeida.github.com/unveil
+           + Licensed under the MIT license.
+           + Copyright 2013 LuÃ­s Almeida
+           + https://github.com/luis-almeida
+           
+           Css reset
+           * http://meyerweb.com/eric/tools/css/reset/ 
+           * v2.0 | 20110126 
+           * License: none (public domain)
+           
+           /*! Superslides - v0.6.2 - 2013-07-10
+           * https://github.com/nicinabox/superslides
+           * Copyright (c) 2013 Nic Aitch; Licensed MIT */
+
+           /*! VelocityJS.org (1.3.2). (C) 2014 Julian Shapiro. MIT @license: en.wikipedia.org/wiki/MIT_License */
+           /*! VelocityJS.org jQuery Shim (1.0.1). (C) 2014 The jQuery Foundation. MIT @license: en.wikipedia.org/wiki/MIT_License. */
+           ==========================================================
+      -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+      <title>
+        {Title}
+        {block:PermalinkPage}{block:PostSummary} — {PostSummary}{/block:PostSummary}{/block:PermalinkPage}
+      </title>
+      
+      <link rel="shortcut icon" href="{Favicon}" />
+      <link rel="icon" href="/img/favicon/72.png" type="image/x-icon">
+        <link rel="apple-touch-icon" sizes="60x60" href="{favicon}">
+          
+          <meta name="Keywords" content="{text:Blog Keywords}" /> 
+          <link rel="alternate" type="application/rss+xml" href="{RSS}
+                                                                 ">
+            {block:indexpage}
+            <meta property="og:title" content="{title}">{block:Description}
+              <meta name="description" content="{MetaDescription}" /> 
+              <meta name="og:description" content="{Description}" /> 
+              {/block:Description}
+              {/block:indexpage}
+              {block:PostSummary}
+              <meta property="og:title" content="{title} - {PostSummary}"/>
+              <meta name="description" content="{PostSummary}" />
+              {/block:PostSummary}
+              {block:permalinkpage}
+              {block:posts}
+              {block:photo}
+              <meta property="og:image" content="{PhotoURL-Highres}"/>
+              {/block:photo}
+              {/block:posts}
+              {/block:permalinkpage} 
+              {block:indexpage}
+              <meta property="og:image" content="{PortraitURL-128}"/>
+              {/block:indexpage}
+              <meta name="viewport" id="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1,width=390"/>
+              <style title="show-mobile-lightbox">
+                .this-mobile.mobile-version.portrait-mobile .hidden-body .show-mobile-lightbox,
+                .this-mobile.mobile-version.portrait-mobile .photoset-frame-content iframe,
+                .this-mobile.mobile-version.portrait-mobile body.hidden-body,
+                .this-mobile.mobile-version.portrait-mobile .post-container{width:390px !important}
+
+                .this-mobile.mobile-version.landscape-mobile .hidden-body .show-mobile-lightbox,
+                .this-mobile.mobile-version.landscape-mobile .photoset-frame-content iframe,
+                .this-mobile.mobile-version.landscape-mobile body.hidden-body,
+                .this-mobile.mobile-version.landscape-mobile .post-container{width:600px !important}
+
+                .landscape-mobile .top-header.animated{display:none !Important}
+              </style>
+              <meta name="image:Background Image" content="" />
+              <meta name="image:Logo" content="" />
+
+
+              <meta name="image:Header1" content="" />
+              <meta name="image:Header2" content="" />
+              <meta name="image:Header3" content="" />
+
+
+
+
+              <meta name="if:Use Caption" content="" />
+              <meta name="if:Hide Tags" content="" />
+              <meta name="if:Hide Caption Only" content="" />
+              <meta name="if:Hide Header Title" content="" />
+              <meta name="if:Hide Header Overlay" content="" />
+              <meta name="if:Hide Top Header Background" content="" />
+              <meta name="if:Auto Scroll To Layout On Permalink" content="1" />
+              <meta name="if:Use HD Image on Mobile" content="" />
+              <meta name="if:Disable Image Lightbox" content="" />
+              <meta name="if:Landing page mode" content="" />
+              <meta name="if:Enable Social Icons on Mobile" content="" />
+              <meta name="if:Use Cubic Effect" content="" />
+
+              <meta name="color:Link Color" content="#7b7b7b" />
+              <meta name="color:Post Content Color" content="#535353" />
+              <meta name="color:Post Title Color" content="#222222" />
+              <meta name="color:Footer Border Color" content="#efefef" />
+              <meta name="color:Footer Icon Color" content="#aeaeae" />
+              <meta name="color:Footer Icon Hover Color" content="#ea7474" />
+              <meta name="color:Footer Text Color" content="#222222" />
+              <meta name="color:Pagination Color" content="#222222" />
+              <meta name="color:Load more Color" content="#222222" />
+
+              <meta name="color:Top Header Background" content="#ffffff" />
+              <meta name="color:Header Background" content="#222222" />
+              <meta name="color:Header Description" content="#ffffff" />
+              <meta name="color:Header Links" content="#222222" />
+              <meta name="color:Header Icons" content="#ffffff" />
+              <meta name="color:Hidden Menu Background" content="#ffffff" />
+              <meta name="color:Hidden Menu Link" content="#222222" />
+
+              <meta name="color:Footer Background" content="#efefef" />
+              <meta name="color:Footer Icons" content="#aeaeae" />
+              <meta name="color:Footer Text" content="#222222" />
+
+
+
+              <meta name="font:Header Links Font" content="Arial" />
+              <meta name="font:Header Description Font" content="Arial" />
+              <meta name="font:Body Font" content="Arial" />
+              <meta name="font:Post Title Font" content="Arial" />
+              <meta name="font:Hidden Menu Link Font" content="Arial" />
+
+              <meta name="select:Loading Type" content="load-more" title="Load More Button"/>
+              <meta name="select:Loading Type" content="infinite" title="Infinite Scroll"/>
+              <meta name="select:Loading Type" content="paginate-it" title="Pagination"/>
+
+              <meta name="select:Post Padding" content="25" title="25px"/>
+              <meta name="select:Post Padding" content="0" title="0px"/>
+              <meta name="select:Post Padding" content="5" title="5px"/>
+              <meta name="select:Post Padding" content="10" title="10px"/>
+              <meta name="select:Post Padding" content="15" title="15px"/>
+              <meta name="select:Post Padding" content="35" title="35px"/>
+              <meta name="select:Post Padding" content="45" title="45px"/>
+
+              <meta name="select:Change Layout" content="fourpx" title="400px"/>
+              <meta name="select:Change Layout" content="two-fourpx" title="Two Columns 400px"/>
+              <meta name="select:Change Layout" content="three-fourpx" title="Three Columns 400px"/>
+              <meta name="select:Change Layout" content="four-fourpx" title="Four Columns 400px"/>
+              <meta name="select:Change Layout" content="five-fourpx" title="Five Columns 400px"/>
+              <meta name="select:Change Layout" content="twopx" title="250px"/>
+              <meta name="select:Change Layout" content="threepx" title="300px"/>
+              <meta name="select:Change Layout" content="onecolumn1200px" title="One Column 1200px"/>
+              <meta name="select:Change Layout" content="onecolumn800px" title="One Column 800px"/>
+
+              
+
+              <meta name="select:Title Size" content="24px" title="24px"/>
+              <meta name="select:Title Size" content="12px" title="12px"/>
+              <meta name="select:Title Size" content="14px" title="14px"/>
+              <meta name="select:Title Size" content="16px" title="16px"/>
+              <meta name="select:Title Size" content="18px" title="18px"/>
+              <meta name="select:Title Size" content="20px" title="20px"/>
+              <meta name="select:Title Size" content="22px" title="22px"/>
+              <meta name="select:Title Size" content="26px" title="26px"/>
+              <meta name="select:Title Size" content="28px" title="28px"/>
+              <meta name="select:Title Size" content="30px" title="30px"/>
+              <meta name="select:Title Size" content="32px" title="32px"/>
+              <meta name="select:Title Size" content="34px" title="34px"/>
+              <meta name="select:Title Size" content="36px" title="36px"/>
+              <meta name="select:Title Size" content="38px" title="38px"/>
+              <meta name="select:Title Size" content="41px" title="41px"/>
+              <meta name="select:Title Size" content="43px" title="43px"/>
+
+
+              <meta name="select:Description Size" content="18pt" title="18pt"/>
+              <meta name="select:Description Size" content="12pt" title="12pt"/>
+              <meta name="select:Description Size" content="15pt" title="15pt"/>
+              <meta name="select:Description Size" content="21pt" title="21pt"/>
+              <meta name="select:Description Size" content="24pt" title="24pt"/>
+              <meta name="select:Description Size" content="27pt" title="27pt"/>
+              <meta name="select:Description Size" content="30pt" title="30pt"/>
+              <meta name="select:Description Size" content="33pt" title="33pt"/>
+              <meta name="select:Description Size" content="36pt" title="36pt"/>
+              <meta name="select:Description Size" content="39pt" title="39pt"/>
+              <meta name="select:Description Size" content="42pt" title="42pt"/>
+              <meta name="select:Description Size" content="47pt" title="47pt"/>
+              <meta name="select:Description Size" content="52pt" title="52pt"/>
+              <meta name="select:Description Size" content="57pt" title="57pt"/>
+              <meta name="select:Description Size" content="62pt" title="62pt"/>
+
+
+              <meta name="text:Custom link 1 URL" content="" />
+              <meta name="text:Custom link 1 title" content="" />
+              <meta name="text:Custom link 2 URL" content="" />
+              <meta name="text:Custom link 2 title" content="" />
+              <meta name="text:Custom link 3 URL" content="" />
+              <meta name="text:Custom link 3 title" content="" />
+              <meta name="text:Custom link 4 URL" content="" />
+              <meta name="text:Custom link 4 title" content="" />
+              <meta name="text:Custom link 5 URL" content="" />
+              <meta name="text:Custom link 5 title" content="" />
+              <meta name="text:Custom link 6 URL" content="" />
+              <meta name="text:Custom link 6 title" content="" />
+              <meta name="text:Custom link 7 URL" content="" />
+              <meta name="text:Custom link 7 title" content="" />
+              <meta name="text:Custom link 8 URL" content="" />
+              <meta name="text:Custom link 8 title" content="" />
+
+              <meta name="text:Blog Keywords" content=""/>
+              <meta name="text:Google analytics Web Property ID" content=""/>
+              <meta name='text:Custom Javascript 1' content=''/>
+              <meta name='text:Custom Javascript 2' content=''/>
+              <meta name='text:Disqus Shortname' content=''/>
+
+
+              <meta name="text:Personal Site URL" content="" />
+              <meta name="text:Facebook URL" content="" />
+              <meta name="text:Twitter URL" content="" />
+              <meta name="text:Pinterest URL" content="" />
+              <meta name="text:Instagram Username" content="" />
+              <meta name="text:Shop URL" content="" />
+              <meta name="text:SoundCloud URL" content="" />
+              <!-- New Update -->
+              <meta name="text:Yelp URL" content="" />
+              <meta name="text:Apple App URL" content="" />
+              <meta name="text:Android App URL" content="" />
+              <meta name="text:Google Plus URL" content="" />
+              <meta name="text:Vimeo URL" content="" />
+              <meta name="text:Youtube URL" content="" />
+              <!-- New Update -->
+
+              <meta name="text:Github URL" content="" />
+              <meta name="text:500px URL" content="" />
+              <meta name="text:Medium URL" content="" />
+              <meta name="text:Dribble URL" content="" />
+              <meta name="text:Behence URL" content="" />
+              <meta name="text:Flickr URL" content="" />
+              <meta name="text:Picasa URL" content="" />
+              <meta name="text:Reddit URL" content="" />
+              <meta name="text:Blogger URL" content="" />
+              <meta name="text:Diigo URL" content="" />
+              <meta name="text:Spotify URL" content="" />
+              <meta name="text:Hi5 URL" content="" />
+              <meta name="text:Snapchat Username" content="" />
+
+
+              <script src="https://static.tumblr.com/eeiisdz/abuossof3/all.js"></script>
+              <script src="https://static.tumblr.com/bnjocu5/y0Got1j9i/mobile-detect.js">
+              </script>
+
+              <!--[if IE 7]>
+                  <script>
+                    var url="http://browsehappy.com";$(location).attr('href',url);
+                  </script>
+                  <![endif]-->
+                   <!--[if IE 8]>
+                   <script>
+                     var url="http://browsehappy.com";$(location).attr('href',url);
+                   </script>
+                   <![endif]-->
+                    
+                    <link href="https://static.tumblr.com/eeiisdz/oYMosb3f4/bulma.css" rel="stylesheet" type="text/css"/>
+
+                    <script src="https://static.tumblr.com/bnjocu5/78Kom1c32/promote.js">
+                      
+                    </script>
+                    <link href="https://static.tumblr.com/bnjocu5/Xfnot8fxt/promo.css" rel="stylesheet" type="text/css"/>
+                    <link href="https://static.tumblr.com/bnjocu5/f59ot8evy/body.css" rel="stylesheet" type="text/css"/>
+
+                    <link rel="stylesheet" type="text/css" href="https://assets.tumblr.com/fonts/avalon/stylesheet.css?v=1"/>
+
+                    <script src="https://static.tumblr.com/bnjocu5/KAXote84k/b_w.js">
+                    </script>
+                    <script src="https://static.tumblr.com/bnjocu5/92bot8ex6/header-j.js">
+                    </script>
+                    
+                    <script src="https://static.tumblr.com/bnjocu5/WEMot8ftv/layout.js"></script>
+                    {text:custom javascript 1}
+                    {text:custom javascript 2}
+                    {block:IfGoogleAnalyticsWebPropertyID}
+                    <script>
+                      (function(i, s, o, g, r, a, m) {
+                          i['GoogleAnalyticsObject'] = r;
+                          i[r] = i[r] || function() {
+                              (i[r].q = i[r].q || []).push(arguments)
+                          }, i[r].l = 1 * new Date();
+                          a = s.createElement(o),
+                          m = s.getElementsByTagName(o)[0];
+                          a.async = 1;
+                          a.src = g;
+                          m.parentNode.insertBefore(a, m)
+                      })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+                      ga('create', '{text:Google Analytics ID}', auto);
+                      ga('send', 'pageview');
+                    </script>
+                    {/block:IfGoogleAnalyticsWebPropertyID}
+                    
+            </script>
+            <script type="text/javascript">
+              WebFontConfig = {
+                  google: { families: ['Cormorant+Garamond:400,700:latin','Lato:100,300,400,700:latin' ] }
+              };
+              (function() {
+                  var wf = document.createElement('script');
+                  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+                  wf.type = 'text/javascript';
+                  wf.async = 'true';
+                  var s = document.getElementsByTagName('script')[0];
+                  s.parentNode.insertBefore(wf, s);
+	            })(); </script>
+
+
+            <style>
+              .top-header{text-align:center}
+              body{background-image:url('{image:background image}');background-size:cover;background-position:center;}
+              html,body{background-color:{BackgroundColor};min-height:100%;}
+              .hide-image #header-overlay{display:none}
+              /** layout options **/
+              #ind.not-mobile:not(.two-columns):not(.three-columns):not(.four-columns):not(.five-columns):not(.six-columns):not(.this-is-tag) .post-container{margin:{select:Post Padding}px;}
+              #ind.this-is-tag .post-container{margin-top:20px;margin-bottom:20px;}
+              
+              
+              #ind.not-mobile.two-columns .post-container,
+              #ind.not-mobile.three-columns .post-container,
+              #ind.not-mobile.four-columns .post-container,
+              #ind.not-mobile.five-columns .post-container,
+              #ind.not-mobile.six-columns .post-container{margin:calc({select:Post Padding}px / 2)}
+              
+              
+              {customCSS}
+              .post-container.text-based .post, .post-container:not(.text-based) .post .caption,.perma-post-notes{font-family:{font:Body Font}, 'Arial'}
+              a{color:{color:Link Color};}
+
+
+              #ind.not-mobile.two-fourpx .max-width-fix{width:calc(800px + {select:post padding}px * 4);}
+              #ind.not-mobile.three-fourpx .max-width-fix{width:calc(1200px + {select:post padding}px * 6);}
+              #ind.not-mobile.four-fourpx .max-width-fix{width:calc(1600px + {select:post padding}px * 8);}
+              #ind.not-mobile.five-fourpx .max-width-fix{width:calc(2000px + {select:post padding}px * 10);}
+
+              #ind.not-mobile.two-threepx .max-width-fix{width:calc(600px + {select:post padding}px * 4);}
+              #ind.not-mobile.three-threepx .max-width-fix{width:calc(900px + {select:post padding}px * 6);}
+              #ind.not-mobile.four-threepx .max-width-fix{width:calc(1200px + {select:post padding}px * 8);}
+              #ind.not-mobile.five-threepx .max-width-fix{width:calc(1500px + {select:post padding}px * 10);}
+              #ind.not-mobile.six-threepx .max-width-fix{width:calc(1800px + {select:post padding}px * 12);}
+
+
+              #ind.not-mobile.two-twopx .max-width-fix{width:calc(500px + {select:post padding}px * 4);}
+              #ind.not-mobile.three-twopx .max-width-fix{width:calc(750px + {select:post padding}px * 6);}
+              #ind.not-mobile.four-twopx .max-width-fix{width:calc(1000px + {select:post padding}px * 8);}
+              #ind.not-mobile.five-twopx .max-width-fix{width:calc(1250px + {select:post padding}px * 10);}
+              #ind.not-mobile.six-twopx .max-width-fix{width:calc(1500px + {select:post padding}px * 12);}
+              #ind.not-mobile.seven-twopx .max-width-fix{width:calc(1750px + {select:post padding}px * 14);}
+
+
+              #ind.not-mobile.two-fivepx .max-width-fix{width:calc(1000px + {select:post padding}px * 4);}
+              #ind.not-mobile.three-fivepx .max-width-fix{width:calc(1500px + {select:post padding}px * 6);}
+
+
+              #ind.not-mobile.two-sixxpx .max-width-fix{width:calc(1200px + {select:post padding}px * 4);}
+              #ind.not-mobile.three-sixxpx .max-width-fix{width:calc(1800px + {select:post padding}px * 6);}
+
+
+              #ind.not-mobile.two-sevenpx .max-width-fix{width:calc(1400px + {select:post padding}px * 4);}
+              #ind.not-mobile.three-sevenpx .max-width-fix{width:calc(2100px + {select:post padding}px * 6);}
+              /** layout optiosn **/
+
+
+              /** sets post background color **/
+              #posts .post, #posts .caption,.reblogged.index,.permalink-content li,.post_nav,.tags,.video-player,.player{background-color:#fff}
+              .lightbox-plugin .post_nav,.lightbox-plugin .reblogged{background-color:#fff}
+              /** sets post background color **/
+
+
+
+              /** page navi color **/
+              
+
+              .load-more-container,.load-more-scroll-down{color:{color:Load More Color}}
+              .pagination a:not(.is-current){color:{color:Pagination Color}}
+              .pagination .is-current{background-color:{color:Pagination Color};border:1px solid {color:Pagination Color};
+                                     }
+              .pagination li a{border-bottom:0px;}
+              .pagination .is-current a{color:#fff;border-bottom:0px;}
+              .load-more-container{font-family:baskervile;}
+              /** page navi color **/
+
+
+              /** footer **/
+
+              #footer{border-top:1px solid {color:Footer Border Color};background-color:transparent !Important;}
+              #footer .center a{color:{color:Footer Icon Color}}
+              #footer .center a:hover{color:{color:Footer Icon Hover Color}}
+              #footer a, #footer,#credit,#credit,#copyright-content{color:{color:Footer Text Color};font-family:Avalon;}
+              /** footer **/
+              
+              
+              /** text **/
+              .post.link .link,.post.text h3 a,.post.quote .source, .post.chat h3 a{color:{color:Post Title Color};font-family:{font:Post Title Font};} 
+              
+              .post-container.text-based .post, .post-container:not(.text-based) .post .caption{color:{color:post content color};}
+              /** Posts **/
+              a,.tags li a{border-bottom:1px solid {color:Link Border Color}}
+              .tags li a{color:{color:Link Color}}
+	            .perma-post-notes .notes{border-top:0px !Important}
+              .chat .label{color:{color:post content color}}   
+
+              
+              {block:ifnothideheaderoverlay}
+              #header-overlay{opacity:0.7} 
+              {/block:ifnothideheaderoverlay}
+              .header{background-color:{color:Header Background}}
+              .top-header a{color:{TitleColor};font-family:{TitleFont};font-weight:{TitleFontWeight};}
+              
+              #left-header-menu a, #right-header-menu a{color:{color:Header Links};font-family:{font:Header Links Font};}
+              .menu-trigger{color:{color:Header Title}}
+              .header-description-content{color:{color:Header Description};font-family:{font:Header Description Font}}
+              .description-socials a,.header-bottom-socials a{color:{color:Header Icons};}
+              .description-socials a{font-size:12pt;}
+              .description-socials{margin-top:5px}
+              .hidden-menu{background-color:{color:Hidden Menu Background}}
+              .link-element a{color:{color:Hidden Menu Link};font-family:{font:Hidden Menu Link Font};}
+
+              .hidden-menu .close-hidden-menu{color:{color:Hidden Menu Link}}
+              .top-header{background-color:{color:Top Header Background}}
+              .no-top-bg .top-header{background-color:transparent}
+              .no-top-bg .top-header:not(.animated) .top-title a,
+              .no-top-bg .top-header:not(.animated) #right-header-menu a,
+              .no-top-bg .top-header:not(.animated) #left-header-menu a,
+              .no-top-bg .top-header:not(.animated) .menu-trigger{color:{color:Header Description}}
+              .top-header.animated{background-color:{color:Top Header Background}}
+              #ind.not-mobile #content-per{margin-top:{select:post padding}px}
+              .footer-socials a{color:{color:Footer Icons};}
+              .top-title{font-size:{select:Title Size}}
+              .header-description p#description{font-size:{select:Description Size};line-height:160% !Important}
+              .this-mobile.mobile-version .header-description p#description{font-size:23pt}
+
+
+              .this-mobile .search-right{display:none !Important}
+              .mobile-version .header-description-content{font-size:25pt;letter-spacing:normal;}
+              .header-description-content img{max-width:100%}
+              /** tag box options **/
+
+              .persona-tags{font-family:{font:Tag Box Link Font};}
+              .persona-tags a{color:{color:Tag Box Link}}
+              .persona-tags span:hover a{color:{color:Tag Box Background}}
+              .persona-tags span{background-color:{color:Tag Box Background};
+                                 border-radius:18px;;border:1px solid {color:Tag Box Border};}
+              .persona-tags span:hover{background-color:{color:Tag Box Link}}
+              .persona-tags span.tags-all{background-color:{color:Tag Box Link};}
+              .persona-tags span.tags-all a{color:{color:Tag Box Background};}
+              
+              
+              /** tag box options **/
+              /* fixes the title in right order */
+              {block:ifsearchbuttonontop}
+              
+              .search-right{top:120px}
+              {/block:ifsearchbuttonontop}
+              .tag-search input{background-color:#ededed;;}
+              
+              .tag-search button{color:#222222}
+              #per.this-is-page .post-background .post.text{background-color:{color:Custom Page Background} !Important}
+              #per.this-is-page .post.text p{color:{color:Custom Page Text};font-family:{font:custom page text};}
+              #per.this-is-page .post.text h3,#per.this-is-page .post.text h3 a{color:{color:Custom Page Title} ;font-family:{font:custom page title};}
+
+              nav{display:inline-block}
+              /** disables lightbox **/
+              .disable-lightbox .light-tri{display: none !Important}
+              /** disables lightbox **/
+              /** fixes extra left when menu overflow **/
+              .overflow-menu #top-header-content{left:0px !Important}
+              /** fixes extra left when menu overflow **/
+              .top-header.align-center h1{display:none}
+              .first-image-only,.first-image-only img{display:block;margin-bottom:-3px}
+              .first-image-only img:not(:first-child){display:none;}
+
+              .top-header{background-color:{color:Top Header Background}}
+              html.no-tags.not-mobile #posts{margin-top:{select:post padding}px}
+              html:not(.no-tags).not-mobile #posts{margin-top:-{select:post padding}px}
+              .this-mobile.mobile-version .photoset-frame-content,.this-mobile.mobile-version .video-content{padding:8px;padding-bottom:10px;border-top:1px solid #efefef;}
+              .permaphotoset.photoset-frame-content{display:block;}
+              #header-wrapper{display:inline-block}  
+              ul.tags{border-bottom:0px !Important}
+
+              .hide-post-nav .post-container.photo .post_nav{border-top:0px !Important}
+              .tmblr-iframe{z-index:9999999999 !Important;}
+              #social_icons{margin-top:20px;}
+              #per.this-mobile.mobile-version .max-width-fix{
+                  margin-top: 8px;} 
+
+              .post.text > figure:first-child{margin-bottom:0px !Important;}
+            </style>
+
+
+
+
+
+            <header class="header">
+              <div class="top-header {block:ifhideheadertitle}align-center{/block:ifhideheadertitle}">
+                <div class="menu-trigger" data-icon="o"></div>
+                
+                
+                <div id="top-header-content">
+                  
+                  <div id="header-wrapper">
+                    <!-- left menu -->
+                    <ul id="left-header-menu"> 
+                    </ul>
+                    
+                    <!-- left menu -->
+                    
+                    <!-- top title -->
+                    <h1 class="top-title no-style">
+                      <a href="/">
+                        {block:iflogoimage}<img src="{image:logo}" alt="{Title}">{/block:iflogoimage}
+                          {block:ifnotlogoimage}{title}{/block:ifnotlogoimage}
+                        </a>
+                      </h1>
+                      <!-- top title -->
+                      
+                      
+                      <!-- Appending right menu -->
+                      <nav>
+                        <ul id="right-header-menu"> 
+                          {block:ifCustomlink1title}
+                          <li>
+                            <a href="{text:Custom link 1 URL}" {target}>
+                              {text:Custom link 1 title}
+                            </a>
+                          </li>
+                          {/block:ifCustomlink1title}
+                          {block:ifCustomlink2title}
+                          <li>
+                            <a href="{text:Custom link 2 URL}" {target}>
+                              {text:Custom link 2 title}
+                            </a>
+                          </li>
+                          {/block:ifCustomlink2title}
+                          {block:ifCustomlink3title}
+                          <li>
+                            <a href="{text:Custom link 3 URL}" {target}>
+                              {text:Custom link 3 title}
+                            </a>
+                          </li>
+                          {/block:ifCustomlink3title}
+                          {block:ifCustomlink4title}
+                          <li>
+                            <a href="{text:Custom link 4 URL}" {target}>
+                              {text:Custom link 4 title}
+                            </a>
+                          </li>
+                          {/block:ifCustomlink4title}
+                          
+                          {block:ifCustomlink5title}
+                          <li>
+                            <a href="{text:Custom link 5 URL}" {target}>
+                              {text:Custom link 5 title}
+                            </a>
+                          </li>
+                          {/block:ifCustomlink5title}
+                          
+                          {block:ifCustomlink6title}
+                          <li>
+                            <a href="{text:Custom link 6 URL}" {target}>
+                              {text:Custom link 6 title}
+                            </a>
+                          </li>
+                          {/block:ifCustomlink6title}
+                          
+                          {block:ifCustomlink7title}
+                          <li>
+                            <a href="{text:Custom link 7 URL}" {target}>
+                              {text:Custom link 7 title}
+                            </a>
+                          </li>
+                          {/block:ifCustomlink7title}
+                          
+                          {block:ifCustomlink8title}
+                          <li>
+                            <a href="{text:Custom link 8 URL}" {target}>
+                              {text:Custom link 8 title}
+                            </a> 
+                          </li>
+                          {/block:ifCustomlink8title}
+                          {block:HasPages}
+                          {block:Pages}
+                          <li class="page-trigger">
+                            <a href="{URL}" {target}>
+                              {Label}
+                            </a>
+                          </li>
+                          {/block:Pages} {/block:HasPages}
+                          
+                          {block:SubmissionsEnabled}
+                          <li>
+                            <a class="submit-trigger">{SubmitLabel}</a>
+                          </li>
+						              {/block:SubmissionsEnabled}
+						              
+                          {block:AskEnabled}
+                          <li>
+                            <a class='ask-trigger'>
+                              {AskLabel}
+                            </a>
+                          </li>
+						              {/block:AskEnabled}
+                        </ul>
+                      </nav>
+                    </div>
+                    <!-- Appending right menu -->
+                    
+                  </div>
+                  
+                  <form class="mobile-header-search">
+                    <div class="mobile-header-search-input-icon" data-icon="c"></div>
+                    <input id="header-search" type="text" name="q" value="{SearchQuery}"/>
+                    <button data-icon="c" value="Search" style="display:none"></button>
+                  </form>
+
+                </div>
+                
+                
+                <div class="header-description">
+                  <div class="header-description-content">
+                    <p id="description">{description}</p>
+                    <div class="description-socials">{block:ifpersonalsiteurl}<a href="{text:personal site url}" {target}> <span data-icon=""> </span> </a> {/block:ifpersonalsiteurl} {block:iffacebookurl} <a href="{text:facebook url}" {target}> <span data-icon="i"> </span> </a> {/block:iffacebookurl} {block:iftwitterurl} <a href="{text:twitter url}" class="twitter-click"> <span data-icon="d"> </span> </a> {/block:iftwitterurl} {block:ifpinteresturl} <a href="{text:pinterest url}" class="pinterest-click" {target}> <span data-icon="g"> </span> </a> {/block:ifpinteresturl} {block:ifinstagramUsername} <a href="https://instagram.com/{text:instagram Username}" class="instagram-click" {target}> <span data-icon="e"> </span> </a> {/block:ifinstagramUsername} {block:ifshopurl} <a href="{text:shop url}" {target}> <span data-icon="f"> </span> </a> {/block:ifshopurl} {block:ifsoundcloudurl} <a href="{text:soundcloud url}" {target}> <span data-icon="s"> </span> </a> {/block:ifsoundcloudurl} {block:ifappleappurl} <a href="{text:apple app url}" {target}> <span data-icon="L"> </span> </a> {/block:ifappleappurl} {block:ifandroidappurl} <a href="{text:android app url}" {target}> <span data-icon="M"> </span> </a> {/block:ifandroidappurl} {block:ifgoogleplusurl} <a href="{text:google plus url}" {target}> <span data-icon="6"> </span> </a> {/block:ifgoogleplusurl} {block:ifvimeourl} <a href="{text:vimeo url}" {target}> <span data-icon="7"> </span> </a> {/block:ifvimeourl} {block:ifyoutubeurl} <a href="{text:youtube url}" {target}> <span data-icon="P"> </span> </a> {/block:ifyoutubeurl} {block:ifYelpurl} <a href="{text:Yelp url}" {target}> <span data-icon="9"> </span> </a> {/block:ifYelpurl} {block:ifFlickrURL} <a href="{text:Flickr URL}" {target}> <span data-icon="1"> </span> </a> {/block:ifFlickrURL} {block:ifusearchivebutton} <a href="/archive" {target}> <span data-icon="k"> </span> </a> {/block:ifusearchivebutton} {block:AskEnabled} <a class='ask-trigger'> <span data-icon="'"> </span></a> {/block:AskEnabled} {block:SubmissionsEnabled} <a class='submit-trigger'> <span data-icon="{"> </span></a> {/block:SubmissionsEnabled} {block:ifgithuburl} <a href="{text:Github URL}" {target}> <span data-icon="/"> </span> </a> {/block:ifgithuburl} {block:if500pxurl} <a href="{text:500px URL}" {target}> <span data-icon="0"> </span> </a> {/block:if500pxurl} {block:ifmediumurl} <a href="{text:Medium URL}" {target}> <span data-icon="x"> </span> </a> {/block:ifmediumurl} {block:ifdribbleurl} <a href="{text:Dribble URL}" {target}> <span data-icon="y"> </span> </a> {/block:ifdribbleurl} {block:ifbehenceurl} <a href="{text:Behence URL}" {target}> <span data-icon=""> </span> </a> {/block:ifbehenceurl} {block:ifpicasaurl} <a href="{text:Picasa URL}" {target}> <span data-icon=""> </span> </a> {/block:ifpicasaurl} {block:ifredditurl} <a href="{text:Reddit URL}" {target}> <span data-icon=""> </span> </a> {/block:ifredditurl} {block:ifbloggerurl} <a href="{text:Blogger URL}" {target}> <span data-icon=""> </span> </a> {/block:ifbloggerurl} {block:ifdiigourl} <a href="{text:Diigo URL}" {target}> <span data-icon=""> </span> </a> {/block:ifdiigourl} {block:ifspotifyurl} <a href="{text:Spotify URL}" {target}> <span data-icon=""> </span> </a> {/block:ifspotifyurl} {block:ifhi5url} <a href="{text:Hi5 URL}" {target}> <span data-icon=""> </span> </a> {/block:ifhi5url} {block:ifSnapchatUsername} <a href="https://snapchat.com/add/{text:Snapchat Username}" {target}> <span data-icon=""> </span> </a> {/block:ifSnapchatUsername} {block:ifEmailAddress} <a href="mailto:{text:Email Address}?subject=Hello!" {target}> <span data-icon="'"> </span> </a> {/block:ifEmailAddress}
+                    </div>
+                  </div>
+                </div>
+                
+                
+                
+                <ul class="header-bottom-socials">
+                  {block:ifpersonalsiteurl}
+                  <li>
+                    <a href="{text:personal site url}" {target}>
+                      <span data-icon="">
+                        My website
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifpersonalsiteurl}
+                  {block:iffacebookurl}
+                  <li>
+                    <a href="{text:facebook url}" {target}>
+                      <span data-icon="i">
+                        Facebook
+                      </span>
+                    </a> 
+                  </li>
+                  {/block:iffacebookurl}
+                  {block:iftwitterurl}
+                  <li>
+                    <a href="{text:twitter url}" class="twitter-click">
+                      <span data-icon="d">
+                        Twitter
+                      </span> 
+                    </a>
+                  </li>
+                  {/block:iftwitterurl}
+                  {block:ifpinteresturl}
+                  <li>
+                    <a href="{text:pinterest url}" class="pinterest-click" {target}>
+                      <span data-icon="g">
+                        Pinterest
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifpinteresturl}
+                  {block:ifinstagramUsername}
+                  <li>
+                    <a href="https://instagram.com/{text:instagram Username}" class="instagram-click" {target}> 
+                      <span data-icon="e">
+                        Instagram
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifinstagramUsername}
+                  {block:ifshopurl}
+                  <li>
+                    <a href="{text:shop url}" {target}>
+                      <span data-icon="f">
+                        Store
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifshopurl}
+                  {block:ifsoundcloudurl}
+                  <li>
+                    <a href="{text:soundcloud url}" {target}>
+                      <span data-icon="s">
+                        SoundCloud
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifsoundcloudurl}
+                  
+                  
+                  {block:ifappleappurl}
+                  <li>
+                    <a href="{text:apple app url}" {target}>
+                      <span data-icon="L">
+                        App store
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifappleappurl} 
+                  {block:ifandroidappurl}
+                  <li>
+                    <a href="{text:android app url}" {target}>
+                      <span data-icon="M">
+                        Play store
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifandroidappurl}
+                  
+                  {block:ifgoogleplusurl}
+                  <li>
+                    <a href="{text:google plus url}" {target}>
+                      <span data-icon="6">
+                        Google Plus
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifgoogleplusurl}
+                  
+                  {block:ifvimeourl}
+                  <li>
+                    <a href="{text:vimeo url}" {target}>
+                      <span data-icon="7">
+                        Vimeo
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifvimeourl}
+                  
+                  {block:ifyoutubeurl}
+                  <li>
+                    <a href="{text:youtube url}" {target}>
+                      <span data-icon="P">
+                        Youtube
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifyoutubeurl}
+                  
+                  {block:ifYelpurl}
+                  <li>
+                    <a href="{text:Yelp url}" {target}>
+                      <span data-icon="9">
+                        Yelp
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifYelpurl}
+                  
+                  {block:ifFlickrURL}
+                  <li>
+                    <a href="{text:Flickr URL}" {target}>
+                      <span data-icon="1">
+                        Flickr
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifFlickrURL}
+                  
+                  {block:ifusearchivebutton}
+                  <li>
+                    <a href="/archive" {target}>
+                      <span data-icon="k">
+                        Archive
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifusearchivebutton}
+		              
+		              {block:ifGithuburl}
+                  <li>
+                    <a href="{text:Github URL}" {target}>
+                      <span data-icon="/">
+                        Github
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifGithuburl}
+                  
+                  {block:if500pxurl}
+                  <li>
+                    <a href="{text:500px URL}" {target}>
+                      <span data-icon="0">
+                        500px
+                      </span>
+                    </a>
+                  </li>
+                  {/block:if500pxurl}
+                  
+                  {block:ifmediumurl}
+                  <li>
+                    <a href="{text:Medium URL}" {target}>
+                      <span data-icon="x">
+                        Medium
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifmediumurl}
+                  
+                  {block:ifdribbleurl}
+                  <li>
+                    <a href="{text:Dribble URL}" {target}>
+                      <span data-icon="y">
+                        Dribble
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifdribbleurl}
+                  {block:ifbehenceurl}
+                  <li>
+                    <a href="{text:Behence URL}" {target}>
+                      <span data-icon="">
+                        Behence
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifbehenceurl}
+	                
+                  {block:ifpicasaurl}
+                  <li>
+                    <a href="{text:Picasa URL}" {target}>
+                      <span data-icon="">
+                        Picasa
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifpicasaurl}
+                  
+                  {block:ifredditurl}
+                  <li>
+                    <a href="{text:Reddit URL}" {target}>
+                      <span data-icon="">
+                        Reddit
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifredditurl}
+                  
+                  {block:ifbloggerurl}
+                  <li>
+                    <a href="{text:Blogger URL}" {target}>
+                      <span data-icon="">
+                        Blogger
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifbloggerurl}
+                  
+                  {block:ifdiigourl}
+                  <li>
+                    <a href="{text:Diigo URL}" {target}>
+                      <span data-icon="">
+                        Diig
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifdiigourl}
+                  
+                  {block:ifspotifyurl}
+                  <li>
+                    <a href="{text:Spotify URL}" {target}>
+                      <span data-icon="">
+                        Spotify
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifspotifyurl}
+                  
+                  {block:ifhi5url}
+                  <li>
+                    <a href="{text:Hi5 URL}" {target}>
+                      <span data-icon="">
+                        Hi5
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifhi5url}
+                  
+                  
+                  {block:ifEmailAddress}
+                  <li>
+                    <a href="mailto:{text:Email Address}" {target}>
+                      <span data-icon="'">
+                        Email us
+                        
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifEmailAddress}
+                  
+                  {block:ifLinkedInURL} 
+                  <li>
+                    <a href="{text:LinkedIn URL}" {target}>
+                      <span data-icon="w">
+                        LinkedIn
+                      </span>
+                    </a>
+                  </li>
+                  {/block:ifLinkedInURL}
+                </ul>
+                
+                <div id="header-overlay" 
+                     {block:ifheader1image}header-image='{image:Header1}'{/block:ifheader1image}
+                     {block:ifnotheader1image}header-image=''{/block:ifnotheader1image}>
+
+                </div>
+                
+                
+                
+                <div id="overlay-content">
+                  {block:ifheader2image}
+		              <img src="{Image:Header2}">
+                    {/block:ifheader2image}
+	                  
+                    {block:ifheader3image}
+		                <img src="{Image:Header3}">
+                      {/block:ifheader3image}
+                      {block:ifheader1image}
+		                  <img src="{Image:Header1}">
+                        {/block:ifheader1image}
+                        
+                        {block:ifnotheader1image}
+                        
+		                    <img title="Image by unsplash" index="1" src="https://static.tumblr.com/bnjocu5/i03ot8edy/felix-russell-saw-172492.jpg">
+		                      
+		                      <img title="Image by unsplash" index="1" src="https://static.tumblr.com/bb7bb3ade74dfb0f0ea0b30acc37a9e2/bnjocu5/uYIot8gb3/tumblr_static_7sulqwhhkvks40s848w880ocs.jpg">
+		                        
+		                        <img title="Image by unsplash" index="1" src="https://static.tumblr.com/bnjocu5/tofote327/n1.jpg">
+		                          
+		                          <img title="Image by unsplash" index="1" src="https://static.tumblr.com/bnjocu5/diVote32b/n2.jpg">
+		                            
+		                            <img title="Image by unsplash" index="1" src="https://static.tumblr.com/bnjocu5/Um5ote32c/n3.jpg">
+		                              
+		                              <img title="Image by unsplash" index="1" src="https://static.tumblr.com/bnjocu5/xa1ote32e/n4.jpg">
+		                                
+		                                <img title="Image by unsplash" index="1" src="https://static.tumblr.com/bnjocu5/9oNote32g/n5.jpg">
+		                                  
+		                                  <img title="Image by unsplash" index="1" src="https://static.tumblr.com/bnjocu5/xdzote32h/n6.jpg">
+		                                    
+		                                    <img title="Image by unsplash" index="1" src="https://static.tumblr.com/bnjocu5/uYqote32j/n7.jpg">
+		                                      
+		                                      <img title="Image by unsplash" index="1" src="https://static.tumblr.com/bnjocu5/FoYote32l/n8.jpg">
+		                                        
+		                                        <img title="Image by unsplash" index="1" src="https://static.tumblr.com/bnjocu5/5Jsote32o/n9.jpg">
+		                                          
+		                                          <img title="Image by unsplash" index="1" src="https://static.tumblr.com/bnjocu5/fRYote32s/n10.jpg">
+		                                            
+		                                            <img title="Image by unsplash" index="1" src="https://static.tumblr.com/bnjocu5/aCfote32w/n11.jpg">
+		                                              
+		                                              
+		                                              <img title="Image by
+                                                              unsplash"
+                                                       index="1"
+                                                       src="https://static.tumblr.com/bnjocu5/i03ot8edy/felix-russell-saw-172492.jpg">
+                                                    {/block:ifnotheader1image}
+                                                    
+                                                  </div>
+
+
+                                                </div>
+
+                                              </header>
+
+
+                                            </head>
+                                            <body>
+                                              
+                                              <div class="promotion-bar">
+                                                <div class="promotion-bar-text">
+                                                  Try Persona Pro</div> <span class="promotion-bar-close">X</span>
+                                              </div>
+
+                                              <main class="max-width-fix">
+	                                              
+	                                              
+                                                <div id="posts">
+                                                  {block:Posts}
+                                                  
+                                                  
+                                                  
+                                                  <div class="post-container not-animated {block:chat}chat text-based{/block:chat} {block:quote}quote text-based{/block:quote} {block:text}text text-based not-reblog{block:RebloggedFrom}Reblogged{/block:RebloggedFrom}{/block:text} {block:photoset}photoset{/block:photoset} {block:audio}audio{/block:audio} {block:photo}photo {block:tags}has-tag{/block:tags}{/block:photo} {block:video}video{/block:video} {block:link}link text-based{/block:link} {block:Answer}answer text-based{/block:Answer}" id="{postID}">
+                                                    
+                                                    
+                                                    
+                                                    <ol id="post_ul">
+                                                      
+                                                      
+                                                      {block:permalinkpage}
+                                                      <!-- audio play button -->
+                                                      {block:Audio}
+                                                      
+                                                      <div class="player">
+                                                        {block:AlbumArt}
+                                                        <div class="responsive-album-art"><img src="{AlbumArtURL}"></div>
+                                                          {/block:AlbumArt}
+                                                          <div class="frame">{AudioPlayer}</div> 
+                                                        </div>
+                                                        {block:Audio}
+                                                        <!-- audio play button -->
+                                                        
+                                                        
+                                                        {/block:permalinkpage}
+                                                        
+                                                        {block:answer}
+                                                        <li class="post answer">
+                                                          
+                                                          <div class="">
+                                                            <span id="question">{question}</span>
+                                                            <span id="answer">{answer}</span>
+                                                          </div>
+                                                        </li>
+                                                        
+                                                        <div class="answer-info"> 
+                                                          <span id="asker-portrait"><a rel="nofollow"><img src="{AskerPortraitURL-40}"></a></span>
+                                                            <span id="asker">{Asker} left a question.</span>
+                                                          </div>
+                                                          <!--goes answers and blah blah -->
+                                                          {/block:answer}
+                                                          
+                                                          {block:Text}
+                                                          <li class="post text">
+                                                            {block:Title}
+                                                            <h3><a href="{Permalink}" {target}>{Title}</a></h3>
+                                                            {/block:Title}{Body}
+                                                          </li>
+                                                          {/block:Text}
+                                                          {block:Photo}
+                                                          <li class="post photo" data-image-element="{PhotoURL-100}" data-image-element-perma="{PhotoURL-250}"  data-image-400px="{PhotoURL-400}" data-image-element-perma-ipad="{PhotoURL-500}" data-image-retina="{PhotoURL-Highres}">
+                                                            <a href="{permalink}" class="photo-content">
+                                                              {block:indexpage}<img src="{PhotoURL-400}" alt="{PhotoAlt}" class="post-height" id="changeWidth">{/block:indexpage}
+                                                                {block:permalinkpage}<img src="{PhotoURL-Highres}" alt="{PhotoAlt}">{/block:permalinkpage}
+
+                                                                </a>
+                                                                {block:Caption}
+                                                                <div class="caption" style="display:block">{Caption}</div>
+                                                                {/block:Caption}
+                                                              </li>
+                                                              {/block:Photo}
+                                                              {block:Panorama}
+                                                              <li class="post panorama">
+                                                                {LinkOpenTag}
+                                                                <img src="{PhotoURL-Panorama}" alt="{PhotoAlt}"/>
+                                                                {LinkCloseTag}
+                                                                {block:Caption}
+                                                                <div class="caption" style="display:block">{Caption}</div>
+                                                                {/block:Caption}
+                                                              </li>
+                                                              {/block:Panorama}
+                                                              
+                                                              {block:Photoset}
+                                                              <li class="post photoset">
+                                                                {block:indexpage}
+                                                                <div class="photoset-frame-content">
+                                                                  {Photoset}</div>
+                                                                <a class="photoset-image" href="{permalink}" target="_blank">
+                                                                  {block:photos}
+                                                                  <img src="{PhotoURL-500}">
+                                                                    {/block:photos}
+                                                                  </a>
+                                                                  {/block:indexpage}
+                                                                  {block:permalinkpage}
+                                                                  <div class="permaphotoset photoset-frame-content"> 
+                                                                    {Photoset}</div>
+                                                                  {/block:permalinkpage}
+                                                                  
+                                                                  
+                                                                  {block:Caption}
+                                                                  <div class="caption" style="display:block">{Caption}</div>
+                                                                  {/block:Caption}
+                                                                </li>
+                                                                {/block:Photoset}
+                                                                {block:Quote}
+                                                              <li class="post quote">
+                                                                <div class="quote-content">"{Quote}"</div>
+
+                                                                {block:Source}
+                                                                <div class="source">– {Source}</div>
+                                                                {/block:Source}
+                                                              </li>
+                                                              {/block:Quote}
+                                                              
+                                                              {block:Link}
+                                                              {block:Thumbnail} 
+                                                              <li class="link_thumb_image">
+                                                                <img src="{Thumbnail-HighRes}">
+                                                                </li>
+                                                                {/block:Thumbnail}
+                                                              <li class="post link">
+                                                                
+                                                                
+                                                                {LinkCloseTag}
+                                                                <a class="link-button button is-small" href="{URL}" {Target}>
+                                                                  <span class="icon is-small">
+                                                                    <span data-icon=""></span>
+                                                                  </span>
+                                                                  <span>Link</span>
+                                                                </a><br>
+                                                                  <span class="link" {Target}>{Name}</span>
+                                                                  
+                                                                  {block:Description}
+                                                                  <div class="description">{Description}</div>
+                                                                  {/block:Description}
+                                                                </li>
+                                                                {/block:Link}
+                                                                {block:Chat}
+                                                              <li class="post chat">
+                                                                {block:Title}
+                                                                <h3><a href="{Permalink}" {target}>{Title}</a></h3>
+                                                                {/block:Title}
+
+                                                                <ul class="chat">
+                                                                  {block:Lines}
+                                                                  <li class="{Alt} user_{UserNumber}">
+                                                                    {block:Label}
+                                                                    <span class="label">{Label}</span>
+                                                                    {/block:Label}{Line}
+                                                                  </li>
+                                                                  {/block:Lines}
+                                                                </ul>
+                                                              </li>
+                                                              {/block:Chat}
+                                                              {block:Video}
+                                                              <li class="post video">
+                                                                
+                                                                <div class="video-content">
+                                                                  {block:indexpage}{Video-500}{/block:indexpage}
+                                                                  {block:permalinkpage}{Video-700}{/block:permalinkpage}</div>
+                                                                
+                                                                {block:VideoThumbnail}
+                                                                <div class="video-image">
+                                                                  
+                                                                  <img src="{VideoThumbnailURL}"></div>
+                                                                  {/block:VideoThumbnail}
+                                                                  {block:Caption}
+                                                                  <div class="caption" style="display:block">{Caption}</div>
+                                                                  {/block:Caption}
+                                                                </li>
+                                                                {/block:Video}
+                                                                {block:Audio}
+                                                              <li class="post audio">
+                                                                {block:AlbumArt}
+                                                                <div class="album-art">
+                                                                  <img src="{AlbumArtURL}"></div>
+                                                                  {/block:AlbumArt}
+                                                                  {block:Caption}
+                                                                  <div class="caption" style="display:block">{Caption}</div>
+                                                                  {/block:Caption}
+                                                                </li>
+                                                                {/block:Audio}
+                                                                
+                                                                
+                                                                <!-- Check if have tags -->
+                                                                {block:ifnothidetags}
+                                                                {block:HasTags}
+                                                                <ul class="tags">
+                                                                  <li id="tag-title">Tags:</li>
+                                                                  {block:Tags}
+                                                                  <li>
+                                                                    <a href="{TagURL}" {target}>#{Tag}</a>
+                                                                  </li>
+                                                                  {/block:Tags}
+                                                                </ul>
+                                                                
+                                                                {/block:HasTags}
+                                                                {/block:ifnothidetags}
+                                                                <!-- Check if have tags -->
+                                                                
+                                                                
+                                                                
+                                                                
+                                                                {block:indexpage}
+                                                                <!-- audio play button -->
+                                                                {block:Audio}
+                                                                
+                                                                <div class="player">
+                                                                  {block:AlbumArt}
+                                                                  <div class="responsive-album-art"><img src="{AlbumArtURL}"></div>
+                                                                    {/block:AlbumArt}
+                                                                    <div class="frame">{AudioPlayer}</div> 
+                                                                  </div>
+                                                                  {block:Audio}
+                                                                  <!-- audio play button -->
+                                                                  
+                                                                  
+                                                                  <!-- video play button -->
+                                                                  {block:video}
+                                                                  
+                                                                  <div class="video-player">
+                                                                    <div class="video-trigger">
+                                                                      <span id="play_icon" data-icon=")">
+                                                                      </span>
+                                                                      <span> Play <span id="insta-not-loaded-element">Instagram</span> video</span>
+                                                                    </div> 
+                                                                  </div>
+                                                                  {block:video}
+                                                                  <!-- video play button -->
+                                                                  <!-- Bottom Share -->
+
+                                                                  
+                                                                  <!-- <div class="post_nav table no-href-border"> -->
+                                                                  <!--   <div class="tqable-cell" id="post-notes"><a class="like">{likebutton color="grey" size="14"}</a><a id="number-chnage"  href="{permalink}" class="not-changed" {target}>{NoteCount}</a></div> -->
+                                                                  <!--   <div class="table-cell reblog post-icons" data-icon="D"></div>{block:photo} -->
+                                                                    
+                                                                  <!--   <div class="table-cell post-icons light-tri"> -->
+                                                                  <!--     <a class="hover-search" data-lightbox-link="{permalink}" data-lightbox="{photoURL-Highres}" data-icon=""  data-reblog="{reblogURL}" data-facebook="https://www.facebook.com/sharer/sharer.php?description={PhotoAlt}&picture={PhotoURL-500}&u={permalink}" data-twitter="https://twitter.com/home?status={EmbedURL}" data-pinterest="https://pinterest.com/pin/create/button/?url=&media={PhotoURL-500}" data-width="{PhotoWidth-HighRes}" {block:RebloggedFrom}data-reblog-avatar="{ReblogParentPortraitURL-64}" data-reblog-name="{ReblogRootName}" data-reblog-url="{ReblogParentURL}"{/block:RebloggedFrom} {target} rel="no-follow"></a> -->
+                                                                  <!--   </div> -->
+                                                                  <!--   <div class="table-cell post-icons"><a id="post-pinterest" href="https://pinterest.com/pin/create/button/?url=&media={PhotoURL-500}" target="blank" data-icon="l" {target} rel="no-follow"></a></div>{/block:photo} -->
+                                                                  <!--   <div class="table-cell post-icons share"> -->
+                                                                  <!--     <a id="share" data-icon=""></a> -->
+                                                                  <!--     <a id="close" data-icon="" rel="no-follow"></a> -->
+                                                                  <!--   </div> -->
+                                                                  <!-- </div> -->
+
+                                                                  
+                                                                  <!-- Share tooltip -->
+                                                                  <!-- Share tooltip -->
+                                                                  
+                                                                  <div class="share_tooltip">
+                                                                    
+                                                                    <div class="post-share">
+                                                                      
+                                                                      
+                                                                      <a id="post-twitter" data-icon="d" href="https://twitter.com/home?status={EmbedURL}" rel="no-follow" target="blank"></a>
+                                                                      <a id="post-facebook" data-icon="i" href="https://www.facebook.com/sharer/sharer.php?{block:answer}description={EmbedURL}&u={permalink}&picture={PortraitURL-128}{/block:answer}{block:photo}description={PhotoAlt}&picture={PhotoURL-500}&u={permalink}{/block:photo}{block:link}description={EmbedURL}&u={permalink}&picture={PortraitURL-128}{/block:link}{block:audio}{block:Artist}description={Artist}-{TrackName}{/block:Artist}&picture={AlbumArtURL}&u={permalink}{/block:audio}{block:text}title={title}&description={EmbedURL}&u={permalink}&picture={PortraitURL-128}{/block:text}{block:quote}description={quote}&u={permalink}&picture={PortraitURL-128}{/block:quote}{block:chat}description={EmbedURL}&u={permalink}&picture={PortraitURL-128}{/block:chat}{block:video}{block:Thumbnail}picture={Thumbnail}&{/block:Thumbnail}description={EmbedURL}&u={permalink}&picture={PortraitURL-128}{/block:video}{block:photoset}description={PhotoAlt}{block:photos}&picture={PhotoURL-500}{/block:photos}&u={permalink}{/block:photoset}" target="blank" rel="no-follow"></a>
+                                                                      
+                                                                      <a id="post-embed" data-icon="'" href="mailto:?body=Check%20this%20amazing%20post!:{EmbedUrl}" reblogurl="{ReblogURL}" rel="no-follow"></a>
+                                                                      <a href="{permalink}" target="_blank" data-icon=""></a>
+                                                                    </div>
+                                                                    
+                                                                    <div class="arrow"></div>
+                                                                    
+                                                                  </div>
+                                                                  <!-- Share tooltip -->
+                                                                  {/block:indexpage}
+                                                                  
+                                                                  
+                                                                </ol>
+                                                                
+                                                                
+                                                                {block:permalinkpage}
+                                                                
+                                                                <ul class="permalink-content">
+                                                                  <li>
+                                                                    
+                                                                    <!-- Reblog & notes & cntler -->
+                                                                    <div class="perma-navi">
+                                                                      {block:RebloggedFrom} 
+                                                                      <div class="inline-block reblogged">
+                                                                        <div id="reblogged">
+                                                                          <span><a href="{ReblogParentURL}" data-icon="" {target}  rel="no-follow"></a></span>
+                                                                          <span><img src="{ReblogParentPortraitURL-64}"></span>
+                                                                            <span>
+                                                                              {ReblogRootName}</span>
+                                                                          </div>
+                                                                        </div>{/block:RebloggedFrom} 
+                                                                        <div class="inline-block perma-controller">
+                                                                          {block:photo}
+                                                                          <span><a data-icon="l" {target} href="https://pinterest.com/pin/create/button/?url=&media={PhotoURL-500}" target="blank"></a><a href="https://pinterest.com/pin/create/button/?url={BlogURL}&media={PhotoURL-500}&description={PhotoAlt}" {target}></a></span>
+                                                                          {/block:photo}
+                                                                          <span><a data-icon="i" href="https://www.facebook.com/sharer/sharer.php?{block:answer}description={EmbedURL}&u={permalink}&picture={PortraitURL-128}{/block:answer}{block:photo}description={PhotoAlt}&picture={PhotoURL-500}&u={permalink}{/block:photo}{block:link}description={EmbedURL}&u={permalink}&picture={PortraitURL-128}{/block:link}{block:audio}{block:Artist}description={Artist}-{TrackName}{/block:Artist}&picture={AlbumArtURL}&u={permalink}{/block:audio}{block:text}title={title}&description={EmbedURL}&u={permalink}&picture={PortraitURL-128}{/block:text}{block:quote}description={quote}&u={permalink}&picture={PortraitURL-128}{/block:quote}{block:chat}description={EmbedURL}&u={permalink}&picture={PortraitURL-128}{/block:chat}{block:video}{block:Thumbnail}picture={Thumbnail}&{/block:Thumbnail}description={EmbedURL}&u={permalink}&picture={PortraitURL-128}{/block:video}{block:photoset}description={PhotoAlt}{block:photos}&picture={PhotoURL-500}{/block:photos}&u={permalink}{/block:photoset}" {target}></a></span>
+                                                                          <span><a data-icon="d" href="https://twitter.com/home?status={EmbedURL}" {target}></a></span>
+                                                                          <span id="stick"></span>
+                                                                          <span>{likebutton color="grey" size="20"}</span>
+                                                                          <span><a href="{reblogURL}" {target} data-icon="C"></a></span>
+                                                                          <span id="stick"></span>
+                                                                          <span id="perma-note">{NoteCountWithLabel}</span></div>
+                                                                      </div>
+                                                                      <!-- Reblog & notes & cntler -->
+                                                                      
+                                                                      {block:PostNotes} 
+                                                                      <div class="perma-post-notes">
+                                                                        {PostNotes-64}
+                                                                      </div>
+                                                                      {/block:PostNotes}
+                                                                      
+						                                                          {block:ifdisqusshortname}
+                                                                      
+                                                                      <div class="disqus-container">
+                                                                        <div id="disqus_thread">
+                                                                        </div>
+                                                                        <script type="text/javascript">
+                                                                          /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+                                                                          var disqus_shortname = '{text:Disqus Shortname}';
+                                                                          // Required - Replace <example> with your forum shortname
+
+                                                                          /* * * DON'T EDIT BELOW THIS LINE * * */
+                                                                          (function() {
+                                                                              var dsq = document.createElement('script');
+                                                                              dsq.type = 'text/javascript';
+                                                                              dsq.async = true;
+                                                                              dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                                                                              (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+                                                                              $('#posts').masonry();
+                                                                              $(window).trigger('resize')
+                                                                          })();
+                                                                        </script>
+                                                                      </div>
+                                                                      
+                                                                    </li>
+					                                                          {/block:ifdisqusshortname}
+                                                                    
+                                                                  </ul>
+                                                                  
+                                                                  {/block:permalinkpage}
+                                                                  
+                                                                </div>
+                                                                
+                                                                
+                                                                {/block:Posts} 
+                                                                
+                                                                
+                                                              </div></div>
+                                                              </main>
+                                                              </body>
+
+
+                                                              <footer>
+                                                                <div class="load-more-paginiate-it-container">
+                                                                  <div class="load-more-container {block:Pagination}{block:NextPage}next-is{/block:NextPage}{/block:Pagination}">
+                                                                    <div class="load-label"> Load more posts</div>
+                                                                    <div class="load-more-scroll-down">></div>
+                                                                  </div>
+                                                                  {block:Pagination}
+                                                                  <nav class="pagination is-centered " id="pagination">
+                                                                    <ul>
+                                                                      
+                                                                      {block:PreviousPage}
+                                                                      <li>
+                                                                        <a href="{PreviousPage}">Prev</a>
+                                                                      </li>{/block:PreviousPage}
+                                                                      {block:JumpPagination length="5"}
+                                                                      {block:CurrentPage}
+                                                                      <li><a href="{URL}">{PageNumber}</a></li>
+                                                                      {/block:CurrentPage}
+                                                                      {block:JumpPage}
+                                                                      <li><a href="{URL}">{PageNumber}</a></li>
+                                                                      {/block:JumpPage}{/block:JumpPagination}
+                                                                      
+                                                                      
+                                                                      {block:NextPage}<li>
+                                                                        <a href="{NextPage}" class="pagination_nextlink">Next</a></li>{/block:NextPage}
+                                                                    </ul>
+                                                                  </nav>
+                                                                  {/block:Pagination}
+                                                                </div>
+                                                                
+                                                                
+                                                                <div class="no-href-border table" id="footer">
+                                                                  <div class="table-cell" id="copyright">
+                                                                    <span id="copyright-content">© {CopyrightYears} {title}</span>
+                                                                    <span id="credit">Powered by <a href="https://tumblr.com">Tumblr</a></span></div>
+                                                                  <div class="table-cell center" id="social_icons">
+                                                                    <ul>
+                                                                      {block:ifpersonalsiteurl}
+                                                                      <li>
+                                                                        <a href="{text:personal site url}" {target}>
+                                                                          <span data-icon="">
+                                                                            My website
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifpersonalsiteurl}
+                                                                      {block:iffacebookurl}
+                                                                      <li>
+                                                                        <a href="{text:facebook url}" {target}>
+                                                                          <span data-icon="i">
+                                                                            Facebook
+                                                                          </span>
+                                                                        </a> 
+                                                                      </li>
+                                                                      {/block:iffacebookurl}
+                                                                      {block:iftwitterurl}
+                                                                      <li>
+                                                                        <a href="{text:twitter url}" class="twitter-click">
+                                                                          <span data-icon="d">
+                                                                            Twitter
+                                                                          </span> 
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:iftwitterurl}
+                                                                      {block:ifpinteresturl}
+                                                                      <li>
+                                                                        <a href="{text:pinterest url}" class="pinterest-click" {target}>
+                                                                          <span data-icon="g">
+                                                                            Pinterest
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifpinteresturl}
+                                                                      {block:ifinstagramUsername}
+                                                                      <li>
+                                                                        <a href="https://instagram.com/{text:instagram Username}" class="instagram-click" {target}> 
+                                                                          <span data-icon="e">
+                                                                            Instagram
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifinstagramUsername}
+                                                                      {block:ifshopurl}
+                                                                      <li>
+                                                                        <a href="{text:shop url}" {target}>
+                                                                          <span data-icon="f">
+                                                                            Store
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifshopurl}
+                                                                      {block:ifsoundcloudurl}
+                                                                      <li>
+                                                                        <a href="{text:soundcloud url}" {target}>
+                                                                          <span data-icon="s">
+                                                                            SoundCloud
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifsoundcloudurl}
+                                                                      
+                                                                      
+                                                                      {block:ifappleappurl}
+                                                                      <li>
+                                                                        <a href="{text:apple app url}" {target}>
+                                                                          <span data-icon="L">
+                                                                            App store
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifappleappurl} 
+                                                                      {block:ifandroidappurl}
+                                                                      <li>
+                                                                        <a href="{text:android app url}" {target}>
+                                                                          <span data-icon="M">
+                                                                            Play store
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifandroidappurl}
+                                                                      
+                                                                      {block:ifgoogleplusurl}
+                                                                      <li>
+                                                                        <a href="{text:google plus url}" {target}>
+                                                                          <span data-icon="6">
+                                                                            Google Plus
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifgoogleplusurl}
+                                                                      
+                                                                      {block:ifvimeourl}
+                                                                      <li>
+                                                                        <a href="{text:vimeo url}" {target}>
+                                                                          <span data-icon="7">
+                                                                            Vimeo
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifvimeourl}
+                                                                      
+                                                                      {block:ifyoutubeurl}
+                                                                      <li>
+                                                                        <a href="{text:youtube url}" {target}>
+                                                                          <span data-icon="P">
+                                                                            Youtube
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifyoutubeurl}
+                                                                      
+                                                                      {block:ifYelpurl}
+                                                                      <li>
+                                                                        <a href="{text:Yelp url}" {target}>
+                                                                          <span data-icon="9">
+                                                                            Yelp
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifYelpurl}
+                                                                      
+                                                                      {block:ifFlickrURL}
+                                                                      <li>
+                                                                        <a href="{text:Flickr URL}" {target}>
+                                                                          <span data-icon="1">
+                                                                            Flickr
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifFlickrURL}
+                                                                      
+                                                                      {block:ifusearchivebutton}
+                                                                      <li>
+                                                                        <a href="/archive" {target}>
+                                                                          <span data-icon="k">
+                                                                            Archive
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifusearchivebutton}
+				                                                              
+				                                                              {block:ifGithuburl}
+                                                                      <li>
+                                                                        <a href="{text:Github URL}" {target}>
+                                                                          <span data-icon="/">
+                                                                            Github
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifGithuburl}
+                                                                      
+                                                                      {block:if500pxurl}
+                                                                      <li>
+                                                                        <a href="{text:500px URL}" {target}>
+                                                                          <span data-icon="0">
+                                                                            500px
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:if500pxurl}
+                                                                      
+                                                                      {block:ifmediumurl}
+                                                                      <li>
+                                                                        <a href="{text:Medium URL}" {target}>
+                                                                          <span data-icon="x">
+                                                                            Medium
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifmediumurl}
+                                                                      
+                                                                      {block:ifdribbleurl}
+                                                                      <li>
+                                                                        <a href="{text:Dribble URL}" {target}>
+                                                                          <span data-icon="y">
+                                                                            Dribble
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifdribbleurl}
+                                                                      {block:ifbehenceurl}
+                                                                      <li>
+                                                                        <a href="{text:Behence URL}" {target}>
+                                                                          <span data-icon="">
+                                                                            Behence
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifbehenceurl}
+	                                                                    
+                                                                      {block:ifpicasaurl}
+                                                                      <li>
+                                                                        <a href="{text:Picasa URL}" {target}>
+                                                                          <span data-icon="">
+                                                                            Picasa
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifpicasaurl}
+                                                                      
+                                                                      {block:ifredditurl}
+                                                                      <li>
+                                                                        <a href="{text:Reddit URL}" {target}>
+                                                                          <span data-icon="">
+                                                                            Reddit
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifredditurl}
+                                                                      
+                                                                      {block:ifbloggerurl}
+                                                                      <li>
+                                                                        <a href="{text:Blogger URL}" {target}>
+                                                                          <span data-icon="">
+                                                                            Blogger
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifbloggerurl}
+                                                                      
+                                                                      {block:ifdiigourl}
+                                                                      <li>
+                                                                        <a href="{text:Diigo URL}" {target}>
+                                                                          <span data-icon="">
+                                                                            Diig
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifdiigourl}
+                                                                      
+                                                                      {block:ifspotifyurl}
+                                                                      <li>
+                                                                        <a href="{text:Spotify URL}" {target}>
+                                                                          <span data-icon="">
+                                                                            Spotify
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifspotifyurl}
+                                                                      
+                                                                      {block:ifhi5url}
+                                                                      <li>
+                                                                        <a href="{text:Hi5 URL}" {target}>
+                                                                          <span data-icon="">
+                                                                            Hi5
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifhi5url}
+                                                                      
+                                                                      
+                                                                      {block:ifEmailAddress}
+                                                                      <li>
+                                                                        <a href="mailto:{text:Email Address}" {target}>
+                                                                          <span data-icon="'">
+                                                                            Email us
+                                                                            
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifEmailAddress}
+                                                                      
+                                                                      {block:ifLinkedInURL} 
+                                                                      <li>
+                                                                        <a href="{text:LinkedIn URL}" {target}>
+                                                                          <span data-icon="w">
+                                                                            LinkedIn
+                                                                          </span>
+                                                                        </a>
+                                                                      </li>
+                                                                      {/block:ifLinkedInURL}</ul>
+                                                                  </div>
+                                                                  <div class="table-cell" id="search">
+                                                                    <a data-icon="" class="search-trigger"></a>
+                                                                  </div>
+                                                                </div>
+                                                              </footer>
+
+
+                                                              <!-- full layer plugins -->
+
+
+                                                              <!-- Lightbox -->
+                                                              <div class="lightbox-plugin" data-number="0">
+                                                                <div class="lightbox-fullscreen">
+                                                                  <div class="lightbox-image-share">
+                                                                    <div class="inline-block reblogged index">
+                                                                      <div id="reblogged" style="text-align:left">
+                                                                        <span id="reblog-icon"><a href="" data-icon="" target="_blank"></a></span>
+                                                                        <span id="reblog-avatar-lightbox"><img src="https://68.media.tumblr.com/avatar_297e86920dba_64.png"></span>
+                                                                          <span><a id="reblogurl" href="" target="_blank">
+                                                                          </a></span>
+                                                                          <span id="controller">
+                                                                            <a id="close" data-icon=""></a>
+                                                                          </span>
+                                                                        </div>
+                                                                      </div>
+                                                                      <a href="" class="lightbox-link">
+                                                                        <img src=""></a>
+                                                                        
+                                                                        <!-- Bottom Share -->
+                                                                        <div class="post_nav table no-href-border">
+                                                                          
+                                                                          <div class="table-cell" id="share-pinterest"><a href="https://pinterest.com/pin/create/button/?url=&media=imageurl" data-icon="l" target="_blank"></a></div>
+                                                                          <div class="table-cell" id="share-facebook"><a href="https://www.facebook.com/sharer/sharer.php?picture=imageurl&u=permalink"data-icon="i" target="_blank"></a></div>
+                                                                          <div class="table-cell" id="share-twitter"><a href="https://twitter.com/home?status=permalink" data-icon="d" target="_blank"></a></div>
+                                                                          
+                                                                          <div class="table-cell" id="share-reblog"><a href="" data-icon="C" target="_blank"></a></div>
+                                                                          <div class="table-cell" id="share-perma"><a href="" data-icon="c" target="_blank"></a></div>
+                                                                          
+                                                                          
+                                                                          
+                                                                        </div>
+                                                                        
+                                                                      </div>
+                                                                    </div>
+                                                                  </div>
+
+
+                                                                  <!-- Lightbox -->
+
+
+                                                                  <div class="search-container">
+                                                                    <div class="search-close">X</div>
+                                                                    <form action="/search" method="get">
+                                                                      <input type="text" name="q" value="{SearchQuery}"/>
+                                                                      <button type="submit" data-icon="c"></button>
+                                                                    </form>
+                                                                  </div>
+
+
+                                                                  <!-- ask enabled -->
+                                                                  {block:AskEnabled}
+                                                                  <div class="ask-container">
+                                                                    <div class="ask-content"><iframe frameborder="0" scrolling="no" width="100%" height="190" src="https://www.tumblr.com/ask_form/{name}.tumblr.com" id="ask_form"></iframe></div>
+                                                                  </div>
+                                                                  {/block:AskEnabled}
+                                                                  <!-- ask enabled -->
+
+
+
+                                                                  <!-- Submission enabled -->
+                                                                  {block:SubmissionsEnabled} 
+                                                                  <div class="submit-container">
+                                                                    <div class="submit-content"><iframe frameborder="0" scrolling="no" width="100%" height="370" src="https://www.tumblr.com/submit_form/{name}.tumblr.com/regular" id="submit-form"></iframe></div>
+                                                                  </div>
+                                                                  {/block:SubmissionsEnabled} 
+                                                                  <!-- Submission enabled -->
+
+
+
+
+                                                                  <!-- Page not found -->
+
+                                                                  <div class="not-found-container">
+                                                                    <div class="close-this">X</div>
+                                                                    <ul class="not-found-content">
+                                                                      
+                                                                      <li><h2>404</h2></li>
+                                                                      <li id="desc"><p>Your reuqested data doesn't seem to exist.</p></li>
+                                                                    </ul>
+                                                                    
+                                                                  </div>
+
+                                                                  <!-- Page not found -->
+
+
+                                                                  <!-- video container -->
+                                                                  <div class="video-container">
+                                                                    <div class="video-content-box">
+                                                                      <iframe src="" frameborder="0" allowfullscreen></iframe>
+                                                                  </div></div>
+                                                                  <!-- video container -->
+
+
+
+
+
+                                                                  <div class="hidden-menu">
+                                                                    <div class="close-hidden-menu">X</div>
+                                                                    <div class="hidden-menu-content">
+                                                                      <div class="link-element">
+                                                                        {block:ifCustomlink1title}
+                                                                        <span>
+                                                                          <a href="{text:Custom link 1 URL}" {target}>
+                                                                            {text:Custom link 1 title}
+                                                                          </a>
+                                                                        </span>
+                                                                        {/block:ifCustomlink1title}
+                                                                        {block:ifCustomlink2title}
+                                                                        <span>
+                                                                          <a href="{text:Custom link 2 URL}" {target}>
+                                                                            {text:Custom link 2 title}
+                                                                          </a>
+                                                                        </span>
+                                                                        {/block:ifCustomlink2title}
+                                                                        {block:ifCustomlink3title}
+                                                                        <span>
+                                                                          <a href="{text:Custom link 3 URL}" {target}>
+                                                                            {text:Custom link 3 title}
+                                                                          </a>
+                                                                        </span>
+                                                                        {/block:ifCustomlink3title}
+                                                                        {block:ifCustomlink4title}
+                                                                        <span>
+                                                                          <a href="{text:Custom link 4 URL}" {target}>
+                                                                            {text:Custom link 4 title}
+                                                                          </a>
+                                                                        </span>
+                                                                        {/block:ifCustomlink4title}
+                                                                        
+                                                                        {block:ifCustomlink5title}
+                                                                        <span>
+                                                                          <a href="{text:Custom link 5 URL}" {target}>
+                                                                            {text:Custom link 5 title}
+                                                                          </a>
+                                                                        </span>
+                                                                        {/block:ifCustomlink5title}
+                                                                        
+                                                                        {block:ifCustomlink6title}
+                                                                        <span>
+                                                                          <a href="{text:Custom link 6 URL}" {target}>
+                                                                            {text:Custom link 6 title}
+                                                                          </a>
+                                                                        </span>
+                                                                        {/block:ifCustomlink6title}
+                                                                        
+                                                                        {block:ifCustomlink7title}
+                                                                        <span>
+                                                                          <a href="{text:Custom link 7 URL}" {target}>
+                                                                            {text:Custom link 7 title}
+                                                                          </a>
+                                                                        </span>
+                                                                        {/block:ifCustomlink7title}
+                                                                        
+                                                                        {block:ifCustomlink8title}
+                                                                        <span>
+                                                                          <a href="{text:Custom link 8 URL}" {target}>
+                                                                            {text:Custom link 8 title}
+                                                                          </a> 
+                                                                        </span>
+                                                                        {/block:ifCustomlink8title}
+                                                                        {block:HasPages}
+                                                                        {block:Pages}
+                                                                        <span>
+                                                                          <a href="{URL}" {target}>
+                                                                            {Label}
+                                                                          </a>
+                                                                        </span>
+                                                                        {/block:Pages} {/block:HasPages}
+                                                                        
+                                                                        {block:SubmissionsEnabled}
+                                                                        <span>
+                                                                          <a class="submit-trigger">{SubmitLabel}</a>
+                                                                        </span>
+			                                                                  {/block:SubmissionsEnabled}
+			                                                                  {block:ifpersonalsiteurl}
+                                                                        <span>
+                                                                          <a href="{text:personal site url}" {target}>
+                                                                            Website
+                                                                        </a></span>
+                                                                        {/block:ifpersonalsiteurl}
+                                                                        {block:iffacebookurl}
+                                                                        <span>
+                                                                          <a href="{text:facebook url}" {target}>
+                                                                            Facebook
+                                                                        </a> </span>
+                                                                        {/block:iffacebookurl}
+                                                                        {block:iftwitterurl}
+                                                                        <span>
+                                                                          <a href="{text:twitter url}" {target} class="twitter-click">
+                                                                            Twitter
+                                                                        </a></span>
+                                                                        {/block:iftwitterurl}
+                                                                        {block:ifpinteresturl}
+                                                                        <span>
+                                                                          <a href="{text:pinterest url}" {target} class="pinterest-click">
+                                                                            Pinterest
+                                                                        </a></span>
+                                                                        {/block:ifpinteresturl}
+                                                                        {block:ifinstagramUsername}
+                                                                        <span>
+                                                                          <a href="https://instagram.com/{text:instagram Username}" {target} class="instagram-click"> Instagram
+                                                                        </a></span>
+                                                                        {/block:ifinstagramUsername}
+                                                                        {block:ifshopurl}
+                                                                        <span>
+                                                                          <a href="{text:shop url}" {target}>
+                                                                            Shop
+                                                                        </a></span>
+                                                                        {/block:ifshopurl}
+                                                                        {block:ifsoundcloudurl}
+                                                                        <span>
+                                                                          <a href="{text:soundcloud url}" {target}>
+                                                                            SoundCloud
+                                                                        </a></span>
+                                                                        {/block:ifsoundcloudurl}
+                                                                        
+                                                                        
+                                                                        {block:ifappleappurl}
+                                                                        <span>
+                                                                          <a href="{text:apple app url}" {target}>
+                                                                            App Store
+                                                                        </a></span>
+                                                                        {/block:ifappleappurl} 
+                                                                        {block:ifandroidappurl}
+                                                                        <span>
+                                                                          <a href="{text:android app url}" {target}>
+                                                                            Play Store
+                                                                        </a></span>
+                                                                        {/block:ifandroidappurl}
+                                                                        
+                                                                        {block:ifgoogleplusurl}
+                                                                        <span>
+                                                                          <a href="{text:google plus url}" {target}>
+                                                                            Google Plus
+                                                                        </a></span>
+                                                                        {/block:ifgoogleplusurl}
+                                                                        
+                                                                        {block:ifvimeourl}
+                                                                        <span>
+                                                                          <a href="{text:vimeo url}" {target}>
+                                                                            Vimeo
+                                                                        </a></span>
+                                                                        {/block:ifvimeourl}
+                                                                        
+                                                                        {block:ifyoutubeurl}
+                                                                        <span>
+                                                                          <a href="{text:youtube url}" {target}>
+                                                                            Youtube
+                                                                        </a></span>
+                                                                        {/block:ifyoutubeurl}
+                                                                        
+                                                                        {block:ifYelpurl}
+                                                                        <span>
+                                                                          <a href="{text:Yelp url}" {target}>
+                                                                            Yelp
+                                                                        </a></span>
+                                                                        {/block:ifYelpurl}
+                                                                        
+                                                                        {block:ifEmailAddress}
+                                                                        <span>
+                                                                          <a href="mailto:{text:Email Address}" {target}>
+                                                                            Contact
+                                                                        </a></span>
+                                                                        {/block:ifEmailAddress}
+                                                                        
+                                                                        {block:ifLinkedInURL}
+                                                                        <span>
+                                                                          <a href="{text:LinkedIn URL}" {target}>
+                                                                            LinkedIn
+                                                                        </a></span>
+                                                                        {/block:ifLinkedInURL}
+                                                                        {block:ifusearchivebutton}
+                                                                        <span>
+                                                                          <a href="/archive" {target}>
+                                                                            Archive
+                                                                        </a></span>
+                                                                        {/block:ifusearchivebutton}
+                                                                        {block:AskEnabled}
+                                                                        
+                                                                        <span>
+                                                                          <a class='ask-trigger'>
+                                                                            {AskLabel}
+                                                                        </a></span>
+			                                                                  {/block:AskEnabled}
+			                                                                  
+			                                                                  
+			                                                                  
+			                                                                  {block:ifGithuburl}
+                                                                        <span>
+                                                                          <a href="{text:Github URL}" {target}>
+                                                                            Github
+                                                                        </a></span>
+                                                                        {/block:ifGithuburl}
+                                                                        
+                                                                        {block:if500pxurl} <span>
+                                                                          <a href="{text:500px URL}" {target}>
+                                                                            500px
+                                                                        </a></span>
+                                                                        {/block:if500pxurl}
+                                                                        
+                                                                        {block:ifmediumurl} <span>
+                                                                          <a href="{text:Medium URL}" {target}>
+                                                                            Medium
+                                                                        </a></span>
+                                                                        {/block:ifmediumurl}
+                                                                        
+                                                                        {block:ifdribbleurl} <span>
+                                                                          <a href="{text:Dribble URL}" {target}>
+                                                                            Dribble
+                                                                        </a></span>
+                                                                        {/block:ifdribbleurl}
+                                                                        {block:ifbehenceurl} <span>
+                                                                          <a href="{text:Behence URL}" {target}>
+                                                                            Behence
+                                                                        </a></span>
+                                                                        {/block:ifbehenceurl}
+	                                                                      
+    	                                                                  {block:ifpicasaurl} <span>
+                                                                          <a href="{text:Picasa URL}" {target}>
+                                                                            Picasa
+                                                                        </a></span>
+                                                                        {/block:ifpicasaurl}
+                                                                        
+                                                                        {block:ifredditurl} <span>
+                                                                          <a href="{text:Reddit URL}" {target}>
+                                                                            Reddit
+                                                                        </a></span>
+                                                                        {/block:ifredditurl}
+                                                                        
+                                                                        {block:ifbloggerurl} <span>
+                                                                          <a href="{text:Blogger URL}" {target}>
+                                                                            Blogger
+                                                                        </a></span>
+                                                                        {/block:ifBloggerurl}
+                                                                        {block:ifdiigourl} <span>
+                                                                          <a href="{text:Diigo URL}" {target}>
+                                                                            Diigo
+                                                                        </a></span>
+                                                                        {/block:ifdiigourl}
+                                                                        {block:ifspotifyurl} <span>
+                                                                          <a href="{text:Spotify URL}" {target}>
+                                                                            Spotify
+                                                                        </a></span>
+                                                                        {/block:ifspotifyurl}
+                                                                        {block:ifhi5url} <span>
+                                                                          <a href="{text:Hi5 URL}" {target}>
+                                                                            Hi5
+                                                                        </a></span> 
+                                                                        {/block:ifhi5url}
+                                                                        
+                                                                        
+                                                                        
+                                                                      </div> 
+                                                                    </div>
+                                                                  </div> 
+                                                                  <div class="search-container">
+                                                                    <div class="search-close">X</div>
+                                                                    <form action="/search" method="get">
+                                                                      <input type="text" name="q" value="{SearchQuery}"/>
+                                                                      <button type="submit" data-icon="c"></button>
+                                                                    </form>
+                                                                  </div>
+
+
+
+
+                                                                  <div class="hidden-overlay"></div>
+                                                                  <div class="scrolling"></div>
+                                                                  <!-- full layer plugins -->
+                                                                  <script>
+                                                                    
+                                                                    
+                                                                    /** global variable **/
+                                                                    var selectsPosts = $('#posts');
+                                                                    var selectsPostsContainer = $('.post-container');
+                                                                    var selectsPostsWithContainer = $('#posts .post-container');
+                                                                    var html = $('html');
+                                                                    var photo = $('.photo');
+                                                                    var photoWidth = '0'; 
+                                                                    var mobileWidth = document.getElementsByTagName("html")[0].getAttribute("mobilewidth");
+                                                                    var tagBoxColor = '{color:Tag Box Link}';
+                                                                    var TagBoxBackColor = '{color:Tag Box Background}';
+                                                                    var TagBoxOverlayColor = '{color:Tag Box Background}';
+                                                                    var TagBoxOverlayBackColor = '{color:Tag Box Link}';
+                                                                    var blogURL = '{blogURL}';
+                                                                    var postpadding = '{select:Post Padding}';
+                                                                    var imageDuration = 3000;
+                                                                    
+                                                                    /** global variable **/
+                                                                    
+                                                                    
+                                                                    document.getElementById("right-header-menu").parentElement.style.display = "none";
+                                                                  </script>
+
+                                                                  {block:ifnotheader1image}
+                                                                  <script src="https://static.tumblr.com/bnjocu5/BFaot8efn/free-version.js"> </script>
+                                                                  {/block:ifnotheader1image}
+
+                                                                </html>
