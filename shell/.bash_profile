@@ -7,9 +7,11 @@ $PWD
 alias cd..="cd .."
 alias b="cd .."
 alias bb="cd ../.."
-alias l="ls -al"
+
+alias l="ls -lFG"
+alias la="l -a"
 alias lp="ls -p"
-alias h=history
+alias h="history"
 
 ## git shortcuts
 alias gs="git status"
