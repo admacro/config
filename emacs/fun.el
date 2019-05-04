@@ -9,7 +9,7 @@
 	           ":")))
   (set 'hour (string-to-number hour-str))
   (message hour-str)
-  (or (> hour 16) (< hour 6)))
+  (or (> hour 21) (< hour 5)))
 
 ;; use dark theme for night and light theme for day
 (if (nightp)
