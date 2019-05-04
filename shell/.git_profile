@@ -1,0 +1,21 @@
+## git shortcuts
+alias gs="git status"
+alias gb="git branch"
+alias gc="git checkout"
+alias gp="git pull"
+
+# git log
+# Usage
+#   gl "cool feature" cool-feature-branch
+#   gl "cool feature"
+#     - will use current branch
+gl() {
+    if [[ -z "$2" ]]; then
+        branch=`git rev-parse --abbrev-ref HEAD`
+    else
+        branch=$2
+    fi
+    author=`git config user.name`
+    echo "Showing commits of $author on branch $branch"
+    command git log --pretty=format:"%h | %ci | %s" --author "$author" --grep "$1" $branch
+}
