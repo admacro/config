@@ -1,6 +1,6 @@
 ;; custom functions
 
-;; Check if time is between 6 PM and 6 AM, aka night time
+;; Check if it is night (after 21, and before 5)
 (defun nightp ()
   (set 'hour-str
        (car (split-string
@@ -11,14 +11,29 @@
   (message hour-str)
   (or (> hour 21) (< hour 5)))
 
-;; use dark theme for night and light theme for day
+(defun random-theme ()
+  (let ((themes-list (list 'leuven 'tsdh-light 'whiteboard 'adwaita nil)))
+    (nth (random (length themes-list)) themes-list)))
+
+(defun load-random-theme ()
+  (interactive)
+  (let ((theme (random-theme)))
+    (if (not (equal theme nil))
+        (progn
+          (message (concat "Loading theme " (symbol-name theme)))
+          (load-theme theme)
+          ))))
+
+;; use dark theme for night and some random light theme for day
 (if (nightp)
     (progn
       (message "It's night. Loading dark theme")
       (load-theme 'deeper-blue))
   (progn
     (message "It's day. Loading light theme")
-    (load-theme 'leuven)))
+    (load-random-theme)
+    ;; (load-theme 'tsdh-light)
+    ))
 
 ;; Use variable width font faces in current buffer
 (defun writing-mode ()
