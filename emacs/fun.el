@@ -12,7 +12,7 @@
   (or (> hour 21) (< hour 5)))
 
 (defun random-theme ()
-  (let ((themes-list (list 'leuven 'tsdh-light 'whiteboard 'adwaita nil)))
+  (let ((themes-list (list 'leuven 'tsdh-light 'whiteboard nil)))
     (nth (random (length themes-list)) themes-list)))
 
 (defun load-random-theme ()
