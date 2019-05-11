@@ -1,6 +1,6 @@
 ;; custom functions
 
-;; Check if it is night (after 21, and before 5)
+;; Check if it is everybody is sleeping except me (from 0 to 5 AM)
 (defun nightp ()
   (set 'hour-str
        (car (split-string
@@ -9,7 +9,7 @@
 	           ":")))
   (set 'hour (string-to-number hour-str))
   (message hour-str)
-  (or (> hour 21) (< hour 5)))
+  (or (> hour 23) (< hour 5)))
 
 (defun random-theme ()
   (let ((themes-list (list 'leuven 'tsdh-light 'whiteboard 'adwaita nil)))
@@ -29,10 +29,10 @@
     (progn
       (message "It's night. Loading dark theme")
       (load-theme 'deeper-blue))
-  (progn
+(progn
     (message "It's day. Loading light theme")
-    (load-random-theme)
-    ;; (load-theme 'tsdh-light)
+    ;; (load-random-theme)
+    (load-theme 'tsdh-light)
     ))
 
 ;; Use variable width font faces in current buffer
