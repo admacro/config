@@ -1,0 +1,51 @@
+# coding: utf-8
+
+An org file is an outline. 
+An outline consists of many sections. Each section has a headline at the top of the section. 
+A section can have many sub-sections. Sub-sections are also sections and they have their own headlines. Sections can be nested.
+The first empty line at the end of a section is part of that section. Collapsing the section will hide the first empty line. Subsequent empty lines won't be affected.
+A top-level section and its sub-sections together with their entries form a tree (subtree). Official explaination: A tree is created by the structure of an outline. It consists of a heading and all subheadings/entries beneath it within the outline hierarchy.
+
+* Headline
+Put cursor on the headline and use ~<TAB>~ key to change the layout of the section (folded/children/subtree).
+When cycling through a section with sub-sections (children), the order is folded->children->subtree->folded...
+To change the layout of the whole org file, use ~S-<TAB>~ (~S~ is ~<Shift>~ key. ~s~ is ~<Super>~ key which is the ~<Command>~ key on an Apple keyboard)
+
+* Top Headline
+** Second-level headline
+*** Third-level headline
+**** 4th-level headline
+***** 5th-level headline
+****** 6th-level headline
+******* 7th-level
+******** 8th-level
+You can add as many headlines as you like. But some features work only in sections indented less than 30 stars, for example clocking. Also, most color themes support up to eight levels (leuven, deep-blue, ect.)
+
+* To-Do List
+** TODO basics
+ - [X] Outlines and sections
+ - [ ] Todo list
+ - [ ] Configuration
+** TODO planning with to-do list
+ - [X] cycle through states (TODO, DONE, normal text)
+
+* Initial visibility 
+What's visible when opening an org file.
+The following is per-file basis. Put it anywhere in the org file to have the desired effect. Default is ~overview~.
+
+#+BEGIN_SRC org
+#+STARTUP: overview # default
+#+STARTUP: content
+#+STARTUP: showall
+#+STARTUP: showeverything
+#+END_SRC org
+
+* Table
+Wow! This is cool and useful!
+| name     | gender |   birthday |       phone |
+|----------+--------+------------+-------------|
+| James Ni | male   | 1985-08-23 | 18516298990 |
+| Russell  | male   | 2011-11-06 | 18611068888 |
+
+* Link
+[[http://james.admacro.xyz][James' Tumblr]]
