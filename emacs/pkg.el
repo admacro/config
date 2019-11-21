@@ -36,6 +36,16 @@
 (setq ruby-insert-encoding-magic-comment nil)
 
 
+;; golang env setup
+(setq golang-home "/usr/local/go")
+(if (file-directory-p golang-home)
+    (progn
+      (setenv "PATH"
+	            (concat golang-home "/bin:"
+		                  (getenv "PATH")))
+      (add-to-list 'exec-path (concat golang-home "/bin"))))
+
+
 ;; rbenv env setup
 (setq rbenv-home (concat (getenv "HOME") "/.rbenv"))
 (if (file-directory-p rbenv-home)
