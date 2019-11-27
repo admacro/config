@@ -38,15 +38,16 @@
 ;; show matching paren immediately
 (setq show-paren-delay 0)
 (show-paren-mode 1)
-;; (set-default-font "SF Mono-14")
 (set-default-font "Inconsolata-18")
-;; (set-default-font "M+ 1M-16")
 
-;; start emacs with window maximized
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
-
-;; How to make macOS titlebar same color as Emacs background
-(add-to-list 'default-frame-alist '(ns-transparent-titlebar . t))
+(if (display-graphic-p)
+    (setq initial-frame-alist
+          '(
+            (fullscreen . maximized)      ;start emacs with window maximized
+            (ns-transparent-titlebar . t) ;make titlebar same color as Emacs background
+            (background-color . "ivory")  ;set background color
+            )))
+(setq default-frame-alist initial-frame-alist)
 
 (progn
   ;; make buffer switch command do suggestions, also for find-file command

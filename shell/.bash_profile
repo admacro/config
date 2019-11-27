@@ -21,11 +21,12 @@ export all_proxy=socks5://127.0.0.1:6153
 
 # ENV variables
 export JAVA_HOME=$(/usr/libexec/java_home)
+export GO_HOME=/usr/local/go
 
 PYTHON_BIN=/Users/james/Library/Python/2.7/bin
 MYSQL_BIN=/usr/local/mysql/bin
 
-export PATH=$JAVA_HOME/bin:$PYTHON_BIN:$MYSQL_BIN:$PATH
+export PATH=$JAVA_HOME/bin:$PYTHON_BIN:$MYSQL_BIN:$GO_HOME/bin:$PATH
 
 
 # Programming
