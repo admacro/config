@@ -54,6 +54,9 @@
   (unhighlight-regexp t))
 (define-key xah-fly-dot-keymap (kbd "u") 'unhighlight-all-in-buffer)
 
+;; show changes made to current git repo (magit-status)
+(define-key xah-fly-dot-keymap (kbd "c") 'magit-status)
+
 (defun xah-dired-sort ()
   "Sort dired dir listing in different ways.
 Prompt for a choice.
