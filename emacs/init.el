@@ -38,7 +38,7 @@
 ;; show matching paren immediately
 (setq show-paren-delay 0)
 (show-paren-mode 1)
-(set-default-font "Inconsolata-18")
+(set-default-font "Inconsolata-16")
 
 (if (display-graphic-p)
     (setq initial-frame-alist

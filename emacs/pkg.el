@@ -20,7 +20,7 @@
 ;; Apib-mode (major mode for editing API blueprint file)
 ;; markdown-mode
 ;; graphql-mode
-
+;; go-mode
 
 ;; xah fly keys (default layout is dvorak)
 (require 'xah-fly-keys)
@@ -44,6 +44,10 @@
 	            (concat golang-home "/bin:"
 		                  (getenv "PATH")))
       (add-to-list 'exec-path (concat golang-home "/bin"))))
+
+;; format go code with gofmt before save
+(setq gofmt-args '("-s"))
+;; (add-hook 'go-mode-hook 'gofmt-before-save)
 
 
 ;; rbenv env setup
