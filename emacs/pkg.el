@@ -45,8 +45,13 @@
 		                  (getenv "PATH")))
       (add-to-list 'exec-path (concat golang-home "/bin"))))
 
-;; format go code with gofmt before save
+;; simplify code while formatting
 (setq gofmt-args '("-s"))
+
+;; There is a problem with gofmt-before-save:
+;; the buffer is not updated after the format
+;; My solution for now is to manually call gofmt with a key
+;; which is added to xah-fly-dot-keymap: `SPC . f` => gofmt
 ;; (add-hook 'go-mode-hook 'gofmt-before-save)
 
 
