@@ -1,0 +1,21 @@
+[
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1575887161048,
+		"name": "wikipedia.org",
+		"sections": [
+			{
+				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #F4EEE6;\n}\n\n#toc,\n.infobox {\n    background: #F8F3EB;\n}\n\nbody {\n\n    font-family: Lora, serif;\n    font-size: 1.5em;\n}\n\nh1 {\n    border-bottom: none;\n    font-family: Lora, serif;\n}\n\n#content {\n    max-width: 58%\n}\n\n#content {\n    border: none;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
+				"domains": [
+					"wikipedia.org"
+				]
+			}
+		],
+		"updateDate": 1575889574970,
+		"id": 2
+	}
+]
