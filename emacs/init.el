@@ -38,14 +38,15 @@
 ;; show matching paren immediately
 (setq show-paren-delay 0)
 (show-paren-mode 1)
-(set-default-font "Inconsolata-16")
+;; (set-default-font "Inconsolata-16")
+(set-default-font "Menlo-20")
 
 (if (display-graphic-p)
     (setq initial-frame-alist
           '(
             (fullscreen . maximized)      ;start emacs with window maximized
             (ns-transparent-titlebar . t) ;make titlebar same color as Emacs background
-            (background-color . "ivory")  ;set background color
+            (background-color . "#F4EEE6")  ;set background color (other options: F1EAE2, F8F3EB)
             )))
 (setq default-frame-alist initial-frame-alist)
 

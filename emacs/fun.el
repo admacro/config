@@ -24,16 +24,20 @@
           (load-theme theme)
           ))))
 
+;; 2019-12-09
+;; Theming is fun, when you are at it. But today I think I'm done
+;; with it after fiddlling with it now and then for the past few years.
+;; Thus, end it for now.
 ;; use dark theme for night and some random light theme for day
-(if (nightp)
-    (progn
-      (message "It's night. Loading dark theme")
-      (load-theme 'deeper-blue))
-(progn
-    (message "It's day. Loading light theme")
+;; (if (nightp)
+;;     (progn
+;;       (message "It's night. Loading dark theme")
+;;       (load-theme 'deeper-blue))
+;; (progn
+    ;; (message "It's day. Loading light theme")
     ;; (load-random-theme)
-    (load-theme 'tsdh-light)
-    ))
+    ;; (load-theme 'tsdh-light)
+;; ))
 
 ;; Use variable width font faces in current buffer
 (defun writing-mode ()
