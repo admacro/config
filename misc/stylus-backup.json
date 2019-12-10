@@ -9,13 +9,13 @@
 		"name": "wikipedia.org",
 		"sections": [
 			{
-				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #F4EEE6;\n}\n\n#toc,\n.infobox {\n    background: #F8F3EB;\n}\n\n#mw-content-text > div > table {\n    background: #F8F3EB !important;\n}\n\nbody {\n    font-family: Lora, serif;\n    font-size: 1.5em;\n}\n\nh1 {\n    border-bottom: none;\n    font-family: Lora, serif;\n}\n\n#content {\n    max-width: 58%\n}\n\n#content {\n    border: none;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
+				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    /* background: #F4EEE6; */\n    background: #F8F5F4;\n}\n\n#toc,\n.infobox {\n    /* background: #F8F3EB; */\n    background: #EBE3E1;\n}\n\n#mw-content-text > div > table {\n    /* background: #F8F3EB !important; */\n    background: #EBE3E1 !important;\n}\n\nbody {\n    font-family: Lora, serif;\n    font-size: 1.5em;\n}\n\nh1 {\n    border-bottom: none;\n    font-family: Lora, serif;\n}\n\n#content {\n    max-width: 58%\n}\n\n#content {\n    border: none;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
 				"domains": [
 					"wikipedia.org"
 				]
 			}
 		],
-		"updateDate": 1575891445739,
+		"updateDate": 1575971777933,
 		"id": 2
 	},
 	{
