@@ -9,13 +9,13 @@
 		"name": "wikipedia.org",
 		"sections": [
 			{
-				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #F4EEE6;\n}\n\n#toc,\n.infobox {\n    background: #F8F3EB;\n}\n\n#mw-content-text > div > table {\n    background: #F8F3EB !important;\n}\n\nbody {\n    font-family: Lora, serif;\n    font-size: 1.5em;\n}\n\nh1 {\n    border-bottom: none;\n    font-family: Lora, serif;\n}\n\n#content {\n    max-width: 58%\n}\n\n#content {\n    border: none;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
+				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    /* background: #F4EEE6; */\n    background: #F8F5F4;\n}\n\n#toc,\n.infobox {\n    /* background: #F8F3EB; */\n    background: #EBE3E1;\n}\n\n#mw-content-text > div > table {\n    /* background: #F8F3EB !important; */\n    background: #EBE3E1 !important;\n}\n\nbody {\n    font-family: Lora, serif;\n    font-size: 1.5em;\n}\n\nh1 {\n    border-bottom: none;\n    font-family: Lora, serif;\n}\n\n#content {\n    max-width: 58%\n}\n\n#content {\n    border: none;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
 				"domains": [
-					"wikipedia.org"
+					"en.wikipedia.org"
 				]
 			}
 		],
-		"updateDate": 1575891445739,
+		"updateDate": 1575989395936,
 		"id": 2
 	},
 	{
@@ -28,14 +28,14 @@
 		"name": "golang.google.cn",
 		"sections": [
 			{
-				"code": "body {\n    font-size: 1.16em;\n    font-family: Lora, serif;\n    background: #F1EAE2;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Lora, serif;\n    font-weight: bold;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.4em;\n}\n\n#page {\n    max-width: 61.8%;\n    margin: auto;\n}\n\npre {\n    background: #F8F3EB;\n    font-size: 0.85em\n}\n\np,\nli {\n    max-width: 100%\n}",
+				"code": "body {\n    font-size: 1.16em;\n    font-family: Lora, serif;\n    /* background: #F8F3EB; */\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Lora, serif;\n    font-weight: bold;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.4em;\n}\n\n#page {\n    max-width: 61.8%;\n    margin: auto;\n}\n\npre {\n    /* background: #F1EAE2; */\n    background: #EBE3E1;\n    font-size: 0.85em\n}\n\np,\nli {\n    max-width: 100%\n}",
 				"domains": [
 					"golang.google.cn",
 					"golang.org"
 				]
 			}
 		],
-		"updateDate": 1575947473735,
+		"updateDate": 1575969741615,
 		"id": 3
 	},
 	{
