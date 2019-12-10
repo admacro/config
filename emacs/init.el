@@ -46,7 +46,7 @@
           '(
             (fullscreen . maximized)      ;start emacs with window maximized
             (ns-transparent-titlebar . t) ;make titlebar same color as Emacs background
-            (background-color . "#F4EEE6")  ;set background color (other options: F1EAE2, F8F3EB)
+            (background-color . "#F4EEE6")  ;set background color (other options: F1EAE2/F8F3EB, EBE3E1/F8F5F4)
             )))
 (setq default-frame-alist initial-frame-alist)
 
