@@ -38,8 +38,9 @@
 ;; show matching paren immediately
 (setq show-paren-delay 0)
 (show-paren-mode 1)
-;; (set-default-font "Inconsolata-16")
-(set-default-font "Menlo-20")
+
+;; (set-default-font "Inconsolata-20")
+(set-default-font "Menlo-18") ;; Menlo is same as DejaVu Sans Mono
 
 (if (display-graphic-p)
     (setq initial-frame-alist

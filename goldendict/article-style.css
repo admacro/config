@@ -4,8 +4,8 @@ html {
 
 body {
     background: #EBE3E1;
-    font-family: Lora, Charter, Serif;
-    font-size: 18px;
+    font-family: Georgia;
+    font-size: 16px;
 }
 
 .mdict, .gdarticle {
@@ -13,8 +13,9 @@ body {
 }
 
 .mdict b {
-    font-family: Avenir;
-    font-size: 18px;
+    font-family: Literata;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 .gddictname {
@@ -26,6 +27,7 @@ body {
     background-color: #EBE3E1;
     color: #103B78;
 }
+
 .gddicticon {
     display: none;
 }
