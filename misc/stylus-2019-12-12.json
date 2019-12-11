@@ -1,0 +1,81 @@
+[
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1575887161048,
+		"name": "wikipedia.org",
+		"sections": [
+			{
+				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #F8F5F4 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #EBE3E1 !important;\n}\n\n.mw-body-content {\n    font-family: Baskerville, serif;\n    font-size: 1.35em;\n    line-height: 1.3;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: Baskerville, serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto 20%;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
+				"domains": [
+					"en.wikipedia.org"
+				]
+			}
+		],
+		"updateDate": 1576086578053,
+		"id": 2
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1575945904743,
+		"name": "golang.google.cn",
+		"sections": [
+			{
+				"code": "body {\n    font-size: 1.16em;\n    font-family: Baskerville, serif;\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Baskerville, serif;\n    font-weight: bold;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.4em;\n}\n\n#page {\n    max-width: 61.8%;\n    margin: auto;\n}\n\npre {\n    background: #EBE3E1;\n    font-size: 0.85em\n}\n\np,\nli {\n    max-width: 100%\n}",
+				"domains": [
+					"golang.google.cn",
+					"golang.org"
+				]
+			}
+		],
+		"updateDate": 1576066353850,
+		"id": 3
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1575950569931,
+		"name": "xahlee.info",
+		"sections": [
+			{
+				"code": "body {\n    background: #F8F5F4;\n}",
+				"domains": [
+					"xahlee.info",
+					"wordyenglish.com",
+					"ergoemacs.org"
+				]
+			}
+		],
+		"updateDate": 1576066612155,
+		"id": 4
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1576058879259,
+		"name": "fonts.google.com",
+		"sections": [
+			{
+				"code": "body {\n    -webkit-font-smoothing: subpixel-antialiased;\n}",
+				"domains": [
+					"fonts.google.com"
+				]
+			}
+		],
+		"updateDate": 1576058879259,
+		"id": 6
+	}
+]
