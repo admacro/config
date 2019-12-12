@@ -5,7 +5,7 @@ html {
 body {
     background: #EBE3E1;
     font-family: Georgia;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .mdict, .gdarticle {
@@ -14,7 +14,7 @@ body {
 
 .mdict b {
     font-family: Literata;
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
 }
 
