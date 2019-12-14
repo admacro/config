@@ -40,7 +40,8 @@
 (show-paren-mode 1)
 
 ;; (set-default-font "Inconsolata-20")
-(set-default-font "Menlo-18") ;; Menlo is same as DejaVu Sans Mono
+;; (set-default-font "Menlo-16") ;; Menlo is same as DejaVu Sans Mono
+(set-default-font "PT Mono-18")
 
 (if (display-graphic-p)
     (setq initial-frame-alist
@@ -91,3 +92,4 @@
 (if (file-directory-p project-home)
     (progn (setq start-dir project-home)))
 (dired start-dir)
+(xah-fly-command-mode-activate)
