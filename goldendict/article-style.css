@@ -55,7 +55,11 @@ body{
 .mdict .results,
 .mdict .results .ds-single,
 .mdict .results .ds-list {
-    margin-left: 2em;
+    margin-left: 1em;
+}
+
+.mdict .sds-list {
+    margin-left: 1em !important;
 }
 
 .mdict p {
