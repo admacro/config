@@ -9,13 +9,13 @@
 		"name": "wikipedia.org",
 		"sections": [
 			{
-				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #F8F5F4 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #EBE3E1 !important;\n}\n\n.mw-body-content {\n    font-family: Baskerville, serif;\n    font-size: 1.35em;\n    line-height: 1.3;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: Baskerville, serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto 20%;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
+				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #F8F5F4 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #EBE3E1 !important;\n}\n\n.mw-body-content {\n    font-family: Baskerville, serif;\n    font-size: 1.35em;\n    line-height: 1.3;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre, code {\n    font-size: 0.8em;\n    background: #EBE3E1;\n    border-radius: 5px;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: Baskerville, serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto 20%;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
 				"domains": [
 					"en.wikipedia.org"
 				]
 			}
 		],
-		"updateDate": 1576086578053,
+		"updateDate": 1576727680573,
 		"id": 2
 	},
 	{
@@ -77,5 +77,24 @@
 		],
 		"updateDate": 1576058879259,
 		"id": 6
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1576663029119,
+		"name": "computationstructures.org",
+		"sections": [
+			{
+				"code": "div.content, div.transcript, div.check-yourself {\n    width: 800px;\n}\n\niframe {\n    width: 800px;\n    height: 640px;\n}",
+				"urlPrefixes": [
+					"https://computationstructures.org/videos/"
+				]
+			}
+		],
+		"updateDate": 1576669611041,
+		"id": 7
 	}
 ]
