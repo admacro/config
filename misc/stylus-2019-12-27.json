@@ -11,11 +11,12 @@
 			{
 				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #F8F5F4 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #EBE3E1 !important;\n}\n\n.mw-body-content {\n    font-family: Baskerville, serif;\n    font-size: 1.35em;\n    line-height: 1.3;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre, code {\n    font-size: 0.8em;\n    background: #EBE3E1;\n    border-radius: 5px;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: Baskerville, serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto 20%;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
 				"domains": [
-					"en.wikipedia.org"
+					"en.wikipedia.org",
+					"zh.wikipedia.org"
 				]
 			}
 		],
-		"updateDate": 1576727680573,
+		"updateDate": 1577413547374,
 		"id": 2
 	},
 	{
