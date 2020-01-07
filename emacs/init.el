@@ -40,9 +40,10 @@
 (setq show-paren-delay 0)
 (show-paren-mode 1)
 
-;; (set-default-font "Inconsolata-20")
-;; (set-default-font "Menlo-16") ;; Menlo is same as DejaVu Sans Mono
-(set-default-font "PT Mono-18")
+;; Life is boring, so I filddle with fonts. Please bear with me.
+;; (set-default-font "Inconsolata-20") ; used around 2018 for about a year
+;; (set-default-font "PT Mono-18") ; used for one month before I discovered Go Mono
+(set-default-font "Go Mono-18") ; current font. The official programming font for Go. lol
 
 (if (display-graphic-p)
     (setq initial-frame-alist
