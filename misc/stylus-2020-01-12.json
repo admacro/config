@@ -98,5 +98,24 @@
 		],
 		"updateDate": 1576669611041,
 		"id": 7
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1578823139912,
+		"name": "golang codewalk",
+		"sections": [
+			{
+				"code": "#page {\n    max-width: 100%;\n    margin: auto;\n}\n\n.comment, .comment-text {\n    font-size: 16px !important;\n}",
+				"urlPrefixes": [
+					"https://golang.org/doc/codewalk/"
+				]
+			}
+		],
+		"updateDate": 1578823507759,
+		"id": 8
 	}
 ]
