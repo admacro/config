@@ -64,6 +64,9 @@
 ;; format code with gofmt
 (define-key xah-fly-dot-keymap (kbd "f") 'gofmt)
 
+;; find file in repository
+(define-key xah-fly-dot-keymap (kbd ".") 'find-file-in-repository)
+
 (defun xah-dired-sort ()
   "Sort dired dir listing in different ways.
 Prompt for a choice.
