@@ -32,12 +32,12 @@
 				"code": "body {\n    font-size: 1.35em;\n    font-family: Baskerville, serif;\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Baskerville, serif;\n    font-weight: bold;\n}\n\n.unruled a {\n   font-size: 1.25em !important;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.1em;\n}\n\n#page {\n    max-width: 61.8%;\n    margin: auto;\n}\n\npre, code {\n    background: #EBE3E1;\n    font-family: Monospace;\n    font-size: 0.95em;\n}\n\ncode {\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\np,\nli {\n    max-width: 100%\n}",
 				"domains": [
 					"golang.google.cn",
-					"golang.org",
+					"golang.org/doc",
 					"localhost:9000"
 				]
 			}
 		],
-		"updateDate": 1578378785563,
+		"updateDate": 1578901383964,
 		"id": 3
 	},
 	{
@@ -155,5 +155,24 @@
 		],
 		"updateDate": 1578889053252,
 		"id": 10
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1578901455814,
+		"name": "talks.golang.org",
+		"sections": [
+			{
+				"code": "body {\n    font-family: Baskerville, serif;\n    background: white;\n    color: #232323;\n}\n\narticle {\n    background: #F8F5F4 !important;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Baskerville, serif;\n    font-weight: bold;\n}\n\np {\n    font-family: Baskerville, serif;\n    font-size: 1em;\n}\n\n.code,\n.playground {\n    background: #EBE3E1 !important;\n    overflow: scroll;\n    border-radius: 6px;\n}\n\npre {\n    font-family: Go Mono, Monospace;\n    line-height: 1.35em !important;\n}\n\ncode {\n    font-family: Go Mono, Monospace;\n    background: #EBE3E1;\n    font-size: 0.8em;\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n",
+				"domains": [
+					"talks.golang.org"
+				]
+			}
+		],
+		"updateDate": 1578903334489,
+		"id": 11
 	}
 ]
