@@ -117,5 +117,43 @@
 		],
 		"updateDate": 1578823507759,
 		"id": 8
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1578887414309,
+		"name": "godoc.localhost",
+		"sections": [
+			{
+				"code": "body {\n    font-family: Baskerville, serif;\n    font-size: 1em;\n    background: #F8F5F4;\n}\n\ndiv#page {\n    max-width: 62%;\n    margin: auto;\n}\n\n#manual-nav {\n    font-family: Go Mono, monospace;\n    font-size: 16px;\n}\n\npre,\ncode {\n    background: #EBE3E1;\n    font-family: Go Mono, monospace;\n    font-size: 16px;\n}\n\np {\n    font-family: Baskerville, serif;\n    font-size: 1.25em;\n    max-width: 100%;\n}\n\ndl dd {\n    font-size: 16px;\n}",
+				"urlPrefixes": [
+					"http://localhost:9000/"
+				]
+			}
+		],
+		"updateDate": 1578888387388,
+		"id": 9
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1578888438269,
+		"name": "godoc.org",
+		"sections": [
+			{
+				"code": "body {\n    font-family: Baskerville, serif;\n    font-size: 16px;\n    background: #F8F5F4;\n}\n\ndiv.container {\n    max-width: 62%;\n    margin: auto;\n}\n\n.list-unstyled {\n    font-size: 1.25em;\n}\n\np {\n    font-family: Baskerville, serif;\n    font-size: 1.25em;\n    max-width: 100%;\n}\n\npre,\ncode,\n.jumbotron {\n    background: #EBE3E1;\n    font-family: Go Mono, monospace;\n    font-size: 16px;\n}\n",
+				"urlPrefixes": [
+					"https://godoc.org/"
+				]
+			}
+		],
+		"updateDate": 1578889053252,
+		"id": 10
 	}
 ]
