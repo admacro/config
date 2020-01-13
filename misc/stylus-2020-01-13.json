@@ -31,11 +31,12 @@
 			{
 				"code": "body {\n    font-size: 1.35em;\n    font-family: Baskerville, serif;\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Baskerville, serif;\n    font-weight: bold;\n}\n\n.unruled a {\n    font-size: 1.25em !important;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.1em;\n}\n\n#page {\n    max-width: 61.8%;\n    margin: auto;\n}\n\npre,\ncode,\n#content .code,\n#content .playground {\n    background: #EBE3E1;\n    font-family: Monospace;\n    font-size: 0.95em;\n}\n\ncode {\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\np,\nli {\n    max-width: 100%\n}",
 				"regexps": [
-					"https.*(blog\\.)?golang.*((pkg|cmd|doc|ref)\\/)?.*"
+					"https.*golang.*(pkg|cmd|doc|ref)\\/.*",
+					"https.*blog\\.golang.*"
 				]
 			}
 		],
-		"updateDate": 1578910974956,
+		"updateDate": 1578911523360,
 		"id": 3
 	},
 	{
