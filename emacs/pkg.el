@@ -48,6 +48,10 @@
 ;; simplify code while formatting
 (setq gofmt-args '("-s"))
 
+;; format Go code with gofmt before saving
+(add-hook 'before-save-hook 'gofmt-before-save)
+
+
 ;; There is a problem with gofmt-before-save:
 ;; the buffer is not updated after the format
 ;; My solution for now is to manually call gofmt with a key
