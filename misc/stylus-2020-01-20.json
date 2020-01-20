@@ -173,5 +173,24 @@
 		],
 		"updateDate": 1578907727147,
 		"id": 11
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1579522516852,
+		"name": "github.com",
+		"sections": [
+			{
+				"code": "body, .application-main, .Box {\n    background-color: #F8F5F4 !important;\n}\n\ndiv.blob-wrapper {\n    background-color: #EBE3E1 !important;\n}\n\ndiv.blob-wrapper span {\n    font-family: Monospace, Go Mono, PT Mono;\n    font-size: 14px;\n}",
+				"domains": [
+					"github.com"
+				]
+			}
+		],
+		"updateDate": 1579529548671,
+		"id": 12
 	}
 ]
