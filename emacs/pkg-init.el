@@ -4,6 +4,10 @@
 	           '("melpa" . "http://melpa.milkbox.net/packages/"))
 (package-initialize)
 
+;; Refresh package list to include melpa packages
+;; Otherwise package-install cannot find melpa packages
+(package-refresh-contents)
+
 ;; Packages for basic editing, file navigation, search, etc.
 (setq package-list-essential
       '(xah-fly-keys
@@ -49,5 +53,5 @@
   )
 
 (install-packages package-list-essential)
-;; (install-packages package-list-rails)
-;; (install-packages package-list-go)
+(install-packages package-list-rails)
+(install-packages package-list-go)
