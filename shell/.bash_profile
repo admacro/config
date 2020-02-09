@@ -13,20 +13,18 @@ alias lp="ls -p"
 alias h="history"
 alias treed="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
-# ENV variables
+
+# Java
 export JAVA_HOME=$(/usr/libexec/java_home)
-export GO_HOME=/usr/local/go
-export GOPATH=$HOME/go
+export PATH=$JAVA_HOME/bin:$PATH
 
-PYTHON_BIN=/Users/james/Library/Python/2.7/bin
-MYSQL_BIN=/usr/local/mysql/bin
+# Go
+export GOPATH=$(go env GOPATH)
+export PATH=$GOPATH/bin:$PATH
 
-export PATH=$JAVA_HOME/bin:$PYTHON_BIN:$MYSQL_BIN:$GO_HOME/bin:$GOPATH/bin:$PATH
-
-
-# Programming
+# Ruby
 eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/bin:$PATH"
+export PATH="$HOME/.rbenv/shims:$PATH"
 
 
 # Misc
