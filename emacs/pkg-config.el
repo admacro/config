@@ -1,27 +1,3 @@
-;; MELPA
-(require 'package)
-(add-to-list 'package-archives
-	           '("melpa" . "http://melpa.milkbox.net/packages/"))
-(package-initialize)
-
-
-;; packages to install
-;;
-;; xah-fly-keys
-;; magit
-;; org
-;; find-file-in-repository
-;; smex
-;; robe
-;; web-mode
-;; yaml-mode
-;; json-mode
-;; restclient
-;; Apib-mode (major mode for editing API blueprint file)
-;; markdown-mode
-;; graphql-mode
-;; go-mode
-
 ;; xah fly keys (default layout is dvorak)
 (require 'xah-fly-keys)
 (xah-fly-keys 1)
