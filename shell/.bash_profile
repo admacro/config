@@ -11,7 +11,7 @@ alias l="ls -lFGh"
 alias la="l -a"
 alias lp="ls -p"
 alias h="history"
-
+alias treed="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 # ENV variables
 export JAVA_HOME=$(/usr/libexec/java_home)
