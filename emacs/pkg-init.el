@@ -4,10 +4,6 @@
 	           '("melpa" . "http://melpa.milkbox.net/packages/"))
 (package-initialize)
 
-;; Refresh package list to include melpa packages
-;; Otherwise package-install cannot find melpa packages
-(package-refresh-contents)
-
 ;; Packages for basic editing, file navigation, search, etc.
 (setq package-list-essential
       '(xah-fly-keys
@@ -30,6 +26,9 @@
       '(go-mode
         go-playground))
 
+;; On launch, melpa packages are not included in the package search list
+(setq package-contents-refreshed nil)
+
 (defun install-packages(package-list)
   "Install missing packages in the package-list"
   (message "=====================================")
@@ -39,6 +38,14 @@
     (if (package-installed-p package)
         (message "✔ [%s] is installed" package)
       (progn
+        (if (not package-contents-refreshed)
+            ;; Refresh package list to include melpa packages
+            ;; Otherwise package-install cannot find melpa packages
+            ;; Performe only once
+            (progn
+              (package-refresh-contents)
+              (setq package-contents-refreshed t)
+              ))
         (setq missing-package-list
               (append missing-package-list (list package)))
         (message "✘ [%s] is not installed" package)
@@ -55,3 +62,6 @@
 (install-packages package-list-essential)
 (install-packages package-list-rails)
 (install-packages package-list-go)
+
+;; (setq package-list-test '(-mode))
+;; (install-packages package-list-test)
