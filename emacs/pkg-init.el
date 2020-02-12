@@ -11,7 +11,8 @@
         xah-find
         find-file-in-repository
         smex
-        markdown-mode))
+        markdown-mode
+        lsp-mode))
 
 ;; Packages for Ruby and Rails development
 (setq package-list-rails

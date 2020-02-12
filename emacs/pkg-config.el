@@ -26,6 +26,8 @@
 
 ;; format Go code with gofmt before saving
 (add-hook 'before-save-hook 'gofmt-before-save)
+;; enable language server integration with gopls
+;; (add-hook 'go-mode-hook 'lsp-deferred)
 
 
 ;; There is a problem with gofmt-before-save:
