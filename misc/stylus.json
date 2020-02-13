@@ -17,7 +17,9 @@
 			}
 		],
 		"updateDate": 1577413547374,
-		"id": 2
+		"id": 2,
+		"_id": "fc3adba2-a349-422f-ad68-9be0e8d62c02",
+		"_rev": 1581133466484
 	},
 	{
 		"enabled": true,
@@ -29,15 +31,17 @@
 		"name": "golang pkg cmd doc ref blog",
 		"sections": [
 			{
-				"code": "body {\n    font-size: 1.35em;\n    font-family: Baskerville, serif;\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Baskerville, serif;\n    font-weight: bold;\n}\n\n.unruled a {\n    font-size: 1.25em !important;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.1em;\n}\n\n#page {\n    max-width: 61.8%;\n    margin: auto;\n}\n\npre,\ncode,\n#content .code,\n#content .playground {\n    background: #EBE3E1;\n    font-family: Monospace;\n    font-size: 0.95em;\n}\n\ncode {\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\np,\nli {\n    max-width: 100%\n}",
+				"code": "body {\n    font-size: 1.35em;\n    font-family: Baskerville, serif;\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Baskerville, serif;\n    font-weight: bold;\n}\n\n.unruled a {\n    font-size: 1.25em !important;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.2em;\n}\n\n#page {\n    max-width: 61.8%;\n    margin: auto;\n}\n\npre,\ncode,\n#content .code,\n#content .playground {\n    background: #EBE3E1;\n    font-family: Monospace;\n    font-size: 0.95em;\n}\n\ncode {\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\np,\nli {\n    max-width: 100%\n}",
 				"regexps": [
 					"https.*golang.*(pkg|cmd|doc|ref)\\/.*",
 					"https.*blog\\.golang.*"
 				]
 			}
 		],
-		"updateDate": 1578911523360,
-		"id": 3
+		"updateDate": 1581589667756,
+		"id": 3,
+		"_id": "8d94715c-0a39-4126-8f3f-83deb37306e2",
+		"_rev": 1581589667756
 	},
 	{
 		"enabled": true,
@@ -58,7 +62,9 @@
 			}
 		],
 		"updateDate": 1576066612155,
-		"id": 4
+		"id": 4,
+		"_id": "f69e4bb5-3984-4485-ab08-d9150d36d11a",
+		"_rev": 1581133466484
 	},
 	{
 		"enabled": true,
@@ -77,7 +83,9 @@
 			}
 		],
 		"updateDate": 1576058879259,
-		"id": 6
+		"id": 6,
+		"_id": "e2108f5d-a6e2-4746-9ec9-d3e2805667f2",
+		"_rev": 1581133466484
 	},
 	{
 		"enabled": true,
@@ -96,7 +104,9 @@
 			}
 		],
 		"updateDate": 1576669611041,
-		"id": 7
+		"id": 7,
+		"_id": "1acfdeda-c91d-45d8-b714-45ada17d6fde",
+		"_rev": 1581133466484
 	},
 	{
 		"enabled": true,
@@ -115,7 +125,9 @@
 			}
 		],
 		"updateDate": 1578823507759,
-		"id": 8
+		"id": 8,
+		"_id": "bbed3a1e-d963-4dbd-97a2-668095f1d815",
+		"_rev": 1581133466484
 	},
 	{
 		"enabled": true,
@@ -134,7 +146,9 @@
 			}
 		],
 		"updateDate": 1578888387388,
-		"id": 9
+		"id": 9,
+		"_id": "36da4180-e5fa-4a21-9a6c-d94a6ddbdea2",
+		"_rev": 1581133466484
 	},
 	{
 		"enabled": true,
@@ -153,7 +167,9 @@
 			}
 		],
 		"updateDate": 1578889053252,
-		"id": 10
+		"id": 10,
+		"_id": "40d78d15-942a-4c9d-a3ea-dfe9c393cd58",
+		"_rev": 1581133466484
 	},
 	{
 		"enabled": true,
@@ -172,7 +188,9 @@
 			}
 		],
 		"updateDate": 1578907727147,
-		"id": 11
+		"id": 11,
+		"_id": "38bf84da-e18c-494e-81db-39fcfcb33081",
+		"_rev": 1581133466484
 	},
 	{
 		"enabled": true,
@@ -191,6 +209,8 @@
 			}
 		],
 		"updateDate": 1579532329587,
-		"id": 12
+		"id": 12,
+		"_id": "d5205ad9-4977-4d4b-93a1-7658ade99380",
+		"_rev": 1581133466484
 	}
 ]
