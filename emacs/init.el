@@ -89,6 +89,7 @@
 ;; auto wrap line in text mode (default maximum line width is 70)
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
 
+;; Show recent file list on top and start-dir at bottom on startup
 (setq user-home (getenv "HOME"))
 (setq start-dir (concat user-home "/prog"))
 (setq project-home (concat user-home "/prog/bobcat"))
@@ -97,3 +98,6 @@
 (dired start-dir)
 (split-window-below)
 (recentf-open-files)
+
+;; Close *scratch* buffer
+(kill-buffer "*scratch*")
