@@ -4,9 +4,9 @@
 (defun nightp ()
   (set 'hour-str
        (car (split-string
-	           (nth 3
-		              (split-string (current-time-string)))
-	           ":")))
+             (nth 3
+                  (split-string (current-time-string)))
+             ":")))
   (set 'hour (string-to-number hour-str))
   (message hour-str)
   (or (> hour 23) (< hour 5)))

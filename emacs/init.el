@@ -5,7 +5,7 @@
 ;;_UTF-8_as_default_encoding
 (set-language-environment "UTF-8")
 
-;; Emacs GC config for flx-ido 
+;; Emacs GC config for flx-ido
 ;; https://github.com/lewang/flx
 ;; http://bling.github.io/blog/2016/01/18/why-are-you-changing-gc-cons-threshold/
 (defun my-minibuffer-setup-hook ()

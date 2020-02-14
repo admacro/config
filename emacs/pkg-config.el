@@ -17,8 +17,8 @@
 (if (file-directory-p golang-home)
     (progn
       (setenv "PATH"
-	            (concat golang-home "/bin:"
-		                  (getenv "PATH")))
+              (concat golang-home "/bin:"
+                      (getenv "PATH")))
       (add-to-list 'exec-path (concat golang-home "/bin"))))
 
 ;; simplify code while formatting
@@ -41,10 +41,10 @@
 (setq rbenv-home (concat (getenv "HOME") "/.rbenv"))
 (if (file-directory-p rbenv-home)
     (progn
-      (setenv "PATH" 
-	            (concat rbenv-home "/shims:" 
-		                  rbenv-home "/bin:"
-		                  (getenv "PATH")))
+      (setenv "PATH"
+              (concat rbenv-home "/shims:"
+                      rbenv-home "/bin:"
+                      (getenv "PATH")))
       (add-to-list 'exec-path (concat rbenv-home "/shims"))))
 
 
@@ -86,7 +86,7 @@
 
 
 ;; Sh Mode
-(add-to-list 'auto-mode-alist '("\\Procfile.*\\'" . sh-mode)) ; forego/foreman procfile
+(add-to-list 'auto-mode-alist '("\\Procfile.*\\'" . sh-mode)) ; forego foreman/procfile
 
 ;; json mode
 (add-hook 'json-mode-hook
