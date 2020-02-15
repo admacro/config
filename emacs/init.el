@@ -6,6 +6,16 @@
 (set-language-environment "UTF-8")
 
 
+;; ibuffer
+(require 'ibuf-ext)
+(add-to-list 'ibuffer-never-show-predicates "^\\*")
+
+;; more at https://www.emacswiki.org/emacs/IbufferMode
+(add-hook 'ibuffer-mode-hook
+          '(lambda ()
+             (ibuffer-auto-mode 1))) ; auto refresh ibuffer list
+
+
 ;; ** Experimenting **
 ;; Configuration to improve lsp-mode performance
 (setq gc-con-threshold-value 1000000) ; 1MB
