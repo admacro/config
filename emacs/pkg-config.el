@@ -27,8 +27,10 @@
 ;; (add-hook 'before-save-hook 'go-tidy-up)
 (add-hook 'before-save-hook 'gofmt-before-save)
 
+;; lsp-mode
 ;; enable language server integration with gopls
-;; (add-hook 'go-mode-hook 'lsp-deferred)
+(require 'lsp-mode)
+(add-hook 'go-mode-hook 'lsp-deferred)
 
 
 ;; rbenv env setup

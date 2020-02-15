@@ -5,13 +5,22 @@
 ;;_UTF-8_as_default_encoding
 (set-language-environment "UTF-8")
 
+
+;; ** Experimenting **
+;; Configuration to improve lsp-mode performance
+(setq gc-con-threshold-value 1000000) ; 1MB
+;; (setq gc-con-threshold-value 100000000) ; 100MB
+(setq gc-cons-threshold gc-con-threshold-value)
+(setq read-process-output-max (* 1024 1024)) ;; 1mb
+
+
 ;; Emacs GC config for flx-ido
 ;; https://github.com/lewang/flx
 ;; http://bling.github.io/blog/2016/01/18/why-are-you-changing-gc-cons-threshold/
 (defun my-minibuffer-setup-hook ()
   (setq gc-cons-threshold most-positive-fixnum))
 (defun my-minibuffer-exit-hook ()
-  (setq gc-cons-threshold 100000))
+  (setq gc-cons-threshold gc-con-threshold-value))
 (add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
 (add-hook 'minibuffer-exit-hook #'my-minibuffer-exit-hook)
 
@@ -92,7 +101,7 @@
 ;; Show recent file list on top and start-dir at bottom on startup
 (setq user-home (getenv "HOME"))
 (setq start-dir (concat user-home "/prog"))
-(setq project-home (concat user-home "/prog/bobcat"))
+(setq project-home (concat user-home "/prog"))
 (if (file-directory-p project-home)
     (progn (setq start-dir project-home)))
 (dired start-dir)
