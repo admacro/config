@@ -25,7 +25,12 @@
 (setq gofmt-args '("-s"))
 
 ;; format Go code with gofmt before saving
+;; (defun go-tidy-up ()
+  ;; (gofmt-before-save)
+  ;; (go-remove-unused-imports))
+;; (add-hook 'before-save-hook 'go-tidy-up)
 (add-hook 'before-save-hook 'gofmt-before-save)
+
 ;; enable language server integration with gopls
 ;; (add-hook 'go-mode-hook 'lsp-deferred)
 
