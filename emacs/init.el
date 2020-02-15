@@ -7,13 +7,19 @@
 
 
 ;; ibuffer
-(require 'ibuf-ext)
-(add-to-list 'ibuffer-never-show-predicates "^\\*")
+;; (require 'ibuf-ext)
+;; (add-to-list 'ibuffer-never-show-predicates "^(\\*|magit)")
 
 ;; more at https://www.emacswiki.org/emacs/IbufferMode
+(setq ibuffer-saved-filter-groups
+      '(("default"
+         ("Programming" (filename . "prog"))
+         ("Magit" (mode . Magit))
+         ("Misc" (name . "^\\*")))))
 (add-hook 'ibuffer-mode-hook
           '(lambda ()
-             (ibuffer-auto-mode 1))) ; auto refresh ibuffer list
+             (ibuffer-auto-mode 1) ; auto refresh ibuffer list
+             (ibuffer-switch-to-saved-filter-groups "default")))
 
 
 ;; ** Experimenting **
