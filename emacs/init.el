@@ -13,8 +13,11 @@
 ;; more at https://www.emacswiki.org/emacs/IbufferMode
 (setq ibuffer-saved-filter-groups
       '(("default"
-         ("Programming" (filename . "prog"))
-         ("Magit" (mode . Magit))
+         ("Programming" (and (not (name . "^magit"))
+                             (not (name . "COMMIT_EDITMSG"))
+                             (filename . "prog")))
+         ("Magit" (or (name . "^magit")
+                      (name . "COMMIT_EDITMSG")))
          ("Misc" (name . "^\\*")))))
 (add-hook 'ibuffer-mode-hook
           '(lambda ()
