@@ -1,3 +1,7 @@
+;; exec-path-from-shell
+(when (memq window-system '(mac ns x))
+  (exec-path-from-shell-initialize))
+
 ;; xah fly keys (default layout is dvorak)
 (require 'xah-fly-keys)
 (xah-fly-keys 1)
@@ -13,14 +17,6 @@
 
 
 ;; golang env setup
-(setq golang-home "/usr/local/go")
-(if (file-directory-p golang-home)
-    (progn
-      (setenv "PATH"
-              (concat golang-home "/bin:"
-                      (getenv "PATH")))
-      (add-to-list 'exec-path (concat golang-home "/bin"))))
-
 ;; simplify code while formatting
 (setq gofmt-args '("-s"))
 
@@ -35,24 +31,7 @@
 ;; (add-hook 'go-mode-hook 'lsp-deferred)
 
 
-;; There is a problem with gofmt-before-save:
-;; the buffer is not updated after the format
-;; My solution for now is to manually call gofmt with a key
-;; which is added to xah-fly-dot-keymap: `SPC . f` => gofmt
-;; (add-hook 'go-mode-hook 'gofmt-before-save)
-
-
 ;; rbenv env setup
-(setq rbenv-home (concat (getenv "HOME") "/.rbenv"))
-(if (file-directory-p rbenv-home)
-    (progn
-      (setenv "PATH"
-              (concat rbenv-home "/shims:"
-                      rbenv-home "/bin:"
-                      (getenv "PATH")))
-      (add-to-list 'exec-path (concat rbenv-home "/shims"))))
-
-
 ;; integrate robe
 (require 'robe)
 (add-hook 'ruby-mode-hook 'robe-mode)

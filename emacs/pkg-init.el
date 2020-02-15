@@ -12,7 +12,8 @@
         find-file-in-repository
         smex
         markdown-mode
-        lsp-mode))
+        lsp-mode
+        exec-path-from-shell))
 
 ;; Packages for Ruby and Rails development
 (setq package-list-rails
