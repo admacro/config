@@ -1,6 +1,8 @@
 #!/bin/bash
 
 EMACS_D=.emacs.d
+CWD=$(pwd)
+SOURCE_D=$(cd $(dirname "$0") && pwd)
 
 cd ~
 if [ -d "$EMACS_D" ]; then
@@ -13,5 +15,5 @@ echo "Creating dir $EMACS_D"
 mkdir ~/"$EMACS_D"
 
 echo "Copy init.el to $EMACS_D"
-cp ~/prog/config/emacs/emacs-init.el "$EMACS_D"/init.el
+cp "$SOURCE_D"/emacs-init.el "$EMACS_D"/init.el
 
