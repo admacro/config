@@ -14,6 +14,7 @@ fi
 echo "Creating dir $EMACS_D"
 mkdir ~/"$EMACS_D"
 
-echo "Copy init.el to $EMACS_D"
-cp "$SOURCE_D"/emacs-init.el "$EMACS_D"/init.el
+cd ~/"$EMACS_D"
+echo "Create init.el in $EMACS_D"
+echo "(load \"${SOURCE_D}/init.el\")" > "init.el"
 
