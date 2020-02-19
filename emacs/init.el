@@ -7,9 +7,7 @@
 
 
 ;; ibuffer
-;; (require 'ibuf-ext)
-;; (add-to-list 'ibuffer-never-show-predicates "^(\\*|magit)")
-
+;; Filter buffers into groups
 ;; more at https://www.emacswiki.org/emacs/IbufferMode
 (setq ibuffer-saved-filter-groups
       '(("default"
@@ -59,6 +57,7 @@
 (setq inhibit-startup-message t) ; no startup message
 (setq-default indent-tabs-mode nil) ; indent by space
 (setq-default tab-width 2) ; default tab width is 2 spaces
+(setq scroll-conservatively 15) ; center cursor if a moving step is more than 15 lines, otherwise scroll just enough lines 
 (delete-selection-mode t) ; text selection can be deleted or replaced by typing
 (scroll-bar-mode -1) ;no scrool bar
 (tool-bar-mode -1) ; no tool bar
@@ -70,9 +69,11 @@
 (show-paren-mode 1)
 
 ;; Life is boring, so I filddle with fonts. Please bear with me.
-;; (set-default-font "Inconsolata-20") ; used around 2018 for about a year
 ;; (set-default-font "PT Mono-18") ; used for one month before I discovered Go Mono
-(set-default-font "Go Mono-16") ; current font. The official programming font for Go. lol
+
+; current font. The official programming font for Go. lol
+;; (set-default-font "Go Mono-16") ; 16 is for using laptop without stand
+(set-default-font "Go Mono-18") ; 18 is for using laptop with stand
 
 (if (display-graphic-p)
     (setq initial-frame-alist
@@ -96,16 +97,11 @@
       (make-local-variable 'ido-decorations)
       (setf (nth 2 ido-decorations) "\n")))
 
-  ;; enable ido everywhere
-  (setq ido-everywhere t)
-  ;; show any name that has the chars you typed
-  (setq ido-enable-flex-matching t)
-  ;; use current pane for newly opened file
-  (setq ido-default-file-method 'selected-window)
-  ;; use current pane for newly switched buffer
-  (setq ido-default-buffer-method 'selected-window)
-  ;; stop ido from suggesting when naming new file
-  (define-key (cdr ido-minor-mode-map-entry) [remap write-file] nil)
+  (setq ido-everywhere t) ;; enable ido everywhere
+  (setq ido-enable-flex-matching t) ;; show any name that has the chars you typed
+  (setq ido-default-file-method 'selected-window) ;; use current pane for newly opened file
+  (setq ido-default-buffer-method 'selected-window) ;; use current pane for newly switched buffer
+  (define-key (cdr ido-minor-mode-map-entry) [remap write-file] nil) ;; stop ido from suggesting when naming new file
   )
 
 ;; big minibuffer height, for ido to show choices vertically
