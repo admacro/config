@@ -65,5 +65,8 @@
 (install-packages package-list-rails)
 (install-packages package-list-go)
 
-;; (setq package-list-test '(-mode))
+;; (setq package-list-test '(xah-fly-keys))
 ;; (install-packages package-list-test)
+;; (require 'xah-fly-keys)
+;; (xah-fly-keys 1)
+
