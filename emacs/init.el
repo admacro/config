@@ -68,19 +68,12 @@
 (setq show-paren-delay 0)
 (show-paren-mode 1)
 
-;; Life is boring, so I filddle with fonts. Please bear with me.
-;; (set-default-font "PT Mono-18") ; used for one month before I discovered Go Mono
-
-; current font. The official programming font for Go. lol
-;; (set-default-font "Go Mono-16") ; 16 is for using laptop without stand
-(set-default-font "Go Mono-18") ; 18 is for using laptop with stand
-
 (if (display-graphic-p)
     (setq initial-frame-alist
-          '(
-            (fullscreen . maximized)      ;start emacs with window maximized
+          '((fullscreen . maximized)      ;start emacs with window maximized
             (ns-transparent-titlebar . t) ;make titlebar same color as Emacs background
-            (background-color . "#F4EEE6")  ;set background color (other options: F1EAE2/F8F3EB, EBE3E1/F8F5F4)
+            ;; this will overwrite the background in colour theme
+            (background-color . "#F4EEE6")  ;set background color (other options: #F1EAE2/#F8F3EB, #EBE3E1/#F4EEE6/#F8F5F4)
             )))
 (setq default-frame-alist initial-frame-alist)
 
