@@ -27,11 +27,16 @@
 
 ;; format Go code and organize imports
 ;; see https://github.com/dominikh/go-mode.el/issues/340
+
 ;; the goimports approach
 ;; (setq gofmt-command "goimports") ; goimports also does code formatting
 ;; (add-hook 'before-save-hook 'gofmt-before-save)
+
 ;; the lsp approach
-(add-hook 'before-save-hook 'lsp-organize-imports) ; requires lsp-mode
+(add-hook 'before-save-hook
+          (lambda ()
+            (lsp-format-buffer)
+            (lsp-organize-imports)))
 
 
 ;; call different jump implementation in differernt major-mode
