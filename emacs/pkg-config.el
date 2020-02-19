@@ -16,21 +16,34 @@
 (setq ruby-insert-encoding-magic-comment nil)
 
 
-;; golang env setup
-;; simplify code while formatting
-(setq gofmt-args '("-s"))
-
-;; format Go code with gofmt before saving
-;; (defun go-tidy-up ()
-  ;; (gofmt-before-save)
-  ;; (go-remove-unused-imports))
-;; (add-hook 'before-save-hook 'go-tidy-up)
-(add-hook 'before-save-hook 'gofmt-before-save)
-
 ;; lsp-mode
 ;; enable language server integration with gopls
 (require 'lsp-mode)
 (add-hook 'go-mode-hook 'lsp-deferred)
+
+;; golang env setup
+;; simplify code while formatting
+;; (setq gofmt-args '("-s"))
+
+;; format Go code and organize imports
+;; see https://github.com/dominikh/go-mode.el/issues/340
+;; the goimports approach
+;; (setq gofmt-command "goimports") ; goimports also does code formatting
+;; (add-hook 'before-save-hook 'gofmt-before-save)
+;; the lsp approach
+(add-hook 'before-save-hook 'lsp-organize-imports) ; requires lsp-mode
+
+
+;; call different jump implementation in differernt major-mode
+(global-set-key (kbd "<f6>")
+                (lambda ()
+                  (interactive) ; global-set-key expects an interactive command
+                  (cond
+                   ((string-equal "go-mode" major-mode)
+                    (lsp-find-definition))
+                   ((string-equal "ruby-mode" major-mode)
+                    (robe-jump)))))
+(global-set-key (kbd "<f5>") 'pop-tag-mark) ; go back to previous jump mark
 
 
 ;; rbenv env setup
@@ -43,8 +56,6 @@
 ;; ruby code navigation
 (global-set-key (kbd "s-r r") 'inf-ruby)
 (global-set-key (kbd "s-r c") 'inf-ruby-console-auto)
-(global-set-key (kbd "<f6>") 'robe-jump)
-(global-set-key (kbd "<f5>") 'pop-tag-mark)
 
 
 ;; Web Mode
