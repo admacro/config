@@ -61,9 +61,6 @@
 ;; show changes made to current git repo (magit-status)
 (define-key xah-fly-dot-keymap (kbd "c") 'magit-status)
 
-;; format code with gofmt
-(define-key xah-fly-dot-keymap (kbd "f") 'gofmt)
-
 ;; find file in repository
 (define-key xah-fly-dot-keymap (kbd ".") 'find-file-in-repository)
 

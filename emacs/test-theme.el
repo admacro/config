@@ -108,6 +108,44 @@
   (sfa 'font-lock-string-face nil :foreground "#40403F")
   )
 
+;; #0A2744 13.13
+;; #632948 9.38
+;; #1F4D86 7.39
+;; #706253 5.11
+;; #D83501 4.11
+;; #AC6D31 3.65
+;; #A28563 3
+;; #6991D3 2.76
+;; #F88200 2.22
+;; #C9A87C 1.94
+;; #91B4C7 1.9
+;; #A2B2C2 1.88
+;; #D3B0AD 1.72
+;; #F3CFA4 1.27
+;; #F9EAB2 1.04
+(defun solar ()
+  (sfa 'font-lock-function-name-face nil :foreground "#F9EAB2")
+  (sfa 'font-lock-variable-name-face nil :foreground "#A2B2C2")
+  (sfa 'default nil :foreground "#F3CFA4" :background "#0A2744")
+  (sfa 'font-lock-type-face nil :foreground "#D3B0AD")
+  (sfa 'font-lock-keyword-face nil :foreground "#91B4C7")
+  (sfa 'font-lock-constant-face nil :foreground "#C9A87C")
+  (sfa 'font-lock-comment-face nil :foreground "#F88200")
+  (sfa 'font-lock-builtin-face nil :foreground "#6991D3")
+  (sfa 'font-lock-string-face nil :foreground "#A28563")
+  )
+
+(defun adm-compact-theme ()
+  (sfa 'font-lock-function-name-face nil :foreground "#632948" :weight 'bold)
+  (sfa 'font-lock-variable-name-face nil :foreground "black")
+  (sfa 'default nil :foreground "black")
+  (sfa 'font-lock-type-face nil :foreground "black")
+  (sfa 'font-lock-keyword-face nil :foreground "#000080" :weight 'bold)
+  (sfa 'font-lock-constant-face nil :foreground "black")
+  (sfa 'font-lock-comment-face nil :foreground "#595959")
+  (sfa 'font-lock-builtin-face nil :foreground "black")
+  (sfa 'font-lock-string-face nil :foreground "#8b0000")
+  )
 
 ;; (reset) 
 
@@ -121,3 +159,8 @@
 ;; (contrast-seven)
 ;; (contrast-eight)
 ;; (contrast-nine)
+
+;; (solar)
+
+;; (adm-compact-theme)
+;; (adm-default-theme)
