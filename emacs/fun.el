@@ -1,6 +1,18 @@
 ;; custom functions
 
-;; Check if it is everybody is sleeping except me (from 0 to 5 AM)
+;; theme
+;; good font sizes for "Go Mono": 7,8,9,12,14,17,19,22,24,25 (H/W ratio: 2)
+;; refer to font-size.md for ratios of other sizes
+(defun adm-default-theme ()
+  (set-default-font "go mono-14")
+
+  ;; this will overwrite background in colour theme
+  ;; other options: #F1EAE2/#F4EEE6/#F8F3EB, #EBE3E1/#F8F5F4
+  (set-background-color "#F4EEE6"))
+(adm-default-theme)
+
+
+;; Check if everybody is sleeping except me (from 0 to 5 AM)
 (defun nightp ()
   (set 'hour-str
        (car (split-string
@@ -24,6 +36,9 @@
           (load-theme theme)
           ))))
 
+;; (set-default-font "go mono-14")
+;; (load-theme 'modus-operandi)
+
 ;; 2019-12-09
 ;; Theming is fun, when you are at it. But today I think I'm done
 ;; with it after fiddlling with it now and then for the past few years.
@@ -33,11 +48,9 @@
 ;;     (progn
 ;;       (message "It's night. Loading dark theme")
 ;;       (load-theme 'deeper-blue))
-;; (progn
-    ;; (message "It's day. Loading light theme")
-    ;; (load-random-theme)
-    ;; (load-theme 'tsdh-light)
-;; ))
+;;   (progn
+;;     (message "It's day. Loading light theme")
+;;     (load-random-theme)))
 
 ;; Use variable width font faces in current buffer
 (defun writing-mode ()
