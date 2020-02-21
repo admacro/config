@@ -14,7 +14,8 @@
 ;; Programming Config
 ;; no magit coding comment
 (setq ruby-insert-encoding-magic-comment nil)
-
+;; highlight numbers in most programming mode
+(add-hook 'prog-mode-hook 'highlight-numbers-mode)
 
 ;; lsp-mode
 ;; enable language server integration with gopls

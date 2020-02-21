@@ -13,7 +13,8 @@
         smex
         markdown-mode
         lsp-mode
-        exec-path-from-shell))
+        exec-path-from-shell
+        highlight-numbers))
 
 ;; Packages for Ruby and Rails development
 (setq package-list-rails
