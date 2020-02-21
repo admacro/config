@@ -7,8 +7,12 @@
   (set-default-font "go mono-14")
 
   ;; this will overwrite background in colour theme
-  ;; other options: #F1EAE2/#F4EEE6/#F8F3EB, #EBE3E1/#F8F5F4
-  (set-background-color "#F4EEE6"))
+  ;; other color options: #F1EAE2/#F4EEE6/#F8F3EB, #EBE3E1/#F8F5F4
+  (set-background-color "#F4EEE6")
+
+  (set-face-attribute 'fringe nil :background "#F4EEE6")
+  (set-face-attribute 'vertical-border nil :foreground "gray50")
+  )
 (adm-default-theme)
 
 
