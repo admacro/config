@@ -2,6 +2,7 @@
 (when (memq window-system '(mac ns x))
   (exec-path-from-shell-initialize))
 
+
 ;; xah fly keys (default layout is dvorak)
 (require 'xah-fly-keys)
 (xah-fly-keys 1)
@@ -11,18 +12,34 @@
 (global-set-key (kbd "<f7>") 'find-file-in-repository)
 
 
-;; Programming Config
+;; Programming
 ;; no magit coding comment
 (setq ruby-insert-encoding-magic-comment nil)
+
 ;; highlight numbers in most programming mode
 (add-hook 'prog-mode-hook 'highlight-numbers-mode)
 
+;; call different jump implementation in differernt major-mode
+(global-set-key (kbd "<f6>")
+                (lambda ()
+                  (interactive) ; global-set-key expects an interactive command
+                  (cond
+                   ((string-equal "go-mode" major-mode)
+                    (lsp-find-definition))
+                   ((string-equal "ruby-mode" major-mode)
+                    (robe-jump)))))
+(global-set-key (kbd "<f5>") 'pop-tag-mark) ; go back to previous jump mark
+
+
 ;; lsp-mode
+;; https://emacs-lsp.github.io/lsp-mode/lsp-mode.html
 ;; enable language server integration with gopls
 (require 'lsp-mode)
 (add-hook 'go-mode-hook 'lsp-deferred)
+(setq lsp-enable-links nil)
 
-;; golang env setup
+
+;; golang
 ;; simplify code while formatting
 ;; (setq gofmt-args '("-s"))
 
@@ -40,19 +57,8 @@
             (lsp-organize-imports)))
 
 
-;; call different jump implementation in differernt major-mode
-(global-set-key (kbd "<f6>")
-                (lambda ()
-                  (interactive) ; global-set-key expects an interactive command
-                  (cond
-                   ((string-equal "go-mode" major-mode)
-                    (lsp-find-definition))
-                   ((string-equal "ruby-mode" major-mode)
-                    (robe-jump)))))
-(global-set-key (kbd "<f5>") 'pop-tag-mark) ; go back to previous jump mark
-
-
-;; rbenv env setup
+;; Ruby
+;; rbenv
 ;; integrate robe
 (require 'robe)
 (add-hook 'ruby-mode-hook 'robe-mode)

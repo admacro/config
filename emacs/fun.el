@@ -40,9 +40,6 @@
           (load-theme theme)
           ))))
 
-;; (set-default-font "go mono-14")
-;; (load-theme 'modus-operandi)
-
 ;; 2019-12-09
 ;; Theming is fun, when you are at it. But today I think I'm done
 ;; with it after fiddlling with it now and then for the past few years.
