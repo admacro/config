@@ -14,7 +14,8 @@
         markdown-mode
         lsp-mode
         exec-path-from-shell
-        highlight-numbers))
+        highlight-numbers
+        flycheck))
 
 ;; Packages for Ruby and Rails development
 (setq package-list-rails
@@ -27,7 +28,8 @@
 ;; Packages for Go programming
 (setq package-list-go
       '(go-mode
-        go-playground))
+        go-playground
+        flycheck-golangci-lint))
 
 ;; On launch, melpa packages are not included in the package search list
 (setq package-contents-refreshed nil)

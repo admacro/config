@@ -31,6 +31,9 @@
 (global-set-key (kbd "<f5>") 'pop-tag-mark) ; go back to previous jump mark
 
 
+;; flycheck
+(add-hook 'go-mode-hook #'flycheck-mode)
+
 ;; lsp-mode
 ;; https://emacs-lsp.github.io/lsp-mode/lsp-mode.html
 ;; enable language server integration with gopls
