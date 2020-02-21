@@ -34,6 +34,7 @@
 ;; flycheck
 (add-hook 'go-mode-hook #'flycheck-mode)
 
+
 ;; lsp-mode
 ;; https://emacs-lsp.github.io/lsp-mode/lsp-mode.html
 ;; enable language server integration with gopls
@@ -58,6 +59,9 @@
           (lambda ()
             (lsp-format-buffer)
             (lsp-organize-imports)))
+
+;; show eldoc
+(add-hook 'go-mode-hook 'go-eldoc-setup)
 
 
 ;; Ruby

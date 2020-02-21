@@ -29,7 +29,8 @@
 (setq package-list-go
       '(go-mode
         go-playground
-        flycheck-golangci-lint))
+        flycheck-golangci-lint
+        go-eldoc))
 
 ;; On launch, melpa packages are not included in the package search list
 (setq package-contents-refreshed nil)
