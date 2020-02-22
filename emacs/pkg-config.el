@@ -32,7 +32,7 @@
 
 
 ;; flycheck
-(add-hook 'go-mode-hook #'flycheck-mode)
+;; (add-hook 'go-mode-hook #'flycheck-mode) ; auto configured by lsp-mode
 
 
 ;; lsp-mode
@@ -41,6 +41,11 @@
 (require 'lsp-mode)
 (add-hook 'go-mode-hook 'lsp-deferred)
 (setq lsp-enable-links nil)
+
+
+;; company-lsp
+(require 'company-lsp)
+(push 'company-lsp company-backends)
 
 
 ;; golang

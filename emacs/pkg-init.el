@@ -13,6 +13,7 @@
         smex
         markdown-mode
         lsp-mode
+        company-lsp
         exec-path-from-shell
         highlight-numbers
         flycheck))
