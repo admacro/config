@@ -7,14 +7,14 @@
   (set-default-font "go mono-14")
 
   ;; this will overwrite background in colour theme
-  ;; other color options: #F1EAE2/#F4EEE6/#F8F3EB, #EBE3E1/#F8F5F4
-  (set-background-color "#F4EEE6")
+  ;; other color options: #EFE6E0, #F1EAE2/#F4EEE6/#F8F3EB, #EBE3E1/#F8F5F4
+  ;; old paper colors: #E5D8B2, #ECE4D0
+  (set-background-color "#ECE4D0")
 
-  (set-face-attribute 'fringe nil :background "#F4EEE6")
+  (set-face-attribute 'fringe nil :background "#ECE4D0")
   (set-face-attribute 'vertical-border nil :foreground "gray50")
   )
 (adm-default-theme)
-
 
 ;; Check if everybody is sleeping except me (from 0 to 5 AM)
 (defun nightp ()

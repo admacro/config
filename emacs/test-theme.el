@@ -96,32 +96,6 @@
   (sfa 'font-lock-string-face nil :foreground "#40403F")
   )
 
-;; #0A2744 13.13
-;; #632948 9.38
-;; #1F4D86 7.39
-;; #706253 5.11
-;; #D83501 4.11
-;; #AC6D31 3.65
-;; #A28563 3
-;; #6991D3 2.76
-;; #F88200 2.22
-;; #C9A87C 1.94
-;; #91B4C7 1.9
-;; #A2B2C2 1.88
-;; #D3B0AD 1.72
-;; #F3CFA4 1.27
-;; #F9EAB2 1.04
-(defun solar ()
-  (sfa 'font-lock-function-name-face nil :foreground "#D83501")
-  (sfa 'font-lock-variable-name-face nil :foreground "#632948")
-  (sfa 'default nil :foreground "whitesmoke" :background "#0A2744")
-  (sfa 'font-lock-type-face nil :foreground "#632948")
-  (sfa 'font-lock-keyword-face nil :foreground "#632948")
-  (sfa 'font-lock-constant-face nil :foreground "#C9A87C")
-  (sfa 'font-lock-comment-face nil :foreground "#A28563")
-  (sfa 'font-lock-builtin-face nil :foreground "#6991D3")
-  (sfa 'font-lock-string-face nil :foreground "#D83501")
-  )
 
 (defun adm-default-theme ()
   (sfa 'font-lock-function-name-face nil :foreground "red4")
@@ -137,6 +111,18 @@
   ;; #EBE3E1/#F8F5F4
   )
 
+(defun solar-dark ()
+  (sfa 'font-lock-function-name-face nil :foreground "#F8AB32")
+  (sfa 'font-lock-variable-name-face nil :foreground "#EFE6E0")
+  (sfa 'default nil :foreground "#EFE6E0" :background "#2D354B")
+  (sfa 'font-lock-type-face nil :foreground "#EFE6E0")
+  (sfa 'font-lock-keyword-face nil :foreground "#EFE6E0")
+  (sfa 'font-lock-constant-face nil :foreground "#EFE6E0")
+  (sfa 'font-lock-comment-face nil :foreground "#EFE6E0")
+  (sfa 'font-lock-builtin-face nil :foreground "#EFE6E0")
+  (sfa 'font-lock-string-face nil :foreground "#EFE6E0")
+  )
+
 ;; (reset) 
 
 ;; (rainbow)
@@ -149,6 +135,6 @@
 ;; (contrast-eight)
 ;; (contrast-nine)
 
-;; (solar)
+;; (solar-dark)
 
 ;; (adm-default-theme)
