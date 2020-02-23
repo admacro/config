@@ -123,6 +123,20 @@
   (sfa 'font-lock-string-face nil :foreground "#EFE6E0")
   )
 
+(defun test ()
+  "colour palette: https://flatuicolors.com/palette/gb"
+  (sfa 'font-lock-function-name-face nil :foreground "#8e44ad")
+  (sfa 'font-lock-variable-name-face nil :foreground "#f39c12")
+  (sfa 'default nil :foreground "#2c3e50" :background "#ECE4D0")
+  (sfa 'font-lock-type-face nil :foreground "#EFE6E0")
+  (sfa 'font-lock-keyword-face nil :foreground "#2980b9")
+  (sfa 'font-lock-constant-face nil :foreground "#192a56")
+  (sfa 'font-lock-comment-face nil :foreground "#c0392b")
+  (sfa 'font-lock-builtin-face nil :foreground "#EFE6E0")
+  (sfa 'font-lock-string-face nil :foreground "#EFE6E0")
+  )
+(test)
+
 ;; (reset) 
 
 ;; (rainbow)
