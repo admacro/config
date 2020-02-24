@@ -4,7 +4,7 @@
 ;; good font sizes for "Go Mono": 7,8,9,12,14,17,19,22,24,25 (H/W ratio: 2)
 ;; refer to font-size.md for ratios of other sizes
 (defun light-theme ()
-  "colour palette: https://flatuicolors.com/palette/gb"
+  "adm-light-theme"
   (defalias 'sfa 'set-face-attribute)
   (sfa 'font-lock-function-name-face nil :foreground "#833471")
   (sfa 'font-lock-variable-name-face nil :foreground "#2c2c54")
@@ -21,7 +21,7 @@
 
 (defun adm-default-theme ()
   (set-default-font "Go Mono-14")
-  (light-theme)
+  (load-theme 'adm-light-theme t)
   ;; this will overwrite background in colour theme
   ;; other color options: #EFE6E0, #F1EAE2/#F4EEE6/#F8F3EB, #EBE3E1/#F8F5F4
   ;; old paper colors: #E5D8B2, #ECE4D0
