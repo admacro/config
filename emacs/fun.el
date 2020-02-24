@@ -1,8 +1,6 @@
 ;; custom functions
 
-;; theme
-;; good font sizes for "Go Mono": 7,8,9,12,14,17,19,22,24,25 (H/W ratio: 2)
-;; refer to font-size.md for ratios of other sizes
+;; test theme
 (defun light-theme ()
   "adm-light-theme"
   (defalias 'sfa 'set-face-attribute)
@@ -19,8 +17,11 @@
   (sfa 'vertical-border nil :foreground "gray50")
   )
 
+;; Appearance
+;; good font sizes for "Go Mono": 7,8,9,12,14,17,19,22,24,25 (H/W ratio: 2)
+;; refer to font-size.md for ratios of other sizes
 (defun adm-default-theme ()
-  (set-default-font "Go Mono-14")
+  (set-default-font "Go Mono-17")
   (load-theme 'adm-light-theme t)
   ;; this will overwrite background in colour theme
   ;; other color options: #EFE6E0, #F1EAE2/#F4EEE6/#F8F3EB, #EBE3E1/#F8F5F4
