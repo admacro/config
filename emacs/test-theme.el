@@ -125,17 +125,32 @@
 
 (defun test ()
   "colour palette: https://flatuicolors.com/palette/gb"
-  (sfa 'font-lock-function-name-face nil :foreground "#8e44ad")
-  (sfa 'font-lock-variable-name-face nil :foreground "#f39c12")
-  (sfa 'default nil :foreground "#2c3e50" :background "#ECE4D0")
-  (sfa 'font-lock-type-face nil :foreground "#EFE6E0")
-  (sfa 'font-lock-keyword-face nil :foreground "#2980b9")
-  (sfa 'font-lock-constant-face nil :foreground "#192a56")
-  (sfa 'font-lock-comment-face nil :foreground "#c0392b")
-  (sfa 'font-lock-builtin-face nil :foreground "#EFE6E0")
-  (sfa 'font-lock-string-face nil :foreground "#EFE6E0")
+  (sfa 'font-lock-function-name-face nil :foreground "#833471")
+  (sfa 'font-lock-variable-name-face nil :foreground "#B33771")
+  (sfa 'default nil :foreground "#192a56" :background "#ECE4D0")
+  (sfa 'font-lock-type-face nil :foreground "#341f97")
+  (sfa 'font-lock-keyword-face nil :foreground "#5758BB")
+  (sfa 'font-lock-constant-face nil :foreground "#16a085")
+  (sfa 'font-lock-comment-face nil :foreground "#b33939")
+  (sfa 'font-lock-builtin-face nil :foreground "#5758BB")
+  (sfa 'font-lock-string-face nil :foreground "#218c74")
   )
 (test)
+
+(defun simple ()
+  "colour palette: https://flatuicolors.com/palette/gb"
+  (sfa 'font-lock-function-name-face nil :foreground "#833471")
+  (sfa 'font-lock-variable-name-face nil :foreground "#2c2c54")
+  (sfa 'default nil :foreground "#2c2c54" :background "#ece4d0")
+  (sfa 'font-lock-type-face nil :foreground "#833471")
+  (sfa 'font-lock-keyword-face nil :foreground "#474787" :weight 'bold)
+  (sfa 'font-lock-constant-face nil :foreground "#006266" :slant 'italic)
+  (sfa 'font-lock-comment-face nil :foreground "#bf6139" :background nil)
+  (sfa 'font-lock-builtin-face nil :foreground "#474787" :weight 'bold)
+  (sfa 'font-lock-string-face nil :foreground "#006266")
+  )
+(simple)
+
 
 ;; (reset) 
 
