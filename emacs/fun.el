@@ -22,13 +22,43 @@
 ;; refer to font-size.md for ratios of other sizes
 (defun adm-default-theme ()
   (set-default-font "Go Mono-17")
-  (load-theme 'adm-light-theme t)
-  ;; this will overwrite background in colour theme
-  ;; other color options: #EFE6E0, #F1EAE2/#F4EEE6/#F8F3EB, #EBE3E1/#F8F5F4
-  ;; old paper colors: #E5D8B2, #ECE4D0
-  ;; (set-background-color "#ECE4D0")
-  )
+  (load-theme 'adm-light t))
 (adm-default-theme)
+
+
+;; Display hex colour code in its corresponding colour
+;; https://www.emacswiki.org/emacs/HexColour
+(defvar hexcolour-keywords-light
+  '(("#[[:xdigit:]]\\{6\\}"
+     (0 (put-text-property (match-beginning 0)
+                           (match-end 0)
+                           'face (list :foreground 
+                                       (match-string-no-properties 0)
+                                       :background "white"
+                                       ;; :box "black"
+                                       ))))))
+(defvar hexcolour-keywords-dark
+  '(("#[[:xdigit:]]\\{6\\}"
+     (0 (put-text-property (match-beginning 0)
+                           (match-end 0)
+                           'face (list :background 
+                                       (match-string-no-properties 0)
+                                       :foreground "black"
+                                       ;; :box "black"
+                                       ))))))
+
+(defvar hexcolour-keywords hexcolour-keywords-light)
+(add-hook 'prog-mode-hook
+          (lambda ()
+            (font-lock-add-keywords nil hexcolour-keywords)))
+
+(defun hexcolour-toggle-light-or-dark ()
+  (interactive)
+  (if (eq hexcolour-keywords hexcolour-keywords-light)
+      (setq hexcolour-keywords hexcolour-keywords-dark)
+    (setq hexcolour-keywords hexcolour-keywords-light))
+  (revert-buffer t t))
+
 
 ;; Check if everybody is sleeping except me (from 0 to 5 AM)
 (defun nightp ()
