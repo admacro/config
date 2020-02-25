@@ -1,5 +1,6 @@
 (load "~/prog/config/emacs/pkg-init.el")
 (load "~/prog/config/emacs/pkg-config.el")
+(load "~/prog/config/emacs/theme/adm-light-theme.el")
 (load "~/prog/config/emacs/fun.el")
 
 ;;_UTF-8_as_default_encoding

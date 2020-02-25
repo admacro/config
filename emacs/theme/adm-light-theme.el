@@ -69,7 +69,7 @@
 
                ;; mode-line
                (mode-line :foreground nil :background ,adm-current :box ,adm-current)
-               (mode-line-inactive :foreground ,adm-fg :background ,bg2 :box ,bg2)
+               (mode-line-inactive :foreground ,bg4 :background ,bg2 :box ,bg2)
                
                ;; message
                ;; (message-mml :foreground ,adm-green :weight normal)

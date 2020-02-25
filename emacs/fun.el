@@ -1,22 +1,5 @@
 ;; custom functions
 
-;; test theme
-(defun light-theme ()
-  "adm-light-theme"
-  (defalias 'sfa 'set-face-attribute)
-  (sfa 'font-lock-function-name-face nil :foreground "#833471")
-  (sfa 'font-lock-variable-name-face nil :foreground "#2c2c54")
-  (sfa 'default nil :foreground "#2c2c54" :background "#ece4d0")
-  (sfa 'font-lock-type-face nil :foreground "#833471")
-  (sfa 'font-lock-keyword-face nil :foreground "#474787" :weight 'bold)
-  (sfa 'font-lock-constant-face nil :foreground "#006266" :slant 'italic)
-  (sfa 'font-lock-comment-face nil :foreground "#bf6139" :background nil)
-  (sfa 'font-lock-builtin-face nil :foreground "#474787" :weight 'bold)
-  (sfa 'font-lock-string-face nil :foreground "#006266")
-  (sfa 'fringe nil :background "#ECE4D0")
-  (sfa 'vertical-border nil :foreground "gray50")
-  )
-
 ;; Appearance
 ;; good font sizes for "Go Mono": 7,8,9,12,14,17,19,22,24,25 (H/W ratio: 2)
 ;; refer to font-size.md for ratios of other sizes
