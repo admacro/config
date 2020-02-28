@@ -13,7 +13,7 @@
 
                 ;; deplicates
                 (adm-cyan    "#833471") ; official cyan
-                (adm-orange  "#474787") ; official orange
+                (adm-orange  "#bf6139") ; official orange
                 (adm-yellow  "#006266") ; official yellow
 
                 ;; bg
@@ -57,7 +57,7 @@
                (font-lock-keyword-face :weight bold :foreground ,adm-blue)
                (font-lock-constant-face :foreground ,adm-green :slant italic)
                (font-lock-comment-face :foreground ,adm-comment)
-               (font-lock-builtin-face :foreground ,adm-orange :weight bold)
+               (font-lock-builtin-face :foreground ,adm-blue :weight bold)
                (font-lock-string-face :foreground ,adm-yellow)
 
                (font-lock-comment-delimiter-face :foreground ,adm-comment)
@@ -76,6 +76,46 @@
                ;; message
                ;; (message-mml :foreground ,adm-cyan :weight normal)
                ;; (message-header-xheader :foreground ,adm-green :weight normal)
+
+               ;; org
+               (org-agenda-date :foreground ,adm-cyan :underline nil)
+               (org-agenda-dimmed-todo-face :foreground ,adm-comment)
+               (org-agenda-done :foreground ,adm-green)
+               (org-agenda-structure :foreground ,adm-purple)
+               (org-block :foreground ,fg4)
+               (org-code :foreground ,fg4)
+               (org-column :background ,bg4)
+               (org-column-title :inherit org-column :weight bold :underline t)
+               (org-date :foreground ,adm-cyan :underline t)
+               (org-document-info :foreground ,other-blue)
+               (org-document-info-keyword :foreground ,adm-comment)
+               (org-document-title :weight bold :foreground ,adm-orange :height 1.44)
+               (org-done :foreground ,adm-green)
+               (org-ellipsis :foreground ,adm-comment)
+               (org-footnote :foreground ,other-blue)
+               (org-formula :foreground ,adm-orange)
+               (org-headline-done :foreground ,adm-comment :weight normal :strike-through t)
+               (org-hide :foreground ,adm-bg :background ,adm-bg)
+               (org-level-1 :inherit bold :foreground ,adm-blue :height 1.3)
+               (org-level-2 :inherit bold :foreground ,adm-purple :height 1.1)
+               (org-level-3 :weight normal :foreground ,adm-green :height 1.0)
+               (org-level-4 :weight normal :foreground ,adm-orange)
+               (org-level-5 :weight normal :foreground ,adm-red)
+               (org-level-6 :weight normal :foreground ,other-blue)
+               (org-level-7 :weight normal :foreground ,fg3)
+               (org-level-8 :weight normal :foreground ,fg4)
+               (org-link :foreground ,other-blue :underline t)
+               (org-priority :foreground ,adm-cyan)
+               (org-scheduled :foreground ,adm-green)
+               (org-scheduled-previously :foreground ,adm-yellow)
+               (org-scheduled-today :foreground ,adm-green)
+               (org-sexp-date :foreground ,fg4)
+               (org-special-keyword :foreground ,adm-yellow)
+               (org-table :foreground ,adm-green)
+               (org-tag :foreground ,adm-purple :weight bold :background ,bg2)
+               (org-todo :foreground ,adm-orange :weight bold :background ,bg2)
+               (org-upcoming-deadline :foreground ,adm-yellow)
+               (org-warning :weight bold :foreground ,adm-red)
 
                ;; term
                ;; (term :foreground ,adm-fg :background ,adm-bg)
