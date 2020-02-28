@@ -72,14 +72,14 @@
 ;; Ruby
 ;; rbenv
 ;; integrate robe
-(require 'robe)
-(add-hook 'ruby-mode-hook 'robe-mode)
-(setq inf-ruby-console-environment "development")
-(add-hook 'ruby-mode-hook 'robe-start)
+;; (require 'robe)
+;; (add-hook 'ruby-mode-hook 'robe-mode)
+;; (setq inf-ruby-console-environment "development")
+;; (add-hook 'ruby-mode-hook 'robe-start)
 
 ;; ruby code navigation
-(global-set-key (kbd "s-r r") 'inf-ruby)
-(global-set-key (kbd "s-r c") 'inf-ruby-console-auto)
+;; (global-set-key (kbd "s-r r") 'inf-ruby)
+;; (global-set-key (kbd "s-r c") 'inf-ruby-console-auto)
 
 
 ;; Web Mode

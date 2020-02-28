@@ -7,16 +7,27 @@
 ;; Packages for basic editing, file navigation, search, etc.
 (setq package-list-essential
       '(xah-fly-keys
+        smex
         magit
         xah-find
         find-file-in-repository
-        smex
-        markdown-mode
-        lsp-mode
-        company-lsp
-        exec-path-from-shell
+        markdown-mode))
+
+;; Packages for programming
+(setq package-list-prog
+      '(exec-path-from-shell
         highlight-numbers
-        flycheck))
+        lsp-mode
+        flycheck
+        company-lsp
+        htmlize))
+
+;; Packages for Go programming
+(setq package-list-go
+      '(go-mode
+        go-playground
+        flycheck-golangci-lint
+        go-eldoc))
 
 ;; Packages for Ruby and Rails development
 (setq package-list-rails
@@ -25,13 +36,6 @@
         yaml-mode
         json-mode
         restclient))
-
-;; Packages for Go programming
-(setq package-list-go
-      '(go-mode
-        go-playground
-        flycheck-golangci-lint
-        go-eldoc))
 
 ;; On launch, melpa packages are not included in the package search list
 (setq package-contents-refreshed nil)
@@ -67,8 +71,9 @@
   )
 
 (install-packages package-list-essential)
-(install-packages package-list-rails)
+(install-packages package-list-prog)
 (install-packages package-list-go)
+(install-packages package-list-rails)
 
 ;; (setq package-list-test '(xah-fly-keys))
 ;; (install-packages package-list-test)
