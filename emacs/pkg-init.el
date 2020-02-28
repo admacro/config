@@ -40,10 +40,11 @@
 ;; On launch, melpa packages are not included in the package search list
 (setq package-contents-refreshed nil)
 
-(defun install-packages(package-list)
+(defun install-packages(package-list category)
   "Install missing packages in the package-list"
   (message "=====================================")
-  (message "=== Start package installation ===")
+  (message "=== Check package installation ===")
+  (message "=== Category: [%s] ===" category)
   (setq missing-package-list (list))
   (dolist (package package-list)
     (if (package-installed-p package)
@@ -70,13 +71,13 @@
     (message "Packages installed: %S" missing-package-list))
   )
 
-(install-packages package-list-essential)
-(install-packages package-list-prog)
-(install-packages package-list-go)
-(install-packages package-list-rails)
+(install-packages package-list-essential "Essential")
+(install-packages package-list-prog "Programming")
+(install-packages package-list-go "Go")
+(install-packages package-list-rails "Ruby & Rails")
 
 ;; (setq package-list-test '(xah-fly-keys))
-;; (install-packages package-list-test)
+;; (install-packages package-list-test "test")
 ;; (require 'xah-fly-keys)
 ;; (xah-fly-keys 1)
 
