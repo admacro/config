@@ -16,6 +16,9 @@
                 (adm-orange  "#bf6139") ; official orange
                 (adm-yellow  "#006266") ; official yellow
 
+                ;; good candidates for theme colour
+                ;; adm-rose #CE3262 3.89
+
                 ;; bg
                 (bg2 "#E8E0CB")
                 (bg3 "#D3CBA7")
@@ -51,12 +54,12 @@
                (header-line :background ,adm-bg)
 
                ;; syntax
-               (font-lock-function-name-face :foreground ,adm-cyan)
+               (font-lock-function-name-face :foreground ,adm-purple)
                (font-lock-variable-name-face :foreground ,adm-fg)
                (font-lock-type-face :foreground ,adm-purple)
                (font-lock-keyword-face :weight bold :foreground ,adm-blue)
                (font-lock-constant-face :foreground ,adm-green :slant italic)
-               (font-lock-comment-face :foreground ,adm-comment)
+               (font-lock-comment-face :foreground ,adm-orange)
                (font-lock-builtin-face :foreground ,adm-blue :weight bold)
                (font-lock-string-face :foreground ,adm-yellow)
 
