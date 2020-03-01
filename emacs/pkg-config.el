@@ -62,8 +62,11 @@
 ;; the lsp approach
 (add-hook 'before-save-hook
           (lambda ()
-            (lsp-format-buffer)
-            (lsp-organize-imports)))
+            (cond
+             ((string-equal "go-mode" major-mode)
+              (progn
+                (lsp-format-buffer)
+                (lsp-organize-imports))))))
 
 ;; show eldoc
 (add-hook 'go-mode-hook 'go-eldoc-setup)
