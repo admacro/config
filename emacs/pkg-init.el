@@ -20,6 +20,7 @@
         lsp-mode
         flycheck
         company-lsp
+        lsp-treemacs
         htmlize))
 
 ;; Packages for Go programming

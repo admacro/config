@@ -42,6 +42,12 @@
 (add-hook 'go-mode-hook 'lsp-deferred)
 (setq lsp-enable-links nil)
 
+;; enable bidirectional synchronization of lsp workspace folders and treemacs projects
+(lsp-treemacs-sync-mode 1)
+
+;; always show cursor in treemacs side window
+(setq treemacs-show-cursor 1)
+
 
 ;; company-lsp
 (require 'company-lsp)
@@ -87,8 +93,8 @@
 
 ;; Web Mode
 (autoload 'web-mode "web-mode")
+(add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode)) ; html
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode)) ; eRuby
-
 
 ;; YAML
 (autoload 'yaml-mode "yaml-mode")
