@@ -51,6 +51,10 @@
 (setq treemacs-show-cursor 1)
 (setq treemacs-space-between-root-nodes nil)
 
+;; keymap for lsp-treemacs
+(define-key xah-fly-dot-keymap (kbd "t") 'treemacs)
+(define-key xah-fly-dot-keymap (kbd "s") 'lsp-treemacs-symbols)
+
 
 ;; company-lsp
 (require 'company-lsp)
