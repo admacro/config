@@ -42,11 +42,14 @@
 (add-hook 'go-mode-hook 'lsp-deferred)
 (setq lsp-enable-links nil)
 
+
+;; lsp-treemacs
 ;; enable bidirectional synchronization of lsp workspace folders and treemacs projects
 (lsp-treemacs-sync-mode 1)
 
 ;; always show cursor in treemacs side window
 (setq treemacs-show-cursor 1)
+(setq treemacs-space-between-root-nodes nil)
 
 
 ;; company-lsp
