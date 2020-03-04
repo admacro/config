@@ -47,9 +47,18 @@
 ;; enable bidirectional synchronization of lsp workspace folders and treemacs projects
 (lsp-treemacs-sync-mode 1)
 
-;; always show cursor in treemacs side window
+;; Use cursor instead of fringe indicator in treemacs side window, and less width
 (setq treemacs-show-cursor 1)
+(setq treemacs-fringe-indicator-mode nil)
+(setq treemacs-width 25)
+
+;; no spacing betweewn root nodes (this is to fix *LSP Symbols List*)
 (setq treemacs-space-between-root-nodes nil)
+
+;; hide line numbers in treemacs
+(add-hook `treemacs-mode-hook (lambda ()
+                                (display-line-numbers-mode 0)))
+
 
 ;; keymap for lsp-treemacs
 (define-key xah-fly-dot-keymap (kbd "t") 'treemacs)

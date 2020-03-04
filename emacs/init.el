@@ -57,7 +57,7 @@
 (setq column-number-mode t) ; display column number in the mode line
 (setq inhibit-startup-message t) ; no startup message
 (setq-default indent-tabs-mode nil) ; indent by space
-(setq-default tab-width 2) ; default tab width is 2 spaces
+(setq-default tab-width 4) ; default tab width is 4 spaces
 (setq scroll-conservatively 15) ; center cursor if a moving step is more than 15 lines, otherwise scroll just enough lines 
 (delete-selection-mode t) ; text selection can be deleted or replaced by typing
 (scroll-bar-mode -1) ;no scrool bar
