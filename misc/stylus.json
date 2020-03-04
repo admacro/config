@@ -202,15 +202,15 @@
 		"name": "github.com",
 		"sections": [
 			{
-				"code": "body,\n.application-main,\n.Box {\n    background-color: #F8F5F4 !important;\n}\n\ndiv.blob-wrapper {\n    background-color: #EBE3E1 !important;\n}\n\ndiv.blob-wrapper span {\n    font-family: Monospace, Go Mono, PT Mono;\n}\n\n.f6.v-align-middle.text-gray.px-3.py-2.border-bottom.bg-gray-light.d-flex.flex-justify-between {\n    display: none !important;\n}",
+				"code": "body,\n.application-main,\n.Box {\n    background-color: #F8F5F4 !important;\n}\n\ndiv.blob-wrapper {\n    background-color: #EBE3E1 !important;\n}\n\ndiv.blob-wrapper span {\n    font-family: Monospace, Go Mono, PT Mono;\n}\n\n.f6.v-align-middle.text-gray.px-3.py-2.border-bottom.bg-gray-light.d-flex.flex-justify-between {\n    display: none !important;\n}\n\n.tab-size {\n    tab-size: 4 !important;\n}",
 				"domains": [
 					"github.com"
 				]
 			}
 		],
-		"updateDate": 1579532329587,
+		"updateDate": 1583323508843,
 		"id": 12,
 		"_id": "d5205ad9-4977-4d4b-93a1-7658ade99380",
-		"_rev": 1581133466484
+		"_rev": 1583323508843
 	}
 ]
