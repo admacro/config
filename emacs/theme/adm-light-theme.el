@@ -2,22 +2,23 @@
 (deftheme adm-light)
 
 (let ((colors '(;; Upstream theme color
-                (adm-bg      "#ece4d0" nil) ; official background
-                (adm-current "#E0D5B9") ; official current-line/selection
-                (adm-fg      "#2c2c54") ; official foreground
-                (adm-comment "#bf6139") ; official comment
-                (adm-red     "#b33939") ; official red
-                (adm-purple  "#833471") ; official purple
-                (adm-blue    "#474787") ; official blue
-                (adm-green   "#006266") ; official green
+                (adm-bg      "#ece4d0" nil)
+                (adm-current "#E0D5B9") ; current-line/selection
+                (adm-fg      "#2c2c54") ; 10.38
+                (adm-comment "#bf6139") ; 3.32
+                (adm-red     "#b33939") ; 4.65
+                (adm-purple  "#833471") ; 6.51
+                (adm-blue    "#474787") ; 6.57
+                (adm-green   "#006266") ; 5.63
 
                 ;; deplicates
-                (adm-cyan    "#833471") ; official cyan
-                (adm-orange  "#bf6139") ; official orange
-                (adm-yellow  "#006266") ; official yellow
+                (adm-cyan    "#833471")
+                (adm-orange  "#bf6139")
+                (adm-yellow  "#006266")
 
                 ;; good candidates for theme colour
                 ;; adm-rose #CE3262 3.89
+                ;; adm-slateblue #4c5bd3 4.42
 
                 ;; bg
                 (bg2 "#E8E0CB")
