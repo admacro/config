@@ -71,6 +71,9 @@
 
 
 ;; golang
+;; fontify only function declarations, not function calls
+(setq go-fontify-function-calls nil)
+
 ;; simplify code while formatting
 ;; (setq gofmt-args '("-s"))
 

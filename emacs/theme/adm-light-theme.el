@@ -17,8 +17,13 @@
                 (adm-yellow  "#006266")
 
                 ;; good candidates for theme colour
-                ;; adm-rose #CE3262 3.89
-                ;; adm-slateblue #4c5bd3 4.42
+                (adm-darkblue  "#221199") ; 10.3
+                (adm-orchid  "#770088") ; 7.74
+                (adm-fire  "#aa1111") ; 5.92
+                (adm-aqua  "#116644") ; 5.51
+                (adm-slateblue  "#4c5bd3") ; 4.42
+                (adm-chocolate  "#aa5500") ; 4.13
+                (adm-rose  "#ce3262") ; 3.89
 
                 ;; bg
                 (bg2 "#E8E0CB")
@@ -57,12 +62,12 @@
                ;; syntax
                (font-lock-function-name-face :foreground ,adm-purple)
                (font-lock-variable-name-face :foreground ,adm-fg)
-               (font-lock-type-face :foreground ,adm-purple)
-               (font-lock-keyword-face :weight bold :foreground ,adm-blue)
-               (font-lock-constant-face :foreground ,adm-green :slant italic)
-               (font-lock-comment-face :foreground ,adm-orange)
+               (font-lock-type-face :foreground ,adm-blue)
+               (font-lock-keyword-face :foreground ,adm-blue :weight bold)
+               (font-lock-constant-face :foreground ,adm-fg :slant italic)
+               (font-lock-comment-face :foreground ,adm-comment)
                (font-lock-builtin-face :foreground ,adm-blue :weight bold)
-               (font-lock-string-face :foreground ,adm-yellow)
+               (font-lock-string-face :foreground ,adm-green)
 
                (font-lock-comment-delimiter-face :foreground ,adm-comment)
                (font-lock-doc-face :foreground ,adm-comment)
@@ -73,6 +78,9 @@
                (font-lock-regexp-grouping-construct :foreground ,adm-purple)
                (font-lock-warning-face :foreground ,adm-red :background ,bg3)
 
+               ;; highlight-numbers
+               (highlight-numbers-number :foreground ,adm-green)
+               
                ;; mode-line
                (mode-line :foreground nil :background ,adm-current :box ,adm-current)
                (mode-line-inactive :foreground ,bg4 :background ,bg2 :box ,bg2)
