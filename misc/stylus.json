@@ -212,5 +212,26 @@
 		"id": 12,
 		"_id": "d5205ad9-4977-4d4b-93a1-7658ade99380",
 		"_rev": 1583323508843
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1583815528457,
+		"name": "tour.golang.org",
+		"sections": [
+			{
+				"code": "body {\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n",
+				"domains": [
+					"tour.golang.org"
+				]
+			}
+		],
+		"updateDate": 1583815847710,
+		"_id": "f5a2413d-3521-4ebe-b4f2-1a97fd3cf07a",
+		"_rev": 1583815847710,
+		"id": 13
 	}
 ]
