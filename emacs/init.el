@@ -59,6 +59,7 @@
 (setq-default indent-tabs-mode nil) ; indent by space
 (setq-default tab-width 4) ; default tab width is 4 spaces
 (setq scroll-conservatively 15) ; center cursor if a moving step is more than 15 lines, otherwise scroll just enough lines 
+(setq frame-title-format nil)   ; no frame title
 (delete-selection-mode t) ; text selection can be deleted or replaced by typing
 (scroll-bar-mode -1) ;no scrool bar
 (tool-bar-mode -1) ; no tool bar
