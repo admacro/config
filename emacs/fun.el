@@ -3,10 +3,30 @@
 ;; Appearance
 ;; good font sizes for "Go Mono": 7,8,9,12,14,17,19,22,24,25 (H/W ratio: 2)
 ;; refer to font-size.md for ratios of other sizes
-(defun adm-default-theme ()
-  (set-default-font "Go Mono-17")
-  (load-theme 'adm-light t))
-(adm-default-theme)
+(set-default-font "Go Mono-17")
+
+;; 2020-3-13
+;; It's 2020. I made my own light and dark themes. I think I'm
+;; settled for now, or finally.
+;; use dark theme for night and some random light theme for day
+;; One will never be settelled on something which one has not created oneself.
+(defun nightp ()
+  (set 'hour-str
+       (car (split-string
+             (nth 3
+                  (split-string (current-time-string)))
+             ":")))
+  (set 'hour (string-to-number hour-str))
+  (message hour-str)
+  (or (> hour 21) (< hour 6)))
+
+(if (nightp)
+    (progn
+      (message "It's night. Loading dark theme")
+      (load-theme 'adm-dark-theme))
+  (progn
+    (message "It's day. Loading light theme")
+    (load-theme 'adm-light-theme)))
 
 
 ;; Display hex colour code in its corresponding colour
@@ -42,43 +62,6 @@
     (setq hexcolour-keywords hexcolour-keywords-light))
   (revert-buffer t t))
 
-
-;; Check if everybody is sleeping except me (from 0 to 5 AM)
-(defun nightp ()
-  (set 'hour-str
-       (car (split-string
-             (nth 3
-                  (split-string (current-time-string)))
-             ":")))
-  (set 'hour (string-to-number hour-str))
-  (message hour-str)
-  (or (> hour 23) (< hour 5)))
-
-(defun random-theme ()
-  (let ((themes-list (list 'leuven 'tsdh-light nil)))
-    (nth (random (length themes-list)) themes-list)))
-
-(defun load-random-theme ()
-  (interactive)
-  (let ((theme (random-theme)))
-    (if (not (equal theme nil))
-        (progn
-          (message (concat "Loading theme " (symbol-name theme)))
-          (load-theme theme)
-          ))))
-
-;; 2019-12-09
-;; Theming is fun, when you are at it. But today I think I'm done
-;; with it after fiddlling with it now and then for the past few years.
-;; Thus, end it for now.
-;; use dark theme for night and some random light theme for day
-;; (if (nightp)
-;;     (progn
-;;       (message "It's night. Loading dark theme")
-;;       (load-theme 'deeper-blue))
-;;   (progn
-;;     (message "It's day. Loading light theme")
-;;     (load-random-theme)))
 
 ;; Use variable width font faces in current buffer
 (defun writing-mode ()

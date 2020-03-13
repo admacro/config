@@ -1,38 +1,31 @@
 (require 'cl-lib)
-(deftheme adm-light)
+(deftheme adm-dark)
 
 (let ((colors '(;; Upstream theme color
-                (adm-bg      "#ece4d0" nil)
-                (adm-current "#E0D5B9") ; current-line/selection
-                (adm-fg      "#2c2c54") ; 10.38
-                (adm-comment "#bf6139") ; 3.32
-                (adm-red     "#b33939") ; 4.65
-                (adm-purple  "#833471") ; 6.51
-                (adm-blue    "#474787") ; 6.57
-                (adm-green   "#006266") ; 5.63
+                (adm-bg      "#303E61" nil)
+                (adm-current "#3F4E73") ; current-line/selection
+                (adm-fg      "#ece4d0") ; 8.34
+                (adm-comment "#D47851") ; 3.32
+                (adm-red     "#E0999A") ; 4.65
+                (adm-purple  "#E1C2DA") ; 6.51
+                (adm-blue    "#CACAE3") ; 6.57
+                (adm-green   "#8BCD8B") ; 5.63
 
                 ;; deplicates
-                (adm-cyan    "#833471")
-                (adm-orange  "#bf6139")
-                (adm-yellow  "#006266")
-
-                ;; good candidates for theme colour
-                (adm-darkblue  "#221199") ; 10.3
-                (adm-orchid  "#770088") ; 7.74
-                (adm-fire  "#aa1111") ; 5.92
-                (adm-aqua  "#116644") ; 5.51
-                (adm-slateblue  "#4c5bd3") ; 4.42
-                (adm-chocolate  "#aa5500") ; 4.13
-                (adm-rose  "#ce3262") ; 3.89
+                (adm-cyan    "#E1C2DA")
+                (adm-orange  "#D47851")
+                (adm-yellow  "#8BCD8B")
 
                 ;; bg
-                (bg2 "#E8E0CB")
-                (bg3 "#D3CBA7")
-                (bg4 "#C0B082")
+                (bg2 "#4D5B80")
+                (bg3 "#5B698C")
+                (bg4 "#6B7899")
+
                 ;; fg
-                (fg2 "#35355F")
-                (fg3 "#404072")
-                (fg4 "#4D4D89")
+                (fg2 "#E8E0CB")
+                (fg3 "#D3CBA7")
+                (fg4 "#C0B082")
+
                 ;; other
                 (other-blue "#2980b9")))
 
@@ -265,7 +258,7 @@
 	       )))
 
   (apply #'custom-theme-set-faces
-	 'adm-light
+	 'adm-dark
 	 (let ((color-names (mapcar #'car colors))
 	       (graphic-colors (mapcar #'cadr colors))
 	       (tty-colors (mapcar #'car (mapcar #'last colors))))
@@ -285,4 +278,4 @@
   (add-to-list 'custom-theme-load-path
 	       (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'adm-light)
+(provide-theme 'adm-dark)
