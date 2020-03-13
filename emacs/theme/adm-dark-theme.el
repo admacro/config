@@ -3,7 +3,7 @@
 
 (let ((colors '(;; Upstream theme color
                 (adm-bg      "#303E61" nil)
-                (adm-current "#3F4E73") ; current-line/selection
+                (adm-current "#3F5180") ; current-line/selection
                 (adm-fg      "#ece4d0") ; 8.34
                 (adm-comment "#D47851") ; 3.32
                 (adm-red     "#E0999A") ; 4.65
