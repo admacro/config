@@ -28,7 +28,8 @@
       '(go-mode
         go-playground
         flycheck-golangci-lint
-        go-eldoc))
+        go-eldoc
+        ob-go))
 
 ;; Packages for Ruby and Rails development
 (setq package-list-rails

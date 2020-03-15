@@ -12,6 +12,9 @@
 (global-set-key (kbd "<f7>") 'find-file-in-repository)
 
 
+;; org-mode
+(setq org-startup-indented t)
+
 ;; Programming
 ;; no magit coding comment
 (setq ruby-insert-encoding-magic-comment nil)
