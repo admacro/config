@@ -7,7 +7,7 @@
                 (adm-fg      "#2c2c54") ; 10.38
                 (adm-comment "#bf6139") ; 3.32
                 (adm-red     "#b33939") ; 4.65
-                (adm-purple  "#833471") ; 6.51
+                (adm-purple  "#833471") ; 6.15
                 (adm-blue    "#474787") ; 6.57
                 (adm-green   "#006266") ; 5.63
 
