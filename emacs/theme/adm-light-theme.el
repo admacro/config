@@ -16,7 +16,20 @@
                 (adm-orange  "#bf6139")
                 (adm-yellow  "#006266")
 
-                ;; good candidates for theme colour
+                ;; bg
+                (bg2 "#E8E0CB")
+                (bg3 "#D3CBA7")
+                (bg4 "#C0B082")
+
+                ;; fg
+                (fg2 "#35355F")
+                (fg3 "#404072")
+                (fg4 "#4D4D89")
+
+                ;; other
+                (other-blue "#2A69A7")  ; 4.5
+
+                ;; good theme colour candidates
                 (adm-darkblue  "#221199") ; 10.3
                 (adm-orchid  "#770088") ; 7.74
                 (adm-fire  "#aa1111") ; 5.92
@@ -24,17 +37,7 @@
                 (adm-slateblue  "#4c5bd3") ; 4.42
                 (adm-chocolate  "#aa5500") ; 4.13
                 (adm-rose  "#ce3262") ; 3.89
-
-                ;; bg
-                (bg2 "#E8E0CB")
-                (bg3 "#D3CBA7")
-                (bg4 "#C0B082")
-                ;; fg
-                (fg2 "#35355F")
-                (fg3 "#404072")
-                (fg4 "#4D4D89")
-                ;; other
-                (other-blue "#2980b9")))
+                ))
 
       (faces '(;; default
                (cursor :background ,fg3)

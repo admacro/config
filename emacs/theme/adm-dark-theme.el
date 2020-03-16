@@ -27,7 +27,8 @@
                 (fg4 "#C0B082")
 
                 ;; other
-                (other-blue "#2980b9")))
+                (other-blue "#75AEE6")  ; 4.5
+                ))
 
       (faces '(;; default
                (cursor :background ,fg3)
