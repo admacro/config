@@ -259,20 +259,20 @@
 	       )))
 
   (apply #'custom-theme-set-faces
-	 'adm-dark
-	 (let ((color-names (mapcar #'car colors))
-	       (graphic-colors (mapcar #'cadr colors))
-	       (tty-colors (mapcar #'car (mapcar #'last colors))))
-	   (cl-flet* ((expand-for-tty (spec) (cl-progv color-names tty-colors
-					       (eval `(backquote ,spec))))
-		      (expand-for-graphic (spec) (cl-progv color-names graphic-colors
-						   (eval `(backquote ,spec)))))
-	     (cl-loop for (face . spec) in faces
-		      collect `(,face
-				((((min-colors 16777216))
-				  ,(expand-for-graphic spec))
-				 (t
-				  ,(expand-for-tty spec)))))))))
+         'adm-dark
+         (let ((color-names (mapcar #'car colors))
+               (graphic-colors (mapcar #'cadr colors))
+               (tty-colors (mapcar #'car (mapcar #'last colors))))
+           (cl-flet* ((expand-for-tty (spec) (cl-progv color-names tty-colors
+                                               (eval `(backquote ,spec))))
+                      (expand-for-graphic (spec) (cl-progv color-names graphic-colors
+                                                   (eval `(backquote ,spec)))))
+             (cl-loop for (face . spec) in faces
+                      collect `(,face
+                                ((((min-colors 16777216))
+                                  ,(expand-for-graphic spec))
+                                 (t
+                                  ,(expand-for-tty spec)))))))))
 
 ;;;###autoload
 (when load-file-name

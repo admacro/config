@@ -265,27 +265,27 @@
                ;; (whitespace-space-before-tab :background ,adm-orange :foreground ,adm-red)
                ;; (whitespace-tab :background ,bg2 :foreground ,adm-comment)
                ;; (whitespace-trailing :inherit trailing-whitespace)
-	       )))
+               )))
 
   (apply #'custom-theme-set-faces
-	 'adm-light
-	 (let ((color-names (mapcar #'car colors))
-	       (graphic-colors (mapcar #'cadr colors))
-	       (tty-colors (mapcar #'car (mapcar #'last colors))))
-	   (cl-flet* ((expand-for-tty (spec) (cl-progv color-names tty-colors
-					       (eval `(backquote ,spec))))
-		      (expand-for-graphic (spec) (cl-progv color-names graphic-colors
-						   (eval `(backquote ,spec)))))
-	     (cl-loop for (face . spec) in faces
-		      collect `(,face
-				((((min-colors 16777216))
-				  ,(expand-for-graphic spec))
-				 (t
-				  ,(expand-for-tty spec)))))))))
+         'adm-light
+         (let ((color-names (mapcar #'car colors))
+               (graphic-colors (mapcar #'cadr colors))
+               (tty-colors (mapcar #'car (mapcar #'last colors))))
+           (cl-flet* ((expand-for-tty (spec) (cl-progv color-names tty-colors
+                                               (eval `(backquote ,spec))))
+                      (expand-for-graphic (spec) (cl-progv color-names graphic-colors
+                                                   (eval `(backquote ,spec)))))
+             (cl-loop for (face . spec) in faces
+                      collect `(,face
+                                ((((min-colors 16777216))
+                                  ,(expand-for-graphic spec))
+                                 (t
+                                  ,(expand-for-tty spec)))))))))
 
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
-	       (file-name-as-directory (file-name-directory load-file-name))))
+               (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'adm-light)

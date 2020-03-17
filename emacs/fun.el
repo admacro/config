@@ -3,7 +3,7 @@
 ;; Appearance
 ;; good font sizes for "Go Mono": 7,8,9,12,14,17,19,22,24,25 (H/W ratio: 2)
 ;; refer to font-size.md for ratios of other sizes
-(set-default-font "Go Mono-17")
+(set-default-font "Go Mono-19")
 
 ;; 2020-3-13
 ;; It's 2020. I made my own light and dark themes. I think I'm
