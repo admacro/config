@@ -7,14 +7,14 @@
                 (adm-fg      "#2c2c54") ; 10.38
                 (adm-comment "#B05423") ; 4
                 (adm-red     "#b33939") ; 4.65
-                (adm-purple  "#833471") ; 6.15
+                (adm-purple  "#8A2B74") ; 6.18
                 (adm-blue    "#474787") ; 6.57
-                (adm-green   "#135936") ; 6.6
+                (adm-green   "#285928") ; 6.6
 
                 ;; deplicates
-                (adm-cyan    "#833471")
+                (adm-cyan    "#8A2B74")
                 (adm-orange  "#B05423")
-                (adm-yellow  "#135936")
+                (adm-yellow  "#285928")
 
                 ;; bg
                 (bg2 "#E8E0CB")
