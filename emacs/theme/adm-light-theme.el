@@ -3,40 +3,31 @@
 
 (let ((colors '(;; Upstream theme color
                 (adm-bg      "#ece4d0" nil)
-                (adm-current "#E0D5B9") ; current-line/selection
-                (adm-fg      "#2c2c54") ; 10.38
-                (adm-comment "#B05423") ; 4
-                (adm-red     "#b33939") ; 4.65
-                (adm-purple  "#8A2B74") ; 6.18
-                (adm-blue    "#474787") ; 6.57
-                (adm-green   "#285928") ; 6.6
+                (adm-current "#DED4BA") ; current-line/selection 9.02
+                (adm-fg      "#2C2C4E") ; 10.5
+                (adm-comment "#9F5128") ; 4.5
+                (adm-red     "#C02E31") ; 4.5
+                (adm-purple  "#6C2B8D") ; 7
+                (adm-blue    "#454587") ; 6.75
+                (adm-green   "#006B00") ; 6.75
 
                 ;; deplicates
-                (adm-cyan    "#8A2B74")
+                (adm-cyan    "#6C2B8D")
                 (adm-orange  "#B05423")
-                (adm-yellow  "#285928")
+                (adm-yellow  "#006B00")
 
                 ;; bg
-                (bg2 "#E8E0CB")
-                (bg3 "#D3CBA7")
-                (bg4 "#C0B082")
+                (bg2 "#E8DFC8")         ; 10.02
+                (bg3 "#CFC2A0")         ; 7.52
+                (bg4 "#BDAD84")         ; 6
 
                 ;; fg
-                (fg2 "#35355F")
-                (fg3 "#404072")
-                (fg4 "#4D4D89")
+                (fg2 "#36365C")         ; 9.01
+                (fg3 "#424267")         ; 7.51
+                (fg4 "#505078")         ; 6
 
                 ;; other
                 (other-blue "#2A69A7")  ; 4.5
-
-                ;; good theme colour candidates
-                (adm-darkblue  "#221199") ; 10.3
-                (adm-orchid  "#770088") ; 7.74
-                (adm-fire  "#aa1111") ; 5.92
-                (adm-aqua  "#116644") ; 5.51
-                (adm-slateblue  "#4c5bd3") ; 4.42
-                (adm-chocolate  "#aa5500") ; 4.13
-                (adm-rose  "#ce3262") ; 3.89
                 ))
 
       (faces '(;; default
