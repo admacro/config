@@ -3,13 +3,13 @@
 ;; Appearance
 ;; good font sizes for "Go Mono": 7,8,9,12,14,17,19,22,24,25 (H/W ratio: 2)
 ;; refer to font-size.md for ratios of other sizes
-(set-default-font "Go Mono-19")
+(set-default-font "go mono-19")
 
 ;; 2020-3-13
 ;; It's 2020. I made my own light and dark themes. I think I'm
 ;; settled for now, or finally.
 ;; use dark theme for night and light theme for day
-;; One will never be settelled on something which one has not created oneself.
+;; One will never be setteled on something which one has not created oneself.
 (defun nightp ()
   (set 'hour-str
        (car (split-string
