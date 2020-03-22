@@ -5,7 +5,7 @@
                 (adm-bg      "#303E61" nil)
                 (adm-current "#3F5180") ; current-line/selection
                 (adm-fg      "#ece4d0") ; 8.34
-                (adm-comment "#E48857") ; 4
+                (adm-comment "#DD9A76") ; 4.5
                 (adm-red     "#F29193") ; 4.65
                 (adm-purple  "#E1BBD8") ; 6.18
                 (adm-blue    "#CACAE3") ; 6.57
