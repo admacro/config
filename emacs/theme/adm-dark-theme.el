@@ -2,9 +2,9 @@
 (deftheme adm-dark)
 
 (let ((colors '(;; Upstream theme color
-                (adm-bg      "#303E61" nil)
+                (adm-bg      "#2D3959" nil)
                 (adm-current "#3F5180") ; current-line/selection
-                (adm-fg      "#ece4d0") ; 8.34
+                (adm-fg      "#ece4d0") ; 9
                 (adm-comment "#DD9A76") ; 4.5
                 (adm-red     "#F29193") ; 4.65
                 (adm-purple  "#E1BBD8") ; 6.18
