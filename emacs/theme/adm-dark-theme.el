@@ -5,11 +5,11 @@
                 (adm-bg      "#2D3959" nil)
                 (adm-current "#3F5180") ; current-line/selection
                 (adm-fg      "#ece4d0") ; 9
-                (adm-comment "#DD9A76") ; 4.5
-                (adm-red     "#F29193") ; 4.65
-                (adm-purple  "#E1BBD8") ; 6.18
-                (adm-blue    "#CACAE3") ; 6.57
-                (adm-green   "#A7D9A7") ; 6.6
+                (adm-comment "#DD9A76") ; 4.86
+                (adm-red     "#F29193") ; 5.02
+                (adm-purple  "#E1BBD8") ; 6.68
+                (adm-blue    "#CACAE3") ; 7.09
+                (adm-green   "#A7D9A7") ; 7.12
 
                 ;; deplicates
                 (adm-cyan    "#E1BBD8")
