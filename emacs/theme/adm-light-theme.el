@@ -10,9 +10,9 @@
                 (adm-purple  "#6C2B8D") ; 7
                 (adm-blue    "#454587") ; 6.75
                 (adm-green   "#006B00") ; 6.75
+                (adm-cyan    "#0D4F6F") ; 7
 
                 ;; deplicates
-                (adm-cyan    "#6C2B8D")
                 (adm-orange  "#B05423")
                 (adm-yellow  "#006B00")
 
@@ -56,7 +56,7 @@
                ;; syntax
                (font-lock-function-name-face :foreground ,adm-purple)
                (font-lock-variable-name-face :foreground ,adm-fg)
-               (font-lock-type-face :foreground ,adm-blue)
+               (font-lock-type-face :foreground ,adm-cyan)
                (font-lock-keyword-face :foreground ,adm-blue :weight bold)
                (font-lock-constant-face :foreground ,adm-fg :slant italic)
                (font-lock-comment-face :foreground ,adm-comment)
@@ -107,8 +107,8 @@
                (org-level-3 :weight normal :foreground ,adm-green :height 1.0)
                (org-level-4 :weight normal :foreground ,adm-orange)
                (org-level-5 :weight normal :foreground ,adm-red)
-               (org-level-6 :weight normal :foreground ,other-blue)
-               (org-level-7 :weight normal :foreground ,fg3)
+               (org-level-6 :weight normal :foreground ,adm-cyan)
+               (org-level-7 :weight normal :foreground ,other-blue)
                (org-level-8 :weight normal :foreground ,fg4)
                (org-link :foreground ,other-blue :underline t)
                (org-priority :foreground ,adm-cyan)
