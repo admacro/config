@@ -1,6 +1,6 @@
 (load "~/prog/config/emacs/pkg-init.el")
 (load "~/prog/config/emacs/pkg-config.el")
-(load "~/prog/config/emacs/theme/adm-light-theme.el")
+(load "~/prog/config/emacs/theme/theme.el")
 (load "~/prog/config/emacs/fun.el")
 
 ;;_UTF-8_as_default_encoding
@@ -75,7 +75,7 @@
           '((fullscreen . maximized)      ;start emacs with window maximized
             (ns-transparent-titlebar . t) ;make titlebar same color as Emacs background
             ;; this will overwrite background in colour theme
-            ;; (background-color . "#F4EEE6")  ;set background color (other options: #F1EAE2/#F4EEE6/#F8F3EB, #EBE3E1/#F8F5F4)
+            ;; (background-color . "#F4EEE6")  ;set background color 
             )))
 (setq default-frame-alist initial-frame-alist)
 

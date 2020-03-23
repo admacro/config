@@ -1,5 +1,5 @@
 (require 'cl-lib)
-(deftheme adm-light-ncs)
+(deftheme adm-ncs)
 
 (let ((colors '(;; Upstream theme color
                 (adm-bg      "#ededed" nil)
@@ -260,7 +260,7 @@
                )))
 
   (apply #'custom-theme-set-faces
-         'adm-light-ncs
+         'adm-ncs
          (let ((color-names (mapcar #'car colors))
                (graphic-colors (mapcar #'cadr colors))
                (tty-colors (mapcar #'car (mapcar #'last colors))))
@@ -280,4 +280,4 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'adm-light-ncs)
+(provide-theme 'adm-ncs)

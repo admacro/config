@@ -9,7 +9,7 @@
 ;; It's 2020. I made my own light and dark themes. I think I'm
 ;; settled for now, or finally.
 ;; use dark theme for night and light theme for day
-;; One will never be setteled on something which one has not created oneself.
+;; One will never settle on something which one has not created oneself.
 (defun nightp ()
   (set 'hour-str
        (car (split-string
@@ -18,7 +18,7 @@
              ":")))
   (set 'hour (string-to-number hour-str))
   (message hour-str)
-  (or (>= hour 21) (<= hour 6)))
+  (or (>= hour 18) (<= hour 6)))
 
 (if (nightp)
     (progn
@@ -26,7 +26,7 @@
       (load-theme 'adm-dark t))
   (progn
     (message "It's day. Loading light theme")
-    (load-theme 'adm-light t)))
+    (load-theme 'adm-ncs t)))
 
 
 ;; Display hex colour code in its corresponding colour
