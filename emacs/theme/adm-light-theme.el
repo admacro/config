@@ -3,7 +3,7 @@
 
 (let ((colors '(;; Upstream theme color
                 (adm-bg      "#ece4d0" nil)
-                (adm-current "#DED4BA") ; current-line/selection 9.02
+                (adm-current "#DED4BA") ; current-line 9.02
                 (adm-fg      "#2C2C4E") ; 10.5
                 (adm-comment "#9F5128") ; 4.5
                 (adm-red     "#C02E31") ; 4.5
@@ -76,7 +76,7 @@
                (highlight-numbers-number :foreground ,adm-green)
 
                ;; mode-line
-               (mode-line :foreground nil :background ,adm-current :box ,adm-current)
+               (mode-line :foreground nil :background ,bg3 :box ,bg3)
                (mode-line-inactive :foreground ,bg4 :background ,bg2 :box ,bg2)
 
                ;; message
