@@ -2,8 +2,8 @@
 (deftheme adm-light)
 
 (let ((colors '(;; Upstream theme color
-                (adm-bg      "#ece4d0" nil)
-                (adm-current "#DED4BA") ; current-line 9.02
+                (adm-bg      "#EAE4D7" nil)
+                (adm-current "#DCD4C1") ; current-line 9.02
                 (adm-fg      "#2C2C4E") ; 10.5
                 (adm-comment "#9F5128") ; 4.5
                 (adm-red     "#C02E31") ; 4.5
@@ -17,9 +17,9 @@
                 (adm-yellow  "#006B00")
 
                 ;; bg
-                (bg2 "#E8DFC8")         ; 10.02
-                (bg3 "#CFC2A0")         ; 7.52
-                (bg4 "#BDAD84")         ; 6
+                (bg2 "#E6DFCF")         ; 10.02
+                (bg3 "#CBC2AC")         ; 7.51
+                (bg4 "#B8AE93")         ; 6
 
                 ;; fg
                 (fg2 "#36365C")         ; 9.01
