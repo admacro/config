@@ -19,6 +19,15 @@
 ;; no magit coding comment
 (setq ruby-insert-encoding-magic-comment nil)
 
+;; hl-todo
+(global-hl-todo-mode)
+(setq hl-todo-keyword-faces
+      '(("TODO"   . "#C40233")
+        ("FIXME"  . "#C40233")
+        ("DEBUG"  . "#A020F0")
+        ("GOTCHA" . "#FF4500")
+        ("STUB"   . "#1E90FF")))
+
 ;; highlight numbers in most programming mode
 (add-hook 'prog-mode-hook 'highlight-numbers-mode)
 

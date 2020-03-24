@@ -17,6 +17,7 @@
 (setq package-list-prog
       '(exec-path-from-shell
         highlight-numbers
+        hl-todo
         lsp-mode
         flycheck
         company-lsp
