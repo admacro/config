@@ -28,7 +28,6 @@
 (setq package-list-go
       '(go-mode
         go-playground
-        flycheck-golangci-lint
         go-eldoc
         ob-go))
 

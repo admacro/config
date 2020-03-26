@@ -2,8 +2,8 @@
 (deftheme adm-ncs)
 
 (let ((colors '(;; Upstream theme color
-                (adm-bg      "#ededed" nil)
-                (adm-current "#E3E3E3")
+                (adm-bg      "#f0f0f0" nil)
+                (adm-current "#e0e0e0")
                 (adm-fg      "#232323")
                 (adm-comment "#A8541C")
                 (adm-red     "#C40233")
@@ -18,9 +18,9 @@
                 (adm-yellow  "#1B9554")
 
                 ;; bg
-                (bg2 "#DBDBDB")         ; 10.02
-                (bg3 "#CCCCCC")         ; 7.52
-                (bg4 "#BFBFBF")         ; 6
+                (bg2 "#d0d0d0")         ; 10.02
+                (bg3 "#c0c0c0")         ; 7.52
+                (bg4 "#b0b0b0")         ; 6
 
                 ;; fg
                 (fg2 "#333333")         ; 9.01
@@ -151,42 +151,42 @@
                ;; (company-tooltip-selection :background ,bg3 :foreground ,fg3)
 
                ;; dired
-               ;; (dired-directory :foreground ,adm-cyan :weight normal)
-               ;; (dired-flagged :foreground ,adm-blue)
-               ;; (dired-header :foreground ,fg3 :background ,adm-bg)
-               ;; (dired-ignored :inherit shadow)
-               ;; (dired-mark :foreground ,adm-fg :weight bold)
-               ;; (dired-marked :foreground ,adm-orange :weight bold)
-               ;; (dired-perm-write :foreground ,fg3 :underline t)
-               ;; (dired-symlink :foreground ,adm-yellow :weight normal :slant italic)
-               ;; (dired-warning :foreground ,adm-orange :underline t)
-               ;; (diredp-compressed-file-name :foreground ,fg3)
-               ;; (diredp-compressed-file-suffix :foreground ,fg4)
-               ;; (diredp-date-time :foreground ,adm-fg)
-               ;; (diredp-deletion-file-name :foreground ,adm-blue :background ,adm-current)
-               ;; (diredp-deletion :foreground ,adm-blue :weight bold)
-               ;; (diredp-dir-heading :foreground ,fg2 :background ,bg4)
-               ;; (diredp-dir-name :inherit dired-directory)
-               ;; (diredp-dir-priv :inherit dired-directory)
-               ;; (diredp-executable-tag :foreground ,adm-orange)
-               ;; (diredp-file-name :foreground ,adm-fg)
-               ;; (diredp-file-suffix :foreground ,fg4)
-               ;; (diredp-flag-mark-line :foreground ,fg2 :slant italic :background ,adm-current)
-               ;; (diredp-flag-mark :foreground ,fg2 :weight bold :background ,adm-current)
-               ;; (diredp-ignored-file-name :foreground ,adm-fg)
-               ;; (diredp-mode-line-flagged :foreground ,adm-orange)
-               ;; (diredp-mode-line-marked :foreground ,adm-orange)
-               ;; (diredp-no-priv :foreground ,adm-fg)
-               ;; (diredp-number :foreground ,adm-green)
-               ;; (diredp-other-priv :foreground ,adm-orange)
-               ;; (diredp-rare-priv :foreground ,adm-orange)
-               ;; (diredp-read-priv :foreground ,adm-purple)
-               ;; (diredp-write-priv :foreground ,adm-blue)
-               ;; (diredp-exec-priv :foreground ,adm-yellow)
-               ;; (diredp-symlink :foreground ,adm-orange)
-               ;; (diredp-link-priv :foreground ,adm-orange)
-               ;; (diredp-autofile-name :foreground ,adm-yellow)
-               ;; (diredp-tagged-autofile-name :foreground ,adm-yellow)
+               (dired-directory :foreground ,adm-cyan :weight normal)
+               (dired-flagged :foreground ,adm-blue)
+               (dired-header :foreground ,fg3 :background ,adm-bg)
+               (dired-ignored :inherit shadow)
+               (dired-mark :foreground ,adm-fg :weight bold)
+               (dired-marked :foreground ,adm-orange :weight bold)
+               (dired-perm-write :foreground ,fg3 :underline t)
+               (dired-symlink :foreground ,adm-yellow :weight normal :slant italic)
+               (dired-warning :foreground ,adm-orange :underline t)
+               (diredp-compressed-file-name :foreground ,fg3)
+               (diredp-compressed-file-suffix :foreground ,fg4)
+               (diredp-date-time :foreground ,adm-fg)
+               (diredp-deletion-file-name :foreground ,adm-blue :background ,adm-current)
+               (diredp-deletion :foreground ,adm-blue :weight bold)
+               (diredp-dir-heading :foreground ,fg2 :background ,bg4)
+               (diredp-dir-name :inherit dired-directory)
+               (diredp-dir-priv :inherit dired-directory)
+               (diredp-executable-tag :foreground ,adm-orange)
+               (diredp-file-name :foreground ,adm-fg)
+               (diredp-file-suffix :foreground ,fg4)
+               (diredp-flag-mark-line :foreground ,fg2 :slant italic :background ,adm-current)
+               (diredp-flag-mark :foreground ,fg2 :weight bold :background ,adm-current)
+               (diredp-ignored-file-name :foreground ,adm-fg)
+               (diredp-mode-line-flagged :foreground ,adm-orange)
+               (diredp-mode-line-marked :foreground ,adm-orange)
+               (diredp-no-priv :foreground ,adm-fg)
+               (diredp-number :foreground ,adm-green)
+               (diredp-other-priv :foreground ,adm-orange)
+               (diredp-rare-priv :foreground ,adm-orange)
+               (diredp-read-priv :foreground ,adm-purple)
+               (diredp-write-priv :foreground ,adm-blue)
+               (diredp-exec-priv :foreground ,adm-yellow)
+               (diredp-symlink :foreground ,adm-orange)
+               (diredp-link-priv :foreground ,adm-orange)
+               (diredp-autofile-name :foreground ,adm-yellow)
+               (diredp-tagged-autofile-name :foreground ,adm-yellow)
 
                ;; magit
                (magit-branch-local :foreground ,adm-green)

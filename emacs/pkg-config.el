@@ -53,6 +53,7 @@
 (require 'lsp-mode)
 (add-hook 'go-mode-hook 'lsp-deferred)
 (setq lsp-enable-links nil)
+(setq lsp-enable-snippet nil)
 
 
 ;; lsp-treemacs
@@ -80,6 +81,8 @@
 ;; company-lsp
 (require 'company-lsp)
 (push 'company-lsp company-backends)
+(setq company-idle-delay 0)
+(setq company-minimum-prefix-length 1)
 
 
 ;; golang
@@ -97,17 +100,14 @@
 ;; (add-hook 'before-save-hook 'gofmt-before-save)
 
 ;; the lsp approach
-(add-hook 'before-save-hook
-          (lambda ()
-            (cond
-             ((string-equal "go-mode" major-mode)
-              (progn
-                (lsp-format-buffer)
-                (lsp-organize-imports))))))
+;; https://github.com/golang/tools/blob/master/gopls/doc/emacs.md
+(defun lsp-go-install-save-hooks ()
+  (add-hook 'before-save-hook #'lsp-format-buffer t t)
+  (add-hook 'before-save-hook #'lsp-organize-imports t t))
 
 ;; show eldoc
 (add-hook 'go-mode-hook 'go-eldoc-setup)
-
+(add-hook 'go-mode-hook 'lsp-go-install-save-hooks)
 
 ;; Ruby
 ;; rbenv
