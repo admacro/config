@@ -5,8 +5,8 @@
                 (adm-bg      "#2D3959" nil)
                 (adm-current "#3F5180")
                 (adm-fg      "#E6E4E3") ; 9
-                (adm-comment "#DD9A76") ; 4.86
-                (adm-red     "#F29193") ; 5.02
+                (adm-comment "#E6B18F") ; 6
+                (adm-red     "#F9A6A8") ; 6
                 (adm-purple  "#F3BBD6") ; 7
                 (adm-blue    "#C8C8EA") ; 7
                 (adm-green   "#A6D7A6") ; 7
