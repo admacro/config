@@ -72,42 +72,34 @@
 (add-hook `treemacs-mode-hook (lambda ()
                                 (display-line-numbers-mode 0)))
 
-
 ;; keymap for lsp-treemacs
 (define-key xah-fly-dot-keymap (kbd "t") 'treemacs)
 (define-key xah-fly-dot-keymap (kbd "s") 'lsp-treemacs-symbols)
 
 
+;; company
+(setq company-require-match nil)
+(setq company-tooltip-align-annotations t)  ; Align annotation to the right side.
+(setq company-minimum-prefix-length 1)
+
 ;; company-lsp
 (require 'company-lsp)
 (push 'company-lsp company-backends)
-(setq company-idle-delay 0)
-(setq company-minimum-prefix-length 1)
 
-
-;; golang
+;; go-mode
 ;; fontify only function declarations, not function calls
 (setq go-fontify-function-calls nil)
 
-;; simplify code while formatting
-;; (setq gofmt-args '("-s"))
-
-;; format Go code and organize imports
-;; see https://github.com/dominikh/go-mode.el/issues/340
-
-;; the goimports approach
-;; (setq gofmt-command "goimports") ; goimports also does code formatting
-;; (add-hook 'before-save-hook 'gofmt-before-save)
-
-;; the lsp approach
+;; format code and reorganize imports before saving buffer
 ;; https://github.com/golang/tools/blob/master/gopls/doc/emacs.md
 (defun lsp-go-install-save-hooks ()
   (add-hook 'before-save-hook #'lsp-format-buffer t t)
   (add-hook 'before-save-hook #'lsp-organize-imports t t))
+(add-hook 'go-mode-hook 'lsp-go-install-save-hooks)
 
 ;; show eldoc
 (add-hook 'go-mode-hook 'go-eldoc-setup)
-(add-hook 'go-mode-hook 'lsp-go-install-save-hooks)
+
 
 ;; Ruby
 ;; rbenv

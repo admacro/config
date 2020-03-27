@@ -3,16 +3,16 @@
 
 (let ((colors '(;; Upstream theme color
                 (adm-bg      "#2D3959" nil)
-                (adm-current "#3F5180") ; current-line/selection
-                (adm-fg      "#ece4d0") ; 9
+                (adm-current "#3F5180")
+                (adm-fg      "#E6E4E3") ; 9
                 (adm-comment "#DD9A76") ; 4.86
                 (adm-red     "#F29193") ; 5.02
-                (adm-purple  "#E1BBD8") ; 6.68
-                (adm-blue    "#CACAE3") ; 7.09
-                (adm-green   "#A7D9A7") ; 7.12
+                (adm-purple  "#F3BBD6") ; 7
+                (adm-blue    "#C8C8EA") ; 7
+                (adm-green   "#A6D7A6") ; 7
+                (adm-cyan    "#A2D4D4") ; 7
 
                 ;; deplicates
-                (adm-cyan    "#E1BBD8")
                 (adm-orange  "#E48857")
                 (adm-yellow  "#A7D9A7")
 
@@ -22,9 +22,9 @@
                 (bg4 "#6B7899")
 
                 ;; fg
-                (fg2 "#E8E0CB")
-                (fg3 "#D3CBA7")
-                (fg4 "#C0B082")
+                (fg2 "#D9D8D7")
+                (fg3 "#CCCBCA")
+                (fg4 "#BFBEBD")
 
                 ;; other
                 (other-blue "#75AEE6")  ; 4.5
@@ -56,7 +56,7 @@
                ;; syntax
                (font-lock-function-name-face :foreground ,adm-purple)
                (font-lock-variable-name-face :foreground ,adm-fg)
-               (font-lock-type-face :foreground ,adm-blue)
+               (font-lock-type-face :foreground ,adm-cyan)
                (font-lock-keyword-face :foreground ,adm-blue :weight bold)
                (font-lock-constant-face :foreground ,adm-fg :slant italic)
                (font-lock-comment-face :foreground ,adm-comment)
@@ -76,7 +76,7 @@
                (highlight-numbers-number :foreground ,adm-green)
 
                ;; mode-line
-               (mode-line :foreground nil :background ,adm-current :box ,adm-current)
+               (mode-line :foreground nil :background ,bg3 :box ,bg3)
                (mode-line-inactive :foreground ,bg4 :background ,bg2 :box ,bg2)
 
                ;; message
@@ -135,19 +135,19 @@
                ;; (term-color-yellow :foreground ,adm-yellow :background ,adm-yellow)
 
                ;; company
-               ;; (company-echo-common :foreground ,adm-bg :background ,adm-fg)
-               ;; (company-preview :background ,adm-bg :foreground ,other-blue)
-               ;; (company-preview-common :foreground ,bg2 :foreground ,fg3)
-               ;; (company-preview-search :foreground ,adm-purple :background ,adm-bg)
-               ;; (company-scrollbar-bg :background ,bg3)
-               ;; (company-scrollbar-fg :foreground ,adm-blue)
-               ;; (company-template-field :inherit region)
-               ;; (company-tooltip :foreground ,fg2 :background ,bg2 :weight bold)
-               ;; (company-tooltip-annotation :foreground ,adm-green)
-               ;; (company-tooltip-common :foreground ,fg3)
-               ;; (company-tooltip-common-selection :foreground ,adm-yellow)
-               ;; (company-tooltip-mouse :inherit highlight)
-               ;; (company-tooltip-selection :background ,bg3 :foreground ,fg3)
+               (company-echo-common :foreground ,adm-bg :background ,adm-fg)
+               (company-preview :foreground ,other-blue :background ,adm-bg)
+               (company-preview-common :foreground ,fg3 :background ,bg2)
+               (company-preview-search :foreground ,adm-purple :background ,adm-bg)
+               (company-scrollbar-bg :background ,adm-current)
+               (company-scrollbar-fg :background ,bg3)
+               (company-template-field :inherit region)
+               (company-tooltip :foreground ,adm-fg :background ,adm-current)
+               (company-tooltip-annotation :foreground ,fg4 :slant italic)
+               (company-tooltip-common :foreground ,adm-fg :background ,bg4)
+               (company-tooltip-common-selection :foreground ,adm-red :background ,bg4)
+               (company-tooltip-mouse :inherit highlight)
+               (company-tooltip-selection :foreground ,adm-red :background ,bg2)
 
                ;; dired
                (dired-directory :foreground ,adm-cyan :weight normal)
@@ -256,7 +256,7 @@
                ;; (whitespace-space-before-tab :background ,adm-orange :foreground ,adm-red)
                ;; (whitespace-tab :background ,bg2 :foreground ,adm-comment)
                ;; (whitespace-trailing :inherit trailing-whitespace)
-	       )))
+               )))
 
   (apply #'custom-theme-set-faces
          'adm-dark
@@ -277,6 +277,6 @@
 ;;;###autoload
 (when load-file-name
   (add-to-list 'custom-theme-load-path
-	       (file-name-as-directory (file-name-directory load-file-name))))
+               (file-name-as-directory (file-name-directory load-file-name))))
 
 (provide-theme 'adm-dark)
