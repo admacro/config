@@ -4,18 +4,17 @@
 (let ((colors '(;; Upstream theme color
                 (adm-bg      "#f2f1f0" nil)
                 (adm-current "#E6E4E3")
-                (adm-fg      "#232323")
-                (adm-comment "#A8541C")
-                (adm-red     "#C40233")
-                (adm-purple  "#832351")
-                (adm-blue    "#3C5F89")
-                (adm-green   "#1B9554")
-                (adm-cyan    "#008686")
+                (adm-fg      "#232323") ; 13.93
+                (adm-comment "#A8541C") ; 4.71
+                (adm-red     "#C40233") ; 5.46
+                (adm-purple  "#A81D60") ; 6.18
+                (adm-blue    "#3C5F89") ; 5.83
+                (adm-green   "#1B9554") ; 3.4
+                (adm-cyan    "#008686") ; 3.91
 
-                ;; #ffd100
                 ;; deplicates
                 (adm-orange  "#A8541C")
-                (adm-yellow  "#1B9554")
+                (adm-yellow  "#1B9554") ; #ffd100
 
                 ;; bg
                 (bg2 "#D9D8D7")         ; 10.02
