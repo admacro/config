@@ -14,7 +14,7 @@
 
                 ;; deplicates
                 (adm-orange  "#E48857")
-                (adm-yellow  "#A7D9A7")
+                (adm-yellow  "#F0C64D") ; 7
 
                 ;; bg
                 (bg2 "#4D5B80")
