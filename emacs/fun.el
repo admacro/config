@@ -5,6 +5,9 @@
 ;; refer to font-size.md for ratios of other sizes
 (set-default-font "go mono-19")
 
+(custom-set-faces
+ '(variable-pitch ((t (:family "Baskerville")))))
+
 ;; 2020-3-13
 ;; It's 2020. I made my own light and dark themes. I think I'm
 ;; settled for now, or finally.
