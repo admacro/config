@@ -2,8 +2,8 @@
 (deftheme adm-ncs)
 
 (let ((colors '(;; Upstream theme color
-                (adm-bg      "#f2f1f0" nil)
-                (adm-current "#E6E4E3")
+                (adm-bg      "#F0EFEE" nil)
+                (adm-current "#E4E3E2")
                 (adm-fg      "#232323") ; 13.93
                 (adm-comment "#A8541C") ; 4.71
                 (adm-red     "#C40233") ; 5.46
@@ -17,9 +17,9 @@
                 (adm-yellow  "#1B9554") ; #ffd100
 
                 ;; bg
-                (bg2 "#D9D8D7")         ; 10.02
-                (bg3 "#CCCBCA")         ; 7.52
-                (bg4 "#BFBEBD")         ; 6
+                (bg2 "#E0DFDE")         ; 10.02
+                (bg3 "#D0CFCE")         ; 7.52
+                (bg4 "#C0BFBE")         ; 6
 
                 ;; fg
                 (fg2 "#333333")         ; 9.01
