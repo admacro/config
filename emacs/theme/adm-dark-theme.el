@@ -7,7 +7,7 @@
                 (adm-fg      "#E4E3E2") ; 9
                 (adm-comment "#E6B18F") ; 6
                 (adm-red     "#F9A6A8") ; 6
-                (adm-purple  "#F3BBD6") ; 7
+                (adm-purple  "#F3BADE") ; 7
                 (adm-blue    "#C8C8EA") ; 7
                 (adm-green   "#A6D7A6") ; 7
                 (adm-cyan    "#A2D4D4") ; 7
