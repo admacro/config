@@ -31,17 +31,17 @@
 		"name": "golang pkg cmd doc ref blog",
 		"sections": [
 			{
-				"code": "body {\n    font-size: 1.35em;\n    font-family: Baskerville, serif;\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Baskerville, serif;\n    font-weight: bold;\n}\n\n.unruled a {\n    font-size: 1.25em !important;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.2em;\n}\n\n#page {\n    max-width: 81.8%;\n    margin: auto;\n}\n\npre,\ncode,\n#content .code,\n#content .playground {\n    background: #EBE3E1;\n    font-family: Monospace;\n    font-size: 0.95em;\n}\n\ncode {\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\np,\nli {\n    max-width: 100%\n}",
+				"code": "body {\n    font-size: 1.35em;\n    font-family: Baskerville, serif;\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Baskerville, serif;\n    font-weight: bold;\n}\n\nh1 {font-size: 1.3em}\nh2 {font-size: 1.25em}\nh3 {font-size: 1.2em}\nh4 {font-size: 1.15em}\nh5 {font-size: 1.1em}\n\n\n.unruled a {\n    font-size: 1.25em !important;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.2em;\n}\n\n#page {\n    max-width: 81.8%;\n    margin: auto;\n}\n\npre,\ncode,\n#content .code,\n#content .playground {\n    background: #EBE3E1;\n    font-family: Monospace;\n    font-size: 0.95em;\n}\n\ncode {\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\np,\nli {\n    max-width: 100%\n}",
 				"regexps": [
 					"https.*golang.*(pkg|cmd|doc|ref)\\/.*",
 					"https.*blog\\.golang.*"
 				]
 			}
 		],
-		"updateDate": 1585063736405,
+		"updateDate": 1586869105136,
 		"id": 3,
 		"_id": "8d94715c-0a39-4126-8f3f-83deb37306e2",
-		"_rev": 1585926114656
+		"_rev": 1586869105136
 	},
 	{
 		"enabled": true,
