@@ -4,7 +4,7 @@
 (let ((colors '(;; Upstream theme color
                 (adm-bg      "#2D3959" nil)
                 (adm-current "#3F5180")
-                (adm-fg      "#E6E4E3") ; 9
+                (adm-fg      "#E4E3E2") ; 9
                 (adm-comment "#E6B18F") ; 6
                 (adm-red     "#F9A6A8") ; 6
                 (adm-purple  "#F3BBD6") ; 7
@@ -22,9 +22,9 @@
                 (bg4 "#6B7899")
 
                 ;; fg
-                (fg2 "#D9D8D7")
-                (fg3 "#CCCBCA")
-                (fg4 "#BFBEBD")
+                (fg2 "#E0DFDE")
+                (fg3 "#D0CFCE")
+                (fg4 "#C0BFBE")
 
                 ;; other
                 (other-blue "#75AEE6")  ; 4.5
