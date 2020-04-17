@@ -7,50 +7,13 @@
 (set-language-environment "UTF-8")
 
 
-;; ibuffer
-;; Filter buffers into groups
-;; more at https://www.emacswiki.org/emacs/IbufferMode
-(setq ibuffer-saved-filter-groups
-      '(("default"
-         ("Programming" (and (not (name . "^magit"))
-                             (not (name . "COMMIT_EDITMSG"))
-                             (filename . "prog")))
-         ("Magit" (or (name . "^magit")
-                      (name . "COMMIT_EDITMSG")))
-         ("Misc" (name . "^\\*")))))
-(add-hook 'ibuffer-mode-hook
-          '(lambda ()
-             (ibuffer-auto-mode 1) ; auto refresh ibuffer list
-             (ibuffer-switch-to-saved-filter-groups "default")))
-
-
-;; ** Experimenting **
-;; Configuration to improve lsp-mode performance
-(setq gc-con-threshold-value 1000000) ; 1MB
-;; (setq gc-con-threshold-value 100000000) ; 100MB
-(setq gc-cons-threshold gc-con-threshold-value)
-(setq read-process-output-max (* 1024 1024)) ;; 1mb
-
-
-;; Emacs GC config for flx-ido
-;; https://github.com/lewang/flx
-;; http://bling.github.io/blog/2016/01/18/why-are-you-changing-gc-cons-threshold/
-(defun my-minibuffer-setup-hook ()
-  (setq gc-cons-threshold most-positive-fixnum))
-(defun my-minibuffer-exit-hook ()
-  (setq gc-cons-threshold gc-con-threshold-value))
-(add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
-(add-hook 'minibuffer-exit-hook #'my-minibuffer-exit-hook)
-
-;; load custom themes
-;; (add-to-list 'custom-theme-load-path "~/.emacs.d/themes")
-
 ;; Global config
 (fset 'yes-or-no-p 'y-or-n-p) ; y or n is enough
 (global-auto-revert-mode t) ; auto refresh files
 (global-display-line-numbers-mode 1); dispaly line numbers everywhere
-(global-hl-line-mode 1) ; highlight current line where cursor is
-(global-visual-line-mode 1) ; 1 for on, 0 for off
+;; (global-hl-line-mode 1) ; highlight current line where cursor is
+;; (global-visual-line-mode 1) ; 1 for on, 0 for off
+(blink-cursor-mode 0)       ; disable cursor blinking
 ;; (modify-all-frames-parameters (list (cons 'cursor-type 'bar))) ; display cursor as a vertical bar (i-beam: I)
 (setq auto-save-default nil) ; stop creating #autosave# files
 (setq make-backup-files nil) ; stop creating backup~ files
@@ -69,6 +32,7 @@
 ;; show matching paren immediately
 (setq show-paren-delay 0)
 (show-paren-mode 1)
+
 
 (if (display-graphic-p)
     (setq initial-frame-alist
@@ -107,6 +71,41 @@
 
 ;; auto wrap line in text mode (default maximum line width is 70)
 (add-hook 'text-mode-hook 'turn-on-auto-fill)
+;; ibuffer
+;; Filter buffers into groups
+;; more at https://www.emacswiki.org/emacs/IbufferMode
+(setq ibuffer-saved-filter-groups
+      '(("default"
+         ("Programming" (and (not (name . "^magit"))
+                             (not (name . "COMMIT_EDITMSG"))
+                             (filename . "prog")))
+         ("Magit" (or (name . "^magit")
+                      (name . "COMMIT_EDITMSG")))
+         ("Misc" (name . "^\\*")))))
+(add-hook 'ibuffer-mode-hook
+          '(lambda ()
+             (ibuffer-auto-mode 1) ; auto refresh ibuffer list
+             (ibuffer-switch-to-saved-filter-groups "default")))
+
+
+;; ** Experimenting **
+;; Configuration to improve lsp-mode performance
+(setq gc-con-threshold-value 1000000) ; 1MB
+;; (setq gc-con-threshold-value 100000000) ; 100MB
+(setq gc-cons-threshold gc-con-threshold-value)
+(setq read-process-output-max (* 1024 1024)) ;; 1mb
+
+
+;; Emacs GC config for flx-ido
+;; https://github.com/lewang/flx
+;; http://bling.github.io/blog/2016/01/18/why-are-you-changing-gc-cons-threshold/
+(defun my-minibuffer-setup-hook ()
+  (setq gc-cons-threshold most-positive-fixnum))
+(defun my-minibuffer-exit-hook ()
+  (setq gc-cons-threshold gc-con-threshold-value))
+(add-hook 'minibuffer-setup-hook #'my-minibuffer-setup-hook)
+(add-hook 'minibuffer-exit-hook #'my-minibuffer-exit-hook)
+
 
 ;; Show recent file list on top and start-dir at bottom on startup
 (setq user-home (getenv "HOME"))

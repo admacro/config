@@ -223,15 +223,15 @@
 		"name": "tour.golang.org",
 		"sections": [
 			{
-				"code": "body {\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n",
+				"code": "body {\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\n#file-editor .CodeMirror-lines, #file-editor .CodeMirror-gutters {\n    background: #F0EFEE;\n    font-family: monospace;\n}\n\n.output > pre {\n    font-family: monospace;\n}\n\ndiv[vertical-slide] {\n    left: 38%;\n    right: 62%;\n}\n\ndiv#left-side {\n    width: 38%\n}\n\ndiv#right-side {\n    left: 38%\n}\n",
 				"domains": [
 					"tour.golang.org"
 				]
 			}
 		],
-		"updateDate": 1583815847710,
+		"updateDate": 1587109002293,
 		"_id": "f5a2413d-3521-4ebe-b4f2-1a97fd3cf07a",
-		"_rev": 1583815847710,
+		"_rev": 1587109002293,
 		"id": 13
 	},
 	{
@@ -244,15 +244,21 @@
 		"name": "youtube.com",
 		"sections": [
 			{
-				"code": "/* hide youtube comments */\nytd-comments {\n    display: none;\n}",
-				"domains": [
-					"youtube.com"
+				"code": "/* hide youtube comments */\nytd-comments {\n    display: none;\n}\n\nytd-expander {\n    --ytd-expander-collapsed-height: 800px !important;\n}\n\n#items.ytd-watch-next-secondary-results-renderer {\n    display: none;\n}\n\nytd-watch-flexy {\n    --ytd-watch-flexy-sidebar-width: 0px;\n    --ytd-watch-flexy-sidebar-min-width: 0px;\n    --ytd-watch-flexy-masthead-height: 0px;\n    min-width: 0;\n}",
+				"urlPrefixes": [
+					"https://www.youtube.com"
+				]
+			},
+			{
+				"code": "/* hide youtube comments */\nytd-comments {\n    display: none;\n}\n\nytd-expander {\n    --ytd-expander-collapsed-height: 800px !important;\n}\n\n#items.ytd-watch-next-secondary-results-renderer {\n    display: none;\n}\n",
+				"regexps": [
+					"https.*www\\.youtube\\.com.*&list=.*"
 				]
 			}
 		],
-		"updateDate": 1586748153162,
+		"updateDate": 1587012894750,
 		"_id": "5824946a-fc41-4583-b214-2622eb1436d7",
-		"_rev": 1586748153162,
+		"_rev": 1587012894750,
 		"id": 14
 	},
 	{
