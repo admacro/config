@@ -3,7 +3,8 @@
 ;; Appearance
 ;; good font sizes for "Go Mono": 7,8,9,12,14,17,19,22,24,25 (H/W ratio: 2)
 ;; refer to font-size.md for ratios of other sizes
-(set-default-font "go mono-17")
+;; (set-frame-font "go mono-17")
+(set-frame-font "spot mono-27")
 
 (custom-set-faces
  '(variable-pitch ((t (:family "Baskerville")))))
