@@ -4,7 +4,18 @@
 ;; good font sizes for "Go Mono": 7,8,9,12,14,17,19,22,24,25 (H/W ratio: 2)
 ;; refer to font-size.md for ratios of other sizes
 ;; (set-frame-font "go mono-17")
-(set-frame-font "spot mono-27")
+;; (set-frame-font "gabriele bad ah-18")
+;; (set-frame-font "calling code-18")
+;; (set-frame-font "pointfree-16")
+
+;; load one of these good fonts randomly
+(defun random-font ()
+  (let ((font-list (list "go mono-17"
+                         "gabriele bad ah-18"
+                         "calling code-18"
+                         "pointfree-16")))
+    (nth (random (length font-list)) font-list)))
+(set-frame-font (random-font))
 
 (custom-set-faces
  '(variable-pitch ((t (:family "Baskerville")))))
