@@ -29,6 +29,61 @@
         ("STUB"   . "#1E90FF")))
 
 ;; highlight numbers in most programming mode
+(defun highlight-numbers-go-mode ()
+  "symbol-start and symbol-end excludes dot (.) so numbers start or end with dots must be matched separately"
+  (puthash 'go-mode
+           (rx
+            (or
+             ;; match numbers end with .
+             (and
+              symbol-start
+              (or
+               (and (+ (any digit "_"))
+                    "."
+                    (? (and (any "eE")
+                            (? (any "-+"))
+                            (+ (any digit "_"))))
+                    (? "i"))
+               ))
+
+             ;; match numbers start with .
+             (and
+              (or
+               (and "."
+                    (+ (any digit "_"))
+                    (? (and (any "eE")
+                            (? (any "-+"))
+                            (+ (any digit "_"))))
+                    (? "i"))
+               )
+              symbol-end)
+
+             ;; match all the rest number formats
+             (and
+              symbol-start
+              (or
+               (and "0"
+                    (or (and (any "bB")
+                             (+ (any "0_1")))
+                        (and (any "oO")
+                             (+ (any "0-7_")))
+                        (and (any "xX")
+                             (+ (any hex-digit "_."))))
+                    (? (and (any "pP")
+                            (? (any "-+"))
+                            (+ (any digit "_")))))
+               (and (+ (any digit "_"))
+                    (? ".")
+                    (* (any digit "_"))
+                    (? (and (any "eE")
+                            (? (any "-+"))
+                            (+ (any digit "_"))))
+                    (? "i"))
+               )
+              symbol-end)
+             ))
+           highlight-numbers-modelist))
+(add-hook 'highlight-numbers-mode-hook 'highlight-numbers-go-mode)
 (add-hook 'prog-mode-hook 'highlight-numbers-mode)
 
 ;; call different jump implementation in differernt major-mode
