@@ -73,7 +73,8 @@
                             (? (any "-+"))
                             (+ (any digit "_"))))
                     (? "i"))
-               (and (+ (any digit "_"))
+               (and digit
+                    (* (any digit "_"))
                     (? ".")
                     (* (any digit "_"))
                     (? (and (any "eE")
