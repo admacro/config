@@ -313,12 +313,15 @@
 		"name": "play.golang.org",
 		"sections": [
 			{
-				"code": "#wrap, #about {\n    margin: 0 38.2% 0 0;\n    background: #F0EFEE;\n    bottom: 0;\n}\n\n#code, #output, pre, .lines {\n    font-family: monospace;\n    font-size: 11pt;\n}\n\n#output {\n    top: 50px;\n    left: 61.8%;\n}"
+				"code": "#wrap, #about {\n    margin: 0 38.2% 0 0;\n    background: #F0EFEE;\n    bottom: 0;\n}\n\n#code, #output, pre, .lines {\n    font-family: monospace;\n    font-size: 12pt;\n}\n\n#output {\n    top: 50px;\n    left: 61.8%;\n}",
+				"domains": [
+					"play.golang.org"
+				]
 			}
 		],
-		"updateDate": 1587817729736,
+		"updateDate": 1587817988805,
 		"_id": "bf3e8011-3756-4165-8b47-bd571d5ab36a",
-		"_rev": 1587817729736,
+		"_rev": 1587817988805,
 		"id": 17
 	}
 ]
