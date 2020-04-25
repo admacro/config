@@ -31,17 +31,17 @@
 		"name": "golang pkg cmd doc ref blog",
 		"sections": [
 			{
-				"code": "body {\n    font-size: 1.35em;\n    font-family: Baskerville, serif;\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Baskerville, serif;\n    font-weight: bold;\n}\n\nh1 {font-size: 1.3em}\nh2 {font-size: 1.25em}\nh3 {font-size: 1.2em}\nh4 {font-size: 1.15em}\nh5 {font-size: 1.1em}\n\n\n.unruled a {\n    font-size: 1.25em !important;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.2em;\n}\n\n#page {\n    max-width: 81.8%;\n    margin: auto;\n}\n\npre,\ncode,\n#content .code,\n#content .playground {\n    background: #EBE3E1;\n    font-family: Monospace;\n    font-size: 0.95em;\n}\n\ncode {\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\np,\nli {\n    max-width: 100%\n}\n\n\n\ndiv.play pre, div.play textarea, div.play .lines {\n    font-family: monospace;\n    font-size: 1.1rem;\n}\n\ndiv.play .input, div.play .input textarea, div.play .output, div.play .output pre {\n    background: #EBE3E1;\n    color: #222222;\n}",
+				"code": "body {\n    font-size: 1.35em;\n    font-family: Baskerville, serif;\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Baskerville, serif;\n    font-weight: bold;\n}\n\nh1 {font-size: 1.3em}\nh2 {font-size: 1.25em}\nh3 {font-size: 1.2em}\nh4 {font-size: 1.15em}\nh5 {font-size: 1.1em}\n\n\n.unruled a {\n    font-size: 1.25em !important;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.2em;\n}\n\n#page {\n    max-width: 40em;\n    margin: auto;\n}\n\npre,\ncode,\n#content .code,\n#content .playground {\n    background: #EBE3E1;\n    font-family: Monospace;\n    font-size: 0.95em;\n}\n\ncode {\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\np,\nli {\n    max-width: 100%\n}\n\n\n\ndiv.play pre, div.play textarea, div.play .lines {\n    font-family: monospace;\n    font-size: 1.1rem;\n}\n\ndiv.play .input, div.play .input textarea, div.play .output, div.play .output pre {\n    background: #EBE3E1;\n    color: #222222;\n}",
 				"regexps": [
 					"https.*golang.*(pkg|cmd|doc|ref)\\/.*",
 					"https.*blog\\.golang.*"
 				]
 			}
 		],
-		"updateDate": 1586914519977,
+		"updateDate": 1587366885558,
 		"id": 3,
 		"_id": "8d94715c-0a39-4126-8f3f-83deb37306e2",
-		"_rev": 1586914519977
+		"_rev": 1587366885558
 	},
 	{
 		"enabled": true,
@@ -223,15 +223,15 @@
 		"name": "tour.golang.org",
 		"sections": [
 			{
-				"code": "body {\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\n#file-editor .CodeMirror-lines, #file-editor .CodeMirror-gutters {\n    background: #F0EFEE;\n    font-family: monospace;\n}\n\n.output > pre {\n    font-family: monospace;\n}\n\ndiv[vertical-slide] {\n    left: 38%;\n    right: 62%;\n}\n\ndiv#left-side {\n    width: 38%\n}\n\ndiv#right-side {\n    left: 38%\n}\n",
+				"code": "body {\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\n#file-editor .CodeMirror-lines, #file-editor .CodeMirror-gutters {\n    background: #F0EFEE;\n    font-family: monospace;\n}\n\n#file-editor .CodeMirror {\n    background: #F0EFEE;\n}\n\n.output > pre {\n    font-family: monospace;\n}\n\ndiv[vertical-slide] {\n    left: 38%;\n    right: 62%;\n}\n\ndiv#left-side {\n    width: 38%\n}\n\ndiv#right-side {\n    left: 38%\n}\n",
 				"domains": [
 					"tour.golang.org"
 				]
 			}
 		],
-		"updateDate": 1587109002293,
+		"updateDate": 1587109267284,
 		"_id": "f5a2413d-3521-4ebe-b4f2-1a97fd3cf07a",
-		"_rev": 1587109002293,
+		"_rev": 1587109267284,
 		"id": 13
 	},
 	{
@@ -281,5 +281,44 @@
 		"_id": "ac0ca43a-eaf9-459a-941d-d917d3f12e88",
 		"_rev": 1586766720585,
 		"id": 15
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1587273074814,
+		"name": "pkg.go.dev",
+		"sections": [
+			{
+				"code": "body {\n    background-color: #F8F5F4;\n    font-family: Baskerville;\n    font-size: 1.35rem;\n}\n\nh1, h2, h3, h4, h5, h6 {\n    font-family: Baskerville;\n}\n\np {\n    font-size: 1.35rem;\n}\n\n.Container {\n    max-width: 40em;\n}\n\n.Documentation code,\n.Documentation pre {\n    background-color: #EBE3E1;\n    font-family: monospace;\n    font-size: 1em;\n}",
+				"domains": [
+					"pkg.go.dev"
+				]
+			}
+		],
+		"updateDate": 1587366815507,
+		"_id": "410a0e49-fc9f-4993-96ff-1b640cfea445",
+		"_rev": 1587366815507,
+		"id": 16
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1587817261335,
+		"name": "play.golang.org",
+		"sections": [
+			{
+				"code": "#wrap, #about {\n    margin: 0 38.2% 0 0;\n    background: #F0EFEE;\n    bottom: 0;\n}\n\n#code, #output, pre, .lines {\n    font-family: monospace;\n    font-size: 11pt;\n}\n\n#output {\n    top: 50px;\n    left: 61.8%;\n}"
+			}
+		],
+		"updateDate": 1587817729736,
+		"_id": "bf3e8011-3756-4165-8b47-bd571d5ab36a",
+		"_rev": 1587817729736,
+		"id": 17
 	}
 ]
