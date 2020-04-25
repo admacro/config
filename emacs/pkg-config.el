@@ -97,7 +97,7 @@
                     (lsp-find-definition))
                    ((string-equal "ruby-mode" major-mode)
                     (robe-jump)))))
-(global-set-key (kbd "<f5>") 'pop-tag-mark) ; go back to previous jump mark
+(global-set-key (kbd "<f5>") 'xref-pop-marker-stack) ; go back to previous jump mark
 
 
 ;; flycheck
@@ -111,7 +111,10 @@
 (add-hook 'go-mode-hook 'lsp-deferred)
 (setq lsp-enable-links nil)
 (setq lsp-enable-snippet nil)
-
+;; keymap for lsp-mode
+(define-key xah-fly-comma-keymap (kbd "n") 'lsp-rename)
+(define-key xah-fly-comma-keymap (kbd "r") (lambda () (interactive) (lsp-treemacs-references t)))
+(define-key xah-fly-comma-keymap (kbd "m") (lambda () (interactive) (lsp-treemacs-implementations t)))
 
 ;; lsp-treemacs
 ;; enable bidirectional synchronization of lsp workspace folders and treemacs projects
