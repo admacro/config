@@ -18,8 +18,8 @@
       '(exec-path-from-shell
         highlight-numbers
         hl-todo
-        lsp-mode
         flycheck
+        lsp-mode
         company-lsp
         lsp-treemacs
         htmlize))
@@ -27,6 +27,7 @@
 ;; Packages for Go programming
 (setq package-list-go
       '(go-mode
+        gotest
         go-playground
         go-eldoc
         ob-go))

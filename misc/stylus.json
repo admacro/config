@@ -9,17 +9,17 @@
 		"name": "wikipedia.org",
 		"sections": [
 			{
-				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #F8F5F4 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #EBE3E1 !important;\n}\n\n.mw-body-content {\n    font-family: Baskerville, serif;\n    font-size: 1.35em;\n    line-height: 1.3em;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre, code {\n    font-size: 0.8em;\n    background: #EBE3E1;\n    border-radius: 5px;\n    border-color: #b1a4a1;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: Baskerville, serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto 20%;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
+				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #F8F5F4 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #EBE3E1 !important;\n}\n\n.mw-body-content {\n    font-family: serif;\n    font-size: 1.35em;\n    line-height: 1.3em;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre, code {\n    font-size: 0.8em;\n    background: #EBE3E1;\n    border-radius: 5px;\n    border-color: #b1a4a1;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto 20%;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
 				"domains": [
 					"en.wikipedia.org",
 					"zh.wikipedia.org"
 				]
 			}
 		],
-		"updateDate": 1586765801297,
+		"updateDate": 1587952661183,
 		"id": 2,
 		"_id": "fc3adba2-a349-422f-ad68-9be0e8d62c02",
-		"_rev": 1586765801297
+		"_rev": 1587952661183
 	},
 	{
 		"enabled": true,
@@ -31,17 +31,17 @@
 		"name": "golang pkg cmd doc ref blog",
 		"sections": [
 			{
-				"code": "body {\n    font-size: 1.35em;\n    font-family: Baskerville, serif;\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Baskerville, serif;\n    font-weight: bold;\n}\n\nh1 {font-size: 1.3em}\nh2 {font-size: 1.25em}\nh3 {font-size: 1.2em}\nh4 {font-size: 1.15em}\nh5 {font-size: 1.1em}\n\n\n.unruled a {\n    font-size: 1.25em !important;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.2em;\n}\n\n#page {\n    max-width: 40em;\n    margin: auto;\n}\n\npre,\ncode,\n#content .code,\n#content .playground {\n    background: #EBE3E1;\n    font-family: Monospace;\n    font-size: 0.95em;\n}\n\ncode {\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\np,\nli {\n    max-width: 100%\n}\n\n\n\ndiv.play pre, div.play textarea, div.play .lines {\n    font-family: monospace;\n    font-size: 1.1rem;\n}\n\ndiv.play .input, div.play .input textarea, div.play .output, div.play .output pre {\n    background: #EBE3E1;\n    color: #222222;\n}",
+				"code": "body {\n    font-size: 1.35em;\n    font-family: serif;\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: serif;\n    font-weight: bold;\n}\n\nh1 {font-size: 1.3em}\nh2 {font-size: 1.25em}\nh3 {font-size: 1.2em}\nh4 {font-size: 1.15em}\nh5 {font-size: 1.1em}\n\n\n.unruled a {\n    font-size: 1.25em !important;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.2em;\n}\n\n#page {\n    max-width: 40em;\n    margin: auto;\n}\n\npre,\ncode,\n#content .code,\n#content .playground {\n    background: #EBE3E1;\n    font-family: Monospace;\n    font-size: 0.95em;\n}\n\ncode {\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\np,\nli {\n    max-width: 100%\n}\n\n\n\ndiv.play pre, div.play textarea, div.play .lines {\n    font-family: monospace;\n    font-size: 1.1rem;\n}\n\ndiv.play .input, div.play .input textarea, div.play .output, div.play .output pre {\n    background: #EBE3E1;\n    color: #222222;\n}",
 				"regexps": [
 					"https.*golang.*(pkg|cmd|doc|ref)\\/.*",
 					"https.*blog\\.golang.*"
 				]
 			}
 		],
-		"updateDate": 1587366885558,
+		"updateDate": 1587951438349,
 		"id": 3,
 		"_id": "8d94715c-0a39-4126-8f3f-83deb37306e2",
-		"_rev": 1587366885558
+		"_rev": 1587951438350
 	},
 	{
 		"enabled": true,
@@ -139,16 +139,16 @@
 		"name": "godoc.localhost",
 		"sections": [
 			{
-				"code": "body {\n    font-family: Baskerville, serif;\n    font-size: 1em;\n    background: #F8F5F4;\n}\n\ndiv#page {\n    max-width: 62%;\n    margin: auto;\n}\n\n#manual-nav {\n    font-family: Go Mono, monospace;\n    font-size: 16px;\n}\n\npre,\ncode {\n    background: #EBE3E1;\n    font-family: Go Mono, monospace;\n    font-size: 16px;\n}\n\np {\n    font-family: Baskerville, serif;\n    font-size: 1.25em;\n    max-width: 100%;\n}\n\ndl dd {\n    font-size: 16px;\n}",
+				"code": "body {\n    font-family: serif;\n    font-size: 1em;\n    background: #F8F5F4;\n}\n\ndiv#page {\n    max-width: 62%;\n    margin: auto;\n}\n\n#manual-nav {\n    font-family: monospace;\n    font-size: 16px;\n}\n\npre,\ncode {\n    background: #EBE3E1;\n    font-family: monospace;\n    font-size: 16px;\n}\n\np {\n    font-family: serif;\n    font-size: 1.25em;\n    max-width: 100%;\n}\n\ndl dd {\n    font-size: 16px;\n}",
 				"urlPrefixes": [
 					"http://localhost:9000/"
 				]
 			}
 		],
-		"updateDate": 1578888387388,
+		"updateDate": 1587952551729,
 		"id": 9,
 		"_id": "36da4180-e5fa-4a21-9a6c-d94a6ddbdea2",
-		"_rev": 1581133466484
+		"_rev": 1587952551729
 	},
 	{
 		"enabled": true,
@@ -160,16 +160,16 @@
 		"name": "godoc.org",
 		"sections": [
 			{
-				"code": "body {\n    font-family: Baskerville, serif;\n    font-size: 16px;\n    background: #F8F5F4;\n}\n\ndiv.container {\n    max-width: 62%;\n    margin: auto;\n}\n\n.list-unstyled {\n    font-size: 1.25em;\n}\n\np {\n    font-family: Baskerville, serif;\n    font-size: 1.25em;\n    max-width: 100%;\n}\n\npre,\ncode,\n.jumbotron {\n    background: #EBE3E1;\n    font-family: Go Mono, monospace;\n    font-size: 16px;\n}\n",
+				"code": "body {\n    font-family: serif;\n    font-size: 16px;\n    background: #F8F5F4;\n}\n\ndiv.container {\n    max-width: 62%;\n    margin: auto;\n}\n\n.list-unstyled {\n    font-size: 1.25em;\n}\n\np {\n    font-family: serif;\n    font-size: 1.25em;\n    max-width: 100%;\n}\n\npre,\ncode,\n.jumbotron {\n    background: #EBE3E1;\n    font-family: Go Mono, monospace;\n    font-size: 16px;\n}\n",
 				"urlPrefixes": [
 					"https://godoc.org/"
 				]
 			}
 		],
-		"updateDate": 1586914505127,
+		"updateDate": 1587952526177,
 		"id": 10,
 		"_id": "40d78d15-942a-4c9d-a3ea-dfe9c393cd58",
-		"_rev": 1586914505127
+		"_rev": 1587952526177
 	},
 	{
 		"enabled": true,
@@ -181,16 +181,16 @@
 		"name": "talks.golang.org",
 		"sections": [
 			{
-				"code": "body {\n    font-family: Baskerville, serif;\n    background: white;\n    color: #232323;\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\narticle {\n    background: #F8F5F4 !important;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: Baskerville, serif;\n    font-weight: bold;\n}\n\np, article > ul > li {\n    font-family: Baskerville, serif;\n    font-size: 1em;\n}\n\n.slides > article {\n    letter-spacing: 0px;\n    text-shadow: none;\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\n.code,\n.playground {\n    background: #EBE3E1 !important;\n    overflow: scroll;\n    border-radius: 6px;\n}\n\npre {\n    font-family: Go Mono, Monospace;\n    line-height: 1.35em !important;\n}\n\ncode {\n    font-family: Go Mono, Monospace;\n    background: #EBE3E1;\n    font-size: 0.75em;\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n",
+				"code": "body {\n    font-family: Baskerville, serif;\n    background: white;\n    color: #232323;\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\narticle {\n    background: #F8F5F4 !important;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: serif;\n    font-weight: bold;\n}\n\np, article > ul > li {\n    font-family: serif;\n    font-size: 1em;\n}\n\n.slides > article {\n    letter-spacing: 0px;\n    text-shadow: none;\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\n.code,\n.playground {\n    background: #EBE3E1 !important;\n    overflow: scroll;\n    border-radius: 6px;\n}\n\npre {\n    font-family: monospace;\n    line-height: 1.35em !important;\n}\n\ncode {\n    font-family: monospace;\n    background: #EBE3E1;\n    font-size: 0.75em;\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n",
 				"urlPrefixes": [
 					"https://talks.golang.org/"
 				]
 			}
 		],
-		"updateDate": 1578907727147,
+		"updateDate": 1587952644062,
 		"id": 11,
 		"_id": "38bf84da-e18c-494e-81db-39fcfcb33081",
-		"_rev": 1581133466484
+		"_rev": 1587952644062
 	},
 	{
 		"enabled": true,
@@ -202,16 +202,16 @@
 		"name": "github.com",
 		"sections": [
 			{
-				"code": "body,\n.application-main,\n.Box {\n    background-color: #F8F5F4 !important;\n}\n\ndiv.blob-wrapper {\n    background-color: #EBE3E1 !important;\n}\n\ndiv.blob-wrapper span {\n    font-family: Monospace, Go Mono, PT Mono;\n}\n\n.f6.v-align-middle.text-gray.px-3.py-2.border-bottom.bg-gray-light.d-flex.flex-justify-between {\n    display: none !important;\n}\n\n.tab-size {\n    tab-size: 4 !important;\n}",
+				"code": "body,\n.application-main,\n.Box {\n    background-color: #F8F5F4 !important;\n}\n\ndiv.blob-wrapper {\n    background-color: #EBE3E1 !important;\n}\n\ndiv.blob-wrapper span {\n    font-family: monospace;\n}\n\n.f6.v-align-middle.text-gray.px-3.py-2.border-bottom.bg-gray-light.d-flex.flex-justify-between {\n    display: none !important;\n}\n\n.tab-size {\n    tab-size: 4 !important;\n}",
 				"domains": [
 					"github.com"
 				]
 			}
 		],
-		"updateDate": 1583323508843,
+		"updateDate": 1587952590348,
 		"id": 12,
 		"_id": "d5205ad9-4977-4d4b-93a1-7658ade99380",
-		"_rev": 1583323508843
+		"_rev": 1587952590348
 	},
 	{
 		"enabled": true,
@@ -271,15 +271,15 @@
 		"name": "go101.org",
 		"sections": [
 			{
-				"code": "body {\n    font-family: Baskerville, serif;\n    font-size: 2em;\n    line-height: 1.3em;\n    color: #232323;\n    background-color: #F8F5F4;\n}\n\ncode {\n    padding: 1px 3px;\n    font-size: 85%;\n    color: #232323;\n    background-color: #EBE3E1;\n    border-radius: 3px;\n    margin: 0px 2px 0px 2px;\n}\n\ncode,\nkbd,\npre,\nsamp {\n    font-family: monospace;\n}\n\ncode[class*=\"language-\"],\npre[class*=\"language-\"] {\n    color: #232323;\n    background: #EBE3E1;\n    font-family: monospace;\n    text-shadow: none;\n}\n\n.token.atrule,\n.token.attr-value,\n.token.keyword {\n    color: #005980;\n}\n\n.token.function {\n    color: #99113c;\n}\n\n.token.selector,\n.token.attr-name,\n.token.string,\n.token.char,\n.token.builtin,\n.token.inserted {\n    color: #017510;\n}\n\n.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {\n    color: #a67f59;\n    background: none;",
+				"code": "body {\n    font-family: serif;\n    font-size: 2em;\n    line-height: 1.3em;\n    color: #232323;\n    background-color: #F8F5F4;\n}\n\ncode {\n    padding: 1px 3px;\n    font-size: 85%;\n    color: #232323;\n    background-color: #EBE3E1;\n    border-radius: 3px;\n    margin: 0px 2px 0px 2px;\n}\n\ncode,\nkbd,\npre,\nsamp {\n    font-family: monospace;\n}\n\ncode[class*=\"language-\"],\npre[class*=\"language-\"] {\n    color: #232323;\n    background: #EBE3E1;\n    font-family: monospace;\n    text-shadow: none;\n}\n\n.token.atrule,\n.token.attr-value,\n.token.keyword {\n    color: #005980;\n}\n\n.token.function {\n    color: #99113c;\n}\n\n.token.selector,\n.token.attr-name,\n.token.string,\n.token.char,\n.token.builtin,\n.token.inserted {\n    color: #017510;\n}\n\n.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {\n    color: #a67f59;\n    background: none;",
 				"domains": [
 					"go101.org"
 				]
 			}
 		],
-		"updateDate": 1586766720585,
+		"updateDate": 1587952575972,
 		"_id": "ac0ca43a-eaf9-459a-941d-d917d3f12e88",
-		"_rev": 1586766720585,
+		"_rev": 1587952575972,
 		"id": 15
 	},
 	{
@@ -292,15 +292,15 @@
 		"name": "pkg.go.dev",
 		"sections": [
 			{
-				"code": "body {\n    background-color: #F8F5F4;\n    font-family: Baskerville;\n    font-size: 1.35rem;\n}\n\nh1, h2, h3, h4, h5, h6 {\n    font-family: Baskerville;\n}\n\np {\n    font-size: 1.35rem;\n}\n\n.Container {\n    max-width: 40em;\n}\n\n.Documentation code,\n.Documentation pre {\n    background-color: #EBE3E1;\n    font-family: monospace;\n    font-size: 1em;\n}",
+				"code": "body {\n    background-color: #F8F5F4;\n    font-family: serif;\n    font-size: 1.35rem;\n}\n\nh1, h2, h3, h4, h5, h6 {\n    font-family: serif;\n}\n\np {\n    font-size: 1.35rem;\n}\n\n.Container {\n    max-width: 40em;\n}\n\n.Documentation code,\n.Documentation pre {\n    background-color: #EBE3E1;\n    font-family: monospace;\n    font-size: 1em;\n}",
 				"domains": [
 					"pkg.go.dev"
 				]
 			}
 		],
-		"updateDate": 1587366815507,
+		"updateDate": 1587952620786,
 		"_id": "410a0e49-fc9f-4993-96ff-1b640cfea445",
-		"_rev": 1587366815507,
+		"_rev": 1587952620786,
 		"id": 16
 	},
 	{
