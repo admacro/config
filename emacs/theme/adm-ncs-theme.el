@@ -79,6 +79,9 @@
                (mode-line :foreground nil :background ,bg3 :box ,bg3)
                (mode-line-inactive :foreground ,bg4 :background ,bg2 :box ,bg2)
 
+               ;; ido-mode
+               (ido-only-match :foreground ,adm-green)
+
                ;; message
                ;; (message-mml :foreground ,adm-cyan :weight normal)
                ;; (message-header-xheader :foreground ,adm-green :weight normal)
@@ -88,6 +91,10 @@
                (go-test--ok-face :foreground ,adm-green)
                (go-test--error-face :foreground ,adm-red)
                (go-test--warning-face :foreground ,adm-yellow)
+
+               ;; treemacs
+               (treemacs-root-face :foreground ,adm-comment :weight bold)
+               (treemacs-directory-face :foreground ,adm-cyan)
 
                ;; org
                (org-agenda-date :foreground ,adm-cyan :underline nil)
