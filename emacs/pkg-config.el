@@ -113,8 +113,10 @@
 (setq lsp-enable-snippet nil)
 ;; keymap for lsp-mode
 (define-key xah-fly-comma-keymap (kbd "n") 'lsp-rename)
-(define-key xah-fly-comma-keymap (kbd "r") (lambda () (interactive) (lsp-treemacs-references t)))
-(define-key xah-fly-comma-keymap (kbd "m") (lambda () (interactive) (lsp-treemacs-implementations t)))
+(defun show-lsp-references-in-treemacs () (interactive) (lsp-treemacs-references t))
+(defun show-lsp-implementations-in-treemacs () (interactive) (lsp-treemacs-references t))
+(define-key xah-fly-comma-keymap (kbd "r") 'show-lsp-references-in-treemacs)
+(define-key xah-fly-comma-keymap (kbd "m") 'show-lsp-implementations-in-treemacs)
 
 ;; lsp-treemacs
 ;; enable bidirectional synchronization of lsp workspace folders and treemacs projects
@@ -133,7 +135,7 @@
                                 (display-line-numbers-mode 0)))
 
 ;; keymap for lsp-treemacs
-(define-key xah-fly-dot-keymap (kbd "t") 'treemacs)
+(define-key xah-fly-dot-keymap (kbd "p") 'treemacs)
 (define-key xah-fly-dot-keymap (kbd "s") 'lsp-treemacs-symbols)
 
 
@@ -160,6 +162,10 @@
 ;; show eldoc
 (add-hook 'go-mode-hook 'go-eldoc-setup)
 
+;; go-run and go-test
+(setq go-test-verbose t)
+(define-key xah-fly-dot-keymap (kbd "r") 'go-run)
+(define-key xah-fly-dot-keymap (kbd "t") 'go-test-current-file)
 
 ;; Ruby
 ;; rbenv

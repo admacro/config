@@ -83,6 +83,12 @@
                ;; (message-mml :foreground ,adm-cyan :weight normal)
                ;; (message-header-xheader :foreground ,adm-green :weight normal)
 
+               ;; gotest
+               (go-test--standard-face :foreground ,adm-orange)
+               (go-test--ok-face :foreground ,adm-green)
+               (go-test--error-face :foreground ,adm-red)
+               (go-test--warning-face :foreground ,adm-yellow)
+
                ;; org
                (org-agenda-date :foreground ,adm-cyan :underline nil)
                (org-agenda-dimmed-todo-face :foreground ,adm-comment)

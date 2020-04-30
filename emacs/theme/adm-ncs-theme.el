@@ -14,7 +14,7 @@
 
                 ;; deplicates
                 (adm-orange  "#A8541C")
-                (adm-yellow  "#1B9554") ; #ffd100
+                (adm-yellow  "#D9A205") ; #ffd100
 
                 ;; bg
                 (bg2 "#E0DFDE")         ; 10.02
@@ -82,6 +82,12 @@
                ;; message
                ;; (message-mml :foreground ,adm-cyan :weight normal)
                ;; (message-header-xheader :foreground ,adm-green :weight normal)
+
+               ;; gotest
+               (go-test--standard-face :foreground ,adm-orange)
+               (go-test--ok-face :foreground ,adm-green)
+               (go-test--error-face :foreground ,adm-red)
+               (go-test--warning-face :foreground ,adm-yellow)
 
                ;; org
                (org-agenda-date :foreground ,adm-cyan :underline nil)
