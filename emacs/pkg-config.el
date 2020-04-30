@@ -125,7 +125,7 @@
 ;; Use cursor instead of fringe indicator in treemacs side window, and less width
 (setq treemacs-show-cursor 1)
 (setq treemacs-fringe-indicator-mode nil)
-(setq treemacs-width 25)
+(setq treemacs-width 40)
 
 ;; no spacing betweewn root nodes (this is to fix *LSP Symbols List*)
 (setq treemacs-space-between-root-nodes nil)
