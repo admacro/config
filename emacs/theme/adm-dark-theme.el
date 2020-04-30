@@ -13,7 +13,7 @@
                 (adm-cyan    "#A2D4D4") ; 7
 
                 ;; deplicates
-                (adm-orange  "#E48857")
+                (adm-orange  "#E6B18F")
                 (adm-yellow  "#F0C64D") ; 7
 
                 ;; bg
