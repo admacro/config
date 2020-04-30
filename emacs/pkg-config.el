@@ -114,7 +114,7 @@
 ;; keymap for lsp-mode
 (define-key xah-fly-comma-keymap (kbd "n") 'lsp-rename)
 (defun show-lsp-references-in-treemacs () (interactive) (lsp-treemacs-references t))
-(defun show-lsp-implementations-in-treemacs () (interactive) (lsp-treemacs-references t))
+(defun show-lsp-implementations-in-treemacs () (interactive) (lsp-treemacs-implementations t))
 (define-key xah-fly-comma-keymap (kbd "r") 'show-lsp-references-in-treemacs)
 (define-key xah-fly-comma-keymap (kbd "m") 'show-lsp-implementations-in-treemacs)
 
