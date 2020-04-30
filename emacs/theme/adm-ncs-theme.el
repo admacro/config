@@ -36,7 +36,7 @@
                (default-italic :slant italic)
                (ffap :foreground ,fg4)
                (fringe :background ,adm-bg :foreground ,fg4)
-               (highlight :foreground ,fg3 :background ,bg3)
+               (highlight :foreground nil :background ,bg3)
                (hl-line :background ,adm-current :extend t)
                (info-quoted-name :foreground ,adm-orange)
                (info-string :foreground ,adm-yellow)
