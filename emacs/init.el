@@ -107,15 +107,16 @@
 (add-hook 'minibuffer-exit-hook #'my-minibuffer-exit-hook)
 
 
-;; Show recent file list on top and start-dir at bottom on startup
-(setq user-home (getenv "HOME"))
-(setq start-dir (concat user-home "/prog"))
-(setq project-home (concat user-home "/prog"))
-(if (file-directory-p project-home)
-    (progn (setq start-dir project-home)))
-(dired start-dir)
-(split-window-below)
+;; startup commands
 (recentf-open-files)
+(treemacs)
+
+;; (setq user-home (getenv "HOME"))
+;; (setq start-dir (concat user-home "/prog"))
+;; (setq project-home (concat user-home "/prog"))
+;; (if (file-directory-p project-home)
+    ;; (progn (setq start-dir project-home)))
+;; (dired start-dir)
 
 ;; Close *scratch* buffer
 (kill-buffer "*scratch*")
