@@ -95,6 +95,9 @@
                ;; treemacs
                (treemacs-root-face :foreground ,adm-comment :weight bold)
                (treemacs-directory-face :foreground ,adm-cyan)
+               (treemacs-git-untracked-face :foreground ,adm-green :slant italic :underline t)
+               (treemacs-git-added-face :foreground ,adm-green)
+               (treemacs-git-modified-face :foreground ,adm-yellow)
 
                ;; org
                (org-agenda-date :foreground ,adm-cyan :underline nil)
