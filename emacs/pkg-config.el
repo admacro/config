@@ -13,6 +13,7 @@
 (define-key xah-fly-t-keymap (kbd "h") 'xah-close-current-buffer)
 (define-key xah-fly-leader-key-map (kbd "g") 'close-current-buffer-and-delete-window)
 
+
 ;; find file in repository
 (global-set-key (kbd "<f7>") 'find-file-in-repository)
 
@@ -135,9 +136,11 @@
 ;; no spacing betweewn root nodes (this is to fix *LSP Symbols List*)
 (setq treemacs-space-between-root-nodes nil)
 
-;; hide line numbers in treemacs
-(add-hook `treemacs-mode-hook (lambda ()
-                                (display-line-numbers-mode 0)))
+;; hide line numbers and mode line in treemacs
+(add-hook `treemacs-mode-hook
+          (lambda ()
+            (display-line-numbers-mode 0)
+            (setq mode-line-format nil)))
 
 ;; keymap for lsp-treemacs
 (define-key xah-fly-dot-keymap (kbd "p") 'treemacs)

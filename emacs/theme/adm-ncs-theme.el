@@ -76,7 +76,7 @@
                (highlight-numbers-number :foreground ,adm-green)
 
                ;; mode-line
-               (mode-line :foreground nil :background ,bg3 :box ,bg3)
+               (mode-line :foreground ,adm-fg :background ,bg3 :box ,bg3)
                (mode-line-inactive :foreground ,bg4 :background ,bg2 :box ,bg2)
 
                ;; ido-mode
