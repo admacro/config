@@ -6,7 +6,12 @@
 ;; xah fly keys (default layout is dvorak)
 (require 'xah-fly-keys)
 (xah-fly-keys 1)
-
+(defun close-current-buffer-and-delete-window()
+  (interactive)
+  (xah-close-current-buffer)
+  (delete-window))
+(define-key xah-fly-t-keymap (kbd "h") 'xah-close-current-buffer)
+(define-key xah-fly-leader-key-map (kbd "g") 'close-current-buffer-and-delete-window)
 
 ;; find file in repository
 (global-set-key (kbd "<f7>") 'find-file-in-repository)
