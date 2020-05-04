@@ -78,6 +78,20 @@
   (revert-buffer t t))
 
 
+;; window-margin-toggle
+(defun window-margin-toggle()
+  "Toggle the left and right margins of current window.
+Always cycle the margin width in this order: 20 cells, 0 (no margin)."
+  (interactive)
+  (if (get 'window-margin-enabled 'state)
+      (progn
+        (set-window-margins nil 0 0)
+        (put 'window-margin-enabled 'state nil))
+    (progn
+        (set-window-margins nil 20 20)
+        (put 'window-margin-enabled 'state t))))
+
+
 ;; Use variable width font faces in current buffer
 (defun writing-mode ()
   "Set font to a variable width (proportional) fonts in current buffer"
@@ -87,6 +101,7 @@
   (global-display-line-numbers-mode 0)	; disable line numbers everywhere
   (turn-on-auto-fill))
 (define-key xah-fly-dot-keymap (kbd "w") 'writing-mode)
+
 
 ;; unhighlight all hi-lock highlights in current buffer
 (defun unhighlight-all-in-buffer()

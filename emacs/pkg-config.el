@@ -21,6 +21,21 @@
 ;; org-mode
 (setq org-startup-indented t)
 
+
+;; markdown-mode
+;; make writing in markdown-mode less distracting
+(add-hook 'markdown-mode-hook
+          (lambda ()
+            (setq left-margin-width 35)
+            (setq right-margin-width 35)
+            (visual-line-mode 1)
+            (display-line-numbers-mode 0)
+            (setq mode-line-format nil)
+            (setq buffer-face-mode-face
+                  '(:family "IM FELL English PRO" :height 220 :width regular))
+            (buffer-face-mode)))
+
+
 ;; Programming
 ;; no magit coding comment
 (setq ruby-insert-encoding-magic-comment nil)
