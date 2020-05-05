@@ -70,7 +70,8 @@
 (put 'downcase-region 'disabled nil)
 
 ;; auto wrap line in text mode (default maximum line width is 70)
-(add-hook 'text-mode-hook 'turn-on-auto-fill)
+;; (add-hook 'text-mode-hook 'turn-on-auto-fill)
+
 ;; ibuffer
 ;; Filter buffers into groups
 ;; more at https://www.emacswiki.org/emacs/IbufferMode
