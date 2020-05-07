@@ -26,8 +26,11 @@
 ;; make writing in markdown-mode less distracting
 (add-hook 'markdown-mode-hook
           (lambda ()
-            (setq left-margin-width 35)
-            (setq right-margin-width 35)
+            ;; sum of left and right margin cannot be greater than 67 (treemacs bug)
+            ;; was 35 35, now 33 33
+            ;; see https://github.com/Alexander-Miller/treemacs/issues/669
+            (setq left-margin-width 33)
+            (setq right-margin-width 33)
             (visual-line-mode 1)
             (display-line-numbers-mode 0)
             (setq mode-line-format nil)
@@ -146,7 +149,7 @@
 ;; Use cursor instead of fringe indicator in treemacs side window, and less width
 (setq treemacs-show-cursor 1)
 (setq treemacs-fringe-indicator-mode nil)
-(setq treemacs-width 40)
+(setq treemacs-width 33)
 
 ;; no spacing betweewn root nodes (this is to fix *LSP Symbols List*)
 (setq treemacs-space-between-root-nodes nil)
@@ -188,7 +191,8 @@
 ;; go-run and go-test
 (setq go-test-verbose t)
 (define-key xah-fly-dot-keymap (kbd "r") 'go-run)
-(define-key xah-fly-dot-keymap (kbd "t") 'go-test-current-file)
+(define-key xah-fly-dot-keymap (kbd "t") 'go-test-current-test)
+(define-key xah-fly-dot-keymap (kbd "T") 'go-test-current-file)
 
 ;; Ruby
 ;; rbenv
