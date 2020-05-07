@@ -1,17 +1,20 @@
 ;; custom functions
 
 ;; Appearance
-;; good font sizes for "Go Mono": 7,8,9,12,14,17,19,22,24,25 (H/W ratio: 2)
+;; good font sizes for "Go Mono": 16 (H/W ratio: 1.8); 14, 17 (H/W ratio: 2)
 ;; refer to font-size.md for ratios of other sizes
-;; (set-frame-font "go mono-17")
-;; (set-frame-font "gabriele bad ah-18")
+;; (set-frame-font "go mono-16")
+;; (set-frame-font "gabriele bad ah-16")
 ;; (set-frame-font "calling code-18")
 ;; (set-frame-font "pointfree-16")
 
 ;; load one of these good fonts randomly
 (defun random-font ()
-  (let ((font-list (list "go mono-17"
-                         "gabriele bad ah-18"
+  ;; the following font sizes all have the same width 10
+  ;; `go mono-16' and `gabriele bad ah-16' have the same H/W ratio 1.8
+  ;; `calling code-18' and `pointfree-16` have the same H/W ratio 2.2
+  (let ((font-list (list "go mono-16"
+                         "gabriele bad ah-16"
                          "calling code-18"
                          "pointfree-16")))
     (nth (random (length font-list)) font-list)))
