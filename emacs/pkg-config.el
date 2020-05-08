@@ -18,32 +18,22 @@
 (global-set-key (kbd "<f7>") 'find-file-in-repository)
 
 
-;; org-mode
-(setq org-startup-indented t)
-
-
-;; markdown-mode
-;; make writing in markdown-mode less distracting
-(add-hook 'markdown-mode-hook
-          (lambda ()
-            ;; sum of left and right margin cannot be greater than 67 (treemacs bug)
-            ;; was 35 35, now 33 33
-            ;; see https://github.com/Alexander-Miller/treemacs/issues/669
-            ;; for now, only cell unit (40 chars) is support when sitting window margin
-            ;; check up visual-fill-column for support for ratio unit (0.3 (30%))
-            (setq left-margin-width 33)
-            (setq right-margin-width 33)
-            (visual-line-mode 1)
-            (display-line-numbers-mode 0)
-            (setq mode-line-format nil)
-            (setq buffer-face-mode-face
-                  '(:family "IM FELL English PRO" :height 220 :width regular))
-            (buffer-face-mode)))
-
-
 ;; Programming
 ;; no magit coding comment
 (setq ruby-insert-encoding-magic-comment nil)
+
+
+;; call different jump implementation in differernt major-mode
+(global-set-key (kbd "<f6>")
+                (lambda ()
+                  (interactive) ; global-set-key expects an interactive command
+                  (cond
+                   ((string-equal "go-mode" major-mode)
+                    (lsp-find-definition))
+                   ((string-equal "ruby-mode" major-mode)
+                    (robe-jump)))))
+(global-set-key (kbd "<f5>") 'xref-pop-marker-stack) ; go back to previous jump mark
+
 
 ;; hl-todo
 (global-hl-todo-mode)
@@ -114,17 +104,6 @@
 (add-hook 'highlight-numbers-mode-hook 'highlight-numbers-go-mode)
 (add-hook 'prog-mode-hook 'highlight-numbers-mode)
 
-;; call different jump implementation in differernt major-mode
-(global-set-key (kbd "<f6>")
-                (lambda ()
-                  (interactive) ; global-set-key expects an interactive command
-                  (cond
-                   ((string-equal "go-mode" major-mode)
-                    (lsp-find-definition))
-                   ((string-equal "ruby-mode" major-mode)
-                    (robe-jump)))))
-(global-set-key (kbd "<f5>") 'xref-pop-marker-stack) ; go back to previous jump mark
-
 
 ;; flycheck
 ;; (add-hook 'go-mode-hook #'flycheck-mode) ; auto configured by lsp-mode
@@ -148,12 +127,21 @@
 ;; enable bidirectional synchronization of lsp workspace folders and treemacs projects
 (lsp-treemacs-sync-mode 1)
 
+;; keymap for lsp-treemacs
+(define-key xah-fly-dot-keymap (kbd "p") 'treemacs)
+(define-key xah-fly-dot-keymap (kbd "s") 'lsp-treemacs-symbols)
+
+
+;; treemacs
 ;; Use cursor instead of fringe indicator in treemacs side window, and less width
 (setq treemacs-no-png-images t)         ; use text ui
+(setq treemacs-width 33)
 (setq treemacs-show-cursor 1)
 (setq treemacs-fringe-indicator-mode nil)
-(setq treemacs-no-delete-other-windows nil) ; treemacs window can be deleted by delete-other-windows
-(setq treemacs-width 33)
+
+;; on small screens, make treemacs window deletable by delete-other-windows
+;; on big screens, it might be worthy to keep it around
+(setq treemacs-no-delete-other-windows nil) 
 
 ;; no spacing betweewn root nodes (this is to fix *LSP Symbols List*)
 (setq treemacs-space-between-root-nodes nil)
@@ -164,10 +152,6 @@
             (display-line-numbers-mode 0)
             (setq mode-line-format nil)))
 
-;; keymap for lsp-treemacs
-(define-key xah-fly-dot-keymap (kbd "p") 'treemacs)
-(define-key xah-fly-dot-keymap (kbd "s") 'lsp-treemacs-symbols)
-
 
 ;; company
 (setq company-require-match nil)
@@ -177,6 +161,7 @@
 ;; company-lsp
 (require 'company-lsp)
 (push 'company-lsp company-backends)
+
 
 ;; go-mode
 ;; fontify only function declarations, not function calls
@@ -198,6 +183,30 @@
 (define-key xah-fly-dot-keymap (kbd "t") 'go-test-current-test)
 (define-key xah-fly-dot-keymap (kbd "T") 'go-test-current-file)
 
+
+;; org-mode
+(setq org-startup-indented t)
+
+
+;; markdown-mode
+;; make writing in markdown-mode less distracting
+(add-hook 'markdown-mode-hook
+          (lambda ()
+            ;; sum of left and right margin cannot be greater than 67 (treemacs bug)
+            ;; was 35 35, now 33 33
+            ;; see https://github.com/Alexander-Miller/treemacs/issues/669
+            ;; for now, only cell unit (40 chars) is support when sitting window margin
+            ;; check up visual-fill-column for support for ratio unit (0.3 (30%))
+            (setq left-margin-width 33)
+            (setq right-margin-width 33)
+            (visual-line-mode 1)
+            (display-line-numbers-mode 0)
+            (setq mode-line-format nil)
+            (setq buffer-face-mode-face
+                  '(:family "IM FELL English PRO" :height 220 :width regular))
+            (buffer-face-mode)))
+
+
 ;; Ruby
 ;; rbenv
 ;; integrate robe
@@ -215,6 +224,7 @@
 (autoload 'web-mode "web-mode")
 (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode)) ; html
 (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode)) ; eRuby
+
 
 ;; YAML
 (autoload 'yaml-mode "yaml-mode")
@@ -237,6 +247,7 @@
 
 ;; Sh Mode
 (add-to-list 'auto-mode-alist '("\\Procfile.*\\'" . sh-mode)) ; forego foreman/procfile
+
 
 ;; json mode
 (add-hook 'json-mode-hook
