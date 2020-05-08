@@ -152,6 +152,7 @@
 (setq treemacs-no-png-images t)         ; use text ui
 (setq treemacs-show-cursor 1)
 (setq treemacs-fringe-indicator-mode nil)
+(setq treemacs-no-delete-other-windows nil) ; treemacs window can be deleted by delete-other-windows
 (setq treemacs-width 33)
 
 ;; no spacing betweewn root nodes (this is to fix *LSP Symbols List*)
