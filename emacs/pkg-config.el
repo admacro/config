@@ -149,6 +149,7 @@
 (lsp-treemacs-sync-mode 1)
 
 ;; Use cursor instead of fringe indicator in treemacs side window, and less width
+(setq treemacs-no-png-images t)         ; use text ui
 (setq treemacs-show-cursor 1)
 (setq treemacs-fringe-indicator-mode nil)
 (setq treemacs-width 33)
