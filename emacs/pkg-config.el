@@ -192,7 +192,7 @@
 ;; make writing in markdown-mode less distracting
 (add-hook 'markdown-mode-hook
           (lambda ()
-            ;; sum of left and right margin cannot be greater than 67 (treemacs bug)
+            ;; sum of left and right margin cannot be greater than 67
             ;; was 35 35, now 33 33
             ;; see https://github.com/Alexander-Miller/treemacs/issues/669
             ;; for now, only cell unit (40 chars) is support when sitting window margin
@@ -203,8 +203,9 @@
             (display-line-numbers-mode 0)
             (setq mode-line-format nil)
             (setq buffer-face-mode-face
-                  '(:family "IM FELL English PRO" :height 220 :width regular))
-            (buffer-face-mode)))
+                  ;; '(:family "IM FELL English PRO" :height 220 :width regular))
+                  '(:family "caveat" :height 300 :width regular))
+          (buffer-face-mode)))
 
 
 ;; Ruby
