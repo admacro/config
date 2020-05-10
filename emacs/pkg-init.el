@@ -77,7 +77,7 @@
 (install-packages package-list-essential "Essential")
 (install-packages package-list-prog "Programming")
 (install-packages package-list-go "Go")
-(install-packages package-list-rails "Ruby & Rails")
+;; (install-packages package-list-rails "Ruby & Rails")
 
 ;; (setq package-list-test '(xah-fly-keys))
 ;; (install-packages package-list-test "test")
