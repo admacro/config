@@ -1,5 +1,5 @@
 (defun config-package(packages function)
-  "config-package configures the package passed in by
+  "config-package configures the packages passed in by
 calling the function passed in"
   (if (symbolp packages) (setq packages (list packages)))
   (catch 'nodep
@@ -25,9 +25,9 @@ calling the function passed in"
 (defalias 'gsk 'global-set-key)
 (defalias 'atl 'add-to-list)
 
-;; ---------------------------------
-;; package configuration starts here
-;; ---------------------------------
+;; ---------------------------------------------
+;; TODO figure out what the following belongs to
+;; ---------------------------------------------
 
 ;; code navigation
 (setq jump-map (make-hash-table :test 'eq))
@@ -37,11 +37,9 @@ calling the function passed in"
        (funcall (gethash major-mode jump-map))))
 (gsk (kbd "<f5>") 'xref-pop-marker-stack) ; go back to previous jump mark
 
-;; exec-path-from-shell
-(cp 'exec-path-from-shell
-    (lambda()
-      (when (memq window-system '(mac ns x))
-        (exec-path-from-shell-initialize))))
+;; ---------------------------------
+;; package configuration starts here
+;; ---------------------------------
 
 ;; xah fly keys (default layout is dvorak)
 (cp 'xah-fly-keys
@@ -49,11 +47,18 @@ calling the function passed in"
       (require 'xah-fly-keys)
       (xah-fly-keys 1)
       (dk xah-fly-t-keymap (kbd "h") 'xah-close-current-buffer)
+      (dk xah-fly-leader-key-map (kbd "v") 'xah-goto-matching-bracket)
       (lk xah-fly-leader-key-map (kbd "g")
           (lambda() "close-current-buffer-and-delete-window"
             (interactive)
             (xah-close-current-buffer)
             (delete-window)))))
+
+;; exec-path-from-shell
+(cp 'exec-path-from-shell
+    (lambda()
+      (when (memq window-system '(mac ns x))
+        (exec-path-from-shell-initialize))))
 
 ;; find file in repository
 (cp 'find-file-in-repository
@@ -91,6 +96,8 @@ calling the function passed in"
       (setq treemacs-fringe-indicator-mode nil)
       ;; on small screens, make treemacs window deletable by delete-other-windows
       ;; on big screens, it might be worthy to keep it around
+      ;; TODO use display-pixel-width/display-pixel-height to detect display size
+      ;; call external tool to get pixel density to get the diagonal size of the display
       (setq treemacs-no-delete-other-windows nil)
       ;; no spacing betweewn root nodes (this is to fix *LSP Symbols List*)
       (setq treemacs-space-between-root-nodes nil)
