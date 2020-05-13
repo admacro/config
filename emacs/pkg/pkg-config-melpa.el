@@ -132,6 +132,7 @@
                   (add-hook 'before-save-hook #'lsp-organize-imports t t)))
       ;; go-run and go-test
       (setq go-test-verbose t)
+      (setq go-test-args "-count=1")    ; bypass test caching
       (dk xah-fly-dot-keymap (kbd "r") 'go-run)
       (dk xah-fly-dot-keymap (kbd "t") 'go-test-current-test)
       (dk xah-fly-dot-keymap (kbd "T") 'go-test-current-file)
