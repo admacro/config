@@ -8,6 +8,10 @@
 ;; UTF-8 as default encoding
 (set-language-environment "UTF-8")
 
+;; theme and font
+(load-adm-theme)
+(set-frame-font (random-font))
+
 ;; Global config
 ;; appearance
 (setq default-frame-alist

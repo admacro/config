@@ -31,6 +31,10 @@
             (ibuffer-auto-mode 1) ; auto refresh ibuffer list
             (ibuffer-switch-to-saved-filter-groups "default")))
 
+;; dired
+(require 'dired)
+(define-key dired-mode-map (kbd "s") 'xah-dired-sort)
+
 ;; org-mode
 (setq org-startup-indented t)
 
