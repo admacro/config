@@ -40,7 +40,7 @@
       (load-theme 'adm-dark t))
   (progn
     (message "It's day. Loading light theme")
-    (load-theme 'adm-ncs t)))
+    (load-theme 'adm-light t)))
 
 
 ;; Display hex colour code in its corresponding colour

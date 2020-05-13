@@ -2,29 +2,29 @@
 (deftheme adm-light)
 
 (let ((colors '(;; Upstream theme color
-                (adm-bg      "#EAE4D7" nil)
-                (adm-current "#DCD4C1") ; current-line 9.02
-                (adm-fg      "#2C2C4E") ; 10.5
-                (adm-comment "#9F5128") ; 4.5
-                (adm-red     "#C02E31") ; 4.5
-                (adm-purple  "#6C2B8D") ; 7
-                (adm-blue    "#454587") ; 6.75
-                (adm-green   "#006B00") ; 6.75
-                (adm-cyan    "#0D4F6F") ; 7
+                (adm-bg      "#F0EFEE" nil)
+                (adm-current "#E4E3E2")
+                (adm-fg      "#232323") ; 13.93
+                (adm-comment "#A8541C") ; 4.71
+                (adm-red     "#C40233") ; 5.46
+                (adm-purple  "#A81D60") ; 6.18
+                (adm-blue    "#3C5F89") ; 5.83
+                (adm-green   "#1B9554") ; 3.4
+                (adm-cyan    "#008686") ; 3.91
 
                 ;; deplicates
-                (adm-orange  "#B05423")
-                (adm-yellow  "#006B00")
+                (adm-orange  "#A8541C")
+                (adm-yellow  "#D9A205") ; 2
 
                 ;; bg
-                (bg2 "#E6DFCF")         ; 10.02
-                (bg3 "#CBC2AC")         ; 7.51
-                (bg4 "#B8AE93")         ; 6
+                (bg2 "#E0DFDE")         ; 10.02
+                (bg3 "#D0CFCE")         ; 7.52
+                (bg4 "#C0BFBE")         ; 6
 
                 ;; fg
-                (fg2 "#36365C")         ; 9.01
-                (fg3 "#424267")         ; 7.51
-                (fg4 "#505078")         ; 6
+                (fg2 "#333333")         ; 9.01
+                (fg3 "#434343")         ; 7.51
+                (fg4 "#535353")         ; 6
 
                 ;; other
                 (other-blue "#2A69A7")  ; 4.5
@@ -36,7 +36,7 @@
                (default-italic :slant italic)
                (ffap :foreground ,fg4)
                (fringe :background ,adm-bg :foreground ,fg4)
-               (highlight :foreground ,fg3 :background ,bg3)
+               (highlight :foreground nil :background ,bg3)
                (hl-line :background ,adm-current :extend t)
                (info-quoted-name :foreground ,adm-orange)
                (info-string :foreground ,adm-yellow)
@@ -76,12 +76,28 @@
                (highlight-numbers-number :foreground ,adm-green)
 
                ;; mode-line
-               (mode-line :foreground nil :background ,bg3 :box ,bg3)
+               (mode-line :foreground ,adm-fg :background ,bg3 :box ,bg3)
                (mode-line-inactive :foreground ,bg4 :background ,bg2 :box ,bg2)
+
+               ;; ido-mode
+               (ido-only-match :foreground ,adm-green)
 
                ;; message
                ;; (message-mml :foreground ,adm-cyan :weight normal)
                ;; (message-header-xheader :foreground ,adm-green :weight normal)
+
+               ;; gotest
+               (go-test--standard-face :foreground ,adm-orange)
+               (go-test--ok-face :foreground ,adm-green)
+               (go-test--error-face :foreground ,adm-red)
+               (go-test--warning-face :foreground ,adm-yellow)
+
+               ;; treemacs
+               (treemacs-root-face :foreground ,adm-comment :weight bold)
+               (treemacs-directory-face :foreground ,adm-cyan)
+               (treemacs-git-untracked-face :foreground ,adm-green :slant italic :underline t)
+               (treemacs-git-added-face :foreground ,adm-green)
+               (treemacs-git-modified-face :foreground ,adm-yellow)
 
                ;; org
                (org-agenda-date :foreground ,adm-cyan :underline nil)
@@ -107,8 +123,8 @@
                (org-level-3 :weight normal :foreground ,adm-green :height 1.0)
                (org-level-4 :weight normal :foreground ,adm-orange)
                (org-level-5 :weight normal :foreground ,adm-red)
-               (org-level-6 :weight normal :foreground ,adm-cyan)
-               (org-level-7 :weight normal :foreground ,other-blue)
+               (org-level-6 :weight normal :foreground ,other-blue)
+               (org-level-7 :weight normal :foreground ,fg3)
                (org-level-8 :weight normal :foreground ,fg4)
                (org-link :foreground ,other-blue :underline t)
                (org-priority :foreground ,adm-cyan)
@@ -135,57 +151,57 @@
                ;; (term-color-yellow :foreground ,adm-yellow :background ,adm-yellow)
 
                ;; company
-               ;; (company-echo-common :foreground ,adm-bg :background ,adm-fg)
-               ;; (company-preview :background ,adm-bg :foreground ,other-blue)
-               ;; (company-preview-common :foreground ,bg2 :foreground ,fg3)
-               ;; (company-preview-search :foreground ,adm-purple :background ,adm-bg)
-               ;; (company-scrollbar-bg :background ,bg3)
-               ;; (company-scrollbar-fg :foreground ,adm-blue)
-               ;; (company-template-field :inherit region)
-               ;; (company-tooltip :foreground ,fg2 :background ,bg2 :weight bold)
-               ;; (company-tooltip-annotation :foreground ,adm-green)
-               ;; (company-tooltip-common :foreground ,fg3)
-               ;; (company-tooltip-common-selection :foreground ,adm-yellow)
-               ;; (company-tooltip-mouse :inherit highlight)
-               ;; (company-tooltip-selection :background ,bg3 :foreground ,fg3)
+               (company-echo-common :foreground ,adm-bg :background ,adm-fg)
+               (company-preview :foreground ,other-blue :background ,adm-bg)
+               (company-preview-common :foreground ,fg3 :background ,bg2)
+               (company-preview-search :foreground ,adm-purple :background ,adm-bg)
+               (company-scrollbar-bg :background ,adm-current)
+               (company-scrollbar-fg :background ,bg3)
+               (company-template-field :inherit region)
+               (company-tooltip :foreground ,adm-fg :background ,adm-current)
+               (company-tooltip-annotation :foreground ,fg4 :slant italic)
+               (company-tooltip-common :foreground ,adm-fg :background ,bg4)
+               (company-tooltip-common-selection :foreground ,adm-red :background ,bg4)
+               (company-tooltip-mouse :inherit highlight)
+               (company-tooltip-selection :foreground ,adm-red :background ,bg2)
 
                ;; dired
-               ;; (dired-directory :foreground ,adm-cyan :weight normal)
-               ;; (dired-flagged :foreground ,adm-blue)
-               ;; (dired-header :foreground ,fg3 :background ,adm-bg)
-               ;; (dired-ignored :inherit shadow)
-               ;; (dired-mark :foreground ,adm-fg :weight bold)
-               ;; (dired-marked :foreground ,adm-orange :weight bold)
-               ;; (dired-perm-write :foreground ,fg3 :underline t)
-               ;; (dired-symlink :foreground ,adm-yellow :weight normal :slant italic)
-               ;; (dired-warning :foreground ,adm-orange :underline t)
-               ;; (diredp-compressed-file-name :foreground ,fg3)
-               ;; (diredp-compressed-file-suffix :foreground ,fg4)
-               ;; (diredp-date-time :foreground ,adm-fg)
-               ;; (diredp-deletion-file-name :foreground ,adm-blue :background ,adm-current)
-               ;; (diredp-deletion :foreground ,adm-blue :weight bold)
-               ;; (diredp-dir-heading :foreground ,fg2 :background ,bg4)
-               ;; (diredp-dir-name :inherit dired-directory)
-               ;; (diredp-dir-priv :inherit dired-directory)
-               ;; (diredp-executable-tag :foreground ,adm-orange)
-               ;; (diredp-file-name :foreground ,adm-fg)
-               ;; (diredp-file-suffix :foreground ,fg4)
-               ;; (diredp-flag-mark-line :foreground ,fg2 :slant italic :background ,adm-current)
-               ;; (diredp-flag-mark :foreground ,fg2 :weight bold :background ,adm-current)
-               ;; (diredp-ignored-file-name :foreground ,adm-fg)
-               ;; (diredp-mode-line-flagged :foreground ,adm-orange)
-               ;; (diredp-mode-line-marked :foreground ,adm-orange)
-               ;; (diredp-no-priv :foreground ,adm-fg)
-               ;; (diredp-number :foreground ,adm-green)
-               ;; (diredp-other-priv :foreground ,adm-orange)
-               ;; (diredp-rare-priv :foreground ,adm-orange)
-               ;; (diredp-read-priv :foreground ,adm-purple)
-               ;; (diredp-write-priv :foreground ,adm-blue)
-               ;; (diredp-exec-priv :foreground ,adm-yellow)
-               ;; (diredp-symlink :foreground ,adm-orange)
-               ;; (diredp-link-priv :foreground ,adm-orange)
-               ;; (diredp-autofile-name :foreground ,adm-yellow)
-               ;; (diredp-tagged-autofile-name :foreground ,adm-yellow)
+               (dired-directory :foreground ,adm-cyan :weight normal)
+               (dired-flagged :foreground ,adm-blue)
+               (dired-header :foreground ,fg3 :background ,adm-bg)
+               (dired-ignored :inherit shadow)
+               (dired-mark :foreground ,adm-fg :weight bold)
+               (dired-marked :foreground ,adm-orange :weight bold)
+               (dired-perm-write :foreground ,fg3 :underline t)
+               (dired-symlink :foreground ,adm-yellow :weight normal :slant italic)
+               (dired-warning :foreground ,adm-orange :underline t)
+               (diredp-compressed-file-name :foreground ,fg3)
+               (diredp-compressed-file-suffix :foreground ,fg4)
+               (diredp-date-time :foreground ,adm-fg)
+               (diredp-deletion-file-name :foreground ,adm-blue :background ,adm-current)
+               (diredp-deletion :foreground ,adm-blue :weight bold)
+               (diredp-dir-heading :foreground ,fg2 :background ,bg4)
+               (diredp-dir-name :inherit dired-directory)
+               (diredp-dir-priv :inherit dired-directory)
+               (diredp-executable-tag :foreground ,adm-orange)
+               (diredp-file-name :foreground ,adm-fg)
+               (diredp-file-suffix :foreground ,fg4)
+               (diredp-flag-mark-line :foreground ,fg2 :slant italic :background ,adm-current)
+               (diredp-flag-mark :foreground ,fg2 :weight bold :background ,adm-current)
+               (diredp-ignored-file-name :foreground ,adm-fg)
+               (diredp-mode-line-flagged :foreground ,adm-orange)
+               (diredp-mode-line-marked :foreground ,adm-orange)
+               (diredp-no-priv :foreground ,adm-fg)
+               (diredp-number :foreground ,adm-green)
+               (diredp-other-priv :foreground ,adm-orange)
+               (diredp-rare-priv :foreground ,adm-orange)
+               (diredp-read-priv :foreground ,adm-purple)
+               (diredp-write-priv :foreground ,adm-blue)
+               (diredp-exec-priv :foreground ,adm-yellow)
+               (diredp-symlink :foreground ,adm-orange)
+               (diredp-link-priv :foreground ,adm-orange)
+               (diredp-autofile-name :foreground ,adm-yellow)
+               (diredp-tagged-autofile-name :foreground ,adm-yellow)
 
                ;; magit
                (magit-branch-local :foreground ,adm-green)
