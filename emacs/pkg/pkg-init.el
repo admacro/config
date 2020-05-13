@@ -20,7 +20,7 @@
         hl-todo
         flycheck
         lsp-mode
-        company-lsp
+        company
         lsp-treemacs
         htmlize))
 

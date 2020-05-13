@@ -20,9 +20,6 @@
     (nth (random (length font-list)) font-list)))
 (set-frame-font (random-font))
 
-(custom-set-faces
- '(variable-pitch ((t (:family "Baskerville")))))
-
 ;; 2020-3-13
 ;; It's 2020. I made my own light and dark themes. I think I'm
 ;; settled for now, or finally.
@@ -35,7 +32,6 @@
                   (split-string (current-time-string)))
              ":")))
   (set 'hour (string-to-number hour-str))
-  (message hour-str)
   (or (>= hour 18) (<= hour 6)))
 
 (if (nightp)
@@ -80,7 +76,6 @@
     (setq hexcolour-keywords hexcolour-keywords-light))
   (revert-buffer t t))
 
-
 ;; window-margin-toggle
 (defun window-margin-toggle()
   "Toggle the left and right margins of current window.
@@ -93,31 +88,6 @@ Always cycle the margin width in this order: 20 cells, 0 (no margin)."
     (progn
         (set-window-margins nil 20 20)
         (put 'window-margin-enabled 'state t))))
-
-
-;; Use variable width font faces in current buffer
-(defun writing-mode ()
-  "Set font to a variable width (proportional) fonts in current buffer"
-  (interactive)
-  (setq buffer-face-mode-face '(:family "IM FELL English PRO" :height 220 :width regular))
-  (buffer-face-mode)
-  (global-display-line-numbers-mode 0)	; disable line numbers everywhere
-  (turn-on-auto-fill))
-(define-key xah-fly-dot-keymap (kbd "w") 'writing-mode)
-
-
-;; unhighlight all hi-lock highlights in current buffer
-(defun unhighlight-all-in-buffer()
-  "Remove all highlights made by `hi-lock' from the current buffer."
-  (interactive)
-  (unhighlight-regexp t))
-(define-key xah-fly-dot-keymap (kbd "u") 'unhighlight-all-in-buffer)
-
-;; show changes made to current git repo (magit-status)
-(define-key xah-fly-dot-keymap (kbd "c") 'magit-status)
-
-;; find file in repository
-(define-key xah-fly-dot-keymap (kbd ".") 'find-file-in-repository)
 
 (defun xah-dired-sort ()
   "Sort dired dir listing in different ways.

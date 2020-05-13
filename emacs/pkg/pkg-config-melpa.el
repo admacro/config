@@ -1,46 +1,3 @@
-(defun config-package(packages function)
-  "config-package configures the packages passed in by
-calling the function passed in"
-  (if (symbolp packages) (setq packages (list packages)))
-  (catch 'nodep
-    (message "Configuring packages [%s]" packages)
-    (dolist (package packages)
-      (if (not (package-installed-p package))
-          (progn
-            (message "\tPackage [%s] is not installed." package)
-            (throw 'nodep t))))
-    (funcall function)))
-
-(defun lambda-key (keymap key def)
-  "Wrap`define-key' to provide documentation."
-  (set 'sym (make-symbol (documentation def)))
-  (fset sym def)
-  (define-key keymap key sym))
-
-;; function aliases
-(defalias 'cp 'config-package)
-(defalias 'cpd 'config-package-with-dependencies)
-(defalias 'dk 'define-key)
-(defalias 'lk 'lambda-key)
-(defalias 'gsk 'global-set-key)
-(defalias 'atl 'add-to-list)
-
-;; ---------------------------------------------
-;; TODO figure out what the following belongs to
-;; ---------------------------------------------
-
-;; code navigation
-(setq jump-map (make-hash-table :test 'eq))
-(gsk (kbd "<f6>")
-     (lambda ()
-       (interactive) ; global-set-key expects an interactive command
-       (funcall (gethash major-mode jump-map))))
-(gsk (kbd "<f5>") 'xref-pop-marker-stack) ; go back to previous jump mark
-
-;; ---------------------------------
-;; package configuration starts here
-;; ---------------------------------
-
 ;; xah fly keys (default layout is dvorak)
 (cp 'xah-fly-keys
     (lambda()
@@ -53,6 +10,12 @@ calling the function passed in"
             (interactive)
             (xah-close-current-buffer)
             (delete-window)))))
+
+;; magit
+(cp 'magit
+    (lambda()
+      ;; show changes made to current git repo (magit-status)
+      (dk xah-fly-dot-keymap (kbd "c") 'magit-status)))
 
 ;; exec-path-from-shell
 (cp 'exec-path-from-shell
@@ -70,7 +33,40 @@ calling the function passed in"
       (autoload 'lsp-mode "lsp-mode")
       (setq lsp-enable-links nil)
       (setq lsp-enable-snippet nil)
-      (dk xah-fly-comma-keymap (kbd "n") 'lsp-rename)))
+
+      ;; performance
+      ;; ** Experimenting **
+      ;; Configuration to improve lsp-mode performance
+      ;;
+      ;; The default setting is too low for lsp-mode's needs
+      ;; due to the fact that client/server communication
+      ;; generates a lot of memory/garbage. You have two options:
+      ;; - Set it to big number(100mb) like most of the popular starter kits like
+      ;; Spacemacs/Doom/Prelude, etc do
+      ;; - Follow the method recommended by Gnu Emacs Maintainer Eli Zaretskii:
+      ;; "My suggestion is to repeatedly multiply gc-cons-threshold by 2 until
+      ;; you stop seeing significant improvements in responsiveness, and in any
+      ;; case not to increase by a factor larger than 100 or somesuch. If even a
+      ;; 100-fold increase doesn't help, there's some deeper problem with the
+      ;; Lisp code which produces so much garbage, or maybe GC is not the reason
+      ;; for slowdown."
+      ;; Source: https://www.reddit.com/r/emacs/comments/brc05y/is_lspmode_too_slow_to_use_for_anyone_else/eofulix/
+      (setq gc-cons-threshold gc-con-threshold-value)
+
+      ;; Increase the amount of data which Emacs reads from the process. Again the
+      ;; emacs default is too low 4k considering that the some of the language
+      ;; server responses are in 800k - 3M range.
+      (setq read-process-output-max (* 1024 1024)) ; 1MB
+
+      ;; lsp-mode's company-capf does caching by default
+      (setq lsp-prefer-capf t)
+
+      ;; This variable determines how often lsp-mode will refresh the highlights,
+      ;; lenses, links, etc while you type.
+      (setq lsp-idle-delay 1)
+
+      (dk xah-fly-comma-keymap (kbd "n") 'lsp-rename)
+      (dk xah-fly-comma-keymap (kbd "s") 'xref-find-apropos)))
 
 ;; lsp-treemacs
 (cp 'lsp-treemacs
@@ -105,7 +101,8 @@ calling the function passed in"
       (add-hook `treemacs-mode-hook
                 (lambda ()
                   (display-line-numbers-mode 0)
-                  (setq mode-line-format nil)))
+                  ;; (setq mode-line-format nil)
+                  ))
       (dk xah-fly-dot-keymap (kbd "p") 'treemacs)))
 
 ;; company
@@ -143,7 +140,10 @@ calling the function passed in"
       ;; register jump implmentation
       (puthash 'go-mode 'lsp-find-definition jump-map)
       ;; show eldoc
-      (cp 'go-eldoc (lambda() (add-hook 'go-mode-hook 'go-eldoc-setup)))))
+      (cp 'go-eldoc (lambda() (add-hook 'go-mode-hook 'go-eldoc-setup)))
+      ;; use gogetdoc to show doc (go got )
+      (setq godoc-at-point-function 'godoc-gogetdoc)
+      (dk xah-fly-comma-keymap (kbd "d") 'godoc-at-point)))
 
 ;; hl-todo
 (cp 'hl-todo
@@ -283,16 +283,9 @@ calling the function passed in"
       (atl 'auto-mode-alist '("\\.blueprint\\'" . apib-mode))))
 
 ;; json mode
-(cp 'apib-mode
+(cp 'json-mode
     (lambda()
       (add-hook 'json-mode-hook
                 (lambda ()
                   (make-local-variable 'js-indent-level)
                   (setq js-indent-level 2)))))
-
-;; org-mode
-(setq org-startup-indented t)
-
-;; Sh Mode
-(atl 'auto-mode-alist '("\\Procfile.*\\'" . sh-mode)) ; forego foreman/procfile
-
