@@ -3,14 +3,14 @@
 ;; all custom functions reside here
 
 (defun random-font ()
-  "Random-font returs one of these good fonts randomly.
-  The following font sizes all have the same width 10.
-  `go mono-16' and `gabriele bad ah-16' have the same H/W ratio of 1.8.
-  `calling code-18' and `pointfree-16` have the same H/W ratio of 2.2."
-  (let ((font-list (list "go mono-16"
-                         "gabriele bad ah-16"
-                         "calling code-18"
-                         "pointfree-16")))
+  "Random-font returs one of these good fonts randomly."
+  ;; (set-frame-font "go mono-15")
+  (let ((font-list (list "monaco-15" "menlo-15"
+                         "go mono-15" "pt mono-15" "gabriele bad ah-15"
+                         "calling code-16" "code saver-16"
+                         "pointfree-15"
+                         "anonymous pro-17"
+                         "inconsolatago-18")))
     (nth (random (length font-list)) font-list)))
 
 (defun load-adm-theme ()
