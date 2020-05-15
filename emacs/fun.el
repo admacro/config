@@ -3,7 +3,7 @@
 ;; all custom functions reside here
 
 (defun random-font ()
-  "Random-font returs one of these good fonts randomly."
+  "Random-font returns one of these good fonts randomly."
   ;; (set-frame-font "go mono-15")
   (let ((font-list (list "monaco-15" "menlo-15"
                          "go mono-15" "pt mono-15" "gabriele bad ah-15"
