@@ -14,6 +14,7 @@
 ;; magit
 (cp 'magit
     (lambda()
+      (setq magit-diff-refine-hunk 'all)
       ;; show changes made to current git repo (magit-status)
       (dk xah-fly-dot-keymap (kbd "c") 'magit-status)))
 
