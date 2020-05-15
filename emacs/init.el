@@ -10,9 +10,9 @@
 
 ;; theme and font
 (load-adm-theme)
+(set-frame-font "verily serif mono-20")
 ;; (set-frame-font (random-font))
 ;; (load-theme 'adm-dark t)
-(set-frame-font "verily serif mono-20")
 
 ;; Global config
 ;; appearance
