@@ -9,9 +9,9 @@
 (set-language-environment "UTF-8")
 
 ;; theme and font
-;; (load-adm-theme)
+(load-adm-theme)
 ;; (set-frame-font (random-font))
-(load-theme 'adm-dark t)
+;; (load-theme 'adm-dark t)
 (set-frame-font "verily serif mono-20")
 
 ;; Global config
