@@ -5,9 +5,9 @@
 (setq frame-font-normal "Verily Serif Mono-16")
 (setq frame-font-big "Verily Serif Mono-18")
 
+(load "~/prog/config/emacs/fun.el")
 (load "~/prog/config/emacs/pkg/pkg.el")
 (load "~/prog/config/emacs/theme/theme.el")
-(load "~/prog/config/emacs/fun.el")
 
 ;; UTF-8 as default encoding
 (set-language-environment "UTF-8")
