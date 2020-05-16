@@ -2,6 +2,23 @@
 ;; fun is fun in `defun'
 ;; all custom functions reside here
 
+(defun toggle-frame-font()
+  "Toggle frame font size in this cyclic order:
+frame-font-size-normal > frame-font-size-big > frame-font-size-small"
+  (interactive)
+  (let ((current-font (get 'current-frame-font 'state)))
+    (cond
+     ((or (equal current-font 0) (equal current-font nil))
+      (set-frame-font frame-font-normal)
+      (put 'current-frame-font 'state 1))
+     ((equal current-font 1)
+      (set-frame-font frame-font-big)
+      (put 'current-frame-font 'state 2))
+     ((equal current-font 2)
+      (set-frame-font frame-font-small)
+      (put 'current-frame-font 'state 0))
+     )))
+
 (defun random-font ()
   "Random-font returns one of these good fonts randomly."
   ;; (set-frame-font "go mono-15")
@@ -44,7 +61,7 @@ Always cycle the margin width in this order: 20 cells, 0 (no margin)."
   '(("#[[:xdigit:]]\\{6\\}"
      (0 (put-text-property (match-beginning 0)
                            (match-end 0)
-                           'face (list :foreground 
+                           'face (list :foreground
                                        (match-string-no-properties 0)
                                        :background "white"
                                        ;; :box "black"
@@ -53,7 +70,7 @@ Always cycle the margin width in this order: 20 cells, 0 (no margin)."
   '(("#[[:xdigit:]]\\{6\\}"
      (0 (put-text-property (match-beginning 0)
                            (match-end 0)
-                           'face (list :background 
+                           'face (list :background
                                        (match-string-no-properties 0)
                                        :foreground "black"
                                        ;; :box "black"

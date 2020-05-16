@@ -1,5 +1,9 @@
 ;; global valiables
 (setq gc-con-threshold-value (* 1024 1024)) ; 1MB
+;; frame font size
+(setq frame-font-small "Verily Serif Mono-14")
+(setq frame-font-normal "Verily Serif Mono-16")
+(setq frame-font-big "Verily Serif Mono-18")
 
 (load "~/prog/config/emacs/pkg/pkg.el")
 (load "~/prog/config/emacs/theme/theme.el")
@@ -10,7 +14,7 @@
 
 ;; theme and font
 (load-adm-theme)
-(set-frame-font "verily serif mono-20")
+(set-frame-font frame-font-normal)
 ;; (set-frame-font (random-font))
 ;; (load-theme 'adm-dark t)
 
