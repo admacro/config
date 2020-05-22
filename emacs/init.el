@@ -1,9 +1,9 @@
 ;; global valiables
 (setq gc-con-threshold-value (* 1024 1024)) ; 1MB
 ;; frame font size
-(setq frame-font-small "Verily Serif Mono-14")
-(setq frame-font-normal "Verily Serif Mono-16")
-(setq frame-font-big "Verily Serif Mono-18")
+(setq frame-font-small "inconsolatago-17")
+(setq frame-font-normal "inconsolatago-19")
+(setq frame-font-big "inconsolatago-21")
 
 (load "~/prog/config/emacs/fun.el")
 (load "~/prog/config/emacs/pkg/pkg.el")

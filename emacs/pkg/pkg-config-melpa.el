@@ -239,7 +239,8 @@
                   (setq mode-line-format nil)
                   (setq buffer-face-mode-face
                         ;; '(:family "IM FELL English PRO" :height 220 :width regular))
-                        '(:family "caveat" :height 300 :width regular))
+                        '(:family "Bradley Hand" :height 220 :width regular))
+                        ;; '(:family "caveat" :height 300 :width regular))
                   (buffer-face-mode)))))
 
 ;; Ruby robe
