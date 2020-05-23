@@ -16,6 +16,7 @@
 ;; theme and font
 (load-adm-theme)
 (set-font-size 17)
+(monospace-brackets-mode)
 ;; (load-theme 'adm-dark t)
 
 ;; Global config

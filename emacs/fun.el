@@ -81,13 +81,14 @@ Always cycle the margin width in this order: 20 cells, 0 (no margin)."
     (setq hexcolour-keywords hexcolour-keywords-light))
   (revert-buffer t t))
 
-;; use monospace font for brackets
-(setq brackets-keywords
-      '(("[][(){}]"
-         (0 (add-face-text-property (match-beginning 0) (match-end 0) '(:family monospace-font-family))))))
-(add-hook 'prog-mode-hook
-          (lambda ()
-            (font-lock-add-keywords nil brackets-keywords)))
+(defun monospace-brackets-mode ()
+  "use monospace font for brackets: [][(){}]"
+  (add-hook 'prog-mode-hook
+            (lambda()
+              (font-lock-add-keywords nil
+                                      '(("[][(){}]"
+                                         (0 (add-face-text-property (match-beginning 0) (match-end 0)
+                                                                    (list :family monospace-font-family)))))))))
 
 (defun xah-dired-sort ()
   "Sort dired dir listing in different ways.
