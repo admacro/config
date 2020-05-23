@@ -10,11 +10,11 @@
   "Toggle font size in this cyclic order: 14 -> 17 -> 21->14..."
   (interactive)
   (let ((current-size-index (get 'current-size-index 'state))
-	(current-font-size (/ (face-attribute 'default :height) 10)))
+        (current-font-size (/ (face-attribute 'default :height) 10)))
     (cl-flet ((set-fonts (font-size-index)
-                      (let ((font-size (nth font-size-index toggle-font-sizes)))
-                        (set-font-size font-size)
-                        (put 'current-size-index 'state font-size-index))))
+                         (let ((font-size (nth font-size-index toggle-font-sizes)))
+                           (set-font-size font-size)
+                           (put 'current-size-index 'state font-size-index))))
 	  (cond
 	   ((or (equal current-size-index 1) ) (set-fonts 2))
 	   ((equal current-size-index 2) (set-fonts 0))
@@ -27,12 +27,12 @@
   "Use dark theme for night and light theme for day.
 Day starts from 6AM to 6PM. The rest is night. :D"
   (let* ((hour-str
-	  (car (split-string
-		(nth 3 (split-string (current-time-string)))
-		":")))
-	 (hour (string-to-number hour-str)))
+          (car (split-string
+                (nth 3 (split-string (current-time-string)))
+                ":")))
+         (hour (string-to-number hour-str)))
     (if (or (>= hour 18) (<= hour 6))
-	(load-theme 'adm-dark t)
+        (load-theme 'adm-dark t)
       (load-theme 'adm-light t))))
 
 (defun window-margin-toggle()
@@ -44,8 +44,8 @@ Always cycle the margin width in this order: 20 cells, 0 (no margin)."
         (set-window-margins nil 0 0)
         (put 'window-margin-enabled 'state nil))
     (progn
-        (set-window-margins nil 20 20)
-        (put 'window-margin-enabled 'state t))))
+      (set-window-margins nil 20 20)
+      (put 'window-margin-enabled 'state t))))
 
 ;; hex colour
 ;; Display hex colour code in its corresponding colour
