@@ -1,9 +1,10 @@
 ;; global valiables
 (setq gc-con-threshold-value (* 1024 1024)) ; 1MB
-;; frame font size
-(setq frame-font-small "inconsolatago-17")
-(setq frame-font-normal "inconsolatago-19")
-(setq frame-font-big "inconsolatago-21")
+
+;; font
+(setq proportional-font-family "go")
+(setq monospace-font-family "go mono")
+(setq toggle-font-sizes '(14 17 21))
 
 (load "~/prog/config/emacs/fun.el")
 (load "~/prog/config/emacs/pkg/pkg.el")
@@ -14,8 +15,7 @@
 
 ;; theme and font
 (load-adm-theme)
-(set-frame-font frame-font-normal)
-;; (set-frame-font (random-font))
+(set-font-size 17)
 ;; (load-theme 'adm-dark t)
 
 ;; Global config

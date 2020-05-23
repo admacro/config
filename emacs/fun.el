@@ -2,33 +2,26 @@
 ;; fun is fun in `defun'
 ;; all custom functions reside here
 
-(defun toggle-frame-font()
-  "Toggle frame font size in this cyclic order:
-frame-font-size-normal > frame-font-size-big > frame-font-size-small"
-  (interactive)
-  (let ((current-font (get 'current-frame-font 'state)))
-    (cond
-     ((or (equal current-font 0) (equal current-font nil))
-      (set-frame-font frame-font-normal)
-      (put 'current-frame-font 'state 1))
-     ((equal current-font 1)
-      (set-frame-font frame-font-big)
-      (put 'current-frame-font 'state 2))
-     ((equal current-font 2)
-      (set-frame-font frame-font-small)
-      (put 'current-frame-font 'state 0))
-     )))
+(defun set-font-size (font-size)
+  (set-frame-font (format "%s-%s" proportional-font-family font-size))
+  (set-face-font 'line-number (format "%s-%s" monospace-font-family font-size)))
 
-(defun random-font ()
-  "Random-font returns one of these good fonts randomly."
-  ;; (set-frame-font "go mono-15")
-  (let ((font-list (list "monaco-15" "menlo-15"
-                         "go mono-15" "pt mono-15" "gabriele bad ah-15"
-                         "calling code-16" "code saver-16"
-                         "pointfree-15"
-                         "anonymous pro-17"
-                         "inconsolatago-18")))
-    (nth (random (length font-list)) font-list)))
+(defun toggle-font-size()
+  "Toggle font size in this cyclic order: 14 -> 17 -> 21->14..."
+  (interactive)
+  (let ((current-size-index (get 'current-size-index 'state))
+	(current-font-size (/ (face-attribute 'default :height) 10)))
+    (cl-flet ((set-fonts (font-size-index)
+                      (let ((font-size (nth font-size-index toggle-font-sizes)))
+                        (set-font-size font-size)
+                        (put 'current-size-index 'state font-size-index))))
+	  (cond
+	   ((or (equal current-size-index 1) ) (set-fonts 2))
+	   ((equal current-size-index 2) (set-fonts 0))
+	   ((equal current-size-index 0) (set-fonts 1))
+	   ((equal current-size-index nil)
+	    (set-fonts (cl-position current-font-size toggle-font-sizes :test  '<)))
+	   ))))
 
 (defun load-adm-theme ()
   "Use dark theme for night and light theme for day.
@@ -82,12 +75,19 @@ Always cycle the margin width in this order: 20 cells, 0 (no margin)."
             (font-lock-add-keywords nil hexcolour-keywords)))
 
 (defun hexcolour-toggle-light-or-dark ()
-  "toggle between colour"
   (interactive)
   (if (eq hexcolour-keywords hexcolour-keywords-light)
       (setq hexcolour-keywords hexcolour-keywords-dark)
     (setq hexcolour-keywords hexcolour-keywords-light))
   (revert-buffer t t))
+
+;; use monospace font for brackets
+(setq brackets-keywords
+      '(("[][(){}]"
+         (0 (add-face-text-property (match-beginning 0) (match-end 0) '(:family monospace-font-family))))))
+(add-hook 'prog-mode-hook
+          (lambda ()
+            (font-lock-add-keywords nil brackets-keywords)))
 
 (defun xah-dired-sort ()
   "Sort dired dir listing in different ways.
