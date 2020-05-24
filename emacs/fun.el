@@ -3,8 +3,9 @@
 ;; all custom functions reside here
 
 (defun set-font-size (font-size)
-  (set-frame-font (format "%s-%s" proportional-font-family font-size))
-  (set-face-font 'line-number (format "%s-%s" monospace-font-family font-size)))
+  (set-frame-font (format "%s-%s" monospace-font-family font-size))
+  ;; (set-face-font 'line-number (format "%s-%s" monospace-font-family font-size))
+  (set-face-font 'font-lock-comment-face (format "%s-%s" serif-font-family font-size)))
 
 (defun toggle-font-size()
   "Toggle font size in this cyclic order: 14 -> 17 -> 21->14..."
@@ -80,15 +81,6 @@ Always cycle the margin width in this order: 20 cells, 0 (no margin)."
       (setq hexcolour-keywords hexcolour-keywords-dark)
     (setq hexcolour-keywords hexcolour-keywords-light))
   (revert-buffer t t))
-
-(defun monospace-brackets-mode ()
-  "use monospace font for brackets: [][(){}]"
-  (add-hook 'prog-mode-hook
-            (lambda()
-              (font-lock-add-keywords nil
-                                      '(("[][(){}]"
-                                         (0 (add-face-text-property (match-beginning 0) (match-end 0)
-                                                                    (list :family monospace-font-family)))))))))
 
 (defun xah-dired-sort ()
   "Sort dired dir listing in different ways.

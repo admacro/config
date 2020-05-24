@@ -2,9 +2,11 @@
 (setq gc-con-threshold-value (* 1024 1024)) ; 1MB
 
 ;; font
-(setq proportional-font-family "go")
+(setq sans-font-family "go")
+(setq serif-font-family "go")
 (setq monospace-font-family "go mono")
-(setq toggle-font-sizes '(14 17 21))
+(setq toggle-font-sizes '(14 17 22))
+(setq default-font-size 16)
 
 (load "~/prog/config/emacs/fun.el")
 (load "~/prog/config/emacs/pkg/pkg.el")
@@ -15,9 +17,7 @@
 
 ;; theme and font
 (load-adm-theme)
-(set-font-size 17)
-(monospace-brackets-mode)
-;; (load-theme 'adm-dark t)
+(set-font-size default-font-size)
 
 ;; Global config
 ;; appearance

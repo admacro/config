@@ -88,7 +88,7 @@
 (cp 'treemacs
     (lambda()
       (setq treemacs-no-png-images t)
-      (setq treemacs-width 33)
+      (setq treemacs-width 30)
       (setq treemacs-show-cursor 1)
       (setq treemacs-fringe-indicator-mode nil)
       ;; on small screens, make treemacs window deletable by delete-other-windows
@@ -101,9 +101,9 @@
       ;; hide line numbers and mode line in treemacs
       (add-hook `treemacs-mode-hook
                 (lambda ()
+                  (interactive)
                   (display-line-numbers-mode 0)
-                  ;; (setq mode-line-format nil)
-                  ))
+                  (variable-pitch-mode 1)))
       (dk xah-fly-dot-keymap (kbd "p") 'treemacs)))
 
 ;; company

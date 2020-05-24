@@ -98,6 +98,7 @@
                (treemacs-git-untracked-face :foreground ,adm-green :slant italic :underline t)
                (treemacs-git-added-face :foreground ,adm-green)
                (treemacs-git-modified-face :foreground ,adm-yellow)
+               (treemacs-tags-face :foreground ,adm-blue)
 
                ;; company
                (company-echo-common :foreground ,adm-bg :background ,adm-fg)

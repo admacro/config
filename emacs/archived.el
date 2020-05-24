@@ -1,8 +1,7 @@
 (global-hl-line-mode 1) ; highlight current line where cursor is
 
 ;; default font for variable-pitch mode
-(custom-set-faces
- '(variable-pitch ((t (:family "Baskerville")))))
+(custom-set-faces '(variable-pitch ((t (:family "Baskerville")))))
 
 ;; mini-buffer
 ;; https://github.com/lewang/flx
@@ -42,3 +41,12 @@
   (interactive)
   (unhighlight-regexp t))
 (define-key xah-fly-dot-keymap (kbd "u") 'unhighlight-all-in-buffer)
+
+(defun monospace-brackets-mode ()
+  "use monospace font for brackets: [][(){}]"
+  (add-hook 'prog-mode-hook
+            (lambda()
+              (font-lock-add-keywords nil
+                                      '(("[][(){}~=/\\;,.'<-_\|>\"!@#$%^&*]"
+                                         (0 (add-face-text-property (match-beginning 0) (match-end 0)
+                                                                    (list :family monospace-font-family)))))))))
