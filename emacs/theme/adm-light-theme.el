@@ -81,6 +81,7 @@
 
                ;; ido-mode
                (ido-only-match :foreground ,adm-green)
+               (ido-subdir :foreground ,adm-cyan)
 
                ;; message
                ;; (message-mml :foreground ,adm-cyan :weight normal)
