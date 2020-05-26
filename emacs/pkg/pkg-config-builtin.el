@@ -42,4 +42,4 @@
 (atl 'auto-mode-alist '("\\Procfile.*\\'" . sh-mode)) ; forego foreman/procfile
 
 ;; variable-pitch-mode
-(set-face-font 'variable-pitch (format "%s-%s" sans-font-family default-font-size))
+(set-face-font 'variable-pitch (format "%s-%s" proportional-font-family default-font-size))

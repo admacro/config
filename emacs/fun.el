@@ -4,8 +4,7 @@
 
 (defun set-font-size (font-size)
   (set-frame-font (format "%s-%s" monospace-font-family font-size))
-  ;; (set-face-font 'line-number (format "%s-%s" monospace-font-family font-size))
-  (set-face-font 'font-lock-comment-face (format "%s-%s" serif-font-family font-size)))
+  (set-face-font 'font-lock-comment-face (format "%s-%s" proportional-font-family font-size)))
 
 (defun toggle-font-size()
   "Toggle font size in this cyclic order: 14 -> 17 -> 21->14..."
