@@ -39,13 +39,12 @@ Day starts from 6AM to 6PM. The rest is night. :D"
   "Toggle the left and right margins of current window.
 Always cycle the margin width in this order: 20 cells, 0 (no margin)."
   (interactive)
-  (if (get 'window-margin-enabled 'state)
-      (progn
-        (set-window-margins nil 0 0)
-        (put 'window-margin-enabled 'state nil))
-    (progn
-      (set-window-margins nil 20 20)
-      (put 'window-margin-enabled 'state t))))
+  (cl-flet ((set-margin (margin state)
+                        (set-window-margins nil margin margin)
+                        (put 'window-margin-enabled 'state state)))
+    (if (get 'window-margin-enabled 'state)
+        (set-margin 0 nil)
+      (set-margin 20 t))))
 
 ;; hex colour
 ;; Display hex colour code in its corresponding colour
