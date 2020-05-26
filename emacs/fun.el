@@ -20,7 +20,7 @@
 	   ((equal current-size-index 2) (set-fonts 0))
 	   ((equal current-size-index 0) (set-fonts 1))
 	   ((equal current-size-index nil)
-	    (set-fonts (cl-position current-font-size toggle-font-sizes :test  '<)))
+	    (set-fonts (cl-position current-font-size toggle-font-sizes :test '<)))
 	   ))))
 
 (defun load-adm-theme ()
