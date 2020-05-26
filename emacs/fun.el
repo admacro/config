@@ -7,7 +7,7 @@
   (set-face-font 'font-lock-comment-face (format "%s-%s" proportional-font-family font-size)))
 
 (defun toggle-font-size()
-  "Toggle font size in this cyclic order: 14 -> 17 -> 21->14..."
+  "Toggle font size in this cyclic order: 14 -> 17 -> 21 -> 14..."
   (interactive)
   (let ((current-size-index (get 'current-size-index 'state))
         (current-font-size (/ (face-attribute 'default :height) 10)))
