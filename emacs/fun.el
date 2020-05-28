@@ -9,7 +9,8 @@
 (defun toggle-font-size()
   "Toggle font size in this cyclic order: 14 -> 17 -> 21 -> 14..."
   (interactive)
-  (let ((current-size-index (get 'current-size-index 'state))
+  (let ((toggle-font-sizes '(14 17 22))
+        (current-size-index (get 'current-size-index 'state))
         (current-font-size (/ (face-attribute 'default :height) 10)))
     (cl-flet ((set-fonts (font-size-index)
                          (let ((font-size (nth font-size-index toggle-font-sizes)))
