@@ -2,9 +2,14 @@
 ;; fun is fun in `defun'
 ;; all custom functions reside here
 
-(defun set-font-size (font-size)
-  (set-frame-font (format "%s-%s" monospace-font-family font-size))
-  (set-face-font 'font-lock-comment-face (format "%s-%s" proportional-font-family font-size)))
+(defun fontspec (family size)
+  (format "%s-%s" family size))
+
+(defun set-font-size (size)
+  (set-frame-font (fontspec monospace-font-family size))
+  (let ((font (fontspec proportional-font-family size)))
+    (set-face-font 'font-lock-comment-face font)
+    (set-face-font 'variable-pitch font)))
 
 (defun toggle-font-size()
   "Toggle font size in this cyclic order: 14 -> 17 -> 21 -> 14..."
