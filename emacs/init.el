@@ -4,7 +4,7 @@
 ;; font
 (setq proportional-font-family "go")
 (setq monospace-font-family "go mono")
-(setq default-font-size 16)
+(setq default-font-size 17)
 
 (load "~/prog/config/emacs/fun.el")
 (load "~/prog/config/emacs/pkg/pkg.el")
