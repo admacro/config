@@ -37,6 +37,7 @@
 
 ;; org-mode
 (setq org-startup-indented t)
+(add-hook 'org-mode-hook 'visual-line-mode)
 
 ;; Sh Mode
 (atl 'auto-mode-alist '("\\Procfile.*\\'" . sh-mode)) ; forego foreman/procfile
