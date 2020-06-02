@@ -41,6 +41,7 @@
 
 ;; Sh Mode
 (atl 'auto-mode-alist '("\\Procfile.*\\'" . sh-mode)) ; forego foreman/procfile
+(atl 'auto-mode-alist '("\\.*_profile\\'" . sh-mode)) ; .*_profile
 
 ;; variable-pitch-mode
 (set-face-font 'variable-pitch (fontspec proportional-font-family default-font-size))

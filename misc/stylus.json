@@ -9,17 +9,28 @@
 		"name": "wikipedia.org",
 		"sections": [
 			{
-				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #F8F5F4 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #EBE3E1 !important;\n}\n\n.mw-body-content {\n    font-family: serif;\n    font-size: 1.35em;\n    line-height: 1.3em;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre, code {\n    font-size: 0.8em;\n    background: #EBE3E1;\n    border-radius: 5px;\n    border-color: #b1a4a1;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: serif !important;\n}\n\n#content {\n    border: none;\n    width: 50em;\n    margin: auto auto;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
+				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #F8F5F4 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #EBE3E1 !important;\n}\n\n.mw-body-content {\n    font-family: serif;\n    line-height: 1.3em;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre, code {\n    font-size: 0.8em;\n    background: #EBE3E1;\n    border-radius: 5px;\n    border-color: #b1a4a1;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto auto;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
 				"domains": [
-					"en.wikipedia.org",
+					"wikipedia.org"
+				]
+			},
+			{
+				"code": "#content {\n    width: 45em;\n}\n\n\n.mw-body-content {\n    font-size: 1.25em;\n}\n",
+				"domains": [
+					"en.wikipedia.org"
+				]
+			},
+			{
+				"code": "#content {\n    width: 45em;\n}\n\n.skin-vector .mw-body-content {\n    font-size: 1.25em;\n}\n",
+				"domains": [
 					"zh.wikipedia.org"
 				]
 			}
 		],
-		"updateDate": 1590498593869,
+		"updateDate": 1591066511647,
 		"id": 2,
 		"_id": "fc3adba2-a349-422f-ad68-9be0e8d62c02",
-		"_rev": 1590498593869
+		"_rev": 1591066511647
 	},
 	{
 		"enabled": true,
@@ -298,9 +309,9 @@
 				]
 			}
 		],
-		"updateDate": 1590500463789,
+		"updateDate": 1591063637313,
 		"_id": "410a0e49-fc9f-4993-96ff-1b640cfea445",
-		"_rev": 1590500463789,
+		"_rev": 1591063637313,
 		"id": 16
 	},
 	{
