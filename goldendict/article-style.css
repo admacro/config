@@ -4,7 +4,7 @@ html {
 
 body{
     background: #EBE3E1;
-    font-family: Georgia;
+    font-family: charter;
     font-size: 18px;
     line-height:130%;
 }
@@ -15,25 +15,26 @@ body{
 }
 
 .mdict b {
-    font-family: Literata;
+    font-family: avenir;
     font-size: 18px;
 }
 
 .mdict .subject,
 .mdict .rtseg b,
 .mdict b i {
-    font-family: Literata !important;
+    font-family: avenir !important;
 }
 
 .mdict .ds-single i,
 .mdict .ds-list i,
 .mdict .usen i,
 .mdict .wrdhst i {
+    font-family: charter !important;
     font-style: italic !important;
 }
 
 .mdict .MinionNew {
-    font-family: Georgia !important;
+    font-family: charter !important;
 }
 
 .mdict .subject {
@@ -46,7 +47,7 @@ body{
 .mdict .results,
 .mdict .results .ds-single,
 .mdict .results .ds-list {
-    font-family: Georgia !important;
+    font-family: charter !important;
     font-size: 18px !important;
     line-height:130% !important;
 }
@@ -77,7 +78,7 @@ blockquote {
 }
 
 blockquote font b {
-    font-family: Georgia !important;
+    font-family: charter !important;
     font-style: italic !important;
     font-weight: normal !important;
 }
