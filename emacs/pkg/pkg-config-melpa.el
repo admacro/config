@@ -222,26 +222,6 @@
                            highlight-numbers-modelist)))))
 
 ;; markdown-mode
-(cp 'markdown-mode
-    (lambda()
-      ;; make writing in markdown-mode less distracting
-      (add-hook 'markdown-mode-hook
-                (lambda ()
-                  ;; sum of left and right margin cannot be greater than 67
-                  ;; was 35 35, now 33 33
-                  ;; see https://github.com/Alexander-Miller/treemacs/issues/669
-                  ;; for now, only cell unit (40 chars) is support when sitting window margin
-                  ;; check up visual-fill-column for support for ratio unit (0.3 (30%))
-                  (setq left-margin-width 33)
-                  (setq right-margin-width 33)
-                  (visual-line-mode 1)
-                  (display-line-numbers-mode 0)
-                  (setq mode-line-format nil)
-                  (setq buffer-face-mode-face
-                        ;; '(:family "IM FELL English PRO" :height 220 :width regular))
-                        '(:family "Bradley Hand" :height 220 :width regular))
-                        ;; '(:family "caveat" :height 300 :width regular))
-                  (buffer-face-mode)))))
 
 ;; Ruby robe
 (cp 'robe

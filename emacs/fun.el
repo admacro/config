@@ -52,9 +52,17 @@ Always cycle the margin width in this order: 20 cells, 0 (no margin)."
         (set-margin 0 nil)
       (set-margin 20 t))))
 
+(defun writting-mode()
+  "writting-mode removes all unnecessary UI elements for writting."
+  (interactive)
+  (set-window-margins nil 25 25)
+  (visual-line-mode 1)
+  (display-line-numbers-mode 0)
+  (setq mode-line-format nil)
+  (setq buffer-face-mode-face '(:family "lingwai sc" :height 250))
+  (buffer-face-mode))
+
 ;; hex colour
-;; Display hex colour code in its corresponding colour
-;; https://www.emacswiki.org/emacs/HexColour
 (defvar hexcolour-keywords-light
   '(("#[[:xdigit:]]\\{6\\}"
      (0 (put-text-property (match-beginning 0)
@@ -80,6 +88,8 @@ Always cycle the margin width in this order: 20 cells, 0 (no margin)."
             (font-lock-add-keywords nil hexcolour-keywords)))
 
 (defun hexcolour-toggle-light-or-dark ()
+  "Display hex colour code in its corresponding colour.
+See https://www.emacswiki.org/emacs/HexColour"
   (interactive)
   (if (eq hexcolour-keywords hexcolour-keywords-light)
       (setq hexcolour-keywords hexcolour-keywords-dark)
