@@ -2,8 +2,8 @@
 (setq gc-con-threshold-value (* 1024 1024)) ; 1MB
 
 ;; font
-(setq proportional-font-family "go")
-(setq monospace-font-family "go mono")
+(setq proportional-font-family "roboto")
+(setq monospace-font-family "roboto mono")
 (setq default-font-size 15)
 
 (load "~/prog/config/emacs/fun.el")
