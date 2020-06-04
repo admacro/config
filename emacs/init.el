@@ -1,4 +1,5 @@
 ;; global valiables
+(set-language-environment "UTF-8") ; UTF-8 as default encoding
 (setq gc-con-threshold-value (* 1024 1024)) ; 1MB
 
 ;; font
@@ -9,9 +10,6 @@
 (load "~/prog/config/emacs/fun.el")
 (load "~/prog/config/emacs/pkg/pkg.el")
 (load "~/prog/config/emacs/theme/theme.el")
-
-;; UTF-8 as default encoding
-(set-language-environment "UTF-8")
 
 ;; theme and font
 (load-adm-theme)

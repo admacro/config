@@ -197,6 +197,7 @@
               <meta name="select:Post Padding" content="45" title="45px"/>
 
               <meta name="select:Change Layout" content="fourpx" title="400px"/>
+              <meta name="select:Change Layout" content="two-fivepx" title="Two Columns 500px"/>
               <meta name="select:Change Layout" content="two-fourpx" title="Two Columns 400px"/>
               <meta name="select:Change Layout" content="three-fourpx" title="Three Columns 400px"/>
               <meta name="select:Change Layout" content="four-fourpx" title="Four Columns 400px"/>
@@ -386,6 +387,7 @@
               a{color:{color:Link Color};}
 
 
+              #ind.not-mobile.two-fivepx .max-width-fix{width:calc(1000px + {select:post padding}px * 4);}
               #ind.not-mobile.two-fourpx .max-width-fix{width:calc(800px + {select:post padding}px * 4);}
               #ind.not-mobile.three-fourpx .max-width-fix{width:calc(1200px + {select:post padding}px * 6);}
               #ind.not-mobile.four-fourpx .max-width-fix{width:calc(1600px + {select:post padding}px * 8);}
@@ -435,7 +437,7 @@
                                      }
               .pagination li a{border-bottom:0px;}
               .pagination .is-current a{color:#fff;border-bottom:0px;}
-              .load-more-container{font-family:baskerville;}
+              .load-more-container{font-family:baskervile;}
               /** page navi color **/
 
 
@@ -545,9 +547,26 @@
               .post.text > figure:first-child{margin-bottom:0px !Important;}
             </style>
 
+            <style>
+              /* font size */
+              html, body, div, span, applet, object, iframe,
+              h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+              a, abbr, acronym, address, big, cite, code,
+              del, dfn, em, img, ins, kbd, q, s, samp,
+              small, strike, strong, sub, sup, tt, var,
+              b, u, i, center,
+              dl, dt, dd, ol, ul, li,
+              fieldset, form, label, legend,
+              table, caption, tbody, tfoot, thead, tr, th, td,
+              article, aside, canvas, details, embed, 
+              figure, figcaption, footer, header, hgroup, 
+              menu, nav, output, ruby, section, summary,
+              time, mark, audio, video {
+	              font-size: 1em;
+              }
 
-
-
+              p{line-height:150% !Important;}
+            </style>
 
             <header class="header">
               <div class="top-header {block:ifhideheadertitle}align-center{/block:ifhideheadertitle}">
