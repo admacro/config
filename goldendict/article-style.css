@@ -2,10 +2,50 @@ html {
     background: #EBE3E1;
 }
 
-body{
+body,
+.mdict b,
+.mdict font,
+.mdict .results,
+.mdict .results .ds-single,
+.mdict .results .ds-list,
+.gdactivearticle .gddictname,
+.gddictname {
+    font-size: 16px !important;
+}
+
+body,
+.mdict .ds-single i,
+.mdict .ds-list i,
+.mdict .usen i,
+.mdict .wrdhst i,
+.mdict .MinionNew,
+.mdict > font,
+.mdict .results,
+.mdict .results .ds-single,
+.mdict .results .ds-list,
+blockquote font b {
+    font-family: georgia, serif !important;
+}
+
+.mdict b,
+.mdict b font,
+.mdict font b,
+.mdict .subject,
+.mdict .rtseg b,
+.mdict b i {
+    font-weight: bold !important;
+    font-family: arial, sans-serif !important;
+}
+
+.mdict .ds-single i,
+.mdict .ds-list i,
+.mdict .usen i,
+.mdict .wrdhst i {
+    font-style: italic !important;
+}
+
+body {
     background: #EBE3E1;
-    font-family: charter;
-    font-size: 18px;
     line-height:130%;
 }
 
@@ -14,52 +54,25 @@ body{
     background: #F8F5F4;
 }
 
-.mdict b {
-    font-family: avenir;
-    font-size: 18px;
-}
-
-.mdict .subject,
-.mdict .rtseg b,
-.mdict b i {
-    font-family: avenir !important;
-}
-
-.mdict .ds-single i,
-.mdict .ds-list i,
-.mdict .usen i,
-.mdict .wrdhst i {
-    font-family: charter !important;
-    font-style: italic !important;
-}
-
-.mdict .MinionNew {
-    font-family: charter !important;
-}
-
 .mdict .subject {
     display: inline-block;
     padding: 3px 3px 0px 3px !important;
     margin-top: 1px;
 }
 
-.mdict font,
-.mdict .results,
-.mdict .results .ds-single,
-.mdict .results .ds-list {
-    font-family: charter !important;
-    font-size: 18px !important;
-    line-height:130% !important;
-}
-
-.mdict .results,
-.mdict .results .ds-single,
-.mdict .results .ds-list {
-    margin-left: 1em;
+.mdict font {
+    line-height:130% !important;    
 }
 
 .mdict .sds-list {
     margin-left: 1em !important;
+}
+
+.mdict .results,
+.mdict .results .ds-single,
+.mdict .results .ds-list {
+    line-height:130% !important;
+    margin-left: 1em;
 }
 
 .mdict .results .pseg {
@@ -78,9 +91,8 @@ blockquote {
 }
 
 blockquote font b {
-    font-family: charter !important;
     font-style: italic !important;
-    font-weight: normal !important;
+    font-weight: bold !important;
 }
 
 .mdict > b > font {
@@ -95,12 +107,7 @@ blockquote font b {
     color: #8b2323;
 }
 
-.gddictname {
-    font-size: 16px;
-}
-
 .gdactivearticle .gddictname {
-    font-size: 16px;
     background-color: #EBE3E1;
     color: #103B78;
 }
