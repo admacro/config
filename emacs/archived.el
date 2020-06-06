@@ -23,18 +23,6 @@
 (setq lsp-ui-doc-max-width 120)
 (setq lsp-ui-doc-max-height 80)
 
-;; functions
-;; Use variable width font faces in current buffer
-(defun writing-mode ()
-  "Set font to a variable width (proportional) fonts in current buffer"
-  (interactive)
-  (setq buffer-face-mode-face '(:family "IM FELL English PRO" :height 220 :width regular))
-  (buffer-face-mode)
-  (global-display-line-numbers-mode 0)	; disable line numbers everywhere
-  (turn-on-auto-fill))
-(define-key xah-fly-dot-keymap (kbd "w") 'writing-mode)
-
-
 ;; unhighlight all hi-lock highlights in current buffer
 (defun unhighlight-all-in-buffer()
   "Remove all highlights made by `hi-lock' from the current buffer."
