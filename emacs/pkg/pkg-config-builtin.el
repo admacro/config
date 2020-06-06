@@ -38,6 +38,17 @@
 ;; org-mode
 (setq org-startup-indented t)
 (add-hook 'org-mode-hook 'visual-line-mode)
+(require 'ox-publish)
+(setq org-publish-project-alist
+      (list (list "org-notes"
+                  :base-directory (concat notes-path "/org/")
+                  :base-extension "org"
+                  :publishing-directory (concat notes-path "/html/")
+                  :recursive t
+                  :publishing-function 'org-html-publish-to-html
+                  :auto-preamble t)
+            (list "org" :components '("org-notes"))))
+
 
 ;; Sh Mode
 (atl 'auto-mode-alist '("\\Procfile.*\\'" . sh-mode)) ; forego foreman/procfile

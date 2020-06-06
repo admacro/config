@@ -110,3 +110,11 @@ Version 2018-12-23"
      ((equal $sort-by "size") (setq $arg "-Al -S"))
      (t (error "logic error 09535" )))
     (dired-sort-other $arg )))
+
+(defun publish-notes()
+  "Publish org notes. This overwrites existing html files."
+  (interactive )
+  (if (y-or-n-p "Force republish all? ")
+      (org-publish "org" t)
+    (org-publish "org")))
+
