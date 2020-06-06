@@ -1,8 +1,11 @@
 ## git shortcuts
 alias gs="git status"
-alias gb="git branch"
-alias gc="git checkout"
-alias gp="git pull"
+alias gad="git add"
+alias gbr="git branch"
+alias gcm="git commit -m"
+alias gco="git checkout"
+alias gpl="git pull"
+alias gph="git push"
 
 # git log
 # Usage
