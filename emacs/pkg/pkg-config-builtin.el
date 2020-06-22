@@ -39,15 +39,25 @@
 (setq org-startup-indented t)
 (add-hook 'org-mode-hook 'visual-line-mode)
 (require 'ox-publish)
+(setq org-html-preamble nil)
+(setq org-html-postamble nil)
 (setq org-publish-project-alist
-      (list (list "org-notes"
-                  :base-directory (concat notes-path "/org/")
-                  :base-extension "org"
-                  :publishing-directory (concat notes-path "/html/")
-                  :recursive t
-                  :publishing-function 'org-html-publish-to-html
-                  :auto-preamble t)
-            (list "org" :components '("org-notes"))))
+      (let ((publishing-directory (concat org-project-path "/public/")))
+        (list (list "org"
+                    :base-directory (concat org-project-path "/org/")
+                    :base-extension "org"
+                    :publishing-directory publishing-directory
+                    :recursive t
+                    :publishing-function 'org-html-publish-to-html
+                    :html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/notes.css\"/>"
+                    :section-numbers nil)
+              (list "static"
+                    :base-directory (concat org-project-path "/static/")
+                    :base-extension "css\\|js\\|png\\|jpg"
+                    :publishing-directory publishing-directory
+                    :recursive t
+                    :publishing-function 'org-publish-attachment)
+              (list org-project-name :components '("org" "static")))))
 
 
 ;; Sh Mode

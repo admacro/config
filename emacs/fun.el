@@ -115,6 +115,6 @@ Version 2018-12-23"
   "Publish org notes. This overwrites existing html files."
   (interactive )
   (if (y-or-n-p "Force republish all? ")
-      (org-publish "org" t)
-    (org-publish "org")))
+      (org-publish org-project-name t)
+    (org-publish org-project-name)))
 

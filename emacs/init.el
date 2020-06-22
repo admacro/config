@@ -7,8 +7,9 @@
 (setq monospace-font-family "roboto mono")
 (setq default-font-size 15)
 
-;; projects
-(setq notes-path "~/prog/notes")
+;; org projects
+(setq org-project-name "notes")
+(setq org-project-path "~/prog/notes")
 
 (load "~/prog/config/emacs/fun.el")
 (load "~/prog/config/emacs/pkg/pkg.el")
