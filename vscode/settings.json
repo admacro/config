@@ -1,0 +1,39 @@
+{
+    "window.zoomLevel": 0,
+    "window.autoDetectColorScheme": true,
+    "editor.fontSize": 15,
+    "editor.fontWeight": "normal",
+    "editor.fontFamily": "roboto mono",
+    "editor.lineHeight": 20,
+    "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Default Light+",
+    "workbench.colorCustomizations": {
+        "[Default Light+]": {
+            "foreground": "#232323",
+            "activityBar.background": "#D0CFCE",
+            "activityBar.foreground": "#232323",
+            "activityBarBadge.foreground": "#D0CFCE",
+            "activityBarBadge.background": "#232323",
+            "editor.background": "#F0EFEE",
+            "editor.foreground": "#232323",
+            "editorLineNumber.foreground": "#C0BFBE",
+            "statusBar.foreground": "#232323",
+            "statusBar.background": "#D0CFCE",
+            "tab.activeBorderTop": "#232323",
+        }
+    },
+    "editor.tokenColorCustomizations": {
+        "[Default Light+]": {
+            "comments": "#A8541C",
+            "functions": "#A81D60",
+            "keywords": "#3C5F89",
+            "types": "#3C5F89",
+            "numbers": "#1B9554",
+            "strings": "#1B9554",
+            "variables": "#232323"
+        }
+    },
+    "[go]": {},
+    "go.formatTool": "goimports",
+    "go.useLanguageServer": true,
+}
