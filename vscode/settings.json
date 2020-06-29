@@ -6,7 +6,6 @@
     "editor.fontFamily": "roboto mono",
     "editor.lineHeight": 20,
     "editor.minimap.enabled": false,
-    "workbench.colorTheme": "Default Light+",
     "workbench.colorCustomizations": {
         "[Default Light+]": {
             "foreground": "#232323",
@@ -19,7 +18,20 @@
             "editorLineNumber.foreground": "#C0BFBE",
             "statusBar.foreground": "#232323",
             "statusBar.background": "#D0CFCE",
-            "tab.activeBorderTop": "#232323",
+            "tab.activeBorderTop": "#232323"
+        },
+        "[Default Dark+]": {
+            "foreground": "#E4E3E2",
+            "activityBar.background": "#5B698C",
+            "activityBar.foreground": "#E4E3E2",
+            "activityBarBadge.foreground": "#5B698C",
+            "activityBarBadge.background": "#E4E3E2",
+            // "editor.background": "#2D3959",
+            "editor.foreground": "#E4E3E2",
+            "editorLineNumber.foreground": "#6B7899",
+            "statusBar.foreground": "#E4E3E2",
+            "statusBar.background": "#5B698C",
+            "tab.activeBorderTop": "#E4E3E2"
         }
     },
     "editor.tokenColorCustomizations": {
@@ -45,9 +57,35 @@
             "numbers": "#1B9554",
             "strings": "#1B9554",
             "variables": "#232323",
+        },
+        "[Default Dark+]": {
+            "textMateRules": [{
+                "scope":"support.constant",
+                "settings": {
+                    "foreground": "#E4E3E2",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "scope":"keyword",
+                "settings": {
+                    "foreground": "#C8C8EA",
+                    "fontStyle": "bold"
+                }
+            }],
+            "keywords": "#C8C8EA",
+            "comments": "#E6B18F",
+            "functions": "#F3BADE",
+            "types": "#A2D4D4",
+            "numbers": "#A6D7A6",
+            "strings": "#A6D7A6",
+            "variables": "#E4E3E2",
         }
     },
     "[go]": {},
     "go.formatTool": "goimports",
     "go.useLanguageServer": true,
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": false,
+    "breadcrumbs.enabled": false,
 }
