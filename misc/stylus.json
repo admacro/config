@@ -213,7 +213,7 @@
 		"name": "github.com",
 		"sections": [
 			{
-				"code": "body,\n.application-main,\n.Box {\n    background-color: #F8F5F4 !important;\n}\n\ndiv.blob-wrapper {\n    background-color: #EBE3E1 !important;\n}\n\ndiv.blob-wrapper span {\n    font-family: Monospace, Go Mono, PT Mono;\n}\n\n.f6.v-align-middle.text-gray.px-3.py-2.border-bottom.bg-gray-light.d-flex.flex-justify-between {\n    display: none !important;\n}\n\n.tab-size {\n    tab-size: 4 !important;\n}",
+				"code": "body,\n.application-main,\n.Box {\n    background-color: #F8F5F4 !important;\n}\n\ndiv.blob-wrapper {\n    background-color: #EBE3E1 !important;\n}\n\ndiv.blob-wrapper span {\n    font-family: Monospace;\n}\n\n.f6.v-align-middle.text-gray.px-3.py-2.border-bottom.bg-gray-light.d-flex.flex-justify-between {\n    display: none !important;\n}\n\n.tab-size {\n    tab-size: 4 !important;\n}",
 				"domains": [
 					"github.com"
 				]
