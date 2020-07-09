@@ -30,7 +30,7 @@
 		"updateDate": 1591066511647,
 		"id": 2,
 		"_id": "fc3adba2-a349-422f-ad68-9be0e8d62c02",
-		"_rev": 1591066511647
+		"_rev": 1593705678570
 	},
 	{
 		"enabled": true,
@@ -49,10 +49,10 @@
 				]
 			}
 		],
-		"updateDate": 1587366885558,
+		"updateDate": 1594211246349,
 		"id": 3,
 		"_id": "8d94715c-0a39-4126-8f3f-83deb37306e2",
-		"_rev": 1590479818904
+		"_rev": 1594211246349
 	},
 	{
 		"enabled": true,
@@ -219,10 +219,10 @@
 				]
 			}
 		],
-		"updateDate": 1583323508843,
+		"updateDate": 1593573646638,
 		"id": 12,
 		"_id": "d5205ad9-4977-4d4b-93a1-7658ade99380",
-		"_rev": 1583323508843
+		"_rev": 1593573646638
 	},
 	{
 		"enabled": true,
@@ -255,21 +255,21 @@
 		"name": "youtube.com",
 		"sections": [
 			{
-				"code": "/* hide youtube comments */\nytd-comments {\n    display: none;\n}\n\nytd-expander {\n    --ytd-expander-collapsed-height: 800px !important;\n}\n\n#items.ytd-watch-next-secondary-results-renderer {\n    display: none;\n}\n\nytd-watch-flexy {\n    --ytd-watch-flexy-sidebar-width: 0px;\n    --ytd-watch-flexy-sidebar-min-width: 0px;\n    --ytd-watch-flexy-masthead-height: 0px;\n    min-width: 0;\n}",
-				"urlPrefixes": [
-					"https://www.youtube.com"
-				]
-			},
-			{
-				"code": "/* hide youtube comments */\nytd-comments {\n    display: none;\n}\n\nytd-expander {\n    --ytd-expander-collapsed-height: 800px !important;\n}\n\n#items.ytd-watch-next-secondary-results-renderer {\n    display: none;\n}\n",
+				"code": "/* hide youtube comments */\nytd-comments {\n    display: none;\n}\n\ndiv#related {\n    display: none;\n}\n\nytd-expander {\n    --ytd-expander-collapsed-height: 800px !important;\n}",
 				"regexps": [
 					"https.*www\\.youtube\\.com.*&list=.*"
 				]
+			},
+			{
+				"code": "/* hide youtube comments */\nytd-comments {\n    display: none;\n}\n\ndiv#secondary {\n    display: none;\n}\n\nytd-expander {\n    --ytd-expander-collapsed-height: 800px !important;\n}\n\nytd-watch-flexy {\n    --ytd-watch-flexy-sidebar-width: 0px;\n    --ytd-watch-flexy-sidebar-min-width: 0px;\n    --ytd-watch-flexy-masthead-height: 0px;\n    min-width: 0;\n}",
+				"regexps": [
+					"https.*www\\.youtube\\.com/watch\\?v=[^&]*$"
+				]
 			}
 		],
-		"updateDate": 1587012894750,
+		"updateDate": 1594261206731,
 		"_id": "5824946a-fc41-4583-b214-2622eb1436d7",
-		"_rev": 1587012894750,
+		"_rev": 1594261237270,
 		"id": 14
 	},
 	{
