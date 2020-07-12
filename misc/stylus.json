@@ -355,5 +355,23 @@
 		"_id": "171a5c9a-479b-4c61-a6d0-9a8a05a81a06",
 		"_rev": 1590500166986,
 		"id": 18
+	},
+	{
+		"enabled": true,
+		"updateUrl": null,
+		"md5Url": null,
+		"url": null,
+		"originalMd5": null,
+		"installDate": 1594541531004,
+		"name": "antiantialiased",
+		"sections": [
+			{
+				"code": "* {\n    -webkit-font-smoothing: auto !important;\n}"
+			}
+		],
+		"updateDate": 1594541692765,
+		"_id": "a0943cbe-d4ad-4753-b5c7-56b8199e0e7d",
+		"_rev": 1594541692765,
+		"id": 19
 	}
 ]
