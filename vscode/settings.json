@@ -6,6 +6,10 @@
     "editor.fontFamily": "roboto mono",
     "editor.lineHeight": 20,
     "editor.minimap.enabled": false,
+    "workbench.colorTheme": "Default Light+",
+    "workbench.activityBar.visible": false,
+    "workbench.statusBar.visible": false,
+    "breadcrumbs.enabled": false,
     "workbench.colorCustomizations": {
         "[Default Light+]": {
             "foreground": "#232323",
@@ -79,13 +83,10 @@
             "types": "#A2D4D4",
             "numbers": "#A6D7A6",
             "strings": "#A6D7A6",
-            "variables": "#E4E3E2",
+            "variables": "#E4E3E2"
         }
     },
     "[go]": {},
     "go.formatTool": "goimports",
-    "go.useLanguageServer": true,
-    "workbench.activityBar.visible": false,
-    "workbench.statusBar.visible": false,
-    "breadcrumbs.enabled": false,
+    "go.useLanguageServer": true
 }
