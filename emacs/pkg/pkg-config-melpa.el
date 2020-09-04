@@ -91,11 +91,11 @@
       (setq treemacs-width 30)
       (setq treemacs-show-cursor 1)
       (setq treemacs-fringe-indicator-mode nil)
-      ;; on small screens, make treemacs window deletable by delete-other-windows
-      ;; on big screens, it might be worthy to keep it around
-      ;; TODO use display-pixel-width/display-pixel-height to detect display size
-      ;; call external tool to get pixel density to get the diagonal size of the display
-      (setq treemacs-no-delete-other-windows nil)
+
+      ;; keep treemacs window around when using a big screen
+      (unless (> (display-pixel-width) 1600)
+          (setq treemacs-no-delete-other-windows nil))
+
       ;; no spacing betweewn root nodes (this is to fix *LSP Symbols List*)
       (setq treemacs-space-between-root-nodes nil)
       ;; hide line numbers and mode line in treemacs
