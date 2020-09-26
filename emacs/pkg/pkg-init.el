@@ -8,7 +8,6 @@
 (setq package-list-essential
       '(xah-fly-keys
         smex
-        magit
         xah-find
         find-file-in-repository
         markdown-mode))
