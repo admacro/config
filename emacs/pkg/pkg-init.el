@@ -10,7 +10,8 @@
         smex
         xah-find
         find-file-in-repository
-        markdown-mode))
+        markdown-mode
+        magit))
 
 ;; Packages for programming
 (setq package-list-prog
@@ -31,13 +32,19 @@
         go-eldoc
         ob-go))
 
-;; Packages for Ruby and Rails development
-(setq package-list-rails
-      '(robe
-        web-mode
-        yaml-mode
-        json-mode
+;; Packages for extra language support
+(setq package-list-lang
+      '(yaml-mode
+        json-mode))
+
+;; Packages for Web development
+(setq package-list-web
+      '(web-mode
         restclient))
+
+;; Packages for Ruby and Rails development
+(setq package-list-ruby
+      '(robe))
 
 ;; On launch, melpa packages are not included in the package search list
 (setq package-contents-refreshed nil)
@@ -76,6 +83,8 @@
 (install-packages package-list-essential "Essential")
 (install-packages package-list-prog "Programming")
 (install-packages package-list-go "Go")
+(install-packages package-list-lang "Extra language support")
+;; (install-packages package-list-web "Web development")
 ;; (install-packages package-list-rails "Ruby & Rails")
 
 ;; (setq package-list-test '(xah-fly-keys))
