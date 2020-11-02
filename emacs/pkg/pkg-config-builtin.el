@@ -5,6 +5,7 @@
        (interactive) ; global-set-key expects an interactive command
        (funcall (gethash major-mode jump-map))))
 (gsk (kbd "<f5>") 'xref-pop-marker-stack) ; go back to previous jump mark
+(define-key key-translation-map (kbd "ESC") (kbd "C-g")) ; make the Escape key do emacs's Ctrl+g.
 
 ;; ido
 (ido-mode 1)
