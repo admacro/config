@@ -3,13 +3,61 @@
     (lambda()
       (require 'xah-fly-keys)
       (xah-fly-keys 1)
-      (dk xah-fly-t-keymap (kbd "h") 'xah-close-current-buffer)
-      (dk xah-fly-leader-key-map (kbd "v") 'xah-goto-matching-bracket)
+
       (lk xah-fly-leader-key-map (kbd "g")
           (lambda() "close-current-buffer-and-delete-window"
             (interactive)
             (xah-close-current-buffer)
-            (delete-window)))))
+            (delete-window)))
+      (dk xah-fly-t-keymap (kbd "h") 'xah-close-current-buffer)
+
+      ;; Dumang keyboard customization (dedicated number keys)
+      ;; 1 2 3 4 5 6 7 8 9 0
+      ;; ! @ # $ % ^ & * ( )
+      (dk xah-fly-key-map (kbd "#") 'delete-other-windows)
+      (dk xah-fly-key-map (kbd "$") 'split-window-below)
+      (dk xah-fly-key-map (kbd "%") 'delete-char)
+      (dk xah-fly-key-map (kbd "^") 'xah-select-block)
+      (dk xah-fly-key-map (kbd "&") 'xah-select-line)
+      (dk xah-fly-key-map (kbd "*") 'xah-extend-selection)
+      (dk xah-fly-key-map (kbd "(") 'xah-select-text-in-quote)
+
+      (dk xah-fly-leader-key-map (kbd "#") 'delete-window)
+      (dk xah-fly-leader-key-map (kbd "$") 'split-window-right)
+      (dk xah-fly-leader-key-map (kbd "%") 'balance-windows)
+      (dk xah-fly-leader-key-map (kbd "^") 'xah-upcase-sentence)
+      (dk xah-fly-leader-key-map (kbd "(") 'ispell-word)
+
+      (dk xah-fly-t-keymap (kbd "!") 'xah-append-to-register-1)
+      (dk xah-fly-t-keymap (kbd "@") 'xah-clear-register-1)
+      (dk xah-fly-t-keymap (kbd "#") 'xah-copy-to-register-1)
+      (dk xah-fly-t-keymap (kbd "$") 'xah-paste-from-register-1)
+      (dk xah-fly-t-keymap (kbd "&") 'xah-append-to-register-1)
+      (dk xah-fly-t-keymap (kbd "*") 'xah-clear-register-1)
+
+      (dk xah-fly-r-keymap (kbd "#") 'number-to-register)
+      (dk xah-fly-r-keymap (kbd "$") 'increment-register)
+
+      (dk xah-fly-n-keymap (kbd ")") 'shell-command-on-region)
+      (dk xah-fly-n-keymap (kbd "!") 'set-input-method)
+      (dk xah-fly-n-keymap (kbd "@") 'global-hl-line-mode)
+      (dk xah-fly-n-keymap (kbd "$") 'global-display-line-numbers-mode)
+      (dk xah-fly-n-keymap (kbd "%") 'visual-line-mode)
+      (dk xah-fly-n-keymap (kbd "^") 'calendar)
+      (dk xah-fly-n-keymap (kbd "&") 'calc)
+      (dk xah-fly-n-keymap (kbd "(") 'shell-command)
+
+      (dk xah-fly--tab-key-map (kbd ")") 'expand-jump-to-next-slot)
+      (dk xah-fly--tab-key-map (kbd "!") 'abbrev-prefix-mark)
+      (dk xah-fly--tab-key-map (kbd "@") 'edit-abbrevs)
+      (dk xah-fly--tab-key-map (kbd "#") 'expand-abbrev)
+      (dk xah-fly--tab-key-map (kbd "$") 'expand-region-abbrevs)
+      (dk xah-fly--tab-key-map (kbd "%") 'unexpand-abbrev)
+      (dk xah-fly--tab-key-map (kbd "^") 'add-global-abbrev)
+      (dk xah-fly--tab-key-map (kbd "&") 'add-mode-abbrev)
+      (dk xah-fly--tab-key-map (kbd "*") 'inverse-add-global-abbrev)
+      (dk xah-fly--tab-key-map (kbd "(") 'inverse-add-mode-abbrev)
+      ))
 
 ;; magit
 (cp 'magit
