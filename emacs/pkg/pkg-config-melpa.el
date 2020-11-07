@@ -11,7 +11,7 @@
             (delete-window)))
       (dk xah-fly-t-keymap (kbd "h") 'xah-close-current-buffer)
 
-      ;; Dumang keyboard customization (dedicated number keys)
+      ;; Dumang keyboard customization (dedicated symbol keys replacing number row keys)
       ;; 1 2 3 4 5 6 7 8 9 0
       ;; ! @ # $ % ^ & * ( )
       (dk xah-fly-key-map (kbd "#") 'delete-other-windows)
@@ -142,7 +142,7 @@
 
       ;; keep treemacs window around when using a big screen
       (unless (> (display-pixel-width) 1600)
-          (setq treemacs-no-delete-other-windows nil))
+        (setq treemacs-no-delete-other-windows nil))
 
       ;; no spacing betweewn root nodes (this is to fix *LSP Symbols List*)
       (setq treemacs-space-between-root-nodes nil)
