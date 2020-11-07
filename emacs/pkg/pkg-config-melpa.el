@@ -63,8 +63,13 @@
 (cp 'magit
     (lambda()
       ;; (setq magit-diff-refine-hunk 'all)
+
       ;; show changes made to current git repo (magit-status)
-      (dk xah-fly-dot-keymap (kbd "c") 'magit-status)))
+      (dk xah-fly-dot-keymap (kbd "s") 'magit-status)
+
+      ;; commit (C-c C-c)
+      (dk xah-fly-dot-keymap (kbd "c") 'with-editor-finish)
+      ))
 
 ;; exec-path-from-shell
 (cp 'exec-path-from-shell
@@ -115,14 +120,14 @@
       (setq lsp-idle-delay 1)
 
       (dk xah-fly-comma-keymap (kbd "n") 'lsp-rename)
-      (dk xah-fly-comma-keymap (kbd "s") 'xref-find-apropos)))
+      (dk xah-fly-comma-keymap (kbd ",") 'xref-find-apropos)))
 
 ;; lsp-treemacs
 (cp 'lsp-treemacs
     (lambda()
       ;; enable bidirectional synchronization of lsp workspace folders and treemacs projects
       (lsp-treemacs-sync-mode 1)
-      (dk xah-fly-dot-keymap (kbd "s") 'lsp-treemacs-symbols)
+      (dk xah-fly-comma-keymap (kbd "s") 'lsp-treemacs-symbols)
       (lk xah-fly-comma-keymap (kbd "r")
           (lambda() "show-lsp-references-in-treemacs"
             (interactive)
@@ -152,7 +157,7 @@
                   (interactive)
                   (display-line-numbers-mode 0)
                   (variable-pitch-mode 1)))
-      (dk xah-fly-dot-keymap (kbd "p") 'treemacs)))
+      (dk xah-fly-dot-keymap (kbd ".") 'treemacs)))
 
 ;; company
 (cp 'company
@@ -184,7 +189,7 @@
       (setq go-test-args "-count=1")    ; bypass test caching
       (dk xah-fly-dot-keymap (kbd "r") 'go-run)
       (dk xah-fly-dot-keymap (kbd "t") 'go-test-current-test)
-      (dk xah-fly-dot-keymap (kbd "T") 'go-test-current-file)
+      (dk xah-fly-dot-keymap (kbd "f") 'go-test-current-file)
       ;; enable lsp-mode in go-mode
       (cp 'lsp-mode (lambda() (add-hook 'go-mode-hook 'lsp-deferred)))
       ;; register jump implmentation
