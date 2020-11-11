@@ -111,10 +111,16 @@ Version 2018-12-23"
      (t (error "logic error 09535" )))
     (dired-sort-other $arg )))
 
-(defun publish-notes()
-  "Publish org notes. This overwrites existing html files."
-  (interactive )
+(defun org-publish-by-name(org-project-name)
+  "Publish org by project name. This can overwrite existing html files."
   (if (y-or-n-p "Force republish all? ")
       (org-publish org-project-name t)
     (org-publish org-project-name)))
 
+(defun publish-notes()
+  (interactive )
+  (org-publish-by-name org-project-notes-name))
+
+(defun publish-www()
+  (interactive )
+  (org-publish-by-name org-project-www-name))

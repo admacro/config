@@ -8,8 +8,10 @@
 (setq default-font-size 15)
 
 ;; org projects
-(setq org-project-name "notes")
-(setq org-project-path "~/prog/notes")
+(setq org-project-notes-name "notes")
+(setq org-project-notes-path "~/prog/notes")
+(setq org-project-www-name "www")
+(setq org-project-www-path "~/prog/admacro.github.io")
 
 (load "~/prog/config/emacs/fun.el")
 (load "~/prog/config/emacs/pkg/pkg.el")

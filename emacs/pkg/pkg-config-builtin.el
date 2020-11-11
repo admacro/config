@@ -44,22 +44,32 @@
 (setq org-html-postamble nil)
 (setq org-descriptive-links nil)
 (setq org-publish-project-alist
-      (let ((publishing-directory (concat org-project-path "/public/")))
-        (list (list "org"
-                    :base-directory (concat org-project-path "/org/")
+      (let ((notes-export-path (concat org-project-notes-path "/public/")))
+        (list (list "notes-org"
+                    :base-directory (concat org-project-notes-path "/org/")
                     :base-extension "org"
-                    :publishing-directory publishing-directory
+                    :publishing-directory notes-export-path
                     :recursive t
                     :publishing-function 'org-html-publish-to-html
                     :html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/notes.css\"/>"
                     :section-numbers nil)
-              (list "static"
-                    :base-directory (concat org-project-path "/static/")
+              (list "notes-static"
+                    :base-directory (concat org-project-notes-path "/static/")
                     :base-extension "css\\|js\\|png\\|jpg"
-                    :publishing-directory publishing-directory
+                    :publishing-directory notes-export-path
                     :recursive t
                     :publishing-function 'org-publish-attachment)
-              (list org-project-name :components '("org" "static")))))
+              (list "www-org"
+                    :base-directory (concat org-project-www-path "/org/")
+                    :base-extension "org"
+                    :publishing-directory org-project-www-path
+                    :recursive t
+                    :publishing-function 'org-html-publish-to-html
+                    :html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/www.css\"/>"
+                    :section-numbers nil)
+              (list org-project-notes-name :components '("notes-org" "notes-static"))
+              (list org-project-www-name :components '("www-org"))
+              )))
 
 
 ;; Sh Mode
