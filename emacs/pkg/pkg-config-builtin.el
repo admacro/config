@@ -42,6 +42,7 @@
 (require 'ox-publish)
 (setq org-html-preamble nil)
 (setq org-html-postamble nil)
+(setq org-descriptive-links nil)
 (setq org-publish-project-alist
       (let ((publishing-directory (concat org-project-path "/public/")))
         (list (list "org"
