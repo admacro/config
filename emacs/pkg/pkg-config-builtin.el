@@ -63,9 +63,8 @@
                     :base-directory (concat org-project-www-path "/org/")
                     :base-extension "org"
                     :publishing-directory org-project-www-path
-                    :recursive t
                     :publishing-function 'org-html-publish-to-html
-                    :html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/www.css\"/>"
+                    :recursive t
                     :section-numbers nil)
               (list org-project-notes-name :components '("notes-org" "notes-static"))
               (list org-project-www-name :components '("www-org"))
