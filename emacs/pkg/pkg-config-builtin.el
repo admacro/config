@@ -41,7 +41,8 @@
 (add-hook 'org-mode-hook 'visual-line-mode)
 (require 'ox-publish)
 (setq org-html-preamble nil)
-(setq org-html-postamble nil)
+(setq org-html-postamble t)
+(setq org-html-postamble-format '(("en" "<p>By %a | Date: %d | Last Updated: %C</p>")))
 (setq org-descriptive-links nil)
 (setq org-publish-project-alist
       (let ((notes-export-path (concat org-project-notes-path "/public/")))
