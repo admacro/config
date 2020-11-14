@@ -42,7 +42,7 @@
 (require 'ox-publish)
 (setq org-html-preamble nil)
 (setq org-html-postamble t)
-(setq org-html-postamble-format '(("en" "<p>By %a | Date: %d | Last Updated: %C</p><p xmlns:dct='http://purl.org/dc/terms/' xmlns:cc='http://creativecommons.org/ns#' class='license-text'>© 2020 James Ni. Unless otherwise noted, this work is licensed under <a rel='license' href='https://creativecommons.org/licenses/by/4.0'>CC BY 4.0<img style='height:22px!important;margin-left:3px;vertical-align:text-bottom;' src='https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1' /><img style='height:22px!important;margin-left:3px;vertical-align:text-bottom;' src='https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1'/></a></p>")))
+(setq org-html-postamble-format '(("en" "<p>By %a | Date: %d | Last Updated: %C</p><p>© 2020 James Ni</p>")))
 (setq org-descriptive-links nil)
 (setq org-publish-project-alist
       (let ((notes-export-path (concat org-project-notes-path "/public/")))
