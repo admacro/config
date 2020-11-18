@@ -1,2 +1,2 @@
-#+INCLUDE: ~/prog/org-macros/org-macros.setup
+#+INCLUDE: macros.org
 #+author: James Ni
