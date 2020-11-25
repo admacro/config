@@ -3,7 +3,7 @@
 (setq gc-con-threshold-value (* 1024 1024)) ; 1MB
 
 ;; font
-(setq proportional-font-family "roboto")
+(setq proportional-font-family "Quattrocento sans")
 (setq monospace-font-family "roboto mono")
 (setq default-font-size 15)
 
