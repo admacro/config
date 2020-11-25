@@ -3,8 +3,8 @@
 (setq gc-con-threshold-value (* 1024 1024)) ; 1MB
 
 ;; font
-(setq proportional-font-family "Quattrocento sans")
-(setq monospace-font-family "roboto mono")
+(setq proportional-font-family "go")
+(setq monospace-font-family "go mono")
 (setq default-font-size 15)
 
 ;; org projects
