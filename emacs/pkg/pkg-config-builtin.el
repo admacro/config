@@ -45,32 +45,23 @@
 (setq org-html-postamble-format '(("en" "<p>By %a | Date: %d | Last Updated: %C</p><p>© 2020 James Ni</p>")))
 (setq org-descriptive-links nil)
 (setq org-publish-project-alist
-      (let ((notes-export-path (concat org-project-notes-path "/public/")))
-        (list (list "notes-org"
-                    :base-directory (concat org-project-notes-path "/org/")
-                    :base-extension "org"
-                    :publishing-directory notes-export-path
-                    :recursive t
-                    :publishing-function 'org-html-publish-to-html
-                    :html-head "<link rel=\"stylesheet\" type=\"text/css\" href=\"../css/notes.css\"/>"
-                    :section-numbers nil)
-              (list "notes-static"
-                    :base-directory (concat org-project-notes-path "/static/")
-                    :base-extension "css\\|js\\|png\\|jpg"
-                    :publishing-directory notes-export-path
-                    :recursive t
-                    :publishing-function 'org-publish-attachment)
-              (list "www-org"
-                    :base-directory (concat org-project-www-path "/org/")
-                    :base-extension "org"
-                    :publishing-directory org-project-www-path
-                    :publishing-function 'org-html-publish-to-html
-                    :recursive t
-                    :section-numbers nil)
-              (list org-project-notes-name :components '("notes-org" "notes-static"))
-              (list org-project-www-name :components '("www-org"))
-              )))
-
+      (list (list "notes"
+                  :base-directory (concat org-project-notes-path "/org/")
+                  :base-extension "org"
+                  :publishing-directory org-project-notes-path
+                  :recursive t
+                  :publishing-function 'org-html-publish-to-html
+                  :section-numbers nil)
+            (list "www"
+                  :base-directory (concat org-project-www-path "/org/")
+                  :base-extension "org"
+                  :publishing-directory org-project-www-path
+                  :publishing-function 'org-html-publish-to-html
+                  :recursive t
+                  :section-numbers nil)
+            (list org-project-notes-name :components '("notes"))
+            (list org-project-www-name :components '("www"))
+            ))
 
 ;; Sh Mode
 (atl 'auto-mode-alist '("\\Procfile.*\\'" . sh-mode)) ; forego foreman/procfile
