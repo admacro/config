@@ -17,6 +17,7 @@
 #+MACRO: newline @@latex:\hspace{0pt}\\@@ @@html:<br>@@
 
 #+MACRO: kbd @@html:<kbd>@@$1@@html:</kbd>@@
+#+MACRO: nbsp @@html:&nbsp;@@
 
 #+MACRO: begin_samp @@html:<samp>@@
 #+MACRO: end_samp @@html:</samp@@
