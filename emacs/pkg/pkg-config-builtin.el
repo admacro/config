@@ -42,7 +42,7 @@
 (require 'ox-publish)
 (setq org-html-preamble nil)
 (setq org-html-postamble t)
-(setq org-html-postamble-format '(("en" "<p>By %a | Date: %d | Last Updated: %C</p><p>© 2020 James Ni</p>")))
+(setq org-html-postamble-format '(("en" "<p>By %a | Date: %d | Last Updated: %C</p><p>© 2021 James Ni</p>")))
 (setq org-descriptive-links nil)
 (setq org-publish-project-alist
       (list (list "notes"
