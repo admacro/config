@@ -18,14 +18,24 @@ alias treed="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$JAVA_HOME/bin:$PATH
 
+# Maven
+export MVN_HOME=~/Applications/apache-maven-3.6.3
+export PATH=$MVN_HOME/bin:$PATH
+
 # Go
 export GOPATH=$(go env GOPATH)
 export PATH=$GOPATH/bin:$PATH
 
 # Ruby
-eval "$(rbenv init -)"
-export PATH="$HOME/.rbenv/shims:$PATH"
+# eval "$(rbenv init -)"
+# export PATH="$HOME/.rbenv/shims:$PATH"
 
+# Python
+# export PYTHON_HOME="/Users/james/Library/Python/2.7"
+# export PATH=$PYTHON_HOME/bin:$PATH
+
+# Setting PATH for homebrew Python
+export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Misc
 if [ -r ~/.git_profile ]; then
@@ -35,6 +45,7 @@ if [ -r ~/.tumblr_profile ]; then
    source ~/.tumblr_profile
 fi
 
+export HOMEBREW_NO_AUTO_UPDATE=1
 
 # # Proxy
 # export https_proxy=http://127.0.0.1:6152
