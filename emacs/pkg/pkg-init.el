@@ -24,6 +24,10 @@
         lsp-treemacs
         htmlize))
 
+;; Packages for Java programming
+(setq package-list-java
+      '(lsp-java))
+
 ;; Packages for Go programming
 (setq package-list-go
       '(go-mode
@@ -82,6 +86,7 @@
 
 (install-packages package-list-essential "Essential")
 (install-packages package-list-prog "Programming")
+(install-packages package-list-go "Java")
 (install-packages package-list-go "Go")
 (install-packages package-list-lang "Extra language support")
 ;; (install-packages package-list-web "Web development")

@@ -173,6 +173,13 @@
       (with-eval-after-load 'company
         (push 'company-lsp company-backends))))
 
+;; lsp-java
+(cp 'lsp-java
+    (lambda()
+      (require 'lsp-java)
+      ;; enable lsp-mode in java-mode
+      (add-hook 'java-mode-hook 'lsp-deferred)))
+
 ;; go-mode
 (cp 'go-mode
     (lambda()
