@@ -18,9 +18,13 @@ alias treed="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 export JAVA_HOME=$(/usr/libexec/java_home)
 export PATH=$JAVA_HOME/bin:$PATH
 
+# Gradle
+export GRADLE_HOME=~/Applications/gradle-6.8.3
+export PATH=$GRADLE_HOME/bin:$PATH
+
 # Maven
-export MVN_HOME=~/Applications/apache-maven-3.6.3
-export PATH=$MVN_HOME/bin:$PATH
+# export MVN_HOME=~/Applications/apache-maven-3.6.3
+# export PATH=$MVN_HOME/bin:$PATH
 
 # Go
 export GOPATH=$(go env GOPATH)
