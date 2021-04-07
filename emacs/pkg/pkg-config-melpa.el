@@ -140,14 +140,21 @@
 ;; treemacs
 (cp 'treemacs
     (lambda()
-      (setq treemacs-no-png-images t)
-      (setq treemacs-width 30)
+      ;; (setq treemacs-no-png-images t) ; use text ui instead of icons
+
       (setq treemacs-show-cursor 1)
       (setq treemacs-fringe-indicator-mode nil)
 
-      ;; keep treemacs window around when using a big screen
+      ;; set indentation to default icon size (22px)
+      (setq treemacs-indentation '(22 px))
+
+      ;; when using a big screen
+      ;; 1. keep treemacs window around
+      ;; 2. use slightly wider column
       (unless (> (display-pixel-width) 1600)
-        (setq treemacs-no-delete-other-windows nil))
+        (progn (setq treemacs-width 35)
+               (setq treemacs-no-delete-other-windows nil))
+        (setq treemacs-width 30))
 
       ;; no spacing betweewn root nodes (this is to fix *LSP Symbols List*)
       (setq treemacs-space-between-root-nodes nil)
