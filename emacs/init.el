@@ -2,6 +2,12 @@
 (set-language-environment "UTF-8") ; UTF-8 as default encoding
 (setq gc-con-threshold-value (* 1024 1024)) ; 1MB
 
+;; set font for chinese characters
+(set-fontset-font
+ t
+ '(#x4e00 . #x9fff)
+ (if (member "Songti SC" (font-family-list)) "Songti SC"))
+
 ;; font
 (setq proportional-font-family "roboto")
 (setq monospace-font-family "roboto mono")

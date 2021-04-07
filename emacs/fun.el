@@ -59,7 +59,7 @@ Always cycle the margin width in this order: 20 cells, 0 (no margin)."
   (visual-line-mode 1)
   (display-line-numbers-mode 0)
   (setq mode-line-format nil)
-  (setq buffer-face-mode-face '(:family "lingwai sc" :height 250))
+  (setq buffer-face-mode-face '(:family "Songti SC" :height 250))
   (buffer-face-mode))
 
 ;; hex colour
