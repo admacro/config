@@ -183,7 +183,7 @@
 ;; lsp-java
 (cp 'lsp-java
     (lambda()
-      (require 'lsp-java)
+      (require 'lsp-java-boot)
       ;; enable lsp-mode in java-mode
       (add-hook 'java-mode-hook 'lsp-deferred)))
 
