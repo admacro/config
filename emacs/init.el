@@ -22,6 +22,7 @@
 (load "~/prog/config/emacs/fun.el")
 (load "~/prog/config/emacs/pkg/pkg.el")
 (load "~/prog/config/emacs/theme/theme.el")
+(load "~/prog/config/emacs/abbrevs.el")
 
 ;; theme and font
 (load-adm-theme)
@@ -64,7 +65,6 @@
 
 ;; startup commands
 (recentf-open-files)
-(treemacs)
 
 ;; Close *scratch* buffer
 (kill-buffer "*scratch*")

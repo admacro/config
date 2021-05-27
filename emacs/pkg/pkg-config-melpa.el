@@ -122,20 +122,41 @@
       (dk xah-fly-comma-keymap (kbd "n") 'lsp-rename)
       (dk xah-fly-comma-keymap (kbd ",") 'xref-find-apropos)))
 
-;; lsp-treemacs
-(cp 'lsp-treemacs
+
+;; company
+;; in-buffer code completion framework
+(cp 'company
     (lambda()
-      ;; enable bidirectional synchronization of lsp workspace folders and treemacs projects
-      (lsp-treemacs-sync-mode 1)
-      (dk xah-fly-comma-keymap (kbd "s") 'lsp-treemacs-symbols)
-      (lk xah-fly-comma-keymap (kbd "r")
-          (lambda() "show-lsp-references-in-treemacs"
-            (interactive)
-            (lsp-treemacs-references t)))
-      (lk xah-fly-comma-keymap (kbd "m")
-          (lambda() "show-lsp-implementations-in-treemacs"
-            (interactive)
-            (lsp-treemacs-implementations t)))))
+      (setq company-require-match nil)
+      (setq company-tooltip-align-annotations t); Align annotation to the right side.
+      (setq company-minimum-prefix-length 1)))
+
+;; go-mode
+(cp 'go-mode
+    (lambda()
+      ;; fontify only function declarations, not function calls
+      (setq go-fontify-function-calls nil)
+      ;; format code and reorganize imports before saving buffer
+      ;; https://github.com/golang/tools/blob/master/gopls/doc/emacs.md
+      (add-hook 'go-mode-hook
+                (lambda()
+                  (add-hook 'before-save-hook #'lsp-format-buffer t t)
+                  (add-hook 'before-save-hook #'lsp-organize-imports t t)))
+      ;; go-run and go-test
+      (setq go-test-verbose t)
+      (setq go-test-args "-count=1")    ; bypass test caching
+      (dk xah-fly-dot-keymap (kbd "r") 'go-run)
+      (dk xah-fly-dot-keymap (kbd "t") 'go-test-current-test)
+      (dk xah-fly-dot-keymap (kbd "f") 'go-test-current-file)
+      ;; enable lsp-mode in go-mode
+      (cp 'lsp-mode (lambda() (add-hook 'go-mode-hook 'lsp-deferred)))
+      ;; register jump implmentation
+      (puthash 'go-mode 'lsp-find-definition jump-map)
+      ;; show eldoc
+      (cp 'go-eldoc (lambda() (add-hook 'go-mode-hook 'go-eldoc-setup)))
+      ;; use gogetdoc to show doc (go got )
+      (setq godoc-at-point-function 'godoc-gogetdoc)
+      (dk xah-fly-comma-keymap (kbd "d") 'godoc-at-point)))
 
 ;; treemacs
 ;; a tree layout file explorer
@@ -167,20 +188,20 @@
                   (variable-pitch-mode 1)))
       (dk xah-fly-dot-keymap (kbd ".") 'treemacs)))
 
-;; company
-;; in-buffer code completion framework
-(cp 'company
+;; lsp-treemacs
+(cp 'lsp-treemacs
     (lambda()
-      (setq company-require-match nil)
-      (setq company-tooltip-align-annotations t); Align annotation to the right side.
-      (setq company-minimum-prefix-length 1)))
-
-;; company-lsp
-(cp 'company-lsp
-    (lambda()
-      (autoload 'company-lsp "company-lsp")
-      (with-eval-after-load 'company
-        (push 'company-lsp company-backends))))
+      ;; enable bidirectional synchronization of lsp workspace folders and treemacs projects
+      (lsp-treemacs-sync-mode 1)
+      (dk xah-fly-comma-keymap (kbd "s") 'lsp-treemacs-symbols)
+      (lk xah-fly-comma-keymap (kbd "r")
+          (lambda() "show-lsp-references-in-treemacs"
+            (interactive)
+            (lsp-treemacs-references t)))
+      (lk xah-fly-comma-keymap (kbd "m")
+          (lambda() "show-lsp-implementations-in-treemacs"
+            (interactive)
+            (lsp-treemacs-implementations t)))))
 
 ;; lsp-java
 (cp 'lsp-java
@@ -188,33 +209,6 @@
       (require 'lsp-java-boot)
       ;; enable lsp-mode in java-mode
       (add-hook 'java-mode-hook 'lsp-deferred)))
-
-;; go-mode
-(cp 'go-mode
-    (lambda()
-      ;; fontify only function declarations, not function calls
-      (setq go-fontify-function-calls nil)
-      ;; format code and reorganize imports before saving buffer
-      ;; https://github.com/golang/tools/blob/master/gopls/doc/emacs.md
-      (add-hook 'go-mode-hook
-                (lambda()
-                  (add-hook 'before-save-hook #'lsp-format-buffer t t)
-                  (add-hook 'before-save-hook #'lsp-organize-imports t t)))
-      ;; go-run and go-test
-      (setq go-test-verbose t)
-      (setq go-test-args "-count=1")    ; bypass test caching
-      (dk xah-fly-dot-keymap (kbd "r") 'go-run)
-      (dk xah-fly-dot-keymap (kbd "t") 'go-test-current-test)
-      (dk xah-fly-dot-keymap (kbd "f") 'go-test-current-file)
-      ;; enable lsp-mode in go-mode
-      (cp 'lsp-mode (lambda() (add-hook 'go-mode-hook 'lsp-deferred)))
-      ;; register jump implmentation
-      (puthash 'go-mode 'lsp-find-definition jump-map)
-      ;; show eldoc
-      (cp 'go-eldoc (lambda() (add-hook 'go-mode-hook 'go-eldoc-setup)))
-      ;; use gogetdoc to show doc (go got )
-      (setq godoc-at-point-function 'godoc-gogetdoc)
-      (dk xah-fly-comma-keymap (kbd "d") 'godoc-at-point)))
 
 ;; hl-todo
 (cp 'hl-todo
@@ -289,8 +283,6 @@
                               symbol-end)
                              ))
                            highlight-numbers-modelist)))))
-
-;; markdown-mode
 
 ;; Ruby robe
 (cp 'robe

@@ -21,13 +21,7 @@
         flycheck
         lsp-mode
         company
-        lsp-treemacs
-        htmlize
-        restclient))
-
-;; Packages for Java programming
-(setq package-list-java
-      '(lsp-java))
+        htmlize))
 
 ;; Packages for Go programming
 (setq package-list-go
@@ -44,7 +38,7 @@
 
 ;; Packages for Web development
 (setq package-list-web
-      '(web-mode))
+      '(restclient))
 
 ;; Packages for Ruby and Rails development
 (setq package-list-ruby
@@ -55,7 +49,6 @@
 (setq pkgHash (make-hash-table :test 'equal))
 (puthash "Essential" package-list-essential pkgHash)
 (puthash "Programming" package-list-prog pkgHash)
-(puthash "Java" package-list-java pkgHash)
 (puthash "Go" package-list-go pkgHash)
 (puthash "Extra Language Support" package-list-extra-lang pkgHash)
 ;; (puthash "Web Development" package-list-web pkgHash)
