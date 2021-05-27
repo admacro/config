@@ -138,6 +138,7 @@
             (lsp-treemacs-implementations t)))))
 
 ;; treemacs
+;; a tree layout file explorer
 (cp 'treemacs
     (lambda()
       ;; (setq treemacs-no-png-images t) ; use text ui instead of icons
@@ -156,7 +157,7 @@
                (setq treemacs-no-delete-other-windows nil))
         (setq treemacs-width 30))
 
-      ;; no spacing betweewn root nodes (this is to fix *LSP Symbols List*)
+      ;; no spacing between root nodes (this is to fix *LSP Symbols List*)
       (setq treemacs-space-between-root-nodes nil)
       ;; hide line numbers and mode line in treemacs
       (add-hook `treemacs-mode-hook
@@ -167,6 +168,7 @@
       (dk xah-fly-dot-keymap (kbd ".") 'treemacs)))
 
 ;; company
+;; in-buffer code completion framework
 (cp 'company
     (lambda()
       (setq company-require-match nil)
