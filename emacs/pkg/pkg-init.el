@@ -22,7 +22,8 @@
         lsp-mode
         company
         lsp-treemacs
-        htmlize))
+        htmlize
+        restclient))
 
 ;; Packages for Java programming
 (setq package-list-java
@@ -37,63 +38,60 @@
         ob-go))
 
 ;; Packages for extra language support
-(setq package-list-lang
+(setq package-list-extra-lang
       '(yaml-mode
         json-mode))
 
 ;; Packages for Web development
 (setq package-list-web
-      '(web-mode
-        restclient))
+      '(web-mode))
 
 ;; Packages for Ruby and Rails development
 (setq package-list-ruby
       '(robe))
 
-;; On launch, melpa packages are not included in the package search list
-(setq package-contents-refreshed nil)
+;; Package category name to package list mapping
+;; Comment or uncomment an entry to uninstall or install a category
+(setq pkgHash (make-hash-table :test 'equal))
+(puthash "Essential" package-list-essential pkgHash)
+(puthash "Programming" package-list-prog pkgHash)
+(puthash "Java" package-list-java pkgHash)
+(puthash "Go" package-list-go pkgHash)
+(puthash "Extra Language Support" package-list-extra-lang pkgHash)
+;; (puthash "Web Development" package-list-web pkgHash)
+;; (puthash "Ruby & Rails" package-list-ruby pkgHash)
 
-(defun install-packages(package-list category)
-  "Install missing packages in the package-list"
+(defun missing-packages ()
+  "Return a list of packages that are not installed"
   (message "=====================================")
   (message "=== Check package installation ===")
-  (message "=== Category: [%s] ===" category)
-  (setq missing-package-list (list))
-  (dolist (package package-list)
-    (if (package-installed-p package)
-        (message "✔ [%s] is installed" package)
-      (progn
-        (if (not package-contents-refreshed)
-            ;; Refresh package list to include melpa packages
-            ;; Otherwise package-install cannot find melpa packages
-            ;; Performe only once
-            (progn
-              (package-refresh-contents)
-              (setq package-contents-refreshed t)
-              ))
-        (setq missing-package-list
-              (append missing-package-list (list package)))
-        (message "✘ [%s] is not installed" package)
-        (message "> Start installing %s" package)
-        (package-install package)
-        (message "> End installing %s" package)
-        )
-      ))
-  (if (eq nil missing-package-list)
-      (message "No missing packages")
-    (message "Packages installed: %S" missing-package-list))
-  )
+  (let ((missing-package-list (list)))
+    (maphash
+     (lambda (category package-list)
+       (message "=== Category: [%s] ===" category)
+       (dolist (package package-list)
+         (if (package-installed-p package)
+             (message "✔ [%s] is installed" package)
+           (progn
+             (message "✘ [%s] is not installed" package)
+             (setq missing-package-list
+                   (append missing-package-list (list package)))))))
+     pkgHash)
+    missing-package-list))
 
-(install-packages package-list-essential "Essential")
-(install-packages package-list-prog "Programming")
-(install-packages package-list-go "Java")
-(install-packages package-list-go "Go")
-(install-packages package-list-lang "Extra language support")
-;; (install-packages package-list-web "Web development")
-;; (install-packages package-list-rails "Ruby & Rails")
+(defun init-packages ()
+  "Check package installation and install missing ones according to the configured package list"
+  (let ((new-packages (missing-packages)))
+    (if new-packages
+        (progn
+          ;; Refresh package list to include melpa packages
+          ;; Otherwise package-install cannot find melpa packages
+          (message "Refreshing package content...")
+          (package-refresh-contents)
+          (dolist (package new-packages)
+            (message "> Start installing %s -----" package)
+            (package-install package)
+            (message "> End installing %s -----" package)))
+      (message "No missing packages"))))
 
-;; (setq package-list-test '(xah-fly-keys))
-;; (install-packages package-list-test "test")
-;; (require 'xah-fly-keys)
-;; (xah-fly-keys 1)
-
+(init-packages)
