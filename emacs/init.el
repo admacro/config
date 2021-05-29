@@ -65,6 +65,7 @@
 
 ;; startup commands
 (recentf-open-files)
+(dired "~/prog")
 
 ;; Close *scratch* buffer
 (kill-buffer "*scratch*")
