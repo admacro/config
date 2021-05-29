@@ -1,7 +1,6 @@
 # Command prompt
 PS1="\u@\W$ "
 
-
 # Shortcuts
 alias cd..="cd .."
 alias b="cd .."
@@ -13,33 +12,30 @@ alias lp="ls -p"
 alias h="history"
 alias treed="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
+# export binary path and set env variable for path home
+# example: export_bin_path ~ HOME
+export_bin_path() {
+    bin_path=$1
+    bin_home_name=$2
+    if [ -z "$bin_path" ]; then
+        echo "export bin path is not supplied, exit."
+        exit 1
+    else
+        if [ ! -z "$bin_home_name" ]; then
+            export "${bin_home_name}"="${bin_path}"
+        fi
+        export PATH="${bin_path}/bin:${PATH}"
+    fi
+}
 
-# Java
-export JAVA_HOME=$(/usr/libexec/java_home)
-export PATH=$JAVA_HOME/bin:$PATH
-
-# Gradle
-export GRADLE_HOME=~/Applications/gradle-6.8.3
-export PATH=$GRADLE_HOME/bin:$PATH
-
-# Maven
-export MVN_HOME=~/Applications/apache-maven-3.6.3
-export PATH=$MVN_HOME/bin:$PATH
-
-# Go
-export GOPATH=$(go env GOPATH)
-export PATH=$GOPATH/bin:$PATH
+export_bin_path $(go env GOPATH) GOPATH # Go
+export_bin_path $(/usr/libexec/java_home) JAVA_HOME # Java
+export_bin_path ~/Applications/apache-maven-3.6.3 MVN_HOME # Maven
+export_bin_path /usr/local/opt/python/libexec # Python (Homebrew)
 
 # Ruby
 # eval "$(rbenv init -)"
 # export PATH="$HOME/.rbenv/shims:$PATH"
-
-# Python
-# export PYTHON_HOME="/Users/james/Library/Python/2.7"
-# export PATH=$PYTHON_HOME/bin:$PATH
-
-# Setting PATH for homebrew Python
-export PATH="/usr/local/opt/python/libexec/bin:$PATH"
 
 # Misc
 if [ -r ~/.git_profile ]; then
