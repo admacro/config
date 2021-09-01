@@ -9,6 +9,7 @@
   (set-frame-font (fontspec monospace-font-family size))
   (let ((font (fontspec proportional-font-family size)))
     (set-face-font 'font-lock-comment-face font)
+    (set-face-font 'font-lock-doc-face font)
     (set-face-font 'variable-pitch font)))
 
 (defun toggle-font-size()

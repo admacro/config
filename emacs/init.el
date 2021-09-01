@@ -9,8 +9,8 @@
  (if (member "Songti SC" (font-family-list)) "Songti SC"))
 
 ;; font
-(setq proportional-font-family "pt sans")
-(setq monospace-font-family "pt mono")
+(setq proportional-font-family "roboto slab")
+(setq monospace-font-family "lexia mono")
 (setq default-font-size 15)
 
 ;; org projects
