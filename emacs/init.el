@@ -60,6 +60,9 @@
 ;; enable downcase command
 (put 'downcase-region 'disabled nil)
 
+;; automatically save bookmark when it's changed
+(setq bookmark-save-flag 1)
+
 ;; big minibuffer height, for ido to show choices vertically
 ;; (setq max-mini-window-height 0.25)
 
