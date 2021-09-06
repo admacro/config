@@ -4,7 +4,7 @@
       (require 'xah-fly-keys)
       (xah-fly-keys 1)
 
-      (lk xah-fly-t-key-map (kbd "h")
+      (lk xah-fly-t-keymap (kbd "h")
           (lambda() "close-current-buffer-and-delete-window"
             (interactive)
             (xah-close-current-buffer)
