@@ -1,377 +1,454 @@
 [
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1575887161048,
-		"name": "wikipedia.org",
-		"sections": [
-			{
-				"code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #F8F5F4 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #EBE3E1 !important;\n}\n\n.mw-body-content {\n    font-family: serif;\n    line-height: 1.3em;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre, code {\n    font-size: 0.8em;\n    background: #EBE3E1;\n    border-radius: 5px;\n    border-color: #b1a4a1;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto auto;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
-				"domains": [
-					"wikipedia.org"
-				]
-			},
-			{
-				"code": "#content {\n    width: 45em;\n}\n\n\n.mw-body-content {\n    font-size: 1.25em;\n}\n",
-				"domains": [
-					"en.wikipedia.org"
-				]
-			},
-			{
-				"code": "#content {\n    width: 45em;\n}\n\n.skin-vector .mw-body-content {\n    font-size: 1.25em;\n}\n",
-				"domains": [
-					"zh.wikipedia.org"
-				]
-			}
-		],
-		"updateDate": 1591066511647,
-		"id": 2,
-		"_id": "fc3adba2-a349-422f-ad68-9be0e8d62c02",
-		"_rev": 1593705678570
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1575945904743,
-		"name": "golang pkg cmd doc ref blog",
-		"sections": [
-			{
-				"code": "body {\n    font-size: 1.35em;\n    font-family: serif;\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: serif;\n    font-weight: bold;\n}\n\nh1 {font-size: 1.3em}\nh2 {font-size: 1.25em}\nh3 {font-size: 1.2em}\nh4 {font-size: 1.15em}\nh5 {font-size: 1.1em}\n\n\n.unruled a {\n    font-size: 1.25em !important;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.2em;\n}\n\n#page {\n    max-width: 40em;\n    margin: auto;\n}\n\npre,\ncode,\n#content .code,\n#content .playground {\n    background: #EBE3E1;\n    font-family: Monospace;\n    font-size: 0.95em;\n}\n\ncode {\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\np,\nli {\n    max-width: 100%\n}\n\n\n\ndiv.play pre, div.play textarea, div.play .lines {\n    font-family: monospace;\n    font-size: 1.1rem;\n}\n\ndiv.play .input, div.play .input textarea, div.play .output, div.play .output pre {\n    background: #EBE3E1;\n    color: #222222;\n}",
-				"regexps": [
-					"https.*golang.*(pkg|cmd|doc|ref)\\/.*",
-					"https.*blog\\.golang.*"
-				]
-			}
-		],
-		"updateDate": 1594211246349,
-		"id": 3,
-		"_id": "8d94715c-0a39-4126-8f3f-83deb37306e2",
-		"_rev": 1594211246349
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1575950569931,
-		"name": "xahlee.info",
-		"sections": [
-			{
-				"code": "body {\n    background: #F8F5F4;\n}",
-				"domains": [
-					"xahlee.info",
-					"wordyenglish.com",
-					"ergoemacs.org"
-				]
-			}
-		],
-		"updateDate": 1576066612155,
-		"id": 4,
-		"_id": "f69e4bb5-3984-4485-ab08-d9150d36d11a",
-		"_rev": 1581133466484
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1576058879259,
-		"name": "fonts.google.com",
-		"sections": [
-			{
-				"code": "body {\n    -webkit-font-smoothing: subpixel-antialiased;\n}",
-				"domains": [
-					"fonts.google.com"
-				]
-			}
-		],
-		"updateDate": 1576058879259,
-		"id": 6,
-		"_id": "e2108f5d-a6e2-4746-9ec9-d3e2805667f2",
-		"_rev": 1581133466484
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1576663029119,
-		"name": "computationstructures.org",
-		"sections": [
-			{
-				"code": "div.content, div.transcript, div.check-yourself {\n    width: 800px;\n}\n\niframe {\n    width: 800px;\n    height: 640px;\n}",
-				"urlPrefixes": [
-					"https://computationstructures.org/videos/"
-				]
-			}
-		],
-		"updateDate": 1576669611041,
-		"id": 7,
-		"_id": "1acfdeda-c91d-45d8-b714-45ada17d6fde",
-		"_rev": 1581133466484
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1578823139912,
-		"name": "golang codewalk",
-		"sections": [
-			{
-				"code": "#page {\n    max-width: 100%;\n    margin: auto;\n}\n\n.comment, .comment-text {\n    font-size: 16px !important;\n}",
-				"urlPrefixes": [
-					"https://golang.org/doc/codewalk/"
-				]
-			}
-		],
-		"updateDate": 1578823507759,
-		"id": 8,
-		"_id": "bbed3a1e-d963-4dbd-97a2-668095f1d815",
-		"_rev": 1581133466484
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1578887414309,
-		"name": "godoc.localhost",
-		"sections": [
-			{
-				"code": "body {\n    font-family: serif;\n    font-size: 1em;\n    background: #F8F5F4;\n}\n\ndiv#page {\n    max-width: 62%;\n    margin: auto;\n}\n\n#manual-nav {\n    font-family: monospace;\n    font-size: 16px;\n}\n\npre,\ncode {\n    background: #EBE3E1;\n    font-family: monospace;\n    font-size: 16px;\n}\n\np {\n    font-family: serif;\n    font-size: 1.25em;\n    max-width: 100%;\n}\n\ndl dd {\n    font-size: 16px;\n}",
-				"urlPrefixes": [
-					"http://localhost:9000/"
-				]
-			}
-		],
-		"updateDate": 1578888387388,
-		"id": 9,
-		"_id": "36da4180-e5fa-4a21-9a6c-d94a6ddbdea2",
-		"_rev": 1590479818904
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1578888438269,
-		"name": "godoc.org",
-		"sections": [
-			{
-				"code": "body {\n    font-family: serif;\n    font-size: 16px;\n    background: #F8F5F4;\n}\n\ndiv.container {\n    max-width: 62%;\n    margin: auto;\n}\n\n.list-unstyled {\n    font-size: 1.25em;\n}\n\np {\n    font-family: serif;\n    font-size: 1.25em;\n    max-width: 100%;\n}\n\npre,\ncode,\n.jumbotron {\n    background: #EBE3E1;\n    font-family: monospace;\n    font-size: 16px;\n}\n",
-				"urlPrefixes": [
-					"https://godoc.org/"
-				]
-			}
-		],
-		"updateDate": 1586914505127,
-		"id": 10,
-		"_id": "40d78d15-942a-4c9d-a3ea-dfe9c393cd58",
-		"_rev": 1590479818904
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1578901455814,
-		"name": "talks.golang.org",
-		"sections": [
-			{
-				"code": "body {\n    font-family: serif;\n    background: white;\n    color: #232323;\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\narticle {\n    background: #F8F5F4 !important;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: serif;\n    font-weight: bold;\n}\n\np, article > ul > li {\n    font-family: serif;\n    font-size: 1em;\n}\n\n.slides > article {\n    letter-spacing: 0px;\n    text-shadow: none;\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\n.code,\n.playground {\n    background: #EBE3E1 !important;\n    overflow: scroll;\n    border-radius: 6px;\n}\n\npre {\n    font-family: monospace;\n    line-height: 1.35em !important;\n}\n\ncode {\n    font-family: monospace;\n    background: #EBE3E1;\n    font-size: 0.75em;\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n",
-				"urlPrefixes": [
-					"https://talks.golang.org/"
-				]
-			}
-		],
-		"updateDate": 1578907727147,
-		"id": 11,
-		"_id": "38bf84da-e18c-494e-81db-39fcfcb33081",
-		"_rev": 1590479818904
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1579522516852,
-		"name": "github.com",
-		"sections": [
-			{
-				"code": "body,\n.application-main,\n.Box {\n    background-color: #F8F5F4 !important;\n}\n\ndiv.blob-wrapper {\n    background-color: #EBE3E1 !important;\n}\n\ndiv.blob-wrapper span {\n    font-family: Monospace;\n}\n\n.f6.v-align-middle.text-gray.px-3.py-2.border-bottom.bg-gray-light.d-flex.flex-justify-between {\n    display: none !important;\n}\n\n.tab-size {\n    tab-size: 4 !important;\n}",
-				"domains": [
-					"github.com"
-				]
-			}
-		],
-		"updateDate": 1593573646638,
-		"id": 12,
-		"_id": "d5205ad9-4977-4d4b-93a1-7658ade99380",
-		"_rev": 1593573646638
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1583815528457,
-		"name": "tour.golang.org",
-		"sections": [
-			{
-				"code": "body {\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\n#file-editor .CodeMirror-lines, #file-editor .CodeMirror-gutters {\n    background: #F0EFEE;\n    font-family: monospace;\n}\n\n#file-editor .CodeMirror {\n    background: #F0EFEE;\n}\n\n.output > pre {\n    font-family: monospace;\n}\n\ndiv[vertical-slide] {\n    left: 38%;\n    right: 62%;\n}\n\ndiv#left-side {\n    width: 38%\n}\n\ndiv#right-side {\n    left: 38%\n}\n",
-				"domains": [
-					"tour.golang.org"
-				]
-			}
-		],
-		"updateDate": 1587109267284,
-		"_id": "f5a2413d-3521-4ebe-b4f2-1a97fd3cf07a",
-		"_rev": 1587109267284,
-		"id": 13
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1586747880968,
-		"name": "youtube.com",
-		"sections": [
-			{
-				"code": "/* hide youtube comments */\nytd-comments {\n    display: none;\n}\n\ndiv#related {\n    display: none;\n}\n\nytd-expander {\n    --ytd-expander-collapsed-height: 800px !important;\n}",
-				"regexps": [
-					"https.*www\\.youtube\\.com.*&list=.*"
-				]
-			},
-			{
-				"code": "/* hide youtube comments */\nytd-comments {\n    display: none;\n}\n\ndiv#secondary {\n    display: none;\n}\n\nytd-expander {\n    --ytd-expander-collapsed-height: 800px !important;\n}\n\nytd-watch-flexy {\n    --ytd-watch-flexy-sidebar-width: 0px;\n    --ytd-watch-flexy-sidebar-min-width: 0px;\n    --ytd-watch-flexy-masthead-height: 0px;\n    min-width: 0;\n}",
-				"regexps": [
-					"https.*www\\.youtube\\.com/watch\\?v=[^&]*$"
-				]
-			}
-		],
-		"updateDate": 1594261206731,
-		"_id": "5824946a-fc41-4583-b214-2622eb1436d7",
-		"_rev": 1594261237270,
-		"id": 14
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1586765589963,
-		"name": "go101.org",
-		"sections": [
-			{
-				"code": "body {\n    font-family: serif;\n    font-size: 2em;\n    line-height: 1.3em;\n    color: #232323;\n    background-color: #F8F5F4;\n}\n\ncode {\n    padding: 1px 3px;\n    font-size: 85%;\n    color: #232323;\n    background-color: #EBE3E1;\n    border-radius: 3px;\n    margin: 0px 2px 0px 2px;\n}\n\ncode,\nkbd,\npre,\nsamp {\n    font-family: monospace;\n}\n\ncode[class*=\"language-\"],\npre[class*=\"language-\"] {\n    color: #232323;\n    background: #EBE3E1;\n    font-family: monospace;\n    text-shadow: none;\n}\n\n.token.atrule,\n.token.attr-value,\n.token.keyword {\n    color: #005980;\n}\n\n.token.function {\n    color: #99113c;\n}\n\n.token.selector,\n.token.attr-name,\n.token.string,\n.token.char,\n.token.builtin,\n.token.inserted {\n    color: #017510;\n}\n\n.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {\n    color: #a67f59;\n    background: none;",
-				"domains": [
-					"go101.org"
-				]
-			}
-		],
-		"updateDate": 1586766720585,
-		"_id": "ac0ca43a-eaf9-459a-941d-d917d3f12e88",
-		"_rev": 1590479818904,
-		"id": 15
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1587273074814,
-		"name": "pkg.go.dev",
-		"sections": [
-			{
-				"code": "body {\n    background-color: #F8F5F4;\n    font-family: serif;\n    font-size: 1.35rem;\n}\n\nh1, h2, h3, h4, h5, h6 {\n    font-family: serif;\n}\n\np {\n    font-size: 1.35rem;\n}\n\n.Container {\n    max-width: 40em;\n}\n\n.Documentation code,\n.Documentation pre {\n    background-color: #EBE3E1;\n    font-family: monospace;\n    font-size: 1em;\n    border-style: none;\n}",
-				"domains": [
-					"pkg.go.dev"
-				]
-			}
-		],
-		"updateDate": 1591063637313,
-		"_id": "410a0e49-fc9f-4993-96ff-1b640cfea445",
-		"_rev": 1591063637313,
-		"id": 16
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1587817261335,
-		"name": "play.golang.org",
-		"sections": [
-			{
-				"code": "#wrap, #about {\n    margin: 0 38.2% 0 0;\n    background: #F0EFEE;\n    bottom: 0;\n}\n\n#code, #output, pre, .lines {\n    font-family: monospace;\n    font-size: 12pt;\n}\n\n#output {\n    top: 50px;\n    left: 61.8%;\n}",
-				"domains": [
-					"play.golang.org"
-				]
-			}
-		],
-		"updateDate": 1587817988805,
-		"_id": "bf3e8011-3756-4165-8b47-bd571d5ab36a",
-		"_rev": 1587817988805,
-		"id": 17
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1590499221157,
-		"name": "research.swtch.com",
-		"sections": [
-			{
-				"code": "body {\n    font-family: serif;\n    background: #F8F5F4 !important;\n}\n\n.main {\n    width: 40em;\n    font-size: 1.25em;\n}",
-				"domains": [
-					"research.swtch.com"
-				]
-			}
-		],
-		"updateDate": 1590500166986,
-		"_id": "171a5c9a-479b-4c61-a6d0-9a8a05a81a06",
-		"_rev": 1590500166986,
-		"id": 18
-	},
-	{
-		"enabled": true,
-		"updateUrl": null,
-		"md5Url": null,
-		"url": null,
-		"originalMd5": null,
-		"installDate": 1594541531004,
-		"name": "antiantialiased",
-		"sections": [
-			{
-				"code": "* {\n    -webkit-font-smoothing: auto !important;\n}"
-			}
-		],
-		"updateDate": 1594541692765,
-		"_id": "a0943cbe-d4ad-4753-b5c7-56b8199e0e7d",
-		"_rev": 1594541692765,
-		"id": 19
-	}
+  {
+    "settings": {
+      "openEditInWindow": true,
+      "openEditInWindow.popup": false,
+      "windowPosition": {
+        "height": 875,
+        "left": 66,
+        "top": 25,
+        "width": 1316
+      },
+      "show-badge": true,
+      "disableAll": false,
+      "exposeIframes": false,
+      "newStyleAsUsercss": false,
+      "styleViaXhr": false,
+      "patchCsp": false,
+      "config.autosave": true,
+      "popup.breadcrumbs": true,
+      "popup.breadcrumbs.usePath": false,
+      "popup.enabledFirst": true,
+      "popup.stylesFirst": true,
+      "popup.autoResort": false,
+      "popup.borders": false,
+      "popup.findStylesInline": true,
+      "popup.findSort": "u",
+      "manage.onlyEnabled": false,
+      "manage.onlyLocal": false,
+      "manage.onlyUsercss": false,
+      "manage.onlyEnabled.invert": false,
+      "manage.onlyLocal.invert": false,
+      "manage.onlyUsercss.invert": false,
+      "manage.actions.expanded": true,
+      "manage.backup.expanded": true,
+      "manage.filters.expanded": true,
+      "manage.newUI": true,
+      "manage.newUI.favicons": false,
+      "manage.newUI.faviconsGray": true,
+      "manage.newUI.targets": 3,
+      "manage.newUI.sort": "title,asc",
+      "editor.options": {},
+      "editor.toc.expanded": true,
+      "editor.options.expanded": true,
+      "editor.lint.expanded": true,
+      "editor.publish.expanded": true,
+      "editor.lineWrapping": true,
+      "editor.smartIndent": true,
+      "editor.indentWithTabs": false,
+      "editor.tabSize": 4,
+      "editor.keyMap": "default",
+      "editor.theme": "default",
+      "editor.beautify": {
+        "selector_separator_newline": true,
+        "newline_before_open_brace": false,
+        "newline_after_open_brace": true,
+        "newline_between_properties": true,
+        "newline_before_close_brace": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "end_with_newline": false,
+        "indent_conditional": true
+      },
+      "editor.beautify.hotkey": "",
+      "editor.lintDelay": 300,
+      "editor.linter": "csslint",
+      "editor.lintReportDelay": 500,
+      "editor.matchHighlight": "token",
+      "editor.autoCloseBrackets": true,
+      "editor.autocompleteOnTyping": false,
+      "editor.contextDelete": true,
+      "editor.selectByTokens": true,
+      "editor.appliesToLineWidget": true,
+      "editor.livePreview": true,
+      "editor.colorpicker": true,
+      "editor.colorpicker.hexUppercase": false,
+      "editor.colorpicker.hotkey": "",
+      "editor.colorpicker.color": "#F8F5F4",
+      "editor.colorpicker.maxHeight": 300,
+      "hotkey._execute_browser_action": "",
+      "hotkey.openManage": "",
+      "hotkey.styleDisableAll": "",
+      "sync.enabled": "none",
+      "iconset": 1,
+      "badgeDisabled": "#8B0000",
+      "badgeNormal": "#006666",
+      "popupWidth": 246,
+      "updateInterval": 24
+    }
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1575887161048,
+    "name": "wikipedia.org",
+    "sections": [
+      {
+        "code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #F8F5F4 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #EBE3E1 !important;\n}\n\n.mw-body-content {\n    font-family: serif;\n    line-height: 1.3em;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre, code {\n    font-size: 0.8em;\n    background: #EBE3E1;\n    border-radius: 5px;\n    border-color: #b1a4a1;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto auto;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
+        "domains": [
+          "wikipedia.org"
+        ]
+      },
+      {
+        "code": "#content {\n    width: 45em;\n}\n\n\n.mw-body-content {\n    font-size: 1.25em;\n}\n",
+        "domains": [
+          "en.wikipedia.org"
+        ]
+      },
+      {
+        "code": "#content {\n    width: 45em;\n}\n\n.skin-vector .mw-body-content {\n    font-size: 1.25em;\n}\n",
+        "domains": [
+          "zh.wikipedia.org"
+        ]
+      }
+    ],
+    "updateDate": 1591066511647,
+    "id": 2,
+    "_id": "fc3adba2-a349-422f-ad68-9be0e8d62c02",
+    "_rev": 1629530273350,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1575945904743,
+    "name": "golang pkg cmd doc ref blog",
+    "sections": [
+      {
+        "code": "body {\n    font-size: 1.35em;\n    font-family: serif;\n    background: #F8F5F4;\n    color: #232323;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: serif;\n    font-weight: bold;\n}\n\nh1 {font-size: 1.3em}\nh2 {font-size: 1.25em}\nh3 {font-size: 1.2em}\nh4 {font-size: 1.15em}\nh5 {font-size: 1.1em}\n\n\n.unruled a {\n    font-size: 1.25em !important;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.15em;\n}\n\np {\n    line-height: 1.2em;\n}\n\n#page {\n    max-width: 40em;\n    margin: auto;\n}\n\npre,\ncode,\n#content .code,\n#content .playground {\n    background: #EBE3E1;\n    font-family: Monospace;\n    font-size: 0.95em;\n}\n\ncode {\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\np,\nli {\n    max-width: 100%\n}\n\n\n\ndiv.play pre, div.play textarea, div.play .lines {\n    font-family: monospace;\n    font-size: 1.1rem;\n}\n\ndiv.play .input, div.play .input textarea, div.play .output, div.play .output pre {\n    background: #EBE3E1;\n    color: #222222;\n}",
+        "regexps": [
+          "https.*golang.*(pkg|cmd|doc|ref)\\/.*",
+          "https.*blog\\.golang.*"
+        ]
+      }
+    ],
+    "updateDate": 1594211246349,
+    "id": 3,
+    "_id": "8d94715c-0a39-4126-8f3f-83deb37306e2",
+    "_rev": 1629530273350,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1575950569931,
+    "name": "xahlee.info",
+    "sections": [
+      {
+        "code": "body {\n    background: #F8F5F4;\n}",
+        "domains": [
+          "xahlee.info",
+          "wordyenglish.com",
+          "ergoemacs.org"
+        ]
+      }
+    ],
+    "updateDate": 1576066612155,
+    "id": 4,
+    "_id": "f69e4bb5-3984-4485-ab08-d9150d36d11a",
+    "_rev": 1629530273350,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1576058879259,
+    "name": "fonts.google.com",
+    "sections": [
+      {
+        "code": "body {\n    -webkit-font-smoothing: subpixel-antialiased;\n}",
+        "domains": [
+          "fonts.google.com"
+        ]
+      }
+    ],
+    "updateDate": 1576058879259,
+    "id": 6,
+    "_id": "e2108f5d-a6e2-4746-9ec9-d3e2805667f2",
+    "_rev": 1629530273350,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1576663029119,
+    "name": "computationstructures.org",
+    "sections": [
+      {
+        "code": "div.content, div.transcript, div.check-yourself {\n    width: 800px;\n}\n\niframe {\n    width: 800px;\n    height: 640px;\n}",
+        "urlPrefixes": [
+          "https://computationstructures.org/videos/"
+        ]
+      }
+    ],
+    "updateDate": 1576669611041,
+    "id": 7,
+    "_id": "1acfdeda-c91d-45d8-b714-45ada17d6fde",
+    "_rev": 1629530273350,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1578823139912,
+    "name": "golang codewalk",
+    "sections": [
+      {
+        "code": "#page {\n    max-width: 100%;\n    margin: auto;\n}\n\n.comment, .comment-text {\n    font-size: 16px !important;\n}",
+        "urlPrefixes": [
+          "https://golang.org/doc/codewalk/"
+        ]
+      }
+    ],
+    "updateDate": 1578823507759,
+    "id": 8,
+    "_id": "bbed3a1e-d963-4dbd-97a2-668095f1d815",
+    "_rev": 1629530273350,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1578887414309,
+    "name": "godoc.localhost",
+    "sections": [
+      {
+        "code": "body {\n    font-family: serif;\n    font-size: 1em;\n    background: #F8F5F4;\n}\n\ndiv#page {\n    max-width: 62%;\n    margin: auto;\n}\n\n#manual-nav {\n    font-family: monospace;\n    font-size: 16px;\n}\n\npre,\ncode {\n    background: #EBE3E1;\n    font-family: monospace;\n    font-size: 16px;\n}\n\np {\n    font-family: serif;\n    font-size: 1.25em;\n    max-width: 100%;\n}\n\ndl dd {\n    font-size: 16px;\n}",
+        "urlPrefixes": [
+          "http://localhost:9000/"
+        ]
+      }
+    ],
+    "updateDate": 1578888387388,
+    "id": 9,
+    "_id": "36da4180-e5fa-4a21-9a6c-d94a6ddbdea2",
+    "_rev": 1629530273350,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1578888438269,
+    "name": "godoc.org",
+    "sections": [
+      {
+        "code": "body {\n    font-family: serif;\n    font-size: 16px;\n    background: #F8F5F4;\n}\n\ndiv.container {\n    max-width: 62%;\n    margin: auto;\n}\n\n.list-unstyled {\n    font-size: 1.25em;\n}\n\np {\n    font-family: serif;\n    font-size: 1.25em;\n    max-width: 100%;\n}\n\npre,\ncode,\n.jumbotron {\n    background: #EBE3E1;\n    font-family: monospace;\n    font-size: 16px;\n}\n",
+        "urlPrefixes": [
+          "https://godoc.org/"
+        ]
+      }
+    ],
+    "updateDate": 1586914505127,
+    "id": 10,
+    "_id": "40d78d15-942a-4c9d-a3ea-dfe9c393cd58",
+    "_rev": 1629530273350,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1578901455814,
+    "name": "talks.golang.org",
+    "sections": [
+      {
+        "code": "body {\n    font-family: serif;\n    background: white;\n    color: #232323;\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\narticle {\n    background: #F8F5F4 !important;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: serif;\n    font-weight: bold;\n}\n\np, article > ul > li {\n    font-family: serif;\n    font-size: 1em;\n}\n\n.slides > article {\n    letter-spacing: 0px;\n    text-shadow: none;\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\n.code,\n.playground {\n    background: #EBE3E1 !important;\n    overflow: scroll;\n    border-radius: 6px;\n}\n\npre {\n    font-family: monospace;\n    line-height: 1.35em !important;\n}\n\ncode {\n    font-family: monospace;\n    background: #EBE3E1;\n    font-size: 0.75em;\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n",
+        "urlPrefixes": [
+          "https://talks.golang.org/"
+        ]
+      }
+    ],
+    "updateDate": 1578907727147,
+    "id": 11,
+    "_id": "38bf84da-e18c-494e-81db-39fcfcb33081",
+    "_rev": 1629530273350,
+    "_usw": {}
+  },
+  {
+    "enabled": false,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1579522516852,
+    "name": "github.com",
+    "sections": [
+      {
+        "code": "body,\n.application-main,\n.Box {\n    background-color: #F8F5F4 !important;\n}\n\ndiv.blob-wrapper {\n    background-color: #EBE3E1 !important;\n}\n\ndiv.blob-wrapper span {\n    font-family: Monospace;\n}\n\n.f6.v-align-middle.text-gray.px-3.py-2.border-bottom.bg-gray-light.d-flex.flex-justify-between {\n    display: none !important;\n}\n\n.tab-size {\n    tab-size: 4 !important;\n}",
+        "domains": [
+          "github.com"
+        ]
+      }
+    ],
+    "updateDate": 1593573646638,
+    "id": 12,
+    "_id": "d5205ad9-4977-4d4b-93a1-7658ade99380",
+    "_rev": 1629558016855,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1583815528457,
+    "name": "tour.golang.org",
+    "sections": [
+      {
+        "code": "body {\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\n#file-editor .CodeMirror-lines, #file-editor .CodeMirror-gutters {\n    background: #F0EFEE;\n    font-family: monospace;\n}\n\n#file-editor .CodeMirror {\n    background: #F0EFEE;\n}\n\n.output > pre {\n    font-family: monospace;\n}\n\ndiv[vertical-slide] {\n    left: 38%;\n    right: 62%;\n}\n\ndiv#left-side {\n    width: 38%\n}\n\ndiv#right-side {\n    left: 38%\n}\n",
+        "domains": [
+          "tour.golang.org"
+        ]
+      }
+    ],
+    "updateDate": 1587109267284,
+    "_id": "f5a2413d-3521-4ebe-b4f2-1a97fd3cf07a",
+    "_rev": 1629530273350,
+    "id": 13,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1586747880968,
+    "name": "youtube.com",
+    "sections": [
+      {
+        "code": "/* hide youtube comments */\nytd-comments {\n    display: none;\n}\n\ndiv#related {\n    display: none;\n}\n\nytd-expander {\n    --ytd-expander-collapsed-height: 800px !important;\n}",
+        "regexps": [
+          "https.*www\\.youtube\\.com.*&list=.*"
+        ]
+      },
+      {
+        "code": "/* hide youtube comments */\nytd-comments {\n    display: none;\n}\n\ndiv#secondary {\n    display: none;\n}\n\nytd-expander {\n    --ytd-expander-collapsed-height: 800px !important;\n}\n\nytd-watch-flexy {\n    --ytd-watch-flexy-sidebar-width: 0px;\n    --ytd-watch-flexy-sidebar-min-width: 0px;\n    --ytd-watch-flexy-masthead-height: 0px;\n    min-width: 0;\n}",
+        "regexps": [
+          "https.*www\\.youtube\\.com/watch\\?v=[^&]*$"
+        ]
+      }
+    ],
+    "updateDate": 1594261206731,
+    "_id": "5824946a-fc41-4583-b214-2622eb1436d7",
+    "_rev": 1629692457125,
+    "id": 14,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1586765589963,
+    "name": "go101.org",
+    "sections": [
+      {
+        "code": "body {\n    font-family: serif;\n    font-size: 2em;\n    line-height: 1.3em;\n    color: #232323;\n    background-color: #F8F5F4;\n}\n\ncode {\n    padding: 1px 3px;\n    font-size: 85%;\n    color: #232323;\n    background-color: #EBE3E1;\n    border-radius: 3px;\n    margin: 0px 2px 0px 2px;\n}\n\ncode,\nkbd,\npre,\nsamp {\n    font-family: monospace;\n}\n\ncode[class*=\"language-\"],\npre[class*=\"language-\"] {\n    color: #232323;\n    background: #EBE3E1;\n    font-family: monospace;\n    text-shadow: none;\n}\n\n.token.atrule,\n.token.attr-value,\n.token.keyword {\n    color: #005980;\n}\n\n.token.function {\n    color: #99113c;\n}\n\n.token.selector,\n.token.attr-name,\n.token.string,\n.token.char,\n.token.builtin,\n.token.inserted {\n    color: #017510;\n}\n\n.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {\n    color: #a67f59;\n    background: none;",
+        "domains": [
+          "go101.org"
+        ]
+      }
+    ],
+    "updateDate": 1586766720585,
+    "_id": "ac0ca43a-eaf9-459a-941d-d917d3f12e88",
+    "_rev": 1629530273350,
+    "id": 15,
+    "_usw": {}
+  },
+  {
+    "enabled": false,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1587273074814,
+    "name": "pkg.go.dev",
+    "sections": [
+      {
+        "code": "body {\n    background-color: #F8F5F4;\n    font-family: serif;\n    font-size: 1.35rem;\n}\n\nh1, h2, h3, h4, h5, h6 {\n    font-family: serif;\n}\n\np {\n    font-size: 1.35rem;\n}\n\n.Container {\n    max-width: 40em;\n}\n\n.Documentation code,\n.Documentation pre {\n    background-color: #EBE3E1;\n    font-family: monospace;\n    font-size: 1em;\n    border-style: none;\n}",
+        "domains": [
+          "pkg.go.dev"
+        ]
+      }
+    ],
+    "updateDate": 1591063637313,
+    "_id": "410a0e49-fc9f-4993-96ff-1b640cfea445",
+    "_rev": 1630149824552,
+    "id": 16,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1587817261335,
+    "name": "play.golang.org",
+    "sections": [
+      {
+        "code": "#wrap, #about {\n    margin: 0 38.2% 0 0;\n    background: #F0EFEE;\n    bottom: 0;\n}\n\n#code, #output, pre, .lines {\n    font-family: monospace;\n    font-size: 12pt;\n}\n\n#output {\n    top: 50px;\n    left: 61.8%;\n}",
+        "domains": [
+          "play.golang.org"
+        ]
+      }
+    ],
+    "updateDate": 1587817988805,
+    "_id": "bf3e8011-3756-4165-8b47-bd571d5ab36a",
+    "_rev": 1629530273350,
+    "id": 17,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1590499221157,
+    "name": "research.swtch.com",
+    "sections": [
+      {
+        "code": "body {\n    font-family: serif;\n    background: #F8F5F4 !important;\n}\n\n.main {\n    width: 40em;\n    font-size: 1.25em;\n}",
+        "domains": [
+          "research.swtch.com"
+        ]
+      },
+      {
+        "code": "body {\n    width: 40em;\n    font-size: 1.25em;\n    margin: auto;\n}",
+        "urlPrefixes": [
+          "https://swtch.com/~rsc/"
+        ]
+      }
+    ],
+    "updateDate": 1630858395737,
+    "_id": "171a5c9a-479b-4c61-a6d0-9a8a05a81a06",
+    "_rev": 1630858395737,
+    "id": 18,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1594541531004,
+    "name": "antiantialiased",
+    "sections": [
+      {
+        "code": "* {\n    -webkit-font-smoothing: auto !important;\n}"
+      }
+    ],
+    "updateDate": 1594541692765,
+    "_id": "a0943cbe-d4ad-4753-b5c7-56b8199e0e7d",
+    "_rev": 1630342220657,
+    "id": 19,
+    "_usw": {}
+  }
 ]
