@@ -4,12 +4,11 @@
       (require 'xah-fly-keys)
       (xah-fly-keys 1)
 
-      (lk xah-fly-leader-key-map (kbd "g")
+      (lk xah-fly-t-key-map (kbd "h")
           (lambda() "close-current-buffer-and-delete-window"
             (interactive)
             (xah-close-current-buffer)
             (delete-window)))
-      (dk xah-fly-t-keymap (kbd "h") 'xah-close-current-buffer)
 
       ;; Dumang keyboard customization (dedicated symbol keys replacing number row keys)
       ;; 1 2 3 4 5 6 7 8 9 0
