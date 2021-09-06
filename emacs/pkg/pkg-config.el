@@ -19,7 +19,6 @@ calling the function passed in"
 
 ;; function aliases
 (defalias 'cp 'config-package)
-(defalias 'cpd 'config-package-with-dependencies)
 (defalias 'dk 'define-key)
 (defalias 'lk 'lambda-key)
 (defalias 'gsk 'global-set-key)
