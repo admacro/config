@@ -148,7 +148,7 @@
     "name": "xahlee.info",
     "sections": [
       {
-        "code": "body {\n    background: #F8F5F4;\n}",
+        "code": "body {\n    background: #F6F2E4;\n}",
         "domains": [
           "xahlee.info",
           "wordyenglish.com",
@@ -156,10 +156,10 @@
         ]
       }
     ],
-    "updateDate": 1576066612155,
+    "updateDate": 1631193353567,
     "id": 4,
     "_id": "f69e4bb5-3984-4485-ab08-d9150d36d11a",
-    "_rev": 1629530273350,
+    "_rev": 1631193353567,
     "_usw": {}
   },
   {
@@ -344,7 +344,7 @@
     ],
     "updateDate": 1594261206731,
     "_id": "5824946a-fc41-4583-b214-2622eb1436d7",
-    "_rev": 1629692457125,
+    "_rev": 1631193302257,
     "id": 14,
     "_usw": {}
   },
