@@ -1,43 +1,35 @@
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Face-Customization.html
-;; https://userway.org/contrast/
+;; https://colorshark.io
 (require 'cl-lib)
 (deftheme adm)
 
 (let ((colors '(
-                (adm-bg        "#E1E1E1")
-                (adm-current   "#D3D3D3")
-                (adm-fg        "#000000") ; 16.05
+                (adm-bg        "#F6F2E4")
+                (adm-fg        "#020227") ; 18.00
 
-                ;; 9
-                (adm-orange    "#622500") ; 9.00 H30
-                (adm-red       "#770000") ; 9.00 H360
-                (adm-redpurple "#6B005A") ; 9.06 H310
-                (adm-purple    "#3A00AC") ; 9.04 H260
-                (adm-blue      "#002F8C") ; 9.00 H220
-                (adm-green     "#004200") ; 9.03 H120
-                (adm-yellow    "#3A3A00") ; 9.00 H60
-
-                ;; 8.0
-                ;; (adm-orange    "#6F2A00") ; 8.03 H30
-                ;; (adm-red       "#850000") ; 8.04 H360
-                ;; (adm-redpurple "#790065") ; 8.01 H310
-                ;; (adm-purple    "#4100C2") ; 8.01 H260
-                ;; (adm-blue      "#00359E") ; 8.02 H220
-                ;; (adm-green     "#004B00") ; 8.00 H120
-                ;; (adm-yellow    "#424200") ; 7.99 H60
+				;; colors
+                (adm-red    "#790C0C") ; H360
+                (adm-maroon "#6D0D5D") ; H310 栗色
+                (adm-purple "#461E94") ; H260
+                (adm-blue   "#183877") ; H220 like royalblue in emacs
+                (adm-green  "#0C450C") ; H120
+                (adm-yellow "#3D3D0F") ; H60 like olivegreen in emacs
+				(adm-orange "#5B3006") ; H30 like darkorange4 in emacs
 
                 ;; bg
-                (bg2 "#C4C4C4")         ; 12.04
-                (bg3 "#B3B3B3")         ; 10.02
-                (bg4 "#A0A0A0")         ; 8.03
+                (bg1 "#F2ECD9")			; 17.08
+                (bg2 "#EBE5D0")         ; 16.00
+                (bg3 "#E1D7B7")         ; 14.03
+                (bg4 "#D5C79F")         ; 12.01
 
                 ;; fg
-                (fg2 "#232323")         ; 12.02
-                (fg3 "#303030")         ; 10.09
-                (fg4 "#3F3F3F")         ; 8.05
+                (fg1 "#06063D")         ; 17.01
+                (fg2 "#0C0C4B")         ; 16.01
+                (fg3 "#13136C")         ; 14.01
+                (fg4 "#1F1F7F")         ; 12.00
 
                 ;; other
-                (other-blue "#0000C2")  ; 9.03
+                (other-blue "#2E2E8A")  ; H240 like slateblue in emacs
                 ))
 
       (faces '(;; default
@@ -47,7 +39,7 @@
                (ffap :foreground ,fg4)
                (fringe :background ,adm-bg :foreground ,fg4)
                (highlight :foreground nil :background ,bg3)
-               (hl-line :background ,adm-current :extend t)
+               (hl-line :background ,bg1 :extend t)
                (info-quoted-name :foreground ,adm-orange)
                (info-string :foreground ,adm-yellow)
                (lazy-highlight :foreground ,fg2 :background ,bg3)
@@ -116,10 +108,10 @@
                (company-preview :foreground ,other-blue :background ,adm-bg)
                (company-preview-common :foreground ,fg3 :background ,bg2)
                (company-preview-search :foreground ,adm-redpurple :background ,adm-bg)
-               (company-scrollbar-bg :background ,adm-current)
+               (company-scrollbar-bg :background ,bg1)
                (company-scrollbar-fg :background ,bg3)
                (company-template-field :inherit region)
-               (company-tooltip :foreground ,adm-fg :background ,adm-current)
+               (company-tooltip :foreground ,adm-fg :background ,bg1)
                (company-tooltip-annotation :foreground ,fg4 :slant italic)
                (company-tooltip-common :foreground ,adm-fg :background ,bg4)
                (company-tooltip-common-selection :foreground ,adm-red :background ,bg4)
@@ -226,7 +218,7 @@
                (diredp-compressed-file-name :foreground ,fg3)
                (diredp-compressed-file-suffix :foreground ,fg4)
                (diredp-date-time :foreground ,adm-fg)
-               (diredp-deletion-file-name :foreground ,adm-blue :background ,adm-current)
+               (diredp-deletion-file-name :foreground ,adm-blue :background ,bg1)
                (diredp-deletion :foreground ,adm-blue :weight bold)
                (diredp-dir-heading :foreground ,fg2 :background ,bg4)
                (diredp-dir-name :inherit dired-directory)
@@ -234,8 +226,8 @@
                (diredp-executable-tag :foreground ,adm-orange)
                (diredp-file-name :foreground ,adm-fg)
                (diredp-file-suffix :foreground ,fg4)
-               (diredp-flag-mark-line :foreground ,fg2 :slant italic :background ,adm-current)
-               (diredp-flag-mark :foreground ,fg2 :weight bold :background ,adm-current)
+               (diredp-flag-mark-line :foreground ,fg2 :slant italic :background ,bg1)
+               (diredp-flag-mark :foreground ,fg2 :weight bold :background ,bg1)
                (diredp-ignored-file-name :foreground ,adm-fg)
                (diredp-mode-line-flagged :foreground ,adm-orange)
                (diredp-mode-line-marked :foreground ,adm-orange)

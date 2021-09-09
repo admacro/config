@@ -5,7 +5,7 @@
 ;; font variables
 (setq proportional-font-family "sf pro text")
 (setq monospace-font-family "sf mono")
-(setq default-font-size 15)
+(setq default-font-size 14)
 
 ;; set font for chinese characters
 (set-fontset-font
