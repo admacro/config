@@ -1,13 +1,17 @@
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Face-Customization.html
+;; https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html
 ;; https://colorshark.io
+;; https://accessible-colors.com/
+;; https://userway.org/contrast/
+;; https://webaim.org/resources/contrastchecker/
 (require 'cl-lib)
 (deftheme adm)
 
 (let ((colors '(
 				(adm-bg		   "#F6F2E4")
-				(adm-fg		   "#020227") ; 18.00
+				(adm-fg		   "#020227") ; 18.00 (against adm-bg)
 
-				;; colors
+				;; colors (contrast ratio against adm-bg: 10)
 				(adm-red	"#790C0C") ; H360
 				(adm-maroon "#6D0D5D") ; H310 栗色
 				(adm-purple "#461E94") ; H260
@@ -16,13 +20,13 @@
 				(adm-yellow "#3D3D0F") ; H60 like olivegreen in emacs
 				(adm-orange "#5B3006") ; H30 like darkorange4 in emacs
 
-				;; bg
+				;; bg (against adm-fg)
 				(bg1 "#F2ECD9")			; 17.08
 				(bg2 "#EBE5D0")			; 16.00
 				(bg3 "#E1D7B7")			; 14.03
 				(bg4 "#D5C79F")			; 12.01
 
-				;; fg
+				;; fg (against adm-bg)
 				(fg1 "#06063D")			; 17.01
 				(fg2 "#0C0C4B")			; 16.01
 				(fg3 "#13136C")			; 14.01
