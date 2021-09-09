@@ -31,15 +31,15 @@
 ;; Global config
 ;; appearance
 (setq default-frame-alist
-      '(
-        ;; (fullscreen . maximized)      ;start emacs with window maximized
-        (ns-transparent-titlebar . t) ;make titlebar same color as Emacs background
-        ))
+	  '(
+		;; (fullscreen . maximized)		 ;start emacs with window maximized
+		(ns-transparent-titlebar . t) ;make titlebar same color as Emacs background
+		))
 (setq inhibit-startup-message t) ; no startup message
-(blink-cursor-mode 0)       ; disable cursor
+(blink-cursor-mode 0)		; disable cursor
 (global-display-line-numbers-mode 1); dispaly line numbers everywhere
 (setq column-number-mode t) ; display column number in the mode line
-(setq frame-title-format nil)   ; no frame title
+(setq frame-title-format nil)	; no frame title
 (scroll-bar-mode -1) ;no scrool bar
 (tool-bar-mode -1) ; no tool bar
 
