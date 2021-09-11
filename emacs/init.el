@@ -7,26 +7,21 @@
 (setq monospace-font-family "sf mono")
 (setq default-font-size 14)
 
+(load "~/prog/config/emacs/fun.el")
+(load "~/prog/config/emacs/pkg/pkg.el")
+(load "~/prog/config/emacs/theme/theme.el")
+(load "~/prog/config/emacs/abbrevs.el")
+(load "~/prog/config/emacs/org.el")
+
+;; theme and font
+(load-theme 'adm t)
+(set-font-size default-font-size)
+
 ;; set font for chinese characters
 (set-fontset-font
  t
  '(#x4e00 . #x9fff)
  (if (member "Songti SC" (font-family-list)) "Songti SC"))
-
-;; org projects
-(setq org-project-notes-name "notes")
-(setq org-project-notes-path "~/prog/notes")
-(setq org-project-www-name "www")
-(setq org-project-www-path "~/prog/admacro.github.io")
-
-(load "~/prog/config/emacs/fun.el")
-(load "~/prog/config/emacs/pkg/pkg.el")
-(load "~/prog/config/emacs/theme/theme.el")
-(load "~/prog/config/emacs/abbrevs.el")
-
-;; theme and font
-(load-theme 'adm t)
-(set-font-size default-font-size)
 
 ;; Global config
 ;; appearance
@@ -35,6 +30,7 @@
 		;; (fullscreen . maximized)		 ;start emacs with window maximized
 		(ns-transparent-titlebar . t) ;make titlebar same color as Emacs background
 		))
+
 (setq inhibit-startup-message t) ; no startup message
 (blink-cursor-mode 0)		; disable cursor
 (global-display-line-numbers-mode 1); dispaly line numbers everywhere
@@ -43,30 +39,26 @@
 (scroll-bar-mode -1) ;no scrool bar
 (tool-bar-mode -1) ; no tool bar
 
-;; behavior
-(fset 'yes-or-no-p 'y-or-n-p) ; y or n is enough
-(global-auto-revert-mode t) ; auto refresh files
-(setq auto-save-default nil) ; stop creating #autosave# files
-(setq make-backup-files nil) ; stop creating backup~ files
+;; editing
+(setq-default tab-width 4)		; default tab width is 4 spaces
+(setq show-paren-delay 0)		; highlight matching paren immediately
+(show-paren-mode 1)				; highlight matching parens
+(electric-pair-mode 1)			; auto insert matching paren
+(delete-selection-mode t)		; text selection can be deleted or replaced by typing
+(put 'downcase-region 'disabled nil)	; enable downcase command
 ;; (setq-default indent-tabs-mode nil) ; indent by space
-(setq-default tab-width 4) ; default tab width is 4 spaces
-(setq scroll-conservatively 15) ; center cursor if a moving step is more than 15 lines, otherwise scroll just enough lines
-(delete-selection-mode t) ; text selection can be deleted or replaced by typing
-(electric-pair-mode 1) ; auto insert matching paren
-(recentf-mode 1) ;; turn on recent file feature
 
-;; show matching paren immediately
-(setq show-paren-delay 0)
-(show-paren-mode 1)
+;; file
+(recentf-mode 1)		      ; turn on recent file feature
+(desktop-save-mode 1)		  ; save/restore opened files and windows config
+(setq bookmark-save-flag 1)   ; automatically save bookmark when it's changed
+(global-auto-revert-mode t)	  ; auto refresh files
+(setq auto-save-default nil)  ; stop creating #autosave# files
+(setq make-backup-files nil)  ; stop creating backup~ files
 
-;; enable downcase command
-(put 'downcase-region 'disabled nil)
-
-;; automatically save bookmark when it's changed
-(setq bookmark-save-flag 1)
-
-;; save/restore opened files and windows config
-(desktop-save-mode 1)
+;; convenience
+(fset 'yes-or-no-p 'y-or-n-p)	      ; y for yes, n for no
+;; (setq scroll-conservatively 15) ; center cursor if a moving step is more than 15 lines, otherwise scroll just enough lines
 
 ;; startup commands
 (recentf-open-files)

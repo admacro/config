@@ -5,6 +5,9 @@
 (defun fontspec (family size)
   (format "%s-%s" family size))
 
+(defun set-default-font ()
+  (set-font-size default-font-size))
+
 (defun set-font-size (size)
   (set-frame-font (fontspec monospace-font-family size))
   (let ((font (fontspec proportional-font-family size)))
