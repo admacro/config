@@ -69,3 +69,11 @@
 
 ;; variable-pitch-mode
 (set-face-font 'variable-pitch (fontspec proportional-font-family default-font-size))
+
+;; major modes in variable pitch mode
+(add-hook 'Info-mode-hook				; notice the mode name, it's Info, not info
+		  (lambda ()
+            (interactive)
+            (display-line-numbers-mode 0)
+            (variable-pitch-mode 1)))
+
