@@ -2,7 +2,7 @@
 (set-language-environment "UTF-8") ; UTF-8 as default encoding
 (setq gc-con-threshold-value (* 1024 1024)) ; 1MB
 
-;; font variables
+;; font Variables
 (setq proportional-font-family "sf pro text")
 (setq monospace-font-family "sf mono")
 (setq default-font-size 14)
@@ -14,20 +14,18 @@
 (load "~/prog/config/emacs/org/org.el")
 
 ;; theme and font
-(load-theme 'adm t)
 (set-font-size default-font-size)
 
 ;; set font for chinese characters
 (set-fontset-font
  t
- '(#x4e00 . #x9fff)
+ 'han
  (if (member "Songti SC" (font-family-list)) "Songti SC"))
 
 ;; Global config
 ;; appearance
 (setq default-frame-alist
 	  '(
-		;; (fullscreen . maximized)		 ;start emacs with window maximized
 		(ns-transparent-titlebar . t) ;make titlebar same color as Emacs background
 		))
 
@@ -35,7 +33,7 @@
 (blink-cursor-mode 0)		; disable cursor
 (global-display-line-numbers-mode 1); dispaly line numbers everywhere
 (setq column-number-mode t) ; display column number in the mode line
-(setq frame-title-format nil)	; no frame title
+;; (setq frame-title-format nil)	; no frame title
 (scroll-bar-mode -1) ;no scrool bar
 (tool-bar-mode -1) ; no tool bar
 
@@ -46,7 +44,7 @@
 (electric-pair-mode 1)			; auto insert matching paren
 (delete-selection-mode t)		; text selection can be deleted or replaced by typing
 (put 'downcase-region 'disabled nil)	; enable downcase command
-;; (setq-default indent-tabs-mode nil) ; indent by space
+(setq-default indent-tabs-mode nil)		; indent by space, or emacs will mix tab and space
 
 ;; file
 (recentf-mode 1)		      ; turn on recent file feature
