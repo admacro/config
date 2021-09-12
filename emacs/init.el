@@ -11,7 +11,7 @@
 (load "~/prog/config/emacs/pkg/pkg.el")
 (load "~/prog/config/emacs/theme/theme.el")
 (load "~/prog/config/emacs/abbrevs.el")
-(load "~/prog/config/emacs/org.el")
+(load "~/prog/config/emacs/org/org.el")
 
 ;; theme and font
 (load-theme 'adm t)
