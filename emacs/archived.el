@@ -3,6 +3,9 @@
 ;; default font for variable-pitch mode
 (custom-set-faces '(variable-pitch ((t (:family "Baskerville")))))
 
+;; (delete-selection-mode t)        ; text selection can be deleted or replaced by typing
+;; (put 'downcase-region 'disabled nil) ; enable downcase command
+
 ;; mini-buffer
 ;; https://github.com/lewang/flx
 ;; http://bling.github.io/blog/2016/01/18/why-are-you-changing-gc-cons-threshold/

@@ -28,8 +28,6 @@
 (electric-indent-mode 1)        ; make return key also do indent, globally
 (setq-default tab-width 4)      ; default tab width is 4 spaces
 (setq-default indent-tabs-mode nil) ; always indent by space, no mixing tab and space
-;; (delete-selection-mode t)        ; text selection can be deleted or replaced by typing
-;; (put 'downcase-region 'disabled nil) ; enable downcase command
 
 ;; file
 (global-auto-revert-mode t)   ; auto refresh files
