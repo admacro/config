@@ -1,49 +1,5 @@
-;; fun.el
-;; fun is fun in `defun'
-;; all custom functions reside here
-
-(defun fontspec (family size)
-  (format "%s-%s" family size))
-
-(defun set-default-font ()
-  (set-font-size default-font-size))
-
-(defun set-font-size (size)
-  (set-frame-font (fontspec monospace-font-family size))
-  (let ((font (fontspec proportional-font-family size)))
-    (set-face-font 'font-lock-comment-face font)
-    (set-face-font 'font-lock-doc-face font)
-    (set-face-font 'variable-pitch font)))
-
-(defun toggle-font-size()
-  "Toggle font size in this cyclic order: 14 -> 17 -> 21 -> 14..."
-  (interactive)
-  (let ((toggle-font-sizes '(14 17 22))
-        (current-size-index (get 'current-size-index 'state))
-        (current-font-size (/ (face-attribute 'default :height) 10)))
-    (cl-flet ((set-fonts (font-size-index)
-                         (let ((font-size (nth font-size-index toggle-font-sizes)))
-                           (set-font-size font-size)
-                           (put 'current-size-index 'state font-size-index))))
-	  (cond
-	   ((or (equal current-size-index 1) ) (set-fonts 2))
-	   ((equal current-size-index 2) (set-fonts 0))
-	   ((equal current-size-index 0) (set-fonts 1))
-	   ((equal current-size-index nil)
-	    (set-fonts (cl-position current-font-size toggle-font-sizes :test '<)))
-	   ))))
-
-(defun load-adm-theme ()
-  "Use dark theme for night and light theme for day.
-Day starts from 6AM to 6PM. The rest is night. :D"
-  (let* ((hour-str
-          (car (split-string
-                (nth 3 (split-string (current-time-string)))
-                ":")))
-         (hour (string-to-number hour-str)))
-    (if (or (>= hour 18) (<= hour 6))
-        (load-theme 'adm-dark t)
-      (load-theme 'adm-light t))))
+;; misc.el
+;; miscellaneous functions
 
 (defun window-margin-toggle()
   "Toggle the left and right margins of current window.
@@ -114,17 +70,3 @@ Version 2018-12-23"
      ((equal $sort-by "size") (setq $arg "-Al -S"))
      (t (error "logic error 09535" )))
     (dired-sort-other $arg )))
-
-(defun org-publish-by-name(org-project-name)
-  "Publish org by project name. This can overwrite existing html files."
-  (if (y-or-n-p "Force republish all? ")
-      (org-publish org-project-name t)
-    (org-publish org-project-name)))
-
-(defun publish-notes()
-  (interactive )
-  (org-publish-by-name org-project-notes-name))
-
-(defun publish-www()
-  (interactive )
-  (org-publish-by-name org-project-www-name))

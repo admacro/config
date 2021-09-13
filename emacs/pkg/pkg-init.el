@@ -5,7 +5,7 @@
 (package-initialize)
 
 ;; Packages for basic editing, file navigation, search, etc.
-(setq package-list-essential
+(setq package-list-fundamental
       '(xah-fly-keys
         smex
         xah-find
@@ -47,7 +47,7 @@
 ;; Package category name to package list mapping
 ;; Comment or uncomment an entry to uninstall or install a category
 (setq pkgHash (make-hash-table :test 'equal))
-(puthash "Essential" package-list-essential pkgHash)
+(puthash "Fundamental" package-list-fundamental pkgHash)
 (puthash "Programming" package-list-prog pkgHash)
 (puthash "Go" package-list-go pkgHash)
 (puthash "Extra Language Support" package-list-extra-lang pkgHash)

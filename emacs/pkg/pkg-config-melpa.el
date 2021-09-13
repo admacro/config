@@ -104,7 +104,7 @@
       ;; Lisp code which produces so much garbage, or maybe GC is not the reason
       ;; for slowdown."
       ;; Source: https://www.reddit.com/r/emacs/comments/brc05y/is_lspmode_too_slow_to_use_for_anyone_else/eofulix/
-      (setq gc-cons-threshold gc-con-threshold-value)
+      (setq gc-cons-threshold (* 1024 1024)) ; 1MB
 
       ;; Increase the amount of data which Emacs reads from the process. Again the
       ;; emacs default is too low 4k considering that the some of the language
