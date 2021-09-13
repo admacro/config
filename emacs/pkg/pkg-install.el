@@ -72,7 +72,7 @@
      pkgHash)
     missing-package-list))
 
-(defun init-packages ()
+(defun install-packages ()
   "Check package installation and install missing ones according to the configured package list"
   (let ((new-packages (missing-packages)))
     (if new-packages
@@ -87,4 +87,4 @@
             (message "> End installing %s -----" package)))
       (message "No missing packages"))))
 
-(init-packages)
+(install-packages)
