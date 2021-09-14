@@ -24,7 +24,7 @@ body,
 .mdict .results .ds-single,
 .mdict .results .ds-list,
 blockquote font b {
-    font-family: georgia, serif !important;
+    font-family: new york, serif !important;
 }
 
 .mdict b,
@@ -34,7 +34,7 @@ blockquote font b {
 .mdict .rtseg b,
 .mdict b i {
     font-weight: bold !important;
-    font-family: arial, sans-serif !important;
+    font-family: sf pro text, sans-serif !important;
 }
 
 .mdict .ds-single i,
