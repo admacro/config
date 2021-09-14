@@ -33,6 +33,7 @@
                 (fg4 "#1F1F7F")                 ; 12.00
 
                 ;; other
+                (other-red "#ee0000")  ; red2
                 (other-blue "#2E2E8A")  ; H240 like slateblue in emacs
                 ))
 
@@ -88,6 +89,10 @@
                ;; ido-mode
                (ido-only-match :foreground ,adm-green)
                (ido-subdir :foreground ,adm-purple)
+
+               ;; show-paren
+               (show-paren-match :background ,bg4)
+               (show-paren-mismatch :weight bold :background ,other-red)
 
                ;; message
                ;; (message-mml :foreground ,adm-purple :weight normal)
