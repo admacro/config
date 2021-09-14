@@ -5,7 +5,7 @@
 
 ;; frame parameters
 (setq default-frame-alist
-      '((ns-appearance . 'light)       ; display title bar using system's light theme (dark font color)
+      '((ns-appearance . 'light)       ; display title bar using system's light theme (dark title color)
         (ns-transparent-titlebar . t)  ; make titlebar same color as Emacs background
         (width . 90)
         (height . 60)))
