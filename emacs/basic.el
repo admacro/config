@@ -2,6 +2,7 @@
 ;; basic settings for emacs
 
 (set-language-environment "UTF-8") ; UTF-8 as default encoding
+(setq default-directory "~/prog")
 
 ;; frame parameters
 (setq default-frame-alist
