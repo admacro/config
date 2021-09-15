@@ -1,2 +1,2 @@
 # config
-Configuration files for shell, emacs, and other applications
+Configuration files for emacs and other tools and applications
