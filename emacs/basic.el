@@ -33,8 +33,8 @@
 ;; file
 (global-auto-revert-mode t)   ; auto refresh files
 (recentf-mode 1)              ; turn on recent file feature
-(desktop-save-mode 1)         ; save/restore opened files and windows config
 (setq desktop-restore-frame nil) ; only restore opened files, no restore frame or window
+(desktop-save-mode 1)         ; save/restore opened files and windows config
 (setq bookmark-save-flag 1)   ; automatically save bookmark when it's changed
 (setq auto-save-default nil)  ; stop creating #autosave# files
 (setq make-backup-files nil)  ; stop creating backup~ files

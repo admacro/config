@@ -8,7 +8,7 @@
   (let ((mono-font (fontspec monospaced-font-family size))
         (prop-font (fontspec proportional-font-family size)))
     ;; set default font for all frames
-    (add-to-list 'default-frame-alist `(font . ,mono-font))
+    (set-frame-font mono-font t t)
     ;; override font lock faces (must be executed after theme has loaded)
     (set-face-font 'font-lock-comment-face prop-font)
     (set-face-font 'font-lock-doc-face prop-font)
