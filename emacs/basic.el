@@ -30,6 +30,10 @@
 (setq-default tab-width 4)      ; default tab width is 4 spaces
 (setq-default indent-tabs-mode nil) ; always indent by space, no mixing tab and space
 
+;; recommanded by xah fly key
+(delete-selection-mode 1)           ; make typing delete/overwrites selected text
+(setq shift-select-mode nil)        ; disable shift select
+
 ;; file
 (global-auto-revert-mode t)   ; auto refresh files
 (recentf-mode 1)              ; turn on recent file feature
