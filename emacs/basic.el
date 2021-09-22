@@ -11,8 +11,8 @@
         (width . 90)
         (height . 60)))
 (setq initial-frame-alist               ; this inherits default-frame-alist
-      '((width . 100)
-        (left . 850)))
+      '((width . 90)
+        (left . 800)))
 
 ;; appearance
 (setq inhibit-startup-message t) ; no startup message

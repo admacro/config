@@ -11,30 +11,31 @@
                 (adm-bg "#F6F2E4")
                 (adm-fg "#020227") ; 18.00 (against adm-bg)
 
-                ;; colors (contrast ratio against adm-bg: 10)
-                (adm-red    "#790C0C") ; H360
-                (adm-maroon "#6D0D5D") ; H310 栗色
-                (adm-purple "#461E94") ; H260
-                (adm-blue   "#183877") ; H220 like royalblue in emacs
-                (adm-green  "#0C450C") ; H120
-                (adm-yellow "#3D3D0F") ; H60 like olivegreen in emacs
-                (adm-orange "#5B3006") ; H30 like darkorange4 in emacs
+                ;; colors (contrast ratio against adm-bg: 8)
+                (adm-red     "#980101") ; H0
+                (adm-orange  "#61440A") ; H40
+                (adm-green   "#065606") ; H120
+                (adm-cyan    "#024E74") ; H200
+                (adm-blue    "#3838AD") ; H240
+                (adm-purple  "#702097") ; H280
+                (adm-magenta "#8B0E61") ; H300 品红/洋红
 
                 ;; bg (against adm-fg)
-                (bg1 "#F2ECD9")                 ; 17.08
-                (bg2 "#EBE5D0")                 ; 16.00
-                (bg3 "#E1D7B7")                 ; 14.03
-                (bg4 "#D5C79F")                 ; 12.01
+                (bg1 "#EBE5D0")                 ; 16.00
+                (bg2 "#E1D7B7")                 ; 14.03
+                (bg3 "#D5C79F")                 ; 12.01
+                (bg4 "#CAB57D")                 ; 10.01
 
                 ;; fg (against adm-bg)
-                (fg1 "#06063D")                 ; 17.01
-                (fg2 "#0C0C4B")                 ; 16.01
-                (fg3 "#13136C")                 ; 14.01
-                (fg4 "#1F1F7F")                 ; 12.00
+                (fg1 "#0C0C4B")                 ; 16.01
+                (fg2 "#13136C")                 ; 14.01
+                (fg3 "#151593")                 ; 12.00
+                (fg4 "#2121AB")                 ; 10.01
 
                 ;; other
-                (other-red "#ee0000")  ; red2
-                (other-blue "#2E2E8A")  ; H240 like slateblue in emacs
+                (other-red "#BB0202")  ; red2
+                (other-blue "#2222DD")  ; H240 8.0
+                (adm-blue-aa "#4A4AC9")  ; H240 8.0
                 ))
 
       (faces '(;; default
@@ -46,7 +47,7 @@
                (highlight :foreground nil :background ,bg3)
                (hl-line :background ,bg1 :extend t)
                (info-quoted-name :foreground ,adm-orange)
-               (info-string :foreground ,adm-yellow)
+               (info-string :foreground ,adm-cyan)
                (lazy-highlight :foreground ,fg2 :background ,bg3)
                (link :foreground ,adm-green :underline t)
                (linum :foreground ,bg4 :background ,adm-bg)
@@ -61,23 +62,23 @@
                (header-line :background ,adm-bg)
 
                ;; syntax
-               (font-lock-function-name-face :foreground ,adm-maroon)
-               (font-lock-variable-name-face :foreground ,adm-fg)
-               (font-lock-type-face :foreground ,adm-purple)
+               (font-lock-function-name-face :foreground ,adm-purple)
+               (font-lock-variable-name-face :foreground ,adm-red)
+               (font-lock-type-face :foreground ,adm-magenta)
                (font-lock-keyword-face :foreground ,adm-blue :weight bold)
-               (font-lock-constant-face :foreground ,adm-fg :slant italic)
-               (font-lock-comment-face :foreground ,adm-orange)
+               (font-lock-constant-face :foreground ,adm-red :slant italic)
                (font-lock-builtin-face :foreground ,adm-blue :weight normal :slant italic)
                (font-lock-string-face :foreground ,adm-green)
 
+               (font-lock-comment-face :foreground ,adm-orange)
                (font-lock-comment-delimiter-face :foreground ,adm-orange)
                (font-lock-doc-face :foreground ,adm-orange)
-               (font-lock-negation-char-face :foreground ,adm-green)
-               (font-lock-preprocessor-face :foreground ,adm-orange)
+               (font-lock-negation-char-face :foreground ,adm-red)
+               (font-lock-preprocessor-face :foreground ,adm-blue)
                (font-lock-reference-face :foreground ,adm-green)
-               (font-lock-regexp-grouping-backslash :foreground ,adm-green)
-               (font-lock-regexp-grouping-construct :foreground ,adm-maroon)
-               (font-lock-warning-face :foreground ,adm-red :background ,bg3)
+               (font-lock-regexp-grouping-backslash :foreground ,adm-red)
+               (font-lock-regexp-grouping-construct :foreground ,adm-purple)
+               (font-lock-warning-face :foreground ,other-red :background ,bg2)
 
                ;; highlight-numbers
                (highlight-numbers-number :foreground ,adm-green)
@@ -102,21 +103,21 @@
                (go-test--standard-face :foreground ,adm-orange)
                (go-test--ok-face :foreground ,adm-green)
                (go-test--error-face :foreground ,adm-red)
-               (go-test--warning-face :foreground ,adm-yellow)
+               (go-test--warning-face :foreground ,adm-cyan)
 
                ;; treemacs
                (treemacs-root-face :foreground ,adm-orange :weight bold)
                (treemacs-directory-face :foreground ,adm-purple)
                (treemacs-git-untracked-face :foreground ,adm-green :slant italic :underline t)
                (treemacs-git-added-face :foreground ,adm-green)
-               (treemacs-git-modified-face :foreground ,adm-yellow)
+               (treemacs-git-modified-face :foreground ,adm-cyan)
                (treemacs-tags-face :foreground ,adm-blue)
 
                ;; company
                (company-echo-common :foreground ,adm-bg :background ,adm-fg)
                (company-preview :foreground ,other-blue :background ,adm-bg)
                (company-preview-common :foreground ,fg3 :background ,bg2)
-               (company-preview-search :foreground ,adm-maroon :background ,adm-bg)
+               (company-preview-search :foreground ,adm-magenta :background ,adm-bg)
                (company-scrollbar-bg :background ,bg1)
                (company-scrollbar-fg :background ,bg3)
                (company-template-field :inherit region)
@@ -178,7 +179,7 @@
                (org-agenda-date :foreground ,adm-purple :underline nil)
                (org-agenda-dimmed-todo-face :foreground ,adm-orange)
                (org-agenda-done :foreground ,adm-green)
-               (org-agenda-structure :foreground ,adm-maroon)
+               (org-agenda-structure :foreground ,adm-magenta)
                (org-block :foreground ,fg4)
                (org-code :foreground ,fg4)
                (org-column :background ,bg4)
@@ -194,7 +195,7 @@
                (org-headline-done :foreground ,adm-orange :weight normal :strike-through t)
                (org-hide :foreground ,adm-bg :background ,adm-bg)
                (org-level-1 :inherit bold :foreground ,adm-blue :height 1.3)
-               (org-level-2 :inherit bold :foreground ,adm-maroon :height 1.1)
+               (org-level-2 :inherit bold :foreground ,adm-magenta :height 1.1)
                (org-level-3 :weight normal :foreground ,adm-green :height 1.0)
                (org-level-4 :weight normal :foreground ,adm-orange)
                (org-level-5 :weight normal :foreground ,adm-red)
@@ -204,14 +205,14 @@
                (org-link :foreground ,other-blue :underline t)
                (org-priority :foreground ,adm-purple)
                (org-scheduled :foreground ,adm-green)
-               (org-scheduled-previously :foreground ,adm-yellow)
+               (org-scheduled-previously :foreground ,adm-cyan)
                (org-scheduled-today :foreground ,adm-green)
                (org-sexp-date :foreground ,fg4)
-               (org-special-keyword :foreground ,adm-yellow)
+               (org-special-keyword :foreground ,adm-cyan)
                (org-table :foreground ,adm-green)
-               (org-tag :foreground ,adm-maroon :weight bold :background ,bg2)
+               (org-tag :foreground ,adm-magenta :weight bold :background ,bg2)
                (org-todo :foreground ,adm-orange :weight bold :background ,bg2)
-               (org-upcoming-deadline :foreground ,adm-yellow)
+               (org-upcoming-deadline :foreground ,adm-cyan)
                (org-warning :weight bold :foreground ,adm-red)
 
                ;; dired
@@ -222,7 +223,7 @@
                (dired-mark :foreground ,adm-fg :weight bold)
                (dired-marked :foreground ,adm-orange :weight bold)
                (dired-perm-write :foreground ,fg3 :underline t)
-               (dired-symlink :foreground ,adm-yellow :weight normal :slant italic)
+               (dired-symlink :foreground ,adm-cyan :weight normal :slant italic)
                (dired-warning :foreground ,adm-orange :underline t)
                (diredp-compressed-file-name :foreground ,fg3)
                (diredp-compressed-file-suffix :foreground ,fg4)
@@ -244,24 +245,24 @@
                (diredp-number :foreground ,adm-green)
                (diredp-other-priv :foreground ,adm-orange)
                (diredp-rare-priv :foreground ,adm-orange)
-               (diredp-read-priv :foreground ,adm-maroon)
+               (diredp-read-priv :foreground ,adm-magenta)
                (diredp-write-priv :foreground ,adm-blue)
-               (diredp-exec-priv :foreground ,adm-yellow)
+               (diredp-exec-priv :foreground ,adm-cyan)
                (diredp-symlink :foreground ,adm-orange)
                (diredp-link-priv :foreground ,adm-orange)
-               (diredp-autofile-name :foreground ,adm-yellow)
-               (diredp-tagged-autofile-name :foreground ,adm-yellow)
+               (diredp-autofile-name :foreground ,adm-cyan)
+               (diredp-tagged-autofile-name :foreground ,adm-cyan)
 
                ;; term
                ;; (term :foreground ,adm-fg :background ,adm-bg)
                ;; (term-color-black :foreground ,adm-bg :background ,adm-bg)
-               ;; (term-color-blue :foreground ,adm-maroon :background ,adm-maroon)
+               ;; (term-color-blue :foreground ,adm-magenta :background ,adm-magenta)
                ;; (term-color-cyan :foreground ,adm-green :background ,adm-green)
                ;; (term-color-green :foreground ,adm-purple :background ,adm-purple)
                ;; (term-color-magenta :foreground ,adm-blue :background ,adm-blue)
                ;; (term-color-red :foreground ,adm-red :background ,adm-red)
                ;; (term-color-white :foreground ,adm-fg :background ,adm-fg)
-               ;; (term-color-yellow :foreground ,adm-yellow :background ,adm-yellow)
+               ;; (term-color-yellow :foreground ,adm-cyan :background ,adm-cyan)
 
                ;; web-mode
                ;; (web-mode-builtin-face :inherit ,font-lock-builtin-face)
@@ -269,11 +270,11 @@
                ;; (web-mode-constant-face :inherit ,font-lock-constant-face)
                ;; (web-mode-doctype-face :inherit ,font-lock-comment-face)
                ;; (web-mode-function-name-face :inherit ,font-lock-function-name-face)
-               ;; (web-mode-html-attr-name-face :foreground ,adm-maroon)
+               ;; (web-mode-html-attr-name-face :foreground ,adm-magenta)
                ;; (web-mode-html-attr-value-face :foreground ,adm-purple)
                ;; (web-mode-html-tag-face :foreground ,adm-blue :weight bold)
                ;; (web-mode-keyword-face :foreground ,adm-blue)
-               ;; (web-mode-string-face :foreground ,adm-yellow)
+               ;; (web-mode-string-face :foreground ,adm-cyan)
                ;; (web-mode-type-face :inherit ,font-lock-type-face)
                ;; (web-mode-warning-face :inherit ,font-lock-warning-face)
 
