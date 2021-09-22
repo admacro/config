@@ -1,4 +1,5 @@
-(load "~/prog/config/emacs/theme/adm-theme.el")
+(load "~/prog/config/emacs/theme/adm-aa-theme.el")
+(load "~/prog/config/emacs/theme/adm-aaa-theme.el")
 (load "~/prog/config/emacs/theme/adm-light-theme.el")
 (load "~/prog/config/emacs/theme/adm-dark-theme.el")
 
@@ -14,4 +15,4 @@ Day starts from 6AM to 6PM. The rest is night. :D"
         (load-theme 'adm-dark t)
       (load-theme 'adm-light t))))
 
-(load-theme 'adm t)
+(load-theme 'adm-aa t)

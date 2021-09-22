@@ -135,7 +135,7 @@
 (cp 'go-mode
     (lambda()
       ;; fontify only function declarations, not function calls
-      ;; (setq go-fontify-function-calls nil)
+      (setq go-fontify-function-calls nil)
       ;; format code and reorganize imports before saving buffer
       ;; https://github.com/golang/tools/blob/master/gopls/doc/emacs.md
       (add-hook 'go-mode-hook
