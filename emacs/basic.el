@@ -1,18 +1,23 @@
 ;; basic.el
 ;; basic settings for emacs
 
-(set-language-environment "UTF-8") ; UTF-8 as default encoding
+;; UTF-8 as default encoding
+(set-language-environment "UTF-8")      ; for emacs environment
+(set-default-coding-systems 'utf-8-unix); for newly created buffers, files and file names
+
 (setq default-directory "~/prog")
 
-;; frame parameters
-(setq default-frame-alist
-      '((ns-appearance . 'light)       ; display title bar using system's light theme (dark title color)
-        (ns-transparent-titlebar . t)  ; make titlebar same color as Emacs background
-        (width . 90)
-        (height . 60)))
-(setq initial-frame-alist               ; this inherits default-frame-alist
-      '((width . 90)
-        (left . 800)))
+;; frame and window parameters
+(progn
+  (setq default-frame-alist
+        '((ns-appearance . 'light)       ; display title bar using system's light theme (dark title color)
+          (ns-transparent-titlebar . t)  ; make titlebar same color as Emacs background
+          (width . 90)
+          (height . 60)))
+  (setq initial-frame-alist               ; this inherits default-frame-alist
+        '((width . 90)
+          (left . 800)))
+  )
 
 ;; appearance
 (setq inhibit-startup-message t) ; no startup message
@@ -36,12 +41,25 @@
 
 ;; file
 (global-auto-revert-mode t)   ; auto refresh files
-(recentf-mode 1)              ; turn on recent file feature
-(setq desktop-restore-frame nil) ; only restore opened files, no restore frame or window
-(desktop-save-mode 1)         ; save/restore opened files and windows config
-(setq bookmark-save-flag 1)   ; automatically save bookmark when it's changed
-(setq auto-save-default nil)  ; stop creating #autosave# files
-(setq make-backup-files nil)  ; stop creating backup~ files
+
+(progn
+  (require 'recentf)
+  (recentf-mode 1)              ; turn on recent file feature
+  )
+
+(progn
+  (desktop-save-mode 1)         ; save/restore opened files and windows config
+  (setq desktop-restore-frames nil) ; no saving or restoring frame and window configuration
+  )
+
+(setq bookmark-save-flag 1)   ; auto save bookmark when it's changed
+(setq auto-save-default nil)  ; no auto creating #autosave# files
+(setq make-backup-files nil)  ; no auto creating backup~ files
+(setq create-lockfiles nil)   ; no auto creating lock files, refresh files immediately
+
+;; minibuffer
+(progn
+  (setq max-mini-window-height 0.5))
 
 ;; convenience
 (fset 'yes-or-no-p 'y-or-n-p)	      ; y for yes, n for no
