@@ -103,13 +103,8 @@
                (go-test--error-face :foreground ,adm-red)
                (go-test--warning-face :foreground ,adm-orange)
 
-               ;; treemacs
-               ;; (treemacs-root-face :foreground ,adm-orange :weight bold)
-               ;; (treemacs-directory-face :foreground ,adm-purple)
-               ;; (treemacs-git-untracked-face :foreground ,adm-green :slant italic :underline t)
-               ;; (treemacs-git-added-face :foreground ,adm-green)
-               ;; (treemacs-git-modified-face :foreground ,adm-blue)
-               ;; (treemacs-tags-face :foreground ,adm-cyan)
+               ;; shell script
+               (sh-quoted-exec :foreground ,adm-magenta)
 
                ;; company
                (company-echo-common :foreground ,adm-bg :background ,adm-fg)
@@ -250,6 +245,14 @@
                (diredp-link-priv :foreground ,adm-orange)
                (diredp-autofile-name :foreground ,adm-blue)
                (diredp-tagged-autofile-name :foreground ,adm-blue)
+
+               ;; treemacs
+               ;; (treemacs-root-face :foreground ,adm-orange :weight bold)
+               ;; (treemacs-directory-face :foreground ,adm-purple)
+               ;; (treemacs-git-untracked-face :foreground ,adm-green :slant italic :underline t)
+               ;; (treemacs-git-added-face :foreground ,adm-green)
+               ;; (treemacs-git-modified-face :foreground ,adm-blue)
+               ;; (treemacs-tags-face :foreground ,adm-cyan)
 
                ;; term
                ;; (term :foreground ,adm-fg :background ,adm-bg)
