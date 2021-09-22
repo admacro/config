@@ -127,7 +127,7 @@
 
                ;; magit
                (magit-branch-local :foreground ,adm-green)
-               (magit-branch-remote :foreground ,adm-purple)
+               (magit-branch-remote :foreground ,adm-red)
                (magit-tag :foreground ,adm-orange)
                (magit-section-heading :foreground ,adm-cyan :weight bold)
                (magit-section-highlight :background ,bg3 :extend t)
@@ -141,21 +141,10 @@
                                                       :background ,bg3
                                                       :weight bold
                                                       :extend t)
-
-               ;; the four following lines are just a patch of the
-               ;; upstream color to add the extend keyword.
-               (magit-diff-added :background "#335533"
-                                 :foreground "#ddffdd"
-                                 :extend t)
-               (magit-diff-added-highlight :background "#336633"
-                                           :foreground "#cceecc"
-                                           :extend t)
-               (magit-diff-removed :background "#553333"
-                                   :foreground "#ffdddd"
-                                   :extend t)
-               (magit-diff-removed-highlight :background "#663333"
-                                             :foreground "#eecccc"
-                                             :extend t)
+               (magit-diff-added :background ,adm-green :foreground ,bg1 :extend t)
+               (magit-diff-added-highlight :background ,adm-green :foreground ,adm-bg :extend t)
+               (magit-diff-removed :background ,adm-red :foreground ,bg1 :extend t)
+               (magit-diff-removed-highlight :background ,adm-red :foreground ,adm-bg  :extend t)
                (magit-diff-file-heading :foreground ,adm-fg)
                (magit-diff-file-heading-highlight :inherit magit-section-highlight)
                (magit-diffstat-added :foreground ,adm-purple)
