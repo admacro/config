@@ -78,6 +78,10 @@
                (font-lock-regexp-grouping-construct :foreground ,adm-purple)
                (font-lock-warning-face :foreground ,adm-red :background ,adm-yellow)
 
+               ;; minibuffer
+               (completions-common-part :foreground ,adm-green)
+               (completions-first-difference :foreground ,adm-red)
+
                ;; highlight-numbers
                (highlight-numbers-number :foreground ,adm-green)
 
