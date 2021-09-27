@@ -61,7 +61,7 @@
 
                ;; syntax
                (font-lock-variable-name-face :foreground ,adm-fg)
-               (font-lock-constant-face :foreground ,adm-magenta :slant italic)
+               (font-lock-constant-face :foreground ,adm-purple :slant italic)
                (font-lock-string-face :foreground ,adm-green)
                (font-lock-keyword-face :foreground ,adm-cyan :weight bold)
                (font-lock-type-face :foreground ,adm-red)
