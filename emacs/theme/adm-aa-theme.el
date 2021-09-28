@@ -8,32 +8,28 @@
 (deftheme adm-aa)
 
 (let ((colors '(
-                (adm-bg      "#F0EFEE" nil)
-                (adm-fg      "#232323")
+                (adm-bg      "#F2F0EC")
+                (adm-fg      "#080808")
 
-                (adm-red     "#C91D1D")
-                (adm-magenta "#B62B87")
-                (adm-orange  "#9E521F")
-                (adm-yellow  "#EFB700")
-                (adm-green   "#197619")
-                (adm-cyan    "#127087")
-                (adm-blue    "#5553DF")
-                (adm-purple  "#9932CD")
+                (adm-red     "#A21515")
+                (adm-magenta "#950E7F")
+                (adm-orange  "#873B08")
+                (adm-green   "#075F07")
+                (adm-cyan    "#06567F")
+                (adm-blue    "#2828F0")
+                (adm-purple  "#7F06BC")
 
                 ;; bg
-                (bg1 "#E0DFDE")
-                (bg2 "#D0CFCE")
-                (bg3 "#C0BFBE")
-                (bg4 "#B0AFAE")
+                (bg1 "#ECE9E4")
+                (bg2 "#E5DFD2")
+                (bg3 "#DDD3C0")
+                (bg4 "#D6C7A9")
 
                 ;; fg
-                (fg1 "#333333")
-                (fg2 "#434343")
-                (fg3 "#535353")
-                (fg4 "#636363")
-
-                ;; other
-                (other-blue "#3859FF")
+                (fg1 "#171717")
+                (fg2 "#222222")
+                (fg3 "#2c2c2c")
+                (fg4 "#363636")
                 ))
 
       (faces '(;; default
@@ -66,17 +62,17 @@
                (font-lock-keyword-face :foreground ,adm-cyan :weight bold)
                (font-lock-type-face :foreground ,adm-red)
                (font-lock-function-name-face :foreground ,adm-magenta)
-               (font-lock-builtin-face :foreground ,adm-cyan :weight normal :slant italic)
+               (font-lock-builtin-face :foreground ,adm-cyan :slant italic)
 
                (font-lock-comment-face :foreground ,adm-orange)
                (font-lock-comment-delimiter-face :foreground ,adm-orange)
-               (font-lock-doc-face :foreground ,adm-orange)
+               (font-lock-doc-face :foreground ,adm-orange :slant italic)
 
                (font-lock-negation-char-face :foreground ,adm-red)
                (font-lock-preprocessor-face :foreground ,adm-blue)
                (font-lock-regexp-grouping-backslash :foreground ,adm-red)
                (font-lock-regexp-grouping-construct :foreground ,adm-purple)
-               (font-lock-warning-face :foreground ,adm-red :background ,adm-yellow)
+               (font-lock-warning-face :foreground ,adm-red :background ,bg3)
 
                ;; minibuffer
                (completions-common-part :foreground ,adm-green)
@@ -171,12 +167,12 @@
                (org-column :background ,bg4)
                (org-column-title :inherit org-column :weight bold :underline t)
                (org-date :foreground ,adm-purple :underline t)
-               (org-document-info :foreground ,other-blue)
+               (org-document-info :foreground ,adm-blue)
                (org-document-info-keyword :foreground ,adm-orange)
                (org-document-title :weight bold :foreground ,adm-orange :height 1.44)
                (org-done :foreground ,adm-green)
                (org-ellipsis :foreground ,adm-orange)
-               (org-footnote :foreground ,other-blue)
+               (org-footnote :foreground ,adm-blue)
                (org-formula :foreground ,adm-orange)
                (org-headline-done :foreground ,adm-orange :weight normal :strike-through t)
                (org-hide :foreground ,adm-bg :background ,adm-bg)
@@ -187,7 +183,7 @@
                (org-level-5 :weight normal :foreground ,adm-orange)
                (org-level-6 :weight normal :foreground ,adm-purple)
                (org-level-7 :weight normal :foreground ,adm-blue)
-               (org-level-8 :weight normal :foreground ,other-blue)
+               (org-level-8 :weight normal :foreground ,adm-red)
                (org-link :foreground ,adm-blue :underline t)
                (org-priority :foreground ,adm-purple)
                (org-scheduled :foreground ,adm-green)
