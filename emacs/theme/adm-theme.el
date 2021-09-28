@@ -5,7 +5,7 @@
 ;; https://userway.org/contrast/
 ;; https://webaim.org/resources/contrastchecker/
 (require 'cl-lib)
-(deftheme adm-aa)
+(deftheme adm)
 
 (let ((colors '(
                 (adm-bg      "#F2F0EC")
@@ -283,7 +283,7 @@
                )))
 
   (apply #'custom-theme-set-faces
-         'adm-aa
+         'adm
          (let ((color-names (mapcar #'car colors))
                (graphic-colors (mapcar #'cadr colors))
                (tty-colors (mapcar #'car (mapcar #'last colors))))
@@ -303,4 +303,4 @@
   (add-to-list 'custom-theme-load-path
                (file-name-as-directory (file-name-directory load-file-name))))
 
-(provide-theme 'adm-aa)
+(provide-theme 'adm)
