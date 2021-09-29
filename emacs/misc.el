@@ -13,13 +13,13 @@ Always cycle the margin width in this order: 20 cells, 0 (no margin)."
       (set-margin 20 t))))
 
 (defun writting-mode()
-  "writting-mode removes all unnecessary UI elements for writting."
+  "writting-mode removes all unnecessary UI elements from current buffer window."
   (interactive)
   (set-window-margins nil 25 25)
   (visual-line-mode 1)
   (display-line-numbers-mode 0)
   (setq mode-line-format nil)
-  (setq buffer-face-mode-face '(:family "Songti SC" :height 250))
+  (setq buffer-face-mode-face '(:family "new york" :height 200))
   (buffer-face-mode))
 
 ;; hex colour
