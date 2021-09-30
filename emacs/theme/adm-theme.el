@@ -10,12 +10,12 @@
                 (adm-fg      "#000000")
 
                 (adm-red     "#980101")
-                (adm-magenta "#890673")
+                (adm-magenta "#8A0073")
                 (adm-orange  "#7B3404")
-                (adm-green   "#065606")
-                (adm-cyan    "#0A4E71")
+                (adm-green   "#005600")
+                (adm-cyan    "#014E74")
                 (adm-blue    "#2222DD")
-                (adm-purple  "#730BA8")
+                (adm-purple  "#6302C5")
 
                 ;; bg
                 (bg1 "#E0DACC")
