@@ -24,5 +24,5 @@ calling the function passed in"
 (defalias 'gsk 'global-set-key)
 (defalias 'atl 'add-to-list)
 
-(load "~/prog/config/emacs/pkg/pkg-config-builtin.el")
-(load "~/prog/config/emacs/pkg/pkg-config-melpa.el")
+(load (fp "pkg-config-builtin"))
+(load (fp "pkg-config-melpa"))

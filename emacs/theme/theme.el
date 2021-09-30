@@ -1,6 +1,6 @@
-(load "~/prog/config/emacs/theme/adm-theme.el")
-(load "~/prog/config/emacs/theme/adm-light-theme.el")
-(load "~/prog/config/emacs/theme/adm-dark-theme.el")
+(load (fp "adm-theme"))
+(load (fp "adm-light-theme"))
+(load (fp "adm-dark-theme"))
 
 (defun load-adm-theme ()
   "Use dark theme for night and light theme for day.
