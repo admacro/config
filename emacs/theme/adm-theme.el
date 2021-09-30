@@ -1,8 +1,6 @@
 ;; https://www.gnu.org/software/emacs/manual/html_node/emacs/Face-Customization.html
 ;; https://www.w3.org/WAI/WCAG21/Understanding/contrast-minimum.html
 ;; https://colorshark.io
-;; https://accessible-colors.com/
-;; https://userway.org/contrast/
 ;; https://webaim.org/resources/contrastchecker/
 (require 'cl-lib)
 (deftheme adm)
