@@ -8,28 +8,28 @@
 (deftheme adm)
 
 (let ((colors '(
-                (adm-bg      "#F2F0EC")
-                (adm-fg      "#080808")
+                (adm-bg      "#E8E3D9")
+                (adm-fg      "#000000")
 
-                (adm-red     "#A21515")
-                (adm-magenta "#950E7F")
-                (adm-orange  "#873B08")
-                (adm-green   "#075F07")
-                (adm-cyan    "#06567F")
-                (adm-blue    "#2828F0")
-                (adm-purple  "#7F06BC")
+                (adm-red     "#980101")
+                (adm-magenta "#890673")
+                (adm-orange  "#7B3404")
+                (adm-green   "#065606")
+                (adm-cyan    "#0A4E71")
+                (adm-blue    "#2222DD")
+                (adm-purple  "#730BA8")
 
                 ;; bg
-                (bg1 "#ECE9E4")
-                (bg2 "#E5DFD2")
-                (bg3 "#DDD3C0")
-                (bg4 "#D6C7A9")
+                (bg1 "#E0DACC")
+                (bg2 "#D7CEBC")
+                (bg3 "#CDC2AC")
+                (bg4 "#C4B79C")
 
                 ;; fg
-                (fg1 "#171717")
-                (fg2 "#222222")
-                (fg3 "#2c2c2c")
-                (fg4 "#363636")
+                (fg1 "#0F0F0F")
+                (fg2 "#1C1C1C")
+                (fg3 "#262626")
+                (fg4 "#303030")
                 ))
 
       (faces '(;; default
