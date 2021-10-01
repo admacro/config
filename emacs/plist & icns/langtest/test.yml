@@ -1,0 +1,6 @@
+Employee:
+  id: 1
+  name: "Franc"
+  department:
+    name: "Sales"
+    depid: "11"
