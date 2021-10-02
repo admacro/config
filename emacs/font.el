@@ -32,6 +32,13 @@
 	    (set-fonts (cl-position current-font-size font-size-list :test '<)))
 	   ))))
 
+(defun set-frame-font-size ()
+  "sets size of default font to user specified size for all active and future frames"
+  (interactive)
+  (let (size)
+    (setq size (read-number "Font size: " 15))
+    (set-font-size size)))
+
 ;; default font families and size
 (setq proportional-font-family "SF Pro Text")
 (setq monospaced-font-family "SF Mono")
