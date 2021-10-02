@@ -9,6 +9,7 @@
                 (adm-bg      "#E8E3D9")
                 (adm-fg      "#000000")
 
+                ;; foreground colors
                 (adm-red     "#970000")
                 (adm-magenta "#8e005f")
                 (adm-orange  "#733900")
@@ -16,6 +17,15 @@
                 (adm-cyan    "#004d74")
                 (adm-blue    "#0000f5")
                 (adm-purple  "#7300ac")
+
+                ;; background colors
+                (adm-red-bg     "#E8D9D9")
+                (adm-magenta-bg "#E8D9E3")
+                (adm-orange-bg  "#E8E0D9")
+                (adm-green-bg   "#D9E8D9")
+                (adm-cyan-bg    "#D9E3E8")
+                (adm-blue-bg    "#D9D9E8")
+                (adm-purple-bg  "#E3D9E8")
 
                 ;; bg
                 (bg1 "#E0DACC")
@@ -139,10 +149,10 @@
                                                       :background ,bg3
                                                       :weight bold
                                                       :extend t)
-               (magit-diff-added :background ,adm-green :foreground ,bg1 :extend t)
-               (magit-diff-added-highlight :background ,adm-green :foreground ,adm-bg :extend t)
-               (magit-diff-removed :background ,adm-red :foreground ,bg1 :extend t)
-               (magit-diff-removed-highlight :background ,adm-red :foreground ,adm-bg  :extend t)
+               (magit-diff-added :background ,adm-green-bg :foreground ,adm-fg :extend t)
+               (magit-diff-added-highlight :background ,adm-green-bg :foreground ,adm-green :extend t)
+               (magit-diff-removed :background ,adm-red-bg :foreground ,adm-fg :extend t)
+               (magit-diff-removed-highlight :background ,adm-red-bg :foreground ,adm-red  :extend t)
                (magit-diff-file-heading :foreground ,adm-fg)
                (magit-diff-file-heading-highlight :inherit magit-section-highlight)
                (magit-diffstat-added :foreground ,adm-purple)
