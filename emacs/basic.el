@@ -12,11 +12,16 @@
   (setq default-frame-alist
         '((ns-appearance . 'light)     ; display title bar using system's light theme (dark title color)
           (ns-transparent-titlebar . t); make titlebar same color as Emacs background
-          (width . 90)
+          (width . 100)
           (height . 60)))
-  (setq initial-frame-alist            ; this inherits default-frame-alist
-        '((width . 100)
-          (left . 750)))
+  ;; initial-frame-alist inherits default-frame-alist
+  (if (> (display-pixel-width) 1600)
+      (setq initial-frame-alist         ; for external big monitor 4k
+            '((width . 100)
+              (left . 750)))
+    (setq initial-frame-alist         ; for laptop builtin screen 1440x900
+          '((width . 100)
+            (left . 50))))
   )
 
 ;; appearance
