@@ -62,12 +62,12 @@
 (setq make-backup-files nil)  ; no auto creating backup~ files
 (setq create-lockfiles nil)   ; no auto creating lock files, refresh files immediately
 
-;; minibuffer
-(progn
-  (setq max-mini-window-height 0.5))
-
 ;; convenience
 (fset 'yes-or-no-p 'y-or-n-p)	      ; y for yes, n for no
+(setq scroll-conservatively most-positive-fixnum) ; never center point when scroll
+
+;; minibuffer
+(setq max-mini-window-height 0.5)
 
 ;; startup commands
 (dired "~/prog")

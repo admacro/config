@@ -447,7 +447,7 @@
     ],
     "updateDate": 1594541692765,
     "_id": "a0943cbe-d4ad-4753-b5c7-56b8199e0e7d",
-    "_rev": 1630342220657,
+    "_rev": 1633599335426,
     "id": 19,
     "_usw": {}
   },
@@ -469,5 +469,24 @@
     "_id": "8ce8689f-c0f0-4804-a171-6f4f27aa0d28",
     "_rev": 1633599166079,
     "id": 20
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1633600788532,
+    "name": "www.gnu.org emacs manual",
+    "sections": [
+      {
+        "code": "body {\n    background: #E8E3D9;\n}",
+        "urlPrefixes": [
+          "https://www.gnu.org/software/emacs/manual/html_node/"
+        ]
+      }
+    ],
+    "updateDate": 1633600795574,
+    "_id": "70b1522b-5ecd-4450-9520-a66f3dbea69b",
+    "_rev": 1633600795574,
+    "id": 21
   }
 ]
