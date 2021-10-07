@@ -283,23 +283,23 @@
     "_usw": {}
   },
   {
-    "enabled": false,
+    "enabled": true,
     "updateUrl": null,
     "url": null,
     "installDate": 1579522516852,
     "name": "github.com",
     "sections": [
       {
-        "code": "body,\n.application-main,\n.Box {\n    background-color: #E8E3D9 !important;\n}\n\ndiv.blob-wrapper {\n    background-color: #E0DACC !important;\n}\n\ndiv.blob-wrapper span {\n    font-family: Monospace;\n}\n\n.f6.v-align-middle.text-gray.px-3.py-2.border-bottom.bg-gray-light.d-flex.flex-justify-between {\n    display: none !important;\n}\n\n.tab-size {\n    tab-size: 4 !important;\n}",
+        "code": ":root,\n[data-color-mode=light][data-light-theme=light] {\n    --color-fg-default: #000000;\n    --color-canvas-default: #E8E3D9;\n    --color-canvas-overlay: #E8E3D9;\n    --color-canvas-subtle: #E0DACC;\n    --color-border-default: #C4B79C;\n    --color-border-muted: #C4B79C;\n    --color-accent-fg: #004d74;\n    --color-canvas-inset: #E0DACC;\n    --color-neutral-subtle: #E0DACC;\n    --color-sidenav-selected-bg: #E8E3D9;\n    --color-btn-bg: #E0DACC;\n    --color-btn-hover-bg: #D7CEBC;\n    --color-btn-active-bg: #E8E3D9;\n    --color-page-header-bg: #E0DACC;\n    --color-calendar-graph-day-bg: #E0DACC;\n    --color-calendar-graph-day-border: #D7CEBC;\n}",
         "domains": [
           "github.com"
         ]
       }
     ],
-    "updateDate": 1593573646638,
+    "updateDate": 1633598290772,
     "id": 12,
     "_id": "d5205ad9-4977-4d4b-93a1-7658ade99380",
-    "_rev": 1632968645259,
+    "_rev": 1633598290772,
     "_usw": {}
   },
   {
