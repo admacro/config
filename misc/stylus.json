@@ -74,8 +74,8 @@
       "editor.colorpicker": true,
       "editor.colorpicker.hexUppercase": false,
       "editor.colorpicker.hotkey": "",
-      "editor.colorpicker.color": "#0C450C",
-      "editor.colorpicker.maxHeight": 300,
+      "editor.colorpicker.color": "gray",
+      "editor.colorpicker.maxHeight": 247,
       "hotkey._execute_browser_action": "",
       "hotkey.openManage": "",
       "hotkey.styleDisableAll": "",
@@ -468,7 +468,8 @@
     "updateDate": 1633671060844,
     "_id": "8ce8689f-c0f0-4804-a171-6f4f27aa0d28",
     "_rev": 1633671060844,
-    "id": 20
+    "id": 20,
+    "_usw": {}
   },
   {
     "enabled": true,
@@ -487,6 +488,27 @@
     "updateDate": 1633600795574,
     "_id": "70b1522b-5ecd-4450-9520-a66f3dbea69b",
     "_rev": 1633600795574,
-    "id": 21
+    "id": 21,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1633701408064,
+    "name": "learn.dvorak.nl",
+    "sections": [
+      {
+        "code": "body {\n    background: #E0DACC;\n}\n\n#words,\n#words-outer,\n#all-inner,\n#border {\n    background: #E8E3D9;\n}\n\n#border {\n    border-radius: 0px;\n}\n\n#input:focus {\n    box-shadow: none;\n}\n\n.correct {\n    color: darkseagreen;\n}\n\n.incorrect {\n    color: #E8D9D9;\n    background: #970000;\n}\n\n#currentword {\n    background: #C4B79C;\n    border-radius: 0;\n}\n\n#currentword .correct {\n    color: #D9E8D9;\n}\n\n.nextword {\n    color: dimgray;\n}",
+        "urlPrefixes": [
+          "https://learn.dvorak.nl/"
+        ]
+      }
+    ],
+    "updateDate": 1633714733295,
+    "_id": "818417fb-fb80-444f-98e0-7c80f49863c0",
+    "_rev": 1633714733295,
+    "id": 22,
+    "_usw": {}
   }
 ]
