@@ -459,15 +459,15 @@
     "name": "discord.com",
     "sections": [
       {
-        "code": ".theme-light {\n    --saturation-factor: 10;\n    --text-normal: #000000;\n    --text-muted: #808080;\n    --text-link: #0000f5;\n    --interactive-active: #733900;\n    --background-primary: #E8E3D9;\n    --background-secondary: #E0DACC;\n    --background-secondary-alt: #D7CEBC;\n    --background-tertiary: #CDC2AC;\n    --channeltextarea-background: #D7CEBC;\n    --background-modifier-hover: #D7CEBC;\n    --background-modifier-active: #CDC2AC;\n    --background-modifier-selected: #CDC2AC;\n    --background-message-hover: #D7CEBC;\n    --background-floating: #E8E3D9;\n}\n\n:root {\n    --font-primary: sans-serif;\n    --font-code: monospace;\n}\n\n.messageContent-2qWWxC {\n    font-family: serif;\n}\n\ncode,\ncode.inline {\n    font-family: monospace !important;\n}\n\n.sidebar-2K8pFh {\n    width: 150px;\n}\n\n.guilds-1SWlCJ {\n    width: 56px;\n}\n\n.listItem-GuPuDH {\n    width: 56px;\n}",
+        "code": ".theme-light {\n    --saturation-factor: 10;\n    --text-normal: #000000;\n    --text-muted: #808080;\n    --text-link: #0000f5;\n    --interactive-active: #733900;\n    --background-primary: #E8E3D9;\n    --background-secondary: #E0DACC;\n    --background-secondary-alt: #D7CEBC;\n    --background-tertiary: #CDC2AC;\n    --channeltextarea-background: #D7CEBC;\n    --background-modifier-hover: #D7CEBC;\n    --background-modifier-active: #CDC2AC;\n    --background-modifier-selected: #CDC2AC;\n    --background-message-hover: #D7CEBC;\n    --background-floating: #E8E3D9;\n}\n\n:root {\n    --font-primary: sans-serif;\n    --font-code: monospace;\n}\n\n.messageContent-2qWWxC {\n    font-family: serif;\n}\n\ncode,\ncode.inline {\n    font-family: monospace !important;\n}\n\n.sidebar-2K8pFh {\n    width: 20%;\n}\n\n.guilds-1SWlCJ {\n    width: 4em;\n}\n\n.listItem-GuPuDH {\n    width: 4em;\n}",
         "urlPrefixes": [
           "https://discord.com/channels/"
         ]
       }
     ],
-    "updateDate": 1633599166079,
+    "updateDate": 1633671060844,
     "_id": "8ce8689f-c0f0-4804-a171-6f4f27aa0d28",
-    "_rev": 1633599166079,
+    "_rev": 1633671060844,
     "id": 20
   },
   {
