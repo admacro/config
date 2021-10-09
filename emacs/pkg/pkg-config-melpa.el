@@ -11,8 +11,6 @@
             (xah-close-current-buffer)
             (delete-window)))
 
-      (dk xah-fly-key-map (kbd "w") 'next-window-any-frame)
-
       ;; Dumang keyboard customization (dedicated symbol keys replacing number row keys)
       ;; 1 2 3 4 5 6 7 8 9 0
       ;; ! @ # $ % ^ & * ( )
