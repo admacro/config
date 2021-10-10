@@ -32,10 +32,10 @@
       "manage.onlyUsercss.invert": false,
       "manage.actions.expanded": true,
       "manage.backup.expanded": true,
-      "manage.filters.expanded": true,
+      "manage.filters.expanded": false,
       "manage.newUI": true,
-      "manage.newUI.favicons": false,
-      "manage.newUI.faviconsGray": true,
+      "manage.newUI.favicons": true,
+      "manage.newUI.faviconsGray": false,
       "manage.newUI.targets": 3,
       "manage.newUI.sort": "title,asc",
       "editor.options": {},
@@ -45,7 +45,7 @@
       "editor.publish.expanded": true,
       "editor.lineWrapping": true,
       "editor.smartIndent": true,
-      "editor.indentWithTabs": false,
+      "editor.indentWithTabs": true,
       "editor.tabSize": 4,
       "editor.keyMap": "default",
       "editor.theme": "default",
@@ -66,7 +66,7 @@
       "editor.lintReportDelay": 500,
       "editor.matchHighlight": "token",
       "editor.autoCloseBrackets": true,
-      "editor.autocompleteOnTyping": false,
+      "editor.autocompleteOnTyping": true,
       "editor.contextDelete": true,
       "editor.selectByTokens": true,
       "editor.appliesToLineWidget": true,
@@ -74,13 +74,13 @@
       "editor.colorpicker": true,
       "editor.colorpicker.hexUppercase": false,
       "editor.colorpicker.hotkey": "",
-      "editor.colorpicker.color": "gray",
+      "editor.colorpicker.color": "hsl(120, 50%, 75%)",
       "editor.colorpicker.maxHeight": 247,
       "hotkey._execute_browser_action": "",
       "hotkey.openManage": "",
       "hotkey.styleDisableAll": "",
       "sync.enabled": "none",
-      "iconset": 1,
+      "iconset": 0,
       "badgeDisabled": "#8B0000",
       "badgeNormal": "#006666",
       "popupWidth": 246,
@@ -92,7 +92,7 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1575887161048,
-    "name": "wikipedia.org",
+    "name": "wikipedia",
     "sections": [
       {
         "code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #E8E3D9 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #E0DACC !important;\n}\n\n.wikitable > tr > th,\n.wikitable > * > tr > th {\n    background-color: #D7CEBC;\n}\n\nth.infobox-header {\n    background-color: #E0DACC !important;\n}\n\n.mw-body-content {\n    font-family: serif;\n    line-height: 1.3em;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre,\ncode {\n    font-size: 0.8em;\n    background: #E0DACC;\n    border-radius: 5px;\n    border-color: #D7CEBC;\n}\n\n/* code in table */\ncode.mw-highlight {\n    background: #D7CEBC;\n    border-color: #CDC2AC;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto auto;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
@@ -113,10 +113,10 @@
         ]
       }
     ],
-    "updateDate": 1632816123182,
+    "updateDate": 1633871619270,
     "id": 2,
     "_id": "fc3adba2-a349-422f-ad68-9be0e8d62c02",
-    "_rev": 1632968645259,
+    "_rev": 1633871619270,
     "_usw": {}
   },
   {
@@ -145,7 +145,7 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1575950569931,
-    "name": "xahlee.info",
+    "name": "xahlee",
     "sections": [
       {
         "code": "body {\n    background: #E8E3D9;\n}",
@@ -156,50 +156,10 @@
         ]
       }
     ],
-    "updateDate": 1631193353567,
+    "updateDate": 1633871768016,
     "id": 4,
     "_id": "f69e4bb5-3984-4485-ab08-d9150d36d11a",
-    "_rev": 1632968645259,
-    "_usw": {}
-  },
-  {
-    "enabled": true,
-    "updateUrl": null,
-    "url": null,
-    "installDate": 1576058879259,
-    "name": "fonts.google.com",
-    "sections": [
-      {
-        "code": "body {\n    -webkit-font-smoothing: subpixel-antialiased;\n}",
-        "domains": [
-          "fonts.google.com"
-        ]
-      }
-    ],
-    "updateDate": 1576058879259,
-    "id": 6,
-    "_id": "e2108f5d-a6e2-4746-9ec9-d3e2805667f2",
-    "_rev": 1629530273350,
-    "_usw": {}
-  },
-  {
-    "enabled": true,
-    "updateUrl": null,
-    "url": null,
-    "installDate": 1576663029119,
-    "name": "computationstructures.org",
-    "sections": [
-      {
-        "code": "div.content, div.transcript, div.check-yourself {\n    width: 800px;\n}\n\niframe {\n    width: 800px;\n    height: 640px;\n}",
-        "urlPrefixes": [
-          "https://computationstructures.org/videos/"
-        ]
-      }
-    ],
-    "updateDate": 1576669611041,
-    "id": 7,
-    "_id": "1acfdeda-c91d-45d8-b714-45ada17d6fde",
-    "_rev": 1629530273350,
+    "_rev": 1633871768016,
     "_usw": {}
   },
   {
@@ -220,46 +180,6 @@
     "id": 8,
     "_id": "bbed3a1e-d963-4dbd-97a2-668095f1d815",
     "_rev": 1629530273350,
-    "_usw": {}
-  },
-  {
-    "enabled": true,
-    "updateUrl": null,
-    "url": null,
-    "installDate": 1578887414309,
-    "name": "godoc.localhost",
-    "sections": [
-      {
-        "code": "body {\n    font-family: serif;\n    font-size: 1em;\n    background: #E8E3D9;\n}\n\ndiv#page {\n    max-width: 62%;\n    margin: auto;\n}\n\n#manual-nav {\n    font-family: monospace;\n    font-size: 16px;\n}\n\npre,\ncode {\n    background: #E0DACC;\n    font-family: monospace;\n    font-size: 16px;\n}\n\np {\n    font-family: serif;\n    font-size: 1.25em;\n    max-width: 100%;\n}\n\ndl dd {\n    font-size: 16px;\n}",
-        "urlPrefixes": [
-          "http://localhost:9000/"
-        ]
-      }
-    ],
-    "updateDate": 1578888387388,
-    "id": 9,
-    "_id": "36da4180-e5fa-4a21-9a6c-d94a6ddbdea2",
-    "_rev": 1632968645259,
-    "_usw": {}
-  },
-  {
-    "enabled": true,
-    "updateUrl": null,
-    "url": null,
-    "installDate": 1578888438269,
-    "name": "godoc.org",
-    "sections": [
-      {
-        "code": "body {\n    font-family: serif;\n    font-size: 16px;\n    background: #E8E3D9;\n}\n\ndiv.container {\n    max-width: 62%;\n    margin: auto;\n}\n\n.list-unstyled {\n    font-size: 1.25em;\n}\n\np {\n    font-family: serif;\n    font-size: 1.25em;\n    max-width: 100%;\n}\n\npre,\ncode,\n.jumbotron {\n    background: #E0DACC;\n    font-family: monospace;\n    font-size: 16px;\n}\n",
-        "urlPrefixes": [
-          "https://godoc.org/"
-        ]
-      }
-    ],
-    "updateDate": 1586914505127,
-    "id": 10,
-    "_id": "40d78d15-942a-4c9d-a3ea-dfe9c393cd58",
-    "_rev": 1632968645259,
     "_usw": {}
   },
   {
@@ -287,7 +207,7 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1579522516852,
-    "name": "github.com",
+    "name": "github",
     "sections": [
       {
         "code": ":root,\n[data-color-mode=light][data-light-theme=light] {\n    --color-fg-default: #000000;\n    --color-canvas-default: #E8E3D9;\n    --color-canvas-overlay: #E8E3D9;\n    --color-canvas-subtle: #E0DACC;\n    --color-border-default: #C4B79C;\n    --color-border-muted: #C4B79C;\n    --color-accent-fg: #004d74;\n    --color-canvas-inset: #E0DACC;\n    --color-neutral-subtle: #E0DACC;\n    --color-sidenav-selected-bg: #E8E3D9;\n    --color-btn-bg: #E0DACC;\n    --color-btn-hover-bg: #D7CEBC;\n    --color-btn-active-bg: #E8E3D9;\n    --color-page-header-bg: #E0DACC;\n    --color-calendar-graph-day-bg: #E0DACC;\n    --color-calendar-graph-day-border: #D7CEBC;\n}",
@@ -296,10 +216,10 @@
         ]
       }
     ],
-    "updateDate": 1633598290772,
+    "updateDate": 1633871806952,
     "id": 12,
     "_id": "d5205ad9-4977-4d4b-93a1-7658ade99380",
-    "_rev": 1633598290772,
+    "_rev": 1633871806952,
     "_usw": {}
   },
   {
@@ -327,7 +247,7 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1586747880968,
-    "name": "youtube.com",
+    "name": "youtube",
     "sections": [
       {
         "code": "/* hide youtube comments */\nytd-comments {\n    display: none;\n}\n\ndiv#related {\n    display: none;\n}\n\nytd-expander {\n    --ytd-expander-collapsed-height: 800px !important;\n}",
@@ -342,30 +262,10 @@
         ]
       }
     ],
-    "updateDate": 1594261206731,
+    "updateDate": 1633871779007,
     "_id": "5824946a-fc41-4583-b214-2622eb1436d7",
-    "_rev": 1632815135163,
+    "_rev": 1633871779007,
     "id": 14,
-    "_usw": {}
-  },
-  {
-    "enabled": false,
-    "updateUrl": null,
-    "url": null,
-    "installDate": 1586765589963,
-    "name": "go101.org",
-    "sections": [
-      {
-        "code": "body {\n    font-family: serif;\n    font-size: 2em;\n    line-height: 1.3em;\n    color: #020227;\n    background-color: #E8E3D9;\n}\n\ncode {\n    padding: 1px 3px;\n    font-size: 85%;\n    color: #020227;\n    background-color: #E0DACC;\n    border-radius: 3px;\n    margin: 0px 2px 0px 2px;\n}\n\ncode,\nkbd,\npre,\nsamp {\n    font-family: monospace;\n}\n\ncode[class*=\"language-\"],\npre[class*=\"language-\"] {\n    color: #020227;\n    background: #E0DACC;\n    font-family: monospace;\n    text-shadow: none;\n}\n\n.token.atrule,\n.token.attr-value,\n.token.keyword {\n    color: #005980;\n}\n\n.token.function {\n    color: #99113c;\n}\n\n.token.selector,\n.token.attr-name,\n.token.string,\n.token.char,\n.token.builtin,\n.token.inserted {\n    color: #017510;\n}\n\n.token.operator, .token.entity, .token.url, .language-css .token.string, .style .token.string {\n    color: #a67f59;\n    background: none;",
-        "domains": [
-          "go101.org"
-        ]
-      }
-    ],
-    "updateDate": 1586766720585,
-    "_id": "ac0ca43a-eaf9-459a-941d-d917d3f12e88",
-    "_rev": 1632968645259,
-    "id": 15,
     "_usw": {}
   },
   {
@@ -376,15 +276,15 @@
     "name": "pkg.go.dev",
     "sections": [
       {
-        "code": ".go-Main-article {\n    margin: var(--gap) auto 5rem auto;\n    width: 45rem;\n}\n\np {\n    font-family: serif;\n}\n\n.Container {\n    max-width: 45em;\n}\n\n.go-Banner {\n    display: none;\n}\n\n:root {\n    --gray-7: #C4B79C;\n    --gray-9: #D7CEBC;\n    --gray-10: #E0DACC;\n    --turq-dark: #006e89;\n    --white: #E8E3D9;\n    --green: #733900;\n}\n\n[data-theme='dark'] {\n    --color-brand-primary: var(--turq-dark);\n    --color-background: var(--white);\n    --color-background-accented: var(--gray-10);\n    --color-background-highlighted: var(--blue);\n    --color-background-highlighted-link: var(--blue-light);\n    --color-background-info: var(--gray-9);\n    --color-background-warning: var(--yellow-light);\n    --color-background-alert: var(--pink-light);\n    --color-border: var(--gray-7);\n    --color-text: var(--gray-1);\n    --color-text-subtle: var(--gray-4);\n    --color-code-comment: var(--green);\n}\n@media (prefers-color-scheme: dark) {\n    :root:not([data-theme='light']) {\n        --color-brand-primary: var(--turq-dark);\n        --color-background: var(--white);\n        --color-background-accented: var(--gray-10);\n        --color-background-highlighted: var(--blue);\n        --color-background-highlighted-link: var(--blue-light);\n        --color-background-info: var(--gray-9);\n        --color-background-warning: var(--yellow-light);\n        --color-background-alert: var(--pink-light);\n        --color-border: var(--gray-7);\n        --color-text: var(--gray-1);\n        --color-text-subtle: var(--gray-4);\n        --color-code-comment: var(--green);\n    }\n}\n.go-Icon--accented {\n    filter: brightness(0) invert(45%) sepia(94%) saturate(6735%) hue-rotate(176deg) brightness(94%)\n            contrast(101%);\n}\n\n[data-theme='dark'] .go-Icon:not(.go-Icon--accented) {\n    filter: none;\n}\n[data-theme='dark'] .go-Icon--accented {\n    filter: brightness(0) invert(45%) sepia(94%) saturate(6735%) hue-rotate(176deg) brightness(94%)\n            contrast(101%);\n}\n@media (prefers-color-scheme: dark) {\n    :root:not([data-theme='light']) .go-Icon:not(.go-Icon--accented) {\n        filter: none;\n    }\n    :root:not([data-theme='light']) .go-Icon--accented {\n        filter: brightness(0) invert(45%) sepia(94%) saturate(6735%) hue-rotate(176deg) brightness(94%)\n                contrast(101%);\n    }\n}\n\n[data-theme='dark'] .Homepage-logo {\n  mix-blend-mode: multiply;\n}\n@media (prefers-color-scheme: dark) {\n  :root:not([data-theme='light']) .Homepage-logo {\n    mix-blend-mode: multiply;\n  }\n}",
+        "code": ".go-Main-article {\n    margin: var(--gap) auto 5rem auto;\n    width: 45rem;\n}\n\np {\n    font-family: serif;\n}\n\n.Container {\n    max-width: 45em;\n}\n\n.go-Banner {\n    display: none;\n}\n\n:root {\n    --gray-7: #C4B79C;\n    --gray-9: #D7CEBC;\n    --gray-10: #E0DACC;\n    --turq-dark: #006e89;\n    --white: #E8E3D9;\n    --green: #733900;\n}\n\n[data-theme='dark'] {\n    --color-brand-primary: var(--turq-dark);\n    --color-background: var(--white);\n    --color-background-accented: var(--gray-10);\n    --color-background-highlighted: var(--blue);\n    --color-background-highlighted-link: var(--blue-light);\n    --color-background-info: var(--gray-9);\n    --color-background-warning: var(--yellow-light);\n    --color-background-alert: var(--pink-light);\n    --color-border: var(--gray-7);\n    --color-text: var(--gray-1);\n    --color-text-subtle: var(--gray-4);\n    --color-code-comment: var(--green);\n}\n@media (prefers-color-scheme: dark) {\n    :root:not([data-theme='light']) {\n        --color-brand-primary: var(--turq-dark);\n        --color-background: var(--white);\n        --color-background-accented: var(--gray-10);\n        --color-background-highlighted: var(--blue);\n        --color-background-highlighted-link: var(--blue-light);\n        --color-background-info: var(--gray-9);\n        --color-background-warning: var(--yellow-light);\n        --color-background-alert: var(--pink-light);\n        --color-border: var(--gray-7);\n        --color-text: var(--gray-1);\n        --color-text-subtle: var(--gray-4);\n        --color-code-comment: var(--green);\n    }\n}\n.go-Icon--accented {\n    filter: brightness(0) invert(45%) sepia(94%) saturate(6735%) hue-rotate(176deg) brightness(94%) contrast(101%);\n}\n\n[data-theme='dark'] .go-Icon:not(.go-Icon--accented) {\n    filter: none;\n}\n[data-theme='dark'] .go-Icon--accented {\n    filter: brightness(0) invert(45%) sepia(94%) saturate(6735%) hue-rotate(176deg) brightness(94%) contrast(101%);\n}\n@media (prefers-color-scheme: dark) {\n    :root:not([data-theme='light']) .go-Icon:not(.go-Icon--accented) {\n        filter: none;\n    }\n    :root:not([data-theme='light']) .go-Icon--accented {\n        filter: brightness(0) invert(45%) sepia(94%) saturate(6735%) hue-rotate(176deg) brightness(94%) contrast(101%);\n    }\n}\n\n[data-theme='dark'] .Homepage-logo {\n    mix-blend-mode: multiply;\n}\n@media (prefers-color-scheme: dark) {\n    :root:not([data-theme='light']) .Homepage-logo {\n        mix-blend-mode: multiply;\n    }\n}",
         "domains": [
           "pkg.go.dev"
         ]
       }
     ],
-    "updateDate": 1633803516688,
+    "updateDate": 1633879894525,
     "_id": "410a0e49-fc9f-4993-96ff-1b640cfea445",
-    "_rev": 1633803516688,
+    "_rev": 1633879894525,
     "id": 16,
     "_usw": {}
   },
@@ -413,7 +313,7 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1590499221157,
-    "name": "research.swtch.com",
+    "name": "Russ Cox's blog",
     "sections": [
       {
         "code": "body {\n    font-family: serif;\n    background: #E8E3D9 !important;\n}\n\n.main {\n    width: 40em;\n    font-size: 1.25em;\n}",
@@ -428,9 +328,9 @@
         ]
       }
     ],
-    "updateDate": 1630858395737,
+    "updateDate": 1633871562264,
     "_id": "171a5c9a-479b-4c61-a6d0-9a8a05a81a06",
-    "_rev": 1632968645259,
+    "_rev": 1633871562264,
     "id": 18,
     "_usw": {}
   },
@@ -445,9 +345,9 @@
         "code": "* {\n    -webkit-font-smoothing: auto !important;\n}"
       }
     ],
-    "updateDate": 1594541692765,
+    "updateDate": 1633866913348,
     "_id": "a0943cbe-d4ad-4753-b5c7-56b8199e0e7d",
-    "_rev": 1633783193233,
+    "_rev": 1633866913348,
     "id": 19,
     "_usw": {}
   },
@@ -456,7 +356,7 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1633582906171,
-    "name": "discord.com",
+    "name": "discord",
     "sections": [
       {
         "code": ".theme-light {\n    --saturation-factor: 10;\n    --text-normal: #000000;\n    --text-muted: #808080;\n    --text-link: #0000f5;\n    --interactive-active: #733900;\n    --background-primary: #E8E3D9;\n    --background-secondary: #E0DACC;\n    --background-secondary-alt: #D7CEBC;\n    --background-tertiary: #CDC2AC;\n    --channeltextarea-background: #D7CEBC;\n    --background-modifier-hover: #D7CEBC;\n    --background-modifier-active: #CDC2AC;\n    --background-modifier-selected: #CDC2AC;\n    --background-message-hover: #D7CEBC;\n    --background-floating: #E8E3D9;\n}\n\n:root {\n    --font-primary: sans-serif;\n    --font-code: monospace;\n}\n\n.messageContent-2qWWxC {\n    font-family: serif;\n}\n\ncode,\ncode.inline {\n    font-family: monospace !important;\n}\n\n.sidebar-2K8pFh {\n    width: 20%;\n}\n\n.guilds-1SWlCJ {\n    width: 4em;\n}\n\n.listItem-GuPuDH {\n    width: 4em;\n}",
@@ -465,9 +365,9 @@
         ]
       }
     ],
-    "updateDate": 1633671060844,
+    "updateDate": 1633871811598,
     "_id": "8ce8689f-c0f0-4804-a171-6f4f27aa0d28",
-    "_rev": 1633671060844,
+    "_rev": 1633871811598,
     "id": 20,
     "_usw": {}
   },
@@ -476,7 +376,7 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1633600788532,
-    "name": "www.gnu.org emacs manual",
+    "name": "gnu emacs manual",
     "sections": [
       {
         "code": "body {\n    background: #E8E3D9;\n}",
@@ -485,9 +385,9 @@
         ]
       }
     ],
-    "updateDate": 1633600795574,
+    "updateDate": 1633871798436,
     "_id": "70b1522b-5ecd-4450-9520-a66f3dbea69b",
-    "_rev": 1633600795574,
+    "_rev": 1633871798436,
     "id": 21,
     "_usw": {}
   },
@@ -499,16 +399,72 @@
     "name": "learn.dvorak.nl",
     "sections": [
       {
-        "code": "body {\n    background: #E0DACC;\n}\n\n#words,\n#words-outer,\n#all-inner,\n#border {\n    background: #E8E3D9;\n}\n\n#border {\n    border-radius: 0px;\n}\n\n#input:focus {\n    box-shadow: none;\n}\n\n.correct {\n    color: darkseagreen;\n}\n\n.incorrect {\n    color: #E8D9D9;\n    background: #970000;\n}\n\n#currentword {\n    background: #C4B79C;\n    border-radius: 0;\n}\n\n#currentword .correct {\n    color: #D9E8D9;\n}\n\n.nextword {\n    color: dimgray;\n}",
+        "code": "body {\n    background: #E0DACC;\n}\n\n#words,\n#words-outer,\n#all-inner,\n#border {\n    background: #E8E3D9;\n}\n\n#border {\n    border-radius: 0px;\n}\n\n#input:focus {\n    box-shadow: none;\n}\n\n.correct {\n    color: darkseagreen;\n}\n\n.incorrect {\n    color: #E8D9D9;\n    background: #970000;\n}\n\n#currentword {\n    background: #C4B79C;\n    border-radius: 0;\n}\n\n#currentword .correct {\n    color: #E8E3D9;\n}\n\n.nextword {\n    color: dimgray;\n}",
         "urlPrefixes": [
           "https://learn.dvorak.nl/"
         ]
       }
     ],
-    "updateDate": 1633714733295,
+    "updateDate": 1633866551262,
     "_id": "818417fb-fb80-444f-98e0-7c80f49863c0",
-    "_rev": 1633714733295,
+    "_rev": 1633866551262,
     "id": 22,
     "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1633864443321,
+    "name": "go.dev",
+    "sections": [
+      {
+        "code": "body {\n    font-family: sans-serif;\n    background: #E8E3D9;\n    color: #000000;\n}\n\na {\n    color: #006e89;\n}\n\nh2 {\n    background: #D7CEBC;\n}\n\nh1 {\n    font-size: 1.3em\n}\nh2 {\n    font-size: 1.25em\n}\nh3 {\n    font-size: 1.2em\n}\nh4 {\n    font-size: 1.15em\n}\nh5 {\n    font-size: 1.1em\n}\n\np {\n    font-family: serif;\n}\n\np.blogtitle {\n    font-family: sans-serif;\n}\n\n#blog pre,\n#content .code,\n#content .playground {\n    background: #E0DACC;\n}\n\n#blog .Article {\n    max-width: 45rem;\n}",
+        "urlPrefixes": [
+          "https://go.dev/blog/"
+        ]
+      }
+    ],
+    "updateDate": 1633866319156,
+    "_id": "38e1512a-1808-44f5-8121-1c38ecde086a",
+    "_rev": 1633866319156,
+    "id": 23
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": "https://userstyles.world/style/1463",
+    "installDate": 1633873283285,
+    "name": "Stylus UI",
+    "sections": [
+      {
+        "code": ":root {\n\t--adm-fg: #000000;\n\t--adm-bg: #E8E3D9;\n\t--adm-bg1: #E0DACC;\n\t--adm-bg2: #D7CEBC;\n\t--adm-bg3: #CDC2AC;\n\t--adm-bg4: #C4B79C;\n\t--adm-red: #970000;\n\t--adm-magenta: #8e005f;\n\t--adm-orange: #733900;\n\t--adm-green: #005600;\n\t--adm-cyan: #004d74;\n\t--adm-blue: #0000f5;\n\t--adm-purple: #7300ac;\n\t--adm-red-bg: #E8D9D9;\n\t--adm-magenta-bg: #E8D9E3;\n\t--adm-orange-bg: #E8E0D9;\n\t--adm-green-bg: #D9E8D9;\n\t--adm-cyan-bg: #D9E3E8;\n\t--adm-blue-bg: #D9D9E8;\n\t--adm-purple-bg: #E3D9E8;\n\t--white: white;\n}\n\nbody#stylus-manage,\nbody#stylus-edit,\nbody#stylus-options div#options {\n\tcolor: var(--adm-fg);\n\tbackground: var(--adm-bg);\n}\n\n#header {\n\tbackground: var(--adm-bg1);\n\tborder: none;\n\tbox-shadow: 0px 1px 5px gray;\n}\n\ninput,\nselect {\n\tbackground: transparent !important;\n}\n\nbutton {\n\tfont-size: 14px;\n\tfont-weight: bold;\n\tbackground-color: var(--adm-bg);\n\tborder-radius: 0.33rem;\n\tmargin-right: .2rem;\n}\n\nbutton:not(:disabled):hover {\n\tborder-color: currentColor;\n\tbox-shadow: 0px 0px 3px currentColor;\n}\n\nbutton:disabled,\nselect:disabled {\n\tbackground-color: lightgray !important;\n\tcolor: gray !important;\n}\n\n#save-button {\n\tcolor: darkgreen;\n\tbackground-color: lightgreen;\n}\n\n#file-all-styles {\n\tcolor: var(--adm-cyan);\n\tbackground-color: var(--adm-cyan-bg);\n}\n\n#unfile-all-styles {\n\tcolor: var(--adm-red);\n\tbackground-color: var(--adm-red-bg);\n}\n\n#cancel-button {\n\tcolor: var(--adm-orange);\n\tbackground-color: var(--adm-orange-bg);\n}\n\nbutton.remove-section {\n\tcolor: var(--adm-red);\n\tbackground-color: var(--adm-red-bg);\n}\n\n#beautify,\n.beautify-section {\n\tcolor: var(--adm-purple);\n\tbackground-color: var(--adm-purple-bg);\n}\n\n.CodeMirror {\n\tfont-size: 13px;\n\tbackground: var(--adm-bg);\n}\n\n.CodeMirror-gutters {\n\tborder-right: 1px solid #ddd;\n\tbackground-color: var(--adm-bg1);\n}\n\n/* this is a UI fix, not customization */\n#header #filters summary h2 {\n\tmargin-left: 0px;\n}",
+        "regexps": [
+          "chrome-extension.*clngdbkpkpeebahjckkjfobafhncgmne/.*html.*"
+        ]
+      }
+    ],
+    "updateDate": 1633886526948,
+    "_id": "3a724c52-6f81-4035-8416-c0526a78871c",
+    "_rev": 1633886880396,
+    "id": 24,
+    "_usw": {
+      "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdHlsZUlEIjoxNDYzLCJ1c2VySUQiOjE0OTl9.qoXVOcDnyfwEgg9UXuD0VcltaDpJixECOPUAwPfW0kL52T-z-8QVq8TFUDPKb-JYN22KNVyjPOSM6uSAtNyiVg",
+      "category": "Stylus UI",
+      "created_at": "2021-10-10T17:27:55.337210037Z",
+      "description": "custom light theme for Stylus UI mimicking a feeling of desert. the background colors are good for your eyes, especially at night.",
+      "display_name": "",
+      "homepage": "",
+      "id": 1463,
+      "license": "No License",
+      "mirror_url": "",
+      "name": "Desert Stylus UI",
+      "notes": "",
+      "original": "",
+      "preview_url": "https://userstyles.world/api/style/preview/1463.jpeg",
+      "updated_at": "2021-10-10T17:27:55.337210037Z",
+      "user_id": 1499,
+      "username": "admacro"
+    }
   }
 ]
