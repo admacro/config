@@ -38,6 +38,17 @@
                 (fg2 "#1C1C1C")
                 (fg3 "#262626")
                 (fg4 "#303030")
+
+                ;; grayed colors
+                (adm-red-gray     "#803F40")
+                (adm-magenta-gray "#7F3F6A")
+                (adm-orange-gray  "#806040")
+                (adm-green-gray   "#408040")
+                (adm-cyan-gray    "#406A7F")
+                (adm-blue-gray    "#40407F")
+                (adm-purple-gray  "#6A407F")
+                (adm-bg-gray "#816b40")
+                (adm-fg-gray "#6C6C6C")
                 ))
 
       (faces '(;; default
