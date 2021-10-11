@@ -2,12 +2,12 @@
   {
     "settings": {
       "openEditInWindow": true,
-      "openEditInWindow.popup": false,
+      "openEditInWindow.popup": true,
       "windowPosition": {
-        "height": 875,
-        "left": 66,
+        "left": 0,
         "top": 25,
-        "width": 1316
+        "width": 1280,
+        "height": 775
       },
       "show-badge": true,
       "disableAll": false,
@@ -36,7 +36,7 @@
       "manage.newUI": true,
       "manage.newUI.favicons": true,
       "manage.newUI.faviconsGray": false,
-      "manage.newUI.targets": 3,
+      "manage.newUI.targets": 5,
       "manage.newUI.sort": "title,asc",
       "editor.options": {},
       "editor.toc.expanded": true,
@@ -58,7 +58,23 @@
         "newline_between_rules": false,
         "preserve_newlines": true,
         "end_with_newline": false,
-        "indent_conditional": true
+        "indent_conditional": true,
+        "indent_size": 1,
+        "indent_char": "\t",
+        "translate_positions": [
+          {
+            "line": 11,
+            "ch": 24,
+            "sticky": "before",
+            "xRel": 5.796875
+          },
+          {
+            "line": 11,
+            "ch": 25,
+            "sticky": "before",
+            "xRel": 5.796875
+          }
+        ]
       },
       "editor.beautify.hotkey": "",
       "editor.lintDelay": 300,
@@ -67,7 +83,7 @@
       "editor.matchHighlight": "token",
       "editor.autoCloseBrackets": true,
       "editor.autocompleteOnTyping": true,
-      "editor.contextDelete": true,
+      "editor.contextDelete": false,
       "editor.selectByTokens": true,
       "editor.appliesToLineWidget": true,
       "editor.livePreview": true,
@@ -81,7 +97,7 @@
       "hotkey.styleDisableAll": "",
       "sync.enabled": "none",
       "iconset": 0,
-      "badgeDisabled": "#8B0000",
+      "badgeDisabled": "#8b0000",
       "badgeNormal": "#006666",
       "popupWidth": 246,
       "updateInterval": 24
@@ -95,28 +111,28 @@
     "name": "wikipedia",
     "sections": [
       {
-        "code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #E8E3D9 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #E0DACC !important;\n}\n\n.wikitable > tr > th,\n.wikitable > * > tr > th {\n    background-color: #D7CEBC;\n}\n\nth.infobox-header {\n    background-color: #E0DACC !important;\n}\n\n.mw-body-content {\n    font-family: serif;\n    line-height: 1.3em;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre,\ncode {\n    font-size: 0.8em;\n    background: #E0DACC;\n    border-radius: 5px;\n    border-color: #D7CEBC;\n}\n\n/* code in table */\ncode.mw-highlight {\n    background: #D7CEBC;\n    border-color: #CDC2AC;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto auto;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
+        "code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #E8E3D9 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #E0DACC !important;\n}\n\n.wikitable > tr > th,\n.wikitable > * > tr > th {\n    background-color: #D7CEBC;\n}\n\nth.infobox-header {\n    background-color: #E0DACC !important;\n}\n\n.mw-body-content {\n    font-family: serif;\n    line-height: 1.4;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre,\ncode {\n    font-size: 1rem;\n    background: #E0DACC;\n    border-radius: 5px;\n    border-color: #D7CEBC;\n}\n\n/* code in table */\ncode.mw-highlight {\n\tfont-size: 1rem;\n    background: #D7CEBC;\n    border-color: #CDC2AC;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto auto;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
         "domains": [
           "wikipedia.org"
         ]
       },
       {
-        "code": "#content {\n    width: 45em;\n}\n\n\n.mw-body-content {\n    font-size: 1.25em;\n}",
+        "code": "#content {\n    width: 50em;\n}\n\n\n.mw-body-content {\n    font-size: 1.1rem;\n}",
         "domains": [
           "en.wikipedia.org"
         ]
       },
       {
-        "code": "#content {\n    width: 45em;\n}\n\n.skin-vector .mw-body-content {\n    font-size: 1.25em;\n}",
+        "code": "#content {\n    width: 50em;\n}\n\n.skin-vector .mw-body-content {\n    font-size: 1.1rem;\n}",
         "domains": [
           "zh.wikipedia.org"
         ]
       }
     ],
-    "updateDate": 1633871619270,
+    "updateDate": 1633968932817,
     "id": 2,
     "_id": "fc3adba2-a349-422f-ad68-9be0e8d62c02",
-    "_rev": 1633871619270,
+    "_rev": 1633968932817,
     "_usw": {}
   },
   {
@@ -124,20 +140,26 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1575945904743,
-    "name": "golang pkg cmd doc ref blog",
+    "name": "go documents",
     "sections": [
       {
-        "code": "body {\n    font-family: sans-serif;\n    font-size: 1.15em;\n    background: #E8E3D9;\n    color: #000000;\n}\n\na { color: #006e89; }\n\nh2{ background: #D7CEBC; }\n\nh1 {font-size: 1.3em}\nh2 {font-size: 1.25em}\nh3 {font-size: 1.2em}\nh4 {font-size: 1.15em}\nh5 {font-size: 1.1em}\n\n.unruled a {\n    font-size: 1.25em !important;\n}\n\ndl dt,\ndl dd {\n    font-size: 1.1em;\n}\n\np {\n    font-family: serif;\n    line-height: 1.25em;\n}\n\n#page {\n    max-width: 45em;\n    margin: auto;\n}\n\npre,\ncode,\n#content .code,\n#content .playground {\n    background: #E0DACC;\n    font-family: Monospace;\n}\n\ncode {\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\np, li { max-width: 100%; }\ndiv.container li { font-family: serif; }\n\ndiv.play pre, div.play textarea, div.play .lines {\n    font-family: monospace;\n    font-size: 1.1rem;\n}\n\ndiv.play .input, div.play .input textarea, div.play .output, div.play .output pre {\n    background: #E0DACC;\n    color: #000000;\n}\n",
-        "regexps": [
-          "https.*golang.*(pkg|cmd|doc|ref)\\/.*",
-          "https.*blog\\.golang.*"
+        "code": "body {\n\tcolor: black;\n\tbackground: #E8E3D9;\n}\n\na {\n\tcolor: #006e89;\n}\n\nh2 {\n\tbackground: #D7CEBC;\n}\n\nh1 {\n\tfont-size: 1.8em\n}\nh2 {\n\tfont-size: 1.6em\n}\nh3 {\n\tfont-size: 1.4em\n}\nh4 {\n\tfont-size: 1.2em\n}\n\n#nav a,\ndl dt,\ndl dd {\n\tfont-size: 1.1em;\n}\n\np,\n#page li {\n\tfont-size: 1.1rem;\n\tfont-family: serif;\n\tline-height: 1.4;\n}\n\n#page {\n\tmax-width: 50em;\n\tmargin: auto;\n}\n\npre,\ncode {\n\tfont-size: 1rem;\n\tbackground: #E0DACC;\n}\n\ncode {\n\tborder-radius: 3px;\n\tpadding: 1px 3px;\n\tmargin: 0px 2px 0px 2px;\n}",
+        "urlPrefixes": [
+          "https://golang.org/doc/",
+          "https://golang.org/ref/"
+        ]
+      },
+      {
+        "code": "#page {\n\tmax-width: 100%;\n\tmargin: auto;\n}\n\n.comment,\n.comment-text {\n\tfont-size: 16px !important;\n}",
+        "urlPrefixes": [
+          "https://golang.org/doc/codewalk/"
         ]
       }
     ],
-    "updateDate": 1632970635082,
+    "updateDate": 1633968689162,
     "id": 3,
     "_id": "8d94715c-0a39-4126-8f3f-83deb37306e2",
-    "_rev": 1632970635082,
+    "_rev": 1633968689163,
     "_usw": {}
   },
   {
@@ -145,7 +167,7 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1575950569931,
-    "name": "xahlee",
+    "name": "Xah Lee",
     "sections": [
       {
         "code": "body {\n    background: #E8E3D9;\n}",
@@ -156,30 +178,10 @@
         ]
       }
     ],
-    "updateDate": 1633871768016,
+    "updateDate": 1633943299098,
     "id": 4,
     "_id": "f69e4bb5-3984-4485-ab08-d9150d36d11a",
-    "_rev": 1633871768016,
-    "_usw": {}
-  },
-  {
-    "enabled": true,
-    "updateUrl": null,
-    "url": null,
-    "installDate": 1578823139912,
-    "name": "golang codewalk",
-    "sections": [
-      {
-        "code": "#page {\n    max-width: 100%;\n    margin: auto;\n}\n\n.comment, .comment-text {\n    font-size: 16px !important;\n}",
-        "urlPrefixes": [
-          "https://golang.org/doc/codewalk/"
-        ]
-      }
-    ],
-    "updateDate": 1578823507759,
-    "id": 8,
-    "_id": "bbed3a1e-d963-4dbd-97a2-668095f1d815",
-    "_rev": 1629530273350,
+    "_rev": 1633943299098,
     "_usw": {}
   },
   {
@@ -187,19 +189,25 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1578901455814,
-    "name": "talks.golang.org",
+    "name": "go talks",
     "sections": [
       {
-        "code": "body {\n    font-family: serif;\n    background: white;\n    color: #020227;\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\narticle {\n    background: #E8E3D9 !important;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5 {\n    font-family: serif;\n    font-weight: bold;\n}\n\np, article > ul > li {\n    font-family: serif;\n    font-size: 1em;\n}\n\n.slides > article {\n    letter-spacing: 0px;\n    text-shadow: none;\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\n.code,\n.playground {\n    background: #E0DACC !important;\n    overflow: scroll;\n    border-radius: 6px;\n}\n\npre {\n    font-family: monospace;\n    line-height: 1.35em !important;\n}\n\ncode {\n    font-family: monospace;\n    background: #E0DACC;\n    font-size: 0.75em;\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n",
-        "urlPrefixes": [
-          "https://talks.golang.org/"
+        "code": "body {\n    color: #000000;\n    background: #E8E3D9;\n}\n\ndl, dd {\n    font-size: 1rem;\n}",
+        "domains": [
+          "talks.golang.org"
+        ]
+      },
+      {
+        "code": "body {\n    color: #000000;\n    background: #D7CEBC;\n}\n\narticle {\n\tbackground: #E8E3D9 !important;\n\tfont-family: sans-serif !important;\n    letter-spacing: 0px !important;\n    text-shadow: none !important;\n}\n\n.code,\n.playground {\n    background: #E0DACC !important;\n    overflow: scroll;\n    border-radius: 6px;\n    font-family: monospace;\n    line-height: 1.35em !important;\n}\n\ncode {\n    font-family: monospace;\n    background: #E0DACC;\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n",
+        "regexps": [
+          ".*talks.golang\\.org.*slide.*"
         ]
       }
     ],
-    "updateDate": 1578907727147,
+    "updateDate": 1633946731980,
     "id": 11,
     "_id": "38bf84da-e18c-494e-81db-39fcfcb33081",
-    "_rev": 1632968645259,
+    "_rev": 1633946731980,
     "_usw": {}
   },
   {
@@ -227,7 +235,7 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1583815528457,
-    "name": "tour.golang.org",
+    "name": "go tour",
     "sections": [
       {
         "code": "body {\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\n#file-editor .CodeMirror-lines, #file-editor .CodeMirror-gutters {\n    background: #F0EFEE;\n    font-family: monospace;\n}\n\n#file-editor .CodeMirror {\n    background: #F0EFEE;\n}\n\n.output > pre {\n    font-family: monospace;\n}\n\ndiv[vertical-slide] {\n    left: 38%;\n    right: 62%;\n}\n\ndiv#left-side {\n    width: 38%\n}\n\ndiv#right-side {\n    left: 38%\n}\n",
@@ -236,9 +244,9 @@
         ]
       }
     ],
-    "updateDate": 1587109267284,
+    "updateDate": 1633943270836,
     "_id": "f5a2413d-3521-4ebe-b4f2-1a97fd3cf07a",
-    "_rev": 1632816808479,
+    "_rev": 1633943270836,
     "id": 13,
     "_usw": {}
   },
@@ -273,18 +281,18 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1587273074814,
-    "name": "pkg.go.dev",
+    "name": "go packages",
     "sections": [
       {
-        "code": ".go-Main-article {\n    margin: var(--gap) auto 5rem auto;\n    width: 45rem;\n}\n\np {\n    font-family: serif;\n}\n\n.Container {\n    max-width: 45em;\n}\n\n.go-Banner {\n    display: none;\n}\n\n:root {\n    --gray-7: #C4B79C;\n    --gray-9: #D7CEBC;\n    --gray-10: #E0DACC;\n    --turq-dark: #006e89;\n    --white: #E8E3D9;\n    --green: #733900;\n}\n\n[data-theme='dark'] {\n    --color-brand-primary: var(--turq-dark);\n    --color-background: var(--white);\n    --color-background-accented: var(--gray-10);\n    --color-background-highlighted: var(--blue);\n    --color-background-highlighted-link: var(--blue-light);\n    --color-background-info: var(--gray-9);\n    --color-background-warning: var(--yellow-light);\n    --color-background-alert: var(--pink-light);\n    --color-border: var(--gray-7);\n    --color-text: var(--gray-1);\n    --color-text-subtle: var(--gray-4);\n    --color-code-comment: var(--green);\n}\n@media (prefers-color-scheme: dark) {\n    :root:not([data-theme='light']) {\n        --color-brand-primary: var(--turq-dark);\n        --color-background: var(--white);\n        --color-background-accented: var(--gray-10);\n        --color-background-highlighted: var(--blue);\n        --color-background-highlighted-link: var(--blue-light);\n        --color-background-info: var(--gray-9);\n        --color-background-warning: var(--yellow-light);\n        --color-background-alert: var(--pink-light);\n        --color-border: var(--gray-7);\n        --color-text: var(--gray-1);\n        --color-text-subtle: var(--gray-4);\n        --color-code-comment: var(--green);\n    }\n}\n.go-Icon--accented {\n    filter: brightness(0) invert(45%) sepia(94%) saturate(6735%) hue-rotate(176deg) brightness(94%) contrast(101%);\n}\n\n[data-theme='dark'] .go-Icon:not(.go-Icon--accented) {\n    filter: none;\n}\n[data-theme='dark'] .go-Icon--accented {\n    filter: brightness(0) invert(45%) sepia(94%) saturate(6735%) hue-rotate(176deg) brightness(94%) contrast(101%);\n}\n@media (prefers-color-scheme: dark) {\n    :root:not([data-theme='light']) .go-Icon:not(.go-Icon--accented) {\n        filter: none;\n    }\n    :root:not([data-theme='light']) .go-Icon--accented {\n        filter: brightness(0) invert(45%) sepia(94%) saturate(6735%) hue-rotate(176deg) brightness(94%) contrast(101%);\n    }\n}\n\n[data-theme='dark'] .Homepage-logo {\n    mix-blend-mode: multiply;\n}\n@media (prefers-color-scheme: dark) {\n    :root:not([data-theme='light']) .Homepage-logo {\n        mix-blend-mode: multiply;\n    }\n}",
+        "code": ".go-Main-article {\n    margin: var(--gap) auto 5rem auto;\n    max-width: 50rem;\n}\n\np {\n\tfont-size: 1.1rem;\n    font-family: serif;\n}\n\npre {\n\tfont-size: 1rem;\n}\n\n.go-Banner {\n    display: none;\n}\n\n:root {\n    --gray-7: #C4B79C;\n    --gray-9: #D7CEBC;\n    --gray-10: #E0DACC;\n    --turq-dark: #006e89;\n    --white: #E8E3D9;\n    --green: #733900;\n}\n\n[data-theme='dark'] {\n    --color-brand-primary: var(--turq-dark);\n    --color-background: var(--white);\n    --color-background-accented: var(--gray-10);\n    --color-background-highlighted: var(--blue);\n    --color-background-highlighted-link: var(--blue-light);\n    --color-background-info: var(--gray-9);\n    --color-background-warning: var(--yellow-light);\n    --color-background-alert: var(--pink-light);\n    --color-border: var(--gray-7);\n    --color-text: var(--gray-1);\n    --color-text-subtle: var(--gray-4);\n    --color-code-comment: var(--green);\n}\n@media (prefers-color-scheme: dark) {\n    :root:not([data-theme='light']) {\n        --color-brand-primary: var(--turq-dark);\n        --color-background: var(--white);\n        --color-background-accented: var(--gray-10);\n        --color-background-highlighted: var(--blue);\n        --color-background-highlighted-link: var(--blue-light);\n        --color-background-info: var(--gray-9);\n        --color-background-warning: var(--yellow-light);\n        --color-background-alert: var(--pink-light);\n        --color-border: var(--gray-7);\n        --color-text: var(--gray-1);\n        --color-text-subtle: var(--gray-4);\n        --color-code-comment: var(--green);\n    }\n}\n.go-Icon--accented {\n    filter: brightness(0) invert(45%) sepia(94%) saturate(6735%) hue-rotate(176deg) brightness(94%) contrast(101%);\n}\n\n[data-theme='dark'] .go-Icon:not(.go-Icon--accented) {\n    filter: none;\n}\n[data-theme='dark'] .go-Icon--accented {\n    filter: brightness(0) invert(45%) sepia(94%) saturate(6735%) hue-rotate(176deg) brightness(94%) contrast(101%);\n}\n@media (prefers-color-scheme: dark) {\n    :root:not([data-theme='light']) .go-Icon:not(.go-Icon--accented) {\n        filter: none;\n    }\n    :root:not([data-theme='light']) .go-Icon--accented {\n        filter: brightness(0) invert(45%) sepia(94%) saturate(6735%) hue-rotate(176deg) brightness(94%) contrast(101%);\n    }\n}\n\n[data-theme='dark'] .Homepage-logo {\n    mix-blend-mode: multiply;\n}\n@media (prefers-color-scheme: dark) {\n    :root:not([data-theme='light']) .Homepage-logo {\n        mix-blend-mode: multiply;\n    }\n}",
         "domains": [
           "pkg.go.dev"
         ]
       }
     ],
-    "updateDate": 1633879894525,
+    "updateDate": 1633969588504,
     "_id": "410a0e49-fc9f-4993-96ff-1b640cfea445",
-    "_rev": 1633879894525,
+    "_rev": 1633969588504,
     "id": 16,
     "_usw": {}
   },
@@ -293,7 +301,7 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1587817261335,
-    "name": "play.golang.org",
+    "name": "go playground",
     "sections": [
       {
         "code": "#wrap, #about {\n    margin: 0 38.2% 0 0;\n    background: #E8E3D9;\n    bottom: 0;\n}\n\n#code, #output, pre, .lines {\n    font-family: monospace;\n    font-size: 12pt;\n}\n\n#output {\n    top: 50px;\n    left: 61.8%;\n}",
@@ -302,9 +310,9 @@
         ]
       }
     ],
-    "updateDate": 1631253293981,
+    "updateDate": 1633943211695,
     "_id": "bf3e8011-3756-4165-8b47-bd571d5ab36a",
-    "_rev": 1632968645259,
+    "_rev": 1633943211695,
     "id": 17,
     "_usw": {}
   },
@@ -313,7 +321,7 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1590499221157,
-    "name": "Russ Cox's blog",
+    "name": "Russ Cox",
     "sections": [
       {
         "code": "body {\n    font-family: serif;\n    background: #E8E3D9 !important;\n}\n\n.main {\n    width: 40em;\n    font-size: 1.25em;\n}",
@@ -328,9 +336,9 @@
         ]
       }
     ],
-    "updateDate": 1633871562264,
+    "updateDate": 1633943288095,
     "_id": "171a5c9a-479b-4c61-a6d0-9a8a05a81a06",
-    "_rev": 1633871562264,
+    "_rev": 1633943288095,
     "id": 18,
     "_usw": {}
   },
@@ -339,15 +347,15 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1594541531004,
-    "name": "antiantialiased",
+    "name": "global fonts",
     "sections": [
       {
-        "code": "* {\n    -webkit-font-smoothing: auto !important;\n}"
+        "code": "/* \n使用全局字体设定的基本准则：\n- 全局字体设定将被应用于所有网站，但一般会被各个网站覆盖。\n- 有大量文字的网站需单独指定字体，如文档、百科和博客等。\n*/\n* {\n\tletter-spacing: 0 !important;\n\t-webkit-font-smoothing: auto !important;\n}\n\nbody {\n\tfont-family: sans-serif;\n}\n\npre,\ncode {\n\tfont-family: monospace;\n}"
       }
     ],
-    "updateDate": 1633866913348,
+    "updateDate": 1633959030271,
     "_id": "a0943cbe-d4ad-4753-b5c7-56b8199e0e7d",
-    "_rev": 1633866913348,
+    "_rev": 1633959030271,
     "id": 19,
     "_usw": {}
   },
@@ -396,18 +404,18 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1633701408064,
-    "name": "learn.dvorak.nl",
+    "name": "dvorak tpying training",
     "sections": [
       {
         "code": "body {\n    background: #E0DACC;\n}\n\n#words,\n#words-outer,\n#all-inner,\n#border {\n    background: #E8E3D9;\n}\n\n#border {\n    border-radius: 0px;\n}\n\n#input:focus {\n    box-shadow: none;\n}\n\n.correct {\n    color: darkseagreen;\n}\n\n.incorrect {\n    color: #E8D9D9;\n    background: #970000;\n}\n\n#currentword {\n    background: #C4B79C;\n    border-radius: 0;\n}\n\n#currentword .correct {\n    color: #E8E3D9;\n}\n\n.nextword {\n    color: dimgray;\n}",
-        "urlPrefixes": [
-          "https://learn.dvorak.nl/"
+        "domains": [
+          "learn.dvorak.nl"
         ]
       }
     ],
-    "updateDate": 1633866551262,
+    "updateDate": 1633958248056,
     "_id": "818417fb-fb80-444f-98e0-7c80f49863c0",
-    "_rev": 1633866551262,
+    "_rev": 1633958248056,
     "id": 22,
     "_usw": {}
   },
@@ -416,26 +424,27 @@
     "updateUrl": null,
     "url": null,
     "installDate": 1633864443321,
-    "name": "go.dev",
+    "name": "go blog",
     "sections": [
       {
-        "code": "body {\n    font-family: sans-serif;\n    background: #E8E3D9;\n    color: #000000;\n}\n\na {\n    color: #006e89;\n}\n\nh2 {\n    background: #D7CEBC;\n}\n\nh1 {\n    font-size: 1.3em\n}\nh2 {\n    font-size: 1.25em\n}\nh3 {\n    font-size: 1.2em\n}\nh4 {\n    font-size: 1.15em\n}\nh5 {\n    font-size: 1.1em\n}\n\np {\n    font-family: serif;\n}\n\np.blogtitle {\n    font-family: sans-serif;\n}\n\n#blog pre,\n#content .code,\n#content .playground {\n    background: #E0DACC;\n}\n\n#blog .Article {\n    max-width: 45rem;\n}",
+        "code": "body {\n\tbackground: #E8E3D9;\n}\n\na {\n\tcolor: #006e89;\n}\n\n.Article p,\n.Article li,\n.Arcitle ol {\n\tcolor: black;\n\tfont: normal 1.1rem serif;\n\tline-height: 1.4em;\n}\n\np.blogtitle {\n\tfont-family: sans-serif;\n}\n\npre,\ncode {\n\tcolor: black !important;\n\tfont-size: 1rem !important;\n\tbackground: #E0DACC !important;\n}\n\n#blog .Article {\n\tmax-width: 50rem;\n}",
         "urlPrefixes": [
           "https://go.dev/blog/"
         ]
       }
     ],
-    "updateDate": 1633866319156,
+    "updateDate": 1633960270744,
     "_id": "38e1512a-1808-44f5-8121-1c38ecde086a",
-    "_rev": 1633866319156,
-    "id": 23
+    "_rev": 1633960270744,
+    "id": 23,
+    "_usw": {}
   },
   {
     "enabled": true,
     "updateUrl": null,
     "url": "https://userstyles.world/style/1463",
     "installDate": 1633873283285,
-    "name": "Stylus UI",
+    "name": "Desert Stylus UI",
     "sections": [
       {
         "code": ":root {\n\t--adm-fg: #000000;\n\t--adm-bg: #E8E3D9;\n\t--adm-bg1: #E0DACC;\n\t--adm-bg2: #D7CEBC;\n\t--adm-bg3: #CDC2AC;\n\t--adm-bg4: #C4B79C;\n\t--adm-red: #970000;\n\t--adm-magenta: #8e005f;\n\t--adm-orange: #733900;\n\t--adm-green: #005600;\n\t--adm-cyan: #004d74;\n\t--adm-blue: #0000f5;\n\t--adm-purple: #7300ac;\n\t--adm-red-bg: #E8D9D9;\n\t--adm-magenta-bg: #E8D9E3;\n\t--adm-orange-bg: #E8E0D9;\n\t--adm-green-bg: #D9E8D9;\n\t--adm-cyan-bg: #D9E3E8;\n\t--adm-blue-bg: #D9D9E8;\n\t--adm-purple-bg: #E3D9E8;\n\t--white: white;\n}\n\nbody#stylus-manage,\nbody#stylus-edit,\nbody#stylus-options div#options {\n\tcolor: var(--adm-fg);\n\tbackground: var(--adm-bg);\n}\n\n#header {\n\tbackground: var(--adm-bg1);\n\tborder: none;\n\tbox-shadow: 0px 1px 5px gray;\n}\n\ninput,\nselect {\n\tbackground: transparent !important;\n}\n\nbutton {\n\tfont-size: 14px;\n\tfont-weight: bold;\n\tbackground-color: var(--adm-bg);\n\tborder-radius: 0.33rem;\n\tmargin-right: .2rem;\n}\n\nbutton:not(:disabled):hover {\n\tborder-color: currentColor;\n\tbox-shadow: 0px 0px 3px currentColor;\n}\n\nbutton:disabled,\nselect:disabled {\n\tbackground-color: lightgray !important;\n\tcolor: gray !important;\n}\n\n#save-button {\n\tcolor: darkgreen;\n\tbackground-color: lightgreen;\n}\n\n#file-all-styles {\n\tcolor: var(--adm-cyan);\n\tbackground-color: var(--adm-cyan-bg);\n}\n\n#unfile-all-styles {\n\tcolor: var(--adm-red);\n\tbackground-color: var(--adm-red-bg);\n}\n\n#cancel-button {\n\tcolor: var(--adm-orange);\n\tbackground-color: var(--adm-orange-bg);\n}\n\nbutton.remove-section {\n\tcolor: var(--adm-red);\n\tbackground-color: var(--adm-red-bg);\n}\n\n#beautify,\n.beautify-section {\n\tcolor: var(--adm-purple);\n\tbackground-color: var(--adm-purple-bg);\n}\n\n.CodeMirror {\n\tfont-size: 13px;\n\tbackground: var(--adm-bg);\n}\n\n.CodeMirror-gutters {\n\tborder-right: 1px solid #ddd;\n\tbackground-color: var(--adm-bg1);\n}\n\n/* this is a UI fix, not customization */\n#header #filters summary h2 {\n\tmargin-left: 0px;\n}",
@@ -444,9 +453,9 @@
         ]
       }
     ],
-    "updateDate": 1633886526948,
+    "updateDate": 1633928181572,
     "_id": "3a724c52-6f81-4035-8416-c0526a78871c",
-    "_rev": 1633886880396,
+    "_rev": 1633928181572,
     "id": 24,
     "_usw": {
       "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdHlsZUlEIjoxNDYzLCJ1c2VySUQiOjE0OTl9.qoXVOcDnyfwEgg9UXuD0VcltaDpJixECOPUAwPfW0kL52T-z-8QVq8TFUDPKb-JYN22KNVyjPOSM6uSAtNyiVg",
