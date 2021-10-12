@@ -6,7 +6,7 @@
       "windowPosition": {
         "left": 0,
         "top": 25,
-        "width": 1280,
+        "width": 661,
         "height": 775
       },
       "show-badge": true,
@@ -50,27 +50,27 @@
       "editor.keyMap": "default",
       "editor.theme": "default",
       "editor.beautify": {
-        "selector_separator_newline": true,
-        "newline_before_open_brace": false,
-        "newline_after_open_brace": true,
-        "newline_between_properties": true,
-        "newline_before_close_brace": true,
-        "newline_between_rules": false,
-        "preserve_newlines": true,
         "end_with_newline": false,
+        "indent_char": "\t",
         "indent_conditional": true,
         "indent_size": 1,
-        "indent_char": "\t",
+        "newline_after_open_brace": true,
+        "newline_before_close_brace": true,
+        "newline_before_open_brace": false,
+        "newline_between_properties": true,
+        "newline_between_rules": false,
+        "preserve_newlines": true,
+        "selector_separator_newline": true,
         "translate_positions": [
           {
-            "line": 11,
             "ch": 24,
+            "line": 11,
             "sticky": "before",
             "xRel": 5.796875
           },
           {
-            "line": 11,
             "ch": 25,
+            "line": 11,
             "sticky": "before",
             "xRel": 5.796875
           }
@@ -407,15 +407,15 @@
     "name": "dvorak tpying training",
     "sections": [
       {
-        "code": "body {\n    background: #E0DACC;\n}\n\n#words,\n#words-outer,\n#all-inner,\n#border {\n    background: #E8E3D9;\n}\n\n#border {\n    border-radius: 0px;\n}\n\n#input:focus {\n    box-shadow: none;\n}\n\n.correct {\n    color: darkseagreen;\n}\n\n.incorrect {\n    color: #E8D9D9;\n    background: #970000;\n}\n\n#currentword {\n    background: #C4B79C;\n    border-radius: 0;\n}\n\n#currentword .correct {\n    color: #E8E3D9;\n}\n\n.nextword {\n    color: dimgray;\n}",
+        "code": "body {\n    background: #E0DACC;\n}\n\n#words,\n#words-outer,\n#all-inner,\n#border {\n    background: #E8E3D9;\n}\n\n#border {\n    border-radius: 0px;\n}\n\n#input:focus {\n    box-shadow: none;\n}\n\n.correct {\n    color: #408040;\n}\n\n.incorrect {\n    color: #E8D9D9;\n    background: #970000;\n}\n\n#currentword {\n    background: #CDC2AC;\n    border-radius: 0;\n}\n\n#currentword .correct {\n    color: #D9E8D9;\n}\n\n.nextword {\n    color: #6C6C6C;\n}",
         "domains": [
           "learn.dvorak.nl"
         ]
       }
     ],
-    "updateDate": 1633958248056,
+    "updateDate": 1634048667342,
     "_id": "818417fb-fb80-444f-98e0-7c80f49863c0",
-    "_rev": 1633958248056,
+    "_rev": 1634048667342,
     "id": 22,
     "_usw": {}
   },
