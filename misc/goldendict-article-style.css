@@ -1,5 +1,5 @@
 html {
-    background: #EBE3E1;
+    background: #E0DACC;
 }
 
 body,
@@ -10,7 +10,7 @@ body,
 .mdict .results .ds-list,
 .gdactivearticle .gddictname,
 .gddictname {
-    font-size: 16px !important;
+    font-size: 1.1rem !important;
 }
 
 body,
@@ -45,13 +45,13 @@ blockquote font b {
 }
 
 body {
-    background: #EBE3E1;
-    line-height:130%;
+    background: #E0DACC;
+    line-height:1.4;
 }
 
 .mdict,
 .gdarticle {
-    background: #F8F5F4;
+    background: #E8E3D9;
 }
 
 .mdict .subject {
@@ -61,7 +61,7 @@ body {
 }
 
 .mdict font {
-    line-height:130% !important;    
+    line-height:1.4 !important;    
 }
 
 .mdict .sds-list {
@@ -71,7 +71,7 @@ body {
 .mdict .results,
 .mdict .results .ds-single,
 .mdict .results .ds-list {
-    line-height:130% !important;
+    line-height:1.4 !important;
     margin-left: 1em;
 }
 
@@ -87,7 +87,7 @@ body {
 blockquote {
     -webkit-margin-before: 0.5em !important;
     -webkit-margin-after: 0em !important;
-    -webkit-margin-end: 20px !important;
+    -webkit-margin-end: 1.25em !important;
 }
 
 blockquote font b {
@@ -107,11 +107,42 @@ blockquote font b {
     color: #8b2323;
 }
 
+.gdarticle {
+    border-color: #C4B79C;
+}
+
+
+.gdactivearticle {
+    border-color: #733900;
+}
+
+.gddictname {
+    font-family: sans-serif;
+    color: #816b40;
+    background-color: #D7CEBC;
+    border-top-color: #C4B79C !important;
+    border-right-color: #C4B79C !important;
+}
+
 .gdactivearticle .gddictname {
-    background-color: #EBE3E1;
-    color: #103B78;
+    color: #E8E3D9;
+    background-color: #816b40;
+    border-top-color: #733900 !important;
+    border-right-color: #733900 !important;
 }
 
 .gddicticon {
     display: none;
+}
+
+.mdict .etyseg {
+    background-color: #E0DACC !important;
+}
+
+.mdict > div[style="display:block;background-color:#f9f4bb;"] {
+    background-color: #E0DACC !important;
+}
+
+.mdict span[style="color: black; background-color: #f9f4bb;font-weight:bold;"] {
+    background-color: transparent !important;
 }
