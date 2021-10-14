@@ -15,7 +15,7 @@ Always cycle the margin width in this order: 20 cells, 0 (no margin)."
 (defun writting-mode()
   "writting-mode removes all unnecessary UI elements from current buffer window."
   (interactive)
-  (set-window-margins nil 25 25)
+  ;; (set-window-margins nil 25 25)
   (visual-line-mode 1)
   (display-line-numbers-mode 0)
   (setq mode-line-format nil)
