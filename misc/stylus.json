@@ -4,10 +4,10 @@
       "openEditInWindow": true,
       "openEditInWindow.popup": true,
       "windowPosition": {
-        "left": 0,
-        "top": 25,
-        "width": 661,
-        "height": 775
+        "left": 397,
+        "top": 44,
+        "width": 624,
+        "height": 766
       },
       "show-badge": true,
       "disableAll": false,
@@ -111,7 +111,7 @@
     "name": "wikipedia",
     "sections": [
       {
-        "code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #E8E3D9 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text > div > table {\n    background: #E0DACC !important;\n}\n\n.wikitable > tr > th,\n.wikitable > * > tr > th {\n    background-color: #D7CEBC;\n}\n\nth.infobox-header {\n    background-color: #E0DACC !important;\n}\n\n.mw-body-content {\n    font-family: serif;\n    line-height: 1.4;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre,\ncode {\n    font-size: 1rem;\n    background: #E0DACC;\n    border-radius: 5px;\n    border-color: #D7CEBC;\n}\n\n/* code in table */\ncode.mw-highlight {\n\tfont-size: 1rem;\n    background: #D7CEBC;\n    border-color: #CDC2AC;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto auto;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
+        "code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #E8E3D9 !important;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text table {\n    background: #E0DACC !important;\n}\n\n.wikitable > tr > th,\n.wikitable > * > tr > th{\n    background-color: #D7CEBC;\n}\n\nth.infobox-header {\n    background-color: #E0DACC !important;\n}\n\n.mw-body-content {\n    font-family: serif;\n    line-height: 1.4;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre,\ncode {\n    font-size: 1rem;\n    background: #E0DACC;\n    border-radius: 5px;\n    border-color: #D7CEBC;\n}\n\n/* code in table */\ncode.mw-highlight {\n\tfont-size: 1rem;\n    background: #D7CEBC;\n    border-color: #CDC2AC;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto auto;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
         "domains": [
           "wikipedia.org"
         ]
@@ -129,10 +129,10 @@
         ]
       }
     ],
-    "updateDate": 1633968932817,
+    "updateDate": 1634366693785,
     "id": 2,
     "_id": "fc3adba2-a349-422f-ad68-9be0e8d62c02",
-    "_rev": 1633968932817,
+    "_rev": 1634366693785,
     "_usw": {}
   },
   {
