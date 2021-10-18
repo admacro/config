@@ -30,7 +30,6 @@ export_bin_path() {
 
 export_bin_path $(go env GOPATH) GOPATH # Go
 export_bin_path $(/usr/libexec/java_home) JAVA_HOME # Java
-export_bin_path ~/Applications/apache-maven-3.6.3 MVN_HOME # Maven
 export_bin_path /usr/local/opt/python/libexec # Python (Homebrew)
 
 # Ruby
