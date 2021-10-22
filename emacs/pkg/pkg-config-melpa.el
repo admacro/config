@@ -5,7 +5,8 @@
   (delete-window))
 
 (defun switch-input-source--US()
-  "Switch Mac OS input source to U.S."
+  "Switch Mac OS input source to U.S.
+External command util: https://github.com/vovkasm/input-source-switcher"
   ;; shell-command creates a buffer *Shell Command Output*
   ;; shell-command-to-string does not, but catches the output
   ;; http://ergoemacs.org/emacs/elisp_call_shell_command.html
