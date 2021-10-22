@@ -1,15 +1,33 @@
 ;; xah fly keys (default layout is dvorak)
+(defun close-current-buffer-and-delete-window()
+  (interactive)
+  (xah-close-current-buffer)
+  (delete-window))
+
+(defun switch-input-source--US()
+  "Switch Mac OS input source to U.S."
+  ;; shell-command creates a buffer *Shell Command Output*
+  ;; shell-command-to-string does not, but catches the output
+  ;; http://ergoemacs.org/emacs/elisp_call_shell_command.html
+  (shell-command-to-string "issw com.apple.keylayout.US"))
+
+(defun chinese-insert-mode-activate()
+  "Switch Mac OS input source to Chinese Pinyin when activating insert mode"
+  (interactive)
+  (shell-command-to-string "issw com.apple.inputmethod.SCIM.ITABC")
+  (xah-fly-insert-mode-activate))
+
 (cp 'xah-fly-keys
     (lambda()
       (require 'xah-fly-keys)
       (xah-fly-keys-set-layout "dvorak")
       (xah-fly-keys 1)
 
-      (lk xah-fly-t-keymap (kbd "h")
-          (lambda() "close-current-buffer-and-delete-window"
-            (interactive)
-            (xah-close-current-buffer)
-            (delete-window)))
+      ;; auto input source switching when mode changes
+      (add-hook 'xah-fly-command-mode-activate-hook 'switch-input-source--US)
+      (dk xah-fly-leader-key-map (kbd "DEL") 'chinese-insert-mode-activate)
+
+      (dk xah-fly-t-keymap (kbd "h") 'close-current-buffer-and-delete-window)
 
       ;; Dumang keyboard customization (dedicated symbol keys replacing number row keys)
       ;; 1 2 3 4 5 6 7 8 9 0
