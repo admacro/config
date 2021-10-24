@@ -24,5 +24,5 @@ calling the function passed in"
 (defalias 'gsk 'global-set-key)
 (defalias 'atl 'add-to-list)
 
-(load (fp "pkg-config-builtin"))
-(load (fp "pkg-config-melpa"))
+(load (get-full-path "pkg-config-builtin"))
+(load (get-full-path "pkg-config-melpa"))

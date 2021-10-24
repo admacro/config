@@ -6,9 +6,7 @@
 
 ;; Packages for basic editing, file navigation, search, etc.
 (setq package-list-fundamental
-      '(xah-fly-keys
-        smex
-        xah-find
+      '(smex
         find-file-in-repository
         markdown-mode
         magit
@@ -41,14 +39,6 @@
       '(yaml-mode
         json-mode))
 
-;; Packages for Web development
-(setq package-list-web
-      '(restclient))
-
-;; Packages for Ruby and Rails development
-(setq package-list-ruby
-      '(robe))
-
 ;; Package category name to package list mapping
 ;; Comment or uncomment an entry to uninstall or install a category
 (setq pkgHash (make-hash-table :test 'equal))
@@ -57,8 +47,6 @@
 (puthash "Java" package-list-java pkgHash)
 (puthash "Go" package-list-go pkgHash)
 (puthash "Extra Language Support" package-list-extra-lang pkgHash)
-;; (puthash "Web Development" package-list-web pkgHash)
-;; (puthash "Ruby & Rails" package-list-ruby pkgHash)
 
 (defun missing-packages ()
   "Return a list of packages that are not installed"

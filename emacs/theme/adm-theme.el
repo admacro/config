@@ -255,12 +255,13 @@
                (diredp-tagged-autofile-name :foreground ,adm-blue)
 
                ;; treemacs
-               ;; (treemacs-root-face :foreground ,adm-orange :weight bold)
-               ;; (treemacs-directory-face :foreground ,adm-purple)
-               ;; (treemacs-git-untracked-face :foreground ,adm-green :slant italic :underline t)
-               ;; (treemacs-git-added-face :foreground ,adm-green)
-               ;; (treemacs-git-modified-face :foreground ,adm-blue)
-               ;; (treemacs-tags-face :foreground ,adm-cyan)
+               (treemacs-root-face :foreground ,adm-fg :weight bold)
+               (treemacs-directory-face :foreground ,adm-cyan)
+               (treemacs-git-untracked-face :foreground ,adm-green :slant italic :underline t)
+               (treemacs-git-added-face :foreground ,adm-green)
+               (treemacs-git-modified-face :foreground ,adm-orange)
+               (treemacs-git-ignored-face :foreground ,adm-fg-gray)
+               (treemacs-tags-face :foreground ,adm-cyan)
 
                ;; term
                ;; (term :foreground ,adm-fg :background ,adm-bg)

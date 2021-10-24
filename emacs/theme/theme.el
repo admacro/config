@@ -1,6 +1,6 @@
-(load (fp "adm-theme"))
-(load (fp "adm-light-theme"))
-(load (fp "adm-dark-theme"))
+(load (get-full-path "adm-theme"))
+(load (get-full-path "adm-light-theme"))
+(load (get-full-path "adm-dark-theme"))
 
 (defun load-adm-theme ()
   "Use dark theme for night and light theme for day.
