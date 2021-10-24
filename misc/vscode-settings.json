@@ -3,7 +3,7 @@
   "editor.fontSize": 15,
   "editor.fontWeight": "normal",
   "editor.fontFamily": "sf mono",
-  "editor.lineHeight": 20,
+  "editor.lineHeight": 18,
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "none",
   "workbench.welcomePage.preferReducedMotion": true,
@@ -59,19 +59,29 @@
     "[Default Light+]": {
       "textMateRules": [
         {
-          "scope": "support.constant",
-          "settings": {
-            "foreground": "#000000",
-            "fontStyle": "italic"
-          }
-        },
-        {
-          "scope": "keyword",
-          "settings": {
-            "foreground": "#004d74",
-            "fontStyle": "bold"
-          }
+        "scope": [
+          "constant.language",
+          "constant.other"
+        ],
+        "settings": {
+          "foreground": "#7300ac",
+          "fontStyle": "italic"
         }
+      },
+        {
+        "scope": ["keyword", "storage.modifier"],
+        "settings": {
+          "foreground": "#004d74",
+          "fontStyle": "bold"
+        }
+      },
+        {
+        "scope": "keyword.operator",
+        "settings": {
+          "foreground": "#000000",
+          "fontStyle": "bold"
+        }
+      }
       ],
       "keywords": "#004d74",
       "comments": "#733900",

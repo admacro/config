@@ -11,7 +11,8 @@
         xah-find
         find-file-in-repository
         markdown-mode
-        magit))
+        magit
+        htmlize))
 
 ;; Packages for programming
 (setq package-list-prog
@@ -19,9 +20,13 @@
         highlight-numbers
         hl-todo
         flycheck
-        lsp-mode
         company
-        htmlize))
+        lsp-mode
+        dap-mode))
+
+;; Packages for Java programming
+(setq package-list-java
+      '(lsp-java))
 
 ;; Packages for Go programming
 (setq package-list-go
@@ -49,6 +54,7 @@
 (setq pkgHash (make-hash-table :test 'equal))
 (puthash "Fundamental" package-list-fundamental pkgHash)
 (puthash "Programming" package-list-prog pkgHash)
+(puthash "Java" package-list-java pkgHash)
 (puthash "Go" package-list-go pkgHash)
 (puthash "Extra Language Support" package-list-extra-lang pkgHash)
 ;; (puthash "Web Development" package-list-web pkgHash)
