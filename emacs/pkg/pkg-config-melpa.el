@@ -18,7 +18,8 @@
 
 ;; find file in repository
 (cp 'find-file-in-repository
-    (lambda() (gsk (kbd "<f7>") 'find-file-in-repository)))
+    (lambda()
+      (define-key xah-fly-leader-key-map (kbd "&") 'find-file-in-repository)))
 
 ;; lsp-mode
 (cp 'lsp-mode
@@ -70,6 +71,16 @@
       (setq company-tooltip-align-annotations t); Align annotation to the right side.
       (setq company-minimum-prefix-length 1)))
 
+(defun lsp-reorganize-code-before-save()
+  "reformat buffer and reorganize imports in lsp mode before saving the buffer"
+  (add-hook 'before-save-hook #'lsp-format-buffer t t)
+  (add-hook 'before-save-hook #'lsp-organize-imports t t))
+
+;; java-mode
+(cp 'lsp-java
+    (lambda()
+      (add-hook 'java-mode-hook 'lsp-reorganize-code-before-save)))
+
 ;; go-mode
 (cp 'go-mode
     (lambda()
@@ -77,10 +88,7 @@
       (setq go-fontify-function-calls nil)
       ;; format code and reorganize imports before saving buffer
       ;; https://github.com/golang/tools/blob/master/gopls/doc/emacs.md
-      (add-hook 'go-mode-hook
-                (lambda()
-                  (add-hook 'before-save-hook #'lsp-format-buffer t t)
-                  (add-hook 'before-save-hook #'lsp-organize-imports t t)))
+      (add-hook 'go-mode-hook 'lsp-reorganize-code-before-save)
       ;; go-run and go-test
       (setq go-test-verbose t)
       (setq go-test-args "-count=1")    ; bypass test caching

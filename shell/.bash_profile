@@ -1,5 +1,5 @@
 # Command prompt
-PS1="\u@\W$ "
+PS1="〔\u@\W〕"
 
 # Shortcuts
 alias cd..="cd .."
@@ -28,13 +28,9 @@ export_bin_path() {
     fi
 }
 
-export_bin_path $(go env GOPATH) GOPATH # Go
-export_bin_path $(/usr/libexec/java_home) JAVA_HOME # Java
+export_bin_path $(go env GOPATH) GOPATH
+export_bin_path $(/usr/libexec/java_home) JAVA_HOME
 export_bin_path /usr/local/opt/python/libexec # Python (Homebrew)
-
-# Ruby
-# eval "$(rbenv init -)"
-# export PATH="$HOME/.rbenv/shims:$PATH"
 
 # Misc
 if [ -r ~/.git_profile ]; then
@@ -45,9 +41,3 @@ if [ -r ~/.tumblr_profile ]; then
 fi
 
 export HOMEBREW_NO_AUTO_UPDATE=1
-
-# # Proxy
-# export https_proxy=http://127.0.0.1:6152
-# export http_proxy=http://127.0.0.1:6152
-# export all_proxy=socks5://127.0.0.1:6153
-

@@ -1,8 +1,3 @@
-;; hide emacs
-;; Ctrl-F4 moves focus to active or next window on mac os by default, but it doesn't work with emacs
-;; this is a hack to hide emacs window when Ctrl-F4 is pressed
-(gsk (kbd "C-<f4>") 'ns-do-hide-emacs)
-
 ;; code navigation
 (setq jump-map (make-hash-table :test 'eq))
 (gsk (kbd "<f6>")
