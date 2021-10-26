@@ -45,8 +45,8 @@
 (define-key dired-mode-map (kbd "s") 'xah-dired-sort)
 
 ;; Sh Mode
-(atl 'auto-mode-alist '("\\Procfile.*\\'" . sh-mode)) ; forego foreman/procfile
-(atl 'auto-mode-alist '("\\.*_profile\\'" . sh-mode)) ; .*_profile
+(add-to-list 'auto-mode-alist '("\\Procfile.*\\'" . sh-mode)) ; forego foreman/procfile
+(add-to-list 'auto-mode-alist '("\\.*_profile\\'" . sh-mode)) ; .*_profile
 
 ;; major modes in variable pitch mode
 (add-hook 'Info-mode-hook				; notice the mode name, it's Info, not info

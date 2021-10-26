@@ -256,7 +256,7 @@
 
                ;; treemacs
                (treemacs-root-face :foreground ,adm-fg :weight bold)
-               (treemacs-directory-face :foreground ,adm-cyan)
+               (treemacs-directory-face :foreground ,adm-fg)
                (treemacs-git-untracked-face :foreground ,adm-green :slant italic :underline t)
                (treemacs-git-added-face :foreground ,adm-green)
                (treemacs-git-modified-face :foreground ,adm-orange)
