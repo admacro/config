@@ -4,10 +4,10 @@
       "openEditInWindow": true,
       "openEditInWindow.popup": true,
       "windowPosition": {
+        "height": 766,
         "left": 397,
-        "top": 44,
-        "width": 624,
-        "height": 766
+        "top": 34,
+        "width": 624
       },
       "show-badge": true,
       "disableAll": false,
@@ -132,7 +132,7 @@
     "updateDate": 1634366693785,
     "id": 2,
     "_id": "fc3adba2-a349-422f-ad68-9be0e8d62c02",
-    "_rev": 1634366693785,
+    "_rev": 1635391058397,
     "_usw": {}
   },
   {
@@ -159,7 +159,7 @@
     "updateDate": 1633968689162,
     "id": 3,
     "_id": "8d94715c-0a39-4126-8f3f-83deb37306e2",
-    "_rev": 1633968689163,
+    "_rev": 1635391058397,
     "_usw": {}
   },
   {
@@ -181,7 +181,7 @@
     "updateDate": 1633943299098,
     "id": 4,
     "_id": "f69e4bb5-3984-4485-ab08-d9150d36d11a",
-    "_rev": 1633943299098,
+    "_rev": 1635391058397,
     "_usw": {}
   },
   {
@@ -207,7 +207,7 @@
     "updateDate": 1633946731980,
     "id": 11,
     "_id": "38bf84da-e18c-494e-81db-39fcfcb33081",
-    "_rev": 1633946731980,
+    "_rev": 1635391058397,
     "_usw": {}
   },
   {
@@ -227,7 +227,7 @@
     "updateDate": 1633871806952,
     "id": 12,
     "_id": "d5205ad9-4977-4d4b-93a1-7658ade99380",
-    "_rev": 1633871806952,
+    "_rev": 1635391058397,
     "_usw": {}
   },
   {
@@ -246,7 +246,7 @@
     ],
     "updateDate": 1633943270836,
     "_id": "f5a2413d-3521-4ebe-b4f2-1a97fd3cf07a",
-    "_rev": 1633943270836,
+    "_rev": 1635391058397,
     "id": 13,
     "_usw": {}
   },
@@ -272,7 +272,7 @@
     ],
     "updateDate": 1633871779007,
     "_id": "5824946a-fc41-4583-b214-2622eb1436d7",
-    "_rev": 1633871779007,
+    "_rev": 1635391058397,
     "id": 14,
     "_usw": {}
   },
@@ -292,7 +292,7 @@
     ],
     "updateDate": 1633969588504,
     "_id": "410a0e49-fc9f-4993-96ff-1b640cfea445",
-    "_rev": 1633969588504,
+    "_rev": 1635391058397,
     "id": 16,
     "_usw": {}
   },
@@ -312,7 +312,7 @@
     ],
     "updateDate": 1633943211695,
     "_id": "bf3e8011-3756-4165-8b47-bd571d5ab36a",
-    "_rev": 1633943211695,
+    "_rev": 1635391058397,
     "id": 17,
     "_usw": {}
   },
@@ -338,7 +338,7 @@
     ],
     "updateDate": 1633943288095,
     "_id": "171a5c9a-479b-4c61-a6d0-9a8a05a81a06",
-    "_rev": 1633943288095,
+    "_rev": 1635391058397,
     "id": 18,
     "_usw": {}
   },
@@ -355,7 +355,7 @@
     ],
     "updateDate": 1633959030271,
     "_id": "a0943cbe-d4ad-4753-b5c7-56b8199e0e7d",
-    "_rev": 1633959030271,
+    "_rev": 1635391058397,
     "id": 19,
     "_usw": {}
   },
@@ -375,7 +375,7 @@
     ],
     "updateDate": 1633871811598,
     "_id": "8ce8689f-c0f0-4804-a171-6f4f27aa0d28",
-    "_rev": 1633871811598,
+    "_rev": 1635391058397,
     "id": 20,
     "_usw": {}
   },
@@ -395,7 +395,7 @@
     ],
     "updateDate": 1633871798436,
     "_id": "70b1522b-5ecd-4450-9520-a66f3dbea69b",
-    "_rev": 1633871798436,
+    "_rev": 1635391058397,
     "id": 21,
     "_usw": {}
   },
@@ -415,7 +415,7 @@
     ],
     "updateDate": 1634048667342,
     "_id": "818417fb-fb80-444f-98e0-7c80f49863c0",
-    "_rev": 1634048667342,
+    "_rev": 1635391058397,
     "id": 22,
     "_usw": {}
   },
@@ -435,7 +435,7 @@
     ],
     "updateDate": 1633960270744,
     "_id": "38e1512a-1808-44f5-8121-1c38ecde086a",
-    "_rev": 1633960270744,
+    "_rev": 1635391058397,
     "id": 23,
     "_usw": {}
   },
@@ -455,7 +455,7 @@
     ],
     "updateDate": 1633928181572,
     "_id": "3a724c52-6f81-4035-8416-c0526a78871c",
-    "_rev": 1633928181572,
+    "_rev": 1635391058397,
     "id": 24,
     "_usw": {
       "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdHlsZUlEIjoxNDYzLCJ1c2VySUQiOjE0OTl9.qoXVOcDnyfwEgg9UXuD0VcltaDpJixECOPUAwPfW0kL52T-z-8QVq8TFUDPKb-JYN22KNVyjPOSM6uSAtNyiVg",
@@ -475,5 +475,24 @@
       "user_id": 1499,
       "username": "admacro"
     }
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1635404662255,
+    "name": "bitcoin wiki",
+    "sections": [
+      {
+        "code": "body,\n#content,\n#mw-head,\n#mw-page-base {\n    background: #E8E3D9 !important;\n}\n\n#content {\n    width: 50em;\n}\n\n.mw-body-content {\n    font-size: 1.1rem;\n}\n\n#toc,\n.infobox,\n.thumbinner,\n#mw-content-text table {\n    background: #E0DACC !important;\n}\n\n.wikitable th{\n    background-color: #D7CEBC;\n}\n\nth.infobox-header {\n    background-color: #E0DACC !important;\n}\n\n.mw-body-content {\n    font-family: serif;\n    line-height: 1.4;\n}\n\n.mw-body-content p {\n    margin: 0.75em 0;\n}\n\npre,\ncode {\n    font-size: 1rem;\n    background: #E0DACC;\n    border-radius: 5px;\n    border-color: #D7CEBC;\n}\n\n/* code in table */\ncode.mw-highlight {\n\tfont-size: 1rem;\n    background: #D7CEBC;\n    border-color: #CDC2AC;\n}\n\nh1,\nh2,\nh3,\nh4,\nh5,\nh6 {\n    border-bottom: none;\n    font-family: serif !important;\n}\n\n#content {\n    border: none;\n    margin: auto auto;\n}\n\n#mw-panel {\n    display: none;\n}\n\n#p-personal,\n#left-navigation,\n#p-views {\n    display: none;\n}\n\n#p-navigation,\n#p-interaction,\n#p-tb,\n#p-wikibase-otherprojects,\n#p-coll-print_export {\n    display: none;\n}",
+        "domains": [
+          "en.bitcoin.it"
+        ]
+      }
+    ],
+    "updateDate": 1635404953066,
+    "_id": "2fc7455a-72a0-47e0-bbeb-5714c7a13cb3",
+    "_rev": 1635404953066,
+    "id": 25
   }
 ]
