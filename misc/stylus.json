@@ -4,10 +4,10 @@
       "openEditInWindow": true,
       "openEditInWindow.popup": true,
       "windowPosition": {
-        "height": 766,
-        "left": 397,
-        "top": 34,
-        "width": 624
+        "left": 648,
+        "top": 195,
+        "width": 624,
+        "height": 766
       },
       "show-badge": true,
       "disableAll": false,
@@ -493,6 +493,26 @@
     "updateDate": 1635408092173,
     "_id": "2fc7455a-72a0-47e0-bbeb-5714c7a13cb3",
     "_rev": 1635408092173,
-    "id": 25
+    "id": 25,
+    "_usw": {}
+  },
+  {
+    "enabled": true,
+    "updateUrl": null,
+    "url": null,
+    "installDate": 1636365856355,
+    "name": "bitcoin developer",
+    "sections": [
+      {
+        "code": "body {\n    background: #E8E3D9 !important;\n}\n\ndiv.main .sphinxsidebar {\n\tfont-family: sans-serif;\n}\n\ndiv.main .document {\n\tfont-size: 1.1rem;\n\tfont-family: serif;\n}\n\n.col-md-9 {\n\tmax-width: 50rem;\n}\n\n.content-container {\n    max-width: 100%;\n}\n\ndiv.sphinxsidebar > div.sphinxsidebarwrapper h4 {\n    font-size: 1.3rem;\n    border-bottom: 1px solid #C4B79C;\n}\n\npre {\n    overflow: visible;\n    background-color: #E0DACC;\n}\n\n.highlight {\n    background-color: #E0DACC;\n    border: solid 1px #C4B79C;\n\twidth: fit-content;\n}\n\n.table-bordered thead th {\n    border-bottom-width: 2px;\n    background-color: #D7CEBC;\n}",
+        "domains": [
+          "developer.bitcoin.org"
+        ]
+      }
+    ],
+    "updateDate": 1636540549889,
+    "_id": "7bf2ddd1-856b-4cf1-bb1c-fb6fe2757a12",
+    "_rev": 1636540549889,
+    "id": 26
   }
 ]
