@@ -1,3 +1,5 @@
+# This function runs before prompt (80 chars long)
+precmd() { print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" }
 # Command prompt
 PS1="〔%n@%1~ %#〕"
 
@@ -11,6 +13,7 @@ alias la="l -a"
 alias lp="ls -p"
 alias h="history"
 alias treed="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
+alias dk="docker"
 
 # https://unix.stackexchange.com/questions/273861/unlimited-history-in-zsh
 HISTFILE="$HOME/.zsh_history"
@@ -49,8 +52,8 @@ export_bin_path() {
 # export_bin_path $(go env GOPATH) GOPATH
 export_bin_path $(/usr/libexec/java_home) JAVA_HOME
 export_bin_path /usr/local/opt/python/libexec # Python (Homebrew)
-
 export_bin_path "-Xms512m -Xmx1G" MAVEN_OPTS # options for JVM running maven
+export_bin_path /usr/local/opt/mysql@5.7  # mysql
 
 # Misc
 if [ -r ~/.git_profile ]; then
