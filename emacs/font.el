@@ -36,13 +36,13 @@
   "sets size of default font to user specified size for all active and future frames"
   (interactive)
   (let (size)
-    (setq size (read-number "Font size: " 15))
+    (setq size (read-number "Font size: " 14))
     (set-font-size size)))
 
 ;; default font families and size
 (setq proportional-font-family "SF Pro Text")
 (setq monospaced-font-family "SF Mono")
-(setq default-font-size 15)
+(setq default-font-size 14)
 
 (set-default-font)
 
