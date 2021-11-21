@@ -5,30 +5,15 @@
 (xah-fly-keys-set-layout "dvorak")
 (xah-fly-keys 1)
 
+;; by default, <f8> activates xah-fly-command-mode-activate-no-hook
+;; <f8> seems cannot be bound to xah-fly-command-mode-activate
+(global-set-key (kbd "<f9>") 'xah-fly-command-mode-activate)
+
 (defun close-current-buffer-and-delete-window()
   (interactive)
   (xah-close-current-buffer)
   (delete-window))
-
-(defun switch-input-source--US()
-  "Switch Mac OS input source to U.S.
-External command util: https://github.com/vovkasm/input-source-switcher"
-  ;; shell-command creates a buffer *Shell Command Output*
-  ;; shell-command-to-string does not, but catches the output
-  ;; http://ergoemacs.org/emacs/elisp_call_shell_command.html
-  (shell-command-to-string "issw com.apple.keylayout.US"))
-
-(defun chinese-insert-mode-activate()
-  "Switch Mac OS input source to Chinese Pinyin when activating insert mode"
-  (interactive)
-  (shell-command-to-string "issw com.apple.inputmethod.SCIM.ITABC")
-  (xah-fly-insert-mode-activate))
-
-;; auto input source switching when mode changes
-(add-hook 'xah-fly-command-mode-activate-hook 'switch-input-source--US)
-(define-key xah-fly-leader-key-map (kbd "DEL") 'chinese-insert-mode-activate)
-
-(define-key xah-fly-t-keymap (kbd "h") 'close-current-buffer-and-delete-window)
+ (define-key xah-fly-t-keymap (kbd "h") 'close-current-buffer-and-delete-window)
 
 ;; Dumang keyboard customization (dedicated symbol keys replacing number row keys)
 ;; 1 2 3 4 5 6 7 8 9 0

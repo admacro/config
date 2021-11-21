@@ -11,3 +11,4 @@
 (load (get-full-path "org/org"))
 (load (get-full-path "abbrevs"))
 (load (get-full-path "misc"))
+(load (get-full-path "xfk-config"))
