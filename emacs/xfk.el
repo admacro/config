@@ -15,6 +15,31 @@
   (delete-window))
  (define-key xah-fly-t-keymap (kbd "h") 'close-current-buffer-and-delete-window)
 
+(defun set-input-source(source)
+  ;; shell-command creates a buffer *Shell Command Output*
+  ;; shell-command-to-string does not, but catches the output
+  ;; http://ergoemacs.org/emacs/elisp_call_shell_command.html
+  (shell-command-to-string (format "issw %s" source))
+  (message "Input source is set to %s" source))
+
+(defun switch-to-last-input-source(source)
+  "Switch input source to last input source saved while entering chinese insert mode.
+External command util: https://github.com/vovkasm/input-source-switcher"
+  (set-input-source source)
+  (remove-hook 'xah-fly-command-mode-activate-hook 'switch-to-last-input-source))
+
+(defun chinese-insert-mode-activate()
+  "Switch Mac OS input source to Chinese Pinyin when activating insert mode"
+  (interactive)
+  (let ((last-input-source (replace-regexp-in-string "\n$" "" (shell-command-to-string "issw"))))
+    (add-hook 'xah-fly-command-mode-activate-hook
+              ;; apply-partially lets you add function call with parameters as a hook
+              (apply-partially #'switch-to-last-input-source last-input-source)))
+  (xah-fly-insert-mode-activate)
+  (set-input-source "com.apple.inputmethod.SCIM.ITABC"))
+
+(define-key xah-fly-leader-key-map (kbd "DEL") 'chinese-insert-mode-activate)
+
 ;; Dumang keyboard customization (dedicated symbol keys replacing number row keys)
 ;; 1 2 3 4 5 6 7 8 9 0
 ;; ! @ # $ % ^ & * ( )
