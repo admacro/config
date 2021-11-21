@@ -12,14 +12,14 @@
   (setq default-frame-alist
         '((ns-appearance . light)     ; display title bar using system's light theme (dark title color)
           (ns-transparent-titlebar . t); make titlebar same color as Emacs background
-          (width . 120)
-          (height . 60)))
+          (width . 150)
+          (height . 100)))
   ;; initial-frame-alist inherits default-frame-alist
   (if (> (display-pixel-width) 1600)
       (setq initial-frame-alist         ; for external big monitor 4k
-            '((left . 750)))
+            '((left . 600)))
     (setq initial-frame-alist         ; for laptop builtin screen 1440x900
-          '((left . 100))))
+          '((left . 50))))
 
   ;; new frame title bar theme is not set to light somehow, add a hook to set it manually
   (defun set-ns-appearance-light (frame)
