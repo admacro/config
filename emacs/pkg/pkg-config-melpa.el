@@ -1,3 +1,6 @@
+(require 'string-inflection)
+(define-key xah-fly-dot-keymap (kbd "-") 'string-inflection-cycle)
+
 ;; magit
 (config-pkg 'magit
             (lambda()

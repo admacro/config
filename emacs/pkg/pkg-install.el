@@ -16,6 +16,7 @@
 (setq package-list-prog
       '(exec-path-from-shell
         highlight-numbers
+        string-inflection
         hl-todo
         flycheck
         company

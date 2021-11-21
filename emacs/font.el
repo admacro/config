@@ -42,7 +42,7 @@
 ;; default font families and size
 (setq proportional-font-family "SF Pro Text")
 (setq monospaced-font-family "SF Mono")
-(setq default-font-size 14)
+(setq default-font-size 13)
 
 (set-default-font)
 
