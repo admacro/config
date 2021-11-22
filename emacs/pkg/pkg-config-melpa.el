@@ -95,19 +95,11 @@
               (setq lsp-java-save-actions-organize-imports t)
               (setq lsp-java-vmargs
                     (list
-                     "-ea"
-                     "-server"
                      "-noverify"
-                     "-Xms256m"
+                     "-Xms1G"
                      "-Xmx2G"
                      "-XX:+UseG1GC"
-                     "-XX:+UseStringDeduplication"
-                     "-XX:ReservedCodeCacheSize=240m"
-                     "-XX:SoftRefLRUPolicyMSPerMB=50"
-                     "-XX:+HeapDumpOnOutOfMemoryError"
-                     "-XX:-OmitStackTraceInFastThrow"
-                     "-Dsun.io.useCanonCaches=false"
-                     "-Djava.net.preferIPv4Stack=true"))))
+                     "-XX:+UseStringDeduplication"))))
 
 ;; go-mode
 (config-pkg 'go-mode

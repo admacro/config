@@ -5,10 +5,6 @@
 (xah-fly-keys-set-layout "dvorak")
 (xah-fly-keys 1)
 
-;; by default, <f8> activates xah-fly-command-mode-activate-no-hook
-;; <f8> seems cannot be bound to xah-fly-command-mode-activate
-(global-set-key (kbd "<f9>") 'xah-fly-command-mode-activate)
-
 (defun close-current-buffer-and-delete-window()
   (interactive)
   (xah-close-current-buffer)
