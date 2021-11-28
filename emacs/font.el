@@ -40,9 +40,14 @@
     (set-font-size size)))
 
 ;; default font families and size
-(setq proportional-font-family "SF Pro Text")
-(setq monospaced-font-family "SF Mono")
-(setq default-font-size 13)
+;; (default-line-height) returns the pixel height of current buffer's default-face text line. (default is font-height * 0.2)
+(setq proportional-font-family "sf pro text")
+(setq monospaced-font-family "sf mono")
+
+;; 12 is too small for builtin display
+(if (> (display-pixel-width) 1600)
+    (setq default-font-size 12)
+  (setq default-font-size 15))
 
 (set-default-font)
 
