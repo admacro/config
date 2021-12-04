@@ -42,7 +42,7 @@
 ;; default font families and size
 ;; (default-line-height) returns the pixel height of current buffer's default-face text line. (default is font-height * 0.2)
 (setq proportional-font-family "sf pro text")
-(setq monospaced-font-family "sf mono")
+(setq monospaced-font-family "lexia mono")
 
 ;; 12 is too small for builtin display
 (if (> (display-pixel-width) 1600)
