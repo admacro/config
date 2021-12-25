@@ -46,7 +46,7 @@
 
 ;; 12 is too small for builtin display
 (if (> (display-pixel-width) 1600)
-    (setq default-font-size 12)
+    (setq default-font-size 13)
   (setq default-font-size 15))
 
 (set-default-font)
