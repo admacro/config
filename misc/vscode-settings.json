@@ -1,33 +1,50 @@
 {
   "window.autoDetectColorScheme": false,
-  "editor.fontSize": 15,
-  "editor.fontWeight": "normal",
-  "editor.fontFamily": "sf mono",
-  "editor.lineHeight": 18,
+  "editor.fontSize": 14,
+  "editor.fontWeight": "400",
+  "editor.fontFamily": "admacro mono",
+  "editor.lineHeight": 17,
   "editor.minimap.enabled": false,
   "editor.renderLineHighlight": "none",
+  "editor.accessibilitySupport": "off",
+  "editor.suggestSelection": "first",
+  "editor.wordWrap": "bounded",
+  "editor.wrappingIndent": "deepIndent",
+  "editor.wordWrapColumn": 120,
+  "editor.wrappingStrategy": "advanced",
+  "editor.formatOnPaste": true,
+  "explorer.confirmDelete": false,
+  "explorer.confirmDragAndDrop": false,
+  "terminal.integrated.tabs.location": "left",
+  "terminal.integrated.scrollback": 1000000,
+  "terminal.integrated.fontSize": 13,
+  "[Log]": {
+    "editor.fontSize": 13
+  },
+  "todo-tree.general.tags": [
+    "BUG",
+    "HACK",
+    "FIXME",
+    "TODO",
+    "XXX",
+    "todo"
+  ],
+  // workbench  
+  "workbench.tree.indent": 20,
+  "workbench.startupEditor": "none",
   "workbench.welcomePage.preferReducedMotion": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.iconTheme": "vscode-icons",
   "workbench.colorTheme": "Default Light+",
   "workbench.colorCustomizations": {
     // #E8E3D9
-    // (bg1 "#E0DACC")
-    // (bg2 "#D7CEBC")
-    // (bg3 "#CDC2AC")
-    // (bg4 "#C4B79C")
-    // (fg1 "#0F0F0F")
-    // (fg2 "#1C1C1C")
-    // (fg3 "#262626")
-    // (fg4 "#303030")
+    // (bg1 "#E0DACC") (bg2 "#D7CEBC") (bg3 "#CDC2AC") (bg4 "#C4B79C")
+    // (fg1 "#0F0F0F") (fg2 "#1C1C1C") (fg3 "#262626") (fg4 "#303030")
     "[Default Light+]": {
-      "focusBorder": "#733900",
-      // editor
-      "editor.background": "#E8E3D9",
-      "editor.foreground": "#000000",
-      "editorLineNumber.foreground": "#C4B79C",
-      "editorLineNumber.activeForeground": "#733900",
+      "focusBorder": "#806040",
       // tab
       "tab.border": "#CDC2AC",
-      "tab.activeBorderTop": "#733900",
+      "tab.activeBorderTop": "#806040",
       "tab.inactiveBackground": "#D7CEBC",
       "editorGroupHeader.tabsBackground": "#D7CEBC",
       // other ui elements
@@ -36,11 +53,11 @@
       "activityBarBadge.foreground": "#D9E3E8",
       "activityBarBadge.background": "#004d74",
       // sidebar
-      "sideBar.foreground": "#303030",
+      "sideBar.foreground": "#000000",
       "sideBar.background": "#E0DACC",
       "list.hoverBackground": "#D7CEBC",
       "list.activeSelectionForeground": "#E8E3D9",
-      "list.activeSelectionBackground": "#733900",
+      "list.activeSelectionBackground": "#806040",
       "list.inactiveSelectionBackground": "#E8E3D9",
       "sideBarSectionHeader.foreground": "#000000",
       "sideBarSectionHeader.background": "#D7CEBC",
@@ -53,35 +70,69 @@
       "dropdown.background": "#E8E3D9",
       "dropdown.border": "#C4B79C",
       "quickInput.background": "#E0DACC",
+      // editor
+      "editor.background": "#E8E3D9",
+      "editor.foreground": "#000000",
+      "editor.selectionBackground": "#D7CEBC",
+      "editorLineNumber.foreground": "#C4B79C",
+      "editorLineNumber.activeForeground": "#806040",
+      "editorIndentGuide.background": "#D7CEBC",
+      "editorIndentGuide.activeBackground": "#806040",
+      // breadcrumb
+      "breadcrumb.background": "#E0DACC",
+      "breadcrumbPicker.background": "#E0DACC",
+      // peekview
+      "peekViewTitle.background": "#D7CEBC",
+      "peekView.border": "#806040",
+      "peekViewEditor.background": "#E0DACC",
+      "peekViewEditorGutter.background": "#E0DACC",
+      "peekViewResult.background": "#E0DACC",
+      "peekViewResult.lineForeground": "#000000",
+      "peekViewResult.selectionForeground": "#000000",
+      "peekViewResult.selectionBackground": "#D7CEBC",
+      // autocompletion
+      "editorSuggestWidget.background": "#E0DACC",
+      "editorSuggestWidget.border": "#806040",
+      "editorSuggestWidget.highlightForeground": "#733900",
+      "editorSuggestWidget.focusHighlightForeground": "#E8E0D9",
+      // widget (e.g. doc popup window)
+      "editorWidget.foreground": "#733900",
+      "editorHoverWidget.background": "#E0DACC",
+      "editorHoverWidget.border": "#C4B79C",
+      "textCodeBlock.background": "#D7CEBC"
     }
   },
+  // syntax highlighting
   "editor.tokenColorCustomizations": {
     "[Default Light+]": {
       "textMateRules": [
         {
-        "scope": [
-          "constant.language",
-          "constant.other"
-        ],
-        "settings": {
-          "foreground": "#7300ac",
-          "fontStyle": "italic"
-        }
-      },
+          "scope": [
+            "constant.language",
+            "constant.other"
+          ],
+          "settings": {
+            "foreground": "#7300ac",
+            "fontStyle": "italic"
+          }
+        },
         {
-        "scope": ["keyword", "storage.modifier"],
-        "settings": {
-          "foreground": "#004d74",
-          "fontStyle": "bold"
-        }
-      },
+          "scope": [
+            "keyword",
+            "storage.modifier"
+          ],
+          "settings": {
+            "foreground": "#004d74",
+            "fontStyle": "bold"
+          }
+        },
         {
-        "scope": "keyword.operator",
-        "settings": {
-          "foreground": "#000000",
-          "fontStyle": "bold"
+          "scope": "keyword.operator",
+          "settings": {
+            "foreground": "#000000",
+            "fontStyle": "bold"
+          }
         }
-      }
       ],
       "keywords": "#004d74",
       "comments": "#733900",
@@ -89,10 +140,51 @@
       "types": "#970000",
       "numbers": "#005600",
       "strings": "#005600",
-      "variables": "#000000"
+      "variables": "#000000",
     }
   },
-  "[go]": {},
-  "go.formatTool": "goimports",
-  "go.useLanguageServer": true,
+  "security.workspace.trust.untrustedFiles": "open",
+  "files.exclude": {
+    "**/.classpath": true,
+    "**/.project": true,
+    "**/.settings": true,
+    "**/.factorypath": true
+  },
+  "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+  "gitlens.currentLine.enabled": false,
+  "gitlens.hovers.currentLine.over": "line",
+  "gitlens.codeLens.enabled": false,
+  // java development
+  "redhat.telemetry.enabled": false,
+  "java.trace.server": "verbose",
+  "java.server.launchMode": "Standard",
+  "java.jdt.ls.vmargs": "-XX:+UseG1GC -XX:+UseStringDeduplication -noverify -Xms2G -Xmx4G -javaagent:\"/Users/sh07081ml/.vscode/extensions/gabrielbb.vscode-lombok-1.0.1/server/lombok.jar\"",
+  "java.configuration.updateBuildConfiguration": "automatic",
+  "java.dependency.packagePresentation": "hierarchical",
+  "java.completion.guessMethodArguments": true,
+  "java.saveActions.organizeImports": true,
+  "java.referencesCodeLens.enabled": false,
+  "java.implementationsCodeLens.enabled": false,
+  "java.maxConcurrentBuilds": 4,
+  "java.format.onType.enabled": true,
+  "java.format.comments.enabled": true,
+  "java.progressReports.enabled": false,
+  "java.debug.settings.showHex": false,
+  "java.debug.settings.showStaticVariables": false,
+  "java.completion.overwrite": false,
+  // spring-boot
+  "boot-java.support-spring-xml-config.on": true,
+  "maven.terminal.customEnv": [
+    {
+      "environmentVariable": "MAVEN_OPTS",
+      "value": "-XX:+UseG1GC -XX:+UseStringDeduplication -noverify"
+    }
+  ],
+  "maven.executable.preferMavenWrapper": false,
+  "maven.pomfile.autoUpdateEffectivePOM": true,
+  "maven.pomfile.prefetchEffectivePom": true,
+  "maven.view": "hierarchical",
+  "settingsSync.ignoredSettings": [
+    "-maven.executable.options"
+  ]
 }
