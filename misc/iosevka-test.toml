@@ -1,0 +1,818 @@
+# mono
+[buildPlans.admono-550-65]
+family = "Admono 550 65"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.admono-550-65.variants.design]
+capital-g = "toothless-corner-serifed-capped"
+capital-j = "serifed-both-sides"
+capital-k = "curly-serifed"
+capital-m = "hanging"
+capital-r = "curly"
+capital-x = "straight-serifed"
+f = "flat-hook-serifed"
+k = "curly-serifed"
+r = "corner-hooked-serifed"
+t = "flat-hook-short-neck"
+x = "curly-serifed"
+w = "straight-flat-top"
+y = "straight-turn"
+zero = "slashed-oval"
+two = "curly-neck"
+four = "closed"
+five = "oblique-upper-left-bar"
+six = "open-contour"
+eight = "two-circles"
+nine = "open-contour"
+asterisk = "penta-low"
+paren = "normal"
+brace = "curly"
+number-sign = "slanted"
+ampersand = "upper-open"
+at = "short"
+dollar = "through"
+percent = "rings-continuous-slash"
+ascii-single-quote = "straight"
+question = "smooth"
+
+[buildPlans.admono-550-65.variants.italic]
+a = "single-storey-serifed"
+b = "toothed-motion-serifed"
+c = "unilateral-serifed"
+d = "toothed-serifed"
+f = "flat-hook-tailed"
+g = "single-storey-serifless"
+h = "straight"
+j = "serifed"
+k = "curly-serifed"
+s = "bilateral-serifed"
+t = "standard-short-neck"
+u = "motion-serifed"
+v = "cursive-serifed"
+x = "curly-serifed"
+w = "cursive"
+y = "straight-turn-motion-serifed"
+z = "curly-serifed"
+six = "open-contour"
+nine = "open-contour"
+
+[buildPlans.admono-550-65.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.admono-550-65.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.admono-550-65.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.admono-550-65.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.admono-550-65.widths.normal]
+shape = 550
+menu = 5
+css = "normal"
+
+[buildPlans.admono-550-65.metric-override]
+sb = 65
+
+# admono 550 70
+[buildPlans.admono-550-70]
+family = "Admono 550 70"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.admono-550-70.variants.design]
+capital-g = "toothless-corner-serifed-capped"
+capital-j = "serifed-both-sides"
+capital-k = "curly-serifed"
+capital-m = "hanging"
+capital-r = "curly"
+capital-x = "straight-serifed"
+f = "flat-hook-serifed"
+k = "curly-serifed"
+r = "corner-hooked-serifed"
+t = "flat-hook-short-neck"
+x = "curly-serifed"
+w = "straight-flat-top"
+y = "straight-turn"
+zero = "slashed-oval"
+two = "curly-neck"
+four = "closed"
+five = "oblique-upper-left-bar"
+six = "open-contour"
+eight = "two-circles"
+nine = "open-contour"
+asterisk = "penta-low"
+paren = "normal"
+brace = "curly"
+number-sign = "slanted"
+ampersand = "upper-open"
+at = "short"
+dollar = "through"
+percent = "rings-continuous-slash"
+ascii-single-quote = "straight"
+question = "smooth"
+
+[buildPlans.admono-550-70.variants.italic]
+a = "single-storey-serifed"
+b = "toothed-motion-serifed"
+c = "unilateral-serifed"
+d = "toothed-serifed"
+f = "flat-hook-tailed"
+g = "single-storey-serifless"
+h = "straight"
+j = "serifed"
+k = "curly-serifed"
+s = "bilateral-serifed"
+t = "standard-short-neck"
+u = "motion-serifed"
+v = "cursive-serifed"
+x = "curly-serifed"
+w = "cursive"
+y = "straight-turn-motion-serifed"
+z = "curly-serifed"
+six = "open-contour"
+nine = "open-contour"
+
+[buildPlans.admono-550-70.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.admono-550-70.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.admono-550-70.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.admono-550-70.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.admono-550-70.widths.normal]
+shape = 550
+menu = 5
+css = "normal"
+
+[buildPlans.admono-550-70.metric-override]
+sb = 70
+
+# admono 550 75
+[buildPlans.admono-550-75]
+family = "Admono 550 75"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.admono-550-75.variants.design]
+capital-g = "toothless-corner-serifed-capped"
+capital-j = "serifed-both-sides"
+capital-k = "curly-serifed"
+capital-m = "hanging"
+capital-r = "curly"
+capital-x = "straight-serifed"
+f = "flat-hook-serifed"
+k = "curly-serifed"
+r = "corner-hooked-serifed"
+t = "flat-hook-short-neck"
+x = "curly-serifed"
+w = "straight-flat-top"
+y = "straight-turn"
+zero = "slashed-oval"
+two = "curly-neck"
+four = "closed"
+five = "oblique-upper-left-bar"
+six = "open-contour"
+eight = "two-circles"
+nine = "open-contour"
+asterisk = "penta-low"
+paren = "normal"
+brace = "curly"
+number-sign = "slanted"
+ampersand = "upper-open"
+at = "short"
+dollar = "through"
+percent = "rings-continuous-slash"
+ascii-single-quote = "straight"
+question = "smooth"
+
+[buildPlans.admono-550-75.variants.italic]
+a = "single-storey-serifed"
+b = "toothed-motion-serifed"
+c = "unilateral-serifed"
+d = "toothed-serifed"
+f = "flat-hook-tailed"
+g = "single-storey-serifless"
+h = "straight"
+j = "serifed"
+k = "curly-serifed"
+s = "bilateral-serifed"
+t = "standard-short-neck"
+u = "motion-serifed"
+v = "cursive-serifed"
+x = "curly-serifed"
+w = "cursive"
+y = "straight-turn-motion-serifed"
+z = "curly-serifed"
+six = "open-contour"
+nine = "open-contour"
+
+[buildPlans.admono-550-75.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.admono-550-75.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.admono-550-75.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.admono-550-75.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.admono-550-75.widths.normal]
+shape = 550
+menu = 5
+css = "normal"
+
+[buildPlans.admono-550-75.metric-override]
+sb = 75
+
+# admono 525 65
+[buildPlans.admono-525-65]
+family = "Admono 525 65"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.admono-525-65.variants.design]
+capital-g = "toothless-corner-serifed-capped"
+capital-j = "serifed-both-sides"
+capital-k = "curly-serifed"
+capital-m = "hanging"
+capital-r = "curly"
+capital-x = "straight-serifed"
+f = "flat-hook-serifed"
+k = "curly-serifed"
+r = "corner-hooked-serifed"
+t = "flat-hook-short-neck"
+x = "curly-serifed"
+w = "straight-flat-top"
+y = "straight-turn"
+zero = "slashed-oval"
+two = "curly-neck"
+four = "closed"
+five = "oblique-upper-left-bar"
+six = "open-contour"
+eight = "two-circles"
+nine = "open-contour"
+asterisk = "penta-low"
+paren = "normal"
+brace = "curly"
+number-sign = "slanted"
+ampersand = "upper-open"
+at = "short"
+dollar = "through"
+percent = "rings-continuous-slash"
+ascii-single-quote = "straight"
+question = "smooth"
+
+[buildPlans.admono-525-65.variants.italic]
+a = "single-storey-serifed"
+b = "toothed-motion-serifed"
+c = "unilateral-serifed"
+d = "toothed-serifed"
+f = "flat-hook-tailed"
+g = "single-storey-serifless"
+h = "straight"
+j = "serifed"
+k = "curly-serifed"
+s = "bilateral-serifed"
+t = "standard-short-neck"
+u = "motion-serifed"
+v = "cursive-serifed"
+x = "curly-serifed"
+w = "cursive"
+y = "straight-turn-motion-serifed"
+z = "curly-serifed"
+six = "open-contour"
+nine = "open-contour"
+
+[buildPlans.admono-525-65.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.admono-525-65.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.admono-525-65.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.admono-525-65.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.admono-525-65.widths.normal]
+shape = 525
+menu = 5
+css = "normal"
+
+[buildPlans.admono-525-65.metric-override]
+sb = 65
+
+# admono 525 70
+[buildPlans.admono-525-70]
+family = "Admono 525 70"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.admono-525-70.variants.design]
+capital-g = "toothless-corner-serifed-capped"
+capital-j = "serifed-both-sides"
+capital-k = "curly-serifed"
+capital-m = "hanging"
+capital-r = "curly"
+capital-x = "straight-serifed"
+f = "flat-hook-serifed"
+k = "curly-serifed"
+r = "corner-hooked-serifed"
+t = "flat-hook-short-neck"
+x = "curly-serifed"
+w = "straight-flat-top"
+y = "straight-turn"
+zero = "slashed-oval"
+two = "curly-neck"
+four = "closed"
+five = "oblique-upper-left-bar"
+six = "open-contour"
+eight = "two-circles"
+nine = "open-contour"
+asterisk = "penta-low"
+paren = "normal"
+brace = "curly"
+number-sign = "slanted"
+ampersand = "upper-open"
+at = "short"
+dollar = "through"
+percent = "rings-continuous-slash"
+ascii-single-quote = "straight"
+question = "smooth"
+
+[buildPlans.admono-525-70.variants.italic]
+a = "single-storey-serifed"
+b = "toothed-motion-serifed"
+c = "unilateral-serifed"
+d = "toothed-serifed"
+f = "flat-hook-tailed"
+g = "single-storey-serifless"
+h = "straight"
+j = "serifed"
+k = "curly-serifed"
+s = "bilateral-serifed"
+t = "standard-short-neck"
+u = "motion-serifed"
+v = "cursive-serifed"
+x = "curly-serifed"
+w = "cursive"
+y = "straight-turn-motion-serifed"
+z = "curly-serifed"
+six = "open-contour"
+nine = "open-contour"
+
+[buildPlans.admono-525-70.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.admono-525-70.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.admono-525-70.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.admono-525-70.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.admono-525-70.widths.normal]
+shape = 525
+menu = 5
+css = "normal"
+
+[buildPlans.admono-525-70.metric-override]
+sb = 70
+
+# admono 525 75
+[buildPlans.admono-525-75]
+family = "Admono 525 75"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.admono-525-75.variants.design]
+capital-g = "toothless-corner-serifed-capped"
+capital-j = "serifed-both-sides"
+capital-k = "curly-serifed"
+capital-m = "hanging"
+capital-r = "curly"
+capital-x = "straight-serifed"
+f = "flat-hook-serifed"
+k = "curly-serifed"
+r = "corner-hooked-serifed"
+t = "flat-hook-short-neck"
+x = "curly-serifed"
+w = "straight-flat-top"
+y = "straight-turn"
+zero = "slashed-oval"
+two = "curly-neck"
+four = "closed"
+five = "oblique-upper-left-bar"
+six = "open-contour"
+eight = "two-circles"
+nine = "open-contour"
+asterisk = "penta-low"
+paren = "normal"
+brace = "curly"
+number-sign = "slanted"
+ampersand = "upper-open"
+at = "short"
+dollar = "through"
+percent = "rings-continuous-slash"
+ascii-single-quote = "straight"
+question = "smooth"
+
+[buildPlans.admono-525-75.variants.italic]
+a = "single-storey-serifed"
+b = "toothed-motion-serifed"
+c = "unilateral-serifed"
+d = "toothed-serifed"
+f = "flat-hook-tailed"
+g = "single-storey-serifless"
+h = "straight"
+j = "serifed"
+k = "curly-serifed"
+s = "bilateral-serifed"
+t = "standard-short-neck"
+u = "motion-serifed"
+v = "cursive-serifed"
+x = "curly-serifed"
+w = "cursive"
+y = "straight-turn-motion-serifed"
+z = "curly-serifed"
+six = "open-contour"
+nine = "open-contour"
+
+[buildPlans.admono-525-75.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.admono-525-75.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.admono-525-75.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.admono-525-75.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.admono-525-75.widths.normal]
+shape = 525
+menu = 5
+css = "normal"
+
+[buildPlans.admono-525-75.metric-override]
+sb = 75
+
+# admono 575 65
+[buildPlans.admono-575-65]
+family = "Admono 575 65"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.admono-575-65.variants.design]
+capital-g = "toothless-corner-serifed-capped"
+capital-j = "serifed-both-sides"
+capital-k = "curly-serifed"
+capital-m = "hanging"
+capital-r = "curly"
+capital-x = "straight-serifed"
+f = "flat-hook-serifed"
+k = "curly-serifed"
+r = "corner-hooked-serifed"
+t = "flat-hook-short-neck"
+x = "curly-serifed"
+w = "straight-flat-top"
+y = "straight-turn"
+zero = "slashed-oval"
+two = "curly-neck"
+four = "closed"
+five = "oblique-upper-left-bar"
+six = "open-contour"
+eight = "two-circles"
+nine = "open-contour"
+asterisk = "penta-low"
+paren = "normal"
+brace = "curly"
+number-sign = "slanted"
+ampersand = "upper-open"
+at = "short"
+dollar = "through"
+percent = "rings-continuous-slash"
+ascii-single-quote = "straight"
+question = "smooth"
+
+[buildPlans.admono-575-65.variants.italic]
+a = "single-storey-serifed"
+b = "toothed-motion-serifed"
+c = "unilateral-serifed"
+d = "toothed-serifed"
+f = "flat-hook-tailed"
+g = "single-storey-serifless"
+h = "straight"
+j = "serifed"
+k = "curly-serifed"
+s = "bilateral-serifed"
+t = "standard-short-neck"
+u = "motion-serifed"
+v = "cursive-serifed"
+x = "curly-serifed"
+w = "cursive"
+y = "straight-turn-motion-serifed"
+z = "curly-serifed"
+six = "open-contour"
+nine = "open-contour"
+
+[buildPlans.admono-575-65.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.admono-575-65.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.admono-575-65.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.admono-575-65.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.admono-575-65.widths.normal]
+shape = 575
+menu = 5
+css = "normal"
+
+[buildPlans.admono-575-65.metric-override]
+sb = 65
+
+# admono 575 70
+[buildPlans.admono-575-70]
+family = "Admono 575 70"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.admono-575-70.variants.design]
+capital-g = "toothless-corner-serifed-capped"
+capital-j = "serifed-both-sides"
+capital-k = "curly-serifed"
+capital-m = "hanging"
+capital-r = "curly"
+capital-x = "straight-serifed"
+f = "flat-hook-serifed"
+k = "curly-serifed"
+r = "corner-hooked-serifed"
+t = "flat-hook-short-neck"
+x = "curly-serifed"
+w = "straight-flat-top"
+y = "straight-turn"
+zero = "slashed-oval"
+two = "curly-neck"
+four = "closed"
+five = "oblique-upper-left-bar"
+six = "open-contour"
+eight = "two-circles"
+nine = "open-contour"
+asterisk = "penta-low"
+paren = "normal"
+brace = "curly"
+number-sign = "slanted"
+ampersand = "upper-open"
+at = "short"
+dollar = "through"
+percent = "rings-continuous-slash"
+ascii-single-quote = "straight"
+question = "smooth"
+
+[buildPlans.admono-575-70.variants.italic]
+a = "single-storey-serifed"
+b = "toothed-motion-serifed"
+c = "unilateral-serifed"
+d = "toothed-serifed"
+f = "flat-hook-tailed"
+g = "single-storey-serifless"
+h = "straight"
+j = "serifed"
+k = "curly-serifed"
+s = "bilateral-serifed"
+t = "standard-short-neck"
+u = "motion-serifed"
+v = "cursive-serifed"
+x = "curly-serifed"
+w = "cursive"
+y = "straight-turn-motion-serifed"
+z = "curly-serifed"
+six = "open-contour"
+nine = "open-contour"
+
+[buildPlans.admono-575-70.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.admono-575-70.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.admono-575-70.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.admono-575-70.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.admono-575-70.widths.normal]
+shape = 575
+menu = 5
+css = "normal"
+
+[buildPlans.admono-575-70.metric-override]
+sb = 70
+
+# admono 575 75
+[buildPlans.admono-575-75]
+family = "Admono 575 75"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.admono-575-75.variants.design]
+capital-g = "toothless-corner-serifed-capped"
+capital-j = "serifed-both-sides"
+capital-k = "curly-serifed"
+capital-m = "hanging"
+capital-r = "curly"
+capital-x = "straight-serifed"
+f = "flat-hook-serifed"
+k = "curly-serifed"
+r = "corner-hooked-serifed"
+t = "flat-hook-short-neck"
+x = "curly-serifed"
+w = "straight-flat-top"
+y = "straight-turn"
+zero = "slashed-oval"
+two = "curly-neck"
+four = "closed"
+five = "oblique-upper-left-bar"
+six = "open-contour"
+eight = "two-circles"
+nine = "open-contour"
+asterisk = "penta-low"
+paren = "normal"
+brace = "curly"
+number-sign = "slanted"
+ampersand = "upper-open"
+at = "short"
+dollar = "through"
+percent = "rings-continuous-slash"
+ascii-single-quote = "straight"
+question = "smooth"
+
+[buildPlans.admono-575-75.variants.italic]
+a = "single-storey-serifed"
+b = "toothed-motion-serifed"
+c = "unilateral-serifed"
+d = "toothed-serifed"
+f = "flat-hook-tailed"
+g = "single-storey-serifless"
+h = "straight"
+j = "serifed"
+k = "curly-serifed"
+s = "bilateral-serifed"
+t = "standard-short-neck"
+u = "motion-serifed"
+v = "cursive-serifed"
+x = "curly-serifed"
+w = "cursive"
+y = "straight-turn-motion-serifed"
+z = "curly-serifed"
+six = "open-contour"
+nine = "open-contour"
+
+[buildPlans.admono-575-75.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.admono-575-75.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.admono-575-75.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.admono-575-75.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.admono-575-75.widths.normal]
+shape = 575
+menu = 5
+css = "normal"
+
+[buildPlans.admono-575-75.metric-override]
+sb = 75

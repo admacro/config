@@ -41,8 +41,8 @@
 
 ;; default font families and size
 ;; (default-line-height) returns the pixel height of current buffer's default-face text line. (default is font-height * 0.2)
-(setq proportional-font-family "admacro prop")
-(setq monospaced-font-family "admacro mono")
+(setq proportional-font-family "adm prop")
+(setq monospaced-font-family "adm mono")
 
 ;; 12 is too small for builtin display
 (if (> (display-pixel-width) 1600)
