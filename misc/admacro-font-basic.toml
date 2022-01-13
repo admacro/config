@@ -9,7 +9,7 @@
 # Properties:
 #   Type: Serif-slab
 #   4 styles: regular, italic, bold, bold-italic
-#   width: customized normal as extended (shape: 547, side bearing: default_sb * 1.173)
+#   width: customized normal as extended (shape: 580, side bearing: 80)
 #   No ligations
 #
 # How to make a custom build:
@@ -103,12 +103,12 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.adm-mono.widths.normal]
-shape = 547
+shape = 580
 menu = 5
 css = "normal"
 
 [buildPlans.adm-mono.metric-override]
-sb = 'default_sb * 1.173'
+sb = 80
 
 # Fixed
 [buildPlans.adm-fixed]
@@ -194,12 +194,12 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.adm-fixed.widths.normal]
-shape = 547
+shape = 580
 menu = 5
 css = "normal"
 
 [buildPlans.adm-fixed.metric-override]
-sb = 'default_sb * 1.173'
+sb = 80
 
 # quasi-proportional
 [buildPlans.adm-prop]
@@ -286,9 +286,9 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.adm-prop.widths.normal]
-shape = 547
+shape = 580
 menu = 5
 css = "normal"
 
 [buildPlans.adm-prop.metric-override]
-sb = 'default_sb * 1.173'
+sb = 80

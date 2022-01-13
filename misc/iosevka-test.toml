@@ -1,0 +1,1419 @@
+# docker run -it -v $(pwd):/build avivace/iosevka-build ttf::adm-520-60 ttf::adm-520-65 ttf::adm-520-70 ttf::adm-520-75 ttf::adm-520-80 ttf::adm-530-60 ttf::adm-530-65 ttf::adm-530-70 ttf::adm-530-75 ttf::adm-530-80 ttf::adm-540-60 ttf::adm-540-65 ttf::adm-540-70 ttf::adm-540-75 ttf::adm-540-80 ttf::adm-550-60 ttf::adm-550-65 ttf::adm-550-70 ttf::adm-550-75 ttf::adm-550-80 ttf::adm-560-60 ttf::adm-560-65 ttf::adm-560-70 ttf::adm-560-75 ttf::adm-560-80 ttf::adm-570-80 ttf::adm-570-75 ttf::adm-570-70 ttf::adm-570-65 ttf::adm-570-60 ttf::adm-580-60 ttf::adm-580-65 ttf::adm-580-70 ttf::adm-580-75 ttf::adm-580-80
+
+# result width
+# ttf::adm-520-60 400
+# ttf::adm-520-65 390
+# ttf::adm-520-70 380
+# ttf::adm-520-75 370
+# ttf::adm-520-80 360
+# ttf::adm-530-60 410
+# ttf::adm-530-65 400
+# ttf::adm-530-70 390
+# ttf::adm-530-75 380
+# ttf::adm-530-80 370
+# ttf::adm-540-60 420
+# ttf::adm-540-65 410
+# ttf::adm-540-70 400
+# ttf::adm-540-75 390
+# ttf::adm-540-80 380
+# ttf::adm-550-60 430
+# ttf::adm-550-65 420
+# ttf::adm-550-70 410
+# ttf::adm-550-75 400
+# ttf::adm-550-80 390
+# ttf::adm-560-60 440
+# ttf::adm-560-65 430
+# ttf::adm-560-70 420
+# ttf::adm-560-75 410
+# ttf::adm-560-80 400
+# ttf::adm-570-60 450
+# ttf::adm-570-65 440
+# ttf::adm-570-70 430
+# ttf::adm-570-75 420
+# ttf::adm-570-80 410
+# ttf::adm-580-60 460
+# ttf::adm-580-65 450
+# ttf::adm-580-70 440
+# ttf::adm-580-75 430
+# ttf::adm-580-80 420
+
+# -------------------
+# categorized by effective letter width
+
+# ttf::adm-520-80 360
+
+# ttf::adm-520-75 370
+# ttf::adm-530-80 370
+
+# ttf::adm-520-70 380
+# ttf::adm-530-75 380
+# ttf::adm-540-80 380
+
+# ttf::adm-520-65 390
+# ttf::adm-530-70 390
+# ttf::adm-540-75 390
+# ttf::adm-550-80 390
+
+# ttf::adm-520-60 400
+# ttf::adm-530-65 400
+# ttf::adm-540-70 400
+# ttf::adm-550-75 400
+# ttf::adm-560-80 400
+
+# ttf::adm-530-60 410
+# ttf::adm-540-65 410
+# ttf::adm-550-70 410
+# ttf::adm-560-75 410
+# ttf::adm-570-80 410
+
+# ttf::adm-540-60 420
+# ttf::adm-550-65 420
+# ttf::adm-560-70 420
+# ttf::adm-570-75 420
+# ttf::adm-580-80 420
+
+# ttf::adm-550-60 430
+# ttf::adm-560-65 430
+# ttf::adm-570-70 430
+# ttf::adm-580-75 430
+
+# ttf::adm-560-60 440
+# ttf::adm-570-65 440
+# ttf::adm-580-70 440
+
+# ttf::adm-570-60 450
+# ttf::adm-580-65 450
+
+# ttf::adm-580-60 460
+
+# -------configuration-----
+# adm-520-60
+[buildPlans.adm-520-60]
+family = "Adm 520 60"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-520-60.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-520-60.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-520-60.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-520-60.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-520-60.widths.normal]
+shape = 520
+menu = 5
+css = "normal"
+
+[buildPlans.adm-520-60.metric-override]
+sb = 60
+
+# adm-520-65
+[buildPlans.adm-520-65]
+family = "Adm 520 65"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-520-65.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-520-65.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-520-65.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-520-65.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-520-65.widths.normal]
+shape = 520
+menu = 5
+css = "normal"
+
+[buildPlans.adm-520-65.metric-override]
+sb = 65
+
+# adm-520-70
+[buildPlans.adm-520-70]
+family = "Adm 520 70"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-520-70.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-520-70.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-520-70.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-520-70.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-520-70.widths.normal]
+shape = 520
+menu = 5
+css = "normal"
+
+[buildPlans.adm-520-70.metric-override]
+sb = 70
+
+# adm-520-75
+[buildPlans.adm-520-75]
+family = "Adm 520 75"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-520-75.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-520-75.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-520-75.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-520-75.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-520-75.widths.normal]
+shape = 520
+menu = 5
+css = "normal"
+
+[buildPlans.adm-520-75.metric-override]
+sb = 75
+
+# adm-520-80
+[buildPlans.adm-520-80]
+family = "Adm 520 80"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-520-80.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-520-80.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-520-80.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-520-80.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-520-80.widths.normal]
+shape = 520
+menu = 5
+css = "normal"
+
+[buildPlans.adm-520-80.metric-override]
+sb = 80
+
+# adm-530-60
+[buildPlans.adm-530-60]
+family = "Adm 530 60"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-530-60.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-530-60.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-530-60.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-530-60.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-530-60.widths.normal]
+shape = 530
+menu = 5
+css = "normal"
+
+[buildPlans.adm-530-60.metric-override]
+sb = 60
+
+# adm-530-65
+[buildPlans.adm-530-65]
+family = "Adm 530 65"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-530-65.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-530-65.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-530-65.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-530-65.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-530-65.widths.normal]
+shape = 530
+menu = 5
+css = "normal"
+
+[buildPlans.adm-530-65.metric-override]
+sb = 65
+
+# adm-530-70
+[buildPlans.adm-530-70]
+family = "Adm 530 70"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-530-70.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-530-70.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-530-70.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-530-70.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-530-70.widths.normal]
+shape = 530
+menu = 5
+css = "normal"
+
+[buildPlans.adm-530-70.metric-override]
+sb = 70
+
+# adm-530-75
+[buildPlans.adm-530-75]
+family = "Adm 530 75"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-530-75.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-530-75.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-530-75.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-530-75.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-530-75.widths.normal]
+shape = 530
+menu = 5
+css = "normal"
+
+[buildPlans.adm-530-75.metric-override]
+sb = 75
+
+# adm-530-80
+[buildPlans.adm-530-80]
+family = "Adm 530 80"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-530-80.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-530-80.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-530-80.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-530-80.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-530-80.widths.normal]
+shape = 530
+menu = 5
+css = "normal"
+
+[buildPlans.adm-530-80.metric-override]
+sb = 80
+
+# adm-540-60
+[buildPlans.adm-540-60]
+family = "Adm 540 60"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-540-60.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-540-60.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-540-60.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-540-60.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-540-60.widths.normal]
+shape = 540
+menu = 5
+css = "normal"
+
+[buildPlans.adm-540-60.metric-override]
+sb = 60
+
+# adm-540-65
+[buildPlans.adm-540-65]
+family = "Adm 540 65"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-540-65.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-540-65.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-540-65.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-540-65.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-540-65.widths.normal]
+shape = 540
+menu = 5
+css = "normal"
+
+[buildPlans.adm-540-65.metric-override]
+sb = 65
+
+# adm-540-70
+[buildPlans.adm-540-70]
+family = "Adm 540 70"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-540-70.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-540-70.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-540-70.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-540-70.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-540-70.widths.normal]
+shape = 540
+menu = 5
+css = "normal"
+
+[buildPlans.adm-540-70.metric-override]
+sb = 70
+
+# adm-540-75
+[buildPlans.adm-540-75]
+family = "Adm 540 75"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-540-75.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-540-75.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-540-75.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-540-75.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-540-75.widths.normal]
+shape = 540
+menu = 5
+css = "normal"
+
+[buildPlans.adm-540-75.metric-override]
+sb = 75
+
+# adm-540-80
+[buildPlans.adm-540-80]
+family = "Adm 540 80"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-540-80.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-540-80.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-540-80.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-540-80.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-540-80.widths.normal]
+shape = 540
+menu = 5
+css = "normal"
+
+[buildPlans.adm-540-80.metric-override]
+sb = 80
+
+# adm-550-60
+[buildPlans.adm-550-60]
+family = "Adm 550 60"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-550-60.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-550-60.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-550-60.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-550-60.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-550-60.widths.normal]
+shape = 550
+menu = 5
+css = "normal"
+
+[buildPlans.adm-550-60.metric-override]
+sb = 60
+
+# adm-550-65
+[buildPlans.adm-550-65]
+family = "Adm 550 65"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-550-65.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-550-65.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-550-65.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-550-65.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-550-65.widths.normal]
+shape = 550
+menu = 5
+css = "normal"
+
+[buildPlans.adm-550-65.metric-override]
+sb = 65
+
+# adm-550-70
+[buildPlans.adm-550-70]
+family = "Adm 550 70"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-550-70.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-550-70.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-550-70.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-550-70.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-550-70.widths.normal]
+shape = 550
+menu = 5
+css = "normal"
+
+[buildPlans.adm-550-70.metric-override]
+sb = 70
+
+# adm-550-75
+[buildPlans.adm-550-75]
+family = "Adm 550 75"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-550-75.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-550-75.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-550-75.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-550-75.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-550-75.widths.normal]
+shape = 550
+menu = 5
+css = "normal"
+
+[buildPlans.adm-550-75.metric-override]
+sb = 75
+
+# adm-550-80
+[buildPlans.adm-550-80]
+family = "Adm 550 80"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-550-80.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-550-80.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-550-80.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-550-80.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-550-80.widths.normal]
+shape = 550
+menu = 5
+css = "normal"
+
+[buildPlans.adm-550-80.metric-override]
+sb = 80
+
+# adm-560-60
+[buildPlans.adm-560-60]
+family = "Adm 560 60"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-560-60.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-560-60.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-560-60.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-560-60.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-560-60.widths.normal]
+shape = 560
+menu = 5
+css = "normal"
+
+[buildPlans.adm-560-60.metric-override]
+sb = 60
+
+# adm-560-65
+[buildPlans.adm-560-65]
+family = "Adm 560 65"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-560-65.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-560-65.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-560-65.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-560-65.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-560-65.widths.normal]
+shape = 560
+menu = 5
+css = "normal"
+
+[buildPlans.adm-560-65.metric-override]
+sb = 65
+
+# adm-560-70
+[buildPlans.adm-560-70]
+family = "Adm 560 70"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-560-70.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-560-70.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-560-70.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-560-70.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-560-70.widths.normal]
+shape = 560
+menu = 5
+css = "normal"
+
+[buildPlans.adm-560-70.metric-override]
+sb = 70
+
+# adm-560-75
+[buildPlans.adm-560-75]
+family = "Adm 560 75"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-560-75.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-560-75.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-560-75.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-560-75.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-560-75.widths.normal]
+shape = 560
+menu = 5
+css = "normal"
+
+[buildPlans.adm-560-75.metric-override]
+sb = 75
+
+# adm-560-80
+[buildPlans.adm-560-80]
+family = "Adm 560 80"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-560-80.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-560-80.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-560-80.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-560-80.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-560-80.widths.normal]
+shape = 560
+menu = 5
+css = "normal"
+
+[buildPlans.adm-560-80.metric-override]
+sb = 80
+
+# adm-570-80
+[buildPlans.adm-570-80]
+family = "Adm 570 80"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-570-80.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-570-80.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-570-80.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-570-80.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-570-80.widths.normal]
+shape = 570
+menu = 5
+css = "normal"
+
+[buildPlans.adm-570-80.metric-override]
+sb = 80
+
+# adm-570-75
+[buildPlans.adm-570-75]
+family = "Adm 570 75"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-570-75.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-570-75.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-570-75.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-570-75.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-570-75.widths.normal]
+shape = 570
+menu = 5
+css = "normal"
+
+[buildPlans.adm-570-75.metric-override]
+sb = 75
+
+# adm-570-70
+[buildPlans.adm-570-70]
+family = "Adm 570 70"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-570-70.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-570-70.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-570-70.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-570-70.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-570-70.widths.normal]
+shape = 570
+menu = 5
+css = "normal"
+
+[buildPlans.adm-570-70.metric-override]
+sb = 70
+
+# adm-570-65
+[buildPlans.adm-570-65]
+family = "Adm 570 65"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-570-65.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-570-65.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-570-65.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-570-65.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-570-65.widths.normal]
+shape = 570
+menu = 5
+css = "normal"
+
+[buildPlans.adm-570-65.metric-override]
+sb = 65
+
+# adm-570-60
+[buildPlans.adm-570-60]
+family = "Adm 570 60"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-570-60.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-570-60.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-570-60.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-570-60.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-570-60.widths.normal]
+shape = 570
+menu = 5
+css = "normal"
+
+[buildPlans.adm-570-60.metric-override]
+sb = 60
+
+# adm-580-60
+[buildPlans.adm-580-60]
+family = "Adm 580 60"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-580-60.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-580-60.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-580-60.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-580-60.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-580-60.widths.normal]
+shape = 580
+menu = 5
+css = "normal"
+
+[buildPlans.adm-580-60.metric-override]
+sb = 60
+
+# adm-580-65
+[buildPlans.adm-580-65]
+family = "Adm 580 65"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-580-65.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-580-65.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-580-65.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-580-65.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-580-65.widths.normal]
+shape = 580
+menu = 5
+css = "normal"
+
+[buildPlans.adm-580-65.metric-override]
+sb = 65
+
+# adm-580-70
+[buildPlans.adm-580-70]
+family = "Adm 580 70"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-580-70.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-580-70.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-580-70.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-580-70.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-580-70.widths.normal]
+shape = 580
+menu = 5
+css = "normal"
+
+[buildPlans.adm-580-70.metric-override]
+sb = 70
+
+# adm-580-75
+[buildPlans.adm-580-75]
+family = "Adm 580 75"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-580-75.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-580-75.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-580-75.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-580-75.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-580-75.widths.normal]
+shape = 580
+menu = 5
+css = "normal"
+
+[buildPlans.adm-580-75.metric-override]
+sb = 75
+
+# adm-580-80
+[buildPlans.adm-580-80]
+family = "Adm 580 80"
+spacing = "normal"
+serifs = "slab"
+no-cv-ss = true
+no-ligation = true
+
+[buildPlans.adm-580-80.weights.regular]
+shape = 400
+menu = 400
+css = 400
+
+[buildPlans.adm-580-80.weights.bold]
+shape = 700
+menu = 700
+css = 700
+
+[buildPlans.adm-580-80.slopes.upright]
+angle = 0
+shape = "upright"
+menu = "upright"
+css = "normal"
+
+[buildPlans.adm-580-80.slopes.italic]
+angle = 9.4
+shape = "italic"
+menu = "italic"
+css = "italic"
+
+[buildPlans.adm-580-80.widths.normal]
+shape = 580
+menu = 5
+css = "normal"
+
+[buildPlans.adm-580-80.metric-override]
+sb = 80
+
