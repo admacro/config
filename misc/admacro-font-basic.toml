@@ -65,8 +65,8 @@ t = "standard-short-neck2"
 u = "motion-serifed"
 v = "cursive-serifed"
 w = "cursive"
-x = "straight-motion-serifed"
-y = "straight-turn-motion-serifed"
+x = "straight-serifed"
+y = "straight-turn"
 z = "straight-serifed"
 
 [buildPlans.adm-mono.weights.regular]
@@ -145,8 +145,8 @@ t = "standard-short-neck2"
 u = "motion-serifed"
 v = "cursive-serifed"
 w = "cursive"
-x = "straight-motion-serifed"
-y = "straight-turn-motion-serifed"
+x = "straight-serifed"
+y = "straight-turn"
 z = "straight-serifed"
 
 [buildPlans.adm-fixed.weights.regular]
@@ -225,8 +225,8 @@ t = "standard-short-neck2"
 u = "motion-serifed"
 v = "cursive-serifed"
 w = "cursive"
-x = "straight-motion-serifed"
-y = "straight-turn-motion-serifed"
+x = "straight-serifed"
+y = "straight-turn"
 z = "straight-serifed"
 
 [buildPlans.adm-prop.weights.regular]
