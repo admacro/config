@@ -18,7 +18,6 @@
 				    :recursive t
 				    :publishing-function 'org-html-publish-to-html
 				    :section-numbers nil)
-			  (list name :components (quote name))
               )))
 
 (defun publish-project(name path)
