@@ -1,12 +1,10 @@
 ;; org-mode
-(require 'ox-publish)
-
 (setq org-startup-indented t)
+(setq org-descriptive-links nil)
 (add-hook 'org-mode-hook 'visual-line-mode)
 
-
-(setq org-descriptive-links nil)
-
+;; org publish
+(require 'ox-publish)
 (defun config-project(name path)
   (setq org-html-preamble nil)
   (setq org-html-postamble t)
@@ -23,20 +21,17 @@
 			  (list name :components (quote name))
               )))
 
-(defun org-publish-by-name(org-project-name)
-  "Publish org by project name. This can overwrite existing html files."
-  (if (y-or-n-p "Force republish all? ")
-      (org-publish org-project-name t)
-    (org-publish org-project-name)))
-
-(defun publish-org-project(name path)
+(defun publish-project(name path)
+  "Configure and publish org project with name and path. This can overwrite existing html files."
   (config-project name path)
-  (org-publish-by-name name))
+  (if (y-or-n-p "Force republish all? ")
+      (org-publish name t)
+    (org-publish name)))
 
 (defun publish-notes()
   (interactive)
-  (publish-org-project "notes" "~/prog/notes"))
+  (publish-project "notes" "~/prog/notes"))
 
 (defun publish-www()
   (interactive)
-  (publish-org-project "www" "~/prog/admacro.github.io"))
+  (publish-project "www" "~/prog/admacro.github.io"))
