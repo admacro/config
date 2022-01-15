@@ -1,35 +1,27 @@
 ;; org-mode
 (require 'ox-publish)
 
-(setq org-project-notes-name "notes")
-(setq org-project-notes-path "~/prog/notes")
-(setq org-project-www-name "www")
-(setq org-project-www-path "~/prog/admacro.github.io")
-
 (setq org-startup-indented t)
 (add-hook 'org-mode-hook 'visual-line-mode)
-(setq org-html-preamble nil)
-(setq org-html-postamble t)
-(setq org-html-postamble-format '(("en" "<p>By %a | Date: %d | Last Updated: %C</p><p>© 2022 James Ni</p>")))
+
+
 (setq org-descriptive-links nil)
-(setq org-publish-project-alist
-      (list (list "notes"
-                  :base-directory (concat org-project-notes-path "/org/")
-				  :base-extension "org"
-				  :publishing-directory org-project-notes-path
-				  :recursive t
-				  :publishing-function 'org-html-publish-to-html
-				  :section-numbers nil)
-			(list "www"
-				  :base-directory (concat org-project-www-path "/org/")
-				  :base-extension "org"
-				  :publishing-directory org-project-www-path
-				  :publishing-function 'org-html-publish-to-html
-				  :recursive t
-				  :section-numbers nil)
-			(list org-project-notes-name :components '("notes"))
-			(list org-project-www-name :components '("www"))
-			))
+
+(defun config-project(name path)
+  (setq org-html-preamble nil)
+  (setq org-html-postamble t)
+  (setq org-html-postamble-format
+        '(("en" "<p>By %a | Date: %d | Last Updated: %C</p><p>© 2022 James Ni</p>")))
+  (setq org-publish-project-alist
+        (list (list name
+                    :base-directory (concat path "/org/")
+				    :base-extension "org"
+				    :publishing-directory path
+				    :recursive t
+				    :publishing-function 'org-html-publish-to-html
+				    :section-numbers nil)
+			  (list name :components (quote name))
+              )))
 
 (defun org-publish-by-name(org-project-name)
   "Publish org by project name. This can overwrite existing html files."
@@ -37,10 +29,14 @@
       (org-publish org-project-name t)
     (org-publish org-project-name)))
 
+(defun publish-org-project(name path)
+  (config-project name path)
+  (org-publish-by-name name))
+
 (defun publish-notes()
   (interactive)
-  (org-publish-by-name org-project-notes-name))
+  (publish-org-project "notes" "~/prog/notes"))
 
 (defun publish-www()
   (interactive)
-  (org-publish-by-name org-project-www-name))
+  (publish-org-project "www" "~/prog/admacro.github.io"))
