@@ -15,7 +15,16 @@
 # How to make a custom build:
 #   1. Create a custom build configuration using https://typeof.net/Iosevka/customizer
 #   2. Save your configuration as private-build-plans.toml (Add more as needed)
-#   3. Run `docker run -it -v $(pwd):/build avivace/iosevka-build` where private-build-plans.toml is saved
+#   3. Go to the directory where private-build-plans.toml is located
+#   4. Run `docker run -it -v $(pwd):/build avivace/iosevka-build -- ttf::adm-mono ttf::adm-fixed ttf::adm-prop`
+#
+# Build from source repo
+#   1. Create a custom build configuration using https://typeof.net/Iosevka/customizer
+#   2. Save your configuration as private-build-plans.toml (Add more as needed)
+#   3. Put private-build-plans.toml under the root directory of the repo
+#   4. Install nodejs and ttfautohint
+#   5. Go to the root directory of the repo
+#   6. Run `npm install; npm run build -- ttf::adm-mono ttf::adm-fixed ttf::adm-prop;`
 #
 # Ref: https://github.com/be5invis/Iosevka/blob/master/doc/custom-build.md
 
@@ -30,10 +39,12 @@ no-ligation = true
 [buildPlans.adm-mono.variants.design]
 capital-g = "toothless-corner-serifed-capped"
 capital-j = "serifed-both-sides"
+capital-k = "symmetric-connected-serifed"
 capital-m = "flat-bottom"
 capital-r = "standing"
 capital-w = "straight-flat-top"
 f = "flat-hook-serifed"
+k = "symmetric-connected-serifed"
 r = "corner-hooked-serifed"
 t = "flat-hook-short-neck2"
 w = "straight-flat-top"
@@ -45,7 +56,6 @@ seven = "bend-serifed"
 eight = "crossing-asymmetric"
 nine = "open-contour"
 asterisk = "penta-low"
-brace = "straight"
 number-sign = "slanted"
 ampersand = "upper-open"
 at = "threefold-tall"
@@ -59,7 +69,6 @@ c = "unilateral-serifed"
 d = "toothed-serifed"
 f = "flat-hook-tailed"
 g = "single-storey-serifless"
-k = "straight-serifed"
 s = "bilateral-serifed"
 t = "standard-short-neck2"
 u = "motion-serifed"
@@ -110,10 +119,12 @@ no-ligation = true
 [buildPlans.adm-fixed.variants.design]
 capital-g = "toothless-corner-serifed-capped"
 capital-j = "serifed-both-sides"
+capital-k = "symmetric-connected-serifed"
 capital-m = "flat-bottom"
 capital-r = "standing"
 capital-w = "straight-flat-top"
 f = "flat-hook-serifed"
+k = "symmetric-connected-serifed"
 r = "corner-hooked-serifed"
 t = "flat-hook-short-neck2"
 w = "straight-flat-top"
@@ -125,7 +136,6 @@ seven = "bend-serifed"
 eight = "crossing-asymmetric"
 nine = "open-contour"
 asterisk = "penta-low"
-brace = "straight"
 number-sign = "slanted"
 ampersand = "upper-open"
 at = "threefold-tall"
@@ -139,7 +149,6 @@ c = "unilateral-serifed"
 d = "toothed-serifed"
 f = "flat-hook-tailed"
 g = "single-storey-serifless"
-k = "straight-serifed"
 s = "bilateral-serifed"
 t = "standard-short-neck2"
 u = "motion-serifed"
@@ -190,10 +199,12 @@ no-ligation = true
 [buildPlans.adm-prop.variants.design]
 capital-g = "toothless-corner-serifed-capped"
 capital-j = "serifed-both-sides"
+capital-k = "symmetric-connected-serifed"
 capital-m = "flat-bottom"
 capital-r = "standing"
 capital-w = "straight-flat-top"
 f = "flat-hook-serifed"
+k = "symmetric-connected-serifed"
 r = "corner-hooked-serifed"
 t = "flat-hook-short-neck2"
 w = "straight-flat-top"
@@ -205,7 +216,6 @@ seven = "bend-serifed"
 eight = "crossing-asymmetric"
 nine = "open-contour"
 asterisk = "penta-low"
-brace = "straight"
 number-sign = "slanted"
 ampersand = "upper-open"
 at = "threefold-tall"
@@ -219,7 +229,6 @@ c = "unilateral-serifed"
 d = "toothed-serifed"
 f = "flat-hook-tailed"
 g = "single-storey-serifless"
-k = "straight-serifed"
 s = "bilateral-serifed"
 t = "standard-short-neck2"
 u = "motion-serifed"
