@@ -37,6 +37,7 @@ no-cv-ss = true
 no-ligation = true
 
 [buildPlans.adm-mono.variants.design]
+capital-d = 'more-rounded-bilateral-serifed'
 capital-g = "toothless-corner-serifed-capped"
 capital-j = "serifed-both-sides"
 capital-k = "symmetric-connected-serifed"
@@ -117,6 +118,7 @@ no-cv-ss = true
 no-ligation = true
 
 [buildPlans.adm-fixed.variants.design]
+capital-d = 'more-rounded-bilateral-serifed'
 capital-g = "toothless-corner-serifed-capped"
 capital-j = "serifed-both-sides"
 capital-k = "symmetric-connected-serifed"
@@ -197,6 +199,7 @@ no-cv-ss = true
 no-ligation = true
 
 [buildPlans.adm-prop.variants.design]
+capital-d = 'more-rounded-bilateral-serifed'
 capital-g = "toothless-corner-serifed-capped"
 capital-j = "serifed-both-sides"
 capital-k = "symmetric-connected-serifed"
