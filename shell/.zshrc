@@ -1,7 +1,8 @@
-# This function runs before prompt (80 chars long)
-precmd() { print "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" }
-# Command prompt
-PS1="〔%n@%1~ %#〕"
+# https://scriptingosx.com/2019/06/moving-to-zsh/
+# https://jonasjacek.github.io/colors/
+PROMPT='
+%F{94}~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~%f
+〔%B%F{94}%~%f%b %# 〕' # %F{94} is orange4
 
 # Shortcuts
 alias cd..="cd .."
@@ -13,7 +14,6 @@ alias la="l -a"
 alias lp="ls -p"
 alias h="history"
 alias treed="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
-alias dk="docker"
 
 # https://unix.stackexchange.com/questions/273861/unlimited-history-in-zsh
 HISTFILE="$HOME/.zsh_history"
