@@ -290,6 +290,8 @@
 ;; json mode
 (config-pkg 'json-mode
             (lambda()
+              (add-to-list 'auto-mode-alist '("\\.json\\'" . json-mode))
+              (add-to-list 'auto-mode-alist '("\\.jsonc\\'" . jsonc-mode))
               (add-hook 'json-mode-hook
                         (lambda ()
                           (make-local-variable 'js-indent-level)
