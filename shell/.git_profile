@@ -20,5 +20,5 @@ gl() {
     fi
     author=`git config user.name`
     echo "Showing commits of $author on branch $branch"
-    command git log --pretty=format:"%h | %ci | %s" --author "$author" --grep "$1" $branch
+    command git log --pretty=format:"%h | %ci | %s" --author "$author" --grep "$1" $branch --
 }
