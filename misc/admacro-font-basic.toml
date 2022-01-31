@@ -9,16 +9,14 @@
 # Properties:
 #   Type: Serif-slab
 #   4 styles: regular, italic, bold, bold-italic
-#   2 widths
-#     normal (shape: 735 * 0.618 + 80 * 2 = 614.23, side bearing: 80)
-#     extended (shape: 520 + 80 * 2 = 680, side bearing: 80)
+#   width: normal (shape: 620 (same as SF Mono), side bearing: 100)
 #   No ligations
 #
 # How to make a custom build:
 #   1. Create a custom build configuration using https://typeof.net/Iosevka/customizer
 #   2. Save your configuration as private-build-plans.toml (Add more as needed)
 #   3. Go to the directory where private-build-plans.toml is located
-#   4. Run `docker run -it -v $(pwd):/build avivace/iosevka-build -- ttf::adm-mono ttf::adm-fixed ttf::adm-prop ttf::adm-mono-ext ttf::adm-fixed-ext ttf::adm-prop-ext`
+#   4. Run `docker run -it -v $(pwd):/build avivace/iosevka-build -- ttf::adm-mono ttf::adm-fixed ttf::adm-prop`
 #
 # Build from source repo
 #   1. Create a custom build configuration using https://typeof.net/Iosevka/customizer
@@ -26,10 +24,9 @@
 #   3. Put private-build-plans.toml under the root directory of the repo
 #   4. Install nodejs and ttfautohint
 #   5. Go to the root directory of the repo
-#   6. Run `npm install; npm run build -- ttf::adm-mono ttf::adm-fixed ttf::adm-prop ttf::adm-mono-ext ttf::adm-fixed-ext ttf::adm-prop-ext;`
+#   6. Run `npm install; npm run build -- ttf::adm-mono ttf::adm-fixed ttf::adm-prop;`
 #
 # Ref: https://github.com/be5invis/Iosevka/blob/master/doc/custom-build.md
-
 
 # mono
 [buildPlans.adm-mono]
@@ -47,7 +44,7 @@ capital-k = "symmetric-connected-serifed"
 capital-m = "flat-bottom"
 capital-r = "standing"
 capital-w = "straight-flat-top"
-f = "flat-hook-serifed"
+f = "flat-hook-serifed-crossbar-at-x-height"
 k = "symmetric-connected-serifed"
 r = "corner-hooked-serifed"
 t = "flat-hook-short-neck2"
@@ -60,7 +57,7 @@ seven = "bend-serifed"
 eight = "crossing-asymmetric"
 nine = "open-contour"
 asterisk = "penta-low"
-number-sign = "slanted"
+number-sign = "slanted-tall"
 ampersand = "upper-open"
 at = "threefold-tall"
 dollar = "through"
@@ -71,7 +68,7 @@ a = "single-storey-serifed"
 b = "toothed-motion-serifed"
 c = "unilateral-serifed"
 d = "toothed-serifed"
-f = "flat-hook-tailed"
+f = "flat-hook-tailed-crossbar-at-x-height"
 g = "single-storey-serifless"
 s = "bilateral-serifed"
 t = "standard-short-neck2"
@@ -105,12 +102,12 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.adm-mono.widths.normal]
-shape = 614.23
+shape = 620
 menu = 5
 css = "normal"
 
 [buildPlans.adm-mono.metric-override]
-sb = 80
+sb = 100
 
 # Fixed
 [buildPlans.adm-fixed]
@@ -128,7 +125,7 @@ capital-k = "symmetric-connected-serifed"
 capital-m = "flat-bottom"
 capital-r = "standing"
 capital-w = "straight-flat-top"
-f = "flat-hook-serifed"
+f = "flat-hook-serifed-crossbar-at-x-height"
 k = "symmetric-connected-serifed"
 r = "corner-hooked-serifed"
 t = "flat-hook-short-neck2"
@@ -141,7 +138,7 @@ seven = "bend-serifed"
 eight = "crossing-asymmetric"
 nine = "open-contour"
 asterisk = "penta-low"
-number-sign = "slanted"
+number-sign = "slanted-tall"
 ampersand = "upper-open"
 at = "threefold-tall"
 dollar = "through"
@@ -152,7 +149,7 @@ a = "single-storey-serifed"
 b = "toothed-motion-serifed"
 c = "unilateral-serifed"
 d = "toothed-serifed"
-f = "flat-hook-tailed"
+f = "flat-hook-tailed-crossbar-at-x-height"
 g = "single-storey-serifless"
 s = "bilateral-serifed"
 t = "standard-short-neck2"
@@ -186,12 +183,12 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.adm-fixed.widths.normal]
-shape = 614.23
+shape = 620
 menu = 5
 css = "normal"
 
 [buildPlans.adm-fixed.metric-override]
-sb = 80
+sb = 100
 
 # quasi-proportional
 [buildPlans.adm-prop]
@@ -209,7 +206,7 @@ capital-k = "symmetric-connected-serifed"
 capital-m = "flat-bottom"
 capital-r = "standing"
 capital-w = "straight-flat-top"
-f = "flat-hook-serifed"
+f = "flat-hook-serifed-crossbar-at-x-height"
 k = "symmetric-connected-serifed"
 r = "corner-hooked-serifed"
 t = "flat-hook-short-neck2"
@@ -222,7 +219,7 @@ seven = "bend-serifed"
 eight = "crossing-asymmetric"
 nine = "open-contour"
 asterisk = "penta-low"
-number-sign = "slanted"
+number-sign = "slanted-tall"
 ampersand = "upper-open"
 at = "threefold-tall"
 dollar = "through"
@@ -233,7 +230,7 @@ a = "single-storey-serifed"
 b = "toothed-motion-serifed"
 c = "unilateral-serifed"
 d = "toothed-serifed"
-f = "flat-hook-tailed"
+f = "flat-hook-tailed-crossbar-at-x-height"
 g = "single-storey-serifless"
 s = "bilateral-serifed"
 t = "standard-short-neck2"
@@ -267,252 +264,9 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.adm-prop.widths.normal]
-shape = 614.23
+shape = 620
 menu = 5
 css = "normal"
 
 [buildPlans.adm-prop.metric-override]
-sb = 80
-
-# mono ext
-[buildPlans.adm-mono-ext]
-family = "Adm Mono Ext"
-spacing = "normal"
-serifs = "slab"
-no-cv-ss = true
-no-ligation = true
-
-[buildPlans.adm-mono-ext.variants.design]
-capital-d = 'more-rounded-bilateral-serifed'
-capital-g = "toothless-corner-serifed-capped"
-capital-j = "serifed-both-sides"
-capital-k = "symmetric-connected-serifed"
-capital-m = "flat-bottom"
-capital-r = "standing"
-capital-w = "straight-flat-top"
-f = "flat-hook-serifed"
-k = "symmetric-connected-serifed"
-r = "corner-hooked-serifed"
-t = "flat-hook-short-neck2"
-w = "straight-flat-top"
-zero = "slashed-oval"
-four = "closed"
-five = "oblique-upper-left-bar"
-six = "open-contour"
-seven = "bend-serifed"
-eight = "crossing-asymmetric"
-nine = "open-contour"
-asterisk = "penta-low"
-number-sign = "slanted"
-ampersand = "upper-open"
-at = "threefold-tall"
-dollar = "through"
-percent = "rings-continuous-slash"
-
-[buildPlans.adm-mono-ext.variants.italic]
-a = "single-storey-serifed"
-b = "toothed-motion-serifed"
-c = "unilateral-serifed"
-d = "toothed-serifed"
-f = "flat-hook-tailed"
-g = "single-storey-serifless"
-s = "bilateral-serifed"
-t = "standard-short-neck2"
-u = "motion-serifed"
-v = "cursive-serifed"
-w = "cursive"
-x = "straight-serifed"
-y = "straight-turn"
-z = "straight-serifed"
-
-[buildPlans.adm-mono-ext.weights.regular]
-shape = 400
-menu = 400
-css = 400
-
-[buildPlans.adm-mono-ext.weights.bold]
-shape = 700
-menu = 700
-css = 700
-
-[buildPlans.adm-mono-ext.slopes.upright]
-angle = 0
-shape = "upright"
-menu = "upright"
-css = "normal"
-
-[buildPlans.adm-mono-ext.slopes.italic]
-angle = 9.4
-shape = "italic"
-menu = "italic"
-css = "italic"
-
-[buildPlans.adm-mono-ext.widths.normal]
-shape = 680
-menu = 5
-css = "normal"
-
-[buildPlans.adm-mono-ext.metric-override]
-sb = 80
-
-# Fixed ext
-[buildPlans.adm-fixed-ext]
-family = "Adm Fixed Ext"
-spacing = "fixed"
-serifs = "slab"
-no-cv-ss = true
-no-ligation = true
-
-[buildPlans.adm-fixed-ext.variants.design]
-capital-d = 'more-rounded-bilateral-serifed'
-capital-g = "toothless-corner-serifed-capped"
-capital-j = "serifed-both-sides"
-capital-k = "symmetric-connected-serifed"
-capital-m = "flat-bottom"
-capital-r = "standing"
-capital-w = "straight-flat-top"
-f = "flat-hook-serifed"
-k = "symmetric-connected-serifed"
-r = "corner-hooked-serifed"
-t = "flat-hook-short-neck2"
-w = "straight-flat-top"
-zero = "slashed-oval"
-four = "closed"
-five = "oblique-upper-left-bar"
-six = "open-contour"
-seven = "bend-serifed"
-eight = "crossing-asymmetric"
-nine = "open-contour"
-asterisk = "penta-low"
-number-sign = "slanted"
-ampersand = "upper-open"
-at = "threefold-tall"
-dollar = "through"
-percent = "rings-continuous-slash"
-
-[buildPlans.adm-fixed-ext.variants.italic]
-a = "single-storey-serifed"
-b = "toothed-motion-serifed"
-c = "unilateral-serifed"
-d = "toothed-serifed"
-f = "flat-hook-tailed"
-g = "single-storey-serifless"
-s = "bilateral-serifed"
-t = "standard-short-neck2"
-u = "motion-serifed"
-v = "cursive-serifed"
-w = "cursive"
-x = "straight-serifed"
-y = "straight-turn"
-z = "straight-serifed"
-
-[buildPlans.adm-fixed-ext.weights.regular]
-shape = 400
-menu = 400
-css = 400
-
-[buildPlans.adm-fixed-ext.weights.bold]
-shape = 700
-menu = 700
-css = 700
-
-[buildPlans.adm-fixed-ext.slopes.upright]
-angle = 0
-shape = "upright"
-menu = "upright"
-css = "normal"
-
-[buildPlans.adm-fixed-ext.slopes.italic]
-angle = 9.4
-shape = "italic"
-menu = "italic"
-css = "italic"
-
-[buildPlans.adm-fixed-ext.widths.normal]
-shape = 680
-menu = 5
-css = "normal"
-
-[buildPlans.adm-fixed-ext.metric-override]
-sb = 80
-
-# quasi-proportional ext
-[buildPlans.adm-prop-ext]
-family = "Adm Prop Ext"
-spacing = "quasi-proportional"
-serifs = "slab"
-no-cv-ss = true
-no-ligation = true
-
-[buildPlans.adm-prop-ext.variants.design]
-capital-d = 'more-rounded-bilateral-serifed'
-capital-g = "toothless-corner-serifed-capped"
-capital-j = "serifed-both-sides"
-capital-k = "symmetric-connected-serifed"
-capital-m = "flat-bottom"
-capital-r = "standing"
-capital-w = "straight-flat-top"
-f = "flat-hook-serifed"
-k = "symmetric-connected-serifed"
-r = "corner-hooked-serifed"
-t = "flat-hook-short-neck2"
-w = "straight-flat-top"
-zero = "slashed-oval"
-four = "closed"
-five = "oblique-upper-left-bar"
-six = "open-contour"
-seven = "bend-serifed"
-eight = "crossing-asymmetric"
-nine = "open-contour"
-asterisk = "penta-low"
-number-sign = "slanted"
-ampersand = "upper-open"
-at = "threefold-tall"
-dollar = "through"
-percent = "rings-continuous-slash"
-
-[buildPlans.adm-prop-ext.variants.italic]
-a = "single-storey-serifed"
-b = "toothed-motion-serifed"
-c = "unilateral-serifed"
-d = "toothed-serifed"
-f = "flat-hook-tailed"
-g = "single-storey-serifless"
-s = "bilateral-serifed"
-t = "standard-short-neck2"
-u = "motion-serifed"
-v = "cursive-serifed"
-w = "cursive"
-x = "straight-serifed"
-y = "straight-turn"
-z = "straight-serifed"
-
-[buildPlans.adm-prop-ext.weights.regular]
-shape = 400
-menu = 400
-css = 400
-
-[buildPlans.adm-prop-ext.weights.bold]
-shape = 700
-menu = 700
-css = 700
-
-[buildPlans.adm-prop-ext.slopes.upright]
-angle = 0
-shape = "upright"
-menu = "upright"
-css = "normal"
-
-[buildPlans.adm-prop-ext.slopes.italic]
-angle = 9.4
-shape = "italic"
-menu = "italic"
-css = "italic"
-
-[buildPlans.adm-prop-ext.widths.normal]
-shape = 680
-menu = 5
-css = "normal"
-
-[buildPlans.adm-prop-ext.metric-override]
-sb = 80
+sb = 100
