@@ -7,7 +7,7 @@
 #   Prop (quasi-proportional, for comment and docs)
 #
 # Properties:
-#   Type: Serif-slab
+#   Type: Serif-slab (except Prop is sans)
 #   4 styles: regular, italic, bold, bold-italic
 #   width: normal (shape: 620 (same as SF Mono), side bearing: 100)
 #   No ligations
@@ -43,6 +43,7 @@ capital-j = "serifed-both-sides"
 capital-k = "symmetric-connected-serifed"
 capital-m = "flat-bottom"
 capital-r = "standing"
+capital-q = "crossing"
 capital-w = "straight-flat-top"
 f = "flat-hook-serifed-crossbar-at-x-height"
 k = "symmetric-connected-serifed"
@@ -58,10 +59,9 @@ seven = "bend-serifed"
 eight = "crossing-asymmetric"
 nine = "open-contour"
 asterisk = "penta-low"
-number-sign = "slanted-tall"
+number-sign = "slanted"
 ampersand = "upper-open"
-at = "threefold-tall"
-dollar = "through"
+at = "fourfold-solid-inner"
 percent = "rings-continuous-slash"
 
 [buildPlans.adm-mono.variants.italic]
@@ -76,7 +76,6 @@ t = "standard-short-neck2"
 u = "motion-serifed"
 v = "cursive-serifed"
 w = "cursive"
-x = "straight-serifed"
 y = "straight-turn"
 z = "straight-serifed"
 
@@ -125,6 +124,7 @@ capital-j = "serifed-both-sides"
 capital-k = "symmetric-connected-serifed"
 capital-m = "flat-bottom"
 capital-r = "standing"
+capital-q = "crossing"
 capital-w = "straight-flat-top"
 f = "flat-hook-serifed-crossbar-at-x-height"
 k = "symmetric-connected-serifed"
@@ -140,10 +140,9 @@ seven = "bend-serifed"
 eight = "crossing-asymmetric"
 nine = "open-contour"
 asterisk = "penta-low"
-number-sign = "slanted-tall"
+number-sign = "slanted"
 ampersand = "upper-open"
-at = "threefold-tall"
-dollar = "through"
+at = "fourfold-solid-inner"
 percent = "rings-continuous-slash"
 
 [buildPlans.adm-fixed.variants.italic]
@@ -158,7 +157,6 @@ t = "standard-short-neck2"
 u = "motion-serifed"
 v = "cursive-serifed"
 w = "cursive"
-x = "straight-serifed"
 y = "straight-turn"
 z = "straight-serifed"
 
@@ -196,53 +194,27 @@ sb = 100
 [buildPlans.adm-prop]
 family = "Adm Prop"
 spacing = "quasi-proportional"
-serifs = "slab"
+serifs = "sans"
 no-cv-ss = true
 no-ligation = true
 
 [buildPlans.adm-prop.variants.design]
-capital-d = 'more-rounded-bilateral-serifed'
-capital-g = "toothless-corner-serifed-capped"
-capital-j = "serifed-both-sides"
-capital-k = "symmetric-connected-serifed"
-capital-m = "flat-bottom"
-capital-r = "standing"
-capital-w = "straight-flat-top"
-f = "flat-hook-serifed-crossbar-at-x-height"
-k = "symmetric-connected-serifed"
-r = "corner-hooked-serifed"
+capital-d = "more-rounded-serifless"
+capital-g = "toothless-rounded-serifless-hooked"
+capital-q = "crossing"
+f = "flat-hook-crossbar-at-x-height"
+r = "hookless-serifed"
 t = "flat-hook-short-neck2"
-x = "curly-serifed"
 w = "straight-flat-top"
-zero = "slashed-oval"
-four = "closed"
-five = "oblique-upper-left-bar"
-six = "open-contour"
-seven = "bend-serifed"
-eight = "crossing-asymmetric"
-nine = "open-contour"
-asterisk = "penta-low"
-number-sign = "slanted-tall"
-ampersand = "upper-open"
-at = "threefold-tall"
-dollar = "through"
-percent = "rings-continuous-slash"
-
-[buildPlans.adm-prop.variants.italic]
-a = "single-storey-serifed"
-b = "toothed-motion-serifed"
-c = "unilateral-serifed"
-d = "toothed-serifed"
-f = "flat-hook-tailed-crossbar-at-x-height"
-g = "single-storey-serifless"
-s = "bilateral-serifed"
-t = "standard-short-neck2"
-u = "motion-serifed"
-v = "cursive-serifed"
-w = "cursive"
-x = "straight-serifed"
 y = "straight-turn"
-z = "straight-serifed"
+zero = "slashed-oval"
+one = "base"
+two = "straight-neck"
+five = "oblique-upper-left-bar"
+eight = "two-circles"
+asterisk = "hex-low"
+number-sign = "slanted"
+percent = "rings-continuous-slash"
 
 [buildPlans.adm-prop.weights.regular]
 shape = 400
