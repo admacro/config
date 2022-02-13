@@ -48,7 +48,6 @@ capital-h = "top-left-serifed"
 capital-i = "serifed"
 capital-j = "serifed-both-sides"
 capital-k = "curly-top-left-serifed"
-capital-l = "motion-serifed"
 capital-m = "hanging-motion-serifed"
 capital-n = "motion-serifed"
 capital-p = "closed"
@@ -145,12 +144,12 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.adm-mono.widths.normal]
-shape = 620
+shape = 600
 menu = 5
 css = "normal"
 
 [buildPlans.adm-mono.metric-override]
-sb = 80
+sb = 75
 cap = 700
 xheight = 500
 
@@ -174,7 +173,6 @@ capital-h = "top-left-serifed"
 capital-i = "serifed"
 capital-j = "serifed-both-sides"
 capital-k = "curly-top-left-serifed"
-capital-l = "motion-serifed"
 capital-m = "hanging-motion-serifed"
 capital-n = "motion-serifed"
 capital-p = "closed"
@@ -271,12 +269,12 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.adm-fixed.widths.normal]
-shape = 620
+shape = 600
 menu = 5
 css = "normal"
 
 [buildPlans.adm-fixed.metric-override]
-sb = 80
+sb = 75
 cap = 700
 xheight = 500
 
@@ -300,7 +298,6 @@ capital-h = "top-left-serifed"
 capital-i = "serifed"
 capital-j = "serifed-both-sides"
 capital-k = "curly-top-left-serifed"
-capital-l = "motion-serifed"
 capital-m = "hanging-motion-serifed"
 capital-n = "motion-serifed"
 capital-p = "closed"
@@ -397,11 +394,11 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.adm-prop.widths.normal]
-shape = 620
+shape = 600
 menu = 5
 css = "normal"
 
 [buildPlans.adm-prop.metric-override]
-sb = 80
+sb = 75
 cap = 700
 xheight = 500
