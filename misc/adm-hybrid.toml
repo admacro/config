@@ -138,17 +138,17 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.adm-mono.widths.normal]
-shape = 615
+shape = 600
 menu = 5
 css = "normal"
 
 [buildPlans.adm-mono.metric-override]
-sb = 82
-cap = 697
-xheight = 523
-parenSize = 933
-symbolMid = 341
-leading = 1248
+sb = 72
+cap = 683
+xheight = 510
+parenSize = 910
+symbolMid = 316
+leading = 1218
 
 # Fixed
 [buildPlans.adm-fixed]
@@ -260,17 +260,17 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.adm-fixed.widths.normal]
-shape = 615
+shape = 600
 menu = 5
 css = "normal"
 
 [buildPlans.adm-fixed.metric-override]
-sb = 82
-cap = 697
-xheight = 523
-parenSize = 933
-symbolMid = 341
-leading = 1248
+sb = 72
+cap = 683
+xheight = 510
+parenSize = 910
+symbolMid = 316
+leading = 1218
 
 # quasi-proportional
 [buildPlans.adm-prop]
@@ -382,14 +382,14 @@ menu = "italic"
 css = "italic"
 
 [buildPlans.adm-prop.widths.normal]
-shape = 615
+shape = 600
 menu = 5
 css = "normal"
 
 [buildPlans.adm-prop.metric-override]
-sb = 82
-cap = 697
-xheight = 523
-parenSize = 933
-symbolMid = 341
-leading = 1248
+sb = 72
+cap = 683
+xheight = 510
+parenSize = 910
+symbolMid = 316
+leading = 1218
