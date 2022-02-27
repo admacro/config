@@ -100,7 +100,6 @@ menu = 5
 css = "normal"
 
 [buildPlans.adm-sans-mono.metric-override]
-# sb = 80
 cap = 696
 xheight = 515
 parenSize = 926
@@ -179,7 +178,6 @@ menu = 5
 css = "normal"
 
 [buildPlans.adm-sans-fixed.metric-override]
-# sb = 80
 cap = 696
 xheight = 515
 parenSize = 926
@@ -258,7 +256,6 @@ menu = 5
 css = "normal"
 
 [buildPlans.adm-sans-prop.metric-override]
-# sb = 80
 cap = 696
 xheight = 515
 parenSize = 926
