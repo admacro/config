@@ -137,7 +137,7 @@ css = "normal"
 
 [buildPlans.adm-hybrid-mono.metric-override]
 cap = 696
-xheight = 515
+xHeight = 515
 parenSize = 926
 symbolMid=322
 leading=1228
@@ -251,7 +251,7 @@ css = "normal"
 
 [buildPlans.adm-hybrid-fixed.metric-override]
 cap = 696
-xheight = 515
+xHeight = 515
 parenSize = 926
 symbolMid=322
 leading=1228
@@ -365,7 +365,7 @@ css = "normal"
 
 [buildPlans.adm-hybrid-prop.metric-override]
 cap = 696
-xheight = 515
+xHeight = 515
 parenSize = 926
 symbolMid=322
 leading=1228
