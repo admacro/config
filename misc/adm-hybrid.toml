@@ -141,6 +141,8 @@ xHeight = 515
 parenSize = 926
 symbolMid=322
 leading=1228
+archDepth=245
+smallArchDepth=250
 
 # Fixed
 [buildPlans.adm-hybrid-fixed]
@@ -255,6 +257,8 @@ xHeight = 515
 parenSize = 926
 symbolMid=322
 leading=1228
+archDepth=245
+smallArchDepth=250
 
 # quasi-proportional
 [buildPlans.adm-hybrid-prop]
@@ -369,3 +373,5 @@ xHeight = 515
 parenSize = 926
 symbolMid=322
 leading=1228
+archDepth=245
+smallArchDepth=250
