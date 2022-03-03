@@ -135,6 +135,7 @@ menu = 5
 css = "normal"
 
 [buildPlans.adm-hybrid-mono.metric-override]
+sb=85
 cap = 696
 xHeight = 515
 parenSize = 926
@@ -250,6 +251,7 @@ menu = 5
 css = "normal"
 
 [buildPlans.adm-hybrid-fixed.metric-override]
+sb=85
 cap = 696
 xHeight = 515
 parenSize = 926
@@ -365,6 +367,7 @@ menu = 5
 css = "normal"
 
 [buildPlans.adm-hybrid-prop.metric-override]
+sb=85
 cap = 696
 xHeight = 515
 parenSize = 926
