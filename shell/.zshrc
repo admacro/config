@@ -55,6 +55,17 @@ export_bin_path /usr/local/opt/python/libexec # Python (Homebrew)
 export_bin_path "-Xms512m -Xmx1G" MAVEN_OPTS # options for JVM running maven
 export_bin_path /usr/local/opt/mysql@5.7  # mysql
 
+# go back one level and change to directory (cd to same level directory)
+back_and_cd() {
+    dir=$1
+    if [ -z "$dir" ]; then
+        cd ..
+    else
+        cd ..; cd "${dir}"
+    fi
+}
+alias bd=back_and_cd
+
 # Misc
 if [ -r ~/.git_profile ]; then
     source ~/.git_profile
