@@ -12,7 +12,8 @@ alias bb="cd ../.."
 alias l="ls -lFGh"
 alias la="l -a"
 alias lp="ls -p"
-alias h="history"
+alias h="history -100"          # show last 100 records
+alias ha="history 1"            # show all records
 alias treed="find . -print | sed -e 's;[^/]*/;|____;g;s;____|; |;g'"
 
 # https://unix.stackexchange.com/questions/273861/unlimited-history-in-zsh
