@@ -83,24 +83,6 @@
   (add-hook 'before-save-hook #'lsp-format-buffer t t)
   (add-hook 'before-save-hook #'lsp-organize-imports t t))
 
-;; lsp-java
-(config-pkg 'lsp-java
-            (lambda()
-              (require 'lsp-java) ; use 'lsp-java-boot for sprint boot projects
-
-              (add-hook 'java-mode-hook 'lsp-deferred)
-              (add-hook 'java-mode-hook 'lsp-reorganize-code-before-save)
-
-              ;; organize imports when saving buffer
-              (setq lsp-java-save-actions-organize-imports t)
-              (setq lsp-java-vmargs
-                    (list
-                     "-noverify"
-                     "-Xms1G"
-                     "-Xmx2G"
-                     "-XX:+UseG1GC"
-                     "-XX:+UseStringDeduplication"))))
-
 ;; go-mode
 (config-pkg 'go-mode
             (lambda()
@@ -245,48 +227,6 @@
                                      ))
                                    highlight-numbers-modelist)))))
 
-;; Ruby robe
-(config-pkg 'robe
-            (lambda()
-              (setq ruby-insert-encoding-magic-comment nil)
-              (setq inf-ruby-console-environment "development")
-              (add-hook 'ruby-mode-hook 'robe-mode)
-              (add-hook 'ruby-mode-hook 'robe-start)
-              ;; register jump implmentation
-              (puthash 'ruby-mode 'robe-jump jump-map)
-              ;; ruby code navigation
-              (global-set-key (kbd "s-r r") 'inf-ruby)
-              (global-set-key (kbd "s-r c") 'inf-ruby-console-auto)))
-
-;; Web Mode
-(config-pkg 'web-mode
-            (lambda()
-              (autoload 'web-mode "web-mode")
-              (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
-              (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))))
-
-;; YAML
-(config-pkg 'yaml-mode
-            (lambda()
-              (autoload 'yaml-mode "yaml-mode")
-              (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
-              (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))))
-
-;; Rest client
-(config-pkg 'restclient
-            (lambda()
-              (autoload 'restclient "restclient")
-              (add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
-              (add-to-list 'auto-mode-alist '("\\.rest\\'" . restclient-mode))))
-
-;; Apib-mode (major mode for editing API blueprint file)
-(config-pkg 'apib-mode
-            (lambda()
-              (autoload 'apib-mode "apib-mode")
-              (add-to-list 'auto-mode-alist '("\\.api\\'" . apib-mode))
-              (add-to-list 'auto-mode-alist '("\\.apib\\'" . apib-mode))
-              (add-to-list 'auto-mode-alist '("\\.blueprint\\'" . apib-mode))))
-
 ;; json mode
 (config-pkg 'json-mode
             (lambda()
@@ -296,3 +236,11 @@
                         (lambda ()
                           (make-local-variable 'js-indent-level)
                           (setq js-indent-level 2)))))
+
+;; YAML
+(config-pkg 'yaml-mode
+            (lambda()
+              (autoload 'yaml-mode "yaml-mode")
+              (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
+              (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))))
+
