@@ -1,5 +1,5 @@
 (require 'string-inflection)
-(define-key xah-fly-dot-keymap (kbd "-") 'string-inflection-cycle)
+(define-key xah-fly-Lp2p1-key-map (kbd "-") 'string-inflection-cycle)
 
 ;; magit
 (config-pkg 'magit
@@ -7,10 +7,10 @@
               ;; (setq magit-diff-refine-hunk 'all)
 
               ;; show changes made to current git repo (magit-status)
-              (define-key xah-fly-dot-keymap (kbd "s") 'magit-status)
+              (define-key xah-fly-Lp2p1-key-map (kbd "s") 'magit-status)
 
               ;; commit (C-c C-c)
-              (define-key xah-fly-dot-keymap (kbd "c") 'with-editor-finish)
+              (define-key xah-fly-Lp2p1-key-map (kbd "c") 'with-editor-finish)
               ))
 
 ;; exec-path-from-shell
@@ -67,8 +67,8 @@
               (global-set-key (kbd "<f6>") 'lsp-find-definition)
               (global-set-key (kbd "<f5>") 'xref-pop-marker-stack) ; go back to previous jump mark
 
-              (define-key xah-fly-comma-keymap (kbd "n") 'lsp-rename)
-              (define-key xah-fly-comma-keymap (kbd ",") 'xref-find-apropos)))
+              (define-key xah-fly-Lp3p1-key-map (kbd "n") 'lsp-rename)
+              (define-key xah-fly-Lp3p1-key-map (kbd ",") 'xref-find-apropos)))
 
 ;; company
 ;; in-buffer code completion framework
@@ -84,22 +84,22 @@
   (add-hook 'before-save-hook #'lsp-organize-imports t t))
 
 ;; lsp-java
-(config-pkg 'lsp-java
-            (lambda()
-              (require 'lsp-java) ; use 'lsp-java-boot for sprint boot projects
+;; (config-pkg 'lsp-java
+;;             (lambda()
+;;               (require 'lsp-java) ; use 'lsp-java-boot for sprint boot projects
 
-              (add-hook 'java-mode-hook 'lsp-deferred)
-              (add-hook 'java-mode-hook 'lsp-reorganize-code-before-save)
+;;               (add-hook 'java-mode-hook 'lsp-deferred)
+;;               (add-hook 'java-mode-hook 'lsp-reorganize-code-before-save)
 
-              ;; organize imports when saving buffer
-              (setq lsp-java-save-actions-organize-imports t)
-              (setq lsp-java-vmargs
-                    (list
-                     "-noverify"
-                     "-Xms1G"
-                     "-Xmx2G"
-                     "-XX:+UseG1GC"
-                     "-XX:+UseStringDeduplication"))))
+;;               ;; organize imports when saving buffer
+;;               (setq lsp-java-save-actions-organize-imports t)
+;;               (setq lsp-java-vmargs
+;;                     (list
+;;                      "-noverify"
+;;                      "-Xms1G"
+;;                      "-Xmx2G"
+;;                      "-XX:+UseG1GC"
+;;                      "-XX:+UseStringDeduplication"))))
 
 ;; go-mode
 (config-pkg 'go-mode
@@ -124,10 +124,10 @@
               ;; use gogetdoc to show doc (go got )
               (setq godoc-at-point-function 'godoc-gogetdoc)
 
-              (define-key xah-fly-dot-keymap (kbd "r") 'go-run)
-              (define-key xah-fly-dot-keymap (kbd "t") 'go-test-current-test)
-              (define-key xah-fly-dot-keymap (kbd "f") 'go-test-current-file)
-              (define-key xah-fly-comma-keymap (kbd "d") 'godoc-at-point)
+              (define-key xah-fly-Lp2p1-key-map (kbd "r") 'go-run)
+              (define-key xah-fly-Lp2p1-key-map (kbd "t") 'go-test-current-test)
+              (define-key xah-fly-Lp2p1-key-map (kbd "f") 'go-test-current-file)
+              (define-key xah-fly-Lp3p1-key-map (kbd "d") 'godoc-at-point)
               ))
 
 ;; treemacs
@@ -159,7 +159,7 @@
                           (display-line-numbers-mode 0)
                           (variable-pitch-mode 1)))
 
-              (define-key xah-fly-dot-keymap (kbd ".") 'treemacs)
+              (define-key xah-fly-Lp2p1-key-map (kbd ".") 'treemacs)
               ))
 
 ;; lsp-treemacs
@@ -167,9 +167,9 @@
             (lambda()
               ;; enable bidirectional synchronization of lsp workspace folders and treemacs projects
               (lsp-treemacs-sync-mode 1)
-              (define-key xah-fly-comma-keymap (kbd "s") 'lsp-treemacs-symbols)
-              (define-key xah-fly-comma-keymap (kbd "r") 'lsp-treemacs-references)
-              (define-key xah-fly-comma-keymap (kbd "m") 'lsp-treemacs-implementations)))
+              (define-key xah-fly-Lp3p1-key-map (kbd "s") 'lsp-treemacs-symbols)
+              (define-key xah-fly-Lp3p1-key-map (kbd "r") 'lsp-treemacs-references)
+              (define-key xah-fly-Lp3p1-key-map (kbd "m") 'lsp-treemacs-implementations)))
 
 ;; hl-todo
 (config-pkg 'hl-todo

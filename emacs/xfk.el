@@ -9,7 +9,7 @@
   (interactive)
   (xah-close-current-buffer)
   (delete-window))
- (define-key xah-fly-t-keymap (kbd "h") 'close-current-buffer-and-delete-window)
+ (define-key xah-fly-Rp2p0-key-map (kbd "h") 'close-current-buffer-and-delete-window)
 
 (defun set-input-source(source)
   ;; shell-command creates a buffer *Shell Command Output*
@@ -53,24 +53,27 @@ External command util: https://github.com/vovkasm/input-source-switcher"
 (define-key xah-fly-leader-key-map (kbd "^") 'xah-upcase-sentence)
 (define-key xah-fly-leader-key-map (kbd "(") 'ispell-word)
 
-(define-key xah-fly-t-keymap (kbd "!") 'xah-append-to-register-1)
-(define-key xah-fly-t-keymap (kbd "@") 'xah-clear-register-1)
-(define-key xah-fly-t-keymap (kbd "#") 'xah-copy-to-register-1)
-(define-key xah-fly-t-keymap (kbd "$") 'xah-paste-from-register-1)
-(define-key xah-fly-t-keymap (kbd "&") 'xah-append-to-register-1)
-(define-key xah-fly-t-keymap (kbd "*") 'xah-clear-register-1)
+;; dvorat t
+(define-key xah-fly-Rp2p0-key-map (kbd "!") 'xah-append-to-register-1)
+(define-key xah-fly-Rp2p0-key-map (kbd "@") 'xah-clear-register-1)
+(define-key xah-fly-Rp2p0-key-map (kbd "#") 'xah-copy-to-register-1)
+(define-key xah-fly-Rp2p0-key-map (kbd "$") 'xah-paste-from-register-1)
+(define-key xah-fly-Rp2p0-key-map (kbd "&") 'xah-append-to-register-1)
+(define-key xah-fly-Rp2p0-key-map (kbd "*") 'xah-clear-register-1)
 
-(define-key xah-fly-r-keymap (kbd "#") 'number-to-register)
-(define-key xah-fly-r-keymap (kbd "$") 'increment-register)
+;; dvorat r
+(define-key xah-fly-Rp3p1-key-map (kbd "#") 'number-to-register)
+(define-key xah-fly-Rp3p1-key-map (kbd "$") 'increment-register)
 
-(define-key xah-fly-n-keymap (kbd ")") 'shell-command-on-region)
-(define-key xah-fly-n-keymap (kbd "!") 'set-input-method)
-(define-key xah-fly-n-keymap (kbd "@") 'global-hl-line-mode)
-(define-key xah-fly-n-keymap (kbd "$") 'global-display-line-numbers-mode)
-(define-key xah-fly-n-keymap (kbd "%") 'visual-line-mode)
-(define-key xah-fly-n-keymap (kbd "^") 'calendar)
-(define-key xah-fly-n-keymap (kbd "&") 'calc)
-(define-key xah-fly-n-keymap (kbd "(") 'shell-command)
+;; dvorat n
+(define-key xah-fly-Rp3p0-key-map (kbd ")") 'shell-command-on-region)
+(define-key xah-fly-Rp3p0-key-map (kbd "!") 'set-input-method)
+(define-key xah-fly-Rp3p0-key-map (kbd "@") 'global-hl-line-mode)
+(define-key xah-fly-Rp3p0-key-map (kbd "$") 'global-display-line-numbers-mode)
+(define-key xah-fly-Rp3p0-key-map (kbd "%") 'visual-line-mode)
+(define-key xah-fly-Rp3p0-key-map (kbd "^") 'calendar)
+(define-key xah-fly-Rp3p0-key-map (kbd "&") 'calc)
+(define-key xah-fly-Rp3p0-key-map (kbd "(") 'shell-command)
 
 (define-key xah-fly--tab-key-map (kbd ")") 'expand-jump-to-next-slot)
 (define-key xah-fly--tab-key-map (kbd "!") 'abbrev-prefix-mark)
