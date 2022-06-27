@@ -21,7 +21,9 @@
 (defun switch-to-last-input-source(source)
   "Switch input source to last input source saved while entering chinese insert mode.
 External command util: https://github.com/vovkasm/input-source-switcher"
-  (set-input-source source)
+  (if (equal "com.apple.inputmethod.SCIM.ITABC" source)
+      (set-input-source "com.apple.keylayout.ABC")
+    (set-input-source source))
   (remove-hook 'xah-fly-command-mode-activate-hook 'switch-to-last-input-source))
 
 (defun chinese-insert-mode-activate()
@@ -33,6 +35,9 @@ External command util: https://github.com/vovkasm/input-source-switcher"
               (apply-partially #'switch-to-last-input-source last-input-source)))
   (xah-fly-insert-mode-activate)
   (set-input-source "com.apple.inputmethod.SCIM.ITABC"))
+
+;; ;; use DEL as leader key
+;; (define-key key-translation-map (kbd "DEL") (kbd "SPC"))
 
 (define-key xah-fly-leader-key-map (kbd "DEL") 'chinese-insert-mode-activate)
 
