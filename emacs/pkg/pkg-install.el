@@ -45,7 +45,7 @@
 (setq pkgHash (make-hash-table :test 'equal))
 (puthash "Fundamental" package-list-fundamental pkgHash)
 (puthash "Programming" package-list-prog pkgHash)
-(puthash "Java" package-list-java pkgHash)
+;; (puthash "Java" package-list-java pkgHash)
 (puthash "Go" package-list-go pkgHash)
 (puthash "Extra Language Support" package-list-extra-lang pkgHash)
 

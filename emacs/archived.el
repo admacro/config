@@ -41,3 +41,57 @@
                                       '(("[][(){}~=/\\;,.'<-_\|>\"!@#$%^&*]"
                                          (0 (add-face-text-property (match-beginning 0) (match-end 0)
                                                                     (list :family monospace-font-family)))))))))
+
+;; configurations
+;; lsp-java
+(config-pkg 'lsp-java
+            (lambda()
+              (require 'lsp-java) ; use 'lsp-java-boot for sprint boot projects
+
+              (add-hook 'java-mode-hook 'lsp-deferred)
+              (add-hook 'java-mode-hook 'lsp-reorganize-code-before-save)
+
+              ;; organize imports when saving buffer
+              (setq lsp-java-save-actions-organize-imports t)
+              (setq lsp-java-vmargs
+                    (list
+                     "-noverify"
+                     "-Xms1G"
+                     "-Xmx2G"
+                     "-XX:+UseG1GC"
+                     "-XX:+UseStringDeduplication"))))
+
+;; Ruby robe
+(config-pkg 'robe
+            (lambda()
+              (setq ruby-insert-encoding-magic-comment nil)
+              (setq inf-ruby-console-environment "development")
+              (add-hook 'ruby-mode-hook 'robe-mode)
+              (add-hook 'ruby-mode-hook 'robe-start)
+              ;; register jump implmentation
+              (puthash 'ruby-mode 'robe-jump jump-map)
+              ;; ruby code navigation
+              (global-set-key (kbd "s-r r") 'inf-ruby)
+              (global-set-key (kbd "s-r c") 'inf-ruby-console-auto)))
+
+;; Rest client
+(config-pkg 'restclient
+            (lambda()
+              (autoload 'restclient "restclient")
+              (add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
+              (add-to-list 'auto-mode-alist '("\\.rest\\'" . restclient-mode))))
+
+;; Web Mode
+(config-pkg 'web-mode
+            (lambda()
+              (autoload 'web-mode "web-mode")
+              (add-to-list 'auto-mode-alist '("\\.html\\'" . web-mode))
+              (add-to-list 'auto-mode-alist '("\\.erb\\'" . web-mode))))
+
+;; Apib-mode (major mode for editing API blueprint file)
+(config-pkg 'apib-mode
+            (lambda()
+              (autoload 'apib-mode "apib-mode")
+              (add-to-list 'auto-mode-alist '("\\.api\\'" . apib-mode))
+              (add-to-list 'auto-mode-alist '("\\.apib\\'" . apib-mode))
+              (add-to-list 'auto-mode-alist '("\\.blueprint\\'" . apib-mode))))
