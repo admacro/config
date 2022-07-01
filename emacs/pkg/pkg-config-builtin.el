@@ -3,6 +3,16 @@
 
 ;; fido
 (fido-vertical-mode 1)
+;; use basic complete style when inputing new file/directory names
+(defun my-icomplete-styles ()
+  (let ((prompt (minibuffer-prompt)))
+    (if prompt
+        (progn
+          (let ((index (string-match "File to save in: \\|Write file: \\|Copy .+ to: \\|Rename .+ to: \\|Create directory: " prompt)))
+            (if (and index (> index -1))
+                (setq-local completion-styles '(basic))
+              ))))))
+(add-hook 'icomplete-minibuffer-setup-hook 'my-icomplete-styles)
 
 ;; ibuffer
 ;; Filter buffers into groups
