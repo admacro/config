@@ -1,0 +1,32 @@
+{
+   "Events" : [
+      {
+         "Action" : "down",
+         "Button" : 1,
+         "Delay" : "10",
+         "Type" : 9
+      },
+      {
+         "Action" : "down",
+         "Button" : 44,
+         "Delay" : "10",
+         "Type" : 10
+      },
+      {
+         "Action" : "up",
+         "Button" : 44,
+         "Delay" : "10",
+         "Type" : 10
+      },
+      {
+         "Action" : "up",
+         "Button" : 1,
+         "Delay" : "10",
+         "Type" : 9
+      }
+   ],
+   "Guid" : "2021_11_06_15_15_13_559",
+   "MacroName" : "切换输入法",
+   "Version" : 64
+}
+

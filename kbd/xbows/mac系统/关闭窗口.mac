@@ -1,0 +1,32 @@
+{
+   "Events" : [
+      {
+         "Action" : "down",
+         "Button" : 8,
+         "Delay" : "10",
+         "Type" : 9
+      },
+      {
+         "Action" : "down",
+         "Button" : 26,
+         "Delay" : "10",
+         "Type" : 10
+      },
+      {
+         "Action" : "up",
+         "Button" : 26,
+         "Delay" : "10",
+         "Type" : 10
+      },
+      {
+         "Action" : "up",
+         "Button" : 8,
+         "Delay" : "10",
+         "Type" : 9
+      }
+   ],
+   "Guid" : "2021_11_06_12_01_28_607",
+   "MacroName" : "关闭当前窗口",
+   "Version" : 64
+}
+

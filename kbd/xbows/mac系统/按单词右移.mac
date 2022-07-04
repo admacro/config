@@ -1,0 +1,32 @@
+{
+   "Events" : [
+      {
+         "Action" : "down",
+         "Button" : 4,
+         "Delay" : "10",
+         "Type" : 9
+      },
+      {
+         "Action" : "down",
+         "Button" : 79,
+         "Delay" : "10",
+         "Type" : 10
+      },
+      {
+         "Action" : "up",
+         "Button" : 79,
+         "Delay" : "10",
+         "Type" : 10
+      },
+      {
+         "Action" : "up",
+         "Button" : 4,
+         "Delay" : "10",
+         "Type" : 9
+      }
+   ],
+   "Guid" : "2022_07_05_00_13_01_943",
+   "MacroName" : "按单词右移",
+   "Version" : 64
+}
+
