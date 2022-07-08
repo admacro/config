@@ -20,11 +20,14 @@
 (setq ibuffer-saved-filter-groups
       '(("default"
          ("Programming" (and (not (name . "^magit"))
+                             (not (mode . dired-mode))
                              (not (name . "COMMIT_EDITMSG"))
                              (filename . "prog")))
          ("Coding" (and (not (name . "^magit"))
-                             (not (name . "COMMIT_EDITMSG"))
-                             (filename . "code")))
+                        (not (mode . dired-mode))
+                        (not (name . "COMMIT_EDITMSG"))
+                        (filename . "code")))
+         ("Dired" (mode . dired-mode))
          ("Magit" (or (name . "^magit")
                       (name . "COMMIT_EDITMSG")))
          ("Misc" (name . "^\\*")))))

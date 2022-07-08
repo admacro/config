@@ -51,10 +51,16 @@ export_bin_path() {
 }
 
 # export_bin_path $(go env GOPATH) GOPATH
-export_bin_path $(/usr/libexec/java_home) JAVA_HOME
-export_bin_path /usr/local/opt/python/libexec # Python (Homebrew)
 export_bin_path "-Xms512m -Xmx1G" MAVEN_OPTS # options for JVM running maven
+
+# Homebrew
+export_bin_path /usr/local/opt/openjdk@11 JAVA_HOME
+export_bin_path /usr/local/opt/python/libexec
 export_bin_path /usr/local/opt/mysql@5.7  # mysql
+
+# standalone installation pkg
+# export_bin_path $(/usr/libexec/java_home) JAVA_HOME
+# export_bin_path /opt/local/share/java/maven3 MVN_HOME
 
 # go back one level and change to directory (cd to same level directory)
 back_and_cd() {
@@ -83,3 +89,7 @@ if type brew &>/dev/null; then
 fi
 source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
 
+# proxy
+# export http_proxy=127.0.0.1:1087
+# export https_proxy=127.0.0.1:1087
+alias setproxy="export http_proxy=127.0.0.1:1087;export https_proxy=127.0.0.1:1087"
