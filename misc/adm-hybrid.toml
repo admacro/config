@@ -16,7 +16,7 @@
 #   1. Create a custom build configuration using https://typeof.net/Iosevka/customizer
 #   2. Save your configuration as private-build-plans.toml (Add more as needed)
 #   3. Go to the directory where private-build-plans.toml is located
-#   4. Run `docker run -it -v $(pwd):/build avivace/iosevka-build -- ttf::adm-hybrid-mono ttf::adm-hybrid-fixed ttf::adm-hybrid-prop`
+#   4. Run `docker run -it -v $(pwd):/build avivace/iosevka-build -- ttf::adm-mono ttf::adm-fixed ttf::adm-prop`
 #
 # Build from source repo
 #   1. Create a custom build configuration using https://typeof.net/Iosevka/customizer
@@ -24,19 +24,19 @@
 #   3. Put private-build-plans.toml under the root directory of the repo
 #   4. Install nodejs and ttfautohint
 #   5. Go to the root directory of the repo
-#   6. Run `npm install; npm run build -- ttf::adm-hybrid-mono ttf::adm-hybrid-fixed ttf::adm-hybrid-prop;`
+#   6. Run `npm install; npm run build -- ttf::adm-mono ttf::adm-fixed ttf::adm-prop;`
 #
 # Ref: https://github.com/be5invis/Iosevka/blob/master/doc/custom-build.md
 
 # mono
-[buildPlans.adm-hybrid-mono]
-family = "Adm Hybrid Mono"
+[buildPlans.adm-mono]
+family = "Adm Mono"
 spacing = "normal"
 serifs = "sans"
 no-cv-ss = true
 no-ligation = true
 
-[buildPlans.adm-hybrid-mono.variants.design]
+[buildPlans.adm-mono.variants.design]
 capital-a = "straight-top-serifed"
 capital-b = "more-asymmetric-unilateral-serifed"
 capital-d = "more-rounded-unilateral-serifed"
@@ -91,7 +91,7 @@ percent = "dots"
 question = "corner"
 punctuation-dot = "square"
 
-[buildPlans.adm-hybrid-mono.variants.italic]
+[buildPlans.adm-mono.variants.italic]
 capital-h = "top-left-bottom-right-serifed"
 capital-k = "symmetric-touching-top-left-and-bottom-right-serifed"
 a = "single-storey-serifed"
@@ -107,34 +107,34 @@ m = "top-left-and-bottom-right-serifed"
 n = "straight-motion-serifed"
 u = "bottom-right-serifed"
 
-[buildPlans.adm-hybrid-mono.weights.regular]
+[buildPlans.adm-mono.weights.regular]
 shape = 400
 menu = 400
 css = 400
 
-[buildPlans.adm-hybrid-mono.weights.bold]
+[buildPlans.adm-mono.weights.bold]
 shape = 700
 menu = 700
 css = 700
 
-[buildPlans.adm-hybrid-mono.slopes.upright]
+[buildPlans.adm-mono.slopes.upright]
 angle = 0
 shape = "upright"
 menu = "upright"
 css = "normal"
 
-[buildPlans.adm-hybrid-mono.slopes.italic]
+[buildPlans.adm-mono.slopes.italic]
 angle = 12
 shape = "italic"
 menu = "italic"
 css = "italic"
 
-[buildPlans.adm-hybrid-mono.widths.normal]
+[buildPlans.adm-mono.widths.normal]
 shape = 600
 menu = 5
 css = "normal"
 
-[buildPlans.adm-hybrid-mono.metric-override]
+[buildPlans.adm-mono.metric-override]
 sb=85
 cap = 696
 xHeight = 515
@@ -145,14 +145,14 @@ archDepth=245
 smallArchDepth=250
 
 # Fixed
-[buildPlans.adm-hybrid-fixed]
-family = "Adm Hybrid Fixed"
+[buildPlans.adm-fixed]
+family = "Adm Fixed"
 spacing = "fixed"
 serifs = "sans"
 no-cv-ss = true
 no-ligation = true
 
-[buildPlans.adm-hybrid-fixed.variants.design]
+[buildPlans.adm-fixed.variants.design]
 capital-a = "straight-top-serifed"
 capital-b = "more-asymmetric-unilateral-serifed"
 capital-d = "more-rounded-unilateral-serifed"
@@ -207,7 +207,7 @@ percent = "dots"
 question = "corner"
 punctuation-dot = "square"
 
-[buildPlans.adm-hybrid-fixed.variants.italic]
+[buildPlans.adm-fixed.variants.italic]
 capital-h = "top-left-bottom-right-serifed"
 capital-k = "symmetric-touching-top-left-and-bottom-right-serifed"
 a = "single-storey-serifed"
@@ -223,34 +223,34 @@ m = "top-left-and-bottom-right-serifed"
 n = "straight-motion-serifed"
 u = "bottom-right-serifed"
 
-[buildPlans.adm-hybrid-fixed.weights.regular]
+[buildPlans.adm-fixed.weights.regular]
 shape = 400
 menu = 400
 css = 400
 
-[buildPlans.adm-hybrid-fixed.weights.bold]
+[buildPlans.adm-fixed.weights.bold]
 shape = 700
 menu = 700
 css = 700
 
-[buildPlans.adm-hybrid-fixed.slopes.upright]
+[buildPlans.adm-fixed.slopes.upright]
 angle = 0
 shape = "upright"
 menu = "upright"
 css = "normal"
 
-[buildPlans.adm-hybrid-fixed.slopes.italic]
+[buildPlans.adm-fixed.slopes.italic]
 angle = 12
 shape = "italic"
 menu = "italic"
 css = "italic"
 
-[buildPlans.adm-hybrid-fixed.widths.normal]
+[buildPlans.adm-fixed.widths.normal]
 shape = 600
 menu = 5
 css = "normal"
 
-[buildPlans.adm-hybrid-fixed.metric-override]
+[buildPlans.adm-fixed.metric-override]
 sb=85
 cap = 696
 xHeight = 515
@@ -261,14 +261,14 @@ archDepth=245
 smallArchDepth=250
 
 # quasi-proportional
-[buildPlans.adm-hybrid-prop]
-family = "Adm Hybrid Prop"
+[buildPlans.adm-prop]
+family = "Adm Prop"
 spacing = "quasi-proportional"
 serifs = "sans"
 no-cv-ss = true
 no-ligation = true
 
-[buildPlans.adm-hybrid-prop.variants.design]
+[buildPlans.adm-prop.variants.design]
 capital-a = "straight-top-serifed"
 capital-b = "more-asymmetric-unilateral-serifed"
 capital-d = "more-rounded-unilateral-serifed"
@@ -323,7 +323,7 @@ percent = "dots"
 question = "corner"
 punctuation-dot = "square"
 
-[buildPlans.adm-hybrid-prop.variants.italic]
+[buildPlans.adm-prop.variants.italic]
 capital-h = "top-left-bottom-right-serifed"
 capital-k = "symmetric-touching-top-left-and-bottom-right-serifed"
 a = "single-storey-serifed"
@@ -339,34 +339,34 @@ m = "top-left-and-bottom-right-serifed"
 n = "straight-motion-serifed"
 u = "bottom-right-serifed"
 
-[buildPlans.adm-hybrid-prop.weights.regular]
+[buildPlans.adm-prop.weights.regular]
 shape = 400
 menu = 400
 css = 400
 
-[buildPlans.adm-hybrid-prop.weights.bold]
+[buildPlans.adm-prop.weights.bold]
 shape = 700
 menu = 700
 css = 700
 
-[buildPlans.adm-hybrid-prop.slopes.upright]
+[buildPlans.adm-prop.slopes.upright]
 angle = 0
 shape = "upright"
 menu = "upright"
 css = "normal"
 
-[buildPlans.adm-hybrid-prop.slopes.italic]
+[buildPlans.adm-prop.slopes.italic]
 angle = 12
 shape = "italic"
 menu = "italic"
 css = "italic"
 
-[buildPlans.adm-hybrid-prop.widths.normal]
+[buildPlans.adm-prop.widths.normal]
 shape = 600
 menu = 5
 css = "normal"
 
-[buildPlans.adm-hybrid-prop.metric-override]
+[buildPlans.adm-prop.metric-override]
 sb=85
 cap = 696
 xHeight = 515
