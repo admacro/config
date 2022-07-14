@@ -6,8 +6,8 @@
 
 ;; Packages for basic editing, file navigation, search, etc.
 (setq package-list-fundamental
-      '(smex
-        find-file-in-repository
+      ;; '(smex
+      '(find-file-in-repository
         markdown-mode
         magit
         htmlize))
@@ -36,9 +36,10 @@
         ob-go))
 
 ;; Packages for extra language support
-(setq package-list-extra-lang
+(setq package-list-extra
       '(yaml-mode
-        json-mode))
+        json-mode
+        restclient))
 
 ;; Package category name to package list mapping
 ;; Comment or uncomment an entry to uninstall or install a category
@@ -47,7 +48,7 @@
 (puthash "Programming" package-list-prog pkgHash)
 ;; (puthash "Java" package-list-java pkgHash)
 (puthash "Go" package-list-go pkgHash)
-(puthash "Extra Language Support" package-list-extra-lang pkgHash)
+(puthash "Extra packages" package-list-extra pkgHash)
 
 (defun missing-packages ()
   "Return a list of packages that are not installed"

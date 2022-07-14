@@ -41,6 +41,16 @@ External command util: https://github.com/vovkasm/input-source-switcher"
 
 (define-key xah-fly-leader-key-map (kbd "DEL") 'chinese-insert-mode-activate)
 
+;; make 【leader . r】 run certain command in certain mode
+(setq runInModeHash (make-hash-table :test 'equal))
+(defun run-command-in-mode()
+  "Run command in mode according to runInModeHash mapping"
+  (interactive)
+  (maphash
+   (lambda (mode cmd) (if (equal major-mode mode) (funcall cmd)))
+   runInModeHash))
+(define-key xah-fly-Lp2p1-key-map (kbd "r") 'run-command-in-mode)
+
 ;; Dumang keyboard customization (dedicated symbol keys replacing number row keys)
 ;; 1 2 3 4 5 6 7 8 9 0
 ;; ! @ # $ % ^ & * ( )

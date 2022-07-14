@@ -106,7 +106,9 @@
               ;; use gogetdoc to show doc (go got )
               (setq godoc-at-point-function 'godoc-gogetdoc)
 
-              (define-key xah-fly-Lp2p1-key-map (kbd "r") 'go-run)
+              ;; make 【SPC . r】 invoke go-run in go-mode
+              (puthash 'go-mode 'go-run runInModeHash)
+
               (define-key xah-fly-Lp2p1-key-map (kbd "t") 'go-test-current-test)
               (define-key xah-fly-Lp2p1-key-map (kbd "f") 'go-test-current-file)
               (define-key xah-fly-Lp3p1-key-map (kbd "d") 'godoc-at-point)
@@ -152,6 +154,17 @@
               (define-key xah-fly-Lp3p1-key-map (kbd "s") 'lsp-treemacs-symbols)
               (define-key xah-fly-Lp3p1-key-map (kbd "r") 'lsp-treemacs-references)
               (define-key xah-fly-Lp3p1-key-map (kbd "m") 'lsp-treemacs-implementations)))
+
+;; Rest client
+(config-pkg 'restclient
+            (lambda()
+              (autoload 'restclient "restclient")
+              (add-to-list 'auto-mode-alist '("\\.http\\'" . restclient-mode))
+              (add-to-list 'auto-mode-alist '("\\.rest\\'" . restclient-mode))
+
+              ;; make 【SPC . r】 invoke restclient-http-send-current in restclient-mode
+              (puthash 'restclient-mode 'restclient-http-send-current runInModeHash)
+              ))
 
 ;; hl-todo
 (config-pkg 'hl-todo
