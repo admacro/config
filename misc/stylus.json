@@ -4,25 +4,28 @@
       "openEditInWindow": true,
       "openEditInWindow.popup": true,
       "windowPosition": {
-        "height": 766,
-        "left": 648,
-        "top": 195,
-        "width": 624
+        "left": 760,
+        "top": 39,
+        "width": 1165,
+        "height": 1047
       },
       "show-badge": true,
       "disableAll": false,
       "exposeIframes": false,
+      "exposeStyleName": false,
       "newStyleAsUsercss": false,
       "styleViaXhr": false,
       "patchCsp": false,
       "config.autosave": true,
+      "schemeSwitcher.enabled": "system",
+      "schemeSwitcher.nightStart": "18:00",
+      "schemeSwitcher.nightEnd": "06:00",
       "popup.breadcrumbs": true,
       "popup.breadcrumbs.usePath": false,
       "popup.enabledFirst": true,
       "popup.stylesFirst": true,
       "popup.autoResort": false,
       "popup.borders": false,
-      "popup.findStylesInline": true,
       "popup.findSort": "u",
       "manage.onlyEnabled": false,
       "manage.onlyLocal": false,
@@ -86,6 +89,7 @@
       "editor.contextDelete": false,
       "editor.selectByTokens": true,
       "editor.appliesToLineWidget": true,
+      "editor.autosaveDraft": 10,
       "editor.livePreview": true,
       "editor.colorpicker": true,
       "editor.colorpicker.hexUppercase": false,
@@ -99,14 +103,19 @@
       "iconset": 0,
       "badgeDisabled": "#8b0000",
       "badgeNormal": "#006666",
+      "headerWidth.edit": 280,
+      "headerWidth.install": 280,
+      "headerWidth.manage": 280,
       "popupWidth": 246,
       "updateInterval": 24
+    },
+    "order": {
+      "main": [],
+      "prio": []
     }
   },
   {
     "enabled": true,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1575887161048,
     "name": "wikipedia",
     "sections": [
@@ -132,13 +141,10 @@
     "updateDate": 1634366693785,
     "id": 2,
     "_id": "fc3adba2-a349-422f-ad68-9be0e8d62c02",
-    "_rev": 1635169478311,
-    "_usw": {}
+    "_rev": 1635169478311
   },
   {
     "enabled": true,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1575945904743,
     "name": "go documents",
     "sections": [
@@ -159,13 +165,10 @@
     "updateDate": 1633968689162,
     "id": 3,
     "_id": "8d94715c-0a39-4126-8f3f-83deb37306e2",
-    "_rev": 1633968689163,
-    "_usw": {}
+    "_rev": 1633968689163
   },
   {
-    "enabled": true,
-    "updateUrl": null,
-    "url": null,
+    "enabled": false,
     "installDate": 1575950569931,
     "name": "Xah Lee",
     "sections": [
@@ -181,39 +184,39 @@
     "updateDate": 1633943299098,
     "id": 4,
     "_id": "f69e4bb5-3984-4485-ab08-d9150d36d11a",
-    "_rev": 1633943299098,
-    "_usw": {}
+    "_rev": 1642693020431
   },
   {
     "enabled": true,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1578901455814,
     "name": "go talks",
     "sections": [
       {
-        "code": "body {\n    color: #000000;\n    background: #E8E3D9;\n}\n\ndl, dd {\n    font-size: 1rem;\n}",
+        "code": "body {\n    color: #000000;\n    background: #E8E3D9;\n}\n\ndl, dd {\n    font-size: 1rem;\n}\n\n.code,\n.playground {\n    background: #E0DACC !important;\n    overflow: scroll;\n    border-radius: 6px;\n    font-family: monospace;\n    line-height: 1.35em !important;\n}\n\ncode {\n    font-family: monospace;\n    background: #E0DACC;\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}",
         "domains": [
           "talks.golang.org"
         ]
       },
       {
-        "code": "body {\n    color: #000000;\n    background: #D7CEBC;\n}\n\narticle {\n\tbackground: #E8E3D9 !important;\n\tfont-family: sans-serif !important;\n    letter-spacing: 0px !important;\n    text-shadow: none !important;\n}\n\n.code,\n.playground {\n    background: #E0DACC !important;\n    overflow: scroll;\n    border-radius: 6px;\n    font-family: monospace;\n    line-height: 1.35em !important;\n}\n\ncode {\n    font-family: monospace;\n    background: #E0DACC;\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n",
+        "code": "body {\n    background: #D7CEBC;\n}\n\narticle {\n\tbackground: #E8E3D9 !important;\n\tfont-family: sans-serif !important;\n    letter-spacing: 0px !important;\n    text-shadow: none !important;\n}",
         "regexps": [
           ".*talks.golang\\.org.*slide.*"
         ]
+      },
+      {
+        "code": "#toc {\n    border: 1px solid gray;\n    background-color: #E8E3D9;\n    box-shadow: 3px 3px 2px gray;\n}\n\n#toc ul, #toc a {\n\tcolor: #375eab;\n}\n\n.code,\n.playground {\n    overflow: auto;\n}\n",
+        "regexps": [
+          ".*talks.golang\\.org.*article.*"
+        ]
       }
     ],
-    "updateDate": 1633946731980,
+    "updateDate": 1657896969964,
     "id": 11,
     "_id": "38bf84da-e18c-494e-81db-39fcfcb33081",
-    "_rev": 1633946731980,
-    "_usw": {}
+    "_rev": 1657896969964
   },
   {
     "enabled": true,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1579522516852,
     "name": "github",
     "sections": [
@@ -227,13 +230,10 @@
     "updateDate": 1633871806952,
     "id": 12,
     "_id": "d5205ad9-4977-4d4b-93a1-7658ade99380",
-    "_rev": 1633871806952,
-    "_usw": {}
+    "_rev": 1657894895249
   },
   {
     "enabled": true,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1583815528457,
     "name": "go tour",
     "sections": [
@@ -247,13 +247,10 @@
     "updateDate": 1633943270836,
     "_id": "f5a2413d-3521-4ebe-b4f2-1a97fd3cf07a",
     "_rev": 1633943270836,
-    "id": 13,
-    "_usw": {}
+    "id": 13
   },
   {
     "enabled": false,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1586747880968,
     "name": "youtube",
     "sections": [
@@ -273,13 +270,10 @@
     "updateDate": 1633871779007,
     "_id": "5824946a-fc41-4583-b214-2622eb1436d7",
     "_rev": 1634806934285,
-    "id": 14,
-    "_usw": {}
+    "id": 14
   },
   {
     "enabled": true,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1587273074814,
     "name": "go packages",
     "sections": [
@@ -293,13 +287,10 @@
     "updateDate": 1633969588504,
     "_id": "410a0e49-fc9f-4993-96ff-1b640cfea445",
     "_rev": 1633969588504,
-    "id": 16,
-    "_usw": {}
+    "id": 16
   },
   {
     "enabled": true,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1587817261335,
     "name": "go playground",
     "sections": [
@@ -313,13 +304,10 @@
     "updateDate": 1633943211695,
     "_id": "bf3e8011-3756-4165-8b47-bd571d5ab36a",
     "_rev": 1633943211695,
-    "id": 17,
-    "_usw": {}
+    "id": 17
   },
   {
     "enabled": true,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1590499221157,
     "name": "Russ Cox",
     "sections": [
@@ -339,13 +327,10 @@
     "updateDate": 1633943288095,
     "_id": "171a5c9a-479b-4c61-a6d0-9a8a05a81a06",
     "_rev": 1633943288095,
-    "id": 18,
-    "_usw": {}
+    "id": 18
   },
   {
     "enabled": true,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1594541531004,
     "name": "global fonts",
     "sections": [
@@ -355,14 +340,11 @@
     ],
     "updateDate": 1633959030271,
     "_id": "a0943cbe-d4ad-4753-b5c7-56b8199e0e7d",
-    "_rev": 1635585493279,
-    "id": 19,
-    "_usw": {}
+    "_rev": 1657894918101,
+    "id": 19
   },
   {
     "enabled": true,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1633582906171,
     "name": "discord",
     "sections": [
@@ -376,13 +358,10 @@
     "updateDate": 1633871811598,
     "_id": "8ce8689f-c0f0-4804-a171-6f4f27aa0d28",
     "_rev": 1633871811598,
-    "id": 20,
-    "_usw": {}
+    "id": 20
   },
   {
     "enabled": true,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1633600788532,
     "name": "gnu emacs manual",
     "sections": [
@@ -397,13 +376,10 @@
     "updateDate": 1642228637454,
     "_id": "70b1522b-5ecd-4450-9520-a66f3dbea69b",
     "_rev": 1642228637454,
-    "id": 21,
-    "_usw": {}
+    "id": 21
   },
   {
     "enabled": true,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1633701408064,
     "name": "dvorak tpying training",
     "sections": [
@@ -417,13 +393,10 @@
     "updateDate": 1634048667342,
     "_id": "818417fb-fb80-444f-98e0-7c80f49863c0",
     "_rev": 1635585493674,
-    "id": 22,
-    "_usw": {}
+    "id": 22
   },
   {
     "enabled": true,
-    "updateUrl": null,
-    "url": null,
     "installDate": 1633864443321,
     "name": "go blog",
     "sections": [
@@ -436,13 +409,11 @@
     ],
     "updateDate": 1633960270744,
     "_id": "38e1512a-1808-44f5-8121-1c38ecde086a",
-    "_rev": 1633960270744,
-    "id": 23,
-    "_usw": {}
+    "_rev": 1654242490362,
+    "id": 23
   },
   {
     "enabled": true,
-    "updateUrl": null,
     "url": "https://userstyles.world/style/1463",
     "installDate": 1633873283285,
     "name": "Desert Stylus UI",
@@ -456,7 +427,7 @@
     ],
     "updateDate": 1633928181572,
     "_id": "3a724c52-6f81-4035-8416-c0526a78871c",
-    "_rev": 1633928181572,
+    "_rev": 1657896021262,
     "id": 24,
     "_usw": {
       "token": "eyJhbGciOiJIUzUxMiIsInR5cCI6IkpXVCJ9.eyJzdHlsZUlEIjoxNDYzLCJ1c2VySUQiOjE0OTl9.qoXVOcDnyfwEgg9UXuD0VcltaDpJixECOPUAwPfW0kL52T-z-8QVq8TFUDPKb-JYN22KNVyjPOSM6uSAtNyiVg",
