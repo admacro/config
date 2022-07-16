@@ -4,10 +4,10 @@
       "openEditInWindow": true,
       "openEditInWindow.popup": true,
       "windowPosition": {
+        "height": 1047,
         "left": 760,
         "top": 39,
-        "width": 1165,
-        "height": 1047
+        "width": 1165
       },
       "show-badge": true,
       "disableAll": false,
@@ -149,23 +149,23 @@
     "name": "go documents",
     "sections": [
       {
-        "code": "body {\n\tcolor: black;\n\tbackground: #E8E3D9;\n}\n\na {\n\tcolor: #006e89;\n}\n\nh2 {\n\tbackground: #D7CEBC;\n}\n\nh1 {\n\tfont-size: 1.8em\n}\nh2 {\n\tfont-size: 1.6em\n}\nh3 {\n\tfont-size: 1.4em\n}\nh4 {\n\tfont-size: 1.2em\n}\n\n#nav a,\ndl dt,\ndl dd {\n\tfont-size: 1.1em;\n}\n\np,\n#page li {\n\tfont-size: 1.1rem;\n\tfont-family: serif;\n\tline-height: 1.4;\n}\n\n#page {\n\tmax-width: 50em;\n\tmargin: auto;\n}\n\npre,\ncode {\n\tfont-size: 1rem;\n\tbackground: #E0DACC;\n}\n\ncode {\n\tborder-radius: 3px;\n\tpadding: 1px 3px;\n\tmargin: 0px 2px 0px 2px;\n}",
+        "code": "body {\n\tcolor: black;\n}\n\na {\n\tcolor: #006e89;\n}\n\nh2 {\n\tbackground: #D7CEBC;\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}\n\nh1 {\n\tfont-size: 1.8em\n}\nh2 {\n\tfont-size: 1.6em\n}\nh3 {\n\tfont-size: 1.4em\n}\nh4 {\n\tfont-size: 1.2em\n}\n\n#nav a,\ndl dt,\ndl dd {\n\tfont-size: 1.1em;\n}\n\np,\n#page li {\n\tfont-size: 1.1rem;\n\tfont-family: serif;\n\tline-height: 1.4;\n}\n\n#page {\n\tmax-width: 50em;\n\tmargin: auto;\n}\n",
         "urlPrefixes": [
-          "https://golang.org/doc/",
-          "https://golang.org/ref/"
+          "https://go.dev/doc/",
+          "https://go.dev/ref/"
         ]
       },
       {
         "code": "#page {\n\tmax-width: 100%;\n\tmargin: auto;\n}\n\n.comment,\n.comment-text {\n\tfont-size: 16px !important;\n}",
         "urlPrefixes": [
-          "https://golang.org/doc/codewalk/"
+          "https://go.dev/doc/codewalk/"
         ]
       }
     ],
-    "updateDate": 1633968689162,
+    "updateDate": 1657966972399,
     "id": 3,
     "_id": "8d94715c-0a39-4126-8f3f-83deb37306e2",
-    "_rev": 1633968689163
+    "_rev": 1657966972399
   },
   {
     "enabled": false,
@@ -192,7 +192,7 @@
     "name": "go talks",
     "sections": [
       {
-        "code": "body {\n    color: #000000;\n    background: #E8E3D9;\n}\n\ndl, dd {\n    font-size: 1rem;\n}\n\n.code,\n.playground {\n    background: #E0DACC !important;\n    overflow: scroll;\n    border-radius: 6px;\n    font-family: monospace;\n    line-height: 1.35em !important;\n}\n\ncode {\n    font-family: monospace;\n    background: #E0DACC;\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}",
+        "code": "body {\n    color: #000000;\n    background: #E8E3D9;\n}\n\ndl, dd {\n    font-size: 1rem;\n}\n\n.code,\n.playground {\n    background: #E0DACC !important;\n    overflow: scroll;\n    border-radius: 6px;\n    font-family: monospace;\n    line-height: 1.35em !important;\n}",
         "domains": [
           "talks.golang.org"
         ]
@@ -210,10 +210,10 @@
         ]
       }
     ],
-    "updateDate": 1657896969964,
+    "updateDate": 1657965838787,
     "id": 11,
     "_id": "38bf84da-e18c-494e-81db-39fcfcb33081",
-    "_rev": 1657896969964
+    "_rev": 1657965838787
   },
   {
     "enabled": true,
@@ -230,7 +230,7 @@
     "updateDate": 1633871806952,
     "id": 12,
     "_id": "d5205ad9-4977-4d4b-93a1-7658ade99380",
-    "_rev": 1657894895249
+    "_rev": 1657964781798
   },
   {
     "enabled": true,
@@ -238,15 +238,15 @@
     "name": "go tour",
     "sections": [
       {
-        "code": "body {\n    -webkit-font-smoothing: subpixel-antialiased;\n}\n\n#file-editor .CodeMirror-lines, #file-editor .CodeMirror-gutters {\n    background: #F0EFEE;\n    font-family: monospace;\n}\n\n#file-editor .CodeMirror {\n    background: #F0EFEE;\n}\n\n.output > pre {\n    font-family: monospace;\n}\n\ndiv[vertical-slide] {\n    left: 38%;\n    right: 62%;\n}\n\ndiv#left-side {\n    width: 38%\n}\n\ndiv#right-side {\n    left: 38%\n}\n",
-        "domains": [
-          "tour.golang.org"
+        "code": "#editor-container,\n#file-menu,\n#explorer {\n\tbackground: #E0DACC;\n}\n\n.slide-content,\n#bottom-part,\n.output {\n\tbackground: #E8E3D9;\n}\n\n#file-editor .CodeMirror-lines,\n#file-editor .CodeMirror-gutters {\n    background: #E8E3D9;\n    font-family: monospace;\n}\n\n#file-editor .CodeMirror {\n    background: #E8E3D9;\n}\n\ndiv[vertical-slide] {\n    left: 38%;\n    right: 62%;\n}\n\n.output > pre {\n    font-family: monospace;\n    background: #E8E3D9;\n}\n\ndiv#left-side {\n    width: 38%\n}\n\ndiv#right-side {\n    left: 38%\n}\n",
+        "urlPrefixes": [
+          "https://go.dev/tour"
         ]
       }
     ],
-    "updateDate": 1633943270836,
+    "updateDate": 1657965786255,
     "_id": "f5a2413d-3521-4ebe-b4f2-1a97fd3cf07a",
-    "_rev": 1633943270836,
+    "_rev": 1657965786255,
     "id": 13
   },
   {
@@ -286,7 +286,7 @@
     ],
     "updateDate": 1633969588504,
     "_id": "410a0e49-fc9f-4993-96ff-1b640cfea445",
-    "_rev": 1633969588504,
+    "_rev": 1657964739068,
     "id": 16
   },
   {
@@ -295,15 +295,15 @@
     "name": "go playground",
     "sections": [
       {
-        "code": "#wrap, #about {\n    margin: 0 38.2% 0 0;\n    background: #E8E3D9;\n    bottom: 0;\n}\n\n#code, #output, pre, .lines {\n    font-family: monospace;\n    font-size: 12pt;\n}\n\n#output {\n    top: 50px;\n    left: 61.8%;\n}",
-        "domains": [
-          "play.golang.org"
+        "code": ".Playground-inputContainer,\n.Playground-input,\n.Playground-outputContainer,\n.Playground-output {\n\tbackground: #E8E3D9;\n}\n\n.linedtextarea .lines div {\n    padding-right: 5px;\n    color: gray;\n    overflow: hidden;\n}\n\n#wrap, #about {\n    margin: 0 38.2% 0 0;\n    background: #E8E3D9;\n    bottom: 0;\n}\n\n#code, #output, pre, .lines {\n    font-family: monospace;\n    font-size: 12pt;\n}\n\n#output {\n    top: 50px;\n    left: 61.8%;\n}",
+        "urlPrefixes": [
+          "https://go.dev/play/"
         ]
       }
     ],
-    "updateDate": 1633943211695,
+    "updateDate": 1657966804558,
     "_id": "bf3e8011-3756-4165-8b47-bd571d5ab36a",
-    "_rev": 1633943211695,
+    "_rev": 1657966804558,
     "id": 17
   },
   {
@@ -401,15 +401,15 @@
     "name": "go blog",
     "sections": [
       {
-        "code": "body {\n\tbackground: #E8E3D9;\n}\n\na {\n\tcolor: #006e89;\n}\n\n.Article p,\n.Article li,\n.Arcitle ol {\n\tcolor: black;\n\tfont: normal 1.1rem serif;\n\tline-height: 1.4em;\n}\n\np.blogtitle {\n\tfont-family: sans-serif;\n}\n\npre,\ncode {\n\tcolor: black !important;\n\tfont-size: 1rem !important;\n\tbackground: #E0DACC !important;\n}\n\n#blog .Article {\n\tmax-width: 50rem;\n}",
+        "code": "body {\n\tbackground: #E8E3D9;\n}\n\na {\n\tcolor: #006e89;\n}\n\n.Article p,\n.Article li,\n.Arcitle ol {\n\tcolor: black;\n\tfont: normal 1.1rem serif;\n\tline-height: 1.4em;\n}\n\np.blogtitle {\n\tfont-family: sans-serif;\n}\n\n#blog .Article {\n\tmax-width: 50rem;\n}",
         "urlPrefixes": [
           "https://go.dev/blog/"
         ]
       }
     ],
-    "updateDate": 1633960270744,
+    "updateDate": 1657966136270,
     "_id": "38e1512a-1808-44f5-8121-1c38ecde086a",
-    "_rev": 1654242490362,
+    "_rev": 1657966136270,
     "id": 23
   },
   {
@@ -447,5 +447,22 @@
       "user_id": 1499,
       "username": "admacro"
     }
+  },
+  {
+    "enabled": true,
+    "installDate": 1657965555243,
+    "name": "go.dev",
+    "sections": [
+      {
+        "code": ":root {\n\t--color-background: #E8E3D9;\n\t--color-background-accented: #E0DACC;\n\t--border: 0.0625rem solid gray;\n}\n\npre,\ncode {\n\tfont-size: 1rem;\n    font-family: monospace;\n\tcolor: black;\n    background: #E0DACC;\n    border-radius: 3px;\n    padding: 1px 3px;\n    margin: 0px 2px 0px 2px;\n}",
+        "domains": [
+          "go.dev"
+        ]
+      }
+    ],
+    "updateDate": 1657966725442,
+    "_id": "56f11278-ce4f-4564-8e49-4ebe42ae3a20",
+    "_rev": 1657966725442,
+    "id": 25
   }
 ]
