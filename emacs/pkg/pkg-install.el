@@ -32,10 +32,10 @@
       '(go-mode
         gotest
         go-playground
-        go-eldoc
+        ;; go-eldoc
         ob-go))
 
-;; Packages for extra language support
+;; Packages for extra languages and features
 (setq package-list-extra
       '(yaml-mode
         json-mode
