@@ -28,9 +28,17 @@ export_bin_path() {
     fi
 }
 
-export_bin_path $(go env GOPATH) GOPATH
+# Install path for go binaries
+# As an alternative, if you already have a directory like $HOME/bin in your
+# shell path and you'd like to install your Go programs there, you can change
+# the install target by setting the GOBIN variable using the go env command:
+#     go env -w GOBIN=/path/to/your/bin
+# Ref: https://go.dev/doc/tutorial/compile-install
+export_bin_path $(go env GOPATH) # $HOME/go/bin is the default install target
+
 export_bin_path $(/usr/libexec/java_home) JAVA_HOME
 export_bin_path /usr/local/opt/python/libexec # Python (Homebrew)
+export_bin_path /usr/local/opt/mysql@5.7  # mysql
 
 # Misc
 if [ -r ~/.git_profile ]; then
