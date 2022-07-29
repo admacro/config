@@ -73,6 +73,22 @@ back_and_cd() {
 }
 alias bd=back_and_cd
 
+# proxy
+export proxy=127.0.0.1:1087
+export socks5_proxy=socks5://127.0.0.1:1086
+toggle_proxy() {
+    if [ -z "$all_proxy" ]; then
+        export all_proxy=$socks5_proxy
+        # export https_proxy=$proxy
+        echo "Proxy is set to $socks5_proxy."
+    else
+        unset all_proxy
+        # unset https_proxy
+        echo "Proxy is unset."
+    fi
+}
+alias tp=toggle_proxy
+
 # Misc
 if [ -r ~/.git_profile ]; then
     source ~/.git_profile
@@ -88,8 +104,3 @@ if type brew &>/dev/null; then
     compinit
 fi
 source "/usr/local/opt/zsh-git-prompt/zshrc.sh"
-
-# proxy
-# export http_proxy=127.0.0.1:1087
-# export https_proxy=127.0.0.1:1087
-alias setproxy="export http_proxy=127.0.0.1:1087;export https_proxy=127.0.0.1:1087"

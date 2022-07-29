@@ -70,3 +70,18 @@ Version 2018-12-23"
      ((equal $sort-by "size") (setq $arg "-Al -S"))
      (t (error "logic error 09535" )))
     (dired-sort-other $arg )))
+
+(defvar use-proxy nil)
+(defun proxy-toggle()
+  "Toggle http/https proxy."
+  (interactive)
+  (if use-proxy
+      (progn
+        (setq url-proxy-services nil)
+        (setq use-proxy nil)
+        (message "Proxy is unset."))
+    (setq url-proxy-services
+          '(("http"     . "127.0.0.1:1087")
+            ("https"    . "127.0.0.1:1087")))
+    (setq use-proxy t)
+    (message "Proxy is set.")))
