@@ -56,3 +56,6 @@
  t
  'han
  (if (member "Songti SC" (font-family-list)) "Songti SC"))
+
+;; fixed-pitch is used by org-mode for faces org-verbatim and org-code
+(custom-set-faces '(fixed-pitch ((t (:family monospaced-font-family)))))
