@@ -21,7 +21,9 @@ func main() {
 
     ("pf" "fmt.Printf(\"%v\\n\", abc)")
     ("pl" "fmt.Println(abc)")
-    ("f" "func f() {}")
+    ("fn" "func FuncName(i InputType) (o ReturnType) {
+    return nil
+}")
     ("iferr" "if err != nil { panic(err) }")
     ("fori" "for i := 0; i < len(abc); i++ {}")
     ("forr" "for k, v := range abc {}")
