@@ -29,6 +29,15 @@ func main() {
     ("forr" "for k, v := range abc {}")
     ))
 
+(when (boundp 'org-mode-abbrev-table)
+  (clear-abbrev-table org-mode-abbrev-table))
+
+(define-abbrev-table 'org-mode-abbrev-table
+  '(
+    ("isrc" "#+BEGIN_SRC lang\n
+#+END_SRC")
+    ))
+
 (set-default 'abbrev-mode t)
 
 (setq save-abbrevs nil)
