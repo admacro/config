@@ -1,7 +1,5 @@
 ;; xah fly keys (default layout is dvorak)
 (add-to-list 'load-path "~/prog/xah-fly-keys/")
-;; xah find
-(add-to-list 'load-path "~/prog/config/emacs/xah-find")
 
 (require 'xah-fly-keys)
 (xah-fly-keys-set-layout "dvorak")
