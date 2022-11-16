@@ -1,5 +1,7 @@
 ;; xah fly keys (default layout is dvorak)
 (add-to-list 'load-path "~/prog/xah-fly-keys/")
+;; xah find
+(add-to-list 'load-path "~/prog/config/emacs/xah-find")
 
 (require 'xah-fly-keys)
 (xah-fly-keys-set-layout "dvorak")
@@ -9,7 +11,7 @@
   (interactive)
   (xah-close-current-buffer)
   (delete-window))
- (define-key xah-fly-Rp2p0-key-map (kbd "h") 'close-current-buffer-and-delete-window)
+(define-key xah-fly-leader-key-map (kbd "t h") 'close-current-buffer-and-delete-window)
 
 (defun set-input-source(source)
   ;; shell-command creates a buffer *Shell Command Output*
@@ -49,7 +51,7 @@ External command util: https://github.com/vovkasm/input-source-switcher"
   (maphash
    (lambda (mode cmd) (if (equal major-mode mode) (funcall cmd)))
    runInModeHash))
-(define-key xah-fly-Lp2p1-key-map (kbd "r") 'run-command-in-mode)
+(define-key xah-fly-leader-key-map (kbd ". r") 'run-command-in-mode)
 
 ;; Dumang keyboard customization (dedicated symbol keys replacing number row keys)
 ;; 1 2 3 4 5 6 7 8 9 0
@@ -62,6 +64,7 @@ External command util: https://github.com/vovkasm/input-source-switcher"
 (define-key xah-fly-key-map (kbd "*") 'xah-extend-selection)
 (define-key xah-fly-key-map (kbd "(") 'xah-select-text-in-quote)
 
+;; SPACE
 (define-key xah-fly-leader-key-map (kbd "#") 'delete-window)
 (define-key xah-fly-leader-key-map (kbd "$") 'split-window-right)
 (define-key xah-fly-leader-key-map (kbd "%") 'balance-windows)
@@ -69,34 +72,35 @@ External command util: https://github.com/vovkasm/input-source-switcher"
 (define-key xah-fly-leader-key-map (kbd "(") 'ispell-word)
 
 ;; dvorat t
-(define-key xah-fly-Rp2p0-key-map (kbd "!") 'xah-append-to-register-1)
-(define-key xah-fly-Rp2p0-key-map (kbd "@") 'xah-clear-register-1)
-(define-key xah-fly-Rp2p0-key-map (kbd "#") 'xah-copy-to-register-1)
-(define-key xah-fly-Rp2p0-key-map (kbd "$") 'xah-paste-from-register-1)
-(define-key xah-fly-Rp2p0-key-map (kbd "&") 'xah-append-to-register-1)
-(define-key xah-fly-Rp2p0-key-map (kbd "*") 'xah-clear-register-1)
+(define-key xah-fly-leader-key-map (kbd "t !") 'xah-append-to-register-1)
+(define-key xah-fly-leader-key-map (kbd "t @") 'xah-clear-register-1)
+(define-key xah-fly-leader-key-map (kbd "t #") 'xah-copy-to-register-1)
+(define-key xah-fly-leader-key-map (kbd "t $") 'xah-paste-from-register-1)
+(define-key xah-fly-leader-key-map (kbd "t &") 'xah-append-to-register-1)
+(define-key xah-fly-leader-key-map (kbd "t *") 'xah-clear-register-1)
 
 ;; dvorat r
-(define-key xah-fly-Rp3p1-key-map (kbd "#") 'number-to-register)
-(define-key xah-fly-Rp3p1-key-map (kbd "$") 'increment-register)
+(define-key xah-fly-leader-key-map (kbd "r #") 'number-to-register)
+(define-key xah-fly-leader-key-map (kbd "r $") 'increment-register)
 
 ;; dvorat n
-(define-key xah-fly-Rp3p0-key-map (kbd ")") 'shell-command-on-region)
-(define-key xah-fly-Rp3p0-key-map (kbd "!") 'set-input-method)
-(define-key xah-fly-Rp3p0-key-map (kbd "@") 'global-hl-line-mode)
-(define-key xah-fly-Rp3p0-key-map (kbd "$") 'global-display-line-numbers-mode)
-(define-key xah-fly-Rp3p0-key-map (kbd "%") 'visual-line-mode)
-(define-key xah-fly-Rp3p0-key-map (kbd "^") 'calendar)
-(define-key xah-fly-Rp3p0-key-map (kbd "&") 'calc)
-(define-key xah-fly-Rp3p0-key-map (kbd "(") 'shell-command)
+(define-key xah-fly-leader-key-map (kbd "n )") 'shell-command-on-region)
+(define-key xah-fly-leader-key-map (kbd "n !") 'set-input-method)
+(define-key xah-fly-leader-key-map (kbd "n @") 'global-hl-line-mode)
+(define-key xah-fly-leader-key-map (kbd "n $") 'global-display-line-numbers-mode)
+(define-key xah-fly-leader-key-map (kbd "n %") 'visual-line-mode)
+(define-key xah-fly-leader-key-map (kbd "n ^") 'calendar)
+(define-key xah-fly-leader-key-map (kbd "n &") 'calc)
+(define-key xah-fly-leader-key-map (kbd "n (") 'shell-command)
 
-(define-key xah-fly--tab-key-map (kbd ")") 'expand-jump-to-next-slot)
-(define-key xah-fly--tab-key-map (kbd "!") 'abbrev-prefix-mark)
-(define-key xah-fly--tab-key-map (kbd "@") 'edit-abbrevs)
-(define-key xah-fly--tab-key-map (kbd "#") 'expand-abbrev)
-(define-key xah-fly--tab-key-map (kbd "$") 'expand-region-abbrevs)
-(define-key xah-fly--tab-key-map (kbd "%") 'unexpand-abbrev)
-(define-key xah-fly--tab-key-map (kbd "^") 'add-global-abbrev)
-(define-key xah-fly--tab-key-map (kbd "&") 'add-mode-abbrev)
-(define-key xah-fly--tab-key-map (kbd "*") 'inverse-add-global-abbrev)
-(define-key xah-fly--tab-key-map (kbd "(") 'inverse-add-mode-abbrev)
+;; dvorat TAB
+(define-key xah-fly-leader-key-map (kbd "TAB )") 'expand-jump-to-next-slot)
+(define-key xah-fly-leader-key-map (kbd "TAB !") 'abbrev-prefix-mark)
+(define-key xah-fly-leader-key-map (kbd "TAB @") 'edit-abbrevs)
+(define-key xah-fly-leader-key-map (kbd "TAB #") 'expand-abbrev)
+(define-key xah-fly-leader-key-map (kbd "TAB $") 'expand-region-abbrevs)
+(define-key xah-fly-leader-key-map (kbd "TAB %") 'unexpand-abbrev)
+(define-key xah-fly-leader-key-map (kbd "TAB ^") 'add-global-abbrev)
+(define-key xah-fly-leader-key-map (kbd "TAB &") 'add-mode-abbrev)
+(define-key xah-fly-leader-key-map (kbd "TAB *") 'inverse-add-global-abbrev)
+(define-key xah-fly-leader-key-map (kbd "TAB (") 'inverse-add-mode-abbrev)

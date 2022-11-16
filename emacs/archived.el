@@ -31,7 +31,7 @@
   "Remove all highlights made by `hi-lock' from the current buffer."
   (interactive)
   (unhighlight-regexp t))
-(define-key xah-fly-dot-keymap (kbd "u") 'unhighlight-all-in-buffer)
+(define-key xah-fly-leader-keymap (kbd ". u") 'unhighlight-all-in-buffer)
 
 (defun monospace-brackets-mode ()
   "use monospace font for brackets: [][(){}]"

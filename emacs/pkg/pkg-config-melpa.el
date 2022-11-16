@@ -1,5 +1,5 @@
 (require 'string-inflection)
-(define-key xah-fly-Lp2p1-key-map (kbd "-") 'string-inflection-cycle)
+(define-key xah-fly-leader-key-map (kbd ". -") 'string-inflection-cycle)
 
 ;; magit
 (config-pkg 'magit
@@ -7,10 +7,10 @@
               ;; (setq magit-diff-refine-hunk 'all)
 
               ;; show changes made to current git repo (magit-status)
-              (define-key xah-fly-Lp2p1-key-map (kbd "s") 'magit-status)
+              (define-key xah-fly-leader-key-map (kbd ". s") 'magit-status)
 
               ;; commit (C-c C-c)
-              (define-key xah-fly-Lp2p1-key-map (kbd "c") 'with-editor-finish)
+              (define-key xah-fly-leader-key-map (kbd ". c") 'with-editor-finish)
               ))
 
 ;; exec-path-from-shell
@@ -67,8 +67,8 @@
               (global-set-key (kbd "<f6>") 'lsp-find-definition)
               (global-set-key (kbd "<f5>") 'xref-pop-marker-stack) ; go back to previous jump mark
 
-              (define-key xah-fly-Lp3p1-key-map (kbd "n") 'lsp-rename)
-              (define-key xah-fly-Lp3p1-key-map (kbd ",") 'xref-find-apropos)))
+              (define-key xah-fly-leader-key-map (kbd ", n") 'lsp-rename)
+              (define-key xah-fly-leader-key-map (kbd ", ,") 'xref-find-apropos)))
 
 ;; company
 ;; in-buffer code completion framework
@@ -109,9 +109,9 @@
               ;; make 【SPC . r】 invoke go-run in go-mode
               (puthash 'go-mode 'go-run runInModeHash)
 
-              (define-key xah-fly-Lp2p1-key-map (kbd "t") 'go-test-current-test)
-              (define-key xah-fly-Lp2p1-key-map (kbd "f") 'go-test-current-file)
-              (define-key xah-fly-Lp3p1-key-map (kbd "d") 'godoc-at-point)
+              (define-key xah-fly-leader-key-map (kbd ". t") 'go-test-current-test)
+              (define-key xah-fly-leader-key-map (kbd ". f") 'go-test-current-file)
+              (define-key xah-fly-leader-key-map (kbd ", d") 'godoc-at-point)
               ))
 
 ;; treemacs
@@ -143,7 +143,7 @@
                           (display-line-numbers-mode 0)
                           (variable-pitch-mode 1)))
 
-              (define-key xah-fly-Lp2p1-key-map (kbd ".") 'treemacs)
+              (define-key xah-fly-leader-key-map (kbd ". .") 'treemacs)
               ))
 
 ;; lsp-treemacs
@@ -151,9 +151,9 @@
             (lambda()
               ;; enable bidirectional synchronization of lsp workspace folders and treemacs projects
               (lsp-treemacs-sync-mode 1)
-              (define-key xah-fly-Lp3p1-key-map (kbd "s") 'lsp-treemacs-symbols)
-              (define-key xah-fly-Lp3p1-key-map (kbd "r") 'lsp-treemacs-references)
-              (define-key xah-fly-Lp3p1-key-map (kbd "m") 'lsp-treemacs-implementations)))
+              (define-key xah-fly-leader-key-map (kbd ", s") 'lsp-treemacs-symbols)
+              (define-key xah-fly-leader-key-map (kbd ", r") 'lsp-treemacs-references)
+              (define-key xah-fly-leader-key-map (kbd ", m") 'lsp-treemacs-implementations)))
 
 ;; Rest client
 (config-pkg 'restclient

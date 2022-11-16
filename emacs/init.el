@@ -3,7 +3,8 @@
   (concat (file-name-directory (or load-file-name buffer-file-name))
           relative-path))
 
-(load (get-full-path "xfk"))
+(load (get-full-path "xah/xfk"))
+(load (get-full-path "xah/xah-find"))
 (load (get-full-path "basic"))
 (load (get-full-path "theme/theme"))
 (load (get-full-path "font"))
