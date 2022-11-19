@@ -164,10 +164,9 @@
                (magit-diffstat-added :foreground ,adm-green)
                (magit-diffstat-removed :foreground ,adm-red)
                (magit-hash :foreground ,adm-fg-gray)
-               ;; (magit-item-highlight :background ,bg3)
-               ;; (magit-log-author :foreground ,fg3)
-               ;; (magit-process-ng :foreground ,adm-orange :weight bold)
-               ;; (magit-process-ok :foreground ,adm-purple :weight bold)
+               (magit-log-author :foreground ,adm-orange)
+               (magit-process-ng :foreground ,adm-red :weight bold)
+               (magit-process-ok :foreground ,adm-green :weight bold)
 
                ;; org
                (org-agenda-date :foreground ,adm-purple :underline nil)
