@@ -28,10 +28,10 @@
                 (adm-purple-bg  "#E3D9E8")
 
                 ;; bg
-                (bg1 "#E0DACC")
+                (bg1 "#E0D9CC")
                 (bg2 "#D7CEBC")
                 (bg3 "#CDC2AC")
-                (bg4 "#C4B79C")
+                (bg4 "#C2B59E")
 
                 ;; fg
                 (fg1 "#0F0F0F")
@@ -66,7 +66,7 @@
                (linum :foreground ,bg4 :background ,adm-bg)
                (line-number :foreground ,bg4 :background ,adm-bg)
                (minibuffer-prompt :weight bold :foreground ,adm-cyan)
-               (region :background ,bg4 :extend t)
+               (region :background ,bg3 :extend t)
                (trailing-whitespace :foreground nil :background ,adm-red)
                (vertical-border :foreground ,bg4)
                (success :foreground ,adm-green)
@@ -101,7 +101,7 @@
                (highlight-numbers-number :foreground ,adm-green)
 
                ;; mode-line
-               (mode-line :foreground ,adm-fg :background ,bg3 :box ,bg3)
+               (mode-line :foreground ,adm-fg :background ,bg4 :box ,bg4)
                (mode-line-inactive :foreground ,bg4 :background ,bg2 :box ,bg2)
 
                ;; ido-mode
@@ -146,35 +146,28 @@
 
                ;; magit
                (magit-branch-local :foreground ,adm-green)
-               (magit-branch-remote :foreground ,adm-red)
+               (magit-branch-remote :foreground ,adm-cyan)
                (magit-tag :foreground ,adm-orange)
-               (magit-section-heading :foreground ,adm-cyan :weight bold)
-               (magit-section-highlight :background ,bg3 :extend t)
-               (magit-diff-context-highlight :background ,bg3
-                                             :foreground ,fg3
-                                             :extend t)
-               (magit-diff-revision-summary :foreground ,adm-orange
-                                            :background ,adm-bg
-                                            :weight bold)
-               (magit-diff-revision-summary-highlight :foreground ,adm-orange
-                                                      :background ,bg3
-                                                      :weight bold
-                                                      :extend t)
-               (magit-diff-added :background ,adm-green-bg :foreground ,adm-fg :extend t)
+               (magit-section-heading :foreground ,adm-orange :weight bold)
+               (magit-section-highlight :background ,bg1 :extend t)
+               (magit-diff-context-highlight :background ,bg1 :extend t)
+               (magit-diff-added :background ,adm-green-bg :foreground ,fg4 :extend t)
                (magit-diff-added-highlight :background ,adm-green-bg :foreground ,adm-green :extend t)
-               (magit-diff-removed :background ,adm-red-bg :foreground ,adm-fg :extend t)
+               (magit-diff-removed :background ,adm-red-bg :foreground ,fg4 :extend t)
                (magit-diff-removed-highlight :background ,adm-red-bg :foreground ,adm-red  :extend t)
-               (magit-diff-file-heading :foreground ,adm-fg)
-               (magit-diff-file-heading-highlight :inherit magit-section-highlight)
-               (magit-diffstat-added :foreground ,adm-purple)
+               (magit-diff-file-heading :background ,bg3 :weight bold)
+               (magit-diff-file-heading-highlight :foreground ,adm-orange :background ,bg3)
+               (magit-diff-hunk-heading :background ,bg2)
+               (magit-diff-hunk-heading-highlight :foreground ,adm-orange :background ,bg3)
+               ;; (magit-diff-revision-summary :foreground ,adm-orange :background ,adm-bg :weight bold)
+               ;; (magit-diff-revision-summary-highlight :foreground ,adm-orange :background ,bg3 :weight bold :extend t)
+               (magit-diffstat-added :foreground ,adm-green)
                (magit-diffstat-removed :foreground ,adm-red)
-               (magit-hash :foreground ,fg2)
-               (magit-hunk-heading :background ,bg3)
-               (magit-hunk-heading-highlight :background ,bg3)
-               (magit-item-highlight :background ,bg3)
-               (magit-log-author :foreground ,fg3)
-               (magit-process-ng :foreground ,adm-orange :weight bold)
-               (magit-process-ok :foreground ,adm-purple :weight bold)
+               (magit-hash :foreground ,adm-fg-gray)
+               ;; (magit-item-highlight :background ,bg3)
+               ;; (magit-log-author :foreground ,fg3)
+               ;; (magit-process-ng :foreground ,adm-orange :weight bold)
+               ;; (magit-process-ok :foreground ,adm-purple :weight bold)
 
                ;; org
                (org-agenda-date :foreground ,adm-purple :underline nil)
