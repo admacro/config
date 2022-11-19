@@ -102,7 +102,7 @@
 
                ;; mode-line
                (mode-line :foreground ,adm-fg :background ,bg4 :box ,bg4)
-               (mode-line-inactive :foreground ,bg4 :background ,bg2 :box ,bg2)
+               (mode-line-inactive :foreground ,bg4 :background ,bg1 :box ,bg1)
 
                ;; ido-mode
                (ido-only-match :foreground ,adm-green)
