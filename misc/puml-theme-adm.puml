@@ -1,0 +1,50 @@
+!$fg="000000"
+!$bg="E8E3D9"
+
+!$orange="733900"
+!$blue="0000f5"
+
+!$bggreen="D9E8D9"
+
+!$bg1="E0D9CC"
+!$fggray="6C6C6C"
+
+<style>
+  root {
+    LineColor $fggray
+    LineThickness 1
+  }
+</style>
+
+skinparam defaultFontSize 14
+skinparam defaultFontColor $fg
+skinparam BackgroundColor $bg
+skinparam HyperlinkColor $blue
+skinparam RoundCorner 20
+
+skinparam ArrowColor $orange
+skinparam ArrowThickness 1.5
+
+/' title '/
+skinparam title {
+        FontSize 24
+        BorderThickness 0
+}
+
+/' sequence '/
+skinparam sequence {
+        LifeLineBackgroundColor $bg1
+        GroupFontColor $fggray
+}
+
+/' participant '/
+skinparam participant {
+        BackgroundColor $bg1
+}
+
+/' note '/
+skinparam note {
+        BackgroundColor $bggreen
+        Shadowing true
+        FontStyle italic
+}
