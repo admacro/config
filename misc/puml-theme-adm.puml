@@ -48,3 +48,8 @@ skinparam note {
         Shadowing true
         FontStyle italic
 }
+
+/' database '/
+skinparam database {
+        BackgroundColor $bg1
+}
