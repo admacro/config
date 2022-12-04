@@ -5,6 +5,8 @@
 !$blue="0000f5"
 
 !$bggreen="D9E8D9"
+!$bgorange="E8E0D9"
+!$bgcyan="D9E3E8"
 
 !$bg1="E0D9CC"
 !$fggray="6C6C6C"
@@ -16,11 +18,13 @@
   }
 </style>
 
+skinparam defaultFontName Monospaced
 skinparam defaultFontSize 14
 skinparam defaultFontColor $fg
 skinparam BackgroundColor $bg
 skinparam HyperlinkColor $blue
 skinparam RoundCorner 20
+skinparam BoxPadding 20
 
 skinparam ArrowColor $orange
 skinparam ArrowThickness 1.5
@@ -35,11 +39,13 @@ skinparam title {
 skinparam sequence {
         LifeLineBackgroundColor $bg1
         GroupFontColor $fggray
+        BoxBackgroundColor $bg
 }
 
 /' participant '/
 skinparam participant {
         BackgroundColor $bg1
+        Padding 10
 }
 
 /' note '/
@@ -52,4 +58,8 @@ skinparam note {
 /' database '/
 skinparam database {
         BackgroundColor $bg1
+}
+
+skinparam group {
+        BodyBackgroundColor $bg1
 }
