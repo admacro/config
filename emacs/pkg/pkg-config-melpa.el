@@ -257,3 +257,10 @@
               (add-to-list 'auto-mode-alist '("\\.yml\\'" . yaml-mode))
               (add-to-list 'auto-mode-alist '("\\.yaml\\'" . yaml-mode))))
 
+;; plantUML
+(config-pkg 'plantuml-mode
+            (lambda()
+              (autoload 'plantuml-mode "plantuml-mode")
+              (add-to-list 'auto-mode-alist '("\\.pum\\'" . plantuml-mode))
+              (add-to-list 'auto-mode-alist '("\\.puml\\'" . plantuml-mode))))
+
