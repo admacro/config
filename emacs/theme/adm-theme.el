@@ -15,7 +15,7 @@
                 (adm-orange  "#733900")
                 (adm-green   "#005600")
                 (adm-cyan    "#004d74")
-                (adm-blue    "#0000f5")
+                (adm-blue    "#2F2FC6")
                 (adm-purple  "#7300ac")
 
                 ;; background colors
@@ -40,7 +40,7 @@
                 (fg4 "#303030")
 
                 ;; grayed colors
-                (adm-red-gray     "#803F40")
+                (adm-red-gray     "#7E3E3E")
                 (adm-magenta-gray "#7F3F6A")
                 (adm-orange-gray  "#806040")
                 (adm-green-gray   "#408040")
