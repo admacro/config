@@ -1,21 +1,26 @@
-!$fg="000000"
-!$bg="E8E3D9"
+!$fg="#000000"
+!$bg="#E8E3D9"
 
-!$orange="733900"
-!$blue="0000f5"
+!$red="#970000"
+!$magenta="#8e005f"
+!$orange="#733900"
+!$green="#005600"
+!$cyan="#004d74"
+!$blue="#0000f5"
+!$purple="#7300ac"
 
-!$bggreen="D9E8D9"
-!$bgorange="E8E0D9"
-!$bgcyan="D9E3E8"
+!$bggreen="#D9E8D9"
+!$bgorange="#E8E0D9"
+!$bgcyan="#D9E3E8"
 
-!$bg1="E0D9CC"
-!$fggray="6C6C6C"
+!$bg1="#E0D9CC"
+!$fggray="#6C6C6C"
 
 <style>
-  root {
-    LineColor $fggray
-    LineThickness 1
-  }
+root {
+        LineColor $fggray
+        LineThickness 1
+}
 </style>
 
 skinparam defaultFontName Monospaced
@@ -26,7 +31,7 @@ skinparam HyperlinkColor $blue
 skinparam RoundCorner 20
 skinparam BoxPadding 20
 
-skinparam ArrowColor $orange
+skinparam ArrowColor $magenta
 skinparam ArrowThickness 1.5
 
 /' title '/
@@ -38,7 +43,9 @@ skinparam title {
 /' sequence '/
 skinparam sequence {
         LifeLineBackgroundColor $bg1
-        GroupFontColor $fggray
+        GroupFontColor $orange
+        GroupHeaderFontColor $cyan
+        GroupBackgroundColor $bg1
         BoxBackgroundColor $bg
 }
 
@@ -58,8 +65,4 @@ skinparam note {
 /' database '/
 skinparam database {
         BackgroundColor $bg1
-}
-
-skinparam group {
-        BodyBackgroundColor $bg1
 }

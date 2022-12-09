@@ -39,6 +39,8 @@
 (setq package-list-extra
       '(yaml-mode
         json-mode
+        plantuml-mode
+        flycheck-plantuml
         restclient))
 
 ;; Package category name to package list mapping
