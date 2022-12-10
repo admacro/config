@@ -71,7 +71,7 @@ body {
 .mdict .results,
 .mdict .results .ds-single,
 .mdict .results .ds-list {
-    line-height:1.4 !important;
+    line-height: 1.4 !important;
     margin-left: 1em;
 }
 
@@ -120,15 +120,15 @@ blockquote font b {
 
 .gddictname {
     font-family: sans-serif;
-    color: #C2B59E;
+    color: #806040;
     background-color: #E0D9CC;
     border-top-color: #C2B59E !important;
     border-right-color: #C2B59E !important;
 }
 
 .gdactivearticle .gddictname {
-    color: #733900;
-    background-color: #C2B59E;
+    color: #806040;
+    background-color: #CDC2AC;
     border-top-color: #C2B59E !important;
     border-right-color: #C2B59E !important;
 }
