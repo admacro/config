@@ -113,8 +113,8 @@ blockquote font b {
 
 
 .gdactivearticle {
-    border-color: #C2B59E;
-    box-shadow: 0px 0px 10px 1px #C2B59E;
+    border-color: #806040 !important;
+    box-shadow: 0px 0px 10px 1px #806040;
 }
 
 
@@ -122,15 +122,13 @@ blockquote font b {
     font-family: sans-serif;
     color: #806040;
     background-color: #E0D9CC;
-    border-top-color: #C2B59E !important;
-    border-right-color: #C2B59E !important;
+    border-color: #C2B59E !important;
 }
 
 .gdactivearticle .gddictname {
-    color: #806040;
-    background-color: #CDC2AC;
-    border-top-color: #C2B59E !important;
-    border-right-color: #C2B59E !important;
+    color: #733900;
+    background-color: #C2B59E;
+    border-color: #806040 !important;
 }
 
 .gddicticon {
