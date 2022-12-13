@@ -45,7 +45,7 @@
 (setq monospaced-font-family "adm mono")
 
 ;; 12 is too small for builtin display
-(if (> (display-pixel-width) 1440)
+(if (>= (display-pixel-width) 1440)
     (setq default-font-size 14)
   (setq default-font-size 15))
 
