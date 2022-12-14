@@ -11,12 +11,12 @@
 
                 ;; foreground colors
                 (adm-red     "#970000")
-                (adm-magenta "#8e005f")
+                (adm-magenta "#8E005F")
                 (adm-orange  "#733900")
                 (adm-green   "#005600")
-                (adm-cyan    "#004d74")
+                (adm-cyan    "#004D74")
                 (adm-blue    "#2F2FC6")
-                (adm-purple  "#7300ac")
+                (adm-purple  "#7300AC")
 
                 ;; background colors
                 (adm-red-bg     "#E8D9D9")
@@ -47,7 +47,7 @@
                 (adm-cyan-gray    "#406A7F")
                 (adm-blue-gray    "#40407F")
                 (adm-purple-gray  "#6A407F")
-                (adm-bg-gray "#816b40")
+                (adm-bg-gray "#816B40")
                 (adm-fg-gray "#6C6C6C")
                 ))
 
